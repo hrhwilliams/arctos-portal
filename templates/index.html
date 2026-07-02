@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<form id="search-form"
+      hx-post="/hx-attribute-search"
+      hx-trigger="keyup delay:500ms changed"
+      hx-target="#search-results">
+  <input type="text" name="attribute_type">
+  <input type="text" name="attribute_value">
+</form>
+<div id="search-results"></div>
+{% endblock %}
