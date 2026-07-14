@@ -1,3 +1,131 @@
+<p>Found {{ n_results }} results.</p>
 <ul>
-
+  {% for result in results %}
+  <li>
+    <details>
+      <summary>{{ result.guid }} &vert; {{ result.species }}</summary>
+      <a href="https://arctos.database.museum/guid/{{ result.guid }}">{{ result.guid }}</a>
+      {% if let Some(spec_locality) = result.spec_locality %}
+      <p>{{ spec_locality }}</p>
+      {% endif %}
+      {% if let Some(dec_lat) = result.dec_lat %}
+        {% if let Some(dec_long) = result.dec_long %}
+        <p>{{ dec_lat }}, {{ dec_long }}</p>
+        {% endif %}
+      {% endif %}
+      {% if let Some(relatedcatalogeditems) = result.relatedcatalogeditems %}
+      <section>
+        <h2>Related items</h2>
+        <p>{{relatedcatalogeditems}}</p>
+      </section>
+      {% endif %}
+      {% if let Some(attributedetail) = result.attributedetail %}
+      <section>
+        <h2>Attribute details</h2>
+        <table>
+          <thead>
+            <th scope="col">Type</th>
+            <th scope="col">Value</th>
+            <th scope="col">Remarks</th>
+            <th scope="col">Date</th>
+          </thead>
+          <tbody>
+            {% for detail in attributedetail %}
+            <tr>
+              <td>{{ detail.attribute_type }}</td>
+              <td>{{ detail.attribute_value }}</td>
+              {% if let Some(attribute_remark) = detail.attribute_remark %}
+              <td>{{ attribute_remark }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+              {% if let Some(attribute_date) = detail.attribute_date %}
+              <td>{{ attribute_date }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+      {% if let Some(partdetail) = result.partdetail %}
+      <section>
+        <h2>Parts details</h2>
+        <table>
+          <thead>
+            <th scope="col">Part ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Condition</th>
+            <th scope="col">Disposition</th>
+            <th scope="col">Remarks</th>
+            <th scope="col">Barcode</th>
+            <th scope="col">Attributes</th>
+          </thead>
+          <tbody>
+            {% for part in partdetail %}
+            <tr>
+              <td>{{ part.part_id }}</td>
+              <td>{{ part.part_name }}</td>
+              {% if let Some(condition) = part.condition %}
+              <td>{{ condition }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+              {% if let Some(disposition) = part.disposition %}
+              <td>{{ disposition }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+              {% if let Some(part_remark) = part.part_remark %}
+              <td>{{ part_remark }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+              {% if let Some(part_barcode) = part.part_barcode %}
+              <td>{{ part_barcode }}</td>
+              {% else %}
+              <td></td>
+              {% endif %}
+              <td>
+                {% if let Some(part_attributes) = part.part_attributes %}
+                <table>
+                  <thead>
+                    <th scope="col">Type</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">Date</th>
+                  </thead>
+                  <tbody>
+                    {% for part_attribute in part_attributes %}
+                    <tr>
+                      <td>{{ part_attribute.attribute_type }}</td>
+                      <td>{{ part_attribute.attribute_value }}</td>
+                      {% if let Some(attribute_remark) = part_attribute.attribute_remark %}
+                      <td>{{ attribute_remark }}</td>
+                      {% else %}
+                      <td></td>
+                      {% endif %}
+                      {% if let Some(attribute_date) = part_attribute.attribute_date %}
+                      <td>{{ attribute_date }}</td>
+                      {% else %}
+                      <td></td>
+                      {% endif %}
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+    </details>
+  </li>
+  {% endfor %}
 </ul>

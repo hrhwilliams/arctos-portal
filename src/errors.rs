@@ -11,6 +11,12 @@ pub enum AppError {
     #[error("Elasticsearch error: {0}")]
     Elasticsearch(#[from] elasticsearch::Error),
 
+    #[error("Failed to convert a value in response")]
+    JsonConversion(String),
+
+    #[error("Missing value in response")]
+    JsonMissingValue(String),
+
     #[error("Not found")]
     NotFound,
 
@@ -20,11 +26,15 @@ pub enum AppError {
 
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
+        tracing::error!("Application error: {:?}", self);
+
         let (status, message) = match self {
             AppError::NotFound => (StatusCode::NOT_FOUND, self.to_string()),
-            AppError::Askama(_) | AppError::Elasticsearch(_) | AppError::Internal => {
-                (StatusCode::INTERNAL_SERVER_ERROR, self.to_string())
-            }
+            AppError::Askama(_)
+            | AppError::Elasticsearch(_)
+            | AppError::Internal
+            | AppError::JsonMissingValue(_)
+            | AppError::JsonConversion(_) => (StatusCode::INTERNAL_SERVER_ERROR, self.to_string()),
         };
 
         let body = format!(

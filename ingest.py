@@ -28,7 +28,7 @@ MAPPINGS = {
                     "type": "nested",
                     "properties": {
                         "attribute_type": {"type": "keyword"},
-                        "attribute_value": {"type": "text"}
+                        "attribute_value": {"type": "text", "fields": {"keyword": {"type": "keyword"}}}
                     }
                 }
             }
@@ -37,7 +37,7 @@ MAPPINGS = {
             "type": "nested",
             "properties": {
                 "attribute_type": {"type": "keyword"},
-                "attribute_value": {"type": "text"}
+                "attribute_value": {"type": "text", "fields": {"keyword": {"type": "keyword"}}}
             }
         }
     }

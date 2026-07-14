@@ -21,10 +21,13 @@ unwrap_used = "deny"
 [dependencies]
 askama = { version = "0.16.0", features = ["serde_json"] }
 axum = "0.8.9"
-elasticsearch = { version = "9.1.0-alpha.1", default-features=false, features = ["rustls-tls"] }
+elasticsearch = { version = "9.1.0-alpha.1", default-features = false, features = ["rustls-tls"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.150"
+serde_path_to_error = "0.1.20"
 thiserror = "2.0.18"
 tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread"] }
 tower = "0.5.3"
-tower-http = { version = "0.7.0", features = ["fs"] }
+tower-http = { version = "0.7.0", features = ["fs", "trace"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }

@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% block title %}Index{% endblock %}
+{% block header %}Elasticsearch Portal Test{% endblock %}
+{% block content %}
+<a href="/">General search</a>
+<hr>
+<form id="search-form"
+      action="/search-attribute"
+      method="post"
+      hx-post="/hx-attribute-search"
+      hx-trigger="input changed delay:500ms"
+      hx-target="#search-results">
+  <input class="form-control" type="text" 
+    name="scientific_name" 
+    placeholder="Species">
+  <select class="form-control" name="attribute_type">
+    <option value="">Attribute type</option>
+    {% for ty in types -%}
+      <option value="{{ ty }}">{{ ty }}</option>
+    {% endfor %}
+  </select>
+  <input class="form-control" type="text" 
+    name="attribute_value" 
+    placeholder="Attribute value">
+</form>
+<div id="search-results"></div>
+{% endblock %}
