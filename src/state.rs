@@ -1,39 +1,8 @@
-use std::sync::Arc;
-
-use elasticsearch::{Elasticsearch, SearchParts};
 use reqwest::header::CONTENT_TYPE;
 use serde::Deserialize;
-use serde_json::{Value, json};
+use serde_json::Value;
 
 use crate::{errors::AppError, search::SearchForm, translate::translate};
-
-/*
-types_values_agg = es.search(
-    index="arctos_test",
-    size=0,
-    aggs={
-        "nested_attributes": {
-            "nested": {
-                "path": "attributedetail"
-            },
-            "aggs": {
-                "types": {
-                    "terms": {
-                        "field": "attributedetail.attribute_type.keyword",
-                        "size": 100000
-                    }
-                },
-                "values": {
-                    "terms": {
-                        "field": "attributedetail.attribute_value.keyword",
-                        "size": 100000,
-                        "min_doc_count": 20}
-                }
-            }
-        }
-    }
-)["aggregations"]["nested_attributes"]
-*/
 
 const INDEX: &str = "arctos";
 
@@ -90,7 +59,7 @@ impl AppState {
     }
 
     #[tracing::instrument(skip(self))]
-    pub async fn search(&self, search_form: SearchForm) -> Result<String, AppError> {
+    pub async fn search(&self, search_form: SearchForm) -> Result<Value, AppError> {
         let query = translate(&search_form);
         tracing::info!("{}", serde_json::to_string_pretty(&query).unwrap());
 
@@ -104,7 +73,7 @@ impl AppState {
             .await?
             .error_for_status()?;
 
-        let response_body = response.text().await?;
+        let response_body = response.json().await?;
 
         Ok(response_body)
     }

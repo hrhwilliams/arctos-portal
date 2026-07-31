@@ -1,10 +1,13 @@
-use axum::routing::get;
 #[cfg(test)]
 use axum::{body::Body, extract::Request};
+use axum::{http::Method, routing::get};
 use tokio::net::TcpListener;
 #[cfg(test)]
 use tower::{ServiceExt, util::Oneshot};
-use tower_http::trace::TraceLayer;
+use tower_http::{
+    cors::{Any, CorsLayer},
+    trace::TraceLayer,
+};
 
 use crate::{routes, state::AppState};
 
@@ -15,8 +18,13 @@ pub struct App {
 impl App {
     pub fn new(app_state: AppState) -> Self {
         let router = axum::Router::new()
-            .route("/search", get(routes::search))
+            .route("/api/search", get(routes::search))
             .layer(TraceLayer::new_for_http())
+            .layer(
+                CorsLayer::new()
+                    .allow_methods([Method::GET, Method::POST])
+                    .allow_origin(Any),
+            )
             .with_state(app_state);
 
         Self { router }

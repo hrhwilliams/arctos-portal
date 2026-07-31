@@ -1,5 +1,4 @@
 use arctos_portal::{app, state::AppState};
-use elasticsearch::{Elasticsearch, http::transport::Transport};
 use tokio::net::TcpListener;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
