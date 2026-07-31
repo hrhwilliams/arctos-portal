@@ -5,11 +5,8 @@ use axum::{
 
 #[derive(thiserror::Error, Debug)]
 pub enum AppError {
-    #[error("Template rendering failed: {0}")]
-    Askama(#[from] askama::Error),
-
-    #[error("Elasticsearch error: {0}")]
-    Elasticsearch(#[from] elasticsearch::Error),
+    #[error("Reqwest error: {0}")]
+    Reqwest(#[from] reqwest::Error),
 
     #[error("Failed to convert a value in response")]
     JsonConversion(String),
@@ -30,8 +27,7 @@ impl IntoResponse for AppError {
 
         let (status, message) = match self {
             AppError::NotFound => (StatusCode::NOT_FOUND, self.to_string()),
-            AppError::Askama(_)
-            | AppError::Elasticsearch(_)
+            AppError::Reqwest(_)
             | AppError::Internal
             | AppError::JsonMissingValue(_)
             | AppError::JsonConversion(_) => (StatusCode::INTERNAL_SERVER_ERROR, self.to_string()),

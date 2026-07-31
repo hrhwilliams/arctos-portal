@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Search portal for related records in Arctos">
+    <title>Arctos Pathogen Screening Search Portal</title>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.6.18/daisyui.min.css"
+      integrity="sha384-XnhhaxlMwJ13fUW9zPFUVPrWPYExBF4MgWwUWob3D47AQ2K5DbJBzNYeHjLtpzMD"
+      crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3"
+      integrity="sha384-aJ9rL4k6lF+91guGvUFVSkpIcge7Zd9EiI4TQDLoK9kFaFJgKHgjEXVvG/qA5COj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" 
+      integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Portal</h1>
+      <nav>
+      </nav>
+    </header>
+    <main>
+      <header>
+        <h1>{% block header %}{% endblock %}</h1>
+      </header>
+      <section class="card flex-1 bg-base-200 p-8 overflow-y-auto">
+        <h2>Search tools</h2>
+        <p>Search for records with certain attributes by species.</p>
+<form hx-post="/search" hx-target="#results" class="w-full max-w-4xl flex flex-col gap-4">
+ 
+  <!-- Main Container -->
+  <div id="row-container" class="flex flex-col gap-4 [&>.search-group:not(:first-child)_button[type='submit']]:invisible">
+    <div class="search-group flex flex-col gap-2 border-l-2 border-base-300 pl-4 py-2">
+      <div class="flex items-stretch gap-2 main-row w-full">
+        <button type="button" class="btn btn-square btn-sm btn-error btn-remove-main" disabled>-</button>
+        <button type="button" class="btn btn-square btn-sm btn-add-main">+</button>
+        <div class="join flex-1">
+          <select name="search_type[]" class="select select-bordered select-sm join-item w-1/5">
+            <option value="scientific_name">Scientific name</option>
+            <option value="genus">Genus</option>
+            <option value="family">Family</option>
+            <option value="guid_prefix">GUID prefix</option>
+          </select>
+          <input type="text" name="query[]" class="input input-bordered input-sm join-item flex-1" placeholder="Search query..." />
+          <button type="submit" class="btn btn-primary join-item w-24">Search</button>
+        </div>
+      </div>
+ 
+      <div class="attr-container flex flex-col gap-2 pl-8">
+        <div class="flex items-center gap-2 attr-row" data-empty="true">
+          <button type="button" class="btn btn-square btn-xs btn-error btn-remove-attr" disabled>-</button>
+          <button type="button" class="btn btn-square btn-xs btn-add-attr">+</button>
+ 
+          <input type="text" name="attr_type[]" class="input input-bordered input-xs w-1/3" placeholder="Attribute Type" disabled />
+          <input type="text" name="attr_val[]" class="input input-bordered input-xs flex-1" placeholder="Attribute Value" disabled />
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- Filters Section -->
+<div class="collapse collapse-arrow border border-base-300 bg-base-100">
+  <input type="checkbox" class="peer" />
+ 
+  <div class="collapse-title font-medium flex justify-between items-center pr-12">
+    <span>Filters<span id="filter-count" class="badge badge-ghost badge-sm hidden ml-1"></span></span>
+    <!-- z-10 and relative elevate the button above the DaisyUI hidden checkbox to capture the click -->
+    <button type="button" id="clear-filters" class="link link-error link-hover hidden z-10 relative">Clear</button>
+  </div>
+ 
+  <div class="collapse-content overflow-visible filter-area">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 border-t border-base-200">
+ 
+      <!-- Collection Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Collection</span></label>
+        <div class="dropdown w-full" data-default="Select Collection...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select Collection...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose collection</li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="collection[]" value="mammalogy" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Mammalogy</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="collection[]" value="entomology" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Entomology</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Country Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Country</span></label>
+        <div class="dropdown w-full" data-default="Select Country...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select Country...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose country</li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="country[]" value="us" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">United States</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="country[]" value="ca" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Canada</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- State/Province Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">State/Province</span></label>
+        <div class="dropdown w-full" data-default="Select State/Province...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select State/Province...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose state/province</li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="state_province[]" value="ca" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">California</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="state_province[]" value="tx" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Texas</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Family Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Family</span></label>
+        <div class="dropdown w-full" data-default="Select Family...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select family...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose family</li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="family[]" value="canidae" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Canidae</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="family[]" value="felidae" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Felidae</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Genus Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Genus</span></label>
+        <div class="dropdown w-full" data-default="Select Genus...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select genus...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose genus</li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="genus[]" value="canis" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Canis</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="genus[]" value="felis" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Felis</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Species Dropdown -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Species</span></label>
+        <div class="dropdown w-full" data-default="Select species...">
+          <div tabindex="0" role="button" class="input input-bordered input-sm flex items-center justify-between w-full bg-base-100">
+            <span class="dropdown-label truncate">Select species...</span>
+            <span class="dropdown-count badge badge-ghost badge-sm"></span>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap mt-1 border border-base-200">
+            <li class="menu-title">Choose species</li>
+            <!-- NOTE: was name="genus[]" in the original, which meant species checkboxes overwrote/merged into genus data. Fixed to species[]. -->
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="species[]" value="canis" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Canis</span></label></li>
+            <li><label class="label cursor-pointer justify-start gap-3"><input type="checkbox" name="species[]" value="felis" class="checkbox checkbox-sm filter-input filter-checkbox" /><span class="label-text">Felis</span></label></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Date Min -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Date Min</span></label>
+        <input type="text" name="date_min" class="input input-bordered input-sm w-full filter-input" placeholder="YYYY-MM-DD" />
+      </div>
+ 
+      <!-- Date Max -->
+      <div class="form-control w-full">
+        <label class="label py-1"><span class="label-text-alt">Date Max</span></label>
+        <input type="text" name="date_max" class="input input-bordered input-sm w-full filter-input" placeholder="YYYY-MM-DD" />
+      </div>
+    </div>
+    <hr>
+    <p>These filters apply to all search parameters</p>
+  </div>
+</div>
+  </div>
+
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    syncMainState();
+    document.querySelectorAll('.attr-container').forEach(syncAttrState);
+  });
+
+  const container = document.getElementById('row-container');
+
+  function syncMainState() {
+    const groups = container.querySelectorAll('.search-group');
+    const isOnlyGroup = groups.length === 1;
+    
+    groups.forEach(group => {
+      group.querySelector('.btn-remove-main').disabled = isOnlyGroup;
+    });
+  }
+
+  function syncAttrState(attrContainer) {
+  const rows = attrContainer.querySelectorAll('.attr-row');
+  const isOnlyRow = rows.length === 1;
+  
+  rows.forEach(row => {
+    const isEmpty = row.dataset.empty === "true";
+    row.querySelector('.btn-remove-attr').disabled = isOnlyRow && isEmpty;
+  });
+}
+
+container.addEventListener('click', (e) => {
+  // Main Row: Add
+  if (e.target.closest('.btn-add-main')) {
+    const group = e.target.closest('.search-group');
+    const newGroup = group.cloneNode(true);
+    
+    newGroup.querySelectorAll(':scope > .main-row input').forEach(input => input.value = '');
+    
+    const attrContainer = newGroup.querySelector('.attr-container');
+    const attrRows = attrContainer.querySelectorAll('.attr-row');
+    for (let i = 1; i < attrRows.length; i++) attrRows[i].remove();
+    
+    // Reset nested attribute to default disabled state
+    const firstAttr = attrRows[0];
+    firstAttr.dataset.empty = "true";
+    firstAttr.querySelector('.btn-remove-attr').disabled = true;
+    firstAttr.querySelectorAll('input').forEach(input => {
+      input.value = '';
+      input.disabled = true;
+    });
+    
+    group.after(newGroup);
+    syncMainState();
+    syncAttrState(attrContainer);
+  }
+
+  // Main Row: Remove
+  const removeMainBtn = e.target.closest('.btn-remove-main');
+  if (removeMainBtn && !removeMainBtn.disabled) {
+    e.target.closest('.search-group').remove();
+    syncMainState();
+  }
+
+  // Attribute Row: Add / Enable
+  if (e.target.closest('.btn-add-attr')) {
+    const row = e.target.closest('.attr-row');
+    const attrContainer = row.closest('.attr-container');
+    
+    if (row.dataset.empty === "true") {
+      // Re-enable existing row
+      row.dataset.empty = "false";
+      row.querySelectorAll('input').forEach(input => input.disabled = false);
+    } else {
+      // Clone and append new row
+      const newRow = row.cloneNode(true);
+      newRow.dataset.empty = "false";
+      newRow.querySelectorAll('input').forEach(input => {
+        input.value = '';
+        input.disabled = false;
+      });
+      row.after(newRow);
+    }
+    syncAttrState(attrContainer);
+  }
+
+  // Attribute Row: Remove / Clear
+  const removeAttrBtn = e.target.closest('.btn-remove-attr');
+  if (removeAttrBtn && !removeAttrBtn.disabled) {
+    const attrContainer = e.target.closest('.attr-container');
+    const rows = attrContainer.querySelectorAll('.attr-row');
+    const row = e.target.closest('.attr-row');
+    
+    if (rows.length > 1) {
+      row.remove();
+    } else {
+      // Clear and disable last remaining row
+      row.dataset.empty = "true";
+      row.querySelectorAll('input').forEach(input => {
+        input.value = '';
+        input.disabled = true;
+      });
+    }
+    syncAttrState(attrContainer);
+  }
+});
+
+  // Dropdown Label Sync State
+  document.addEventListener('change', (e) => {
+    if (e.target.matches('input[name="institution[]"]')) {
+      const dropdown = e.target.closest('.dropdown');
+      const label = dropdown.querySelector('.inst-label');
+      const count = dropdown.querySelector('.inst-count');
+      const checkedBoxes = dropdown.querySelectorAll('input[name="institution[]"]:checked');
+      
+      if (checkedBoxes.length === 0) {
+        label.textContent = 'Select Institutions...';
+        count.textContent = '';
+      } else if (checkedBoxes.length === 1) {
+        label.textContent = checkedBoxes[0].nextElementSibling.textContent;
+        count.textContent = '0-1';
+      } else {
+        label.textContent = 'Multiple Selected';
+        count.textContent = `0-${checkedBoxes.length}`;
+      }
+    }
+  });
+
+const filterArea = document.querySelector('.filter-area');
+const countSpan = document.getElementById('filter-count');
+const clearBtn = document.getElementById('clear-filters');
+
+function updateFilterCount() {
+  const textInputs = Array.from(filterArea.querySelectorAll('input[type="text"].filter-input')).filter(i => i.value.trim() !== '');
+  
+  // Group checkboxes by their name attribute to count each dropdown as a maximum of 1 active filter
+  const checkedBoxes = Array.from(filterArea.querySelectorAll('input[type="checkbox"].filter-checkbox:checked'));
+  const activeDropdownNames = new Set(checkedBoxes.map(cb => cb.name));
+  
+  const total = textInputs.length + activeDropdownNames.size;
+
+  if (total > 0) {
+    countSpan.textContent = `(${total} active)`;
+    countSpan.classList.remove('hidden');
+    clearBtn.classList.remove('hidden');
+  } else {
+    countSpan.classList.add('hidden');
+    clearBtn.classList.add('hidden');
+  }
+}
+
+function clearFilters(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  // Reset inputs
+  filterArea.querySelectorAll('input[type="text"].filter-input').forEach(i => i.value = '');
+  filterArea.querySelectorAll('input[type="checkbox"].filter-checkbox').forEach(c => c.checked = false);
+  
+  // Reset all generalized dropdown labels using their data-default attribute
+  filterArea.querySelectorAll('.dropdown').forEach(dropdown => {
+    const label = dropdown.querySelector('.dropdown-label');
+    const count = dropdown.querySelector('.dropdown-count');
+    if (label) label.textContent = dropdown.dataset.default || 'Select...';
+    if (count) count.textContent = '';
+  });
+
+  updateFilterCount();
+}
+
+filterArea.addEventListener('input', (e) => {
+  if (e.target.classList.contains('filter-input')) {
+    updateFilterCount();
+  }
+});
+
+// Generalized Dropdown Label Sync State
+document.addEventListener('change', (e) => {
+  if (e.target.matches('.filter-checkbox')) {
+    const dropdown = e.target.closest('.dropdown');
+    const label = dropdown.querySelector('.dropdown-label');
+    const count = dropdown.querySelector('.dropdown-count');
+    const checkedBoxes = dropdown.querySelectorAll('.filter-checkbox:checked');
+    const defaultText = dropdown.dataset.default || 'Select...';
+    
+    if (checkedBoxes.length === 0) {
+      label.textContent = defaultText;
+      count.textContent = '';
+    } else if (checkedBoxes.length === 1) {
+      label.textContent = checkedBoxes[0].nextElementSibling.textContent;
+      count.textContent = '0-1';
+    } else {
+      label.textContent = 'Multiple Selected';
+      count.textContent = `0-${checkedBoxes.length}`;
+    }
+    
+    updateFilterCount();
+  }
+});
+</script>
+      </section>
+    </main>
+  </body>
+</html>

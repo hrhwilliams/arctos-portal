@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Search portal for related records in Arctos">
+    <title>Arctos Pathogen Screening Search Portal</title>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.6.18/daisyui.min.css"
+      integrity="sha384-XnhhaxlMwJ13fUW9zPFUVPrWPYExBF4MgWwUWob3D47AQ2K5DbJBzNYeHjLtpzMD"
+      crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3"
+      integrity="sha384-aJ9rL4k6lF+91guGvUFVSkpIcge7Zd9EiI4TQDLoK9kFaFJgKHgjEXVvG/qA5COj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" 
+      integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <form hx-post="/search">
+        <div>
+          <select name="query-type">
+            <option value="guid">GUID</option>
+            <option value="family">Family</option>
+            <option value="genus">Genus</option>
+          </select>
+          <input id="query" name="query" type="text">
+        </div>
+        <div>
+          <button class="btn" onclick="addRow()">Add row</button>
+        </div>
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </main>
+    <script>
+      function addRow() {
+        console.log("boop")
+      }
+    </script>
+  </body>
+</html>

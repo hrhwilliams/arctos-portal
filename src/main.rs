@@ -14,12 +14,10 @@ async fn main() -> Result<(), std::io::Error> {
     let port = 2334;
     let listener = TcpListener::bind((ip, port)).await.expect("failed to bind");
 
-    let transport =
-        Transport::single_node("http://localhost:9200").expect("failed to get transport");
-    let es = Elasticsearch::new(transport);
-
-    let app_state = AppState::new(es).await.expect("failed to create app state");
+    let app_state = AppState::new("http://localhost:9200");
 
     let app = app::App::new(app_state);
+
+    tracing::info!("starting on {}:{}", ip, port);
     app.serve(listener).await
 }

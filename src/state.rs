@@ -1,10 +1,11 @@
 use std::sync::Arc;
 
 use elasticsearch::{Elasticsearch, SearchParts};
+use reqwest::header::CONTENT_TYPE;
 use serde::Deserialize;
 use serde_json::{Value, json};
 
-use crate::errors::AppError;
+use crate::{errors::AppError, search::SearchForm, translate::translate};
 
 /*
 types_values_agg = es.search(
@@ -78,148 +79,33 @@ pub struct SearchResult {
 
 #[derive(Clone)]
 pub struct AppState {
-    es: Elasticsearch,
-    types: Arc<Vec<String>>,
+    elasticsearch_url: String,
 }
 
 impl AppState {
-    pub async fn new(es: Elasticsearch) -> Result<Self, AppError> {
-        let response = es
-            .search(SearchParts::Index(&[INDEX]))
-            .size(0)
-            .body(json!({
-                "aggs": {
-                    "nested_attributes": {
-                        "nested": {
-                            "path": "attributedetail"
-                        },
-                        "aggs": {
-                            "types": {
-                                "terms": {
-                                    "field": "attributedetail.attribute_type",
-                                    "size": 100000
-                                }
-                            }
-                        }
-                    }
-                }
-            }))
-            .send()
-            .await?
-            .error_for_status_code()?;
-
-        let response_body = response.json::<Value>().await?;
-
-        let types = Arc::new(
-            response_body
-                .get("aggregations")
-                .and_then(|v| v.get("nested_attributes"))
-                .and_then(|v| v.get("types"))
-                .and_then(|v| v.get("buckets"))
-                .and_then(|v| v.as_array())
-                .ok_or(AppError::JsonMissingValue("buckets array missing".into()))?
-                .iter()
-                .filter_map(|bucket| bucket.get("key")?.as_str().map(String::from))
-                .collect(),
-        );
-
-        Ok(Self { es, types })
-    }
-
-    pub fn types(&self) -> Arc<Vec<String>> {
-        self.types.clone()
+    pub fn new(elasticsearch_url: &str) -> Self {
+        Self {
+            elasticsearch_url: elasticsearch_url.into(),
+        }
     }
 
     #[tracing::instrument(skip(self))]
-    pub async fn search(
-        &self,
-        scientific_name: Option<String>,
-        attribute_type: String,
-        attribute_value: String,
-    ) -> Result<Vec<SearchResult>, AppError> {
-        let response = if let Some(scientific_name) = scientific_name {
-            self
-            .es
-            .search(SearchParts::Index(&[INDEX]))
-            .from(0)
-            .size(100)
-            .sort(&vec!["guid:asc"])
-            .body(json!({
-                "query": {
-                    "bool": {
-                        "must": [
-                            {
-                                "nested": {
-                                    "path": "attributedetail",
-                                    "query": {
-                                        "bool": {
-                                            "must": [
-                                                {"term": {"attributedetail.attribute_type": attribute_type}},
-                                                {"wildcard": {"attributedetail.attribute_value.keyword": format!("*{}*", attribute_value)}},
-                                            ]
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "wildcard": {
-                                    "scientific_name.keyword": format!("*{}*", scientific_name)
-                                }
-                            }
-                        ]
-                    }
-                }
-            }))
+    pub async fn search(&self, search_form: SearchForm) -> Result<String, AppError> {
+        let query = translate(&search_form);
+        tracing::info!("{}", serde_json::to_string_pretty(&query).unwrap());
+
+        let client = reqwest::Client::new();
+
+        let response = client
+            .post(format!("{}/arctos/_search", self.elasticsearch_url))
+            .header(CONTENT_TYPE, "application/json")
+            .json(&query)
             .send()
             .await?
-            .error_for_status_code()?
-        } else {
-            self
-            .es
-            .search(SearchParts::Index(&[INDEX]))
-            .from(0)
-            .size(100)
-            .sort(&vec!["guid:asc"])
-            .body(json!({
-                "query": {
-                    "nested": {
-                        "path": "attributedetail",
-                        "query": {
-                            "bool": {
-                                "must": [
-                                    {"term": {"attributedetail.attribute_type": attribute_type}},
-                                    {"wildcard": {"attributedetail.attribute_value.keyword": format!("*{}*", attribute_value)}},
-                                ]
-                            }
-                        }
-                    }
-                }
-            }))
-            .send()
-            .await?
-            .error_for_status_code()?
-        };
+            .error_for_status()?;
 
-        let response_body = response.json::<Value>().await?;
+        let response_body = response.text().await?;
 
-        let results = response_body
-            .get("hits")
-            .and_then(|v| v.get("hits"))
-            .and_then(|v| v.as_array())
-            .ok_or(AppError::JsonMissingValue("hits.hits array missing".into()))?
-            .iter()
-            .filter_map(|hit| {
-                let source = hit["_source"].clone();
-                match serde_path_to_error::deserialize::<_, SearchResult>(&source) {
-                    Ok(valid) => Some(valid),
-                    Err(e) => {
-                        eprintln!("Field '{}' failed: {}", e.path(), e.inner());
-                        None
-                    }
-                }
-            })
-            .collect();
-
-        Ok(results)
+        Ok(response_body)
     }
 }
