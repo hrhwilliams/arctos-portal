@@ -30,12 +30,15 @@ impl App {
         Self { router }
     }
 
+    /// # Errors
+    ///
+    /// Returns an error if the server fails to accept connections on `listener`.
     pub async fn serve(self, listener: TcpListener) -> Result<(), std::io::Error> {
         axum::serve(listener, self.router.into_make_service()).await
     }
 
     #[cfg(test)]
-    pub async fn oneshot(self, request: Request) -> Oneshot<axum::Router, Request<Body>> {
+    pub fn oneshot(self, request: Request) -> Oneshot<axum::Router, Request<Body>> {
         self.router.oneshot(request)
     }
 }

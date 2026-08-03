@@ -3,6 +3,9 @@ use axum_extra::extract::Form;
 
 use crate::{errors::AppError, search::SearchForm, state::AppState};
 
+/// # Errors
+///
+/// Returns an error if the Elasticsearch request fails.
 #[tracing::instrument(skip(app_state))]
 pub async fn search(
     State(app_state): State<AppState>,

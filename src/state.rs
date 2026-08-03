@@ -4,8 +4,6 @@ use serde_json::Value;
 
 use crate::{errors::AppError, search::SearchForm, translate::translate};
 
-const INDEX: &str = "arctos";
-
 #[derive(Deserialize)]
 pub struct PartDetail {
     #[serde(rename = "partID")]
@@ -52,16 +50,21 @@ pub struct AppState {
 }
 
 impl AppState {
+    #[must_use]
     pub fn new(elasticsearch_url: &str) -> Self {
         Self {
             elasticsearch_url: elasticsearch_url.into(),
         }
     }
 
+    /// # Errors
+    ///
+    /// Returns an error if the Elasticsearch request fails or returns a
+    /// non-success status.
     #[tracing::instrument(skip(self))]
     pub async fn search(&self, search_form: SearchForm) -> Result<Value, AppError> {
         let query = translate(&search_form);
-        tracing::info!("{}", serde_json::to_string_pretty(&query).unwrap());
+        tracing::info!("{query:#}");
 
         let client = reqwest::Client::new();
 

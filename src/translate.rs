@@ -21,11 +21,8 @@ const DETECTION_FIELDS: &[(&str, &str)] = &[
 
 const SOURCE: &[&str] = &[
     "guid",
-    "guid_prefix",
     "scientific_name",
-    "family",
-    "genus",
-    "species",
+    "relations",
     "country",
     "state_prov",
     "events",
@@ -59,7 +56,7 @@ fn decode_attr(raw: &str) -> Option<Attr> {
     let negated = raw.starts_with('!');
     let s = if negated { &raw[1..] } else { raw };
     // no `|` means no value: "carries this attribute type at all"
-    let (atype, joined) = split_once_pipe(s).unwrap_or((s.trim(), ""));
+    let (atype, joined) = split_once_pipe(s).unwrap_or_else(|| (s.trim(), ""));
     if atype.is_empty() {
         return None;
     }
@@ -67,7 +64,7 @@ fn decode_attr(raw: &str) -> Option<Attr> {
     // values never contain one, and free-text types are single-valued in the form.
     let values = joined
         .split(';')
-        .map(|v| v.trim())
+        .map(str::trim)
         .filter(|v| !v.is_empty())
         .map(String::from)
         .collect();
@@ -116,9 +113,9 @@ fn attribute_clause(a: &Attr) -> Value {
     json!({ "nested": { "path": "attributedetail", "query": { "bool": { "filter": filter } } } })
 }
 
-fn present(values: &Option<Vec<String>>) -> Vec<String> {
+fn present(values: Option<&Vec<String>>) -> Vec<String> {
     values
-        .iter()
+        .into_iter()
         .flatten()
         .map(|v| v.trim())
         .filter(|v| !v.is_empty())
@@ -126,16 +123,17 @@ fn present(values: &Option<Vec<String>>) -> Vec<String> {
         .collect()
 }
 
-fn one(value: &Option<String>) -> &str {
-    value.as_deref().unwrap_or("").trim()
+fn one(value: Option<&String>) -> &str {
+    value.map_or("", |v| v.trim())
 }
 
+#[must_use]
 pub fn translate(form: &SearchForm) -> Value {
     let mut filter: Vec<Value> = Vec::new();
     let mut must_not: Vec<Value> = Vec::new();
 
     // ---- block 1: taxon, OR ------------------------------------------------
-    let taxon_clauses: Vec<Value> = present(&form.taxon)
+    let taxon_clauses: Vec<Value> = present(form.taxon.as_ref())
         .iter()
         .filter_map(|raw| decode_taxon(raw))
         .filter_map(|(rank, name)| {
@@ -153,7 +151,7 @@ pub fn translate(form: &SearchForm) -> Value {
     }
 
     // ---- block 2: attributes, AND or OR ------------------------------------
-    let rows: Vec<Attr> = present(&form.attr)
+    let rows: Vec<Attr> = present(form.attr.as_ref())
         .iter()
         .filter_map(|raw| decode_attr(raw))
         .collect();
@@ -189,7 +187,7 @@ pub fn translate(form: &SearchForm) -> Value {
 
     // Collection, not identity: AND-ed against the taxon block rather than OR-ed
     // into it, or a prefix would return the whole collection regardless of taxon.
-    let prefixes = present(&form.prefix);
+    let prefixes = present(form.prefix.as_ref());
     if !prefixes.is_empty() {
         filter.push(json!({ "terms": { "guid_prefix": prefixes } }));
     }
@@ -197,14 +195,17 @@ pub fn translate(form: &SearchForm) -> Value {
     // ---- block 3: scope ----------------------------------------------------
     // Record-level. These are NOT correlated with the event date: the source
     // carries no per-event political geography.
-    for (field, values) in [("country", &form.country), ("state_prov", &form.state)] {
+    for (field, values) in [
+        ("country", form.country.as_ref()),
+        ("state_prov", form.state.as_ref()),
+    ] {
         let v = present(values);
         if !v.is_empty() {
             filter.push(json!({ "terms": { field: v } }));
         }
     }
 
-    let collector = one(&form.collector);
+    let collector = one(form.collector.as_ref());
     if !collector.is_empty() {
         filter.push(json!({ "term": { "collector_ids": collector } }));
     }
@@ -213,11 +214,11 @@ pub fn translate(form: &SearchForm) -> Value {
     // clauses would match a specimen collected at the place on one visit and in
     // the date range on another.
     let mut event_filter: Vec<Value> = Vec::new();
-    let locality = one(&form.locality);
+    let locality = one(form.locality.as_ref());
     if !locality.is_empty() {
         event_filter.push(json!({ "term": { "events.locality_search_terms": locality } }));
     }
-    let (from, to) = (one(&form.from), one(&form.to));
+    let (from, to) = (one(form.from.as_ref()), one(form.to.as_ref()));
     if !from.is_empty() || !to.is_empty() {
         let mut range = json!({});
         if !from.is_empty() {
@@ -256,6 +257,7 @@ pub fn translate(form: &SearchForm) -> Value {
 }
 
 #[cfg(test)]
+#[allow(clippy::unwrap_used)]
 mod tests {
     use super::*;
 
@@ -390,7 +392,7 @@ mod tests {
                 page: Some(3),
                 ..form()
             })["from"],
-            100
+            PER_PAGE * 2
         );
         // page 0 would underflow `usize`, not merely paginate oddly
         assert_eq!(

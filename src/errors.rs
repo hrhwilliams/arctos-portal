@@ -26,11 +26,11 @@ impl IntoResponse for AppError {
         tracing::error!("Application error: {:?}", self);
 
         let (status, message) = match self {
-            AppError::NotFound => (StatusCode::NOT_FOUND, self.to_string()),
-            AppError::Reqwest(_)
-            | AppError::Internal
-            | AppError::JsonMissingValue(_)
-            | AppError::JsonConversion(_) => (StatusCode::INTERNAL_SERVER_ERROR, self.to_string()),
+            Self::NotFound => (StatusCode::NOT_FOUND, self.to_string()),
+            Self::Reqwest(_)
+            | Self::Internal
+            | Self::JsonMissingValue(_)
+            | Self::JsonConversion(_) => (StatusCode::INTERNAL_SERVER_ERROR, self.to_string()),
         };
 
         let body = format!(
