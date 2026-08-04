@@ -1,52 +1,14 @@
 use reqwest::header::CONTENT_TYPE;
-use serde::Deserialize;
 use serde_json::Value;
 
 use crate::{errors::AppError, search::SearchForm, translate::translate};
 
-#[derive(Deserialize)]
-pub struct PartDetail {
-    #[serde(rename = "partID")]
-    pub part_id: String,
-    pub part_name: String,
-    pub condition: Option<String>,
-    pub disposition: Option<String>,
-    pub part_remark: Option<String>,
-    pub part_barcode: Option<String>,
-    pub part_attributes: Option<Vec<PartAttributes>>,
-}
-
-#[derive(Deserialize)]
-pub struct AttributeDetail {
-    pub attribute_type: String,
-    pub attribute_value: String,
-    pub attribute_remark: Option<String>,
-    pub attribute_date: Option<String>,
-}
-
-#[derive(Deserialize)]
-pub struct PartAttributes {
-    pub attribute_type: String,
-    pub attribute_value: String,
-    pub attribute_remark: Option<String>,
-    pub attribute_date: Option<String>,
-}
-
-#[derive(Deserialize)]
-pub struct SearchResult {
-    pub guid: String,
-    pub species: String,
-    pub relatedcatalogeditems: Option<String>,
-    pub dec_lat: Option<String>,
-    pub dec_long: Option<String>,
-    pub spec_locality: Option<String>,
-    pub partdetail: Option<Vec<PartDetail>>,
-    pub attributedetail: Option<Vec<AttributeDetail>>,
-}
-
+/// Cheap to clone: `reqwest::Client` is `Arc`-backed, so every handler shares
+/// the one connection pool.
 #[derive(Clone)]
 pub struct AppState {
     elasticsearch_url: String,
+    client: reqwest::Client,
 }
 
 impl AppState {
@@ -54,6 +16,7 @@ impl AppState {
     pub fn new(elasticsearch_url: &str) -> Self {
         Self {
             elasticsearch_url: elasticsearch_url.into(),
+            client: reqwest::Client::new(),
         }
     }
 
@@ -66,9 +29,8 @@ impl AppState {
         let query = translate(&search_form);
         tracing::info!("{query:#}");
 
-        let client = reqwest::Client::new();
-
-        let response = client
+        let response = self
+            .client
             .post(format!("{}/arctos/_search", self.elasticsearch_url))
             .header(CONTENT_TYPE, "application/json")
             .json(&query)
