@@ -4,9 +4,14 @@ Why `/api/download` is built the way it is. Everything here was measured on the 
 snapshot (5,771,371 rows, 154 columns) against a local Elasticsearch and the Parquet dataset on
 the same machine. Numbers are that machine's; the ratios are the point.
 
-**Where it ended up.** A 50,334-row export across 43 collections went from **60.1s to 22.7s** —
-4.2s of DuckDB and ~18s of Elasticsearch. The path is: ES answers *which* records match, DuckDB
-reads *what* they are out of Parquet and writes the gzip.
+**Where it ended up.** A 50,335-row export across 44 collections (`genus:Myodes` +
+`genus:Clethrionomys`, the benchmark query) went from **60.1s to ~3.5-4s warm** — ~1.2s of DuckDB
+and ~3s of Elasticsearch. The path is: ES answers *which* records match, DuckDB reads *what* they
+are out of Parquet and writes the gzip.
+
+It was 22.7s (18s ES, 4.2s DuckDB) until three changes landed, none of which altered the
+architecture: force-merging the index to one segment (§5), `track_total_hits: false` on export
+pages (§5), and compacting the Parquet to one file per partition (§3).
 
 ---
 
@@ -88,8 +93,17 @@ footer reads on every query, against 0.18s for a ~300-file layout. It is also pa
 at startup, once per full-dataset pass (`build_taxa` does one scan per rank, plus three facet
 scans), which is why startup got noticeably slower.
 
-Compacting to one file per partition is the outstanding fix. It would save ~0.8s per export and
-considerably more at startup.
+**Fixed.** `build_parquet.py` now runs a `compact()` pass after the partitioned write: one `COPY`
+per fragmented partition, reading its own files back and rewriting a single `data_0.parquet`. A
+per-partition loop rather than a bigger `partitioned_write_flush_threshold`, because a threshold
+large enough for the 355k-row largest partition is exactly the memory profile that OOM'd. It reads
+*without* `hive_partitioning`, so the prefix stays in the directory name and no stray column lands
+in the file. `python build_parquet.py --compact [dir]` runs it standalone against an existing
+dataset — a read-and-rewrite, no CSV re-parse.
+
+8,056 files → 300, 5,771,371 rows unchanged, ~20 minutes. The benchmark export's DuckDB half went
+**4.2s → 1.2s** — more than the ~0.8s of glob predicted, since the footers are also read on the
+matched partitions rather than 27 times each.
 
 **Memory during the write.** The default `partitioned_write_flush_threshold` is 524,288 rows
 buffered *per partition per thread*; across ~300 collections of 154-column rows that OOM'd at
@@ -144,7 +158,23 @@ because it stops ES decompressing and parsing 10,000 whole documents per page ju
 field. `EsHit` carries both `_source` and `fields`, defaulted, so one envelope decodes a search
 or an export.
 
-`track_total_hits` must stay on: turning it off drops `hits.total`, which `EsResponse` requires.
+**`track_total_hits: false` on export pages.** An export never reads `hits.total`, and counting
+it up to the cap was being redone on every page. `EsHits.total` is `Option<Total>` so the one
+envelope still decodes a search, which does read it.
+
+**Force-merging the index to one segment is what removed the 18s.** The residual cost was never
+query shape — everything below was measured and rejected — it was cold-cache disk I/O reading the
+guid doc values scattered across segments. One segment makes that column contiguous, so a cold
+read is sequential instead of random:
+
+| 10k-page, fresh query term | before | after |
+| --- | --- | --- |
+| cold | ~2.5-3s | 1.5s |
+| warm | ~0.5s | 0.37s |
+
+50k guids now enumerate in ~3s. `ingest.py` force-merges after the bulk load; the index is an
+immutable snapshot, which is the one situation where `max_num_segments = 1` has no downside.
+Verify with `GET /arctos/_segments`.
 
 ### Things measured and rejected
 
@@ -158,9 +188,10 @@ or an export.
 - **Raising `index.max_result_window` to page 50k at a time.** Saves five round trips, but the
   round trips are not the cost; the per-document reads are, and there would be just as many.
 
-**What is left is cold-cache disk I/O.** A fresh query costs ~2.5-3s per 10k page; the same query
-warm costs ~0.5s. That is a memory and segment-count question (`_forcemerge`, heap, page cache),
-not a query-shape one.
+**What is left is page cache.** At ~3s for 50k guids the ES half is still the larger of the two,
+and the next lever is PIT + sliced `search_after` to read the slices in parallel. It was not taken:
+slices return arbitrary subsets, so "the first 100,000 guids in guid order" would mean fetching up
+to N×100k and merge-truncating. Not worth owning until 3s is the complaint.
 
 ---
 
@@ -204,8 +235,10 @@ reindex, and it was not taken.
 
 ## 8. Open items
 
-- **Compact the partitions** to one file each (7,945 → 294). Saves ~0.8s per export and more at
-  startup. A read-and-rewrite of ~1.5 GB, no CSV re-parse.
+- **Row order is not stable across exports.** The parallel Parquet scan emits partitions in
+  whatever order they finish, so two exports of the same query hold the same 50,335 rows in a
+  different order (and gzip to slightly different sizes). Harmless today; an `ORDER BY guid` costs
+  a sort of the whole result if anyone needs it deterministic.
 - **Startup does eleven full passes** — eight rank scans plus three facet scans. Folding them
   into one scan is a pure code change and the cheapest remaining win.
 - **Cache the schema** to a JSON file keyed on the dataset mtime; it is derived from an immutable

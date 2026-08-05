@@ -311,8 +311,9 @@ pub fn export_query(form: &SearchForm, after: Option<&str>, size: usize) -> Valu
     // beats decompressing and parsing the whole document 10,000 times a page.
     query["_source"] = json!(false);
     query["docvalue_fields"] = json!(["guid"]);
-    // `track_total_hits` stays as the search set it: turning it off drops
-    // `hits.total`, and the envelope this decodes into requires it
+    // an export never reads `hits.total`, and counting it costs real work on
+    // every one of the pages
+    query["track_total_hits"] = json!(false);
     query.as_object_mut().map(|q| q.remove("aggs"));
     query.as_object_mut().map(|q| q.remove("from"));
     if let Some(after) = after {

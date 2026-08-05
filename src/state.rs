@@ -31,7 +31,7 @@ pub struct SearchResults {
 /// Capped by `track_total_hits`: `relation` is `eq` when `value` is exact and
 /// `gte` when there are more matches than the cap, which is what lets a caller
 /// render "10,000+" rather than a wrong number.
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Default)]
 pub struct Total {
     pub value: u64,
     pub relation: String,
@@ -54,7 +54,8 @@ struct EsResponse {
 
 #[derive(Deserialize)]
 struct EsHits {
-    total: Total,
+    #[serde(default)]
+    total: Option<Total>,
     hits: Vec<EsHit>,
 }
 
@@ -87,7 +88,7 @@ struct DocCount {
 impl From<EsResponse> for SearchResults {
     fn from(response: EsResponse) -> Self {
         Self {
-            total: response.hits.total,
+            total: response.hits.total.unwrap_or_default(),
             // An empty form carries no aggregation; zeroes are the honest answer.
             summary: response
                 .aggregations
@@ -258,6 +259,7 @@ impl AppState {
     pub async fn export_guids(&self, search_form: &SearchForm) -> Result<Vec<String>, AppError> {
         let mut guids: Vec<String> = Vec::new();
         let mut after: Option<String> = None;
+        let now = Instant::now();
 
         loop {
             let query = export_query(search_form, after.as_deref(), EXPORT_PAGE);
@@ -274,23 +276,34 @@ impl AppState {
 
             let page = response.hits.hits.len();
             // doc values are always a list, one element for a single-valued field
-            guids.extend(
-                response
-                    .hits
-                    .hits
-                    .iter()
-                    .filter_map(|h| h.fields["guid"][0].as_str().map(ToString::to_string)),
-            );
+            let page_guids: Vec<String> = response
+                .hits
+                .hits
+                .iter()
+                .filter_map(|h| h.fields["guid"][0].as_str().map(ToString::to_string))
+                .collect();
+            // hits without guids is a malformed envelope, and taking `after`
+            // from the accumulator instead would re-request this page forever
+            if page > 0 && page_guids.is_empty() {
+                return Err(AppError::from(std::io::Error::other(
+                    "export page carried hits but no guid doc values",
+                )));
+            }
 
             // the index sorts by guid, so the last one is where the next page starts
-            after = guids.last().cloned();
+            after = page_guids.last().cloned();
+            guids.extend(page_guids);
             if page < EXPORT_PAGE || guids.len() >= MAX_EXPORT_ROWS || after.is_none() {
                 break;
             }
         }
 
         guids.truncate(MAX_EXPORT_ROWS);
-        tracing::info!("exporting {} records", guids.len());
+        tracing::info!(
+            "{} guids from elasticsearch in {:.1}s",
+            guids.len(),
+            now.elapsed().as_secs_f64()
+        );
         Ok(guids)
     }
 
@@ -362,7 +375,6 @@ impl AppState {
         drop(std::fs::remove_file(&csv_file));
         Ok(bytes)
     }
-
 }
 
 #[cfg(test)]

@@ -375,6 +375,8 @@ def main():
         print(json.dumps(e.errors[0], indent=2))
         raise
 
+    es.indices.forcemerge(index=INDEX_NAME, max_num_segments=1)
+
     if stats["nonpublic_dropped"]:
         raise SystemExit(
             f"{stats['nonpublic_dropped']} attribute rows marked `public: 0` were present. "

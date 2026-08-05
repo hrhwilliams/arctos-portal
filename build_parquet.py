@@ -15,8 +15,37 @@ rather than the files:
 """
 import sys
 import time
+from pathlib import Path
 
 import duckdb
+
+
+def compact(conn, out):
+    """One file per partition. The flush threshold that keeps the write inside
+    memory leaves ~27 files per partition, and every query pays ~0.95s of glob
+    and footer reads for it (note 04 §3). Read without hive_partitioning so the
+    prefix stays in the directory name, not the files."""
+    for part_dir in sorted(Path(out).iterdir()):
+        files = sorted(part_dir.glob("*.parquet"))
+        if len(files) <= 1:
+            continue
+        tmp = part_dir / "compact.tmp"
+        conn.execute(
+            f"""COPY (SELECT * FROM read_parquet('{part_dir.as_posix()}/*.parquet'))
+                TO '{tmp.as_posix()}' (FORMAT parquet, COMPRESSION zstd, COMPRESSION_LEVEL 9)"""
+        )
+        for f in files:
+            f.unlink()
+        tmp.rename(part_dir / "data_0.parquet")
+
+
+if sys.argv[1] == "--compact":
+    out = sys.argv[2] if len(sys.argv) > 2 else "arctos_parquet"
+    conn = duckdb.connect()
+    now = time.time()
+    compact(conn, out)
+    print(f"compacted {out} in {time.time() - now:.0f}s")
+    sys.exit()
 
 csv_file = sys.argv[1]
 out = sys.argv[2] if len(sys.argv) > 2 else "arctos_parquet"
@@ -48,6 +77,10 @@ conn.execute(
     [csv_file],
 )
 print(f"wrote {out} in {time.time() - now:.0f}s")
+
+now = time.time()
+compact(conn, out)
+print(f"compacted {out} in {time.time() - now:.0f}s")
 
 rows, prefixes = conn.execute(
     f"SELECT count(*), count(DISTINCT guid_prefix) "
