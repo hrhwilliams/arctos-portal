@@ -1,0 +1,171 @@
+{
+	"data": [
+		{
+			"chronostrat_series_epoch": "Cambrian Series 2",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Cambrian_Series_2\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Cisuralian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Cisuralian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Eocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Eocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Furongian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Furongian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Guadalupian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Guadalupian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Holocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Holocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Llandovery",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Llandovery_epoch\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lopingian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Lopingian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Cretaceous",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Early_Cretaceous\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Devonian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Devonian#subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Ordovician",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Ordovician#Subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Triassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Early_Triassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Ludlow",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Ludlow_epoch\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Miaolingian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Miaolingian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Devonian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Devonian#subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Jurassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Middle_Jurassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Ordovician",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Ordovician#Subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Triassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Middle_Triassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Miocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Miocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Mississippian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Mississippian_(geology)\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Oligocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Oligocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Paleocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Paleocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Pennsylvanian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Pennsylvanian_(geology)\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Pleistocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Pleistocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Pliocene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Pliocene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Pridoli",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Pridoli_epoch\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Terreneuvian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Terreneuvian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Cretaceous",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Late_Cretaceous\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Devonian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Devonian#subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Jurassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Late_Jurassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Ordovician",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Ordovician#Subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Triassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Late_Triassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Wenlock",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Wenlock_epoch\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Mississippian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Pennsylvanian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Mississippian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Middle Pennsylvanian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Mississippian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Upper Pennsylvanian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ddd.uab.cat/pub/geoact/geoact_a2006v4n3/geoact_a2006v4n3p403.pdf\">Publication</a>"
+		},
+		{
+			"chronostrat_series_epoch": "Lower Jurassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Early_Jurassic\">Wikipedia</a>"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_series_epoch",
+			"label": "Locality Attribute: Series/Epochs",
+			"description": "Series/Epochs included in the International Chronostratigraphic Chart."
+		}
+	]
+}

@@ -1,0 +1,666 @@
+{
+	"data": [
+		{
+			"part_preservation": "buffer",
+			"description": "a solution that resists changes in pH when acid or alkali is added to it. Buffers typically involve a weak acid or alkali together with one of its salts.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "sectioned",
+			"description": "made or divided into a separate sections",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "slide, thin section",
+			"description": "A thin (usually sub-millimeter) cross-section of a specimen adhered to the surface of a glass slide.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "SEM stub, thin section",
+			"description": "Dry specimen sectioned (with a microtome) and mounted on a specimen stub using an adhesive such as epoxy resin or electrically conductive double-sided adhesive tape, and possibly sputter-coated with gold or gold/palladium alloy before examination in a Scanning Electron Microscope.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "SEM stub",
+			"description": "Dry specimen mounted on a specimen stub using an adhesive such as epoxy resin or electrically conductive double-sided adhesive tape, and possibly sputter-coated with gold or gold/palladium alloy before examination in a Scanning Electron Microscope.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "reproduction",
+			"description": "an imitation, transcript, or copy of an original object (such as a fossil, letter, or painting) not to be confused with an image (photograph)",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "desiccated",
+			"description": "Having all moisture removed using either heat or silica or other means.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "compression",
+			"description": "A compression fossil is a fossil preserved in sedimentary rock that has undergone physical compression, including carbonized. (Consider adding  carbonization to method when appropriate.)",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9095"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Compression_fossil"]
+		},
+		{
+			"part_preservation": "cleared",
+			"description": "a preservation technique in which the tissues are made transparent",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "guanidinium thiocyanate",
+			"description": "a chemical compound used as a general protein denaturant, it is most commonly used as a nucleic acid protector in the extraction of DNA and RNA from cells. May be mixed in buffer solution.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "slide smear",
+			"description": "a thin layer of blood, fecal material, or other sample spread across the surface of a glass slide and fixed or allowed to dry",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin",
+			"description": "solution of formalidehyde with an unknown concentration",
+			"tissue_fg": 0,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "freeze-dried",
+			"description": "a low temperature dehydration process which involves freezing , lowering pressure, then removing ice by sublimation",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "glutaraldehyde",
+			"description": "Glutaraldehyde is used in biochemistry applications as an amine-reactive homobifunctional crosslinker and fixative prior to SDS-PAGE, staining, or electron microscopy",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "isopropanol",
+			"description": "isopropyl alcohol",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "slide",
+			"description": "a thin flat piece of glass, typically 75 by 26 mm (3 by 1 inches) and about 1 mm thick but dimensions may vary",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "stained",
+			"description": "tissues are stained with specific dyes",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Longmire's lysis buffer",
+			"description": "a cell lysis buffer for storing blood samples for DNA analysis",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "glycerin",
+			"description": "a commercial preparation of approximately 95% glycerol, used as a humectant; may be mixed with ethanol or other solvents",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "mummified",
+			"description": "embalmed and wrapped in cloth or allowed to shrivel or dry up",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "phosphate buffer",
+			"description": "Phosphate-buffered saline (abbreviated PBS) is a buffer solution commonly used in biological research. It is a water-based salt solution containing disodium hydrogen phosphate, sodium chloride and, in some formulations, potassium chloride and potassium dihydrogen phosphate. The buffer helps to maintain a constant pH. The osmolarity and ion concentrations of the solutions match those of the human body (isotonic).",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "alcohol",
+			"description": "undetermined type of organic compound whose molecule contains one or more hydroxyl groups attached to a carbon atom",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Bouin's solution",
+			"description": "a compound fixative used in histology that is composed of picric acid, acetic acid and formaldehyde in an aqueous solution",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "terpineol",
+			"description": "a monoterpene alcohol and essential oil with antioxidant and antimicrobial properties used in specimen storage and preparation for slide mounting",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "frozen",
+			"description": "maintained a temperature at or below 0 degrees C",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "RNAlater",
+			"description": "an aqueous, nontoxic tissue storage reagent that rapidly permeates tissues to stabilize and protect cellular RNA",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin-fixed",
+			"description": "fixed in formalin (unspecified concentration, but most commonly 10%) prior to storage or transfer to another preservation medium",
+			"tissue_fg": 0,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "mold internal",
+			"description": "formed when a plant or animal is filled in with sediment and then decays completely, leaving behind an internal impression of itself; no organic material is present and the organism itself is not copied",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9095"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "injection, latex vascular",
+			"description": "Injection of resin or latex into the vascular system",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "potassium dichromate",
+			"description": "K2Cr2O7",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "propylene glycol",
+			"description": "Propylene glycol (IUPAC name: propane-1,2-diol) is a synthetic organic compound with the chemical formula C3H8O2",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol",
+			"description": "ethyl alcohol, unknown concentration",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "fluid-preserved",
+			"description": "unknown preservation fluid",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "cast",
+			"description": "formed by mineral deposits into the mold left by rotting organic material, resulting in a three-dimensional replica of the hard structures of a plant or animal",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9095"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "slide, Cobb metal",
+			"description": "two cover glass slides mounted in a thin metal carrier",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "core",
+			"description": "a cylindrical section obtained by drilling with a core drill",
+			"tissue_fg": 0,
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Core_sample"]
+		},
+		{
+			"part_preservation": "replacement",
+			"description": "original tissue is replaced with minerals from the surrounding water and sediment",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "thin section",
+			"description": "A thin cross-section of a specimen",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin 5% buffered",
+			"description": "a 5% formalin solution, buffered",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "mold external impression",
+			"description": "formed when a plant or animal decays completely but leaves behind an external impression of itself, like a hollow mold; no organic material is present and the organism itself is not copied",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9095"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ultrapure water",
+			"description": "Ultrapure water (UPW), high-purity water or highly purified water (HPW) is water (H20) that has been purified to uncommonly stringent specifications. Ultrapure water is a term commonly used in manufacturing to emphasize the fact that the water is treated to the highest levels of purity for all contaminant types, including: organic and inorganic compounds; dissolved and particulate matter; volatile and non-volatile; reactive, and inert; hydrophilic and hydrophobic; and dissolved gases.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6793"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Nobuto strip",
+			"description": "Made from high-purity cellulose fibers, Nobuto strips are structured for uniform sampling. Each strip holds approximately 1 mL of blood or 0.04 mL serum and requires no refrigeration or pretreatment for sampling, storage, or analysis.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "heparin",
+			"description": "Heparin is a blood anticoagulant used as a preservative during blood collection and processing procedures, usually in the form of lithium or sodium salts of heparin. Test tubes, vacutainers, and capillary tubes that use the lithium salt of heparin (lithium heparin) as an anticoagulant are usually marked with green stickers and green tops. Sodium heparin is collected into royal-blue-topped (and dark green-topped) vacutainers.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "cleared and stained",
+			"description": "a preservation technique in which the tissues are made transparent and then the tissues are stained with specific dyes",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4223"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "frozen, flash",
+			"description": "frozen rapidly so as to prevent the formation of ice crystals",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol-fixed",
+			"description": "fixed in ethanol, typically 95% EtOH, prior to storage or transfer to another preservation medium",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "dry",
+			"description": "free from moisture or liquid; not wet or moist",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Alsever's solution",
+			"description": "a saline liquid used to prevent coagulation of blood. It is composed of 2.05% dextrose, 0.8% sodium citrate, 0.055% citric acid, and 0.42% sodium chloride",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "DMSO",
+			"description": "Dimethyl sulfoxide (DMSO) is an organosulfur compound with the formula (CH3)2SO and the cryoprotective agent most widely used to cryopreserve hematopoietic stem cells. DMSO is a universal solvent capable of stabilizing cell membranes under rapidly changing conditions, preventing intracellular ice crystal formation during freezing and heat release during the period of phase transition.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "EDTA",
+			"description": "Ethylenediaminetetraacetic acid (EDTA) is widely used as a preservative and anticoagulant in blood samples. It deactivates metal-dependent enzymes and suppresses damage to DNA, proteins, and polysaccharides.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Dietrich's solution",
+			"description": "Dietrich's solution is a common fixative used in histology. Solution consists of 95% ethano l30 mL, formalin 10 mL, glacial acetic acid 2 mL, distilled water 58 mL = 100 mL total.",
+			"tissue_fg": 0,
+			"issue_url": "",
+			"documentation_url": [
+				"https://zebrafish.org/wiki/health/disease_manual/recipes_and_protocols"
+			]
+		},
+		{
+			"part_preservation": "lysis buffer",
+			"description": "buffer solution used for the purpose of breaking open cells for use in molecular biology experiments that analyze the compounds of the cells",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "paraformaldehyde",
+			"description": "Paraformaldehyde (PFA) is the smallest polyoxymethylene, the polymerization product of formaldehyde.",
+			"tissue_fg": 0,
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Paraformaldehyde"]
+		},
+		{
+			"part_preservation": "pinned",
+			"description": "dried and mounted on a pin",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "thymol",
+			"description": "active ingredient in pesticide product made from a constituent of oil of thyme, a naturally occurring mixture of compounds in the plant Thymus vulgaris L., or thyme",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6873"],
+			"documentation_url": [
+				"https://www3.epa.gov/pesticides/chem_search/reg_actions/reregistration/fs_PC-080402_1-Sep-93.pdf"
+			]
+		},
+		{
+			"part_preservation": "mounted",
+			"description": "Arranged, assembled, or prepared for examination, use, or display.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ["https://www.merriam-webster.com/dictionary/mount"]
+		},
+		{
+			"part_preservation": "taxidermy",
+			"description": "Preserving an animal's skin or body via mounting, typically over an armature or stuffing for the purpose of display or study.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Taxidermy"]
+		},
+		{
+			"part_preservation": "acetone",
+			"description": "A colorless, highly volatile and flammable liquid with a characteristic pungent odour.",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4085"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Acetone"]
+		},
+		{
+			"part_preservation": "articulated",
+			"description": "For skeletal material, attached at joints so that the relative position of the bones which existed in life is preserved.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "arsenic",
+			"description": "Arsenic is a chemical element found in soils, used in taxidermy since the 5th century BC. It was placed in the underside of the skin of an animal to help preserve and protect it from insects. Arsenic in museums collections has been prohibited since the 1980s because of its toxicity. Marte et al. 2006. Collection Forum, 21(1-2), 143-150.",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ["https://repository.si.edu/items/1d607a4f-7eb2-4aff-9302-7ba977cfd0a3"]
+		},
+		{
+			"part_preservation": "Riker mount",
+			"description": "A flat container used for mounting a specimen (typically plant or insect) on cotton wool or other backing material, often with transparent glass or plastic cover as protection",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Riker_mount"]
+		},
+		{
+			"part_preservation": "permineralization",
+			"description": "Pores of the original tissues are filled with mineral deposits. Includes petrification. Permineralizing mineral can be added to method if known, or indicated through an Identification using mineral-based names.",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9095"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Permineralization"]
+		},
+		{
+			"part_preservation": "paradichlorobenzene",
+			"description": "A fumigant insecticide that targets molds, mildews, and insects.",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6874"],
+			"documentation_url": ["http://npic.orst.edu/factsheets/PDBgen.html#products"]
+		},
+		{
+			"part_preservation": "polished",
+			"description": "Shiny as a result of being rubbed",
+			"tissue_fg": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "viral transport medium",
+			"description": "VTM is a solution that allows for the safe transfer of viral samples. It stabilizes viral components and suppresses microbial contamination.",
+			"tissue_fg": 1,
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "buffer AE",
+			"description": "Qiagen Buffer AE (10 mM Tris-Cl, 0.5 mM EDTA, pH 9.0).",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6791"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "buffer TE",
+			"description": "10 mM Tris-Cl, 1 mM EDTA, pH 8.0.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6792"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "CHAOS",
+			"description": "4 M Guanidine Thiocyanate, 0.5% N-Laurosil-sarcosine, 25 mM Tris pH 8. Modified from the guanidine solution in Fukami et al 2004.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6773"],
+			"documentation_url": ["https://doi.org/10.1038/nature02339"]
+		},
+		{
+			"part_preservation": "DMSO/EDTA",
+			"description": "Saline-saturated dimethylsulfoxide-ethylenediaminetetraacetic acid (20% DMSO-0.25M EDTA, pH 8.0), or SSDE, is a solution that has been reported to be a means of storing tissue of marine invertebrates at ambient temperatures without significant loss of nucleic acid integrity (Dawson et al., 1998, Concepcion et al., 2007). Also known as DESS.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6764"],
+			"documentation_url": ["https://doi.org/10.1139/z91-013"]
+		},
+		{
+			"part_preservation": "tryptic soy broth 15% glycerol",
+			"description": "A liquid medium recommended for use in long-term storage of bacteria.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "EDTA 0.25 M pH 10",
+			"description": "0.25 M EDTA adjusted to pH 10 using sodium hydroxide. Ethylenediaminetetraacetic acid (EDTA) is widely used as a preservative and anticoagulant in blood samples. It deactivates metal-dependent enzymes and suppresses damage to DNA, proteins, and polysaccharides. Increasing the pH improves EDTA as a preservative of high molecular weight DNA in tissue (DeSanctis et al 2023)",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6771"],
+			"documentation_url": ["https://doi.org/10.1371/journal.pone.0280807"]
+		},
+		{
+			"part_preservation": "EDTA 0.25 M pH 8",
+			"description": "0.25 M Ethylenediaminetetraacetic acid (EDTA) adjusted to pH 8.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6772"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 100%",
+			"description": "Molecular biology grade absolute ethyl alcohol.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 70%",
+			"description": "A solution that consists of 70% ethyl alcohol and 30% water.",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 75%",
+			"description": "A solution that consists of 75% ethyl alcohol and 25% water.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 80%",
+			"description": "A solution that consists of 80% ethyl alcohol and 20% water.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 90%",
+			"description": "A solution that consists of 90% ethyl alcohol and 10% water.",
+			"tissue_fg": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6761",
+				"https://github.com/ArctosDB/arctos/issues/8167"
+			],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "ethanol 95%",
+			"description": "A solution that consists of 95% ethyl alcohol and 5% water.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin 10%",
+			"description": "A solution that consists of 10% formalin and 90% water; the equivalent of a 4% solution of formaldehyde.",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin 10% buffered",
+			"description": "a 10% formalin solution, buffered (Neutral buffered formalin, NBF)",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin 5%",
+			"description": "A 5% solution of formalin, the equivalent of a 2% solution of formaldehyde",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin-fixed | ethanol 70%",
+			"description": "A process whereby a whole organism, body, carcass, etc. is sufficiently fixed in a formalin solution (typically 10% formalin, aka 3.7% formaldehyde), rinsed, and stored long-term in a 70% ethanol solution.",
+			"tissue_fg": 0,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/4309",
+				"https://github.com/ArctosDB/arctos/issues/8167"
+			],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "formalin-fixed | isopropanol 45%",
+			"description": "A process whereby a whole organism, body, carcass, etc. is sufficiently fixed in a formalin solution (typically 10% formalin, aka 3.7% formaldehyde), rinsed, and stored long-term in a 45% isopropanol solution.",
+			"tissue_fg": 0,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/4366",
+				"https://github.com/ArctosDB/arctos/issues/8167"
+			],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "isopropanol 40%",
+			"description": "a solution that consists of 40% isopropyl alcohol and 60% water",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "isopropanol 50%",
+			"description": "a solution that consists of 50% isopropyl alcohol and 50% water",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "isopropanol 70%",
+			"description": "A solution that consists of 70% isopropyl alcohol and 30% water.",
+			"tissue_fg": "",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/4086",
+				"https://github.com/ArctosDB/arctos/issues/8167"
+			],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "resin-embedded",
+			"description": "Fixed firmly in resin (a substance that converts into rigid polymers by the process of curing). Typically used as a medium for the purposes of thin-sectioning.",
+			"tissue_fg": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6480"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "Monarch elution buffer",
+			"description": "10 mM Tris-HCl, pH 9.0, 0.1 mM EDTA, which is included in NEB's Monarch Genomic DNA Purification Kit",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7394"],
+			"documentation_url": [
+				"https://www.neb.com/en-us/products/t3010-monarch-genomic-dna-purification-kit#Product%20Information"
+			]
+		},
+		{
+			"part_preservation": "other",
+			"description": "Use this preservation type when the preservation is not included in the code table and there are not yet good reasons for requesting a new preservation term. Describe the actual preservation in the attribute method. If it is desirable to record preservation unknown, then use this term and place unknown in the preservation method.",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7010"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "isopropanol 55%",
+			"description": "a solution that consists of 55% isopropyl alcohol and 45% water",
+			"tissue_fg": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8167"],
+			"documentation_url": ""
+		},
+		{
+			"part_preservation": "paraffin-embedded",
+			"description": "Firmly fixed in paraffin (a waxy solid consisting of a mixture of saturated hydrocarbons obtained by distillation from petroleum). Typically used as a medium for tissue sections fixed in formalin.",
+			"tissue_fg": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6486"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpart_preservation",
+			"label": "Part: Preservation Types",
+			"description": "Describes how a part is preserved or stored. Terms require a status for \"Tissueness\", which indicates whether the part is eligible for genetic sequencing or not. A part with one or more affirmative tissue flags and zero negative flags is considered to be a tissue."
+		}
+	]
+}

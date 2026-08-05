@@ -1,0 +1,431 @@
+{
+	"data": [
+		{
+			"container_type": "box",
+			"description": "any sort of rigid container",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "case",
+			"description": "see \"range case\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "container label",
+			"description": "Label of indeterminate type. Containers of type \"X label\" are placeholders and may not contain objects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cryovial label",
+			"description": "Label meant to be attached to cryovial. Containers of type \"X label\" are placeholders and may not contain objects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "jar",
+			"description": "glass or plastic usually transparent container",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "position",
+			"description": "Grid-mapped area. Cannot have barcode. Created only by position-handling forms from parent position data.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "range case",
+			"description": "metal box thingee",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "room",
+			"description": "anything with a door or doorway",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "specimen label",
+			"description": "Label meant to be attached directly to a part. Containers of type \"X label\" are placeholders and may not contain objects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "tag",
+			"description": "Label attached directly to a part.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "microplate",
+			"description": "A microwell (usually 96-well) plate, containing small wells for processing or archiving aliquots of samples.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cabinet",
+			"description": "Entomological term synonymous with 'case', preserved for historical value",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "drawer",
+			"description": "Pinned insect collections are stored in drawers and drawers are inside cabinets. OR a boxlike storage compartment without a lid (except for in pinned collections), made to slide horizontally in and out of a cabinet or case",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "unit tray",
+			"description": "Made of paper & styrofoam to hold insect pins, unit trays come in 3 common sizes but there are more. They fit into drawers and never are used for permanent storage of specimens outside of drawers (but can be removed from drawers temporarily). The smallest unit trays will fit 50 to a drawer, middle sized (square) will fit 25, largest will fit 10 to a drawer but the drawer will still have room for 5 middle sized (square unit trays).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "vial unit tray",
+			"description": "Made of paper with dividers to hold vials. Unlike unit trays for pins these unit trays often sit on shelves but can also be inside drawers in a vial cabinet.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "institution",
+			"description": "campus",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "Nalgene",
+			"description": "this is a brand",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cryotank",
+			"description": "A cryogenic freezer tank for storing frozen samples at vapor-phase nitrogen temperatures, e.g -190C.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cryotank"]
+		},
+		{
+			"container_type": "pin",
+			"description": "Pin holding an insect plus label(s).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "slide drawer",
+			"description": "slide drawer = a drawer with slides (this is actually a bench-drawer in the lab, not a removable container like most).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "envelope",
+			"description": "Non-specific type of envelope. Use \"glassine envelope\" or \"paper envelope\" when possible.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "slide",
+			"description": "A glass microscope slide.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "slide box",
+			"description": "A plastic or wooden box containing slots (see positions) for glass microscope slides.  Typically, these contain 100 or 25 numbered positions.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "column",
+			"description": "vertical grouping of shelving in compact mobile storage unit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "microwell",
+			"description": "Individual well in a microplate.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "exhibit",
+			"description": "exhibit spaces where objects are viewed by the public intended to contain all objects on exhibit within a building. The building is the parent, galleries would be the children.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "gallery",
+			"description": "specific named gallery space, with room number, where objects are viewed by the public",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "Whirl-Pak bag",
+			"description": "A polyethylene bag for storing samples that have folded ends to create an airtight, leakproof seal.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "collection",
+			"description": "Collection within an institution; e.g. Mammals, Invertebrates, or Earth Sciences",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "glassine envelope",
+			"description": "Envelope made of glassine paper, often containing entomology specimens.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "big box",
+			"description": "a box used as a parent for smaller boxes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "bucket",
+			"description": "big jar",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "shelving unit",
+			"description": "Open shelving consisting of multiple shelves. May be static or mobile.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "building",
+			"description": "A structure with a roof and walls standing more or less permanently in one place.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "trap",
+			"description": "A device or enclosure designed to catch and retain animals, typically by allowing entry but not exit or by catching hold of a part of the body.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "row",
+			"description": "horizontal grouping of brackets in compact mobile storage unit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "exhibit case",
+			"description": "glass or acrylic display case within a gallery where objects are viewed by the public",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "bay",
+			"description": "an internal recess or compartment between partitions",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "paper envelope",
+			"description": "Envelope made of paper, often containing a glassine envelope (which in turn contains specimens).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cabinet position",
+			"description": "Area in/on a cabinet.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "freezer position",
+			"description": "Area in a freezer.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "freezer rack position",
+			"description": "Area (slot) in a freezer rack.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "microplate position",
+			"description": "Area in a microplate.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "range case position",
+			"description": "Area in/on a range case.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "shelf position",
+			"description": "Area in/on a shelf.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "virtual",
+			"description": "Barcode exists as a part identifier or handle; these are not printed, and should be moved to a different container type if they are.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "building level",
+			"description": "All the rooms or areas on the same level of a building; a story or floor.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "bag",
+			"description": "Any sort of flexible container",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "collection object",
+			"description": "This is automatically assigned to parts which are both containers and collection objects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cryovial",
+			"description": "A small frozen container",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "dewar",
+			"description": "Portable liquid nitrogen tank for cryogenic specimens.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "freezer box",
+			"description": "A box holding cryovials",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "freezer rack",
+			"description": "A metal rack in freezer",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "herbarium sheet",
+			"description": "A herbarium sheet usually composed of one specimen part.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "plastic envelope",
+			"description": "A standard clear plastic envelope, often used for dragonfly storage.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "shelf",
+			"description": "A shelf",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "tray",
+			"description": "A subdivision of \"range case\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "vial",
+			"description": "A small jar",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "wood case",
+			"description": "Legacy term.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "range",
+			"description": "An aisle of range cases.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "freezer",
+			"description": "A compartment, room, or device for freezing items or keeping them frozen. Use for freezers of unknown temperature range.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "folder",
+			"description": "A folded cover or large envelope for holding or filing loose papers.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "herbarium folder",
+			"description": "A grouping of herbarium sheets, usually by species",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cavity mount",
+			"description": "A custom storage mount with a foam cavity that a specimen or object sits within.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5537"],
+			"documentation_url": ""
+		},
+		{
+			"container_type": "cradle",
+			"description": "A form-fitted storage mount created by molding a sturdy setting material to the surface of a specimen. Also known as a clamshell.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5537"],
+			"documentation_url": ""
+		},
+		{
+			"container_type": "Falcon tube",
+			"description": "Falcon® Graduated Tubes are constructed of polypropylene or polystyrene that is optically clear for easy viewing of sample. They feature easy-to-read dark blue printed graduations, large white writing patch, and easy on/off caps.",
+			"issue_url": "",
+			"documentation_url": ["https://tinyurl.com/3dvavebw"]
+		},
+		{
+			"container_type": "pallet",
+			"description": "A portable platform for handling, storing, or moving materials.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6159"],
+			"documentation_url": ""
+		},
+		{
+			"container_type": "field jacket",
+			"description": "A plaster covering placed over and around a fossil, while in the field, to protect the fossil as it is removed and transferred safely back to the lab or museum for further study",
+			"issue_url": "",
+			"documentation_url": ["https://github.com/ArctosDB/arctos/issues/4285"]
+		},
+		{
+			"container_type": "tank",
+			"description": "A large receptacle or storage chamber, especially for liquid or gas.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7491"],
+			"documentation_url": ""
+		},
+		{
+			"container_type": "drum",
+			"description": "A cylindrical container or receptacle.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7491"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcontainer_type",
+			"label": "Object Tracking: Container Types",
+			"description": "container type"
+		}
+	]
+}

@@ -1,0 +1,460 @@
+{
+	"data": [
+		{
+			"biochronology": "Aquilian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/North_American_land_mammal_age"]
+		},
+		{
+			"biochronology": "Adamanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/B978-0-12-803243-5.00002-9"]
+		},
+		{
+			"biochronology": "Apachean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/B978-0-12-803243-5.00002-9"]
+		},
+		{
+			"biochronology": "Otischalkian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/B978-0-12-803243-5.00002-9"]
+		},
+		{
+			"biochronology": "Revueltian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.sciencedirect.com/science/article/pii/B9780128032435000029?via%3Dihub"
+			]
+		},
+		{
+			"biochronology": "Cashenranchian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/469"]
+		},
+		{
+			"biochronology": "Cobrean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/765"]
+		},
+		{
+			"biochronology": "Comobluffian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://vjs.pgi.gov.pl/article/view/26526"]
+		},
+		{
+			"biochronology": "Dawan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/467"]
+		},
+		{
+			"biochronology": "Fencelakean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/4589"]
+		},
+		{
+			"biochronology": "Kirtlandian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/663"]
+		},
+		{
+			"biochronology": "Lootsbergian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/301"]
+		},
+		{
+			"biochronology": "Perovkan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/S0031-0182(98)00117-5"]
+		},
+		{
+			"biochronology": "Sanfordian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/7196"]
+		},
+		{
+			"biochronology": "Wassonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/467"]
+		},
+		{
+			"biochronology": "Coyotean",
+			"description": "The oldest interval of Permian time based on tetrapods. Coyotean time begins with the first appearance datum of the pelycosaur Sphenacodon and encompasses the Pennsylvanian-Permian boundary. Lucas 2006",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1144/GSL.SP.2006.265.01.04"]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 15",
+			"description": "Zanclean stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7179"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Puercan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Puercan"]
+		},
+		{
+			"biochronology": "Tinguirirican",
+			"description": "Late Ecoene-Early Oligocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7165"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tinguirirican"]
+		},
+		{
+			"biochronology": "Arikareean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Arikareean"]
+		},
+		{
+			"biochronology": "Barstovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Barstovian"]
+		},
+		{
+			"biochronology": "Blancan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Blancan"]
+		},
+		{
+			"biochronology": "Bridgerian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bridgerian_North_American_Stage"]
+		},
+		{
+			"biochronology": "Chadronian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chadronian"]
+		},
+		{
+			"biochronology": "Colhuehuapian",
+			"description": "Early Miocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7161"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Colhuehuapian"]
+		},
+		{
+			"biochronology": "Itaboraian",
+			"description": "Early Eocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7163"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Itaboraian"]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 10",
+			"description": "Tortonian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7173"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 11",
+			"description": "Tortonian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7175"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 12",
+			"description": "Tortonian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7176"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 13",
+			"description": "Messinian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7177"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 14",
+			"description": "Zanclean stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7178"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 3",
+			"description": "Burdigalian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7167"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 4",
+			"description": "Burdigalian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7168"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 6",
+			"description": "Serravallian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7170"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 7 and MN 8",
+			"description": "Serravallian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7171"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 9",
+			"description": "Tortonian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7172"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Santacrucian",
+			"description": "Early Miocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7164"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Santacrucian"]
+		},
+		{
+			"biochronology": "Clarendonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Clarendonian"]
+		},
+		{
+			"biochronology": "Duchesnean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Duchesnean"]
+		},
+		{
+			"biochronology": "Barstovian, Early",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Barstovian"]
+		},
+		{
+			"biochronology": "Hemphillian, Early",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hemphillian"]
+		},
+		{
+			"biochronology": "Hemingfordian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hemingfordian"]
+		},
+		{
+			"biochronology": "Hemphillian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hemphillian"]
+		},
+		{
+			"biochronology": "Irdinmanhan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Irdinmanhan"]
+		},
+		{
+			"biochronology": "Irvingtonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Irvingtonian"]
+		},
+		{
+			"biochronology": "Judithian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Judithian"]
+		},
+		{
+			"biochronology": "Lancian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lancian"]
+		},
+		{
+			"biochronology": "Barstovian, Late",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Barstovian"]
+		},
+		{
+			"biochronology": "Lysitean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wasatchian"]
+		},
+		{
+			"biochronology": "Orellan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Orellan"]
+		},
+		{
+			"biochronology": "Puercan, Pu1",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Puercan"]
+		},
+		{
+			"biochronology": "Puercan, Pu2",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Puercan"]
+		},
+		{
+			"biochronology": "Puercan, Pu3",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Puercan"]
+		},
+		{
+			"biochronology": "Rancholabrean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rancholabrean"]
+		},
+		{
+			"biochronology": "Sharamurunian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sharamurunian"]
+		},
+		{
+			"biochronology": "Tiffanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tiffanian"]
+		},
+		{
+			"biochronology": "Torrejonian, To1",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Torrejonian"]
+		},
+		{
+			"biochronology": "Torrejonian, To2",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Torrejonian"]
+		},
+		{
+			"biochronology": "Torrejonian, To3",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Torrejonian"]
+		},
+		{
+			"biochronology": "Torrejonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Torrejonian"]
+		},
+		{
+			"biochronology": "Uintan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Uintan"]
+		},
+		{
+			"biochronology": "Wasatchian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wasatchian"]
+		},
+		{
+			"biochronology": "Whitneyan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Whitneyan"]
+		},
+		{
+			"biochronology": "Clarkforkian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Clarkforkian"]
+		},
+		{
+			"biochronology": "Casamayoran",
+			"description": "Early Eocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7160"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Casamayoran"]
+		},
+		{
+			"biochronology": "Deseadan",
+			"description": "Late Oligocene South American Land Mammal Age; Rose, Kenneth D. The beginning of the age of mammals. JHU Press, 2006.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7162"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Deseadan"]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 1",
+			"description": "Aquitanian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7166"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		},
+		{
+			"biochronology": "Mammal Neogene zone MN 5",
+			"description": "Langhian stage Mammal Neogene (MN) zone; J. Agustí, L. Cabrera, M. Garcés, W. Krijgsman, O. Oms and J. M. Parés. 2001. A calibrated mammal scale for the Neogene of Western Europe. State of the art. Earth-Science Reviews 52(4):247-260",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7169"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?action=viewTimeScale&scale_no=109",
+				"https://en.wikipedia.org/wiki/Mammal_Neogene_zones"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctbiochronology",
+			"label": "Locality Attribute: Biochronology",
+			"description": "Biochronology is the recognition of intervals of geologic time by fossils. The fossils of any organism represent a particular interval of geologic time called a biochron. https://www.sciencedirect.com/topics/earth-and-planetary-sciences/biostratigraphy"
+		}
+	]
+}

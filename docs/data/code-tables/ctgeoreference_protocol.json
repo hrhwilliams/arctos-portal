@@ -1,0 +1,76 @@
+{
+	"data": [
+		{
+			"georeference_protocol": "not recorded",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "GeoLocate",
+			"description": "Coordinates+error determined through GeoLocate tools attached to Arctos. Data have not been copy/pasted or transcribed.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "thesaurus",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "Google automated georeference",
+			"description": "Coordinates+error determined by a Google API (eg, the \"suggestion\" from Edit Locality). Data have not been copy/pasted, transcribed, or edited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "automated georeference",
+			"description": "Coordinates+error determined by a an API (eg, the \"suggestion\" from Edit Locality). Data have not been copy/pasted, transcribed, or edited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "BioGeoMancer",
+			"description": "A semi-automated georeferencing software that followed the MaNIS georeferencing guidelines for point-radius and error estimations. Last active in 2006",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"georeference_protocol": "MaNIS georeferencing guidelines",
+			"description": "Refers specifically to the MaNIS/HerpNet/ORNIS Georeferencing Guidelines which determines coordinates and uncertainty as an error estimate as interpreted from a textual description of a locality. (See also Wieczorek J, Hijmans R, Guo Q (2004) Point-radius method for georeferencing locality descriptions and calculating associated uncertainty. International Journal of Geographical Information Science 18(8):745-767.)",
+			"issue_url": "",
+			"documentation_url": ["https://georeferencing.org/georefcalculator/docs/GeorefGuide.html"]
+		},
+		{
+			"georeference_protocol": "MaPSTeaDI",
+			"description": "Mountain and Plains Spatio-Temporal Database-Informatics Initiative (MaPSTeaDI) georeferencing protocol.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6429"],
+			"documentation_url": [
+				"https://arctos.database.museum/publication/10011893",
+				"https://doi.org/10.5281/zenodo.59792"
+			]
+		},
+		{
+			"georeference_protocol": "Georeferencing Quick Reference Guide Version 2012-10-02",
+			"description": "An adaptation of Georeferencing for Dummies (Spencer et al 2008) and then later re-published as Wieczorek et al 2012 which provides examples of locality types and how to apply the point-radius method to georeferencing written localities. To reference earlier versions, please see MaNIS georeferencing guidelines.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9735"],
+			"documentation_url": [
+				"https://scan-all-bugs.org/wp-content/uploads/2016/08/GeoreferencingQuickReferenceGuide.pdf"
+			]
+		},
+		{
+			"georeference_protocol": "Georeferencing Quick Reference Guide Version 2020-12-30",
+			"description": "An online updatable version of the Georeferencing Quick Reference Guide Version 2012-10-02 and its earlier precedents.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9735"],
+			"documentation_url": ["https://doi.org/10.35035/e09p-h128"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctgeoreference_protocol",
+			"label": "Locality: Georeference Protocols",
+			"description": "protocol used to assign locality coordinates and uncertainty"
+		}
+	]
+}

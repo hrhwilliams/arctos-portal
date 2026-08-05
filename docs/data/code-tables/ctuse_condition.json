@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"use_condition": "complex use conditions",
+			"description": "There are complex use conditions for using materials associated with this record. Before loans are begun, a collection should carefully review paperwork, permits, agreements, etc. to determine whether a loan can be made. Examples include materials from CITES-listed species, marine mammals, migratory birds, etc.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/94"],
+			"documentation_url": ""
+		},
+		{
+			"use_condition": "standard",
+			"description": "There are no use conditions on any of the materials associated with the records beyond standard accession and loan terms set by the holding institution.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/91"],
+			"documentation_url": ""
+		},
+		{
+			"use_condition": "notification / attribution",
+			"description": "In order to use materials associated with this record, the loaning institution must get approval from a third party (i.e., the material donor) and/or loan recipients must provide attribution to a third party (i.e., not the loaning institution) in order to receive and/or use the materials. This approval and attribution is above and beyond the standard accession and loan terms set by the loaning institution.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/92"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctuse_condition",
+			"label": "Permit Metadata: Use Conditions",
+			"description": "Concise generalized summary of use conditions imposed by a permit. Multiple values should be joined with semicolons (Example: \"attribution; notification\")."
+		}
+	]
+}

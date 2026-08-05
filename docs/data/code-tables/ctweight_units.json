@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"weight_units": "g",
+			"description": "grams",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"weight_units": "kg",
+			"description": "kilograms",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"weight_units": "lb",
+			"description": "pounds",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"weight_units": "oz",
+			"description": "ounces",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"weight_units": "carat",
+			"description": "a unit of weight for precious stones equal to 200 milligrams.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Carat_(mass)"]
+		},
+		{
+			"weight_units": "µg",
+			"description": "microgram (one-thousandth of a milligram and one-millionth of a gram. Sometimes the abbreviations ug or mcg are used in place of the microgram symbol)",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6799"],
+			"documentation_url": ""
+		},
+		{
+			"weight_units": "mg",
+			"description": "milligram (one thousandth or 1/1,000 of a gram)",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7435"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctweight_units",
+			"label": "Units of Weight",
+			"description": "Units of Weight"
+		}
+	]
+}

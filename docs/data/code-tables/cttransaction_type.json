@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"transaction_type": "accn",
+			"description": "Accessions are transactions of acquisition. In Arctos, they are used to identify groups of objects or data that were received from the same source, possibly at the same time. Traditionally, accessioning denotes accepting legal responsibility for a museum object, however, this may not be the case for an accession in Arctos as no catalog records can be created without an associated accession and Arctos allows for cataloging items that may not be the legal responsibility of the cataloging institution.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5409"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Collection_(museum)"]
+		},
+		{
+			"transaction_type": "borrow",
+			"description": "Borrows are transactions of acquisition and use. In Arctos, they are used to record both temporary and permanent transfers of objects from one institution to another in which there is no transfer of ownership. Borrows are to be used when the recording institution is not the legal owner of the items.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5409"],
+			"documentation_url": ""
+		},
+		{
+			"transaction_type": "loan",
+			"description": "Loans are transactions of use. In Arctos, they are used to record both temporary and permanent transfers of objects from one institution to another in which there is no transfer of ownership. Loans are to be used when the recording institution is the legal owner of the items.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5409"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttransaction_type",
+			"label": "Transaction: Types",
+			"description": "transaction types"
+		}
+	]
+}

@@ -1,0 +1,107 @@
+{
+	"data": [
+		{
+			"preparation_method": "Qiagen DNeasy Blood and Tissue Kit",
+			"description": "DNA was extracted using a Qiagen DNeasy Blood and Tissue Kit.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6865"],
+			"documentation_url": [
+				"https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/genomic-dna/dneasy-blood-and-tissue-kit"
+			]
+		},
+		{
+			"preparation_method": "unknown",
+			"description": "Preparation method is unknown or not recorded.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "Qiagen QIAcube Blood and Tissue kit",
+			"description": "DNA was extracted using a Qiagen QIAcube blood and tissue kit",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6863"],
+			"documentation_url": [
+				"https://github.com/ArctosDB/arctos/files/13166957/ProtocolSheet_DNA_DNeasyBloodAndTissue_AnimalBoodOrCells_Standard_V2.pdf"
+			]
+		},
+		{
+			"preparation_method": "Biosprint DNA Blood Kit",
+			"description": "DNA was extracted using a Biosprint DNA Blood Kit.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6948"],
+			"documentation_url": [
+				"https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/genomic-dna/biosprint-dna-blood-kits"
+			]
+		},
+		{
+			"preparation_method": "ethanol precipitation",
+			"description": "DNA was extracted using a non kit-based ethanol precipitation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6869"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ethanol_precipitation"]
+		},
+		{
+			"preparation_method": "leaf tissue or cuticle removed",
+			"description": "Leaf tissue or cuticle removed from the plant and/or rock matrix and mounted on microscope slides for observation of anatomical detail (e.g., stomatal density, epidermal cell size).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7800"],
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "NEB Monarch Genomic DNA Purification Kit",
+			"description": "DNA was extracted using a New England Biolabs Monarch Genomic DNA Purification Kit.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6866"],
+			"documentation_url": [
+				"https://www.neb.com/en-us/products/t3010-monarch-genomic-dna-purification-kit#Product%20Information"
+			]
+		},
+		{
+			"preparation_method": "other",
+			"description": "Preparation method is described in method. This term should be used when another term in the table does not describe the preparation method applied to the part.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6870"],
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "phenol–chloroform extraction",
+			"description": "DNA was extracted using a non-kit based phenol-chloroform extraction.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6867"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Phenol%E2%80%93chloroform_extraction"]
+		},
+		{
+			"preparation_method": "processed for phytoliths",
+			"description": "Chemical and physical processing of rock, soil, or plant samples to produce residue of phytolith (biogenic amorphous silica) content; exact preparation methods may vary by lab (see e.g., Piperno, 1988; Strömberg, 2003), describe any precise method details in method.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7798"],
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "processed for pollen and spores",
+			"description": "Chemical and physical processing of rock, soil, or plant samples to produce residue of pollen and spore (palynomorph) content; exact preparation methods may vary by lab, describe any precise method details in method.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7799"],
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "Qiagen BioSprint96 DNA Blood Kit",
+			"description": "DNA was extracted using a Qiagen BioSprint96 DNA Blood Kit",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6864"],
+			"documentation_url": [
+				"https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/genomic-dna/biosprint-dna-blood-kits"
+			]
+		},
+		{
+			"preparation_method": "subculturing",
+			"description": "The act of subculturing refers to the transfer of microbiological culture to a fresh growth medium in order to increase the culture's access to nutrients and reduce levels of toxic byproducts accumulated in the previous growth medium, allowing for the maintenance of the cell culture.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/26"],
+			"documentation_url": ""
+		},
+		{
+			"preparation_method": "whole genome amplification",
+			"description": "DNA was created by amplification of an entire genome, starting with nanogram quantities of DNA and resulting in microgram quantities of amplified products.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7524"],
+			"documentation_url": [
+				"https://www.neb.com/en-us/applications/dna-amplification-pcr-and-qpcr/whole-genome-amplification"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpreparation_method",
+			"label": "Part: Preparation Method",
+			"description": "Preparation method describes an intentional action that alters the object for a particular purpose, which may include a published or commercially available routine and workflow."
+		}
+	]
+}

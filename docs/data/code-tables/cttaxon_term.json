@@ -1,0 +1,501 @@
+{
+	"data": [
+		{
+			"taxon_term": "aphiaid",
+			"description": "Primary identifier for WoRMS, http://www.marinespecies.org/. Classifications with this identifier will be automatically maintained via WoRMS webservice.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 142
+		},
+		{
+			"taxon_term": "author_text",
+			"description": "Author attributed to the name in zoology, or the binomial in botany. \"(Scopoli, 1769)\", not \"Tyto alba (Scopoli, 1769)\"",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 1
+		},
+		{
+			"taxon_term": "chemical_formula",
+			"description": "A chemical formula is a way of presenting information about the chemical proportions of atoms that constitute a particular chemical compound or molecule, using chemical element symbols, numbers, and sometimes also other symbols, such as parentheses, dashes, brackets, commas and plus (+) and minus (−) signs. <a href=\"https://en.wikipedia.org/wiki/Chemical_formula\" target=\"_blank\" class=\"external\">Wikipedia</a>",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 242
+		},
+		{
+			"taxon_term": "dana_number_8",
+			"description": "Value assigned to the taxon under Dana's New Mineralogy, Eighth Edition as reported in <a href=\"https://www.mindat.org/dana.php\" class=\"external\">Mindat</a>",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 362
+		},
+		{
+			"taxon_term": "display_name",
+			"description": "HTML-formatted name for display purposes.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 2
+		},
+		{
+			"taxon_term": "heys_cim",
+			"description": "Hey's Chemical Index of Minerals Grouping identifier.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 243
+		},
+		{
+			"taxon_term": "infraspecific_author",
+			"description": "Author of the infraspecific epithet. Do not use in zoology.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 3
+		},
+		{
+			"taxon_term": "managed_by",
+			"description": "This Arctos operator is managing this taxon. Please consult with them before making changes to the classification or the classification metadata.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 201
+		},
+		{
+			"taxon_term": "nickel-strunz_10",
+			"description": "Nickel-Strunz Mineral Classification, tenth edition identifier.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 342
+		},
+		{
+			"taxon_term": "nomenclatural_code",
+			"description": "Controls automated formatting of display_name. Restricted to CTNOMENCLATURAL_CODE.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 4
+		},
+		{
+			"taxon_term": "nomenclature_4.0_identifier",
+			"description": "Identification number in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 283
+		},
+		{
+			"taxon_term": "remark",
+			"description": "any remarkable data pertaining to the classification, or name as defined by classification",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 5
+		},
+		{
+			"taxon_term": "scientific_name",
+			"description": "\"Full\" name with no formatting or authors. Exists to facilitate search.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 35
+		},
+		{
+			"taxon_term": "taxon_status",
+			"description": "use values from CTTAXON_STATUS",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 6
+		},
+		{
+			"taxon_term": "infraclass",
+			"description": "A subdivision of subclass. Subordinate to the subclass; superordinate to the subterclass.",
+			"is_classification": 1,
+			"relative_position": 14,
+			"cttaxon_term_id": 12
+		},
+		{
+			"taxon_term": "preferred_name",
+			"description": "Text indicating an alternative name for use in certain circumstances, as asserted by a particular source, etc. Format \"PreferredName (source, description, user, etc.)\" is strongly encouraged. Intended as a loose pointer between classifications, primarily for curatorial tasks like data entry. May help clarify relationships, as links between names can be ambiguous. Do not use as a replacement for more formal organization.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 161
+		},
+		{
+			"taxon_term": "source_authority",
+			"description": "Source of the taxonomic classification. Recommended sources include WoRMS, The Reptile Database, ITIS, FishBase, AlgaeBase, Paleobiology Database. Other sources are allowed. Please be specific and add the date the source was accessed  in YYYY-MM-DD format if possible.",
+			"is_classification": 0,
+			"relative_position": "",
+			"cttaxon_term_id": 38
+		},
+		{
+			"taxon_term": "superclass",
+			"description": "Subordinate to the infraphylum and superordinate to the class, used to describe a group of classes which probably evolved from a common ancestor.",
+			"is_classification": 1,
+			"relative_position": 11,
+			"cttaxon_term_id": 29
+		},
+		{
+			"taxon_term": "class",
+			"description": "A primary subdivision of a taxonomic phylum. Subordinate to phylum/division; superordinate to order. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Class_(biology)\">Wikipedia</a> Also a classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 12,
+			"cttaxon_term_id": 8
+		},
+		{
+			"taxon_term": "subclass",
+			"description": "A subdivision of class. Subordinate to the class; superordinate to the infrapclass. Also a classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 13,
+			"cttaxon_term_id": 20
+		},
+		{
+			"taxon_term": "subterclass",
+			"description": "A subdivision of infraclass. Subordinate to the infraclass; superordinate to the hyperorder.",
+			"is_classification": 1,
+			"relative_position": 15,
+			"cttaxon_term_id": 121
+		},
+		{
+			"taxon_term": "hyperorder",
+			"description": "Also Mirorder; Subordinate to the infrapclass and superordinate to the superorder, used to describe a group of superorders which probably evolved from a common ancestor. ",
+			"is_classification": 1,
+			"relative_position": 16,
+			"cttaxon_term_id": 36
+		},
+		{
+			"taxon_term": "subdivision",
+			"description": "Subphylum (botanical).",
+			"is_classification": 1,
+			"relative_position": 8,
+			"cttaxon_term_id": 21
+		},
+		{
+			"taxon_term": "superorder",
+			"description": "Subordinate to the hyperorder and superordinate to the order, used to describe a group of orders which probably evolved from a common ancestor. ",
+			"is_classification": 1,
+			"relative_position": 17,
+			"cttaxon_term_id": 32
+		},
+		{
+			"taxon_term": "order",
+			"description": "A primary subdivision of a taxonomic class. Subordinate to class; superordinate to family. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Order_(biology)\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 18,
+			"cttaxon_term_id": 17
+		},
+		{
+			"taxon_term": "suborder",
+			"description": "A subdivision of order. Subordinate to the order; superordinate to the infraorder.",
+			"is_classification": 1,
+			"relative_position": 19,
+			"cttaxon_term_id": 25
+		},
+		{
+			"taxon_term": "infraorder",
+			"description": "A subdivision of suborder. Subordinate to the suborder; superordinate to the hypoorder.",
+			"is_classification": 1,
+			"relative_position": 20,
+			"cttaxon_term_id": 14
+		},
+		{
+			"taxon_term": "hyporder",
+			"description": "Sometimes \"hypoorder\". A subdivision of infraorder. Subordinate to the infraorder; superordinate to the subhyporder.",
+			"is_classification": 1,
+			"relative_position": 21,
+			"cttaxon_term_id": 41
+		},
+		{
+			"taxon_term": "subhyporder",
+			"description": "Presumably sometimes spelled \"subhypoorder\". A subdivision of hyporder. Subordinate to the hyporder; superordinate to the superfamily.",
+			"is_classification": 1,
+			"relative_position": 22,
+			"cttaxon_term_id": 61
+		},
+		{
+			"taxon_term": "type",
+			"description": "In Dana's New Mineralogy, type represents the type of mineral, which in some cases is based on the atomic characteristics. Type is a subdivision of Dana class.",
+			"is_classification": 1,
+			"relative_position": 23,
+			"cttaxon_term_id": 382
+		},
+		{
+			"taxon_term": "superfamily",
+			"description": "Subordinate to the subhyporder and superordinate to the epifamily, used to describe a group of epifamilies which probably evolved from a common ancestor.",
+			"is_classification": 1,
+			"relative_position": 24,
+			"cttaxon_term_id": 30
+		},
+		{
+			"taxon_term": "epifamily",
+			"description": "Subordinate to the superfamily and superordinate to the family, used to describe a group of families which probably evolved from a common ancestor.",
+			"is_classification": 1,
+			"relative_position": 25,
+			"cttaxon_term_id": 101
+		},
+		{
+			"taxon_term": "family",
+			"description": "In Linnean taxonomy, primary subdivision of a taxonomic order. Subordinate to order; superordinate to genus. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Family_(biology)\">Wikipedia</a> In mineral taxonomy, the basic unit of the clan of igneous rocks. <a target=\"_blank\" class=\"external\" href=\"https://www.mindat.org/glossary/family\">Mindat</a>",
+			"is_classification": 1,
+			"relative_position": 26,
+			"cttaxon_term_id": 9
+		},
+		{
+			"taxon_term": "subfamily",
+			"description": "A subdivision of order. Subordinate to the family; superordinate to the supertribe.",
+			"is_classification": 1,
+			"relative_position": 27,
+			"cttaxon_term_id": 22
+		},
+		{
+			"taxon_term": "group",
+			"description": "In Dana's New Mineralogy, group represents types of minerals further classified based on structural similarities. Group is a subdivision of Dana type.",
+			"is_classification": 1,
+			"relative_position": 28,
+			"cttaxon_term_id": 402
+		},
+		{
+			"taxon_term": "supertribe",
+			"description": "Subordinate to the subfamily and superordinate to the tribe, used to describe a group of tribes which probably evolved from a common ancestor.",
+			"is_classification": 1,
+			"relative_position": 29,
+			"cttaxon_term_id": 37
+		},
+		{
+			"taxon_term": "tribe",
+			"description": "Subordinate to the supertribe and superordinate to the subtribe <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Tribe_(biology)\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 30,
+			"cttaxon_term_id": 34
+		},
+		{
+			"taxon_term": "subtribe",
+			"description": "A subdivision of tribe. Subordinate to the tribe; superordinate to the genus.",
+			"is_classification": 1,
+			"relative_position": 31,
+			"cttaxon_term_id": 28
+		},
+		{
+			"taxon_term": "genus",
+			"description": "A primary subdivision of a taxonomic family. Subordinate to family; superordinate to species. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Genus\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 32,
+			"cttaxon_term_id": 11
+		},
+		{
+			"taxon_term": "subgenus",
+			"description": "A subdivision of genus. Subordinate to the genus; superordinate to the species.\r\n<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Subgenus\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 33,
+			"cttaxon_term_id": 23
+		},
+		{
+			"taxon_term": "heys_primary_group",
+			"description": "<a href=\"https://www.mindat.org/cim.php\" target=\"_blank\" class=\"external\">Hey's Chemical Index of Minerals Primary Group</a>",
+			"is_classification": 1,
+			"relative_position": 34,
+			"cttaxon_term_id": 244
+		},
+		{
+			"taxon_term": "heys_subgroup",
+			"description": "Secondary-level group in the Hey's Index of Minerology.",
+			"is_classification": 1,
+			"relative_position": 35,
+			"cttaxon_term_id": 245
+		},
+		{
+			"taxon_term": "species",
+			"description": "In Linnean taxonomy, a two-part name, a \"binomial\". The first part of the binomial is the genus to which the species belongs. A primary subdivision of a taxonomic genus. Subordinate to genus; superordinate to subspecies. In mineral taxonomy, any mineral that can be distinguished from all other minerals by current determinative methods or a mineral distinguished from others by its unique chemical and physical properties; it may have varieties. <a target=\"_blank\" class=\"external\" href=\"https://www.mindat.org/glossary/species\">Mindat</a>",
+			"is_classification": 1,
+			"relative_position": 36,
+			"cttaxon_term_id": 19
+		},
+		{
+			"taxon_term": "subspecies",
+			"description": "ICZN-like trinomials and ICNB-like \"subspecies\" regardless of abbreviation convention (eg, use this to rank \"Aaronsohnia pubescens subsp. maroccana\"). A subdivision of species. Subordinate to the species; superordinate to the forma (Botany).\r\n<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Subgenus\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 37,
+			"cttaxon_term_id": 27
+		},
+		{
+			"taxon_term": "variety",
+			"description": "Botanical subspecific rank. Should be given as quadrinomial: Oxytropis arctica var. arctica. A subdivision of subspecies. Subordinate to the subspecies; superordinate to the forma. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Variety_(botany)\">Wikipedia</a> In mineral taxonomy, specimens of a mineral species with distinctive physical properties due to: (1) specific history; e.g., Iceland spar, a coarsely crystalline variety of calcite of optical grade, or (2) small chemical variation; e.g., amalgam, a mercurian variety of native silver. <a target=\"_blank\" class=\"external\" href=\"https://www.mindat.org/glossary/mineral_variety\">Mindat</a>",
+			"is_classification": 1,
+			"relative_position": 38,
+			"cttaxon_term_id": 81
+		},
+		{
+			"taxon_term": "forma",
+			"description": "Trinomal namestring with embedded infrapsecific rank - \"Equisetum arvense forma polystachyon\". one of the \"secondary\" taxonomic ranks, below that of variety, which in turn is below that of species. Subordinate to the variety. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Form_(botany)\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 39,
+			"cttaxon_term_id": 10
+		},
+		{
+			"taxon_term": "ichnofamily",
+			"description": "Any family known only from trace fossils, such as footprints, coprolites or nests. Superordinate to ichnogenus. <a target=\"_blank\" class=\"external\" href=\"https://en.wiktionary.org/wiki/ichnofamily\">Wiktionary</a>",
+			"is_classification": 1,
+			"relative_position": 40,
+			"cttaxon_term_id": 226
+		},
+		{
+			"taxon_term": "ichnogenus",
+			"description": "Any genus known only from trace fossils, such as footprints, coprolites or nests. Superordinate to ichnospecies. <a target=\"_blank\" class=\"external\" href=\"https://en.wiktionary.org/wiki/ichnogenus#English\">Wiktionary</a>",
+			"is_classification": 1,
+			"relative_position": 41,
+			"cttaxon_term_id": 225
+		},
+		{
+			"taxon_term": "hierarchy_name_1",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 47,
+			"cttaxon_term_id": 329
+		},
+		{
+			"taxon_term": "hierarchy_name_2",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 48,
+			"cttaxon_term_id": 327
+		},
+		{
+			"taxon_term": "concept_1",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 49,
+			"cttaxon_term_id": 326
+		},
+		{
+			"taxon_term": "concept_2",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 50,
+			"cttaxon_term_id": 325
+		},
+		{
+			"taxon_term": "superkingdom",
+			"description": "Also Domain; highest taxonomic rank of organisms in the three-domain system of taxonomy. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Domain_(biology)\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 1,
+			"cttaxon_term_id": 31
+		},
+		{
+			"taxon_term": "kingdom",
+			"description": "Also regnum; kingdom (Latin: regnum, plural regna) is a primary subdivision of a taxonomic superkingdom/domain. Subordinate to superkingdom/regnum; superordinate to phylum. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Kingdom_(biology)\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 2,
+			"cttaxon_term_id": 16
+		},
+		{
+			"taxon_term": "subkingdom",
+			"description": "Also subregnum. A subdivision of kingdom/regnum.",
+			"is_classification": 1,
+			"relative_position": 3,
+			"cttaxon_term_id": 24
+		},
+		{
+			"taxon_term": "infrakingdom",
+			"description": "Also infraregnum or branch. A subdivision of subkingdom/subregnum.",
+			"is_classification": 1,
+			"relative_position": 4,
+			"cttaxon_term_id": 13
+		},
+		{
+			"taxon_term": "superphylum",
+			"description": "Also superdivision. Subordinate to the subregnum and superordinate to the phylum, used to describe a group of phyla which probably evolved from a common ancestor. <a target=\"_blank\" class=\"external\" href=\"https://simple.wikipedia.org/wiki/Superphylum\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 5,
+			"cttaxon_term_id": 33
+		},
+		{
+			"taxon_term": "phylum",
+			"description": "Also division. A primary subdivision of a taxonomic kingdom, originally grouping together  organisms that have a similar body plan. Subordinate to kingdom/regnum; superordinate to class. \r\n<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Phylum\">Wikipedia</a>",
+			"is_classification": 1,
+			"relative_position": 6,
+			"cttaxon_term_id": 18
+		},
+		{
+			"taxon_term": "subphylum",
+			"description": "Also subdivision. A subdivision of phylum. Subordinate to the phylum; superordinate to the infraphylum. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Subphylum\">Wikipedia</a>\r\n",
+			"is_classification": 1,
+			"relative_position": 7,
+			"cttaxon_term_id": 26
+		},
+		{
+			"taxon_term": "infraphylum",
+			"description": "A subdivision of subphylum. Subordinate to the subphylum; superordinate to the superclass.",
+			"is_classification": 1,
+			"relative_position": 9,
+			"cttaxon_term_id": 15
+		},
+		{
+			"taxon_term": "category",
+			"description": "Classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 10,
+			"cttaxon_term_id": 285
+		},
+		{
+			"taxon_term": "concept_3",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 51,
+			"cttaxon_term_id": 324
+		},
+		{
+			"taxon_term": "concept_4",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 52,
+			"cttaxon_term_id": 323
+		},
+		{
+			"taxon_term": "concept_5",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 53,
+			"cttaxon_term_id": 322
+		},
+		{
+			"taxon_term": "concept_6",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 54,
+			"cttaxon_term_id": 302
+		},
+		{
+			"taxon_term": "ichnospecies",
+			"description": "Any species known only from trace fossils, such as footprints, coprolites or nests. A two-part name, a \"binomial\". The first part of the binomial is the ichnogenus to which the ichnospecies belongs. A primary subdivision of a taxonomic ichnogenus. <a target=\"_blank\" class=\"external\" href=\"https://en.wiktionary.org/wiki/ichnospecies#English\">Wiktionary</a>",
+			"is_classification": 1,
+			"relative_position": 42,
+			"cttaxon_term_id": 221
+		},
+		{
+			"taxon_term": "primary_object_term",
+			"description": "Classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 43,
+			"cttaxon_term_id": 286
+		},
+		{
+			"taxon_term": "secondary_object_term",
+			"description": "Classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\"class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 44,
+			"cttaxon_term_id": 262
+		},
+		{
+			"taxon_term": "tertiary_object_term",
+			"description": "Classification level in the <a href=\"https://www.nomenclature.info/apropos-about.app?lang=en\" target=\"_blank\" class=\"external\">Nomenclature 4.0</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 45,
+			"cttaxon_term_id": 263
+		},
+		{
+			"taxon_term": "facet",
+			"description": "Classification level in the <a href=\"http://vocab.getty.edu/page/aat/300264092\" target=\"_blank\" class=\"external\">Object facet of the Getty Art & Architecture Thesaurus</a> hierarchy.",
+			"is_classification": 1,
+			"relative_position": 46,
+			"cttaxon_term_id": 330
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_term",
+			"label": "Taxonomy: Term Values",
+			"description": "Suggested terms which may be useful in classifying and organizing taxonomic data. Taxonomic terms are not limited by this table."
+		}
+	]
+}

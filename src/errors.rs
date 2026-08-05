@@ -11,6 +11,10 @@ pub enum AppError {
     Duckdb(#[from] duckdb::Error),
     #[error("Arrow error: {0}")]
     Arrow(#[from] duckdb::arrow::error::ArrowError),
+    #[error("Code table error: {0}")]
+    Io(#[from] std::io::Error),
+    #[error("Code table error: {0}")]
+    Json(#[from] serde_json::Error),
 }
 
 impl IntoResponse for AppError {

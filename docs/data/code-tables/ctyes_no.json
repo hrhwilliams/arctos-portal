@@ -1,0 +1,17 @@
+{
+	"data": [
+		{
+			"yes_or_no": "no"
+		},
+		{
+			"yes_or_no": "yes"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctyes_no",
+			"label": "Yes/No",
+			"description": "Only two values are in this table as the table name suggests."
+		}
+	]
+}

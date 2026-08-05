@@ -1,0 +1,122 @@
+{
+	"data": [
+		{
+			"lithostratigraphic_bed": "Elk River Beds",
+			"description": "DO NOT USE no documentation. (Possibly referencable to Elk River Formation)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name/76069",
+				"https://ngmdb.usgs.gov/Geolex/Units/ElkRiver_12824.html"
+			]
+		},
+		{
+			"lithostratigraphic_bed": "Beta Bonebed",
+			"description": "DO NOT USE: This needs a relevant citation as it does not appear in Falconnet, J. 2015",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://doi.org/10.4202/app.2012.0105"]
+		},
+		{
+			"lithostratigraphic_bed": "Black Forest Bed",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://pubs.er.usgs.gov/publication/70024975"]
+		},
+		{
+			"lithostratigraphic_bed": "Bridge Creek Limestone Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/69620"]
+		},
+		{
+			"lithostratigraphic_bed": "Byoritsu Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://www.jstage.jst.go.jp/article/pjab1912/6/8/6_8_313/_pdf"]
+		},
+		{
+			"lithostratigraphic_bed": "Cabbage Patch Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/Units/CabbagePatch_6897.html"]
+		},
+		{
+			"lithostratigraphic_bed": "Champion Shell Bed",
+			"description": "Early Cretaceous unit in Kansas",
+			"issue_url": "",
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/Units/Champion_15018.html"]
+		},
+		{
+			"lithostratigraphic_bed": "Fencepost Limestone Bed",
+			"description": "Late Cretaceous unit of the Pfeifer Shale Member in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name/78913",
+				"https://ngmdb.usgs.gov/Geolex/Units/Fencepost_15158.html"
+			]
+		},
+		{
+			"lithostratigraphic_bed": "Jagger Coal Bed",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://www.cdc.gov/niosh/mining/userfiles/works/pdfs/ri8189.pdf"]
+		},
+		{
+			"lithostratigraphic_bed": "McAbee Fossil Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/McAbee_Fossil_Beds"]
+		},
+		{
+			"lithostratigraphic_bed": "Optima Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://www.jstor.org/stable/2420725"]
+		},
+		{
+			"lithostratigraphic_bed": "Parafrechites meeki Beds",
+			"description": "DO NOT USE no documentation Silberling and Nichols. Geol. Survey Prof Paper 1207",
+			"issue_url": "",
+			"documentation_url": ["https://pubs.usgs.gov/pp/1207/report.pdf"]
+		},
+		{
+			"lithostratigraphic_bed": "Pinecrest beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://gsa.confex.com/gsa/2015SE/webprogram/Paper252313.html"]
+		},
+		{
+			"lithostratigraphic_bed": "Westfield Fish Bed",
+			"description": "DO NOT USE no documentation",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/b1776"]
+		},
+		{
+			"lithostratigraphic_bed": "Wildcat Creek Beds",
+			"description": "DO NOT USE no documentation",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://palaeo-electronica.org/2011_3/14_strganac/strat.html"]
+		},
+		{
+			"lithostratigraphic_bed": "Woolwich and Reading Beds",
+			"description": "A Paleocene unit in the UK",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name_concept/35465"]
+		},
+		{
+			"lithostratigraphic_bed": "Down Cliff Sand Member Starfish Bed",
+			"description": "Fine-grained sandstone which yields exceptionally preserved ophiuroid fossils. Defines the lower boundary of the Down Cliff Sand Member, Simms, M.J., Chidlaw, N., Morton, N. and Page, K.N. (2004) British Lower Jurassic Stratigraphy, Geological Conservation Review Series, No. 30, Joint Nature Conservation Committee, Peterborough, 458 pp.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6946"],
+			"documentation_url": [
+				"https://data.jncc.gov.uk/data/cab38052-3314-4b62-80f7-5cc15b020617/gcr-v30-british-lower-jurassic-c2.pdf",
+				"https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=DCSA"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlithostratigraphic_bed",
+			"label": "Locality Attribute: Lithostratigraphic Beds",
+			"description": "Lithostratigraphic beds for use as locality attributes. "
+		}
+	]
+}

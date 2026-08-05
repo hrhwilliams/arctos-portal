@@ -1,0 +1,101 @@
+{
+	"data": [
+		{
+			"loan_type": "consumable",
+			"description": "Items in the loan are not expected to be returned.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "transfer of custody",
+			"description": "Items are transferred to another institution. All or some rights may be retained as specified in the loan.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "media",
+			"description": "Loan primarily involving media; specimen material or hard-copy archives may have been handled for digitizing purposes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "returnable",
+			"description": "Standard loan in which objects are expected to be returned.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "data",
+			"description": "Loan consists only of the data associated with cataloged items. No objects were physically handled. (All other loan types are associated with catalog item parts.)",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "legacy",
+			"description": "NOT PREFERRED. This may be applied to poorly-documented pre-Arctos loans which have been migrated to the current structure. It is recommended that such loans be researched and recorded using the appropriate type.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "deaccession",
+			"description": "A transaction that documents the process by which accessioned materials are permanently removed from a collection.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4701"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "education",
+			"description": "Loan purpose is for education, such as for a class or other curricula. This loan type describing purpose should be considered a transitory step to loan attribute implementation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6991"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "exhibit",
+			"description": "Loan purpose is for display, either in-house or external. This loan type describing purpose should be considered a transitory step to loan attribute implementation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6992"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "in house",
+			"description": "Loaned items did not leave the building, e.g. were used by a visiting researcher.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/3741"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "mixed",
+			"description": "NOT PREFERRED. This designation may be used for a mixture of consumable and returnable items, however it is preferable to create separate loans for each type.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2703"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "research",
+			"description": "Loan purpose is for research or other academic study. This loan type describing purpose should be considered a transitory step to loan attribute implementation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6990"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "pre-accession transaction",
+			"description": "Transaction that involved a collection item prior to its accession into the current collection, such as an exhibition.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4732"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "preparation",
+			"description": "Loan purpose is for object preparation such as fossil preparation (i.e., removing rock matrix from specimen), biological specimen preparation (i.e., taxidermy, pinning, etc) or other specialized handling of an object that will be returned. This loan type describing purpose should be considered a transitory step to loan attribute implementation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6993"],
+			"documentation_url": ""
+		},
+		{
+			"loan_type": "return of loan",
+			"description": "DO NOT USE. For objects received from another institution, create a Borrow",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctloan_type",
+			"label": "Transaction: Loan Types",
+			"description": "Loan Type"
+		}
+	]
+}

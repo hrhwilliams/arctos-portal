@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"specimen_event_type": "creation",
+			"description": "Event at which an item was created, manufactured, or otherwise made. Generally refers to human creation of art, cultural items, casts, molds, etc., but could be extended to e.g., nests.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "depiction",
+			"description": "Visual representation or conceptual portrayal of associated biological subject or locality. Generally used for images or art of people or places.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "use",
+			"description": "Event at which an item was used. Generally refers to human use of cultural items.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "collection",
+			"description": "Event at which an organism or object was removed from its functional cultural, biological, ecological, or archeological context.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/3884"],
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "encounter",
+			"description": "Event at which an organism or object was encountered but not removed from functional cultural, biological, ecological, or archeological context, but physical evidence was collected. Biopsies, trace evidence (e.g., feather, hair, scat, tail tip, ear clip,paint chip etc.) are appropriate here.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/3884"],
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "observation",
+			"description": "Event at which an organism or object was detected but not removed from its functional cultural, biological, ecological, or archeological context, and no physical evidence was collected. Human sightings, camera traps, and GPS telemetry data are appropriate here.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/3884"],
+			"documentation_url": ""
+		},
+		{
+			"specimen_event_type": "not detected",
+			"description": "Organism or object represented by identification(s) associated with the catalog record were not detected during the event.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7564"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctspecimen_event_type",
+			"label": "Object Event: Types",
+			"description": "event type"
+		}
+	]
+}

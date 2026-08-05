@@ -1,0 +1,43 @@
+{
+	"data": [
+		{
+			"contact_role": "administrative contact",
+			"description": "<b>Required</b> Agent responsible for administration of the collection. Will have the ability to grant access to shared media storage. Generally the person who can make financial decisions for the collection."
+		},
+		{
+			"contact_role": "Arctos Council Member",
+			"description": "<b>Recommended</b> The agent who is the Arctos Council Member representative for this collection. Will vote in Arctos Working Group Officer elections on behalf of the collection."
+		},
+		{
+			"contact_role": "associated party",
+			"description": "<b>Optional for collections publishing to GBIF</b> Agent who will appear as \"associatedParty\" in EML files generated as DarwinCore metadata. "
+		},
+		{
+			"contact_role": "creator",
+			"description": "<b>Required for collections publishing to GBIF</b> Agent who will appear as \"creator\" in EML files generated as DarwinCore collection metadata. From GBIF publishing documents - the people and organizations who created the resource [...] will be used to auto-generate the resource citation. "
+		},
+		{
+			"contact_role": "data quality",
+			"description": "<b>Required</b> Agent responsible for managing collection data and access, generally a collections manager. Will be the first point of contact for internal Arctos data issues."
+		},
+		{
+			"contact_role": "loan request",
+			"description": "<b>Optional</b> Agent to whom loan requests and reminders are sent."
+		},
+		{
+			"contact_role": "metadata provider",
+			"description": "<b>Required for collections publishing to GBIF</b> Agent who will appear as \"metadataProvider\" in EML files generated as Darwin Core collection metadata. From GBIF publishing documents - the people and organizations responsible for producing the resource metadata."
+		},
+		{
+			"contact_role": "technical support",
+			"description": "<b>Optional</b> Agent to whom technical issues should be addressed. By default, primary programmer is listed."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcoll_contact_role",
+			"label": "Manage Collection: Collection Contact Roles",
+			"description": "Collection Contact Roles"
+		}
+	]
+}

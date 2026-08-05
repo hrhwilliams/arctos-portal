@@ -1,0 +1,65 @@
+{
+	"data": [
+		{
+			"caste": "drone",
+			"description": "Drones are male bees from colonies of social bees.",
+			"issue_url": "",
+			"documentation_url": ["https://www.amentsoc.org/insects/glossary/terms/drone/"]
+		},
+		{
+			"caste": "gyne",
+			"description": "The primary reproductive female caste of social insects (especially ants, wasps, and bees of order Hymenoptera, as well as termites). Gynes are those destined to become queens.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6160"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gyne"]
+		},
+		{
+			"caste": "king",
+			"description": "In termites, the king helps found the colony with the queen and will continue to mate with the queen during his life.",
+			"issue_url": "",
+			"documentation_url": ["https://www.amentsoc.org/insects/glossary/terms/king/"]
+		},
+		{
+			"caste": "major",
+			"description": "In some species the workers and soldiers are dimorphic (of two sizes), with the larger individuals called major soldiers or workers and the smaller ones called minor soldiers or workers",
+			"issue_url": "",
+			"documentation_url": ["https://www.britannica.com/animal/termite/Nests"]
+		},
+		{
+			"caste": "minor",
+			"description": "In some species the workers and soldiers are dimorphic (of two sizes), with the larger individuals called major soldiers or workers and the smaller ones called minor soldiers or workers.",
+			"issue_url": "",
+			"documentation_url": ["https://www.britannica.com/animal/termite/Nests"]
+		},
+		{
+			"caste": "queen",
+			"description": "The Queen is the only female within a colony of social insects that can reproduce.",
+			"issue_url": "",
+			"documentation_url": ["https://www.amentsoc.org/insects/glossary/terms/queen/"]
+		},
+		{
+			"caste": "reproductive",
+			"description": "An adult eusocial insect capable of reproduction of unspecified sex (queen/gyne/drone).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7325"],
+			"documentation_url": ""
+		},
+		{
+			"caste": "soldier",
+			"description": "Sterile members of a eusocial insect colony whose primary function is defense.",
+			"issue_url": "",
+			"documentation_url": ["https://www.britannica.com/animal/termite/Nests"]
+		},
+		{
+			"caste": "worker",
+			"description": "Worker insects are those within social insect colonies (bees, ants, wasps and termites) that are not capable of reproducing.",
+			"issue_url": "",
+			"documentation_url": ["https://www.amentsoc.org/insects/glossary/terms/worker/"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcaste",
+			"label": "Collection Object Attribute: Caste Values",
+			"description": "Castes are groups of individuals within the same species of social insects that have a different appearance. This appearance is usually related to the role of that caste within the colony. https://www.amentsoc.org/insects/glossary/terms/castes/"
+		}
+	]
+}

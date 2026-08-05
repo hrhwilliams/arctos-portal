@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"catalog_number_format": "integer",
+			"description": "Catalog numbers must be positive integers. Arctos provides tools to predict the next number (e.g., data entry can leave catalog number blank), find gaps in sequences, search by ranges, clone full records, and provide GUIDs of the “expected” format. Sort may be numeric (1,2,,3…20). Only this format comes with these tools and abilities, and it is often worthwhile to convert existing mixed-string catalog “series” to Integer catalog numbers and store the old numbers as other IDs"
+		},
+		{
+			"catalog_number_format": "string",
+			"description": "With the exceptions of prohibited characters “/” (forward slash) and “ “ (space), any unique non-NULL string is accepted. No non-explicit (predictive, series- or range-based, etc.) tools are available. Search is by the string or substrings thereof. Sort will be character (1,2,…20…3)."
+		},
+		{
+			"catalog_number_format": "prefix-integer-suffix",
+			"description": "An integer is required, and may be accompanied by a prefix and/or suffix. The concatenation of prefix-integer-suffix must be unique. No non-explicit (predictive, series- or range-based, etc.) tools are available. Search is by the concatenation or substrings thereof. Sort will be character (1,2,…20…3). Recognized formats are any number of zeroes followed by an integer, or characters separated from integers by | (pipe), - (dash), . (period), ; (semicolon), or  (space).\r\n"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcatalog_number_format",
+			"label": "Manage Collection: Catalog Number Formats",
+			"description": "Catalog Number Format"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"chronostrat_era_erathem": "Mesoproterozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Mesoproterozoic"
+		},
+		{
+			"chronostrat_era_erathem": "Cenozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Cenozoic"
+		},
+		{
+			"chronostrat_era_erathem": "Paleoproterozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Paleoproterozoic | https://github.com/ArctosDB/arctos/issues/7362"
+		},
+		{
+			"chronostrat_era_erathem": "Mesozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Mesozoic"
+		},
+		{
+			"chronostrat_era_erathem": "Paleozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Paleozoic"
+		},
+		{
+			"chronostrat_era_erathem": "Neoproterozoic",
+			"description": "Wikipedia: https://en.wikipedia.org/wiki/Neoproterozoic | https://github.com/ArctosDB/arctos/issues/7362"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_era_erathem",
+			"label": "Locality Attribute: Eras/Erathems",
+			"description": "Eras/Erathems included in the International Chronostratigraphic Chart"
+		}
+	]
+}

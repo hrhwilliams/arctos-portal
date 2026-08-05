@@ -5,6 +5,7 @@ use tokio::net::TcpListener;
 #[cfg(test)]
 use tower::{ServiceExt, util::Oneshot};
 use tower_http::{
+    compression::CompressionLayer,
     cors::{Any, CorsLayer},
     trace::TraceLayer,
 };
@@ -19,8 +20,10 @@ impl App {
     pub fn new(app_state: AppState) -> Self {
         let router = axum::Router::new()
             .route("/api/search", get(routes::search))
-            // TODO .route("/api/schema") to download stats and stuff from elasticsearch/ arctos API
-            // TODO .route("/api/download") to download .csv.gz of data using elasticsearch indices
+            .route("/api/schema", get(routes::schema))
+            .route("/api/taxa", get(routes::taxa))
+            .route("/api/download", get(routes::download))
+            .layer(CompressionLayer::new())
             .layer(TraceLayer::new_for_http())
             .layer(
                 CorsLayer::new()

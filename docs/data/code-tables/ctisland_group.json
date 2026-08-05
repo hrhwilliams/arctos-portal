@@ -1,0 +1,1055 @@
+{
+	"data": [
+		{
+			"island_group": "Aleutian Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Alexander Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Andreanof Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Barren Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Barrier Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Canadian Arctic Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Channel Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Chugach Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cook Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Dry Tortugas",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Falkland Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Farallon Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Fiji Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Florida Keys",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Galapagos Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Garry Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Greater Antilles",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Gulf of California Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Hawaiian Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Herring Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Ilha de Sao Sebastiao",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Indonesian Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas Coronados",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas San Benito",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas Tres Marias",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas de Chincha",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas de La Bahia",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas de Todos Santos",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kashevarof Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kerguelen Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kermadec Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kodiak Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Komandorski Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kornati Group",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Kurile Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Lahave Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Las Marietas Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Lesser Antilles",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Los Coronados Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Madeira Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Magdalen Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Maldive Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Marble Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Mariana Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Marquesas Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Marshall Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Mascarene Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Midway Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Mingan Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Miskito Cays",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "New Hebrides",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "New Siberian Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "New Zealand",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Orkney Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Outer Hebrides",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Palau Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Parry Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Philippine Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Phoenix Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Plover Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Pribilof Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Puerto Rico",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Pye Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Queen Charlotte Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Queen Elizabeth Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Saaristo Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Samoa Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "San Francisco Bay Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "San Juan Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Sanak Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Sea Lion Rocks",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Seal Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Semidi Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Seychelles Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Shetland Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Shumagin Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Singapore",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Society Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Solomon Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "South Georgia Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "South Neptune Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "South Sandwich Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "South Shetland Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Spanish Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Svalbard",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Sverdrup Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Ten Thousand Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Tierra del Fuego Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Tonga Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Trinity Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Walrus Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Wellesley Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Aland Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Comoros Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas Revillagigedo",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cedar Keys",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Juan Fernandez Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "British Isles",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Vancouver Island",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Pleiades Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Bismarck Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Caroline Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Archipelago Los Roques",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Grand Manan Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Gordon Group",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Poplar Island Group",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Balearic Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Bahrain Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Long Island",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Chatham Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Antipodes Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Wake Island",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "East Frisian Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Dodecanese Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Azores",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Canary Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas de la Bahia",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Bardswell Group",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Beardslee Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Vestmannaeyjar",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Andaman Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Islas Las Marietas",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Bahama Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Chandeleur Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cape Verde Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cape Breton Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Tuamotu Archipelago",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cayman Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Afognak Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Inner Hebrides",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Chiswell Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "D'Entrecasteaux Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Scilly Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Farne Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Johnston Atoll",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Isles of Shoals",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Faroe Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Turks and Caicos Islands",
+			"description": "Turks and Caicos is an archipelago of 40 low-lying coral islands in the Atlantic Ocean, a British Overseas Territory southeast of the Bahamas.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Zanzibar Archipelago",
+			"description": "Several islands lying off the coast of East Africa in the Indian Ocean.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Mamanuca Islands",
+			"description": "he Mamanuca Islands of Fiji are a volcanic archipelago lying to the west of Nadi and to the south of the Yasawa Islands.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Lomaiviti Islands",
+			"description": "The Lomaiviti archipelago of Fiji consists of seven main islands and a number of smaller ones.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Izu Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Volcano Islands",
+			"description": "includes Iwo Jima",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Chiloe Archipelago",
+			"description": "The Chiloé Archipelago (Spanish: Archipiélago de Chiloé) consists of several islands lying off the coast of Chile. It is separated from mainland Chile by Chacao Channel in the north, the Sea of Chiloé in the east and Gulf of Corcovado to the southeast. All of the archipelago—except Desertores Islands, which are part of Palena Province—forms the province of Chiloé. The main island is Chiloé Island (Isla Grande de Chiloé).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Yasawa Islands",
+			"description": "The Yasawa Group is an archipelago of about 20 volcanic islands in the Western Division of Fiji",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Belcher Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Frisian Islands",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Paracel Islands",
+			"description": "A group of islands, reefs, banks and other maritime features in the South China Sea.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Nicobar Islands",
+			"description": "The Nicobar Islands are an archipelagic island chain in the eastern Indian Ocean",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Cocos Islands",
+			"description": "territory of Australia, located in the Indian Ocean, southwest of Christmas Island and approximately midway between Australia and Sri Lanka",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Gulf Islands",
+			"description": "The Gulf Islands are the islands in the Strait of Georgia (also known as Salish Sea or the Gulf of Georgia), between Vancouver Island and the mainland of British Columbia, Canada.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Lau Islands",
+			"description": "The Lau Islands (also called the Lau Group, the Eastern Group, the Eastern Archipelago) of Fiji are situated in the southern Pacific Ocean, just east of the Koro Sea.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Aeolian Islands",
+			"description": "The Aeolian Islands (/iːˈoʊliən/ ee-OH-lee-ən; Italian: Isole Eolie [ˈiːzole eˈɔːlje]; Sicilian: Ìsuli Eoli; Greek: Αιολίδες Νήσοι, romanized: Aiolídes Nísoi), sometimes referred to as the Lipari Islands or Lipari group (/ˈlɪpəri/ LIP-ə-ree, Italian: [ˈliːpari]) after their largest island, are a volcanic archipelago in the Tyrrhenian Sea north of Sicily",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Hebrides",
+			"description": "The Hebrides comprise a widespread and diverse archipelago off the west coast of mainland Scotland.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"island_group": "Austral Islands",
+			"description": "The Austral Islands (French: Îles Australes, officially Archipel des Australes; Tahitian: Tuha'a Pae) are the southernmost group of islands in French Polynesia, an overseas country of the French Republic in the South Pacific.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Austral_Islands"]
+		},
+		{
+			"island_group": "Camotes Islands",
+			"description": "A group of islands in the Camotes Sea, Philippines.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Camotes_Islands"]
+		},
+		{
+			"island_group": "Capricorn and Bunker Group",
+			"description": "The islands and reefs of the Capricorn and Bunker Group are situated astride the Tropic of Capricorn at the southern end of the Great Barrier Reef, approximately 80 kilometres east of Gladstone, which is situated on the central coast of the Gladstone Region, Queensland, Australia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Capricorn_and_Bunker_Group"]
+		},
+		{
+			"island_group": "Chagos Archipelago",
+			"description": "The Chagos Archipelago or Chagos Islands (formerly the Bassas de Chagas, and later the Oil Islands) is a group of seven atolls comprising more than 60 individual tropical islands in the Indian Ocean about 500 kilometres (310 mi) south of the Maldives archipelago. This chain of islands is the southernmost archipelago of the Chagos-Laccadive Ridge, a long submarine mountain range in the Indian Ocean.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chagos_Archipelago"]
+		},
+		{
+			"island_group": "Dahlak Archipelago",
+			"description": "The Dahlak Archipelago (Arabic: أرخبيل دهلك‎‎, Ge'ez: ዳህላክ) is an island group located in the Red Sea near Massawa, Eritrea.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Dahlak_Archipelago"]
+		},
+		{
+			"island_group": "Dampier Archipelago",
+			"description": "The Dampier Archipelago is a group of islands near Dampier, Western Australia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Dampier_Archipelago"]
+		},
+		{
+			"island_group": "Gilbert Islands",
+			"description": "The Gilbert Islands (Gilbertese: Tungaru; formerly Kingsmill or King's-Mill Islands) are a chain of sixteen atolls and coral islands in the Pacific Ocean, about halfway between Papua New Guinea and Hawaii. From 1976 to 1979, they were the “British colony of the Gilbert Islands”, and before that, from 1916 to 1975, they were the “Gilbert and Ellice Islands colony”. They constitute the main part of the nation of Kiribati.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gilbert_Islands"]
+		},
+		{
+			"island_group": "Great Barrier Reef",
+			"description": "The reef is located in the Coral Sea, off the coast of Queensland, Australia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Great_Barrier_Reef"]
+		},
+		{
+			"island_group": "Islas Secas",
+			"description": "The Islas Secas (Dry Islands) is a small archipelago in the Gulf of Chiriqui on the Pacific coast of Panama consisting of about sixteen islands.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Islas_Secas"]
+		},
+		{
+			"island_group": "Mergui Archipelago",
+			"description": "The Mergui Archipelago (also Myeik Archipelago or Myeik Kyunzu; Burmese: မြိတ်ကျွန်းစု) is an archipelago in far southern Myanmar (Burma) and is part of the Tanintharyi Region.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Mergui_Archipelago"]
+		},
+		{
+			"island_group": "Ambai Islands",
+			"description": "An archipelago of small islands off the southern coast of Yapen Island, in Cenderawasih Bay and Papua Province in Western New Guinea, northeastern Indonesia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ambai_Islands"]
+		},
+		{
+			"island_group": "Khuriya Muriya Islands",
+			"description": "A group of five islands in the Arabian Sea, 40 km (25 mi) off the southeastern coast of Oman. The islands form part of the province of Shalim and the Hallaniyat Islands in the governorate of Dhofar.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Khuriya_Muriya_Islands"]
+		},
+		{
+			"island_group": "Line Islands",
+			"description": "Teraina Islands or Equatorial Islands, is a chain of atolls (with partially or fully enclosed lagoons) and coral islands (with a surrounding reef) located in the equatorial Northern Pacific Ocean. The 11 islands stretch for 2,350 kilometres (1,460 miles) in a northwest–southeast direction.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Line_Islands"]
+		},
+		{
+			"island_group": "Ogasawara Islands",
+			"description": "The Bonin Islands, also known as the Ogasawara Islands or, Yslas del Arzobispo, are an archipelago of over 30 subtropical and tropical islands, some 1,000 kilometres (540 nmi; 620 mi) directly south of Tokyo, Japan.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bonin_Islands"]
+		},
+		{
+			"island_group": "Pearl Islands",
+			"description": "The Pearl Islands (Spanish: Archipiélago de las Perlas or Islas de las Perlas) is a group of 200 or more islands and islets (many tiny and uninhabited) lying about 30 miles (48 km) off the Pacific coast of Panama in the Gulf of Panama.",
+			"issue_url": "",
+			"documentation_url": ["https://pearl-islands.com"]
+		},
+		{
+			"island_group": "Penghu Islands",
+			"description": "Or Pescadores Islands are an archipelago of 90 islands and islets in the Taiwan Strait.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Penghu"]
+		},
+		{
+			"island_group": "Ryukyu Islands",
+			"description": "The Ryukyu Islands (琉球諸島[1] Ryūkyū-shotō), more commonly known in Japanese as the Nansei Islands (南西諸島 Nansei-shotō, lit. \"Southwest Islands\") and also known as the Ryukyu Arc (琉球弧 Ryūkyū-ko), are a chain of Japanese islands that stretch southwest from Kyushu to Taiwan: the Ōsumi, Tokara, Amami, Okinawa, and Sakishima Islands (further divided into the Miyako and Yaeyama Islands), with Yonaguni the southernmost.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ryukyu_Islands"]
+		},
+		{
+			"island_group": "Schouten Islands",
+			"description": "The Schouten Islands (Kepulauan Biak, also Biak Islands or Geelvink Islands) are an island group of Papua province, eastern Indonesia in the Cenderawasih Bay (or Geelvink Bay) 50 km off the north-western coast of the island of New Guinea. The group consists of the main islands of Biak, Supiori and Numfor, and numerous smaller islands.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Schouten_Islands"]
+		},
+		{
+			"island_group": "Tuscan Archipelago",
+			"description": "The Tuscan Archipelago is a chain of islands between the Ligurian Sea and Tyrrhenian Sea, west of Tuscany, Italy.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tuscan_Archipelago"]
+		},
+		{
+			"island_group": "Langkawi Archipelago",
+			"description": "An archipelago of 104 islands in the Andaman Sea, some 30km off the mainland coast of northwestern Malaysia.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctisland_group",
+			"label": "Higher Geography: Island Group",
+			"description": "groups of islands"
+		}
+	]
+}

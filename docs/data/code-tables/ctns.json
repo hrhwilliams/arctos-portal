@@ -1,0 +1,19 @@
+{
+	"data": [
+		{
+			"n_or_s": "N",
+			"description": "north"
+		},
+		{
+			"n_or_s": "S",
+			"description": "south"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctns",
+			"label": "Locality: North/South",
+			"description": "north-south direction"
+		}
+	]
+}

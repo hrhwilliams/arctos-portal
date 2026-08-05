@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"attribute_type": "description",
+			"description": "Former column \"descr\" - a description of the collection.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "alternate identifier",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "east bounding coordinate",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "general taxonomic coverage",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "geographic description",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "north bounding coordinate",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "purpose of collection",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "south bounding coordinate",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "specimen preservation method",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "taxon name rank",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "taxon name value",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "time coverage",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		},
+		{
+			"attribute_type": "west bounding coordinate",
+			"description": "DarwinCore term to describe collection metadata.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6746"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcollection_attribute_type",
+			"label": "Collection Attributes control",
+			"description": "Transferred DarwinCore terms to describe collections."
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"data": [
+		{
+			"nomenclatural_code": "ICZN",
+			"description": "International Code of Zoological Nomenclature. Accepts only Latin characters."
+		},
+		{
+			"nomenclatural_code": "ICBN",
+			"description": "International Code of Botanical Nomenclature. Accepts Proper Case Latin strings for higher taxonomy; Latin characters, the multiplication sign, and dash for Genus through \"subspecies.\""
+		},
+		{
+			"nomenclatural_code": "unknown",
+			"description": "Default value for names which have not been properly filed yet. This should never be used for the creation of new names."
+		},
+		{
+			"nomenclatural_code": "noncompliant",
+			"description": "Names which are explicitly disallowed by the various Codes, but which have current or historical value. Examples include botanical names containing umlauts."
+		},
+		{
+			"nomenclatural_code": "ICPN",
+			"description": "International Code of Phylogenetic Nomenclature, or PhyloCode, a set of rules governing phylogenetic nomenclature to regulate the naming of clades, governance of species names is left to rank-based Nomenclature codes (ICN, ICZN, ICBN, ICTV)."
+		},
+		{
+			"nomenclatural_code": "ICNP",
+			"description": "International Code of Nomenclature of Prokaryotes. Formerly the International Code of Nomenclature of Bacteria (ICNB) or Bacteriological Code (BC)."
+		},
+		{
+			"nomenclatural_code": "ICTV",
+			"description": "International Committee on Taxonomy of Viruses"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctnomenclatural_code",
+			"label": "Taxonomy: Nomenclatural Codes",
+			"description": "nomenclatural code values"
+		}
+	]
+}

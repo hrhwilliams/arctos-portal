@@ -1,0 +1,653 @@
+{
+	"data": [
+		{
+			"chronostrat_stage_age": "Capitanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Capitanian",
+				"https://macrostrat.org/sift/#/interval/224"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Kungurian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Kungurian",
+				"https://macrostrat.org/sift/#/interval/79"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Selandian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Selandian",
+				"https://macrostrat.org/sift/#/interval/273"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Serravallian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Serravallian",
+				"https://macrostrat.org/sift/#/interval/16"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Tortonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Tortonian",
+				"https://macrostrat.org/sift/#/interval/15"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Zanclean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Zanclean",
+				"https://macrostrat.org/sift/#/interval/12"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Famennian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Famennian"]
+		},
+		{
+			"chronostrat_stage_age": "Aquitanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Aquitanian_(stage)",
+				"https://macrostrat.org/sift/#/interval/19"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Artinskian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Artinskian",
+				"https://macrostrat.org/sift/#/interval/81"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Eifelian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Eifelian",
+				"https://macrostrat.org/sift/#/interval/100"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Piacenzian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Piacenzian",
+				"https://macrostrat.org/sift/#/interval/11"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Roadian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Roadian",
+				"https://macrostrat.org/sift/#/interval/226"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Wordian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Wordian",
+				"https://macrostrat.org/sift/#/interval/225"
+			]
+		},
+		{
+			"chronostrat_stage_age": "Chibanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chibanian"]
+		},
+		{
+			"chronostrat_stage_age": "Albian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Albian"]
+		},
+		{
+			"chronostrat_stage_age": "Aptian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Aptian"]
+		},
+		{
+			"chronostrat_stage_age": "Bajocian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bajocian"]
+		},
+		{
+			"chronostrat_stage_age": "Barremian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Barremian"]
+		},
+		{
+			"chronostrat_stage_age": "Bartonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bartonian"]
+		},
+		{
+			"chronostrat_stage_age": "Campanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Campanian"]
+		},
+		{
+			"chronostrat_stage_age": "Carnian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Carnian"]
+		},
+		{
+			"chronostrat_stage_age": "Cenomanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cenomanian"]
+		},
+		{
+			"chronostrat_stage_age": "Changhsingian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Changhsingian"]
+		},
+		{
+			"chronostrat_stage_age": "Chattian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chattian"]
+		},
+		{
+			"chronostrat_stage_age": "Coniacian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Coniacian"]
+		},
+		{
+			"chronostrat_stage_age": "Danian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Danian"]
+		},
+		{
+			"chronostrat_stage_age": "Dapingian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Dapingian"]
+		},
+		{
+			"chronostrat_stage_age": "Jiangshanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Jiangshanian"]
+		},
+		{
+			"chronostrat_stage_age": "Kasimovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Kasimovian"]
+		},
+		{
+			"chronostrat_stage_age": "Katian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Katian"]
+		},
+		{
+			"chronostrat_stage_age": "Kimmeridgian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Kimmeridgian"]
+		},
+		{
+			"chronostrat_stage_age": "Ladinian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ladinian"]
+		},
+		{
+			"chronostrat_stage_age": "Langhian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Langhian"]
+		},
+		{
+			"chronostrat_stage_age": "Lochkovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lochkovian"]
+		},
+		{
+			"chronostrat_stage_age": "Ludfordian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ludfordian"]
+		},
+		{
+			"chronostrat_stage_age": "Lutetian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lutetian"]
+		},
+		{
+			"chronostrat_stage_age": "Maastrichtian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Maastrichtian"]
+		},
+		{
+			"chronostrat_stage_age": "Meghalayan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Meghalayan"]
+		},
+		{
+			"chronostrat_stage_age": "Messinian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Messinian"]
+		},
+		{
+			"chronostrat_stage_age": "Sandbian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sandbian"]
+		},
+		{
+			"chronostrat_stage_age": "Santonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Santonian"]
+		},
+		{
+			"chronostrat_stage_age": "Serpukhovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Serpukhovian"]
+		},
+		{
+			"chronostrat_stage_age": "Sheinwoodian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sheinwoodian"]
+		},
+		{
+			"chronostrat_stage_age": "Sinemurian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sinemurian"]
+		},
+		{
+			"chronostrat_stage_age": "Telychian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Telychian"]
+		},
+		{
+			"chronostrat_stage_age": "Thanetian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Thanetian"]
+		},
+		{
+			"chronostrat_stage_age": "Tithonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tithonian"]
+		},
+		{
+			"chronostrat_stage_age": "Toarcian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Toarcian"]
+		},
+		{
+			"chronostrat_stage_age": "Tournaisian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tournaisian"]
+		},
+		{
+			"chronostrat_stage_age": "Ypresian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ypresian"]
+		},
+		{
+			"chronostrat_stage_age": "Aalenian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Aalenian"]
+		},
+		{
+			"chronostrat_stage_age": "Aeronian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Aeronian"]
+		},
+		{
+			"chronostrat_stage_age": "Anisian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anisian"]
+		},
+		{
+			"chronostrat_stage_age": "Asselian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Asselian"]
+		},
+		{
+			"chronostrat_stage_age": "Bashkirian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bashkirian"]
+		},
+		{
+			"chronostrat_stage_age": "Bathonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bathonian"]
+		},
+		{
+			"chronostrat_stage_age": "Berriasian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Berriasian"]
+		},
+		{
+			"chronostrat_stage_age": "Burdigalian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Burdigalian"]
+		},
+		{
+			"chronostrat_stage_age": "Calabrian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Calabrian_(stage)"]
+		},
+		{
+			"chronostrat_stage_age": "Callovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Callovian"]
+		},
+		{
+			"chronostrat_stage_age": "Cambrian Stage 10",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cambrian_Stage_10"]
+		},
+		{
+			"chronostrat_stage_age": "Cambrian Stage 2",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cambrian_Stage_2"]
+		},
+		{
+			"chronostrat_stage_age": "Cambrian Stage 3",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cambrian_Stage_3"]
+		},
+		{
+			"chronostrat_stage_age": "Cambrian Stage 4",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cambrian_Stage_4"]
+		},
+		{
+			"chronostrat_stage_age": "Darriwilian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Darriwilian"]
+		},
+		{
+			"chronostrat_stage_age": "Drumian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Drumian"]
+		},
+		{
+			"chronostrat_stage_age": "Emsian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Emsian"]
+		},
+		{
+			"chronostrat_stage_age": "Floian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Floian"]
+		},
+		{
+			"chronostrat_stage_age": "Fortunian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fortunian"]
+		},
+		{
+			"chronostrat_stage_age": "Frasnian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Frasnian"]
+		},
+		{
+			"chronostrat_stage_age": "Gelasian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gelasian"]
+		},
+		{
+			"chronostrat_stage_age": "Givetian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Givetian"]
+		},
+		{
+			"chronostrat_stage_age": "Gorstian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gorstian"]
+		},
+		{
+			"chronostrat_stage_age": "Greenlandian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Greenlandian"]
+		},
+		{
+			"chronostrat_stage_age": "Guzhangian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Guzhangian"]
+		},
+		{
+			"chronostrat_stage_age": "Gzhelian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gzhelian"]
+		},
+		{
+			"chronostrat_stage_age": "Hauterivian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hauterivian"]
+		},
+		{
+			"chronostrat_stage_age": "Hettangian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hettangian"]
+		},
+		{
+			"chronostrat_stage_age": "Hirnantian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Hirnantian"]
+		},
+		{
+			"chronostrat_stage_age": "Homerian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Homerian"]
+		},
+		{
+			"chronostrat_stage_age": "Induan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Induan"]
+		},
+		{
+			"chronostrat_stage_age": "Moscovian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Moscovian_(Carboniferous)"]
+		},
+		{
+			"chronostrat_stage_age": "Norian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Norian"]
+		},
+		{
+			"chronostrat_stage_age": "Northgrippian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Northgrippian"]
+		},
+		{
+			"chronostrat_stage_age": "Olenekian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Olenekian"]
+		},
+		{
+			"chronostrat_stage_age": "Oxfordian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Oxfordian_(stage)"]
+		},
+		{
+			"chronostrat_stage_age": "Paibian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Paibian"]
+		},
+		{
+			"chronostrat_stage_age": "Pliensbachian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Pliensbachian"]
+		},
+		{
+			"chronostrat_stage_age": "Pragian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Pragian"]
+		},
+		{
+			"chronostrat_stage_age": "Priabonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Priabonian"]
+		},
+		{
+			"chronostrat_stage_age": "Rhaetian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rhaetian"]
+		},
+		{
+			"chronostrat_stage_age": "Rhuddanian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rhuddanian"]
+		},
+		{
+			"chronostrat_stage_age": "Rupelian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rupelian"]
+		},
+		{
+			"chronostrat_stage_age": "Sakmarian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sakmarian"]
+		},
+		{
+			"chronostrat_stage_age": "Tremadocian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tremadocian"]
+		},
+		{
+			"chronostrat_stage_age": "Turonian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Turonian"]
+		},
+		{
+			"chronostrat_stage_age": "Upper Pleistocene",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Late_Pleistocene"]
+		},
+		{
+			"chronostrat_stage_age": "Valanginian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Valanginian"]
+		},
+		{
+			"chronostrat_stage_age": "Visean",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Vis%C3%A9an"]
+		},
+		{
+			"chronostrat_stage_age": "Wuchiapingian",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wuchiapingian"]
+		},
+		{
+			"chronostrat_stage_age": "Wuliuan",
+			"description": "lacks documentation do not use",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wuliuan"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_stage_age",
+			"label": "Locality Attribute: Stages/Ages",
+			"description": "Stages/Ages included in the International Chronostratigraphic Chart."
+		}
+	]
+}

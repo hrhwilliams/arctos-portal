@@ -1,0 +1,149 @@
+{
+	"data": [
+		{
+			"id_references": "self",
+			"description": "Refers primarily to the current cataloged item. GenBank numbers referencing sequences of this individual or collector numbers referring to events leading to this specimen belong here. No reciprocal.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "mate of",
+			"description": "Refers to a cataloged item that was a mate of the organism in the current record. Reproduction is implied. Reciprocal relationship is \"mate of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "sibling of",
+			"description": "Refers to a cataloged item that is the biological sibling of the organism in the current record. Reciprocal relationship is \"sibling of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "in amplexus with",
+			"description": "Refers to a cataloged item that was (presumably found at time of collection) in amplexus with the organism in the current record. No implications of reproduction are intended. Reciprocal relationship is \"in amplexus with.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "collected with",
+			"description": "Refers to a cataloged item that was collected in the field with the organism in the current record, but only when the relationship between individuals is unclear. Do not use if the relationship (e.g., mate of, littermate of, offspring of, parasite of, etc.) is known. Do not use for split lots of individuals of the same taxon, use \"same lot as\". Reciprocal relationship is \"collected with.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "parasite of",
+			"description": "Refers to a cataloged item that was the host of the organism in the current record. (The current record is a parasite.) Reciprocal relationship is \"host of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "in same matrix as",
+			"description": "Specimens which are embedded in the same mass of rock and cannot be physically separated without additional preparation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4868"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "ate",
+			"description": "Refers to a cataloged item that was eaten by the organism in the current record. Reciprocal relationship is \"eaten by.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "eaten by",
+			"description": "Refers to a cataloged item that ingested the organism in the current record. Reciprocal relationship is \"ate.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "offspring of",
+			"description": "Refers to a cataloged item that is the biological parent of the organism in the current record. (Such offspring may often be embryos.) Reciprocal relationship is \"parent of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "parent of",
+			"description": "Refers to a cataloged item that is the biological offspring of the organism in the current record. Reciprocal relationship is \"offspring of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "depicted as",
+			"description": "The cataloged object is shown or represented by the cataloged object with the related identifier. Reciprocal relationship is depiction of.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4796"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "depiction of",
+			"description": "The cataloged object shows or represents the object represented by the related identifier. Reciprocal relationship is depicted as.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4796"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "host of parasite",
+			"description": "Refers to a record that was a parasite of the organism in the current record. Reciprocal relationship is \"parasite of.\"",
+			"issue_url": ["https://github.com/ArctosDB/dev/issues/304"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "same lot as",
+			"description": "Refers to a cataloged item that originally shared the same lot( individuals of the same taxon sharing the same collecting event) as the organism in the current record. Reciprocal relationship is \"same lot as\". Also Groupings into which items are divided to be sold or for another purpose.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300411308"]
+		},
+		{
+			"id_references": "host of symbiont",
+			"description": "References a biotic interaction in which an organism is used by another organism as a habitat (typically the physically larger of the two organisms). The association may be amensal, commensal, mutualistic, parasitic, etc.; if the symbiotic relationship is parasitic, please use \"host of\". Reciprocal relationship of this term is \"symbiont of\".",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8384"],
+			"documentation_url": ["https://doi.org/10.1007/978-3-319-28170-4_2"]
+		},
+		{
+			"id_references": "mounted with",
+			"description": "Refers to a cataloged item that is physically associated with the specified object through preparation in such a way that they cannot be easily separated (a loan of one object, requires a loan of all associated objects). Examples include two taxidermy mounts on a single base, two different parasites on a single slide, or two cataloged items mounted on a on a single herbarium sheet.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4825"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "same edition as",
+			"description": "Groups of multiples of one work issued together, such as of a book, print, photograph, or cast sculpture. All copies of a book, print, etc., produced from substantially the same master, and issued at one time are part of the same edition.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300121294"]
+		},
+		{
+			"id_references": "same individual as",
+			"description": "Refers to a cataloged item that is the same biological individual specimen or individual cultural object as described in the current record. For example, when parts and tissues are cataloged by separate institutions or when two individually cataloged items are refit following conservation treatment. Reciprocal relationship is \"same individual as.\"",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5547"],
+			"documentation_url": ""
+		},
+		{
+			"id_references": "same series as",
+			"description": "A conceptual grouping of visual arts works, literary works, or performance art created in succession by the same author, artist, or studio and intended by the creator(s) to be seen together or in succession as a cycle of works. Works in a series typically share the same or related subjects, the same or similar media, or other characteristics, but their defining characteristic is that they were intended to be conceptually related as a series. Individual items in a series may be cataloged separately and linked to the series.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300027349"]
+		},
+		{
+			"id_references": "symbiont of",
+			"description": "References a biotic interaction in which an organism uses another organism as a habitat. The association may be amensal, commensal, mutualistic, parasitic, etc.; if the symbiotic relationship is parasitic, please use \"parasite of\". Reciprocal relationship of this term is \"host of symbiont\".",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8384"],
+			"documentation_url": ["https://doi.org/10.1007/978-3-319-28170-4_2"]
+		},
+		{
+			"id_references": "littermate or nestmate of",
+			"description": "Refers to a cataloged item that was a littermate or nestmate of the organism in the current record. No indication of relatedness is intended; use \"sibling\" if that is known. This is suitable for all individuals found in a nest (including e.g., nest parasites) or in an apparent but unconfirmed litter or family group. Reciprocal relationship is \"littermate or nestmate of.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"id_references": "associated with",
+			"description": "The cataloged item was or is physically in contact with, or has a shared connection to, the related cataloged item. Reciprocal relationship is \"associated with\".",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/87"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctid_references",
+			"label": "Collection Object: Relationships to Other Identifier",
+			"description": "Type of relationship between two cataloged items; the OTHER which \"owns\" the identifier."
+		}
+	]
+}

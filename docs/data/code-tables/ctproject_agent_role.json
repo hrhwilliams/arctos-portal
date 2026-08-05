@@ -1,0 +1,95 @@
+{
+	"data": [
+		{
+			"project_agent_role": "entered by",
+			"description": "Agent initially creating the Project. Should not be altered.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"project_agent_role": "edited by",
+			"description": "Agent editing the (core, not including attachments) Project. Should not be altered.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"project_agent_role": "Academic Advisor",
+			"description": "Professional who provides a series of intentional interactions with a curriculum, a pedagogy, and a set of student learning outcomes.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Academic_advising"]
+		},
+		{
+			"project_agent_role": "Co-PI",
+			"description": "A co-investigator (Co-I) assists the principal investigator in the management and leadership of the research project. There may be a number of co-investigators supporting a PI.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Principal_investigator"]
+		},
+		{
+			"project_agent_role": "Graduate Student",
+			"description": "A student attending a school that awards advanced academic degrees (e.g., master's and doctoral degrees) with the general requirement that students must have earned a previous undergraduate (bachelor's) degree.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Graduate_school"]
+		},
+		{
+			"project_agent_role": "Post-doctoral Associate",
+			"description": "Also referred to as a postdoc, is a person professionally conducting research after the completion of their doctoral studies (typically a PhD).",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Postdoctoral_researcher"]
+		},
+		{
+			"project_agent_role": "Principal Investigator",
+			"description": "The holder of an independent grant and the lead researcher for the grant project. Also referred to as PI. The PI is the person who takes direct responsibility for completion of a funded project, directing the research and reporting directly to the funding agency.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Principal_investigator"]
+		},
+		{
+			"project_agent_role": "Project Coordinator",
+			"description": "The person who helps a group of people to work together better, understand their common objectives, and plan how to achieve these objectives.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Facilitator"]
+		},
+		{
+			"project_agent_role": "Research Assistant",
+			"description": "A project researcher without an advanced degree. In contrast to a research associate, a research assistant often does not have a graduate degree, such as a master's (e.g. Master of Science) or in some cases Master of Engineering or a doctoral degree.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Research_associate"]
+		},
+		{
+			"project_agent_role": "Research Associate",
+			"description": "A project researcher with an advanced degree who is not considered a Post-doctoral Associate. In contrast to a research assistant, a research associate often has a graduate degree, such as a master's (e.g. Master of Science) or in some cases Master of Engineering or a doctoral degree.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Research_associate"]
+		},
+		{
+			"project_agent_role": "Secondary School Student",
+			"description": "Any student enrolled in a high school, or secondary school, earning credits for coursework towards a diploma. In the US this would be any student enrolled in grade 9-12, or equivalent.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4294"],
+			"documentation_url": ""
+		},
+		{
+			"project_agent_role": "Sponsor",
+			"description": "Organization or person supporting an event, activity, person, or organization financially or through the provision of products or services. Note: funding information should be provided if available.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sponsor_(commercial)"]
+		},
+		{
+			"project_agent_role": "Undergraduate Student",
+			"description": "A student enrolled in education conducted after secondary education and prior to postgraduate education. This typically includes all post-secondary programs up to the level of a bachelor's degree.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Undergraduate_education"]
+		},
+		{
+			"project_agent_role": "Volunteer",
+			"description": "An individual or group freely giving time and labor to the project.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Volunteering"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctproject_agent_role",
+			"label": "Project: Agent Roles",
+			"description": "project agent role"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"data": [
+		{
+			"download_purpose": "curatorial",
+			"description": "Data will be used for purposes of curation."
+		},
+		{
+			"download_purpose": "personal",
+			"description": "Data will be used for purposes other than education or research."
+		},
+		{
+			"download_purpose": "educational",
+			"description": "Data will be used for teaching, informal learning, or online educational activities. Please acknowledge the individual institutions that provided any data used for educational purposes."
+		},
+		{
+			"download_purpose": "research",
+			"description": "Data will be used for scientific investigation. Data downloaded for research purposes should be cited according to the individual institutional policies in any resulting publications, presentation or other research products including online data repositories. <a href=\"https://arctosdb.org/arctosdata-policy/\" class=\"external\">Arctos Data Use Policy</a>\r\n"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctdownload_purpose",
+			"label": "Download Purpose",
+			"description": "Reason why data are downloaded."
+		}
+	]
+}

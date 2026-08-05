@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"monetary_units": "British pound sterling",
+			"description": "The British pound sterling (symbol: £; code: GBP; referred to as the pound, pound sterling, or colloquially quid) is the official currency of the United Kingdom and several of its territories.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6527"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Pound_sterling"]
+		},
+		{
+			"monetary_units": "US dollar",
+			"description": "The United States dollar (symbol: $; code: USD; also abbreviated US$ or U.S. Dollar, to distinguish it from other dollar-denominated currencies; referred to as the dollar, U.S. dollar, American dollar, or colloquially buck) is the official currency of the United States and several other countries.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/United_States_dollar"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmonetary_units",
+			"label": "Units of Monetary Value",
+			"description": "monetary units"
+		}
+	]
+}

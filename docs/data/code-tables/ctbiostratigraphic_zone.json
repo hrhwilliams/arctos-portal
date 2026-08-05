@@ -1,0 +1,330 @@
+{
+	"data": [
+		{
+			"biostratigraphic_zone": "A-P Zone; Tj4; Arctocyon ferox - Pantolambda cavirictum",
+			"description": "The stratigraphic interval between the lowest occurrence of Arcytocyon ferox and the lowest occurrence of Pantolambda cavirictum at the head of Kutz Canyon, San Juan Basin, New Mexico. Williamson, 1996 p.52",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Balatonites shoshonensis",
+			"description": "A middle Triassic ammonite range zone of North America. Voros 2014",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1556/ceugeol.57.2014.4.1"]
+		},
+		{
+			"biostratigraphic_zone": "Bolaspidella",
+			"description": "A middle to late Cambrian trilobite range zone of North America. Johnston et al. 2009",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/j.palaeo.2009.02.015"]
+		},
+		{
+			"biostratigraphic_zone": "Columbites parisianus",
+			"description": "A lower Triassic ammonite range zone of western North America. Jenks et al. 2013",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10011787"]
+		},
+		{
+			"biostratigraphic_zone": "Discoscaphites iris",
+			"description": "A Maastrichtian ammonite assemblage zone in North America. Landman et al. 2004",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5124"],
+			"documentation_url": [
+				"https://doi.org/10.1206/0003-0090(2004)287%253C0001:CFTTBI%253E2.0.CO;2"
+			]
+		},
+		{
+			"biostratigraphic_zone": "Douvilleiceras mammillatum",
+			"description": "A Lower Albian ammonite zone primarily in Europe. Reboulet et al. 2014",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/j.cretres.2014.04.001"]
+		},
+		{
+			"biostratigraphic_zone": "E-A Zone; Tj3; Ellipsodon grangeri - Arctocyon ferox",
+			"description": "The stratigraphic interval between the lowest occurrence of Ellipsodon grangeri and the first occurrence of Arcytocyon ferox in the Nacimiento Formation in Kutz Canyon, San Juan Basin, New Mexico. Williamson, 1996 p.52",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Frankites sutherlandi",
+			"description": "An Upper Ladinian ammonite zone in North America.Balini 2008",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1666/05-049.1"]
+		},
+		{
+			"biostratigraphic_zone": "Gymnotoceras rotelliformis",
+			"description": "A late Anisian ammonite range zone in North America. Silberling and Nichols 1982",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/pp1207"]
+		},
+		{
+			"biostratigraphic_zone": "H-T Zone; Pc1; Hemithlaeus kowalevskianus-Taeniolabis taoensis",
+			"description": "The stratigraphic interval between the first occurrence of the periptychid \"condylarth\" Hemithlaeus kowalevskianus and the first occurance of the taeniolabidid multituberculate Taeniolabis taoensis in the Nacimiento Formation, De-na-zin Wash, San Juan Basin, New Mexico. Williamson, 1996 p.49",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Meekoceras gracilitatis",
+			"description": "A lower Triassic ammonite zone in North America. Silberling and Tozer 1968",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1130/SPE110-p1"]
+		},
+		{
+			"biostratigraphic_zone": "M Zone; Tj6; Mixodectes pugens",
+			"description": "The stratigraphic interval between the first and last occurrence of Mixodectes pungens in the Nacimiento Formation. Williamson, 1996 p.52",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Nevadisculites taylori",
+			"description": "A middle Anisian ammonite range zone in Nevada. Bucher 1988",
+			"issue_url": "",
+			"documentation_url": [
+				"http://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=7169394"
+			]
+		},
+		{
+			"biostratigraphic_zone": "Parafrechites meeki",
+			"description": "A late Anisian ammonite range zone in North America. Silberling and Nichols 1982",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/pp1207"]
+		},
+		{
+			"biostratigraphic_zone": "P-E Zone; Tj2; Protoselene opisthacus - Ellipsodon grangeri",
+			"description": "The stratigraphic interval between the lowest occurrence of Protoslene opisthacus and the lowest occurrence of Ellipsodon grangeri. Williamson, 1996 p.51",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "P-M Zone; Tj5; Pantolambda cavirictum - Mixodectes pugens",
+			"description": "The stratigraphic interval between the first occurrence of the pantodont Pantolambda cavirictum and the first occurrence of mixodectid Mixodectes pungens in the Nacimiento Formation at the head of Kimbeto Wash. Williamson, 1996 p.52",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Proptychites candidus",
+			"description": "A Dienerian ammonite zone in Canada. Ware et al. 2011",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1007/s00015-011-0055-3"]
+		},
+		{
+			"biostratigraphic_zone": "Shipingia hebaozhaiensis",
+			"description": "A Norian Conchostran range zone in North America. Weems and Lucas 2015",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10009076"]
+		},
+		{
+			"biostratigraphic_zone": "T-P Zone; Pc2; Taeniolabis taoensis - Periptychus carinidens",
+			"description": "The stratigraphic interval between the first occurrence of the taeniolabidid multituberculate Taeniolabis taoensis and the first occurrence of the periptychid \"condylarth\" Periptychus carinidens in the lithologic section of the Nacimiento Formation exposed in De-na-zin Wash, San Juan Basin, New Mexico.  Williamson, 1996 p.50",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Shipingia mcdonaldi",
+			"description": "A Norian Conchostran range zone in North America. Weems and Lucas 2015",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10009076"]
+		},
+		{
+			"biostratigraphic_zone": "Shipingia olseni",
+			"description": "A Norian Conchostran range zone in North America. Weems and Lucas 2015",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10009076"]
+		},
+		{
+			"biostratigraphic_zone": "Shipingia weemsi - Euesterhia buravasi",
+			"description": "A Norian Conchostran interval zone in North America. Weems and Lucas 2015",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10009076"]
+		},
+		{
+			"biostratigraphic_zone": "Trachyceras desatoyense",
+			"description": "A Lower Carnian range zone in North America. Balini 2008",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1666/05-049.1"]
+		},
+		{
+			"biostratigraphic_zone": "Acrochordiceras hyatti",
+			"description": "A middle Anisian ammonite range zone in North America. Silberling and Nichols 1982.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6322"],
+			"documentation_url": ["https://doi.org/10.3133/pp1207"]
+		},
+		{
+			"biostratigraphic_zone": "Anasibirites kingianus",
+			"description": "An Early Triassic ammonite range zone in North America. Brayard et al. 2013.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6327"],
+			"documentation_url": ["https://doi.org/10.1007/s13358-013-0058-y"]
+		},
+		{
+			"biostratigraphic_zone": "Cistecephalus",
+			"description": "A tetrapod assemblage zone found in the Adelaide Subgroup of the Beaufort Group.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6949"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cistecephalus_Assemblage_Zone"]
+		},
+		{
+			"biostratigraphic_zone": "Cynognathus",
+			"description": "A tetrapod biozone utilized in the Karoo Basin of South Africa. It is equivalent to the Burgersdorp Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6950"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cynognathus_Assemblage_Zone"]
+		},
+		{
+			"biostratigraphic_zone": "Frechites occidentalis",
+			"description": "A middle Triassic ammonite range zone of North America. Voros 2014",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1556/ceugeol.57.2014.4.1"]
+		},
+		{
+			"biostratigraphic_zone": "Klamathites macrolobatus",
+			"description": "An Upper Triassic ammonite range zone in North America. Silberling 1959; Balini et al 2015",
+			"issue_url": "",
+			"documentation_url": [
+				"https://doi.org/10.1007/s12542-014-0244-2",
+				"https://doi.org/10.3133/pp322"
+			]
+		},
+		{
+			"biostratigraphic_zone": "Lystrosaurus",
+			"description": "A tetrapod assemblage zone which correlates to the upper Adelaide and lower Tarkastad Subgroups of the Beaufort Group, a fossiliferous and geologically important geological Group of the Karoo Supergroup in South Africa",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6951"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lystrosaurus_Assemblage_Zone"]
+		},
+		{
+			"biostratigraphic_zone": "Prionocyclus hyatti",
+			"description": "A middle Turonian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites clinolobatus",
+			"description": "A lower Maastrichtian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites baculus",
+			"description": "A lower Maastrichtian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites scotti",
+			"description": "A middle Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Prionocyclus macombi",
+			"description": "A middle Turonian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Acanthoceras amphibolum",
+			"description": "A middle Cenomanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Collignoniceras praecox",
+			"description": "A middle Turonian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites compressus",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites cuneatus",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites eliasi",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Neopopanoceras haugi",
+			"description": "A Middle Triassic ammonite range zone of the western United States. Silberling and Tozer 1968.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6519"],
+			"documentation_url": ["https://doi.org/10.1130/SPE110-p1"]
+		},
+		{
+			"biostratigraphic_zone": "P-P Zone; Tj1; Periptychus carinidens - Protoselene opisthacus",
+			"description": "The stratigraphic interval between the first occurrence of the periptychid \"condylarth\" Periptychus carinidens and the lowest occurrence of the \"condylarth\" Protoslene opisthacus in the lithologic section of the Nacimiento Formation exposed in Kutz Canyon, San Juan Basin, New Mexico. Williamson, 1996 p.50",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008924"]
+		},
+		{
+			"biostratigraphic_zone": "Tapinocephalus",
+			"description": "A tetrapod assemblage zone which correlates to the middle Abrahamskraal Formation, Adelaide Subgroup of the Beaufort Group, a fossiliferous and geologically important geological Group of the Karoo Supergroup in South Africa.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6952"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tapinocephalus_Assemblage_Zone"]
+		},
+		{
+			"biostratigraphic_zone": "Trachyceras silberlingi",
+			"description": "An lower Carnian ammonite range zone in Nevada. Balini 2012",
+			"issue_url": "",
+			"documentation_url": ["https://dx.doi.org/10.4435/BSPI.2012.14"]
+		},
+		{
+			"biostratigraphic_zone": "Tropidostoma",
+			"description": "A tetrapod assemblage zone which correlates to the lower Teekloof Formation, Adelaide Subgroup of the Beaufort Group, a fossiliferous and geologically important geological Group of the Karoo Supergroup in South Africa.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6953"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tropidostoma_Assemblage_Zone"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites grandis",
+			"description": "A lower Maastrichtian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites jenseni",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Baculites reesidei",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Didymoceras cheyennense",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Exiteloceras jenneyi",
+			"description": "An upper Campanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Neocardioceras juddii",
+			"description": "An upper Cenomanian ammonite range zone of the Western Interior Seaway in the United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		},
+		{
+			"biostratigraphic_zone": "Sciponoceras gracile",
+			"description": "An upper Cenomanian ammonite range zone of the Western Interior Seaway in the Southwest United States.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.3133/ofr20061250"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctbiostratigraphic_zone",
+			"label": "Locality Attribute: Biostratigraphic Zones",
+			"description": "Biostratigraphic zones are assemblages of fossils that are tied to stratigraphic sections (in contrast to biochronology, where they are not)."
+		}
+	]
+}

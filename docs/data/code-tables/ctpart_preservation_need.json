@@ -1,0 +1,43 @@
+{
+	"data": [
+		{
+			"preservation_need": "needs assessment",
+			"description": "Object requires preservation assessment by a collections care specialist. First step in preservation need determination."
+		},
+		{
+			"preservation_need": "professional conservator",
+			"description": "Object needs examination by a professional conservator."
+		},
+		{
+			"preservation_need": "rehouse",
+			"description": "The current storage housing for the object is inadequate. Needs new housing (box, folder, matting, framing, etc.) or improvements to the current housing."
+		},
+		{
+			"preservation_need": "unframe",
+			"description": "Object needs to be removed from its current mat and/or frame."
+		},
+		{
+			"preservation_need": "minor cleaning",
+			"description": "Object needs minor cleaning such as dusting or vacuuming."
+		},
+		{
+			"preservation_need": "refill",
+			"description": "Refill with existing preservative solution."
+		},
+		{
+			"preservation_need": "replace solution",
+			"description": "Requires a change of preservative solution."
+		},
+		{
+			"preservation_need": "remount",
+			"description": "Replace existing mount and mounting medium; for example, microscope slides."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpart_preservation_need",
+			"label": "Collection Object Attribute: Preservation Needs",
+			"description": "preservation need"
+		}
+	]
+}

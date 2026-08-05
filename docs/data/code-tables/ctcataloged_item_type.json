@@ -1,0 +1,68 @@
+{
+	"data": [
+		{
+			"cataloged_item_type": "FossilSpecimen",
+			"description": "A preserved biological specimen that is a fossil. Fossil specimens are physical vouchers and are expected to include one or more non-media parts.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": ["https://dwc.tdwg.org/terms/#fossilspecimen"]
+		},
+		{
+			"cataloged_item_type": "HumanObservation",
+			"description": "An output of a human observation process. Human observations are unvouchered and are expected to have NO parts.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": ["https://dwc.tdwg.org/terms/#humanobservation"]
+		},
+		{
+			"cataloged_item_type": "LivingSpecimen",
+			"description": "A biological specimen that is alive. Living specimens are physical vouchers and are expected to include one or more non-media parts.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": ["https://dwc.tdwg.org/terms/#livingspecimen"]
+		},
+		{
+			"cataloged_item_type": "MachineObservation",
+			"description": "An output of a machine observation process. Machine observations are media vouchers and are expected to have one or more media parts.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": ["https://dwc.tdwg.org/terms/#machineobservation"]
+		},
+		{
+			"cataloged_item_type": "PreservedSpecimen",
+			"description": "A biological specimen that has been preserved. Preserved specimens are physical vouchers and are expected to include one or more non-media parts.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": ["https://dwc.tdwg.org/terms/#preservedspecimen"]
+		},
+		{
+			"cataloged_item_type": "MaterialEntity",
+			"description": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists. Equivalent to Getty \"item\".",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/2432",
+				"https://github.com/ArctosDB/arctos/issues/6730"
+			],
+			"documentation_url": [
+				"http://vocab.getty.edu/page/aat/300404024",
+				"https://dwc.tdwg.org/terms/#materialsample"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcataloged_item_type",
+			"label": "Collection Object: Cataloged Item Types",
+			"description": "Cataloged Item Types"
+		}
+	]
+}

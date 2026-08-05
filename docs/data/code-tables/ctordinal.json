@@ -1,0 +1,59 @@
+{
+	"data": [
+		{
+			"ordinal": "first",
+			"description": "indicating the beginning unit in a series"
+		},
+		{
+			"ordinal": "second",
+			"description": "coming next after the first in position in space or time or degree or magnitude"
+		},
+		{
+			"ordinal": "third",
+			"description": "coming next after the second and just before the fourth in position"
+		},
+		{
+			"ordinal": "fourth",
+			"description": "coming next after the third and just before the fifth in position or time or degree or magnitude"
+		},
+		{
+			"ordinal": "fifth",
+			"description": "coming next after the fourth and just before the sixth in position"
+		},
+		{
+			"ordinal": "sixth",
+			"description": "coming next after the fifth and just before the seventh in position"
+		},
+		{
+			"ordinal": "seventh",
+			"description": "coming next after the sixth and just before the eighth in position"
+		},
+		{
+			"ordinal": "eighth",
+			"description": "coming next after the seventh and just before the ninth in position"
+		},
+		{
+			"ordinal": "ninth",
+			"description": "coming next after the eighth and just before the tenth in position"
+		},
+		{
+			"ordinal": "tenth",
+			"description": "coming next after the ninth and just before the eleventh in position"
+		},
+		{
+			"ordinal": "eleventh",
+			"description": "coming next after the tenth and just before the twelfth in position"
+		},
+		{
+			"ordinal": "twelfth",
+			"description": "coming next after the eleventh and just before the thirteenth in position"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctordinal",
+			"label": "Units of Order",
+			"description": "Ordinal numbers or terms defining a thing's position in a series, such as “first,” “second,” or “third.”"
+		}
+	]
+}

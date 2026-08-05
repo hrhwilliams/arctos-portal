@@ -1,0 +1,149 @@
+{
+	"data": [
+		{
+			"landholder": "US Army",
+			"description": "The land service branch of the United States Armed Forces.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6470"],
+			"documentation_url": ["https://arctos.database.museum/agent/21281291"]
+		},
+		{
+			"landholder": "US Army Corps of Engineers",
+			"description": "An engineer formation of the United States Army (US Army).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ["https://arctos.database.museum/agent/21288510"]
+		},
+		{
+			"landholder": "US Bureau of Land Management",
+			"description": "An agency within the United States Department of the Interior responsible for administering federal lands.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/21247712"]
+		},
+		{
+			"landholder": "US Bureau of Reclamation",
+			"description": "A federal agency under the U.S. Department of the Interior, which oversees water resource management.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/1012051"]
+		},
+		{
+			"landholder": "US Department of Defense",
+			"description": "An executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed Forces.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/21288557"]
+		},
+		{
+			"landholder": "US National Wildlife Refuge System",
+			"description": "A designation for certain protected land areas of the United States managed by the United States Fish and Wildlife Service.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "Bankhead-Jones Land Use Lands",
+			"description": "Lands acquired by the United States under the Bankhead–Jones Farm Tenant Act of 1937 and managed by the U.S. Forest Service and the Bureau of Land Management management.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "city",
+			"description": "A geographic unit defined as a permanent and densely settled place with administratively defined boundaries whose members work primarily on non-agricultural tasks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "county",
+			"description": "A geographical region of a country used for administrative or other purposes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "land grant",
+			"description": "A gift of real estate – land or its use privileges – made by a government or other authority as an incentive, means of enabling works, or as a reward for services to an individual, especially in return for military service",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "public",
+			"description": "A portion of land held by central or local government.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "private",
+			"description": "Property owned by non-governmental legal entities.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "state",
+			"description": "Land held and administered by state government.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "tribal",
+			"description": "Land held and administered by a federally recognized Native American tribal nation under the U.S. Bureau of Indian Affairs.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "unknown",
+			"description": "Unknown landholder status",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"landholder": "US Forest Service",
+			"description": "An agency of the U.S. Department of Agriculture that administers the nation's national forests and grasslands.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/39"]
+		},
+		{
+			"landholder": "US Air Force",
+			"description": "The air service branch of the United States Armed Forces.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ["https://arctos.database.museum/agent/1000043"]
+		},
+		{
+			"landholder": "US Bureau of Indian Affairs",
+			"description": "A federal agency within the U.S. Department of the Interior for implementing federal laws and policies related to Native Americans and Alaska Natives, including administering and managing reservation lands held in trust by the U.S. federal government for indigenous tribes.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ["https://arctos.database.museum/agent/1010943"]
+		},
+		{
+			"landholder": "US Department of Agriculture",
+			"description": "The United States Department of Agriculture (USDA) is an executive department of the United States federal government.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ["https://arctos.database.museum/agent/1010008"]
+		},
+		{
+			"landholder": "US Department of Energy",
+			"description": "A executive branch of the United States federal government concerned with the United States' policies regarding energy and safety in handling nuclear material.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ""
+		},
+		{
+			"landholder": "US National Park Service",
+			"description": "An agency of the US Department of the Interior that manages all United States national parks, many national monuments, and other conservation and historical properties with various title designations.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/40"]
+		},
+		{
+			"landholder": "US Department of Interior",
+			"description": "A executive branch of the United States federal government that protects and manages the United States' natural resources and cultural heritage, provides scientific and other information about those resources, and honors its trust responsibilities or special commitments to American Indians, Alaska Natives, Native Hawaiians, and affiliated Island Communities.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9783"],
+			"documentation_url": ["https://arctos.database.museum/agent/1012052"]
+		},
+		{
+			"landholder": "US Fish and Wildlife Service",
+			"description": "An agency of the United States Department of the Interior dedicated to the management and law enforcement of fish, wildlife, and natural habitats.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/agent/3679"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlandholder",
+			"label": "Locality Attribute: Landholder",
+			"description": "Specific US federal entities and general classes of landholders which administrate real estate."
+		}
+	]
+}

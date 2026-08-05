@@ -1,0 +1,51 @@
+{
+	"data": [
+		{
+			"taxon_status": "nomen oblitum",
+			"description": "A name which has not been used for more than fifty years after its original proposal, and which has been replaced by a more recent name in common use."
+		},
+		{
+			"taxon_status": "ichnotaxon",
+			"description": "A name based on indirect evidence of a fossil organism rather than on the fossil remains of the organism itself."
+		},
+		{
+			"taxon_status": "species for count",
+			"description": "a name representing a species not identified to species level within a region of interest"
+		},
+		{
+			"taxon_status": "extinct",
+			"description": "Taxon represents an organism or group of organisms that is no longer living."
+		},
+		{
+			"taxon_status": "extant",
+			"description": "Taxon represents a living organism or group of organisms"
+		},
+		{
+			"taxon_status": "DELETE",
+			"description": "Mark records to delete; coordinate usage with DBA."
+		},
+		{
+			"taxon_status": "nomen dubium",
+			"description": "A name that is of unknown or doubtful application. Often, the identity of the type material is questionable. Nomen ambiguum is a synonym. <a href=\"http://www.marinespecies.org/aphia.php?p=manual#topic16\" target=\"_blank\" class=\"external\">WoRMS</a>:a name of uncertain application, because it is not possible to establish the taxon to which it should be referred. A good example is the \"Ascothoracida\" genus Laocoon. There is a debate whether this is based on a parasite or on a detached piece of the host. It is clearly a dubious name"
+		},
+		{
+			"taxon_status": "nomen nudum",
+			"description": "A name published without a description or diagnosis or reference to a description or diagnosis. <a href=\"http://www.marinespecies.org/aphia.php?p=manual#topic16\" target=\"_blank\" class=\"external\">WoRMS</a>:a name that does not comply with the name requirements of the codes, such as lack of a description or diagnoses or reference to a description or diagnosis or a type specimen is lacking for publications after 1999"
+		},
+		{
+			"taxon_status": "invalid",
+			"description": "An available name which either (1) is objectively invalid (i.e. it is a junior homonym or a junior objective synonym of a potentially valid name, or must be rejected under the provisions of the Code, or has been suppressed by the Commission), or (2) is subjectively invalid (because it is considered subjectively to be a junior synonym or to be inapplicable to a particular taxonomic taxon). - ICZN Equivalent to \"unaccepted\" in <a href=\"http://www.marinespecies.org/aphia.php?p=manual#topic16\" target=\"_blank\" class=\"external\">WoRMS</a>:The used name is NOT accepted in the present literature"
+		},
+		{
+			"taxon_status": "valid",
+			"description": "Of an available name or a nomenclatural act: one that is acceptable under the provisions of the Code and, in the case of a name, which is the correct name of a taxon in an author's taxonomic judgment. - ICZN Equivalent to \"accepted\" in <a href=\"http://www.marinespecies.org/aphia.php?p=manual#topic16\" target=\"_blank\" class=\"external\">WoRMS</a>:the used name is accepted in the present literature"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_status",
+			"label": "Taxonomy: Taxon Status Values",
+			"description": "taxon status"
+		}
+	]
+}

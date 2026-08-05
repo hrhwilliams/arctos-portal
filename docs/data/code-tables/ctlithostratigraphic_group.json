@@ -1,0 +1,1382 @@
+{
+	"data": [
+		{
+			"lithostratigraphic_group": "Newark Super Group",
+			"description": "Early to Late Triassic unit in New Jersey, Connecticut, Maryland, Massachusetts, New York, North Carolina, Pennsylvania, South Carolina, Virginia; aka Newark Supergroup, Newark Group",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9492"],
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name/2583",
+				"https://ngmdb.usgs.gov/Geolex/Units/Newark_2992.html"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Moenkopi Group",
+			"description": "Early Triassic (locally Middle Triassic) unit in Arizona, California, Colorado, New Mexico, Nevada, Utah. Some publications (see Lucas et al. 2007) recognize it as group status in Utah, Colorado, and Wyoming.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9563"],
+			"documentation_url": [
+				"https://arctos.database.museum/publication/10010720",
+				"https://macrostrat.org/sift/#/strat_name_concept/9342",
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/MoenkopiRefs_9342.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Moenkopi_9342.html",
+				"https://nmdc.unm.edu/digital/collection/bulletins/id/7139/rec/1"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Beacon Supergroup",
+			"description": "Supergroup in Antarctica spanning the Early Devonian to the Early Triassic",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/151"],
+			"documentation_url": [
+				"https://doi.org/10.1080%2F00288306.1978.10424048",
+				"https://en.wikipedia.org/wiki/Beacon_Supergroup"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Muschelkalk Group",
+			"description": "A Middle Triassic, Anisian unit in western Europe, limestone; sometimes referred to as a formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": [
+				"https://doi.org/10.1127/zdgg/2019/0197",
+				"https://en.wikipedia.org/wiki/Muschelkalk"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Selbourne Group",
+			"description": "pending",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_group": "Eutaw Group",
+			"description": "Late Cretaceous (Santonian) unit in Mississippi; referred to as both formation and group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Eutaw_1570.html",
+				"https://macrostrat.org/sift/#/strat_name/2478"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Plänerkalk Group",
+			"description": "A Cretaceous unit in Germany.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/106"],
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name_concept/38804"]
+		},
+		{
+			"lithostratigraphic_group": "Borden Group",
+			"description": "Early to Middle Mississippian (Tournaisian to Visean; Kinderhookian to Meramecian) unit in Indiana, Kentucky, Illinois; referred to as formation in Indiana, Kentucky, Ohio, Tennessee, and West Virginia; aka Borden Siltstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Borden_563.html",
+				"https://macrostrat.org/sift/#/strat_name/2394"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Datil Group",
+			"description": "Oligocene unit in New Mexico and Arizona, aka Datil Formation, Datil Volcanics",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Datil_7844.html",
+				"https://macrostrat.org/sift/#/strat_name/70277"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Naco Group",
+			"description": "Middle Pennsylvanian to Early Permian unit in Arizona and New Mexico; aka Naco Formation and Naco Limestone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Naco_9476.html",
+				"https://macrostrat.org/sift/#/strat_name/2575"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Potomac Group",
+			"description": "Early to early Late Cretaceous (Aptian to Cenomanian) unit in Virginia, Washington D.C., Maryland, Delaware, and New Jersey; referred to as formation and group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Potomac_3387.html",
+				"https://macrostrat.org/sift/#/strat_name/2618"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Talladega Group",
+			"description": "Devonian unit in Alabama; aka Talladega Slate, Talladega Formation, Talladega Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Talladega_4054.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4054",
+				"https://aa.columbusstate.edu/research/undergrad/images/towerday2010/HARRELL2010.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Arroyo Penasco Group",
+			"description": "Mississippian (Osagean to Chesterian) unit in New Mexico, formerly referred to as Arroyo Penasco Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ArroyoPenasco_6555.html",
+				"https://macrostrat.org/sift/#/strat_name/68756"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chinle Group",
+			"description": "Late Triassic unit in New Mexico and Texas; aka Chinle Formation of Dockum Group, rocks of this name may extend to Colorado, Arizona, Nevada, and Utah as well",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chinle_4997.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4997",
+				"https://mrdata.usgs.gov/geology/state/sgmc-unit.php?unit=NMTRcu;0"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Conemaugh Group",
+			"description": "Middle to Late Pennsylvanian (Desmoinesian to Virgilian) unit in Maryland, Ohio, Pennsylvania, and West Virginia; aka Conemaugh Formation in Illinois, Kentucky, Maryland, Ohio, Pennsylvania, and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Conemaugh_1192.html",
+				"https://macrostrat.org/sift/#/strat_name/2439"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Dakota Group",
+			"description": "early Late Cretaceous (Cenomanian) and locally late Early Cretaceous (Albian) unit in Colorado, Kansas, Nebraska, New Mexico, and North Dakota; aka Dakota Sandstone, Dakota Formation, Dakota Conglomerate",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Dakota_7833.html",
+				"https://macrostrat.org/sift/#/strat_name/2453"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Eagle Ford Group",
+			"description": "Late Cretaceous (Cenomanian to Turonian) unit in Texas, Oklahoma, and Louisiana; Named from exposures at Eagle Ford, Dallas Co., northeastern TX (Hill, 1887); aka Eagle Ford Shale, Eagle Ford Clay, Eagle Ford Formation of Tuscaloosa Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/EagleFord_8024.html",
+				"https://macrostrat.org/sift/#/strat_name/2465"
+			]
+		},
+		{
+			"lithostratigraphic_group": "El Paso Group",
+			"description": "Late Cambrian (Croixan) to Early Ordovician (Canadian) unit in Arizona, New Mexico, and Texas; aka El Paso Limestone, El Paso Dolomite, El Paso Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ElPaso_7597.html",
+				"https://macrostrat.org/sift/#/strat_name/2468"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Galena Group",
+			"description": "Middle Ordovician, Late Ordovician (Mohawkian to Cincinnatian) unit in Illinois, Iowa, Minnesota, and Wisconsin; aka Galena Dolomite, Galena Formation, may be part of Sinnipee Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Galena_1754.html",
+				"https://macrostrat.org/sift/#/strat_name/2482"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Hamilton Group",
+			"description": "Middle Devonian unit in Marlyand, New York, Ohio, Pennsylvania, Virginia, and West Virginia; aka Hamilton Shale, Hamilton Formation, and Hamilton Shale Member of Romney Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hamilton_1950.html",
+				"https://macrostrat.org/sift/#/strat_name/2499"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Montoya Group",
+			"description": "Late Ordovician (Cincinnatian) unit in New Mexico and Texas; aka Montoya Dolomite, may be referred to as Montoya Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Montoya_9363.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Montoya_9363.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9363"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Nanaimo Group",
+			"description": "Late Cretaceous unit in Washington; aka Nanaimo Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Nanaimo_13852.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13852"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Pottsville Group",
+			"description": "Early to Middle Pennsylvanian (Namurian to Westphalian; Morrowan to Atokan) unit in New York, Ohio, Pennsylvania, and West Virginia; may also be referred to as formation in Alabama, Maryland, Ohio, Pennsylvania, and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pottsville_3393.html",
+				"https://macrostrat.org/sift/#/strat_name/2619"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Colorado Group",
+			"description": "late Early to early Late Cretaceous (Albian to Cenomanian) unit in Colorado, Iowa, Kansas, Minnesota, Montana, Nebraska, New Mexico, North Dakota, Oklahoma, South Dakota, Utah, and Wyoming; aka Colorado Shale or Colorado Formation, but these names not used by the Colorado Geological Survey",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Colorado_7668.html",
+				"https://macrostrat.org/sift/#/strat_name/2434"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Beaufort Group",
+			"description": "middle Permian to Early Triassic unit in South Africa",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Beaufort_Group"]
+		},
+		{
+			"lithostratigraphic_group": "Chubut Group",
+			"description": "Cretaceous unit in Patagonia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.sciencedirect.com/science/article/abs/pii/S0895981119307059"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Dunquin Group",
+			"description": "Silurian unit in Ireland, includes Ferriters Cove Formation, Drom Point Formation, Clogher Head Formation, Croaghmahrin Formation",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Dunquin_Group"]
+		},
+		{
+			"lithostratigraphic_group": "Gosau Group",
+			"description": "Cretaceous to Eocene unit in the European Alps; described in: Stern, Gerald, and Michael Wagreich. \"Provenance of the Upper Cretaceous to Eocene Gosau Group around and beneath the Vienna Basin (Austria and Slovakia).\" Swiss Journal of Geosciences 106 (2013): 505-527",
+			"issue_url": "",
+			"documentation_url": [
+				"https://link.springer.com/content/pdf/10.1007/s00015-013-0150-8.pdf",
+				"https://en.wikipedia.org/wiki/Gosau_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Kazusa Group",
+			"description": "Pleistocene unit in central Japanese island chain, deposited in the Kanto Tectonic Basin in response to the west-northwestward subduction of the Pacific plate beneath the Philippine Sea Plate",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1016/j.quaint.2015.02.065"]
+		},
+		{
+			"lithostratigraphic_group": "Kem Kem Group",
+			"description": "Late Cretaceous (Cenomanian) unit in the Kem Kem region of eastern Morocco",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Kem_Kem_Group"]
+		},
+		{
+			"lithostratigraphic_group": "Osaka Group",
+			"description": "Plio-Pleistocene unit in Japan",
+			"issue_url": "",
+			"documentation_url": ["https://link.springer.com/chapter/10.1007/978-981-13-0577-1_2"]
+		},
+		{
+			"lithostratigraphic_group": "Tarkastad Subgroup",
+			"description": "late Permian and/or Early Triassic unit of the Beaufort Group in South Africa",
+			"issue_url": "",
+			"documentation_url": [
+				"https://books.google.com/books/about/Stratigraphy_and_Sedimentology_of_the_Ta.html?id=9MYWtwAACAAJ"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Tegama Group",
+			"description": "Albian to Neocomian (Cretaceous) unit in west Africa",
+			"issue_url": "",
+			"documentation_url": ["https://journals.co.za/doi/pdf/10.10520/AJA10120750_591"]
+		},
+		{
+			"lithostratigraphic_group": "Uttatur Group",
+			"description": "Late Cretaceous unit in India; described in: Nagendra, R., Sathiyamoorthy, P., Pattanayak, S. et al. 2013. Stratigraphy and paleobathymetric interpretation of the Cretaceous Karai shale formation of Uttatur Group, TamilNadu, India. Stratigr. Geol. Correl. 21, 675-688",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1134/S0869593813070046"]
+		},
+		{
+			"lithostratigraphic_group": "Limón Group",
+			"description": "late Miocene to early Pleistocene unit in Costa Rica",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Lim%C3%B3n_Group",
+				"https://paleobiodb.org/classic/displayStrata?geological_group=Limon&group_formation_member=Limon"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Thaynes Group",
+			"description": "Early Triassic unit in Idaho, Montana, Nevada, Utah, and Wyoming; aka Thaynes Limestone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Thaynes_10838.html",
+				"https://macrostrat.org/sift/#/strat_name/74046"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Barton Group",
+			"description": "Eocene unit in England, formerly Barton Beds",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Barton_Beds",
+				"https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=BA"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Armendaris Group",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit in New Mexico; No current usage: rocks of Armendaris Group reallocated to Gray Mesa Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Armendaris_6544.html",
+				"https://macrostrat.org/sift/#/strat_name/68747"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Austin Group",
+			"description": "Late Cretaceous unit in Louisiana and Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Austin_6602.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6602"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Beekmantown Group",
+			"description": "Early to Middle Ordovician (locally late Cambrian) unit in the eastern United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Beekmantown_365.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/365"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Belly River Group",
+			"description": "Santonian to Campanian unit in Canada",
+			"issue_url": "",
+			"documentation_url": [
+				"http://weblex.nrcan.gc.ca/html/001000/GSCC00053001144.html",
+				"https://macrostrat.org/sift/#/strat_name/101142"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Belt Supergroup",
+			"description": "Mesoproterozoic (Middle Proterozoic) unit in Idaho, Montana, and Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Belt_6823.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6823"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Benton Group",
+			"description": "Late Cretaceous unit in Colorado and South Dakota",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Benton_6842.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6842"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Bisbee Group",
+			"description": "Late Jurassic to Early Cretaceous unit in Arizona",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bisbee_7089.html",
+				"https://macrostrat.org/sift/#/strat_name/2389"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Bracklesham Group",
+			"description": "middle Eocene unit in England, formerly Bracklesham Beds",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=BRB",
+				"https://macrostrat.org/sift/#/strat_name_concept/31322",
+				"https://en.wikipedia.org/wiki/Bracklesham_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Bullhead Group",
+			"description": "Barremian to early Albian unit in Alberta, British Columbia",
+			"issue_url": "",
+			"documentation_url": [
+				"http://weblex.nrcan.gc.ca/html/001000/GSCC00053001995.html",
+				"https://macrostrat.org/sift/#/strat_name/8133"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Cabullona Group",
+			"description": "Late Cretaceous unit in Cabullona basin, Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cabullona_6900.html",
+				"https://macrostrat.org/sift/#/strat_name/69136"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Canyon Group",
+			"description": "Late Pennsylvanian unit in Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Canyon_6949.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6949"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Cardiff Group",
+			"description": "Silurian (Gorstian-Ludfordian Age) unit in Cardiff, South Wales; Mudstone and siltstone with subsidiary limestone and sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CAA",
+				"https://macrostrat.org/sift/#/strat_name/94372"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chalk Group",
+			"description": "Late Cretaceous (Cenomanian-Maastrichtian) unit in England",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CK",
+				"https://macrostrat.org/sift/#/strat_name_concept/37110"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chase Group",
+			"description": "early Permian (Wolfcampian) unit in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chase_7449.html",
+				"https://macrostrat.org/sift/#/strat_name/2413"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chatham Group",
+			"description": "Late Triassic (Early Carnian to Early Norian) unit in North Carolina and South Carolina, part of Newark Supergroup",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chatham_995.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/995"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chazy Group",
+			"description": "Middle to Late Ordovician (Whiterockian) unit in New York and Vermont; use of Chazy Group should be discontinued, it is more widely used as a North American provinical chronostratigraphic term (Chazyan Stage)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chazy_1004.html",
+				"https://macrostrat.org/sift/#/strat_name/2414"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chemung Group",
+			"description": "early Late Devonian (Frasnian) unit in New York and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chemung_1010.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1010"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chesapeake Group",
+			"description": "late Oligocene to late Pliocene unit in Delaware, Washington D.C., Maryland, North Carolina, and Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chesapeake_1021.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1021"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Chester Group",
+			"description": "Chesterian unit of central North America (Kansas, Oklahoma, Texas, Colorado)",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/2418"]
+		},
+		{
+			"lithostratigraphic_group": "Chilliwack Group",
+			"description": "middle to late Paleozoic unit in Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chilliwack_16312.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/16312"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Cincinnati Group",
+			"description": "Late Ordovician unit of Ohio",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cincinnati_1070.html",
+				"https://macrostrat.org/sift/#/strat_name/61471"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Cisco Group",
+			"description": "Late Pennsylvanian (Virgilian) to early Permian (Wolfcampian) unit in Oklahoma, Texas, and (?)New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cisco_7517.html",
+				"https://macrostrat.org/sift/#/strat_name/2424"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Claiborne Group",
+			"description": "early Tertiary (early to middle Eocene) unit in southeastern North America",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Claiborne_1075.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1075"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Clear Fork Group",
+			"description": "Early Permian (Leonardian) unit in Texas, may also be referred to as Clear Fork Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ClearFork_7535.html",
+				"https://macrostrat.org/sift/#/strat_name/2427"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Clinton Group",
+			"description": "early Silurian unit in Maryland, New York, Pennsylvania, and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Clinton_1111.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1111"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Columbia River Basalt Group",
+			"description": "Miocene unit in Idaho, Oregon, and Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ColumbiaRiver_7672.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7672"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Colville Group",
+			"description": "Cenomanian to Thanetian unit in northern Alaska",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/2437"]
+		},
+		{
+			"lithostratigraphic_group": "Conococheague Group",
+			"description": "late Cambrian, Early Ordovician unit in Pennsylvania",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Conococheague_1199.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1199"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Council Grove Group",
+			"description": "early Permian (Wolfcampian) unit in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CouncilGrove_7740.html",
+				"https://macrostrat.org/sift/#/strat_name/2445"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Cutler Group",
+			"description": "early Permian unit in New Mexico, Utah, and Colorado",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cutler_7824.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7824",
+				"https://en.wikipedia.org/wiki/Cutler_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Delaware Mountain Group",
+			"description": "Middle Permian (Guadalupian) unit in New Mexico and Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DelawareMountain_7892.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7892"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Dockum Group",
+			"description": "Middle to Late Triassic unit in Colorado, Kansas, New Mexico, and Texas, possibly Oklahoma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Dockum_7944.html",
+				"https://macrostrat.org/sift/#/strat_name/2461"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Double Mountain Group",
+			"description": "Permian unit in Texas; no current usage? Double Mountain Group considered abandoned, uncertain if used by the Texas Geological Survey, abandoned by the USGS",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/DoubleMountainRefs_7965.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/DoubleMountain_7965.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7965"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Douglas Group",
+			"description": "Late Pennsylvanian (Missourian to Virgilian) unit in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Douglas_7969.html",
+				"https://macrostrat.org/sift/#/strat_name/2463"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Durbin Group",
+			"description": "Silurian (Llandovery to Ludlow, Niagaran Provincial Age) unit in Ohio",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Durbin_1458.html",
+				"https://macrostrat.org/sift/#/strat_name/62066"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Ecca Group",
+			"description": "late Carboniferous to early Permian unit in South Africa",
+			"issue_url": "",
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name/102262",
+				"https://en.wikipedia.org/wiki/Ecca_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Edmonton Group",
+			"description": "Late Cretaceous unit in Alberta, Canada; Lithology: Predominantly of fresh to brackish water, fine-grained sandstone, calcareous sandstones, sandy shales, bentonitic sandstones and shales, bentonite, ironstone nodules, concretions and bands, carbonaceous shales and coal. Hard, flaggy sandstones commonly cap mesas, buttes and plateaus where erosion of the formation results in 'badland' topography",
+			"issue_url": "",
+			"documentation_url": [
+				"http://weblex.nrcan.gc.ca/html/004000/GSCC00053004501.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/30119"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Fredericksburg Group",
+			"description": "Early Cretaceous unit in Arkansas, New Mexico, Oklahoma, Texas, and Louisiana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Fredericksburg_8195.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8195"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Fresnal Group",
+			"description": "Late Pennsylvanian (Virgilian) unit in New Mexico; controversially referred to as \"group\" as there is only one subunit (Bruton Formation) and groups consist of two or more formations",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Fresnal_8204.html",
+				"https://macrostrat.org/sift/#/strat_name/70744"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Gila Group",
+			"description": "Miocene to Pliocene(?) unit in Arizona and New Mexico, aka Gila Conglomerate",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Gila_8273.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8273"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Glen Canyon Group",
+			"description": "Early Jurassic (Sinemurian to Toarcian) unit in Arizona, Colorado, Nevada, New Mexico, and Utah; aka Glen Canyon Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/GlenCanyon_8366.html",
+				"https://macrostrat.org/sift/#/strat_name/2488"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Great Oolite Group",
+			"description": "Bajocian-Callovian unit in England",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=GOG",
+				"https://macrostrat.org/sift/#/strat_name_concept/37392"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Grenville Complex Supergroup",
+			"description": "Mesoproterozoic (Middle Proterozoic) unit in New York; aka Grenville Complex",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Grenville_13066.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13066"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Hawthorn Group",
+			"description": "Oligocene to Pliocene unit in Florida, Georgia, and South Carolina; Misspelled Hawthorne in some reports",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hawthorn_2013.html",
+				"https://macrostrat.org/sift/#/strat_name/7303"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Helderberg Group",
+			"description": "late Silurian to Early Devonian unit in the eastern United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Helderberg_2030.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2030"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Honda Group",
+			"description": "late Oligocene to late Miocene unit in Colombia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Honda_13188.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13188",
+				"https://en.wikipedia.org/wiki/Honda_Group,_Colombia"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Hueco Group",
+			"description": "Early Permian (Wolfcampian and Leonardian) unit in New Mexico and Texas; aka Hueco limestone or Hueco Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hueco_8572.html",
+				"https://macrostrat.org/sift/#/strat_name/2508"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Inferior Oolite Group",
+			"description": "Jurassic unit in Europe",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=IOSK",
+				"https://macrostrat.org/sift/#/strat_name/96754",
+				"https://en.wikipedia.org/wiki/Inferior_Oolite"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Jackson Group",
+			"description": "Paleogene to Neogene unit in Arkansas and North Carolina",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Jackson_2209.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2209",
+				"https://en.wikipedia.org/wiki/Jackson_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Kamloops Group",
+			"description": "Eocene unit in British Columbia, Canada; Lithology: The Kamloops Group forms an extensive succession of basalt, andesite, and subordinate felsic rocks with a calc-alkaline (subduction-related) geochemical signature",
+			"issue_url": "",
+			"documentation_url": [
+				"http://weblex.nrcan.gc.ca/html/007000/GSCC00053007339.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/30192"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Kansas City Group",
+			"description": "Late Pennsylvanian (Missourian) unit in the midwest (Iowa, Kansas, Missouri, Nebraska, Oklahoma, and Colorado); aka Kansas City Formation of Skiatook Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/KansasCity_9038.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9038"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Keller Group",
+			"description": "Late Pennsylvanian (Virgilian) unit in New Mexico; no current usage, rocks of Keller Group reallocated to Atrasado Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Keller_8820.html",
+				"https://macrostrat.org/sift/#/strat_name/71569"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Kenai Group",
+			"description": "Cenozoic unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Kenai_5766.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5766"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Keuper Group",
+			"description": "Permian (Roadian) to Triassic (Ladinian) unit in Germany; Predominantly pebbles and dolomitic clay pebbles, multicolored (reddish brown, violet, green, yellowish and others) with gray sections, in stratigraphic and regionally changing perimeters inclusions of dolomitic limestone (or limestone), anhydrite (or secondary gypsum or leaching residuals), rock salt, sandstone, conglomerate",
+			"issue_url": "",
+			"documentation_url": [
+				"https://litholex.bgr.de/pages/Einheit.aspx?ID=5000016",
+				"https://macrostrat.org/sift/#/strat_name/101840"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Keweenawan Supergroup",
+			"description": "Precambrian (middle to late Proterozoic) unit in Michigan, Wisconsin, and Minnesota",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Keweenawan_2310.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2310"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Knox Group",
+			"description": "Late Cambrian to Early Ordovician unit in Alabama, Georgia, Illinois, Kentucky, Tennessee, Virginia, and West Virginia; may also refer to Knox Dolomite or Knox Supergroup",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Knox_2342.html",
+				"https://macrostrat.org/sift/#/strat_name/2525"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Koipato Group",
+			"description": "Early Triassic, late Permian unit in Nevada",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Koipato_13390.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13390"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Krebs Group",
+			"description": "Middle Pennsylvanian unit in Arkansas, Kansas, Missouri, and Oklahoma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Krebs_15362.html",
+				"https://macrostrat.org/sift/#/strat_name/79151"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Kuskokwim Group",
+			"description": "Late Cretaceous unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Kuskokwim_5833.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5833"
+			]
+		},
+		{
+			"lithostratigraphic_group": "La Jolla Group",
+			"description": "Eocene unit in southern California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LaJolla_5838.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5838"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Lake Bonneville Group",
+			"description": "Quaternary (Pleistocene, Holocene) unit in Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LakeBonneville_9225.html",
+				"https://macrostrat.org/sift/#/strat_name/72084"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Lias Group",
+			"description": "Triassic to Jurassic unit in Britain",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LI",
+				"https://macrostrat.org/sift/#/strat_name_concept/35823"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Lisburne Group",
+			"description": "Mississippian through early Permian unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lisburne_5903.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5903"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Lower Greensand Group",
+			"description": "Early Cretaceous (Aptian-Albian) unit in England (Isle of Wight)",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LGS",
+				"https://macrostrat.org/sift/#/strat_name_concept/33094"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Madera Group",
+			"description": "Upper Pennsylvannian unit in New Mexico, containing Atrasado and Bursum formations",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Madera_9142.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9142",
+				"https://nmgs.nmt.edu/publications/guidebooks/downloads/60/60_p0249_p0266.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Magdalena Group",
+			"description": "Pennsylvanian to Early Permian unit in New Mexico and Texas; Magdalena Group or Magdalena Formation not used by the New Mexico Geological Survey",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Magdalena_9147.html",
+				"https://macrostrat.org/sift/#/strat_name/2537"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mancos Shale Group",
+			"description": "Late Cretaceous unit in Colorado and Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mancos_9165.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9165"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mangatu Group",
+			"description": "Paleocene to Oligocene unit in Gisborne, New Zealand",
+			"issue_url": "",
+			"documentation_url": [
+				"https://data.gns.cri.nz/stratlex/view.jsp?id=1697&page=1",
+				"https://macrostrat.org/sift/#/strat_name/103309"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mankomen Group",
+			"description": "Late Pennsylvannian to Permian (Morrowan to Guadalupian) unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/MankomenRefs_5978.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Mankomen_5978.html",
+				"https://macrostrat.org/sift/#/strat_name/2539"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Manzano Group",
+			"description": "Permian unit in Orogrande basin, San Juan basin, Estancia basin; no current usage, Manzano Group (NM) replaced with (ascending): Bursum Formation, Abo Formation, Yeso Formation, Glorieta Sandstone, and San Andres Limestone. See Bursum, Abo, Yeso, Glorieta, and San Andres.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Manzano_9174.html",
+				"https://macrostrat.org/sift/#/strat_name/80513"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Marburg Sandstone Subgroup",
+			"description": "Jurassic (Pliensbachian - Bathonian) unit in Queensland, Australia; Fine to coarse-grained, thin- to very thick- bedded, crossbedded, quartzose to lithofeldspathic sandstone, interbedded with polymictic pebble and minor cobble conglomerate, siltstone and claystone; minor coal and basalt, fossil wood ferruginous oolite; Formerly referred to as the Marburg sequence ('formation', 'sandstone')",
+			"issue_url": "",
+			"documentation_url": [
+				"http://dbforms.ga.gov.au/pls/www/geodx.strat_units.sch_full?wher=stratno=11255",
+				"https://macrostrat.org/sift/#/strat_name_concept/30270"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Marmaton Group",
+			"description": "Middle Pennsylvanian unit in the midwest United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Marmaton_9191.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9191"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Maud Group",
+			"description": "Jurassic unit in the Queen Charlotte Islands, Canada; described in: Indrelid, Jarand. Stratigraphy, structural geology and petroleum potential of Cretaceous and Tertiary rocks in the central Graham Island area, Queen Charlotte Islands, British Columbia. Diss. University of British Columbia, 1991",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Maud_13634.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13634",
+				"https://open.library.ubc.ca/media/download/pdf/831/1.0052693/2"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Meade Group",
+			"description": "Quaternary (Pleistocene) unit in Kansas and Oklahoma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Meade_8785.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8785"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mesaverde Group",
+			"description": "Late Cretaceous unit in Arizona, Colorado, Idaho, New Mexico, Utah, and Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mesaverde_9276.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9276"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Midway Group",
+			"description": "Paleocene unit in the United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Midway_2765.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2765"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Monmouth Group",
+			"description": "Late Cretaceous unit in the eastern United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Monmouth_2825.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2825"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Montana Group",
+			"description": "Late Cretaceous unit in Kansas, Montana, North Dakota, and South Dakota",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Montana_9357.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9357"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mowich Group",
+			"description": "Early Jurassic unit in Oregon",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mowich_13827.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13827"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Mud Springs Group",
+			"description": "Middle Pennsylvanian (Derryan) unit in New Mexico; no current usage, rocks of Mud Springs Group reallocated to Red House Formation and to Gray Mesa Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/MudSprings_9445.html",
+				"https://macrostrat.org/sift/#/strat_name/72328"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Newby Group",
+			"description": "Jurassic/Cretaceous sedimentary and volcanic unit in Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Newby_11439.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11439"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Ogallala Group",
+			"description": "late Tertiary (Miocene to Pliocene) unit in the midwest and western United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ogallala_9656.html",
+				"https://macrostrat.org/sift/#/strat_name/2592"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Old Red Sandstone Supergroup",
+			"description": "Devonian (Pridoli Epoch-Late Devonian Epoch) unit in the North Atlantic (Great Britain, Ireland, Norway, Greeland, Canada, Svalbard); Conglomerate and sandstone with subsidiary andesite, basalt, mudstone and siltstone and trace breccia, calcareous sandstone and fault-gouge",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=ORS",
+				"https://macrostrat.org/sift/#/strat_name_concept/36866"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Oriskany Group",
+			"description": "middle Early Devonian (Pragian) unit in Maryland, New Jersey, Pennsylvania, Virginia, and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Oriskany_3126.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3126"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Pasayten Group",
+			"description": "Cretaceous unit in Washington and British Columbia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pasayten_14038.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14038"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Perdido Group",
+			"description": "Mississippian unit composed primarily of limestone and siltstone in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Perdido_14075.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14075"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Pogonip Group",
+			"description": "Late Cambrian, Early Ordovician, Middle Ordovician unit in California, Idaho, Nevada, and Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pogonip_9850.html",
+				"https://macrostrat.org/sift/#/strat_name/2616"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Poway Group",
+			"description": "Eocene unit in southern California that preserved fossils from the Paleogene period",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Poway_11630.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11630",
+				"https://en.wikipedia.org/wiki/Poway_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Prairie du Chien Group",
+			"description": "Early Ordovician (Ibexian, Tremadocian) unit in the midwest United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PrairieduChien_3407.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3407"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Puget Group",
+			"description": "Eocene unit in Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Puget_11641.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11641"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Salina Group",
+			"description": "late Silurian (Ludlow to Pridoli) unit in Indiana, Michigan, New York, Pennsylvania, and West Virginia",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Salina_3680.html",
+				"https://macrostrat.org/sift/#/strat_name/2636"
+			]
+		},
+		{
+			"lithostratigraphic_group": "San Rafael Group",
+			"description": "Middle Jurassic (Bajocian to Callovian) unit in Arizona, Colorado, New Mexico, and Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SanRafael_10460.html",
+				"https://macrostrat.org/sift/#/strat_name/2638"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Sanders Group",
+			"description": "Early Mississippian (Osagean) and Late Mississippian (Meramecian, Valmeyeran) unit in Indiana and Kentucky",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Sanders_3704.html",
+				"https://macrostrat.org/sift/#/strat_name/2639"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Santa Fe Group",
+			"description": "late Cenozoic unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SantaFe_9963.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9963",
+				"https://nmgs.nmt.edu/publications/guidebooks/downloads/7/7_p0115_p0121.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Santana Group",
+			"description": "Early Cretaceous unit in Brazil; consists of Crato Formation, Ipubi Formation, Romualdo Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name_concept/9969",
+				"https://en.wikipedia.org/wiki/Santana_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Selma Group",
+			"description": "Late Cretaceous unit in Alabama, Mississippi, and Tennessee",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Selma_3765.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3765"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Shawnee Group",
+			"description": "Late Pennsylvannian (Virgillian) unit in the central United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Shawnee_10352.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10352"
+			]
+		},
+		{
+			"lithostratigraphic_group": "St Paul Group",
+			"description": "Middle Ordovician (Whiterockian, Late Chazyan) unit in Marlyand, Pennsylvania, Virginia, and West Virginia; aka St. Paul Gro",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/StPaul_3944.html",
+				"https://macrostrat.org/sift/#/strat_name/2655"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Star Peak Group",
+			"description": "Early to Late Triassic unit in Nevada",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/StarPeak_14565.html",
+				"https://macrostrat.org/sift/#/strat_name/78207"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Sulphur Springs Group",
+			"description": "Early Mississippian, Late Devonian unit in Missouri",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SulphurSprings_15888.html",
+				"https://macrostrat.org/sift/#/strat_name/2661"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Sumner Group",
+			"description": "Early Permian (Leonardian) unit in Kansas, Nebraska, Oklahoma, and Colorado",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Sumner_10649.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10649"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Taylor Group",
+			"description": "Late Cretaceous unit in Louisiana and Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Taylor_6230.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6230"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Tindir Group",
+			"description": "Precambrian unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tindir_12100.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12100"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Trinity Group",
+			"description": "Lower Cretaceous unit in Texas, Arkansas, Mississippi, Louisiana, and Oklahoma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Trinity_10950.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10950",
+				"https://en.wikipedia.org/wiki/Trinity_Group_(geologic_formation)"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Tuscaloosa Group",
+			"description": "Late Cretaceous unit of Alabama, Louisiana, and Mississippi",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tuscaloosa_4186.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4186"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Twin River Group",
+			"description": "Tertiary unit in Washinigton",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TwinRiver_12165.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12165"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Vicksburg Group",
+			"description": "Oligocene unit in the southeast United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/VicksburgRefs_4242.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Vicksburg_4242.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4242"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Volcano Peak Group",
+			"description": "Late Triassic, Early Jurassic unit in Nevada",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/VolcanoPeak_12210.html",
+				"https://macrostrat.org/sift/#/strat_name/75368"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Wabaunsee Group",
+			"description": "Late Pennsylvanian unit, primarily limestone and shale, in the Great Plains and midwest United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wabaunsee_11019.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11019"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Wales Group",
+			"description": "Early Ordovician and older unit in Alaska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wales_12230.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12230"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Washita Group",
+			"description": "Early Cretaceous unit in the southeast United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Washita_11068.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11068"
+			]
+		},
+		{
+			"lithostratigraphic_group": "White River Group",
+			"description": "Eocene to Oligocene (Chadronian to Whitneyan NALMA) unit in Colorado, Montana, Nebraska, North Dakota, South Dakota, and Wyoming; formerly known as White River Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/WhiteRiver_11141.html",
+				"https://macrostrat.org/sift/#/strat_name/2704"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Wichita Group",
+			"description": "Early Permian (Leonardian) unit in Texas, also called Wichita-Albany Group in some reports",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wichita_11154.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11154"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Wilcox Group",
+			"description": "Paleocene to Eocene unit in Mexico, Texas, Louisiana, and Alabama",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wilcox_4400.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4400",
+				"https://en.wikipedia.org/wiki/Wilcox_Group"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Wildcat Group",
+			"description": "Mesoproterozoic unit in New Jersey and New York; aka Wildcat Marble",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wildcat_4403.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4403"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Winnipeg Group",
+			"description": "Middle Ordovician unit in Minnesota, Montana, North Dakota, South Dakota, and Wyoming; Not synopsized to date. Is a Canadian name extended into ND",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Winnipeg_11205.html",
+				"https://macrostrat.org/sift/#/strat_name/2711"
+			]
+		},
+		{
+			"lithostratigraphic_group": "Woodbine Group",
+			"description": "early Late Cretaceous unit in the southeast United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Woodbine_11230.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11230"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlithostratigraphic_group",
+			"label": "Locality Attribute: Lithostratigraphic Groups",
+			"description": "Lithostratigraphic Groups and Supergroups available as locality attributes."
+		}
+	]
+}

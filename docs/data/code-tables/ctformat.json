@@ -1,0 +1,10 @@
+{
+	"data": [],
+	"metadata": [
+		{
+			"table_name": "ctformat",
+			"label": "Record Attribute: Format",
+			"description": "The file format format, physical medium, or dimensions of the resource following the National Archives Format Authority List."
+		}
+	]
+}

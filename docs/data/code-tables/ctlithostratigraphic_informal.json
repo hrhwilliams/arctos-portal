@@ -1,0 +1,213 @@
+{
+	"data": [
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit B",
+			"description": "Blacks Fork B of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6747"],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit B2",
+			"description": "Blacks Fork B2 of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6747",
+				"https://github.com/ArctosDB/arctos/issues/6848"
+			],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit B3",
+			"description": "Blacks Fork B3 of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6747",
+				"https://github.com/ArctosDB/arctos/issues/6849"
+			],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit B4",
+			"description": "Blacks Fork B4 of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6747",
+				"https://github.com/ArctosDB/arctos/issues/6850"
+			],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit B5",
+			"description": "Blacks Fork B5 of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6747",
+				"https://github.com/ArctosDB/arctos/issues/6851"
+			],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit C",
+			"description": "Blacks Fork C of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/6747",
+				"https://github.com/ArctosDB/arctos/issues/6852"
+			],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Fremouw Formation lower unit",
+			"description": "The Fremouw Formation can be subdivided into three informal members. The lower member consists of coarse to medium-grained, trough cross-bedded, channel-form sandstone units alternating with equally thick fine-grained units of fine to very fine-grained sandstone, silstone and mudstone . - Institute of Polar Studies Report 87.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6748"],
+			"documentation_url": [
+				"https://kb.osu.edu/bitstream/handle/1811/48692/IPS_Report_87_Part1.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Fremouw Formation middle unit",
+			"description": "The Fremouw Formation can be subdivided into three informal members. The middle member, which is relatively nonresistant and generally poorly exposed, is dominated by fine-grained sandstone, siltstone and mudstone units that are interbedded with relatively thin medium-grained, channel form and tabular sheet sandstone units. - Institute of Polar Studies Report 87.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6751"],
+			"documentation_url": [
+				"https://kb.osu.edu/bitstream/handle/1811/48692/IPS_Report_87_Part1.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Fremouw Formation upper unit",
+			"description": "The Fremouw Formation can be subdivided into three informal members. The upper member consists of coarse to medium-grained slope-forming, channel-forming sandstone alternating with fining-upward sequences of very fine-grained sandstone, siltstone and mudstone. - Institute of Polar Studies Report 87.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6753"],
+			"documentation_url": [
+				"https://kb.osu.edu/bitstream/handle/1811/48692/IPS_Report_87_Part1.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Hugoton Embayment",
+			"description": "Large, southward-plunging trough bounded by uplifted areas on the west, north, and east in southwest Kansas; important for natural gas",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/column/76"]
+		},
+		{
+			"lithostratigraphic_informal": "Lashly Formation unit A",
+			"description": "The Lashly Formation was subdivided into informal members (A, B, C and D) in Barrett, P.J. and Kohn, B.P. (1975) Changing sediment transport directions from Devonian t o Triassic in the Beacon Supergroup of south Victoria Land, Antarctica In: Campbell, K.S.W. (Ed.), Gondwanan geology. Canberra, Australian National Univ. Press, pp. 329-332.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6749"],
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_informal": "Lashly Formation unit C",
+			"description": "Lashly member C consists of fining-upward cycles of medium- to fine-grained sandstone grading upward into carbonaceous siltstone and mudstone, and thin coal beds. Quartz pebbles and cobbles and mudstone clasts occur near the base of major sandstone units. Irregular lenses of coal occur along bedding planes and over large scours. Dicroidium fronds and other plant fragments are common in carbonaceous beds.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6750"],
+			"documentation_url": [
+				"http://www.fossilworks.org/cgi-bin/bridge.pl?a=collectionSearch&collection_no=107212"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Madumabisa Mudstone Formation upper unit",
+			"description": "Tavener-Smith (1960, 1962) and Gair (1960) divided the Madumabisa Mudstone Formation into three units, Lower, Middle and Upper, considering that the lower and upper units are more homogeneous and poorly stratified compared to the middle unit, which contains numerous calcilutite layers and concretions that contain fossils.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6755"],
+			"documentation_url": ["https://arctos.database.museum/publication/10011993"]
+		},
+		{
+			"lithostratigraphic_informal": "Twin Buttes Member unit C",
+			"description": "Tuffs very similar to the preceding. Defined inferiorly by a heavy and persistent calcareous stratum, the Sage Creek White Layer, shown at Sage Creek Spring. Another persistent stratum of flinty lime, the Burnt Fork White Layer, lies about the middle of the horizon. Fossils abundant and varied. Definition of Bridger Horizon C in Matthew, 1909; The Carnivora and Insectivora of the Bridger Basin, middle Eocene. Memoirs of the AMNH ; v. 9, pt. 6.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6752"],
+			"documentation_url": ["https://www.biodiversitylibrary.org/bibliography/88116"]
+		},
+		{
+			"lithostratigraphic_informal": "Twin Buttes Member unit C1",
+			"description": "From Matthew 1909 ; The Carnivora and Insectivora of the Bridger Basin, middle Eocene. Memoirs of the AMNH ; v. 9, pt. 6.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6842"],
+			"documentation_url": ["https://www.biodiversitylibrary.org/bibliography/88116"]
+		},
+		{
+			"lithostratigraphic_informal": "Twin Buttes Member unit C2",
+			"description": "From Matthew 1909 ; The Carnivora and Insectivora of the Bridger Basin, middle Eocene. Memoirs of the AMNH ; v. 9, pt. 6.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6843"],
+			"documentation_url": ["https://www.biodiversitylibrary.org/bibliography/88116"]
+		},
+		{
+			"lithostratigraphic_informal": "Twin Buttes Member unit C3",
+			"description": "From Matthew 1909 ; The Carnivora and Insectivora of the Bridger Basin, middle Eocene. Memoirs of the AMNH ; v. 9, pt. 6.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6843"],
+			"documentation_url": ["https://www.biodiversitylibrary.org/bibliography/88116"]
+		},
+		{
+			"lithostratigraphic_informal": "Blacks Fork Member unit A",
+			"description": "Blacks Fork A of Blacks Fork Member of Bridger Formation as described in Murphey and Evanoff 2011.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6747"],
+			"documentation_url": ["https://arctos.database.museum/publication/10011992"]
+		},
+		{
+			"lithostratigraphic_informal": "Buckley Formation upper unit",
+			"description": "The Lower to Upper Permian Buckley Formation is divisible into upper and lower members based on sandstone composition and paleocurrent orientations. The lower member consists of arkosic sandstone that was deposited by streams flowing off the craton and axially down the basin toward the present Weddell Sea (figure 1, block d). In the upper Buckley, sand-stone composition changes abruptly from arkosic to volcani-clastic. Concommitant with the influx of volcaniclastics was a 180 degree reversal in paleocurrent orientations (Collinson and Isbell 1986).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6754"],
+			"documentation_url": ["https://arctos.database.museum/publication/10011994"]
+		},
+		{
+			"lithostratigraphic_informal": "Denver Basin D1 Sequence",
+			"description": "An informal group of formations in the Denver Basin that includes the Denver Formation, Arapahoe Formation, and the Dawson Arkose. |Raynolds, R.G., 2002. Upper Cretaceous and Tertiary stratigraphy of the Denver basin, Colorado. Rocky Mountain Geology, 37(2), pp.111-134.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7043"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Denver_Formation",
+				"https://pubs.geoscienceworld.org/uwyo/rmg/article-pdf/37/2/111/2954800/111.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Gulfian",
+			"description": "Named as series by Hill (1887) for its development along the coastal plain of the Gulf of Mexico. Subdivided into (in descending order): Basal Tertiaries (Marine Tertiary), Navarro beds, Dallas limestone, Eagle Ford shales, and Timber Creek group. Includes Middle Cretaceous and Upper Cretaceous strata.",
+			"issue_url": "",
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/Units/Gulfian_11851.html"]
+		},
+		{
+			"lithostratigraphic_informal": "Illinoian (Stage/Age)",
+			"description": "Penultimate Glacial Period circa 191,000 to circa 130,000 years ago, during the late Middle Pleistocene",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Illinoian_(stage)",
+				"https://ngmdb.usgs.gov/Geolex/Units/Illinoian_8919.html"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Kansan",
+			"description": "Also known as the Kansan glaciation or Kansan glacial, a glacial stage and part of an early conceptual climatic and chronological framework composed of four glacial and interglacial stages",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Kansan_glaciation",
+				"https://ngmdb.usgs.gov/Geolex/Units/Kansan_9037.html"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Sumas Mountain Subgroup",
+			"description": "Devonian unit in Cascades province, Washington; Sumas Mountain subgroup is an informal subunit of Chilliwack Group.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9495"],
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name_concept/12015",
+				"https://ngmdb.usgs.gov/Geolex/Units/SumasMountain_12015.html"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Twin Buttes Member unit D",
+			"description": "Twin Buttes unit D of Twin Buttes Member of Bridger Formation as described in Murphey and Evanoff 2011 (Murphey, P.C., Evanoff, E.M.M.E.T.T., Olstad, T. and Aase, A.K., 2011, April. Paleontology and stratigraphy of the middle Eocene Bridger Formation, southern Green River basin, Wyoming. In Proceedings of the 9th Conference on Fossil Resources (pp. 83-109).",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/134"],
+			"documentation_url": [
+				"https://npshistory.com/series/symposia/fossil-resources/9/proceedings.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "Wisconsin",
+			"description": "Also known as the Wisconsin glaciation or Wisconsin glacial episode, a glacial stage and part of an early conceptual climatic and chronological framework composed of four glacial and interglacial stages.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Wisconsin_glaciation",
+				"https://ngmdb.usgs.gov/Geolex/Units/Wisconsin_11819.html"
+			]
+		},
+		{
+			"lithostratigraphic_informal": "1919 Member",
+			"description": "Lower Permian (Leonardian) unit in north-central Texas; described in: Nelson, W.J., Hook, R.W., and Tabor, N., 2001. Clear Fork Group (Leonardian, Lower Permian) of North-Central Texas. in Johnson, K.S. (ed.), Pennsylvanian and Permian geology and petroleum in the southern Midcontinent, 1998 symposium: Oklahoma Geological Survey Circular, 104, pp.167-169. \"Rt. 1919\" member is an informal designation according to Nelson et al. 2001.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9565"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlithostratigraphic_informal",
+			"label": "Locality Attribute: Informal Lithostratigraphy",
+			"description": "Lithostratigraphic units that are unranked and/or not formally defined, but consistently used in the literature. https://github.com/ArctosDB/arctos/issues/6707"
+		}
+	]
+}

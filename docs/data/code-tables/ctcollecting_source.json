@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"collecting_source": "unknown",
+			"description": "Event of record is unknown."
+		},
+		{
+			"collecting_source": "wild",
+			"description": "Event occurred in an uncontrolled environment."
+		},
+		{
+			"collecting_source": "captive",
+			"description": "Event occurred in captivity or other controlled environment."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcollecting_source",
+			"label": "Event: Source Values",
+			"description": "Collecting Source Values"
+		}
+	]
+}

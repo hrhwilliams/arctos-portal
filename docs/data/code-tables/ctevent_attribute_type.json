@@ -1,0 +1,115 @@
+{
+	"data": [
+		{
+			"attribute_type": "weather",
+			"description": "A general description of the weather during a collecting event.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "accession",
+			"description": "The accession number with which the event is associated",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "event identifier",
+			"description": "Alpa-numeric identifier associated with an event such as \"expedition number\".",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "water temperature",
+			"description": "The temperature of the water, as measured during a collecting event. Enter a number in value and select an appropriate scale unit from the code table.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": "cttemperature_units"
+		},
+		{
+			"attribute_type": "air temperature",
+			"description": "The temperature of the air, as measured during a collecting event.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": "cttemperature_units"
+		},
+		{
+			"attribute_type": "dive",
+			"description": "A particular underwater event that includes or is included in the event (e.g., SCUBA, ROV, AUV, submersible).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6897"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "cruise",
+			"description": "A particular voyage on a vessel that includes or is included in the event.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6896"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "event documentation",
+			"description": "Reference to field notebooks, maps, and/or other materials that document the event. Tip: Publications can also be used to reference event documentation and provide another path for associating documentation with events.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6695"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "relative humidity",
+			"description": "Relative humidity of the air, as measured during a collecting event expressed as a percentage.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": "ctcount_units"
+		},
+		{
+			"attribute_type": "verbatim coordinates",
+			"description": "Coordinates as provided from field notes, collector, object tag, or other data source.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6638"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "event method",
+			"description": "Description of methods applied at the event.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6218"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "data management history",
+			"description": "Description of administrative actions capturing or otherwise affecting event data (e.g., date and determiner of data entry into legacy databases)",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6955"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "vessel",
+			"description": "A vehicle (typically a ship or boat) that participated in the event.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6895"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctevent_attribute_type",
+			"label": "Event Attributes",
+			"description": "Event Attributes are assertions which enhance individual events."
+		}
+	]
+}

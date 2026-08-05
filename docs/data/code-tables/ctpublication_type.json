@@ -1,0 +1,47 @@
+{
+	"data": [
+		{
+			"publication_type": "other",
+			"description": "Garbage category to deal with UAM Insect \"publications.\" Please find a way to make this go away.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"publication_type": "book",
+			"description": "A medium for recording information in the form of writing or images, typically composed of many pages (made of papyrus, parchment, vellum, or paper) bound together and protected by a cover.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Book"]
+		},
+		{
+			"publication_type": "journal article",
+			"description": "A written work published in a print or electronic medium for the purpose of propagating research results or academic analysis. Journal articles are assumed to be peer reviewed.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"publication_type": "dissertation",
+			"description": "Also known as a thesis, is a document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Thesis"]
+		},
+		{
+			"publication_type": "book section",
+			"description": "Also called books or chapters or parts, are parts. A distinct part of a book.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"publication_type": "field notebook",
+			"description": "Also known as fieldnotes, are qualitative notes recorded by scientists or researchers in the course of field research, during or after their observation of a specific organism or phenomenon they are studying.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fieldnotes"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpublication_type",
+			"label": "Publication: Types",
+			"description": "publication type"
+		}
+	]
+}

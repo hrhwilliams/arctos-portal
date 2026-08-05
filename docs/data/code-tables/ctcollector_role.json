@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"collector_role": "subject",
+			"description": "Agent depicted in the cataloged item."
+		},
+		{
+			"collector_role": "copyright holder",
+			"description": "Agent holding copyright to the original works of authorship which is fixed in a tangible form of expression as referenced in the record."
+		},
+		{
+			"collector_role": "collector",
+			"description": "Agent responsible for collecting a cataloged item. May also apply to an agent who assembled a collection of objects but did not necessarily collect or prepare the objects (e.g., collection of materials that were acquired through exchange, purchase, or other means). "
+		},
+		{
+			"collector_role": "creator",
+			"description": "Agent responsible for the existence or availability of an object or work (e.g. artist, author, publisher, or contributor). This term may be specified or explained further with remarks."
+		},
+		{
+			"collector_role": "preparator",
+			"description": "Agent who prepared the cataloged record, whether biological, cultural, or geological item or mineral."
+		},
+		{
+			"collector_role": "isolator",
+			"description": "Agent responsible for separating microorganisms or components from samples resulting in the current cataloged record."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcollector_role",
+			"label": "Collection Object: Agent Roles",
+			"description": "The fundamental role of an agent associated with a cataloged item. Multiple agents and roles may be associated with a single record."
+		}
+	]
+}

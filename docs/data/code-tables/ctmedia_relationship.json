@@ -1,0 +1,101 @@
+{
+	"data": [
+		{
+			"media_relationship": "shows cataloged_item",
+			"description": "Media depicting catalog records e.g. photo of an herbarium sheet, sketch of a parka, CT scan of a skull. Relationships to less-specific nodes (projects, localities) may be inferred from the specimen data and need not be explicitly recorded.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "associated with project",
+			"description": "Media with an association to projects, but one which cannot be expressed more directly, e.g., through involved specimens.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "created from collecting_event",
+			"description": "Media best relating to a time and place.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "documents accn",
+			"description": "Media which documents an accession (custody transfer documents) or all/most specimens in an accession (Accession Cards).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "derived from media",
+			"description": "Most often JPG media derived from a DNG. Related term must be the valid URI of existing media.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "shows publication",
+			"description": "Generally PDF of the publication",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "shows agent",
+			"description": "Agent who is the subject of media. Related term must be an exact match for a unique agent name.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "documents cataloged_item",
+			"description": "Media describing or documenting a cataloged item, but which do not depict the item itself, including field notes, scanned ledgers, oral histories, tag and label images, preparation catalogs, etc.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "documents loan",
+			"description": "Media which documents a loan, such as long-winded email correspondence.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "retake of media",
+			"description": "Typically refers to image retakes, where an image is rephotographed from the same view but at a different point in time. Often entails comparison of modern versus historic images to document landscape changes over time.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "documents borrow",
+			"description": "Media which documents a borrow (transaction).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "shows collecting_event",
+			"description": "Media is a depiction of a place at a time.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4396"],
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "describes taxon_name",
+			"description": "Media which documents or describes a taxon name or concept.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "shows permit",
+			"description": "Media related to a Permit.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_relationship": "created by agent",
+			"description": "Indicates the person who created the media (took a photograph, wrote field notes, etc.). The related term must be an exact match for a unique Agent Name.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmedia_relationship",
+			"label": "Media: Relationship Types",
+			"description": "media relationship type"
+		}
+	]
+}

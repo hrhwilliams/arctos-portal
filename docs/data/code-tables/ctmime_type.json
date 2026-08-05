@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"mime_type": "audio/x-wav",
+			"description": "Audio Wav File",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "application/pdf",
+			"description": "Portable Document Format",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "video/mp4",
+			"description": "MPEG-4 Part 14",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "text/plain",
+			"description": "text",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "image/png",
+			"description": "Portable Network Graphic",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "image/jpeg",
+			"description": "Joint Photographic Experts Group",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "image/tiff",
+			"description": "Tagged Image File Format",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "audio/mpeg3",
+			"description": "Audio MPEG-3 File",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "video/quicktime",
+			"description": "File extension MOV is most commonly associated with a QuickTime Video Clip, a multimedia container file format developed by Apple. MOV files use a proprietary compression algorithm, and are compatible on both Windows and Mac platforms. Though much less common, the MOV file extension is also used to denote an AutoCAD AutoFLIX animation movie.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "application/xml",
+			"description": "non-specific XML documents",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "image/dng",
+			"description": "Digital Negative image, an Open Source standard from Adobe",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"mime_type": "text/html",
+			"description": "HTML; web pages",
+			"issue_url": "",
+			"documentation_url": ["http://www.rfc-editor.org/rfc/rfc2854.txt"]
+		},
+		{
+			"mime_type": "model/stl",
+			"description": "Standard Tesselation Language",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmime_type",
+			"label": "Media: MIME Types",
+			"description": "MIME/TYPE refers to Multipurpose Internet Mail Extensions and its type identifies the format and content of files shared over the internet."
+		}
+	]
+}

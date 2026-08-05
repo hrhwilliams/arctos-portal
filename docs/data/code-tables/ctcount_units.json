@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"count_units": "absorbance units",
+			"description": "Although absorbance does not have true units, it is quite often reported in \"Absorbance Units\" or AU. Accordingly, optical density is measured in ODU, which are equivalent to AU cm​−1​. The higher the optical density, the lower the transmittance.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6798"],
+			"documentation_url": ""
+		},
+		{
+			"count_units": "frames per second",
+			"description": "The frequency or rate at which consecutive images or frames are captured or displayed.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7887"],
+			"documentation_url": ""
+		},
+		{
+			"count_units": "individuals",
+			"description": "A number or mathematical object used to count, measure, and label. The original examples are the natural numbers 1, 2, 3, 4, and so forth. Expected values are numerals; for example, \"5\" is a numeral that represents the number five.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Number"]
+		},
+		{
+			"count_units": "percent",
+			"description": "A number or ratio expressed as a fraction of 100. It is often denoted using the percent sign, \"%\", although the abbreviations \"pct.\", \"pct\" and sometimes \"pc\" are also used. A percentage is a dimensionless number (pure number); it has no unit of measurement.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Percentage"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcount_units",
+			"label": "Units of Counting",
+			"description": "count units"
+		}
+	]
+}

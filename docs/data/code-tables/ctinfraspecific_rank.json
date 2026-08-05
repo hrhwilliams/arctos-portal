@@ -1,0 +1,119 @@
+{
+	"data": [
+		{
+			"infraspecific_rank": "nothof.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "mut.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "lus.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "race",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "agamovar.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "nothosubsp.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "convar.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "nothovar.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "proles",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subsubforma",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "l. var.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "prol.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subvar.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subf.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "nm.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subsubvar.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "sublus.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "unranked",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "monstr.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "psp.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "agamosp.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "modif.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subhybr.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "f.juv.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "subsp.",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "forma",
+			"description": ""
+		},
+		{
+			"infraspecific_rank": "var.",
+			"description": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctinfraspecific_rank",
+			"label": "Taxonomy: Infraspecific Rank Types",
+			"description": "taxon infraspecific rank"
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"data": [
+		{
+			"collection_cde": "Diatomology",
+			"description": "Collection of unicellular organism records in the clade Diatomeae, comprising several genera of algae, specifically microalgae, found in the oceans, waterways and soils of the world."
+		},
+		{
+			"collection_cde": "Biological",
+			"description": "Collection of biological records (material or observations) not limited to a single discipline. May be appropriate for teaching, host, or comparative collections."
+		},
+		{
+			"collection_cde": "Botany",
+			"description": "Collection of botanical records, including algae, fungi, vascular and non-vascular plants, cyanobacteria."
+		},
+		{
+			"collection_cde": "Cultural",
+			"description": "Collection of cultural records, including archives, art, anthropological, archaeological, ethnographic, history, library, document, and media material."
+		},
+		{
+			"collection_cde": "Earth Science",
+			"description": "Collection of records that include earth sciences, meteoritics, rocks, and minerals. "
+		},
+		{
+			"collection_cde": "Entomology",
+			"description": "Collection of entomological records that may include arthropods and insects."
+		},
+		{
+			"collection_cde": "Environmental",
+			"description": "Collection of environmental records that may include water, soil, and eDNA samples."
+		},
+		{
+			"collection_cde": "General",
+			"description": "Collection of general records not specific to any of the other categories. This also includes the Arctos:Entity collection."
+		},
+		{
+			"collection_cde": "Herpetology",
+			"description": "Collection of amphibian and reptile records."
+		},
+		{
+			"collection_cde": "Ichthyology",
+			"description": "Collection of fish records."
+		},
+		{
+			"collection_cde": "Invertebrates",
+			"description": "Collection of invertebrate records, exclusive of entomological records (e.g., arthropods and insects) or malacological records."
+		},
+		{
+			"collection_cde": "Malacology",
+			"description": "Collection of mollusk records, including snails, clams, octopuses, etc."
+		},
+		{
+			"collection_cde": "Mammalogy",
+			"description": "Collection of mammal records."
+		},
+		{
+			"collection_cde": "Oology",
+			"description": "Collection of bird egg and nest records."
+		},
+		{
+			"collection_cde": "Ornithology",
+			"description": "Collection of bird records."
+		},
+		{
+			"collection_cde": "Paleontology",
+			"description": "Collection of fossil paleontological records."
+		},
+		{
+			"collection_cde": "Parasitology",
+			"description": "Collection of parasite records. For records of the host, use Biological."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcollection_cde",
+			"label": "Manage Collection: Collection Type Values",
+			"description": "General categories for collection types. This may be used to group collection-level statistics or other summary metrics, and does not affect collection operations or queries."
+		}
+	]
+}

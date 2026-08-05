@@ -1,0 +1,308 @@
+{
+	"data": [
+		{
+			"attribute_type": "USGS HUC 8-digit",
+			"description": "Consider using drainage instead of this attribute; consult the originating issue for more information. United States Geological Survey hydrologic unit code for hydrologic units which are classified as subbasins in the USGS Watershed Boundary Dataset.",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5223"],
+			"documentation_url": ["https://water.usgs.gov/GIS/huc.html"],
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "biostratigraphic zone",
+			"description": "no description DO NOT USE",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Biozone"],
+			"value_code_table": "ctbiostratigraphic_zone",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "data management history",
+			"description": "Description of administrative actions capturing or otherwise affecting locality data (e.g., date and determiner of data entry into legacy databases).",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6696"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "lithostratigraphic bed",
+			"description": "A named lithostratigraphic bed.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bed_(geology)"],
+			"value_code_table": "ctlithostratigraphic_bed",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "lithostratigraphic formation",
+			"description": "no description DO NOT USE",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Geological_formation"],
+			"value_code_table": "ctlithostratigraphic_formation",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "lithostratigraphic group",
+			"description": "no description DO NOT USE",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Group_(stratigraphy)"],
+			"value_code_table": "ctlithostratigraphic_group",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "site identifier",
+			"description": "Other identifiers assigned to a site or locality, not to be confused with locality_name.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "site found",
+			"description": "The date and the agent(s) who originally found and reported the locality to a collecting institution",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "TRS aliquot",
+			"description": "Quarter sections units of the Public Land Survey System.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "lithostratigraphic member",
+			"description": "no description DO NOT USE",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Stratigraphic_unit#Member"],
+			"value_code_table": "ctlithostratigraphic_member",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "geology remarks",
+			"description": "Description of lithology, stratigraphy, or other geologic information about the locality beyond what is covered by other locality attributes.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "biota remarks",
+			"description": "A summary description of biota observed or collected at the locality for use in locality reports.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "locality access",
+			"description": "Asserting this attribute makes the locality data unavailable to anyone without access to the corresponding collection.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctlocality_access",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "locality label",
+			"description": "Alternative shortened locality description that will fit on small printed labels or other reports. Not to be confused with locality_name.",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6387"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "georeference source",
+			"description": "A description that is specific enough to allow anyone in the future to use the same resources to validate the coordinates, or to georeference the same locality. Documentation Determiner should be the Arctos Agent who completed the georeference and determined date should be the date the georeference was completed.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "previous geography",
+			"description": "Previously-asserted geography string.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "Series/Epoch",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_series_epoch",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "TRS range",
+			"description": "Six mile east-west units of the Public Land Survey System.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "cttrs_range",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "TRS section",
+			"description": "One square mile units of the Public Land Survey System.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "cttrs_section",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "TRS township",
+			"description": "Six mile north-south units of the Public Land Survey System.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "cttrs_township",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "landholder",
+			"description": "The legal landowner or government land administration agency. Private property should be designated as private with the \"private\" landholder attribute and property ownership can be recorded in the attribute remark.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctlandholder",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "lithodemic suite",
+			"description": "A unit of lithodemic stratigraphy (describes bodies of rock which do not conform to the law of superposition).",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctlithodemic_suite",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "informal chronostratigraphy",
+			"description": "Published chronostratigraphic units that are not in the International Chronostratigraphic Chart, for example, regional chronostratigraphies.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctchronostrat_informal",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "quad",
+			"description": "Map name",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctquad",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "drainage",
+			"description": "Drainage in which the locality occurs.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctdrainage",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "biochron",
+			"description": "A biochron (from the Greek bios, life; and khronos, time) is the length of time represented by a biostratigraphic zone. Biochrons are named after characteristic fossil organisms or taxa that characterise that interval in time.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Biochron"],
+			"value_code_table": "ctbiochronology",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "Eon/Eonothem",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_eon_eonothem",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "Era/Erathem",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_era_erathem",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "feature",
+			"description": "Preserved geography feature. Recommend converting these to spatial attributes and removing this locality attribute.",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5207"],
+			"documentation_url": "",
+			"value_code_table": "ctfeature",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "informal lithostratigraphy",
+			"description": "Lithostratigraphic units that are unranked and/or not formally defined, but consistently used in the literature.",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6707"],
+			"documentation_url": "",
+			"value_code_table": "ctlithostratigraphic_informal",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "Stage/Age",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_stage_age",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "Substage/Subage",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_substage_subage",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "System/Period",
+			"description": "Chronostratigraphic units in the International Chronostratigraphic Chart.",
+			"search_terms": "",
+			"issue_url": "",
+			"documentation_url": ["https://stratigraphy.org/chart"],
+			"value_code_table": "ctchronostrat_system_period",
+			"unit_code_table": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlocality_attribute_type",
+			"label": "Locality Attribute: Types",
+			"description": "Locality attributes are determinations which clarify or refine Localities."
+		}
+	]
+}

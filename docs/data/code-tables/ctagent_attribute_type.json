@@ -1,0 +1,565 @@
+{
+	"data": [
+		{
+			"attribute_type": "bad duplicate of",
+			"description": "Nonpreferred member of a pair of duplicates. Must be used with related agent.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/arctos/issues/7356"
+			],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "cultural affiliation",
+			"description": "The major cultural group(s) to which an individual claims descent or identification. See https://arctos.database.museum/info/ctDocumentation.cfm?table=ctculture for possible correspondence and most up-to-date spellings and orthography.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7476"],
+			"documentation_url": "",
+			"purpose": "other",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "agent type",
+			"description": "Agent type; only used by the Arctos API when an agent type changes.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "history",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "last name",
+			"description": "A surname or family name. The portion of a person's name that indicates one's family, tribe or community. Practices vary by culture.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "url",
+			"description": "A Uniform Resource Locator (URL), colloquially termed a web address. that provides information about the Agent. For example a personal website, employer staff page, or a social media profile page. NOTE: there are special address types for GitHub, Library of Congress, ORCiD, and Wikidata urls. Please use the appropriate address type. Websites are not guaranteed to persist, please capture specific data (e.g. birth date) in other available fields. Add the most stable or persistent link possible.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/URL"],
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "aka",
+			"description": "Any alternate name string used by the agent.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "birth name",
+			"description": "Full name given at birth.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "first name",
+			"description": "A personal name, unusually used before the last name.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "job title",
+			"description": "The agent's current job title.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "Kew abbr.",
+			"description": "A string as published in Brummitt, R.K. & Powell, C.E. (1992), Authors of Plant Names, Kew: Royal Botanic Gardens, ISBN 978-1-84246-085-6",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "labels",
+			"description": "Used by the reporter function as a way of abbreviating agent names so that they fit on labels. Example: \"CJ Conroy\" instead of \"Christopher J. Conroy.\" This is useful for small labels/boxes.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "login",
+			"description": "Exact case-sensitive text string used to log into Arctos. NOTE: There can only be one login name associated with any agent.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "middle name",
+			"description": "A portion of a name that is written between the person's first name and last name.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "child of",
+			"description": "Biological or legal child. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "division of",
+			"description": "Used for organization agents: the US National Park Service is [division of] US Department of the Interior. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "parent of",
+			"description": "Biological or legal parent. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "sibling of",
+			"description": "Biological or legal sibling. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "spouse of",
+			"description": "Current or former spouse. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "student of",
+			"description": "Current or former student. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "not the same as",
+			"description": "Used to differentiate similar or identical namestrings. Should always be supported by a remark in both agent records. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "post-doctoral associate of",
+			"description": "Current or former post-doctoral associate. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "grandchild of",
+			"description": "Biological or legal grandchild of agent. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "employee of",
+			"description": "Current or former employee. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "grandparent of",
+			"description": "Biological or legal parent of agent's parent. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "associate of",
+			"description": "Colleague, partner, or other relationship not covered by more-specific terms. Must be used with related agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "established by",
+			"description": "Used for people who were involved in the creation or development of an agent of type organization or other agent. Must be used with related agent.",
+			"public": 1,
+			"issue_url": [
+				"github.com/ArctosDB/arctos/issues/4628",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "relative of",
+			"description": "Agent is related to another in a familial relationship other than spouse of, sibling of, parent/child or grandparent/grandchild. Please state actual relationship in remark. Must be used with related agent.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5019",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "remarks",
+			"description": "General remarks about the Agent.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "other",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "curatorial remarks",
+			"description": "Curatorial or \"inside\" remarks about the Agent.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "other",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "preferred name",
+			"description": "Name used to uniquely identify the agent in Arctos. Ideally this is the most complete version of a person's or organization's name and/or the name used professionally. USE ONLY FOR HISTORY OF CHANGES",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5411",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "history",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "GitHub",
+			"description": "GitHub user account URL must begin with https://github.com/",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/arctos/issues/8656"
+			],
+			"documentation_url": "",
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "fax",
+			"description": "A sequence of digits assigned to a fixed-line telephone subscriber station connected to a fax machine.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fax"],
+			"purpose": "history",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "correspondence",
+			"description": "Mailing address for letters. Format is {Name, Job Title} [new line] {Full Mailing Address, including country and zip or equivilant}.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "notification email",
+			"description": "Email address at which the Arctos Agent wishes to receive notifications.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "phone",
+			"description": "A sequence of digits assigned to a fixed-line telephone subscriber station connected to a telephone line.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Telephone_number"],
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "collectionID",
+			"description": "Identifier linking an agent representing an Arctos collection to the collection. Must begin with https://arctos.database.museum/collection/.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/5327",
+				"https://github.com/ArctosDB/arctos/issues/7352"
+			],
+			"documentation_url": "",
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "email",
+			"description": "An email address in the format xxx@yyy.zzz for example test@arctos.edu",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "UUID",
+			"description": "Universal Unique Identifier. Handy for creating a pre-Arctos resolvable identifier.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/dev/issues/571"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Universally_unique_identifier"],
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "formatted JSON",
+			"description": "Address components as JSON data objects. Init: used to populate GenBank submission form.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "home",
+			"description": "Personal mailing address. Format is {Name, Job Title} [new line] {Full Mailing Address, including country and zip or equivilant}.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "mobile phone",
+			"description": "A sequence of digits assigned to a wireless electronic telephony device.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Telephone_number"],
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "shipping",
+			"description": "Shipping address for packages. Format is {Name, Job Title} [new line] {Full Mailing Address, including country and zip or equivilant}.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "work phone",
+			"description": "A sequence of digits assigned to a fixed-line telephone subscriber station connected to a telephone line or to a wireless electronic telephony device associated with the agent's employer.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Telephone_number"],
+			"purpose": "address",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "Wikidata",
+			"description": "URL of a wikidata page. Example: https://www.wikidata.org/wiki/Q927582",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "issued by",
+			"description": "The value to be used in the issued by section of identifiers across Arctos",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7722"],
+			"documentation_url": "",
+			"purpose": "name",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "ORCID",
+			"description": "The ORCID ID is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors. Format for Arctos is \"https://orcid.org/{ORCID}\" e. g. https://orcid.org/0000-0003-3985-0670",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/ORCID"],
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "volunteer of",
+			"description": "Donated time to the associated organization or person.",
+			"public": 0,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7352"],
+			"documentation_url": "",
+			"purpose": "relationship",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "profile",
+			"description": "This is reserved for biographical information that will be displayed publicly under the heading \"Biography\". We suggest including information that helps distinguish this person, especially their relationship to the collection or other activity in Arctos. Private personal information should NEVER be included and will be removed by administrators.",
+			"public": 1,
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7418"],
+			"documentation_url": "",
+			"purpose": "other",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "Library of Congress",
+			"description": "URL of the Library of Congress (LCCN) Permalink for a given person. Provides name variants and links to known authorities. Example of only acceptable format: https://lccn.loc.gov/n85282001",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/4087",
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/arctos/issues/7662"
+			],
+			"documentation_url": "",
+			"purpose": "identifier",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "status",
+			"description": "Indication of data quality or completeness. Limited to:\r\n\r\n* verified (The agent is known to the verifier and managed as such. Data associated with the agent can be reasonably relied upon and edits should only be made when the editor is positive they apply to the agent. While verified agents may not carry disambiguating information that could be detected by automation, they are actively managed by another Arctos Agent.)\r\n* accepted (The agent is not actively managed but holds data that make it unique such as an ORCiD, Wikidata identifier, or Library of Congress number.)\r\n* unverified (The agent does not hold any data that allows disambiguation by automation and is not managed. Please improve this Agent by adding disambiguating data!)\r\n* flagged (A potential problem has been noted; proceed with caution.)",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7328",
+				"https://github.com/ArctosDB/code-table-work/issues/1"
+			],
+			"documentation_url": "",
+			"purpose": "event",
+			"vocabulary": "verified,accepted,unverified,flagged"
+		},
+		{
+			"attribute_type": "born",
+			"description": "Date on which agent was born (if person) or came to exist. ``begin_date`` is required and should be interpreted as the date on which the event occurred; ``end_date`` may not be given; value will default to ``begin_date``.",
+			"public": 0,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7359",
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/dev/issues/214"
+			],
+			"documentation_url": "",
+			"purpose": "event",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "died",
+			"description": "Date on which agent died (if person) or ceased to exist. ``begin_date`` is required and should be interpreted as the date on which the event occurred; ``end_date`` may not be given; value will default to ``begin_date``.",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7359",
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/dev/issues/214"
+			],
+			"documentation_url": "",
+			"purpose": "event",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "alive",
+			"description": "Date on which agent was determined to be alive (if person) or operational. ``begin_date`` is required and should be interpreted as the date on which the event was noted; ``end_date`` may not be given; value will default to ``begin_date``",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7359",
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/dev/issues/214"
+			],
+			"documentation_url": "",
+			"purpose": "event",
+			"vocabulary": ""
+		},
+		{
+			"attribute_type": "dead",
+			"description": "Date on which agent was determined to be dead (if person) or no longer operational. ``begin_date`` is required and should be interpreted as the date on which the event was noted; ``end_date`` may not be given; value will default to ``begin_date``",
+			"public": 1,
+			"issue_url": [
+				"https://github.com/ArctosDB/arctos/issues/7359",
+				"https://github.com/ArctosDB/arctos/issues/7352",
+				"https://github.com/ArctosDB/dev/issues/214"
+			],
+			"documentation_url": "",
+			"purpose": "event",
+			"vocabulary": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctagent_attribute_type",
+			"label": "Agent Attribute Types",
+			"description": "Agent-related data."
+		}
+	]
+}

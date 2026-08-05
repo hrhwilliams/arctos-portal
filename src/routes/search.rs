@@ -1,7 +1,7 @@
 use axum::{
     Json,
     extract::State,
-    http::header::{CONTENT_DISPOSITION, CONTENT_TYPE},
+    http::header::{CONTENT_DISPOSITION, CONTENT_ENCODING, CONTENT_TYPE},
     response::{IntoResponse, Response},
 };
 use axum_extra::extract::Form;
@@ -57,6 +57,39 @@ pub async fn search(
         )
             .into_response(),
     })
+}
+
+/// The whole matching set, not a page: Elasticsearch answers which records
+/// match and `DuckDB` reads their full rows out of the Parquet.
+///
+/// # Errors
+///
+/// Returns an error if the Elasticsearch request fails or the Parquet cannot be
+/// read.
+#[tracing::instrument(skip(app_state))]
+pub async fn download(
+    State(app_state): State<AppState>,
+    Form(search_form): Form<SearchForm>,
+) -> Result<Response, AppError> {
+    let guids = app_state.export_guids(&search_form).await?;
+    // DuckDB is synchronous and this is minutes of work at the row cap
+    let gz = tokio::task::spawn_blocking(move || AppState::export_csv_gz(&guids))
+        .await
+        .map_err(std::io::Error::other)??;
+
+    Ok((
+        [
+            (CONTENT_TYPE, "application/gzip".to_owned()),
+            // already gzip: says so, and stops the compression layer wrapping it again
+            (CONTENT_ENCODING, "identity".to_owned()),
+            (
+                CONTENT_DISPOSITION,
+                format!("attachment;filename=\"arctos_{}.csv.gz\"", timestamp()),
+            ),
+        ],
+        gz,
+    )
+        .into_response())
 }
 
 fn timestamp() -> String {

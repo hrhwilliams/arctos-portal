@@ -1,0 +1,63 @@
+{
+	"data": [
+		{
+			"chronostrat_system_period": "Quaternary",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Quaternary\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Neogene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Neogene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Cambrian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Cambrian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Carboniferous",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Carboniferous\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Cretaceous",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Cretaceous\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Devonian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Devonian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Jurassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Jurassic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Ordovician",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Ordovician\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Paleogene",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Paleogene\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Permian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Permian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Silurian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Silurian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Stenian",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Stenian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_system_period": "Triassic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Triassic\">Wikipedia</a>"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_system_period",
+			"label": "Locality Attribute: Systems/Periods",
+			"description": "Systems/Periods included in the International Chronostratigraphic Chart"
+		}
+	]
+}

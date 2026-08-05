@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"verificationstatus": "unaccepted",
+			"description": "The place and time information as entered was reviewed and determined to be incorrect, or less correct or complete than other available data.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"verificationstatus": "accepted",
+			"description": "Information on the place and time of the event was checked by curatorial staff and determined to be correct using the best available resources, including original data. The data have not been verified by the collector or maker. Transcription or omission errors may still be possible.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"verificationstatus": "verified and locked",
+			"description": "Information on the place and time of the event was checked with original source material or experts. This may include verifying information with the collector or maker, or checking original labels, field notebooks, collector itineraries, and associated digital data. All information is determined to be correct and accurate. This value LOCKS linked Locality and Event data. (Edits can only be made after changing this status, and should be made only with more authoritative data.)",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctverificationstatus",
+			"label": "Object Event: Verification Status Values",
+			"description": "record event verification status"
+		}
+	]
+}

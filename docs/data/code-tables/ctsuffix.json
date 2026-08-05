@@ -1,0 +1,51 @@
+{
+	"data": [
+		{
+			"suffix": "II",
+			"description": ""
+		},
+		{
+			"suffix": "III",
+			"description": ""
+		},
+		{
+			"suffix": "IV",
+			"description": ""
+		},
+		{
+			"suffix": "Jr.",
+			"description": ""
+		},
+		{
+			"suffix": "Sr.",
+			"description": ""
+		},
+		{
+			"suffix": "Tax.",
+			"description": ""
+		},
+		{
+			"suffix": "JR",
+			"description": ""
+		},
+		{
+			"suffix": "K.A.R.",
+			"description": ""
+		},
+		{
+			"suffix": "PhD",
+			"description": ""
+		},
+		{
+			"suffix": "DDS",
+			"description": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctsuffix",
+			"label": "Deprecated Agent: Suffixes",
+			"description": "Deprecated controlled vocabulary for agent name suffixes"
+		}
+	]
+}

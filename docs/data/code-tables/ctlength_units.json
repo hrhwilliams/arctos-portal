@@ -1,0 +1,47 @@
+{
+	"data": [
+		{
+			"length_units": "km",
+			"description": "Kilometre or kilometer; equal to one thousand meters."
+		},
+		{
+			"length_units": "mi",
+			"description": "Mile; generally assumed to be statute mile, 5,280 feet or about 1609 meters."
+		},
+		{
+			"length_units": "yd",
+			"description": "Yard; 3 feet or 0.9144 meters."
+		},
+		{
+			"length_units": "cm",
+			"description": "Centimetre or centimeter, one hundredth of a metre."
+		},
+		{
+			"length_units": "ft",
+			"description": "Foot or feet; 0.3048 m."
+		},
+		{
+			"length_units": "in",
+			"description": "Inch; 25.4 mm."
+		},
+		{
+			"length_units": "m",
+			"description": "Meter or metre; base unit of length in the International System of Units (SI)."
+		},
+		{
+			"length_units": "mm",
+			"description": "Millimetre or millimeter; one thousandth of a meter."
+		},
+		{
+			"length_units": "fathom",
+			"description": "A fathom is generally understood to be six feet, but other values have been used in various contexts."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlength_units",
+			"label": "Units of Measure",
+			"description": "units of length"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"data": [
+		{
+			"e_or_w": "E",
+			"description": "east"
+		},
+		{
+			"e_or_w": "W",
+			"description": "west"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctew",
+			"label": "Locality: East/West",
+			"description": "east-west direction"
+		}
+	]
+}

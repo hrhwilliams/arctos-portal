@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"taxon_relationship": "potential alternate spelling",
+			"description": "Possible spelling variation detected by automation."
+		},
+		{
+			"taxon_relationship": "synonym of",
+			"description": "Each of two or more names of the same rank used to denote the same taxonomic taxon. - ICZN"
+		},
+		{
+			"taxon_relationship": "misspelling",
+			"description": "The taxon name to which this term is applied has been researched by a person and determined to be a misspelling. The related name should be used in preference to this one. This name should likely be proposed for quarantine. <a href=\"https://github.com/ArctosDB/arctos/issues/4563\" class=\"external\">Github Issue</a>"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_relation",
+			"label": "Taxonomy: Name Relationship Types",
+			"description": "taxon relationship type"
+		}
+	]
+}

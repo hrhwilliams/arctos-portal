@@ -1,0 +1,59 @@
+{
+	"data": [
+		{
+			"license_id": 1,
+			"display": "CC0",
+			"description": "Public Domain (CC0 1.0)",
+			"uri": "https://creativecommons.org/publicdomain/zero/1.0"
+		},
+		{
+			"license_id": 2,
+			"display": "CC BY",
+			"description": "Attribution 3.0 Unported",
+			"uri": "https://creativecommons.org/licenses/by/3.0"
+		},
+		{
+			"license_id": 3,
+			"display": "Copyright Restricted",
+			"description": "Use is restricted. Owner of the intellectual property has the exclusive legal right to reproduce, distribute copies, create derivatives or adaptations, perform, and display the creative work. Contact intellectual property owner for licensing. US Copyright office: https://www.copyright.gov/title17/ | https://github.com/ArctosDB/code-table-work/issues/113",
+			"uri": "https://www.loc.gov/duplicationservices/copyright/"
+		},
+		{
+			"license_id": 4,
+			"display": "CC BY-NC-ND",
+			"description": "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+			"uri": "https://creativecommons.org/licenses/by-nc-nd/3.0"
+		},
+		{
+			"license_id": 5,
+			"display": "CC BY-ND",
+			"description": "Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)",
+			"uri": "https://creativecommons.org/licenses/by-nd/3.0"
+		},
+		{
+			"license_id": 6,
+			"display": "CC BY-NC",
+			"description": "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+			"uri": "https://creativecommons.org/licenses/by-nc/3.0"
+		},
+		{
+			"license_id": 7,
+			"display": "CC BY-NC-SA",
+			"description": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+			"uri": "https://creativecommons.org/licenses/by-nc-sa/3.0"
+		},
+		{
+			"license_id": 8,
+			"display": "CC BY-SA",
+			"description": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+			"uri": "https://creativecommons.org/licenses/by-sa/3.0"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlicense",
+			"label": "Usage: License",
+			"description": "Licenses are legal documents which specify permissible use."
+		}
+	]
+}

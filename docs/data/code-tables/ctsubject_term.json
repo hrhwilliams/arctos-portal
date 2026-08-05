@@ -1,0 +1,2219 @@
+{
+	"data": [
+		{
+			"subject_term": "Alaska Native artists",
+			"description": "Artists who identify as Athabascan, Inupiaq, Northwest Coast (Haida, Tlingit, Tshimshian,), St. Lawrence Island Yupik, Sugpiaq (Alutiiq), Yup’ik and/or Unangan (Aleut).",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Alaska_Native_art"]
+		},
+		{
+			"subject_term": "Arctic",
+			"description": "The Arctic is a polar region located at the northernmost part of Earth. The Arctic consists of the Arctic Ocean, adjacent seas, and parts of Alaska (United States), Finland, Greenland (Denmark), Iceland, Northern Canada, Norway, Russia and Sweden. Land within the Arctic region has seasonally varying snow and ice cover, with predominantly treeless permafrost (permanently frozen underground ice) containing tundra. Arctic seas contain seasonal sea ice in many places.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Arctic"]
+		},
+		{
+			"subject_term": "aurora borealis",
+			"description": "Natural light display in the Earth's sky, predominantly seen in the high-latitude regions around the Arctic.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Aurora"]
+		},
+		{
+			"subject_term": "devil's club",
+			"description": "Devil's club or devil's walking stick (Oplopanax horridus, Araliaceae; syn. Echinopanax horridus, Fatsia horrida) is a large understory shrub endemic to the arboreal rainforests of the Pacific Northwest, but also disjunct on islands in Lake Superior. It is noted for its large palmate leaves and erect, woody stems covered in noxious and irritating spines. It is also known as Alaskan ginseng and similar names, although it is not a true ginseng.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Devil%27s_club"]
+		},
+		{
+			"subject_term": "beluga whales",
+			"description": "The beluga whale (Delphinapterus leucas) is an Arctic and sub-Arctic cetacean. It is one of two members of the family Monodontidae, along with the narwhal, and the only member of the genus Delphinapterus. It is also known as the white whale, as it is the only cetacean to regularly occur with this colour; the sea canary, due to its high-pitched calls; and the melonhead, though that more commonly refers to the melon-headed whale, which is an oceanic dolphin.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Beluga_whale"]
+		},
+		{
+			"subject_term": "black bears",
+			"description": "Ursus americanus - Medium-sized bear native to North America. It is the continent's smallest and most widely distributed bear species. American black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/American_black_bear"]
+		},
+		{
+			"subject_term": "blanket toss",
+			"description": "Nalukataq is the spring whaling festival of the Iñupiat of Northern Alaska, especially the North Slope Borough. It is characterized by its namesake, the dramatic Eskimo blanket toss. \"Marking the end of the spring whaling season,\" Nalukataq creates, \"a sense of being for the entire community and for all who want a little muktuk or to take part in the blanket toss....At no time, however, does Nalukataq relinquish its original purpose, which is to recognize the annual success and prowess of each umialik, or whaling crew captain....Nalukataq [traditions] have always reflected the process of survival inherent in sharing...crucial to...the Arctic.\"",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Nalukataq"]
+		},
+		{
+			"subject_term": "blood quantum laws",
+			"description": "Blood quantum laws or Indian blood laws are laws in the United States and the former Thirteen colonies that define Native American identity by percentages of ancestry. These laws were enacted by the American government, by contrast many tribes and nations do not include Blood Quantum (BQ) as part of their own enrollment criteria. A person's blood quantum is defined as the fraction of their ancestors, out of their total ancestors, who are documented as full-blood Native Americans.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Blood_quantum_laws"]
+		},
+		{
+			"subject_term": "book illustrations",
+			"description": "Drawings created specifically to be included in a published book.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Book_illustration"]
+		},
+		{
+			"subject_term": "geese",
+			"description": "General term referring to members of several species of large web-footed birds in different genera, especially the genera Anser and Branta, but also including a number of waterfowl of gooselike build that live in the Northern and Southern Hemispheres and belong to other groups. Geese have in common that they are larger than ducks and smaller than swans; they differ from ducks in having longer necks and legs that are set more forward.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250063"]
+		},
+		{
+			"subject_term": "lizards",
+			"description": "Sauria (suborder) - Members of a suborder containing nearly 4,450 species of reptiles having a single temporal opening lying above the bar formed by postorbital and squamosal bones, a pectoral girdle and interorbital septum always present, well-eveloped male copulatory organs (hemipenes) and saclike ovaries in females, often an elongated body, a long tail, four legs, and a scaly or granulated hide. The classification of lizards and other reptiles is in flux.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250295"]
+		},
+		{
+			"subject_term": "bell jars (display jars)",
+			"description": "Bell-shaped jars, placed open-end down on a base and usually sealed, for display or storage of artifacts, natural specimens, dried flower arrangements, figurines, objets d'art, or other decorative items. For bell-shaped glass covers used to protect living plants, use \"bell glasses (horticultural containers).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300395601"]
+		},
+		{
+			"subject_term": "berries",
+			"description": "A berry is a small, pulpy, and often edible fruit. Typically, berries are juicy, rounded, brightly colored, sweet or sour, and do not have a stone or pit, although many pips or seeds may be present. Common examples are strawberries, raspberries, blueberries, blackberries, red currants, white currants and blackcurrants. In Britain, soft fruit is a horticultural term for such fruits.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011869"]
+		},
+		{
+			"subject_term": "bicentennials",
+			"description": "Two hundredth anniversaries or their observances.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300247595"]
+		},
+		{
+			"subject_term": "bowhead whales",
+			"description": "The bowhead whale (Balaena mysticetus) is a species of baleen whale belonging to the family Balaenidae and the only living representative of the genus Balaena. It is the only baleen whale endemic to the Arctic and subarctic waters, and is named after its characteristic massive triangular skull, which it uses to break through Arctic ice. Other common names of the species are the Greenland right whale or Arctic whale. American whalemen called them the steeple-top, polar whale, or Russia or Russian whale.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bowhead_whale"]
+		},
+		{
+			"subject_term": "buntings (birds)",
+			"description": "The buntings are a group of Old World passerine birds forming the genus Emberiza, the only genus in the family Emberizidae. They are seed-eating birds with stubby, conical bills.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bunting_(bird)"]
+		},
+		{
+			"subject_term": "campfires",
+			"description": "A campfire is a fire at a campsite that provides light and warmth, and heat for cooking. It can also serve as a beacon, and an insect and predator deterrent. Established campgrounds often provide a stone or steel fire ring for safety. Campfires are a popular feature of camping. At summer camps, the word campfire often refers to an event (ceremony, get together, etc.) at which there is a fire. Some camps refer to the fire itself as a campfire.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Campfire"]
+		},
+		{
+			"subject_term": "caches",
+			"description": "A small shed elevated on poles above the reach of animals and used for storing food, equipment, etc.",
+			"issue_url": "",
+			"documentation_url": ["https://www.dictionary.com/browse/caching"]
+		},
+		{
+			"subject_term": "chickadees",
+			"description": "The chickadees are a group of North American birds in the tit family included in the genus Poecile. Species found in North America are referred to as chickadees, while other species in the genus are called tits. They are small-sized birds overall, usually having the crown of the head and throat patch distinctly darker than the body. They are at least 6 to 14 centimeters (2.4 to 5.5 inches) in size.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chickadee"]
+		},
+		{
+			"subject_term": "colonialism",
+			"description": "The practice or policy of control by one people or power over other people or areas, often by establishing colonies and generally with the aim of economic dominance.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Colonialism"]
+		},
+		{
+			"subject_term": "childhood",
+			"description": "The earliest developmental stage of a living being.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300189588"]
+		},
+		{
+			"subject_term": "cottonwood trees",
+			"description": "Populus trichocarpa, the black cottonwood, western balsam-poplar or California poplar, is a deciduous broadleaf tree species native to western North America. It is used for timber, and is notable as a model organism in plant biology. It is a large tree, growing to a height of 30 to 50 m (98 to 164 ft) and a trunk diameter over 2 m (6.6 ft), which makes it the largest poplar species in the Americas. It is normally fairly short-lived, but some trees may live up to 400 years.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Populus_trichocarpa"]
+		},
+		{
+			"subject_term": "dog mushing",
+			"description": "Mushing is a sport or transport method powered by dogs. It includes carting, pulka, dog scootering, sled dog racing, skijoring, freighting, and weight pulling. More specifically, it implies the use of one or more dogs to pull a sled on snow or a rig on dry land.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Mushing"]
+		},
+		{
+			"subject_term": "drums",
+			"description": "Membranophones with a resonating cavity covered at one or both ends by a membrane, which is sounded by striking, rubbing, or plucking.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5695"],
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "tourism",
+			"description": "The industry providing facilities and services to people traveling for recreation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4948"],
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300132466"]
+		},
+		{
+			"subject_term": "abandoned buildings",
+			"description": "Designates buildings or groups of buildings that are abandoned by their owners, often constituting potential public hazards. In a legal connotations, the term does not include buildings that are temporarily vacant or unoccupied.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008055"]
+		},
+		{
+			"subject_term": "abstract (general art genre)",
+			"description": "Genre of visual arts in which figurative subjects or other forms are simplified or changed in their representation so that they do not portray a recognizable person, object, thing, etc.; may reference an idea, quality, or state rather than a concrete object. For the process of formulating general concepts by abstracting common properties of instances, prefer \"abstraction.\" For 20th-century art styles that were a reaction against the traditional European conception of art as the imitation of nature, use \"Abstract (fine arts style).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300417511"]
+		},
+		{
+			"subject_term": "fireweed",
+			"description": "Chamerion angustifolium - Perennial herb, from 3-10' tall. Unbranched stem erect with numerous lance-shaped leaves, flowers on upper half of stem. Many showy flowers to 1.5\" across, with 4 deep pink petals. Produces fluffy airborne seeds. Can form spectacular stands in disturbed or burntover areas. Spring shoots are edible. Nectar produces excellent honey.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chamaenerion_angustifolium"]
+		},
+		{
+			"subject_term": "forget-me-nots",
+			"description": "Myosotis is a genus of flowering plants in the family Boraginaceae. In the northern hemisphere they are colloquially denominated forget-me-nots or Scorpion grasses. The colloquial name \"Forget-me-Not\" was calqued from the German Vergissmeinnicht and first used in English in AD 1398 through King Henry IV of England. Similar names and variations are found in many languages. Myosotis alpestris is the official flower of Alaska and Dalsland, Sweden. Plants of the genus are commonly confused with Chatham Islands' Forget-me-Nots which belong to the related genus Myosotidium.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Myosotis"]
+		},
+		{
+			"subject_term": "Formline art",
+			"description": "Formline art is a feature in the indigenous art of the Northwest Coast of North America, distinguished by the use of characteristic shapes referred to as ovoids, U forms and S forms. Coined by Bill Holm in his 1965 book Northwest Coast Indian Art: An Analysis of Form, the \"formline is the primary design element on which Northwest Coast art depends, and by the turn of the 20th century, its use spread to the southern regions as well. It is the positive delineating force of the painting, relief and engraving. Formlines are continuous, flowing, curvilinear lines that turn, swell and diminish in a prescribed manner. They are used for figure outlines, internal design elements and in abstract compositions.”",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Formline_art"]
+		},
+		{
+			"subject_term": "fish drying",
+			"description": "Process or action of drying fish.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "forest interiors",
+			"description": "Spaces inside forests. Hood Museum keywords",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "fur seals",
+			"description": "Fur seals are any of nine species of pinnipeds belonging to the subfamily Arctocephalinae in the family Otariidae. They are much more closely related to sea lions than true seals, and share with them external ears (pinnae), relatively long and muscular foreflippers, and the ability to walk on all fours. They are marked by their dense underfur, which made them a long-time object of commercial hunting. Eight species belong to the genus Arctocephalus and are found primarily in the Southern Hemisphere, while a ninth species also sometimes called fur seal, the northern fur seal (Callorhinus ursinus), belongs to a different genus and inhabits the North Pacific.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fur_seal"]
+		},
+		{
+			"subject_term": "gold mining",
+			"description": "Gold mining is the resource extraction of gold by mining.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gold_mining"]
+		},
+		{
+			"subject_term": "gold pans",
+			"description": "Circular pans used in placer gold panning.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Gold_panning"]
+		},
+		{
+			"subject_term": "addiction",
+			"description": "The state of being physically or psychologically habituated to a substance or practice to such an extent that its cessation causes severe trauma. For the long term or excessive use or misuse of narcotics, alcohol, or other substances, use \"substance abuse.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300189146"]
+		},
+		{
+			"subject_term": "airplanes",
+			"description": "Nontechnical term for heavier than air fixed-wing aircraft designed to utilize the pressures created by their motion through the air to lift and transport people and cargo; if possible use a more precise term.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212616"]
+		},
+		{
+			"subject_term": "Harriman Alaska expedition",
+			"description": "The Harriman Alaska expedition explored the coast of Alaska for two months from Seattle to Alaska and Siberia and back again In 1899. It was organized by wealthy railroad magnate Edward Harriman. Harriman brought with him an elite community of scientists, artists, photographers, and naturalists to explore and document the Alaskan coast.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Harriman_Alaska_expedition"]
+		},
+		{
+			"subject_term": "humpback whales",
+			"description": "The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is one of the larger rorqual species, with adults ranging in length from 12–16 m (39–52 ft) and weighing around 25–30 t (28–33 short tons). The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song lasting 10 to 20 minutes, which they repeat for hours at a time. All the males in a group will produce the same song, which is different each season. Its purpose is not clear, though it may help induce estrus in females.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Humpback_whale"]
+		},
+		{
+			"subject_term": "ice fog",
+			"description": "A type of fog consisting of fine ice crystals suspended in the air, usually at temperatures colder than -40. It should be distinguished from diamond dust, a precipitation of sparse ice crystals falling from a clear sky.[1] It should also be distinguished from freezing fog, which is commonly called pogonip in the western United States.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ice_fog"]
+		},
+		{
+			"subject_term": "bathing (hygienic activity)",
+			"description": "The washing of humans or animals; for recreational immersion in water, use \"swimming.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343854"]
+		},
+		{
+			"subject_term": "interpersonal relationships",
+			"description": "An interpersonal relationship is a strong, deep, or close association or acquaintance between two or more people that may range in duration from brief to enduring. The context can vary from family or kinship relations, friendship, marriage, relations with associates, work, clubs, neighborhoods, and places of worship. Relationships may be regulated by law, custom, or mutual agreement, and form the basis of social groups and of society as a whole.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Interpersonal_relationship"]
+		},
+		{
+			"subject_term": "killer whales",
+			"description": "The killer whale, also known as an orca (Orcinus orca), is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, they can be found in each of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Killer_whale"]
+		},
+		{
+			"subject_term": "kuspuks",
+			"description": "A kuspuk is a hooded overshirt with a large front pocket commonly worn among Alaska Natives. Kuspuks are tunic-length, falling anywhere from below the hips to below the knees. The bottom portion of kuspuks worn by women may be gathered and akin to a skirt. Kuspuks tend to be pullover garments, though some have zippers.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Kuspuk"]
+		},
+		{
+			"subject_term": "laundry",
+			"description": "Laundry refers to the washing of clothing and other textiles. Laundry processes are often done in a room reserved for that purpose; in an individual home this is referred to as a laundry room, Laundry in Australian English or utility room. An apartment building or student hall of residence may have a shared laundry facility such as a tvättstuga. A stand-alone business is referred to as a self-service laundry (launderette in British English or laundromat in North American and Australasia). The material that is being washed, or has been laundered, is also generally referred to as laundry.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Laundry"]
+		},
+		{
+			"subject_term": "children's art",
+			"description": "Art produced by children.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300056496"]
+		},
+		{
+			"subject_term": "lupine",
+			"description": "Lupinus nootkatensis, the Nootka lupine, is a perennial plant of the genus Lupinus in the legume family, Fabaceae. It is native to North America. The Nootka lupine grows to 60 cm tall. Late in the 18th century it was first introduced to Europe. The Nootka lupine is common on the west coast of North America, and is one of the species from which the garden hybrids are derived, being valued in Britain and other North-European countries for its tolerance of cool, wet summers. In North-America, it grows along roadsides, gravel bars, and forest clearings from the Aleutian Islands and Southcentral Alaska, and along the Alaskan panhandle to British Columbia. Rigorous self-seeders as they are, lupine can often be seen along roadsides and in open meadows, their bright blueish purple flowers catching ones eye from quite a distance. Their long tap roots make transplanting difficult, so sowing seed is preferable.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lupinus_nootkatensis"]
+		},
+		{
+			"subject_term": "mastodons",
+			"description": "A mastodon is any proboscidean belonging to the extinct genus Mammut (family Mammutidae) that inhabited North and Central America during the late Miocene or late Pliocene up to their extinction at the end of the Pleistocene 10,000 to 11,000 years ago. Mastodons lived in herds and were predominantly forest-dwelling animals that lived on a mixed diet obtained by browsing and grazing, somewhat similar to their distant relatives, modern elephants, but probably with greater emphasis on browsing.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Mastodon"]
+		},
+		{
+			"subject_term": "mudflats",
+			"description": "Mudflats or mud flats, also known as tidal flats, are coastal wetlands that form in intertidal areas where sediments have been deposited by tides or rivers. A recent global analysis suggested they are as extensive globally as mangroves. They are found in sheltered areas such as bays, bayous, lagoons, and estuaries; they are also seen in freshwater lakes and salty lakes (or inland seas) alike, wherein many rivers and creeks end. Mudflats may be viewed geologically as exposed layers of bay mud, resulting from deposition of estuarine silts, clays and aquatic animal detritus. Most of the sediment within a mudflat is within the intertidal zone, and thus the flat is submerged and exposed approximately twice daily.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Mudflat"]
+		},
+		{
+			"subject_term": "muskox",
+			"description": "An Arctic hoofed mammal of the family Bovidae, noted for its thick coat and for the strong odor emitted by males during the seasonal rut, from which its name derives. This musky odor is used to attract females during mating season. Its Inuktitut name \"umingmak\" translates to \"the bearded one\". Its Woods Cree names \"mâthi-môs\" and \"mâthi-mostos\" translate to \"ugly moose\" and \"ugly bison\", respectively. Muskoxen primarily live in Greenland and the Canadian Arctic of the Northwest Territories and Nunavut, with introduced populations in the American state of Alaska, the Canadian territory of Yukon, the Scandinavian Peninsula, and Siberia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Muskox"]
+		},
+		{
+			"subject_term": "narwhals",
+			"description": "The narwhal, also known as a narwhale (Monodon monoceros), is a medium-sized toothed whale that possesses a large \"tusk\" from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia. It is one of two living species of whale in the family Monodontidae, along with the beluga whale. The narwhal males are distinguished by a long, straight, helical tusk, which is an elongated upper left canine. The narwhal was one of many species described by Carl Linnaeus in his publication Systema Naturae in 1758.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Narwhal"]
+		},
+		{
+			"subject_term": "needlefish",
+			"description": "Needlefish (family Belonidae) or long toms are piscivorous fishes primarily associated with very shallow marine habitats or the surface of the open sea. Some genera include species found in marine, brackish, and freshwater environments (e.g., Strongylura), while a few genera are confined to freshwater rivers and streams, including Belonion, Potamorrhaphis, and Xenentodon. Needlefish closely resemble North American freshwater gars (family Lepisosteidae) in being elongated and having long, narrow jaws filled with sharp teeth, and some species of needlefishes are referred to as gars or garfish despite being only distantly related to the true gars. In fact, the name \"garfish\" was originally used for the needlefish Belone belone in Europe and only later applied to the North American fishes by European settlers during the 18th century.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Needlefish"]
+		},
+		{
+			"subject_term": "otters",
+			"description": "Otters are carnivorous mammals in the subfamily Lutrinae. The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. Lutrinae is a branch of the Mustelidae family, which also includes weasels, badgers, mink, and wolverines, among other animals.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Otter"]
+		},
+		{
+			"subject_term": "petroleum industry",
+			"description": "The petroleum industry, also known as the oil industry or the oil patch, includes the global processes of exploration, extraction, refining, transporting (often by oil tankers and pipelines), and marketing of petroleum products. The largest volume products of the industry are fuel oil and gasoline (petrol). Petroleum (oil) is also the raw material for many chemical products, including pharmaceuticals, solvents, fertilizers, pesticides, synthetic fragrances, and plastics. The extreme monetary value of oil and its products has led to it being known as \"black gold\". The industry is usually divided into three major components: upstream, midstream, and downstream.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Petroleum_industry"]
+		},
+		{
+			"subject_term": "pipits",
+			"description": "The pipits are a cosmopolitan genus, Anthus, of small passerine birds with medium to long tails. Along with the wagtails and longclaws, the pipits make up the family Motacillidae. The genus is widespread, occurring across most of the world, except the driest deserts, rainforest and the mainland of Antarctica. They are slender, often drab, ground-feeding insectivores of open country. Like their relatives in the family, the pipits are monogamous and territorial. Pipits are ground nesters, laying up to six speckled eggs.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Pipit"]
+		},
+		{
+			"subject_term": "beaches",
+			"description": "Shores comprised of an accumulation of sediment, such as sand or pebbles, along the edge of a sea or lake, and formed by coastal processes such as waves and tides.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008816"]
+		},
+		{
+			"subject_term": "ptarmigan",
+			"description": "Lagopus  - Lagopus is a small genus of birds in the grouse subfamily commonly known as ptarmigans. The genus contains three living species with numerous described subspecies, all living in tundra or cold upland areas.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lagopus"]
+		},
+		{
+			"subject_term": "sandpipers",
+			"description": "Sandpipers are a large family, Scolopacidae, of waders or shorebirds. They include many species called sandpipers, as well as those called by names such as curlew and snipe. The majority of these species eat small invertebrates picked out of the mud or soil. Different lengths of bills enable different species to feed in the same habitat, particularly on the coast, without direct competition for food.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sandpiper"]
+		},
+		{
+			"subject_term": "sea lions",
+			"description": "Sea lions are pinnipeds characterized by external ear flaps, long foreflippers, the ability to walk on all fours, short, thick hair, and a big chest and belly. Together with the fur seals, they comprise the family Otariidae, eared seals, which contains six extant and one extinct species (the Japanese sea lion) in five genera. Their range extends from the subarctic to tropical waters of the global ocean in both the Northern and Southern Hemispheres, with the notable exception of the northern Atlantic Ocean. They have an average lifespan of 20–30 years. A male California sea lion weighs on average about 300 kg (660 lb) and is about 2.4 m (8 ft) long, while the female sea lion weighs 100 kg (220 lb) and is 1.8 m (6 ft) long. The largest sea lion is Steller's sea lion, which can weigh 1,000 kg (2,200 lb) and grow to a length of 3.0 m (10 ft). Sea lions consume large quantities of food at a time and are known to eat about 5–8% of their body weight (about 6.8–15.9 kg (15–35 lb)) at a single feeding. Sea lions can move around 16 knots (30 km/h; 18 mph) in water and at their fastest they can reach a speed of about 30 knots (56 km/h; 35 mph). Three species, the Australian sea lion, the Galápagos sea lion and the New Zealand sea lion, are listed as Endangered.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sea_lion"]
+		},
+		{
+			"subject_term": "secrets",
+			"description": "Secrets are things being hidden.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Secrets_(disambiguation)"]
+		},
+		{
+			"subject_term": "shorebirds",
+			"description": "Shorebirds are birds commonly found along sandy or rocky shorelines, mudflats, and shallow waters. In some regions, shorebirds are considered wading birds.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Category:Shorebirds"]
+		},
+		{
+			"subject_term": "sheefish",
+			"description": "The sheefish (Stendous leucichthys nelma (Pallas)) called inconnu (unknown fish) by early explorers, is found only in arctic and subarctic North America and Asia. In Alaska, it is most abundant in the Kuskokwim and Yukon river drainages and in the Selawik and Kobuk drainages of Kotzebue Sound. A few are found in the smaller rivers of Norton Sound. Its tremendous size, fighting ability, and fine eating qualities make the sheefish one of the most unique fish in North America. The sheefish is a member of the whitefish family but is distinguishable from the more common whitefish by the strong extended lower jaw. The body profile is streamlined and the color is silvery with a darker coloration on the dorsal surface. It often displays a phosphorescent purple sheen when taken from the water. Males and females are similar, but females live longer and attain greater size. Sheefish in the Selawik-Kobuk area may weigh up to 60 pounds, while in Interior Alaska they seldom exceed 25 pounds. Alaska Department of Fish and Game",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "creeks (bodies of water)",
+			"description": "Bodies of water, smaller than a stream.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008706"]
+		},
+		{
+			"subject_term": "self-portraits",
+			"description": "Works in which someone produces a likeness of himself or herself.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300124534"]
+		},
+		{
+			"subject_term": "solitude",
+			"description": "A state of seclusion or isolation, i.e., lack of contact with people. It may stem from bad relationships, loss of loved ones, deliberate choice, infectious disease, mental disorders, neurological disorders or circumstances of employment or situation (see castaway).",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Solitude"]
+		},
+		{
+			"subject_term": "tomcod",
+			"description": "Microgadus tomcod, also commonly known as frostfish, Atlantic tomcod or winter cod, is a type of cod found in North American coastal waters from the Gulf of St. Lawrence, St. Lawrence River and northern Newfoundland, south to Virginia.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Microgadus_tomcod"]
+		},
+		{
+			"subject_term": "Trans-Alaska Pipeline System",
+			"description": "The Trans-Alaska Pipeline System (TAPS) includes the trans-Alaska crude-oil pipeline, 11 pump stations, several hundred miles of feeder pipelines, and the Valdez Marine Terminal. TAPS is one of the world's largest pipeline systems. It is commonly called the Alaska pipeline, trans-Alaska pipeline, or Alyeska pipeline, (or the pipeline as referred to in Alaska), but those terms technically apply only to the 800 miles (1,287 km) of the pipeline with the diameter of 48 inches (1.22 m) that conveys oil from Prudhoe Bay to Valdez, Alaska. The crude oil pipeline is privately owned by the Alyeska Pipeline Service Company.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Trans-Alaska_Pipeline_System"]
+		},
+		{
+			"subject_term": "traplines",
+			"description": "In the fur trade, a trapline is a route along which a trapper sets traps for his or her quarry. Trappers traditionally move habitually along the route to set and check the traps, in so doing become skilled at traversing remote terrain, and become experts in the geography of the local area. Because of this traditional knowledge, traplines are not only of interest to trappers themselves but to researchers and others (governments, corporations) interested in local history, biology, and topography. The assignment of particular trapline territories to individuals in band societies was traditionally handled by group consensus, and occasionally violence and warfare. In the present-day trapline assignment is typically formalized and controlled by the state. Formalized trapline territory boundaries now form the basis for many major land-use projects in fur-rich regions.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Trapline"]
+		},
+		{
+			"subject_term": "trapping",
+			"description": "Animal trapping, or simply trapping, is the use of a device to remotely catch an animal. Animals may be trapped for a variety of purposes, including food, the fur trade, hunting, pest control, and wildlife management.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Trapping"]
+		},
+		{
+			"subject_term": "transformation",
+			"description": "A thorough or dramatic change in form or appearance.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "tropical places",
+			"description": "Places exhibiting tropical climates.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "University of Alaska",
+			"description": "Artworks by artists affiliated with the University of Alaska. May also be artworks showing campuses or portraits of UA affiliated people. Remarks should be used to describe affiliation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"subject_term": "swans",
+			"description": "Cygnus (genus) - Members of the genus containing several living species and at least 10 extinct species of large waterfowl characterized by long-necks, heavy-bodies, large feet, graceful swimming style, and flying with slow wingbeats and with necks outstretched. Many swans are white. Swans are revered in many religions and cultures, especially Hinduism. They are common symbols in art around the world.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250103"]
+		},
+		{
+			"subject_term": "wild roses",
+			"description": "Rosa acicularis, also known as the prickly wild rose, the prickly rose, the bristly rose, the wild rose and the Arctic rose, is a species of wild rose with a Holarctic distribution in northern regions of Asia, Europe, and North America.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rosa_acicularis"]
+		},
+		{
+			"subject_term": "wildlife conservation",
+			"description": "Wildlife conservation refers to the practice of protecting wild species and their habitats in order to prevent species from going extinct and to preserve natural Ecosystems. Major threats to wildlife include habitat destruction/degradation/fragmentation, overexploitation, poaching, pollution and climate change. The IUCN estimates that 27,000 species of the ones assessed are at risk for extinction. Expanding to all existing species, a 2019 UN report on biodiversity put this estimate even higher at a million species. It's also being acknowledged that an increasing number of ecosystems on Earth containing endangered species are disappearing. To address these issues, there have been both national and international governmental efforts to preserve Earth's wildlife. Prominent conservation agreements include the 1973 Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) and the 1992 Convention on Biological Diversity (CBD). There are also numerous nongovernmental organizations (NGO's) dedicated to conservation such as the Nature Conservancy, World Wildlife Fund, and Conservation International.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wildlife_conservation"]
+		},
+		{
+			"subject_term": "crows",
+			"description": "General term applied to many of the 40 species of glossy black birds in the genus Covus, although some birds in this genus are called \"ravens\" rather than crows.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250041"]
+		},
+		{
+			"subject_term": "crustaceans",
+			"description": "Crustacea (subphylum) - Members of a subphylum containing crabs, lobsters, shrimps, barnacles, and many other forms.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310469"]
+		},
+		{
+			"subject_term": "cycling",
+			"description": "The activity or sport of riding a bicycle or any cycle.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300412175"]
+		},
+		{
+			"subject_term": "elderly",
+			"description": "People in the later stage of life, commonly considered as 65 years of age and older.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025913"]
+		},
+		{
+			"subject_term": "wolverines",
+			"description": "Gulo gulo - The wolverine (also spelled wolverene), Gulo gulo (Gulo is Latin for \"glutton\"), also referred to as the glutton, carcajou, skunk bear, or quickhatch, is the largest land-dwelling species of the family Mustelidae. It is a stocky and muscular carnivore, more closely resembling a small bear than other mustelids. A solitary animal, it has a reputation for ferocity and strength out of proportion to its size, with the documented ability to kill prey many times larger than itself.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Wolverine"]
+		},
+		{
+			"subject_term": "women artists",
+			"description": "Although women artists have been involved in the making of art throughout history, their work, when compared to that of their male counterparts, has been often obfuscated, overlooked and undervalued. Prevailing stereotypes about the sexes have caused certain media, such as textile or fiber arts, to be primarily associated with women, despite having once been categories, such as ceramic art, in which both men and women participated. Additionally, art forms that have gained this distinction are, as in the case of both textile and fabric arts, demoted to categories like \"arts and crafts\", rather than fine art. Women in art have been faced with challenges due to gender biases in the mainstream fine art world. They have often encountered difficulties in training, travelling and trading their work, as well as gaining recognition. Beginning in the late 1960s and 1970s, feminist artists and art historians created a Feminist art movement that overtly addresses the role of women especially in the Western art world, how world art is perceived, evaluated or appropriated according to gender. Moreover, it explores the role of women in art history as in society.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Women_artists"]
+		},
+		{
+			"subject_term": "WPA artists",
+			"description": "Artists empliyed through the Federal Art Project (1935–1943), a New Deal program to fund the visual arts in the United States. Under national director Holger Cahill, it was one of five Federal Project Number One projects sponsored by the Works Progress Administration (WPA), and the largest of the New Deal art projects. It was created not as a cultural activity, but as a relief measure to employ artists and artisans to create murals, easel paintings, sculpture, graphic art, posters, photography, theatre scenic design, and arts and crafts. The WPA Federal Art Project established more than 100 community art centers throughout the country, researched and documented American design, commissioned a significant body of public art without restriction to content or subject matter, and sustained some 10,000 artists and craft workers during the Great Depression.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Federal_Art_Project"]
+		},
+		{
+			"subject_term": "Indigenous decolonization",
+			"description": "Describes the ongoing artistic, theoretical, and political processes used to contest and reframe narratives about indigenous community histories and the effects of colonial expansion, genocide, and cultural assimilation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5695"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Indigenous_decolonization"]
+		},
+		{
+			"subject_term": "tidal bores",
+			"description": "A tidal bore, often simply given as bore in context, is a tidal phenomenon in which the leading edge of the incoming tide forms a wave (or waves) of water that travels up a river or narrow bay reversing the direction of the river or bay's current. It is a strong tide that pushes up the river, against the current.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tidal_bore"]
+		},
+		{
+			"subject_term": "television (telecommunication system)",
+			"description": "Telecommunication system whereby visual images, with or without accompanying sound, are converted to electromagnetic waves and transmitted to distant receivers where they are reconverted into moving visual images.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300249920"]
+		},
+		{
+			"subject_term": "airports",
+			"description": "Typically refers to large tracts of open, level land upon which runways, hangars, terminals, and other buildings have been constructed to allow for the takeoffs, landings, loading and unloading, and maintenance of aircraft. For smaller areas that have a runway but no or few additional facilities, see \"airfields.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300000681"]
+		},
+		{
+			"subject_term": "ammunition",
+			"description": "Projectiles and propellants used to operate firearms.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300036928"]
+		},
+		{
+			"subject_term": "Yup'ik dance",
+			"description": "Yup'ik dance or Yuraq, also Yuraqing (Yup'ik yuraq /juʁaq/ sg yurak dual yurat pl) is a traditional Eskimo style dancing form usually performed to songs in Yup'ik, with dances choreographed for specific songs which the Yup'ik people of southwestern Alaska. Also known as Cup'ik dance for the Chevak Cup'ik dialect speaking Eskimos of Chevak and Cup'ig dance for the Nunivak Cup'ig dialect speaking Eskimos of Nunivak Island. Yup'ik dancing is set up in a very specific and cultural format. Typically, the men are in the front, kneeling and the women stand in the back. The drummers are in the very back of the dance group. Dance is the heart of Yup’ik spiritual and social life. Traditional dancing in the qasgiq is a communal activity in Yup’ik tradition. The mask (kegginaquq) was a central element in Yup'ik ceremonial dancing,",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Yup%27ik_dance"]
+		},
+		{
+			"subject_term": "Steller's eider",
+			"description": "Steller's eider (Polysticta stelleri) is a sea duck that breeds along the Arctic coasts of eastern Siberia and Alaska.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Steller%27s_eider"]
+		},
+		{
+			"subject_term": "United States Army Art Program",
+			"description": "The United States Army Art Program or U.S. Army Combat Art Program is a program brought about by the U.S. Army to create artwork documenting its involvements in war and peacetime engagements. The art collection associated with the program is held by the U.S. Army Center of Military History.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/United_States_Army_Art_Program"]
+		},
+		{
+			"subject_term": "animals",
+			"description": "Kingdom containing multicellular organisms having cells bound by a plasma membrane and organized into tissue and specialized tissue systems that permit them to either move about in search of food or to draw food toward themselves. Unable to make their own food within themselves, as photosynthetic plants do, they rely on consuming preformed food. They possess a nervous system with sensory and motor nerves, enabling them to receive environmental stimuli and to respond with specialized movements.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300249395"]
+		},
+		{
+			"subject_term": "archaeology",
+			"description": "Scientific study of the material remains of past human life and activities, including human artifacts from the very earliest stone tools to the man-made objects that are buried or thrown away in the present day. Archaeological investigations are a principal source of knowledge of prehistoric, ancient, and extinct cultures.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054328"]
+		},
+		{
+			"subject_term": "aspen (trees)",
+			"description": "Common term for several poplar trees that are typically native to cold regions with cool summers, in the north of the Northern Hemisphere but extending south at high altitudes in the mountains.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300375217"]
+		},
+		{
+			"subject_term": "automobiles",
+			"description": "Self-propelled vehicles designed primarily to transport passengers over ordinary roads.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300178739"]
+		},
+		{
+			"subject_term": "autumn",
+			"description": "The season of the year which is the transition period from summer to winter, occurring as the sun approaches the winter solstice, its beginning marked by the autumnal equinox.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133093"]
+		},
+		{
+			"subject_term": "barns",
+			"description": "Agricultural buildings with large, usually sliding doors, prominent roofs, and predominantly open spaces on the interior, primarily used as storage buildings for hay, grains, and farm equipment and shelters for livestock; does not include those structures, often termed barns, used for the processing of food and other agricultural produce, such as hop barns and tobacco barns.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300004900"]
+		},
+		{
+			"subject_term": "bars (commercial buildings)",
+			"description": "Establishments with counters where beverages, usually liquors, and light meals are served to customers.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005158"]
+		},
+		{
+			"subject_term": "basketmaking",
+			"description": "Process of creating containers made of twigs, rushes, thin strips of wood, or other flexible material woven together.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053590"]
+		},
+		{
+			"subject_term": "baskets (containers)",
+			"description": "Containers made of twigs, rushes, thin strips of wood, or other flexible material woven together.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300194498"]
+		},
+		{
+			"subject_term": "bears",
+			"description": "Ursidae (family) - Family containing nine species in six genera, characterized as being large, short-tailed, having stocky legs, a long snout, shaggy hair, and plantigrade paws with five non-retractile claws. Bears are generally omnivorous, but some bears are entirely carnivorous (like the polar bear ) or vegetarian (like the panda).",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266516"]
+		},
+		{
+			"subject_term": "beavers",
+			"description": "Castor - Members of a genus containing two living species of amphibious rodents native to North America, Europe, and Asia. Beavers have short legs, a stout body, a small, broad, blunt head, large chisel-shaped incisor teeth, a broad, oval, horizontally-flattened, scaly tail, palmated hind feet, and a coat of soft fur. They are distinguished by their ability to chew through trunks and cut down trees, constructing huts of mud and wood for habitation, and dams for preserving a supply of water.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250578"]
+		},
+		{
+			"subject_term": "nudes (representations)",
+			"description": "Representations of unclothed human figures.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300189568"]
+		},
+		{
+			"subject_term": "birds",
+			"description": "Aves - The class of vertebrate animals that are typically bipedal and warm-blooded, lay large-yolked hard-shelled eggs, often arboreal, and possessing feathers, hollow bones, forelimbs adapted for flight (although some have lost the ability to fly) and hindlimbs for perching and locomotion, a four-chambered heart, keen vision, a horny beak without teeth, and a large muscular stomach. Birds arose from theropod dinosaurs, which were an order of carnivorous dinosaurs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266506"]
+		},
+		{
+			"subject_term": "blue (color)",
+			"description": "Hue name for one of the three primary additive colors; that portion of the spectrum lying between green and violet, with a wavelength of about 420 to 490 nanometers, which is the shortest wavelength range of the three primary colors. The term may refer to any of this group of colors that vary in lightness and saturation. An example of blue color in nature is that of a clear sky during the day.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300129361"]
+		},
+		{
+			"subject_term": "boats",
+			"description": "Watercraft generally smaller and less seaworthy than ships and generally not designed to cross large open waters.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300178749"]
+		},
+		{
+			"subject_term": "bogs",
+			"description": "Designates waterlogged spongy ground with a characteristic plantlife, such as sphagnum mosses, and in which vegetation is decaying, ultimately producing highly acidic peat. Distinct from \"fens,\" in which the water remains alkaline.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008901"]
+		},
+		{
+			"subject_term": "bone (material)",
+			"description": "The rigid, calcareous material that is white in color and forms the skeleton of vertebrates; primarily composed of calcium hydroxyapatite with smaller amounts of calcium carbonate, calcium fluoride, magnesium phosphate, and ossein, a high molecular weight protein. Bones have a concentric structure with central lymphatic canals surrounded by a spongy lamellar region protected by a dense outer cortex. Bone has been carved and used since ancient times for many purposes, including fish-hooks, spear heads, needles, handles, and art objects. Bones were also burnt to produce bone black and boiled to produce bone glue. Bone can be distinguished from ivory by being generally whiter, more porous, and less dense.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011798"]
+		},
+		{
+			"subject_term": "books",
+			"description": "Items comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat material, that are blank, written on, or printed, and are strung or bound together in a volume.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300028051"]
+		},
+		{
+			"subject_term": "botanical illustrations",
+			"description": "Drawings, prints, or other pictures that illustrate plants and their parts, often accurately rendered from life.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300386711"]
+		},
+		{
+			"subject_term": "expeditions (journeys)",
+			"description": "Trips, journeys, voyages, or excursions made for some definite purpose, often for military or scientific purposes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069799"]
+		},
+		{
+			"subject_term": "bows (weapons)",
+			"description": "Stringed projectile weapons designed to propel arrows, generally consisting of a long stave of wood, metal, fiberglass, or other flexible material, with a length of strong string fastened to the tips of the stave which is bent in a curve, either permanently or from the tension of the string. The string is drawn back, holding the arrow by means of a notch in its rear tip, and propels the arrow upon release.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300036999"]
+		},
+		{
+			"subject_term": "bridges (built works)",
+			"description": "Structures spanning and providing passage over waterways, topographic depressions, transportation routes, or similar circulation barriers.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300007836"]
+		},
+		{
+			"subject_term": "brown bears",
+			"description": "Ursus arctos - Members of a species containing over 20 subspecies and up to 80 varieties of shaggy-haired bear native to Europe, Asia, and northwestern North America.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310636"]
+		},
+		{
+			"subject_term": "buildings (structures)",
+			"description": "Structures, generally enclosed, that are used or intended to be used for sheltering an activity or occupancy.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300004792"]
+		},
+		{
+			"subject_term": "bunkhouses",
+			"description": "Rough buildings often with bunk beds, used for sleeping quarters, as for ranch hands, migratory workers, and campers.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005666"]
+		},
+		{
+			"subject_term": "butchering",
+			"description": "Following slaughter, the extraction of meat from animals for consumption; the trade of a butcher.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379670"]
+		},
+		{
+			"subject_term": "cabins (houses)",
+			"description": "Small dwellings characteristic of the frontier or other rustic area, especially when built by non-professionals from available logs or stones.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005496"]
+		},
+		{
+			"subject_term": "cacti",
+			"description": "Plant family including more than 2,000 species, grouped into around 175 genera, although classification is much debated. Most species are native to the New World, found the length of North and South America. It is debated whether or not they are true cacti, but some species may possibly be found in East Africa, Madagascar, and Sri Lanka.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300417746"]
+		},
+		{
+			"subject_term": "canoes",
+			"description": "Lightly built, slender, open craft of shallow draft that are paddled and not rowed and normally double-ended; may have sails.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212688"]
+		},
+		{
+			"subject_term": "caribou or reindeer",
+			"description": "Rangifer tarandus - Species of deer with large branching or palmated antlers, formerly common in Central Europe, but now confined to sub-arctic regions of Europe and North America; commonly domesticated and used for hauling, meat, milk, and skins.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300253843"]
+		},
+		{
+			"subject_term": "carving (processes)",
+			"description": "The act of shaping, marking, or decorating wood, stone, or another material by cutting or incising, typically using tools such as chisels and other blades. It refers to this process as it is applied to small-scale objects or to objects that are not considered art. \"Carving\" may also be considered a sculpture technique that is employed in the creation of art.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053149"]
+		},
+		{
+			"subject_term": "cats",
+			"description": "Felis domesticus - Domesticated member of the genus Felis, rising from a line that developed 70,000/100,000 years ago. Domesticated in Egypt ca. 2,000 BCE, in Cyprus by 9,500 years ago, earlier elsewhere in the Middle East. In some taxonomies, Felis domesticus and Felis sylvestris are the same species. Genetic evidence suggests that the domestic cat developed from an ancestor who also produced the subspecies of wild cat, Felis sylvestris lybica. The house cat appears to have been domesticated in the Middle East at a time when humans recognized its value in protecting fields and granaries from rodents. Egyptian affection and respect for the cat as predator led to the development of religious cat cults and temple worship of cats. Since tabby-like markings appear in the drawings and mummies of ancient Egyptian cats, present-day tabbies probably look much like the sacred cats of Egypt. The first known domestic variation on the wild tabby coloring was the black cat (which also occurs naturally in the wild, but not in great numbers). The darker tabby coat with thicker stripes and swirls probably first appeared in the Middle Ages, the coat pattern being an adaptation that helped the animal to hide better in the shadows of dark medieval streets. The tortoise shell coat probably developed in the 19th century, when the Victorians made cats beloved pets and bred them for color varieties and other characteristics. Until the recent genetic studies, some experts believed the domestic cat was a hybrid of Felis Sylvestris and an Egyptian forest cat that was more docile and also kept in some Egyptian temples.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300265960"]
+		},
+		{
+			"subject_term": "cattle",
+			"description": "A collective term referring to live animals, particularly bovine animals, held as property or reared to serve as meat, or sources of milk, skin, wool, etc.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250116"]
+		},
+		{
+			"subject_term": "caverns",
+			"description": "Large, subterranean, naturally formed chambers, with entrances from the surface.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300129031"]
+		},
+		{
+			"subject_term": "celebrations",
+			"description": "Events demonstrating grateful or happy satisfaction or honor, marked by festivities, refraining from ordinary business, or other deviations from accustomed routine. For events serving specifically to call someone or something to remembrance, use \"commemorations.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300152441"]
+		},
+		{
+			"subject_term": "explorers",
+			"description": "People who explore, usually by traveling, in search of scientific, geographical, or other types of information.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025843"]
+		},
+		{
+			"subject_term": "cemeteries",
+			"description": "In general, areas used for burial or entombment. Specifically, typically refers to relatively large public parks or grounds laid out expressly for the interment of the dead, and not being the yard of any church. Originally the term was derived from the Latin \"cœmeterium,\" referring to Roman underground cemeteries or catacombs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266755"]
+		},
+		{
+			"subject_term": "children (people by age group)",
+			"description": "People in the earliest developmental stage of life.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025945"]
+		},
+		{
+			"subject_term": "Christianity",
+			"description": "Refers to the world religion and culture that developed in the first century CE, driven by the teachings of Jesus Christ of Nazareth. Its roots are in the Judaic tradition and the Old Testament. The tenets include a belief in the death and redemptive resurrection of Jesus. The religion incorporates a tradition of faith, ritual, and a form of church authority or leadership.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300073711"]
+		},
+		{
+			"subject_term": "churches (buildings)",
+			"description": "Institutions that maintain places for public Christian worship.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300007466"]
+		},
+		{
+			"subject_term": "circuses (performances)",
+			"description": "Performances that include trained animal acts or exhibitions of human skill and daring, or both. Circuses usually include a trained, traveling company or troupe of performers, various animals, and their equipage. The term \"circus\" refers to the circular arena surrounded by tiers of seats below which the performance occurs in a circular area called the \"ring.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069235"]
+		},
+		{
+			"subject_term": "cities and towns",
+			"description": "Distinctions among villages, towns, and cities are relative and vary according to their individual regional contexts. Towns generally are units of compact settlement larger than villages and less important and internally complex than cities in the region.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008375"]
+		},
+		{
+			"subject_term": "cleaning",
+			"description": "Removing dirt, surface coatings, accretions, discolorations, or other undesired matter from a substrate.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053027"]
+		},
+		{
+			"subject_term": "climate change",
+			"description": "Any alteration in regional or global climate as during the five glacial periods of the past 450,000 years. The term is often applied to the recent changes in global climatic patterns, attributed to emission of greenhouse gases, also known as global warming.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379818"]
+		},
+		{
+			"subject_term": "clouds",
+			"description": "Visible masses of condensed water vapor floating in the air at some considerable height above the general surface of the ground.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343840"]
+		},
+		{
+			"subject_term": "comets",
+			"description": "An extraterrestrial body consisting of a frozen mass and rock debris that travels around the Sun in a highly elliptical orbit; it generally developes a diffuse gaseous envelope and a long luminous tail when near the Sun.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266158"]
+		},
+		{
+			"subject_term": "construction sites",
+			"description": "Places where construction is occurring, particularly construction of a building. For the more general meaning of a site where a building is or was located, whether or not the building is under construction, use \"building sites.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300312090"]
+		},
+		{
+			"subject_term": "cooking",
+			"description": "The process of preparing food, a dish, or a meal, typically by combining and heating ingredients.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300444359"]
+		},
+		{
+			"subject_term": "corals (animals)",
+			"description": "General term referring to any of over 1,300 species of invertebrate marine organisms of several genuses of the class Anthozoa (phylum Cnidaria) that are characterized by internal or external skeletons that have a stonelike, horny, or leathery consistency. In most species, the skeletons are joined together in massive colonies; they feed on small fish and invertebrate plankton using stinging cells on outstretched tentacles, and reproduce both sexually or by budding. For the calcium carbonate skeletal material produced by some species, use \"coral (material).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250925"]
+		},
+		{
+			"subject_term": "cranes (birds)",
+			"description": "Gruidae (family) - Members of a family containing 15 living species of tall wading birds with very long legs, neck, and bill. Cranes resemble herons but are usually larger and have a partly naked head, a heavier bill, more compact plumage, and an elevated hind toe. Cranes are ancient in origin, found in Eocene deposits in North America.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300254555"]
+		},
+		{
+			"subject_term": "creatures",
+			"description": "Living or animate beings, including animals or people that are fantastic or of anomalous or uncertain aspect or nature.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379697"]
+		},
+		{
+			"subject_term": "cypress trees",
+			"description": "Cupressus (genus) - Genus containing 12 species of ornamental and timber evergreen conifers native to warm temperate regions in the northern hemisphere, including western North America, Central America, northwest Africa, the Middle East, the Himalaya, southern China, and north Vietnam.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343641"]
+		},
+		{
+			"subject_term": "daily life",
+			"description": "The circumstances, activities, and experiences that routinely constitute a person’s or group's existence, particularly as embodied in conventions of thought or behavior.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300419286"]
+		},
+		{
+			"subject_term": "dancing (activity)",
+			"description": "The activity characterized by rhythmical skipping and stepping, with regular turnings and movements of the limbs and body, usually to the accompaniment of music.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300389779"]
+		},
+		{
+			"subject_term": "day (time of day)",
+			"description": "The interval of time between sunrise and sunset.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133092"]
+		},
+		{
+			"subject_term": "deaths",
+			"description": "Cessation of life processes of all living organisms, but particularly refers to the act as it occurs in individual human beings.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300151836"]
+		},
+		{
+			"subject_term": "deck chairs",
+			"description": "Chairs usually with arms and having full-length leg rests, designed for lounging outdoors. Use \"chaises longues\" for similar forms used indoors.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300037837"]
+		},
+		{
+			"subject_term": "decoys (objects)",
+			"description": "Objects used to lure or attract another into a trap.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300260787"]
+		},
+		{
+			"subject_term": "deer",
+			"description": "Cervidae (family) - Members of a family of ruminants typically having solid antlers that are shed yearly.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250308"]
+		},
+		{
+			"subject_term": "deserts",
+			"description": "Broad category of dry regions occurring where rainfall is less than 50 cm per year; usually barren and treeless.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008916"]
+		},
+		{
+			"subject_term": "dinosaurs",
+			"description": "Members of the taxon of land dwelling archosaurs with an upright gait, by which their legs were straight, perpendicular to the ground, and supported the weight of the body so that the animal could walk or run more easily. Other reptiles and modern lizards had a sprawling gait. Dinosaurs first appeared in the Late Triassic Period about 215 million years ago and thrived worldwide for some 150 million years. Most died out by the end of the Cretaceous Period, about 65 million years ago, but many lines of evidence now show that one lineage evolved into birds about 150 million years ago.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250126"]
+		},
+		{
+			"subject_term": "dogs",
+			"description": "Canis familiaris - Domesticated species of Canis, formerly believed to be descended from Canis lupus, gray wolves; however, recent studies suggest that gray wolves and domestic dogs instead have a common ancestor, now extinct. Dogs come in a variety of shapes, and sizes and over 400 distinct breeds. All domestic or feral dogs are descended from a single common ancestral species. For more than 12,000 years, it has lived with humans as a hunting companion, protector, and as herders and guardians of sheep, goats, and cattle. Today, dogs are employed as aids to the blind and disabled, or for police work. In Western art, dogs have generally come to symbolize faithfulness and loyalty, however, in other cultures they can symbolize a variety of traits, ranging from unclean to seducer.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250130"]
+		},
+		{
+			"subject_term": "doorways",
+			"description": "Denotes openings, which contain or could contain a door, that provide access into or out of building spaces.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300002767"]
+		},
+		{
+			"subject_term": "dreams",
+			"description": "Successions of images, thoughts, or emotions passing through the mind during sleep.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300251611"]
+		},
+		{
+			"subject_term": "dunes",
+			"description": "Hills or ridges of sand, typically in deserts, formed by shifting winds.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008750"]
+		},
+		{
+			"subject_term": "dwarf birch",
+			"description": "Betula nana (species) - Species of small birch shrub native to arctic and cool temperate regions of northern Europe, northern Asia and northern North America. It is sometimes divided into two or more subspecies.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343921"]
+		},
+		{
+			"subject_term": "dwellings",
+			"description": "General term for structures or other accommodations designed or adapted for residential occupancy, as contrasted to business occupancy. For hotels or other buildings intended for use by transients see \"public accommodations\" and its narrower concepts. For the locale which constitutes the center of an individual's domestic life, personal relationships, and interests, together with the feeling of comfort and satisfaction that it conveys, use \"home (concept).\" For the collective concept referring to types of living arrangements of a particular group, use \"housing.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005425"]
+		},
+		{
+			"subject_term": "eagles (birds)",
+			"description": "General term referring to several species in diverse genera of the family Accipitridae, that are not all closely related to each other, but having in common that they are large, powerful hunters, heavy-beaked, and have a fully feathered head and strong feet equipped with great curved talons. Because of their strength and agressive nature, eagles have been a symbol of war and imperial power since Babylonian times.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250049"]
+		},
+		{
+			"subject_term": "elephants",
+			"description": "Elephantidae (family) - Members of a family comprising four living genera of huge quadruped mammals having long curving ivory tusks, and a prehensile trunk or proboscis.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250160"]
+		},
+		{
+			"subject_term": "fairs",
+			"description": "Exhibitions in which different exhibitors participate to publicize and promote their products, services, or activities, sometimes though not necessarily involving buying and selling, and often combined with entertainment. For meetings of buyers and sellers at stated times and places for the purpose of trade, use \"markets (events).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054776"]
+		},
+		{
+			"subject_term": "feminism",
+			"description": "Social and political critical theory and movement asserting the inherent value of women and female characteristics, and working to protect and promote women's rights and interests.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055786"]
+		},
+		{
+			"subject_term": "ferns",
+			"description": "Pteridophyta (division) - A large group of around 20,000 species of flowerless, seedless vascular plants having true roots from a rhizome and fronds that uncurl upward, reproducing by spores. The ferns are an ancient lineage of plants, dating back to at least the Devonian; during the Palaeozoic, tree-ferns grew several meters tall. The ferns include three living groups (Marattiales, Ophioglossales, and leptosporangiate ferns) and two or more extinct groups. An additional group, the Psilotales, is tentatively included in the ferns, although the group is vastly different from living ferns and its relationships are uncertain. The ferns group is also referred to as Polypodiophyta or Polypodiopsida when classified as a subdivision of tracheophyta (vascular plants).",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300265699"]
+		},
+		{
+			"subject_term": "ferries",
+			"description": "Vessels that transport passengers, vehicles, or bulk goods across rivers, bays, or other small bodies of water, usually on regular schedules.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300178870"]
+		},
+		{
+			"subject_term": "fertility",
+			"description": "The quality of being fertile, that is, bearing or producing in abundance; the state of being fruitful or prolific.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379149"]
+		},
+		{
+			"subject_term": "firearms",
+			"description": "Use generally for weapons using the power of exploding gunpowder to propel a projectile.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300037148"]
+		},
+		{
+			"subject_term": "fires",
+			"description": "Events where something is totally or partially consumed by fire, whether intentionally or by accident. For the process of altering, injuring, or consuming something by fire or heat, see \"burning.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300068986"]
+		},
+		{
+			"subject_term": "firewood",
+			"description": "Logs, boards, or twigs of trees intended for burning as fuel.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015146"]
+		},
+		{
+			"subject_term": "fish (animals)",
+			"description": "General term referring to animals from several evolutionary lines and thus not properly a taxonomic group. The term refers to aquatic animals found in the fresh and salt waters all over the world, characterized by being cold-blooded, living and breathing primarily in the water throughout their lives, possessing gill slits, a notochord or skeletal supporting rod, a dorsal hollow nerve cord, a tail, scales covering the body, and two sets of paired fins and several unpaired fins. Living species range from the primitive jawless lampreys and hagfishes through the jawed fishes with cartilaginous skeletons such as sharks, skates, and rays to the abundant and diverse bony fishes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266085"]
+		},
+		{
+			"subject_term": "fish wheels",
+			"description": "A fish wheel, also known as a salmon wheel, is a device situated in rivers to catch fish which looks and operates like a watermill. However, in addition to paddles, a fish wheel is outfitted with wire baskets designed to catch and carry fish from the water and into a nearby holding tank. The current of the river presses against the submerged paddles and rotates the wheel, passing the baskets through the water where they intercept fish that are swimming or drifting. Naturally a strong current is most effective in spinning the wheel, so fish wheels are typically situated in shallow rivers with brisk currents, close to rapids, or waterfalls. The baskets are built at an outward-facing slant with an open end so the fish slide out of the opening and into the holding tank where they await collection. Yield is increased if fish swimming upstream are channeled toward the wheel by weirs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300425565"]
+		},
+		{
+			"subject_term": "fishing",
+			"description": "The sport or business of catching fish.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239470"]
+		},
+		{
+			"subject_term": "flags",
+			"description": "Pieces of cloth or other flexible material, usually attached along one side to a pole or cord, intended for such purposes as symbolizing a nation or organization, or as a means of signaling.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300195678"]
+		},
+		{
+			"subject_term": "flowers (plant components)",
+			"description": "The reproductive portions of any plant in the division Angiospermae, flowering plants. As popularly used, the term \"flower\" especially applies when part or all of the reproductive structure is distinctive in color and form.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300132399"]
+		},
+		{
+			"subject_term": "food",
+			"description": "Any material that can be digested or absorbed by the body of a human or other animal and used as a source of energy or some essential nutrient, to build and replace tissue, or to relieve hunger.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300254496"]
+		},
+		{
+			"subject_term": "found objects",
+			"description": "Objects, natural or human-made, unaltered or only slightly altered, presented by an artist as works of art in themselves or used as parts of works of art.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300047210"]
+		},
+		{
+			"subject_term": "foxes (animals)",
+			"description": "Vulpes - General term referring to various members of the family Canidae, especially those of the genus Vulpes, such as the red or common, fox (V. vulpes), which lives in both the Old World and the New World. Several other foxes belong to genera other than Vulpes, including the North American gray fox, the Arctic fox, and the the bat-eared fox, and the crab-eating fox. Foxes resemble small dogs, with pointed snouts, large ears, and bushy tails.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266520"]
+		},
+		{
+			"subject_term": "frogs (animals)",
+			"description": "General term for any member of the order Anura that is smooth-skinned, semi-aquatic, and leaping, as distinguished from more terrestrial, squat, warty, hopping anurans, which are called \"toads.\" There is no taxonomic distinction between frogs and toads.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250018"]
+		},
+		{
+			"subject_term": "fungi",
+			"description": "Kingdom containing around 80,000 known species of non-photosynthetic organisms composed of one or more cells having visibly evident nuclei. They obtain nutrients by the absorption of organic compounds from their surroundings, bear spores, and typically reproduce both sexually and asexually, including yeasts, rusts, smuts, mildews, molds, mushrooms, and toadstools. The term \"fungi\" is also used erroneously for organisms that superficially look like true fungi, including slime molds and oomycetes that do not actually belong to the kingdom Fungi.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300265679"]
+		},
+		{
+			"subject_term": "games and sports",
+			"description": "Games are forms of competitive play, usually involving an element of strategy, especially to interfere with an opponent's play; may or may not require physical skill. Sports are games that involve a significant degree of individual skill and physical prowess.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069657"]
+		},
+		{
+			"subject_term": "gardens (open spaces)",
+			"description": "Area of ground or open space; usually, but not always, where flowers, shrubs, trees, vegetables, or fruits are grown and cultivated.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008090"]
+		},
+		{
+			"subject_term": "geology",
+			"description": "Science that deals with the physical history of the earth, the rocks of which it is composed, and the physical changes which it has undergone and is undergoing.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054546"]
+		},
+		{
+			"subject_term": "geometric motifs",
+			"description": "Design elements with geometrical themes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300009764"]
+		},
+		{
+			"subject_term": "glaciers (bodies of water)",
+			"description": "Very large bodies of ice moving slowly down a slope or valley or spreading outward on a land surface.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008835"]
+		},
+		{
+			"subject_term": "goats",
+			"description": "Genus of ruminant, hollow-horned mammals containing seven to nine species, including the wild goat, ibexes, the markhor, and the subspecies of domestic goat. The classification of goats is in flux based on new DNA research, and in some older classifications includes Ovis (sheep) and Ammotragus (Barbary Sheep), which are separate genera in other classifications. The Rocky Mountain goat is a separate genus, Oreamnos.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250122"]
+		},
+		{
+			"subject_term": "graffiti (casual notations)",
+			"description": "Casual scribbles or informal drawings on walls or other surfaces. Examples include the following: The casual scribbles or pictographs on walls, stones, or other surfaces in ancient and medieval times, the marks incised or cut into the underside of ancient Greek vases and other ceramics, and modern humorous, satiric, obscene, or gang-related writings or drawings executed anonymously in public places. For more finished, elaborate works on modern walls and other surfaces, prefer \"graffiti art.\" Graffiti is not the works created by \"sgraffito,\" in that sgraffito is not casual, but is instead a formal decorative mark-making technique used on pottery, glass, or other surfaces.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015613"]
+		},
+		{
+			"subject_term": "greenhouses",
+			"description": "Structures enclosed by glass and devoted to the cultivation and protection of plants out of season, usually free-standing but may be attached to another building. Greenhouses may be small or very large. For rooms attached to houses and used as sun lounges or for growing indoor plants, prefer \"conservatories.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300004938"]
+		},
+		{
+			"subject_term": "grids (layout features)",
+			"description": "Networks of horizontal and vertical lines used to guide the layout of graphic material.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300200010"]
+		},
+		{
+			"subject_term": "hares",
+			"description": "Leporidae - General term referring to any of more than 30 species belonging to the genus Lepus and sometimes used for species of other genera of the family Leporidae. They have long ears, a divided upper lip, and long hind legs adapted for leaping, but are distinguished form rabbits by significantly longer ears, longer hind feet, a shorter tail, longer body, and having young are born fully furred and with eyes wide open and seeing. The common names of species containing the word \"hare\" and \"rabbit\" are not strictly indicative of the genera to which the animals belong.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250216"]
+		},
+		{
+			"subject_term": "harpoons",
+			"description": "Hunting weapons consisting of a fixed or detachable barbed head mounted on a staff, thrown by hand or fired from a harpoon gun, used against large fish and marine mammals.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300037011"]
+		},
+		{
+			"subject_term": "helicopters",
+			"description": "Refers to various heavier than air aircraft characterized by large-diameter, powered, horizontally rotating wings or blades that can lift the craft vertically and sustain their position in the air.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212771"]
+		},
+		{
+			"subject_term": "hell (doctrinal concept)",
+			"description": "Place or state of extreme or eternal suffering, usually inflicted as punishment upon the wicked or the nonbelieving, common to many belief systems.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300185657"]
+		},
+		{
+			"subject_term": "hide and skin processing",
+			"description": "The processing of hides and skins.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300229483"]
+		},
+		{
+			"subject_term": "history paintings",
+			"description": "Paintings that depict multi-figure narrative scenes of real or legendary events, especially those in the academic style and with subject matter intended to convey a noble sentiment. The term is especially applied to paintings that were common from the 17th through the 19th century.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300033898"]
+		},
+		{
+			"subject_term": "home (concept)",
+			"description": "A locale that constitutes the center of an individual's domestic life, affectional relationships, and interests, together with the feeling of comfort and satisfaction that it conveys. For the buildings or portions of a building designed for residential occupancy by one family, use \"dwellings.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239112"]
+		},
+		{
+			"subject_term": "horses",
+			"description": "Equus - Genus including horses and similar animals. It evolved from small animals with multi-toed padded hooves. Equus is the only surviving genus in the once diverse family of horses. It was domesticated about 3,000 years ago.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250148"]
+		},
+		{
+			"subject_term": "horsetails",
+			"description": "Sphenophyta (division) - Cryptogamous (using sexual reproduction but lacking stamens or pistils) with hollow, jointed stems and whorls of slender branches at the joints. Today comprises one genus and around 30 species, but they were abundant in earlier periods; some Paleozoic sphenophytes grew up to 100 feet in height.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310160"]
+		},
+		{
+			"subject_term": "hospitals (buildings for health facility)",
+			"description": "Buildings housing institutions that are built, staffed, and equipped for the diagnosis of disease, for medical and surgical treatment of the sick and the injured, and for their housing during this process. The modern hospital also often serves as a center for investigation and for teaching.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300006676"]
+		},
+		{
+			"subject_term": "hotels (public accommodations)",
+			"description": "Buildings where travellers or tourists are provided with overnight accommodation, meals, and other services; often distinguished from inns and other forms of temporary lodging for travellers by their larger size and range of facilities, in modern times often equipped with a restaurant, bar, conference rooms, and leisure facilities.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300007166"]
+		},
+		{
+			"subject_term": "human figures",
+			"description": "Depictions that are specifically and primarily of the human form.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300404114"]
+		},
+		{
+			"subject_term": "human rights",
+			"description": "Rights deemed by a society to be possessed by all humans, typically a set of entitlements held to be critical by virtue of being human.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300404862"]
+		},
+		{
+			"subject_term": "hunting",
+			"description": "The action or practice of chasing game or other wild animals, for sustenance, profit, or sport.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239666"]
+		},
+		{
+			"subject_term": "ice (water by form)",
+			"description": "The solid form of water, produced by freezing.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011781"]
+		},
+		{
+			"subject_term": "icebergs",
+			"description": "Floating masses of ice; detached portions of glaciers which have been carried out to sea.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300132319"]
+		},
+		{
+			"subject_term": "schoolhouses",
+			"description": "Buildings used to house schools, usually of the elementary level, either devised or appropriated for this use. The term is generally applied to a-frame structures often with one interior space found in rural areas of the United States and Canada, but may be applied to any building type in the context of primary education.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266732"]
+		},
+		{
+			"subject_term": "icons (devotional images)",
+			"description": "In general meaning, images that portray a sacred entity and that are themselves regarded as sacred. In specific meaning, the term is typically used particularly for Christian images produced in the Eastern Rite churches, since the 6th century, according to prescribed formulas of subject (Christ, the Virgin, saints, and the great feasts) and composition, for devotional use in the church or home. Most commonly comprising tempera on panel, but they may be in any two-dimensional or relief medium, including fresco. Christians who venerate icons make the distinction between veneration and worship, although in actual practice the distinction is blurred. For a non-Christian image that is sacred or embodies a deity, use \"idol\" or \"cult image.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300033945"]
+		},
+		{
+			"subject_term": "identity",
+			"description": "Those characteristics or conditions of a thing, person, or group that remain the same amid change or that distinguish a thing, person, or group from another.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300257052"]
+		},
+		{
+			"subject_term": "igloos",
+			"description": "Eskimo houses usually made of sod, wood, or stone when permanent or of snow blocks in the shape of a dome when built for temporary purposes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005601"]
+		},
+		{
+			"subject_term": "illness",
+			"description": "State of poor health, of being subject to a disease, disorder, or other malfunctioning of the mind or body.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300189799"]
+		},
+		{
+			"subject_term": "insects",
+			"description": "Members of a class containing over 1,000,000 species characterized by a body divided into head, thorax, and abdomen; head with one pair of antennae, mouthparts consisting of a pair of mandibles and two pairs of maxillae, several pairs of legs, and often wings.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310470"]
+		},
+		{
+			"subject_term": "interior spaces",
+			"description": "Rooms or spaces in dwellings.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300078790"]
+		},
+		{
+			"subject_term": "irises (plants)",
+			"description": "Genus comprising around 300 species of flowering plants; from the Greek word for a rainbow, referring to the wide variety of flower colors found among species. Irises are natives of Europe, northern Africa, and temperate regions of Asia and America; most species have tuberous (less commonly bulbous or fibrous) roots, sword-shaped equitant leaves, and showy flowers.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343602"]
+		},
+		{
+			"subject_term": "islands (landforms)",
+			"description": "Landforms smaller than a continent, completely surrounded by water at high water. Islands appear in oceans, seas, lakes, or rivers.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008791"]
+		},
+		{
+			"subject_term": "kayaks",
+			"description": "Specifically used for single-seat native arctic North American canoes with watertight skin covers over a light wooden framework propelled by a double-bladed paddle, and generally for small boats resembling these made commercially of a variety of materials and used in sports. For similar North American skin boats but larger and seating more than one person, use \"umiaks.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212783"]
+		},
+		{
+			"subject_term": "kimonos",
+			"description": "Loose, wide-sleeved garments fastened around the waist with an obi or broad sash, traditionally worn by Japanese men and women.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300046171"]
+		},
+		{
+			"subject_term": "lakes (bodies of water)",
+			"description": "Bodies of fresh or salt water surrounded by land.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008680"]
+		},
+		{
+			"subject_term": "landfills",
+			"description": "Dumps where refuse is collected, usually low-lying ground, and often as a means to reclaim the land.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300000830"]
+		},
+		{
+			"subject_term": "landscapes",
+			"description": "Creative works, usually two-dimensional, depicting an outdoor scene dominated by the land, hills, fields, sky, trees, fields, rivers or other bodies of water, and other natural elements. Landscapes may include a near point of view in the foreground, but also usually depict a view into the distance. Landscapes may contain architecture or figures, but the primary focus remains the land. When an ocean, sea, or other large body of water dominates the picture, use \"seascapes.\" For actual areas of land rather than depictions, use \"landscapes (environments).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015636"]
+		},
+		{
+			"subject_term": "stars",
+			"description": "Massive self-luminous celestial bodies of gas that shine by radiation derived from internal energy sources. There are tens of billions of trillions of stars composing the observable universe.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300387654"]
+		},
+		{
+			"subject_term": "leaves (plant components)",
+			"description": "Outgrowths, usually green and flattened, that extend from the stem of a vascular plant. Botanically, leaves are an integral part of the stem system, and they are initiated in the apical bud along with the tissues of the stem itself. Leaves manufacture food for plants, which in turn ultimately nourish and sustain all land animals, directly or indirectly.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300400479"]
+		},
+		{
+			"subject_term": "leopards",
+			"description": "Panthera pardus (species) - Large cat having a wide range in Africa and Asia; its coat has a ground color that is typically yellowish above and white below, dark spots generally arranged in rosettes over much of the body, without the central spot characteristic of the coat of the jaguar. The ground color within the rosettes is sometimes a darker yellow, and the size and spacing of the spots vary greatly, distinguishing the several races of leopard.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310390"]
+		},
+		{
+			"subject_term": "libraries (buildings)",
+			"description": "Buildings set apart to contain books for reading, study, or reference, typically with shelves containing books and tables and seating for users of the library.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300006824"]
+		},
+		{
+			"subject_term": "mermaids",
+			"description": "Imaginary, partly human sea creatures with the head and trunk of a woman and the tail of a fish or cetacean.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379596"]
+		},
+		{
+			"subject_term": "mice",
+			"description": "Mus (genus) - Members of a genus containing 38 living species of small rodents that usually have a pointed snout, relatively large eyes and ears, and a long tail, and typically feed on seeds and fruit.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250249"]
+		},
+		{
+			"subject_term": "light (energy)",
+			"description": "That portion of the electromagnetic spectrum visible to the human eye, having a wavelength in the range from about 4,000 (violet) to about 7,700 (red) angstroms and may be perceived by the normal unaided human eye. It ranges from the red end to the violet end of the spectrum, with wavelengths from 700 to 400 nanometres and frequencies from 4.3 x 1014 to 7.5 x 1014 Hz. Like all electromagnetic radiation, light travels through empty space at a speed of about 186,000 miles per second (300,000 km/sec). In the mid-19th century, light was described by James Clerk Maxwell in terms of electromagnetic waves, but 20th-century physicists have shown that it exhibits properties of particles as well; its carrier particle is the photon. Light is the basis for the sense of sight and for the perception of color.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300056024"]
+		},
+		{
+			"subject_term": "lighthouses",
+			"description": "Towers or other structures equipped with a powerful light or lights (originally a signal fire) at the top, erected at important or dangerous points on or near the coast for the guidance of mariners.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300007741"]
+		},
+		{
+			"subject_term": "lions",
+			"description": "Panthera leo (species) - Large, powerful species of cat that is well-muscled, with a large head, short legs, size and appearance that varies considerably between the sexes, and is unique among the cats in living in family groups or prides. In the Pleistocene, lions were the most widespread large land mammals, ranging throughout Eurasia, Africa, and North America. Today listed as Vulnerable, remaining only in fragmented populations remain in Sub-Saharan Africa and western India.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310388"]
+		},
+		{
+			"subject_term": "museums (buildings)",
+			"description": "Refers to buildings, groups of buildings, or spaces within buildings where objects of value such as works of art, antiquities, scientific specimens, or other artifacts are housed and displayed for public benefit.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005768"]
+		},
+		{
+			"subject_term": "logging",
+			"description": "The collective actions or processes of felling trees and sawing them into short lengths to be transported to a sawmill.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300389810"]
+		},
+		{
+			"subject_term": "loons",
+			"description": "Gaviiformes (order) - Order containing five species in one family in the northern hemisphere. Characterized as foot-propelled diving birds with webbed feet and pointed bills.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310301"]
+		},
+		{
+			"subject_term": "lynx",
+			"description": "Lynx (genus) - Genus of four species, including the bobcat.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310362"]
+		},
+		{
+			"subject_term": "mammoths",
+			"description": "Mammuthus (genus) - Extinct genus of the elephant family that lived from the Pliocene epoch (5 million years ago) into the Holocene (5,000 years ago) in Africa, Europe, Asia, and North America. They were characterized by having long, curved tusks a coat of long hair in colder climates.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300395482"]
+		},
+		{
+			"subject_term": "mannequins (costume equipment)",
+			"description": "Three-dimensional representations of human figures, often stylized or otherwise abstracted, used by tailors, dressmakers, and sales personnel for fitting or displaying clothing. For models of the human body used for teaching anatomy or demonstrating surgical operations, use \"manikins.\" For jointed figure of humans or animals used by artists, use \"lay figures.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239006"]
+		},
+		{
+			"subject_term": "maps",
+			"description": "Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. For similar depictions on a sphere, see \"globes (cartographic spheres).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300028094"]
+		},
+		{
+			"subject_term": "marshes",
+			"description": "Low lying, treeless wetlands, typically overgrown with grasses, cattails, and rushes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008903"]
+		},
+		{
+			"subject_term": "masks (costume)",
+			"description": "Refers to coverings for all or part of the face, usually with openings for the eyes and sometimes the mouth. They are worn to hide or alter the identity of the wearer or for protection. Masks as cultural objects have been used throughout the world in all periods. Masks are extremely varied in appearance, function, and fundamental meaning. They may be associated with ceremonies that have religious and social significance or are concerned with funerary customs, fertility rites, or curing sickness. They may be used on festive occasions or to portray characters in a dramatic performance and in re-enactments of events. They may be used for warfare and as protective devices in certain sports. They are also employed as architectural ornaments.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300138758"]
+		},
+		{
+			"subject_term": "memorials (monuments)",
+			"description": "Monuments or structures built to preserve the memory of beings or events. For other objects created, issued, or worn to commemorate persons or events, use \"commemoratives.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300006956"]
+		},
+		{
+			"subject_term": "memory (psychological concept)",
+			"description": "The mental capacity or faculty of retaining and recalling facts, events, impressions, or recognizing previous experience.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300254803"]
+		},
+		{
+			"subject_term": "men (male humans)",
+			"description": "Refers to male human beings from young adulthood through old age.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025928"]
+		},
+		{
+			"subject_term": "military",
+			"description": "Referred to more broadly as armed forces. Refers in the aggregate to military, naval and air forces of any nation.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300137540"]
+		},
+		{
+			"subject_term": "military artists",
+			"description": "Artists in any medium whose primary subjects concern the armed forces, including uniforms, equipment, and other topics. Such artists may or may not themselves be members of the military. For artists specializing primarily in battles and war, use \"battle artist.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300404341"]
+		},
+		{
+			"subject_term": "mining",
+			"description": "Process or action of digging to extract metal, coal, or other substances, or to create a tunnel, such as under a wall, fort, mountain, or another thing.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054710"]
+		},
+		{
+			"subject_term": "mittens (handwear)",
+			"description": "Coverings for the hand enclosing four fingers in one section and the thumb in another section.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300210012"]
+		},
+		{
+			"subject_term": "mixed media",
+			"description": "Information indicator for any combination of a variety of materials plus the associated techniques, used in the making of a single work of art. In printmaking, use when more than one technique, such as both etching and engraving, are used in one print. For the painting technique of laying oil paint glazes over tempera paint or tempera paint glazes over oil paint, use \"mixed technique.\" For a general term for a variety of artistic or communicative forms used in a given work or works, such as contemporary works that employ both sculpture and music, use \"multimedia.\" For the concept that certain contemporary works merge known art forms to inaugurate a new type, use \"intermedia.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300163347"]
+		},
+		{
+			"subject_term": "moons",
+			"description": "Relatively large satellites that orbit a planet.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300386951"]
+		},
+		{
+			"subject_term": "moose",
+			"description": "Alces alces - Members of a species of very large, heavy, long-legged, short-necked ruminants with large distinctive palmate antlers; they inhabit the northern parts of North America and Eurasia. They are called \"elk\" in Europe, but the term \"elk\" refers to another animal, Cervus canadensis, in North America.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250310"]
+		},
+		{
+			"subject_term": "motherhood",
+			"description": "State of being a mother; also the qualities belonging to or associated with being a mother or being pregnant.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300221442"]
+		},
+		{
+			"subject_term": "mountain climbing",
+			"description": "Activity involving ascending mountains or other steep terrain, usually for adventure or sport.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300403986"]
+		},
+		{
+			"subject_term": "mountains",
+			"description": "Prominent landforms rising considerably above the surrounding area, typically having steep slopes, a sharp summit area, and large mass. Mountains rarely occur individually, and in most cases, are found in ranges, chains, or systems.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008795"]
+		},
+		{
+			"subject_term": "music (discipline)",
+			"description": "The discipline of combining vocal or instrumental sounds to produce beauty of form, harmony, melody, rhythm, expressive content, etc.; musical composition, performance, analysis, etc., as a subject of study; the occupation or profession of musicians.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300417584"]
+		},
+		{
+			"subject_term": "poetry",
+			"description": "Literary and oral genre rooted in the compressed and cogent imaginative awareness or associations of experiences, ideas, or emotional responses and arranged under an organized criterion of meaning, conscious and unconscious expression, symbolism, formal or informal pattern, sound, and rhythm. The genre encompasses narrative, dramatic, satiric, didactic, erotic, and personal forms.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055931"]
+		},
+		{
+			"subject_term": "national parks",
+			"description": "Areas of special scenic, historical, or scientific importance set aside and maintained by a national government especially for recreation or study.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008189"]
+		},
+		{
+			"subject_term": "night",
+			"description": "The period between sunset and sunrise, especially the hours of darkness.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133095"]
+		},
+		{
+			"subject_term": "other works (information indicator)",
+			"description": "Information indicator used in reference to a work other than the work being cataloged or discussed.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300404594"]
+		},
+		{
+			"subject_term": "outhouses",
+			"description": "Detached structures in domestic contexts containing one or more seats and a pit serving as toilets; distinguished from \"latrines\" which are similar structures in public contexts. For rooms that are within buildings and have such simple facilities, use \"privies.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300137896"]
+		},
+		{
+			"subject_term": "owls",
+			"description": "Strigiformes - Order containing around 180 species in two families of nocturnal raptorial birds with hooked beaks, strong talons, and soft plumage. All owls have the same general appearance, which is characterized by a flat face, small hooked beak, short tail, round wings, and large, forward-facing eyes. The bird became associated with Athena, the Greek goddess of wisdom and also owls became symbolic of intelligence because it was thought that they could forsee events. Also, because of their nocturnal existence and hooting sounds, owls have also been symbols associated with the occult. In the Middle Ages, the owl became a symbol of the darkness before the coming of Christ.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310290"]
+		},
+		{
+			"subject_term": "paleontology",
+			"description": "Branch of biology dealing with the forms of life that existed during past geological periods, based on the study of fossils and other preserved remains (such as very ancient frozen remains) of plants and animals",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054555"]
+		},
+		{
+			"subject_term": "patterns (design elements)",
+			"description": "Ornamental designs, usually on a flat surface or in relief and composed of repeated or combined motifs. Distinguish from \"motifs\" which are distinct or separable design elements occurring singly as individual shapes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300010108"]
+		},
+		{
+			"subject_term": "pelt (animal material)",
+			"description": "Material comprising the hide or skin of an animal, usually a mammal, with the hair or wool left on.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300193371"]
+		},
+		{
+			"subject_term": "performances (creative events)",
+			"description": "Instances of the execution of an action, operation, or process in performing a literary, artistic, musical, theatrical, or other creative work.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069200"]
+		},
+		{
+			"subject_term": "pigs",
+			"description": "Sus (genus) - Genus containing at least 11 living and several fossil species of intelligent, social, even-toed ungulate having a stout body, sparse bristly hair, and a broad flat snout for rooting in the soil, including wild and domestic pigs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250114"]
+		},
+		{
+			"subject_term": "pike",
+			"description": "Genus of freshwater fish; the only living genus in the family Esocidae, which were endemic to North America, Europe, and Eurasia during the Paleogene through present. They are distinguished by an elongate body, small scales, long head, shovellike snout, and large mouth armed with strong teeth. The dorsal and anal fins are far back on the tail.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300386109"]
+		},
+		{
+			"subject_term": "state parks",
+			"description": "Parks owned or maintained by the state, particularly a U.S. state.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008192"]
+		},
+		{
+			"subject_term": "polar bears",
+			"description": "Ursus maritimus - Members of a species of large, solitary, strictly carnivorous bear found throughout the Arctic region, having a stocky build, long neck, relatively small head, short rounded ears, a short tail, insulating blubber, black skin, and fur comprising dense underfur with an outer layer of guard hairs that appear white or beige but are actually transparent. The polar bear travels long distances over vast desolate expanses, generally on drifting oceanic ice floes, searching for seals, its primary prey. It is endangered by loss of habitat resulting from global warming. According to both fossil and genetic evidence, the polar bear diverged from the arctic brown bear around 200,000 years ago, when it is probable that a population of brown bears became isolated during a period of glaciation in the Pleistocene.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310635"]
+		},
+		{
+			"subject_term": "ponds (water)",
+			"description": "Relatively small bodies of water, usually surrounded on all sides by land.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008688"]
+		},
+		{
+			"subject_term": "porcupines",
+			"description": "General term referring to members of 27 living species in two families of large herbivorous rodents having body and tail covered with sharp defensive spines composed of modified hair.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250633"]
+		},
+		{
+			"subject_term": "portraits",
+			"description": "Representations of real individuals that are intended to capture a known or supposed likeness, usually including the face of the person. For representations intended to be anonymous, or of fictional or mythological characters, see \"figures (representations).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015637"]
+		},
+		{
+			"subject_term": "Postminimal",
+			"description": "Refers broadly to a variety of art that developed in the late 1970's, the term coined by American art critic Robert Pincus Witten. The style is characterized by art of a purely intellectual activity, referring back to early minimal art, but departing from its aesthetic principles.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300112731"]
+		},
+		{
+			"subject_term": "prison cells",
+			"description": "Relatively small rooms in jails or prisons, used to confine one or more inmates; may be enclosed with bars or otherwise fortified against escape.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300417303"]
+		},
+		{
+			"subject_term": "puffins",
+			"description": "Fratercula arctica - Members of a species of seabird native to the Arctic and northern coasts of the Atlantic that nests in burrows, and has black and white plumage and a very deep and brightly colored bill.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300252276"]
+		},
+		{
+			"subject_term": "putti (motifs)",
+			"description": "Motifs representing chubby, sometimes winged and naked figures of little boys, derived from Greco-Roman depictions of Eros. Common in art from Renaissance through the 18th century.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250465"]
+		},
+		{
+			"subject_term": "rabbits",
+			"description": "Leporidae - General term referring to mammals belonging to any of several genera containing around 30 species of Leporids, having long ears, a divided upper lip, and long hind legs adapted for leaping, differing from hares in being smaller and having their young born naked and blind.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310329"]
+		},
+		{
+			"subject_term": "railroads (infrastructure)",
+			"description": "Transit systems consisting of roads laid with rails forming tracks on which locomotives and cars are run for the transportation of passengers, freight, and mail.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008591"]
+		},
+		{
+			"subject_term": "rain",
+			"description": "Water condensed from atmospheric vapor and falling in drops.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055377"]
+		},
+		{
+			"subject_term": "ravens (birds)",
+			"description": "General term referring to several species of the genus Corvus, characterized as being heavily billed, dark, intelligent birds. Ravens are distinguished from their close relatives the various species of crows in the genus Corvus in that the raven has a heavier bill and shaggier, more lustrous plumage than the crow, especially around the throat.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250089"]
+		},
+		{
+			"subject_term": "reading (activity)",
+			"description": "Using sight or touch to take in the sense of words or symbols in printed or written matter, either silently or aloud.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300248178"]
+		},
+		{
+			"subject_term": "red (color)",
+			"description": "Hue name for one of the three primary additive colors; that portion of the spectrum lying at the lowest frequencies of light discernible by the human eye, with a wavelength range between 630 and 760 nanometers. The term may refer to any of this group of colors that vary in lightness and saturation. Examples of red color in nature are that of blood and ripe cherries.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300126225"]
+		},
+		{
+			"subject_term": "reservoirs (water distribution structures)",
+			"description": "Artificial ponds or lakes where water is accumulated and retained until needed.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300006191"]
+		},
+		{
+			"subject_term": "rivers",
+			"description": "Bodies of flowing water.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008707"]
+		},
+		{
+			"subject_term": "roads",
+			"description": "General term referring to all long outdoor passages used by and generally created by humans, intended to allow people to pass between different places, usually one wide enough to admit of the passage of wheeled vehicles, horses, or travellers on foot.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008217"]
+		},
+		{
+			"subject_term": "rock (inorganic material)",
+			"description": "Naturally formed aggregate of one or more minerals. For processed or dressed rock use \"stone.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011692"]
+		},
+		{
+			"subject_term": "running (physical activity)",
+			"description": "The action of a person or animal using their legs to go faster than a walk, specifically to go steadily by springing steps so that both or all feet leave the ground for an instant in each step. May be employed as a competitive sport.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239496"]
+		},
+		{
+			"subject_term": "salmon (fish)",
+			"description": "General term for several species in different genera in the family Salmonidae, found in both the Atlantic and Pacific Oceans, as well as in the Great Lakes and other landlocked lakes. Most species are salt water fish that spawn in freshwater.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300261263"]
+		},
+		{
+			"subject_term": "scarecrows",
+			"description": "Figures used to discourage birds from damaging crops, usually in the form of a man dressed in old clothes or rags, placed in fields or gardens.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300400585"]
+		},
+		{
+			"subject_term": "scientific illustrations (images)",
+			"description": "Illustrations created specifically to illuminate some aspect of scientific inquiry, often in the field of biology. These may include unrealistic renderings, such as transparency, layering, etc.of subject matter that serve to illustrate functions or chronological events more clearly.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015595"]
+		},
+		{
+			"subject_term": "sealing (water activities)",
+			"description": "The work or industry of capturing and rendering seals.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300391353"]
+		},
+		{
+			"subject_term": "seals (animals)",
+			"description": "Otariidae and Phocidae - General term referring to animals belonging to two families (Otariidae and Phocidae) and 32 living species of web-footed aquatic mammals that live chiefly in cold seas and whose body shape, round at the middle and tapered at the ends, is adapted to swift and graceful swimming.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250867"]
+		},
+		{
+			"subject_term": "seas",
+			"description": "The shallower salt water areas of the earth lying on the margins of continents; loosely applied as a proper name to any specific bodies of water. For the main water areas of the earth, lying in basins, use \"oceans.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008694"]
+		},
+		{
+			"subject_term": "seascapes",
+			"description": "Creative works that depict the ocean or other large body of water where the water itself dominates the scene. When lesser bodies of water are depicted, use \"landscapes (representations).\" When ships, shipbuilding, or harbors are depicted, use \"marines (visual works).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300117546"]
+		},
+		{
+			"subject_term": "seasonally inhabited places",
+			"description": "Inhabited places, such as cities, towns, or villages, that are inhabited during only part of the year.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300387247"]
+		},
+		{
+			"subject_term": "seaweed (algae)",
+			"description": "General term for any of the red, green, or brown marine algae that grow along seashores. Seaweeds are generally anchored to the sea bottom or other solid structures by rootlike “holdfasts,” which perform the sole function of attachment and do not extract nutrients as do the roots of higher plants.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300380064"]
+		},
+		{
+			"subject_term": "sewing (needleworking technique)",
+			"description": "Refers to the process of joining, attaching, repairing, enclosing, securing, or decorating cloth, leather, or other flexible materials with thread, cord, or other filament by means of a needle or awl. Its meaning overlaps with \"stitching.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053658"]
+		},
+		{
+			"subject_term": "sexuality",
+			"description": "Generally used for the sum of an individual's sexual emotions, ideas, and behavior. For the pattern of attitudes and behavior that in any society is deemed appropriate to one sex rather than another, use \"sex role.\" For the concept of the physiological traits that distinguish the males and females of a species, use \"sex.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055187"]
+		},
+		{
+			"subject_term": "shamans",
+			"description": "Those who act as intermediaries between the natural and supernatural worlds, serving as healers and priests, foretelling the future, and controlling spiritual forces for the welfare of the community.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300218522"]
+		},
+		{
+			"subject_term": "stairs",
+			"description": "Ascending series or flights of steps, sometimes connected by landings, leading from one level to another; typically used for passing from one floor to another in a house or other building.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300003228"]
+		},
+		{
+			"subject_term": "sharks",
+			"description": "Selachii (order) - Members of an order containing 400 living species and many fossil species of predatory, cartilaginous fishes that have a fusiform shape and gill cleft location on either side of the head resembling bony fishes; most having a tough skin that is dull gray in color and roughened by toothlike scales; a muscular, asymmetrical, upturned tail and pointed fins; a pointed snout extending forward and over a crescentic mouth set with sharp triangular teeth; and a lack of a swim bladder requiring the animals to swim nearly perpetually to keep from sinking to the bottom. A few of the larger species are able to maintain their body temperature above the surrounding water temperature, although they are not truly warm blooded. Sharks developed as long ago as 450 million years ago. Some classifications place sharks in the superorder Selachimorpha.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300249658"]
+		},
+		{
+			"subject_term": "steamboats",
+			"description": "A boat propelled by steam power; especially one designed for river or coastal travel.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300124118"]
+		},
+		{
+			"subject_term": "sheep",
+			"description": "Refers to members of the genus containing 5 or more species of ruminant (cud-chewing) mammals, including domestic sheep. Sheep are typically distinguished from goats by being stockier, having horns that more divergent in form, having scent glands in its face and hind feet, and the males lack the beards of goats. In all wild species of sheep, the outer coat is hair overlaying a short undercoat of fine wool; the fine wool has been developed into the fleece of domesticated sheep. Sheep were first domesticated from wild species of sheep at least 5000 BCE, and their remains have been found at numerous sites of early human habitation in the Middle East, Europe, and Central Asia. Domesticated sheep are raised for their fleece, milk, and meat.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250284"]
+		},
+		{
+			"subject_term": "ships",
+			"description": "Watercraft generally larger and more seaworthy than boats, usually propelled by sails or engines.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300082981"]
+		},
+		{
+			"subject_term": "shopping",
+			"description": "Seeking or examining merchandise or property offered for sale, especially but not exclusively by visiting shops.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300247594"]
+		},
+		{
+			"subject_term": "skiing",
+			"description": "Recreation, sport, or mode of transportation that involves moving over snow by means of a pair of long, flat runners called skis, attached or bound to shoes or boots.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300222781"]
+		},
+		{
+			"subject_term": "sleds",
+			"description": "Vehicles consisting of a platform mounted on parallel runners for transporting goods or passengers over snow or ice and usually pulled by animal locomotion or operating by gravity; for similar, but usually more elaborate, vehicles used primarily for the conveyance of passengers and normally pulled by horses, use \"sleighs\" or, if pulled by dogs, use \"dogsleds.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300216402"]
+		},
+		{
+			"subject_term": "sleeping",
+			"description": "Describes the state, condition, or appearance of being asleep, the natural physiological period of rest.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300375130"]
+		},
+		{
+			"subject_term": "sloughs",
+			"description": "Pieces of soft, miry, or muddy ground, particularly areas of thoroughfares that are filled with wet mud or mire and impassable by vehicles, horses, etc.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343520"]
+		},
+		{
+			"subject_term": "smoking (activity)",
+			"description": "The action of inhaling and exhaling smoke, usually that of burning leaves of various forms of vegetation, from a cigarette, pipe, cigar, or other controlled implement for inhalation.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300380156"]
+		},
+		{
+			"subject_term": "snakes",
+			"description": "Serpentes (suborder) - Suborder containing around 2,900 species of reptiles with a greatly elongated body, tapering tail, smooth scaly integument, and in some species, venomous properties. Snakes represent a lizard that, over the course of evolution, has undergone structural reduction, simplification, and loss as well as specialization of characteristics. All snakes lack external limbs, but not all legless reptiles are snakes. All snakes are carnivorous and can be distinguished from legless lizards by their lack of eyelids, limbs, external ears, and vestiges of forelimbs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250870"]
+		},
+		{
+			"subject_term": "snow (precipitation)",
+			"description": "Frozen precipitation in the form of white or translucent hexagonal ice crystals that fall in soft, white flakes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055381"]
+		},
+		{
+			"subject_term": "snowmobiles",
+			"description": "Motor vehicles with revolving treads in the rear and steerable skis in the front, for traveling over snow.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212884"]
+		},
+		{
+			"subject_term": "soapberries",
+			"description": "Family containing around 135 genera and 1,600 species occurring mainly in the tropical areas of the world, especially abundant in the American tropics. Species range from trees and shrubs to lianas or herbaceous vines. The family is found throughout the wetter tropics and subtropics, extending north to Japan and south to New Zealand.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300375034"]
+		},
+		{
+			"subject_term": "sounding boards",
+			"description": "Structures placed behind or over pulpits, rostrums, or platforms to reflect sound toward the audience.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300003798"]
+		},
+		{
+			"subject_term": "spacecraft",
+			"description": "Manned or unmanned vehicles designed to be placed in orbit about the earth or into a trajectory toward another celestial body.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212528"]
+		},
+		{
+			"subject_term": "spirits (beings)",
+			"description": "Incorporeal or immaterial beings, as opposed to beings having body and matter; used especially in theology. For spiritual beings who were once human or animal, see \"souls.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379007"]
+		},
+		{
+			"subject_term": "spring (season)",
+			"description": "The season between winter and summer during which the weather becomes warmer and plants revive.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133097"]
+		},
+		{
+			"subject_term": "spruce trees",
+			"description": "Picea (genus) - Genus of around 35 species of coniferous evergreen trees in the family Pinaceae, order Pinales, found in northern temperate and boreal. Mature trees may be 20-60 m (66-200 feet) tall. They are distinguished from similar genera by whorled branches, conical form, with needle-like leaves attached singly to the branches in a spiral fashion, and rough rather than smooth branches. As needles are shed throughout the life of the tree, the branches retain a rough appearance from the pulvinus, to which the needles had been attached. Comprises around 40 species of evergreen ornamental and timber trees native to the temperate and cold regions of the Northern Hemisphere. They are pyramidal trees with whorled branches and thin, scaly bark.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343671"]
+		},
+		{
+			"subject_term": "squirrels",
+			"description": "Sciuridae (family) - Family containing 50 genera and 268 species of small rodents; the term \"squirrel\" is derived from the Greek \"skiouros,\" meaning \"shade tail,\" which describes one of the animals' most conspicuous and recognizable features.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250602"]
+		},
+		{
+			"subject_term": "staged photographs",
+			"description": "Photographs taken of a scene or installation fabricated by the photographer specifically for the purpose of photographing it.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300184557"]
+		},
+		{
+			"subject_term": "still lifes",
+			"description": "Images in which the focus is a depiction of inanimate objects, as distinguished from art in which such objects are subsidiary elements in a composition. The term is generally applied to depictions of fruit, flowers, meat or dead game, vessels, eating utensils, and other objects, including skulls, candles, and hourglasses, typically arranged on a table. Such images were known since the time of ancient Greece and Rome; however, the subject was exploited by some 16th-century Italian painters, and was highly developed in 17th-century Dutch painting, where the qualities of form, color, texture, and composition were valued, and the images were intended to relay allegorical messages. The subject is generally seen in oil paintings, though it can also be found in mosaics, watercolors, prints, collages, and photographs. The term originally included paintings in which the focus was on living animals at rest, although such depictions would now be called \"animal paintings.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015638"]
+		},
+		{
+			"subject_term": "stores",
+			"description": "Buildings, either small or large, offering merchandise for retail sale.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005283"]
+		},
+		{
+			"subject_term": "storms",
+			"description": "Violent disturbances of the atmosphere attended by wind and usually also by rain, snow, sleet, or hail.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054734"]
+		},
+		{
+			"subject_term": "stoves (heating equipment)",
+			"description": "Portable or fixed apparatuses that furnish heat for warmth or cooking, commonly using coal, oil, gas, wood, or electricity as a source of power.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300052201"]
+		},
+		{
+			"subject_term": "structures (single built works)",
+			"description": "Refers to constructions of any kind artificially fabricated of parts joined together in some definite manner and which may or may not provide enclosure or shelter. Includes not just buildings, but other structures, for example oil wells, bridges, docks, and railroads. The term normally applies to structures built by humans, but may also apply to those built by other species.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300004794"]
+		},
+		{
+			"subject_term": "summer (season)",
+			"description": "The usually warmest season of the year, occurring between spring and autumn.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133099"]
+		},
+		{
+			"subject_term": "sunrise",
+			"description": "The apparent ascent of the sun above the horizon, signaling the beginning of the day.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343634"]
+		},
+		{
+			"subject_term": "suns (stars)",
+			"description": "Stars in the center of a solar system around which planets orbit.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300379806"]
+		},
+		{
+			"subject_term": "sunset",
+			"description": "The apparent descent of the sun below the horizon, signaling the closing of the day.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343635"]
+		},
+		{
+			"subject_term": "utilitarian objects",
+			"description": "Object genre including items, equipment, accessories, and other things that are utilitarian in purpose rather than purely decorative. Objects having a primary purpose of being useful and used, rather than purely decorative.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300404591"]
+		},
+		{
+			"subject_term": "swimming",
+			"description": "The activity of a person or animal propelling themselves in the water by natural means of progression, such as floating and kicking or paddling the limbs. For the activity of cleansing, prefer \"bathing (hygienic activity).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300239495"]
+		},
+		{
+			"subject_term": "tattoos",
+			"description": "Permanent marks or designs on the skin made by puncturing and inserting pigments. Practiced in ancient times until the present day worldwide and popularized in European and non-indigenous American culture since the 18th century by seamen returning from Polynesia. Motives for tattooing vary by culture. Tattoos may be purely decorative, may indicate rank in social structures, or be applied for spiritual reasons.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300015614"]
+		},
+		{
+			"subject_term": "taxidermy",
+			"description": "Preparing lifelike representations of animals by stuffing the skin or molding it around a model of the specimen.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053628"]
+		},
+		{
+			"subject_term": "tents (portable buildings)",
+			"description": "Collapsible shelters of canvas, skins, plastic, or other flexible and water-repellent material stretched and sustained by poles, usually secured by ropes to pegs in the ground.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300005694"]
+		},
+		{
+			"subject_term": "text (layout feature)",
+			"description": "In the context of an individual page or sheet, such as a poster the main body of type or written matter, as opposed to the illustrations, margins, borders, headings, or other features. With reference to a book or periodical, refers to the main body of the writing, as distinct from front matter, notes, index, appendix, and bibliography.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250810"]
+		},
+		{
+			"subject_term": "textiles (visual works)",
+			"description": "General term for carpets, fabrics, costume, or other works made of textile materials, which are natural or synthetic fibers created by weaving, felting, knotting, twining, or otherwise processing. For works of art or high craft that employ textile as a medium, prefer \"textile art (visual works).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300014063"]
+		},
+		{
+			"subject_term": "theaters (buildings)",
+			"description": "Buildings having a stage or projection screen for the presentation of dramatic performances and providing seating areas for spectators.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300007117"]
+		},
+		{
+			"subject_term": "topiaries",
+			"description": "Trees or shrubs pruned and trained into various geometric, zoomorphic, or fantastic shapes.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300061887"]
+		},
+		{
+			"subject_term": "totem poles",
+			"description": "Poles carved and painted with a series of totemic symbols, erected before the homes of Native Americans of the northwestern coast of North America.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300184947"]
+		},
+		{
+			"subject_term": "trees",
+			"description": "Woody, perennial plants usually with a single, long, self-supporting stem or trunk, and which grow to a considerable height.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300132410"]
+		},
+		{
+			"subject_term": "tule (grass material)",
+			"description": "General term for material from the leaves and stems of several species of large aquatic grass used by Native Americans in house construction, making mats, rafts, etc. From an Aztec word, \"tullen.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300249197"]
+		},
+		{
+			"subject_term": "umiaks",
+			"description": "Open, native arctic North American skin boats seating more than one person and used for transporting goods and passengers; for similar but smaller and covered skin boats seating only one, use \"kayaks.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300212904"]
+		},
+		{
+			"subject_term": "universities (buildings)",
+			"description": "Buildings or groups of buildings that house degree-granting institutions which may typically include liberal arts undergraduate colleges, graduate schools, and undergraduate or graduate professional schools.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300006617"]
+		},
+		{
+			"subject_term": "vessels (containers)",
+			"description": "Containers designed to serve as receptacles for a liquid or other substance, usually those of circular section and made of some durable material; especially containers of this nature in domestic use, employed in connection with the preparation or serving of food or drink, and usually of a size suitable for carrying by hand.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300193015"]
+		},
+		{
+			"subject_term": "villages",
+			"description": "Distinctions among villages, towns, and cities are relative and vary according to their individual regional contexts. Villages generally designate units of compact settlement, varying in size but usually larger than hamlets and smaller than towns and distinguished from the surrounding rural territory.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008372"]
+		},
+		{
+			"subject_term": "volcanoes",
+			"description": "Vents in the crust of the Earth or other planet or satellite, from which issue eruptions of molten rock, hot rock fragments, and hot gases.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300132325"]
+		},
+		{
+			"subject_term": "voting",
+			"description": "Expressing opinion or choice in a matter by some specific means, such as casting a ballot or raising a hand, among a group of other voters.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300189333"]
+		},
+		{
+			"subject_term": "walrus",
+			"description": "Odobenidae - Family containing one species, characterized by being semi-aquatic, having prominent tusks, whiskers, great bulk, being relatively long-lived, and social.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310347"]
+		},
+		{
+			"subject_term": "wars",
+			"description": "Events taking place over a prolonged period and comprising open and declared hostile armed conflict between nations or parties within a nation. For individual instances of armed conflict, use \"battles.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300055314"]
+		},
+		{
+			"subject_term": "water (inorganic material)",
+			"description": "A liquid made up of molecules of hydrogen and oxygen (HO2). When pure, it is colorless, tasteless, and odorless. It exists in gaseous, liquid, and solid forms; it is liquid at room temperature. It is the liquid of which seas, lakes, and rivers are composed, and which falls as rain. Water is one of the most plentiful and essential of compounds. It is vital to life, participating in virtually every process that occurs in plants and animals. One of its most important properties is its ability to dissolve many other substances. The versatility of water as a solvent is essential to living organisms. The term \"water\" is typically used to refer to the liquid form of this compound; for the solid or gaseous forms, use \"ice\" or \"water vapor.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011772"]
+		},
+		{
+			"subject_term": "waterfalls (natural bodies of water)",
+			"description": "Perpendicular or very steep descents of the water of a stream. May be used for artificial waterfalls only if highly naturalistic in form and context; otherwise prefer \"cascades\" or \"fountains.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300008736"]
+		},
+		{
+			"subject_term": "weapons",
+			"description": "Implements or mechanisms used for defense or attack in combat, hunting, or war.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300036926"]
+		},
+		{
+			"subject_term": "weasels",
+			"description": "General term referring to members of around ten species of small carnivores with very elongated, slender bodies.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250165"]
+		},
+		{
+			"subject_term": "weaving",
+			"description": "Generally, the process of interlacing strands or strips of various materials, such as cane, textile, or twigs, to make materials or objects such as wicker, cloth, baskets, or wreaths. Specifically used for the process of making textile on a loom or other weaving device by interlacing warp and weft in a particular order.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300053642"]
+		},
+		{
+			"subject_term": "weddings (ceremonies)",
+			"description": "Ceremonies or rites joining a couple in matrimony, with its attendant festivities. For the state of marriage, use \"marriage (social construct).\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069158"]
+		},
+		{
+			"subject_term": "whales",
+			"description": "Cetacea - Order containing around 80 species in extant 10 families, the living members characterized by being nearly fully adapted to aquatic life with a fusiform (streamlined) body, forelimbs modified into flippers, tiny vestigial hind-limbs that do not attach to the backbone and are hidden within the body, a tail with horizontal flukes, being nearly hairless, insulation provided by a thick layer of blubber, and typically a high level of intelligence.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300310322"]
+		},
+		{
+			"subject_term": "whaling",
+			"description": "The work or industry of capturing and rendering whales.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300266539"]
+		},
+		{
+			"subject_term": "windows",
+			"description": "Openings in the wall of a building, serving to admit light, usually to permit vision, and often to admit air.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300002944"]
+		},
+		{
+			"subject_term": "winter",
+			"description": "Usually the coldest season of the year, occurring between autumn and spring.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300133101"]
+		},
+		{
+			"subject_term": "Payne's gray (color)",
+			"description": "Refers to a range of grayish blue colors resembling a composite pigment composed of blue, red, black, and white pigments.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300311101"]
+		},
+		{
+			"subject_term": "wolves",
+			"description": "Canis - General term applied to members of various large, wild species of Canis, particularly those of North America and Eurasia that hunt in packs.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250132"]
+		},
+		{
+			"subject_term": "women (female humans)",
+			"description": "Refers to female human beings from young adulthood through old age.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025943"]
+		},
+		{
+			"subject_term": "youth (people)",
+			"description": "People below the age of full maturity, generally 17 years of age and younger.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300025944"]
+		},
+		{
+			"subject_term": "zodiac symbols",
+			"description": "Images of animals and objects that symbolize the twelve signs of the zodiac.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300009937"]
+		},
+		{
+			"subject_term": "zoos (built complexes)",
+			"description": "Gardens, parks, or other grounds in which wild animals, and sometimes also domestic animals, are kept for public exhibition, usually in enclosures. Animals in zoos can generally be given more intensive care than is possible in nature reserves or wildlife refuges. Marine invertebrates, fish, and sometimes marine mammals, are often kept in separate aquariums.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300000348"]
+		},
+		{
+			"subject_term": "anatomy",
+			"description": "Discipline concerned with the structure, function, and development of the cells, tissues, and organs constituting the animal body.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300054465"]
+		},
+		{
+			"subject_term": "ducks (birds)",
+			"description": "General term for members of various species of relatively small, short-necked, large-billed waterfowl. They differ from geese in being smaller in size and having legs that are placed rearward, and the result is a distinctive waddling gait. Males, known as drakes, and females, known as hens, exhibit some degree of differentiation in plumage and in call.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300250047"]
+		},
+		{
+			"subject_term": "farming (activity or system)",
+			"description": "Action, practice, or system of the operation of a farm, including the cultivation of the soil to produce crops.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300192802"]
+		},
+		{
+			"subject_term": "octopi",
+			"description": "Octopoda (order) - Order of large number of widely distributed, shallow-water cephalopods having eight sucker-bearing arms or tentacles, a beak-like mouth, and either only a vestigial internal shell or no shell at all.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300259782"]
+		},
+		{
+			"subject_term": "potlatches",
+			"description": "Ceremonial feasts given by the Northwest Coast Native Americans as displays of wealth, to validate or advance individual social status. They are marked by the host's lavish gift giving.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300069169"]
+		},
+		{
+			"subject_term": "dolls (figurines)",
+			"description": "Figurines representing humans or animals, including but not exclusive to those intended as toys for children, usually girls, or as collectibles for adults. Dolls are commonly in the form of a baby or woman, often with changeable clothes; they may have moveable arms and legs. Doll may be made of cloth (rag dolls), wood, clay, porcelain, wax, paper, plastic, celluloid, corn husks, or other materials. Dolls may also be figurines used for ceremonial, religious, or decorative purposes. Archaeological evidence suggests that dolls were the first playthings; they have been found in Babylonian and Egyptian tombs from ca. 3000 BCE. In ancient Greece and Rome, maturing girls consecrated their childhood dolls to the goddesses. Cloth dolls in the form of animals are generally called \"stuffed toys.\"",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300211087"]
+		},
+		{
+			"subject_term": "fruit (plant components)",
+			"description": "Portions of a plant consisting of the seed and its envelope, especially the latter when it is of a juicy, pulpy nature. In its strict botanical sense, the fleshy or dry ripened ovary of a plant, enclosing the seed or seeds, such as apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technically fruits. Popularly, however, the term refers exclusively to the ripened ovaries that are sweet and either succulent or pulpy. The cultivation and processing of fruits are major industries worldwide.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300011868"]
+		},
+		{
+			"subject_term": "birch trees",
+			"description": "Betula (genus) - Genus of hardy, deciduous trees of the family Betulaceae, common to North America, Europe and Asia. Birch tress are readily distinguished by their white bark and diamond-shaped leaves. The lightweight bark contains natural waxes, oils, and tannins that make it tough, durable, and waterproof. Thin sheets of bark were commonly used for paper in Central Asia and the Far East. The water-impervious bark was used for wigwams, canoes, and shoes for Native Americans. Birch produces a strong, pale yellow-brown wood with a close, straight grain and uniform texture that finishes to a smooth surface. Dyes can also be obtained from various parts of birch trees. The leaves, usually gathered before they develop a mature green color, produce a yellow dye. The bark produces a pale brown color. The female catkins (a long shoot bearing flowers with no leaves) are boiled to produce a dull yellow color. Birch bark oil and birch beer are made from sap obtained from the trees. The sap allows birch bark to burn even when it is wet.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300343919"]
+		},
+		{
+			"subject_term": "willow trees",
+			"description": "Salix (genus) - Genus containing around 400 species of shrubs and trees primarily native to north temperate areas, valued for ornament, shade, erosion control, and timber. Leaves and bark of the willow tree have been used medicinally in ancient Assyria, Sumer, Egypt, Greece, and by Native Americans, as a remedy for aches and fever: willows contain salicin, a substance that chemically resembles aspirin when metabolized by the human body. Willow species easily form hybrids.",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300375384"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctsubject_term",
+			"label": "Collection Object Attribute: Subject Values",
+			"description": "Subject terms are keywords that describe subject matter, i.e., what is depicted in or by a cataloged object, or the object's function, or a conceptual category."
+		}
+	]
+}

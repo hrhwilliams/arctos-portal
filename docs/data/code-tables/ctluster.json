@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"luster": "adamantine",
+			"description": "Adamantine minerals possess a superlative lustre, which is most notably seen in diamond. Such minerals are transparent or translucent, and have a high refractive index (of 1.9 or more).",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Adamantine_lustre"]
+		},
+		{
+			"luster": "dull",
+			"description": "Dull minerals exhibit little to no lustre, due to coarse granulations which scatter light in all directions, approximating a Lambertian reflector. An example is kaolinite.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Dull_lustre"]
+		},
+		{
+			"luster": "earthy",
+			"description": "Coarser, and having even less lustre than dull minerals.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Dull_lustre"]
+		},
+		{
+			"luster": "fibrous",
+			"description": "A fibrous lustre is similar, but has a coarser texture.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Silky_lustre"]
+		},
+		{
+			"luster": "greasy",
+			"description": "Greasy minerals resemble fat or grease. A greasy lustre often occurs in minerals containing a great abundance of microscopic inclusions, with examples including opal and cordierite, jadeite. Many minerals with a greasy lustre also feel greasy to the touch.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Greasy_lustre"]
+		},
+		{
+			"luster": "waxy",
+			"description": "Waxy minerals have a lustre resembling wax. Examples include jade and chalcedony.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Waxy_lustre"]
+		},
+		{
+			"luster": "vitreous",
+			"description": "Vitreous minerals have the lustre of glass. (The term is derived from the Latin for glass, vitrum.) This type of lustre is one of the most commonly seen, and occurs in transparent or translucent minerals with relatively low refractive indices. Common examples include calcite, quartz, topaz, beryl, tourmaline and fluorite, among others.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Vitreous_lustre"]
+		},
+		{
+			"luster": "submetallic",
+			"description": "Submetallic minerals have similar lustre to metal, but are duller and less reflective. A submetallic lustre often occurs in near-opaque minerals with very high refractive indices, such as sphalerite, cinnabar, anthracite, and cuprite.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Submetallic_lustre"]
+		},
+		{
+			"luster": "subadamantine",
+			"description": "Minerals with a lesser (but still relatively high) degree of lustre than adamantine, some examples being garnet and corundum.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Adamantine_lustre"]
+		},
+		{
+			"luster": "silky",
+			"description": "Silky minerals have a parallel arrangement of extremely fine fibres, giving them a lustre reminiscent of silk. Examples include asbestos, ulexite and the satin spar variety of gypsum.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Silky_lustre"]
+		},
+		{
+			"luster": "resinous",
+			"description": "Resinous minerals have the appearance of resin, chewing gum or (smooth-surfaced) plastic. A principal example is amber, which is a form of fossilized resin.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Resinous_lustre"]
+		},
+		{
+			"luster": "pearly",
+			"description": "Pearly minerals consist of thin transparent co-planar sheets. Light reflecting from these layers give them a lustre reminiscent of pearls.[9] Such minerals possess perfect cleavage, with examples including muscovite and stilbite.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Pearly_lustre"]
+		},
+		{
+			"luster": "metallic",
+			"description": "Metallic (or splendent) minerals have the lustre of polished metal, and with ideal surfaces that will work as a reflective surface.  Examples include galena, pyrite and magnetite.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lustre_(mineralogy)#Metallic_lustre"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctluster",
+			"label": "Collection Object Attribute: Luster",
+			"description": "luster"
+		}
+	]
+}

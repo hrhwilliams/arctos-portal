@@ -1,0 +1,83 @@
+{
+	"data": [
+		{
+			"accn_type": "gift",
+			"description": "A voluntary transfer of property by one party to another without compensation. Transfer of title; not necessarily of copyright.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "salvage",
+			"description": "Not intentionally collected, but discovered and brought to the collection in a condition that would no longer be viable in nature.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "exchange",
+			"description": "An acquisition by “exchange” means you deaccession something from your collection, then donate it to another museum who accessions it; they deaccession something of comparable value (scientific or dollar value), and donate it to you and then you accession it. This is typically stipulated in an agreement that is only for that particular exchange.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "bequest",
+			"description": "An accession transferred by an Estate, accompanied by legal documentation showing the language of the will. Occurs posthumously, in contrast to a \"gift.\" See \"A Legal Primer on Managing Museum Collections (3rd Edition, p. 62, footnote 8).\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "abandoned loan",
+			"description": "Acquisition obtained by following state-regulated process for acquiring full title to an item deposited as a loan in the past, but abandoned by the lender at the institution. See state statutes for appropriate holding period and process for formally obtaining title.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "found in collection",
+			"description": "Acquisition obtained by following state-regulated process for acquiring full title to an item found in the collection with no documentation and no number.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "cultivated or captive bred",
+			"description": "Acquisition of material from living organisms which were bred, propagated, or cultivated for experimental studies, captive breeding programs, horticulture, or other purposes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "legacy",
+			"description": "Essentially same as \"found in collection\" but often matches the locally used term for items from the foundation of the collection. Use with discretion.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "purchase",
+			"description": "An acquisition through the transfer of funds for the full title to the object or specimen. Does not necessarily transfer copyright.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "repository agreement",
+			"description": "Deposit of collections by an agency, where responsibility of curation passes to institution, but ownership remains with depositor. Typically documented through a Memorandum of Agreement.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "transfer",
+			"description": "Acquired via transfer of possession between two units within an institution where ownership is already established (e.g., transfer from a university biology department to the university's museum) or from another public entity (e.g., museum, government unit, wildlife rehabilitator, university).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_type": "field collection",
+			"description": "Any material obtained by means of a collecting permit, import/export permit, etc., usually as part of a scientific expedition or field research.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctaccn_type",
+			"label": "Transaction: Accession Types",
+			"description": "Types of accession."
+		}
+	]
+}

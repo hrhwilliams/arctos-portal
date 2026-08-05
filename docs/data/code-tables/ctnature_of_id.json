@@ -1,0 +1,71 @@
+{
+	"data": [
+		{
+			"nature_of_id": "geographic distribution",
+			"description": "Specimen is assumed, on the basis of known geographic ranges, to be the species or subspecies expected at the collecting locality. The specimen has not been identified to species or subspecies by comparing it to other subspecies within the genus or species. \"It's probably that species because that species lives there and we know what species lives there because we're museums and telling people where stuff lives is what we do.....\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "revised taxonomy",
+			"description": "This designation is appropriate only in the presence of an earlier identification. It implies that the specimen has not been reexamined, and only that a different taxonomic name is being applied. In most cases this results from taxonomic synonymization of names.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "function",
+			"description": "Identification based on functional attributes. This applies primarily to cultural items, e.g., 'arrow head' versus 'spear head'.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "molecular",
+			"description": "Identification based on laboratory analysis comparing the specimen to related taxa by molecular criteria (e.g., DNA sequences, genomics).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "audio-visual",
+			"description": "Identification based on analog and/or digital media such as audio recordings, video recordings, and photographs. Can be verified by examination of media.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "karyotype",
+			"description": "Identification based on analysis of chromosomes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "relationship",
+			"description": "Identification based on the identification of a related individual (e.g., parent, sibling), a maker (e.g., for objects such as nests or cultural items), or of another object that has the same function and/or features (e.g., for cultural items).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "unknown",
+			"description": "The nature of the identification is not known. May include legacy identifications.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "features",
+			"description": "Identification based on diagnostic traits including morphology, coloration, structure, vocalizations, etc. Identification may or may not be verifiable independently (e.g., observations by sight or sound). This value encompasses \"fine features\" and \"coarse features\" and should not be used if more specific identification evidence is available (see other nature of id options: function, geographic distribution, karyotype, molecular, etc).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nature_of_id": "fine features",
+			"description": "Identification based on close, in-hand examination of diagnostic traits such as fine-scale feather pattern or shape, scale counts, length measurements, microscopic analysis, CT scan, etc.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctnature_of_id",
+			"label": "Identification: Nature of ID Values",
+			"description": "basis of identification"
+		}
+	]
+}

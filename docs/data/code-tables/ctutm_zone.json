@@ -1,0 +1,201 @@
+{
+	"data": [
+		{
+			"utm_zone": "WGS84 / UTM zone 6N",
+			"description": "WGS84 (NAD83) / UTM zone 6N",
+			"srid": 3713
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 2N",
+			"description": " NAD27 / UTM zone 2N",
+			"srid": 26702
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 1N",
+			"description": "NAD27 / UTM zone 1N",
+			"srid": 26701
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 3N",
+			"description": " NAD27 / UTM zone 3N",
+			"srid": 26703
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 4N",
+			"description": " NAD27 / UTM zone 4N",
+			"srid": 26704
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 5N",
+			"description": " NAD27 / UTM zone 5N",
+			"srid": 26705
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 6N",
+			"description": " NAD27 / UTM zone 6N",
+			"srid": 26706
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 7N",
+			"description": " NAD27 / UTM zone 7N",
+			"srid": 26707
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 8N",
+			"description": " NAD27 / UTM zone 8N",
+			"srid": 26708
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 9N",
+			"description": " NAD27 / UTM zone 9N",
+			"srid": 26709
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 10N",
+			"description": " NAD27 / UTM zone 10N",
+			"srid": 26710
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 11N",
+			"description": " NAD27 / UTM zone 11N",
+			"srid": 26711
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 12N",
+			"description": " NAD27 / UTM zone 12N",
+			"srid": 26712
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 13N",
+			"description": " NAD27 / UTM zone 13N",
+			"srid": 26713
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 14N",
+			"description": " NAD27 / UTM zone 14N",
+			"srid": 26714
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 15N",
+			"description": " NAD27 / UTM zone 15N",
+			"srid": 26715
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 16N",
+			"description": " NAD27 / UTM zone 16N",
+			"srid": 26716
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 17N",
+			"description": " NAD27 / UTM zone 17N",
+			"srid": 26717
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 18N",
+			"description": " NAD27 / UTM zone 18N",
+			"srid": 26718
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 19N",
+			"description": " NAD27 / UTM zone 19N",
+			"srid": 26719
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 20N",
+			"description": " NAD27 / UTM zone 20N",
+			"srid": 26720
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 21N",
+			"description": " NAD27 / UTM zone 21N",
+			"srid": 26721
+		},
+		{
+			"utm_zone": "NAD27 / UTM zone 22N",
+			"description": " NAD27 / UTM zone 22N",
+			"srid": 26722
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 10N",
+			"description": "WGS84 / UTM zone 10N",
+			"srid": 32610
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 11N",
+			"description": "WGS84 / UTM zone 11N",
+			"srid": 32611
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 11S",
+			"description": "WGS84 / UTM zone 11S",
+			"srid": 32711
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 12N",
+			"description": "WGS84 / UTM zone 12N",
+			"srid": 32612
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 12S",
+			"description": "WGS84 / UTM zone 12S",
+			"srid": 32712
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 13N",
+			"description": "WGS84 / UTM zone 13N",
+			"srid": 32613
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 13S",
+			"description": "WGS84 / UTM zone 13S",
+			"srid": 32713
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 14N",
+			"description": "WGS84 / UTM zone 14N",
+			"srid": 32614
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 14S",
+			"description": "WGS84 / UTM zone 14S",
+			"srid": 32714
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 15N",
+			"description": "WGS84 / UTM zone 15N",
+			"srid": 32615
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 15S",
+			"description": "WGS84 / UTM zone 15S",
+			"srid": 32715
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 16N",
+			"description": "WGS84 / UTM zone 16N",
+			"srid": 32616
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 16S",
+			"description": "WGS84 / UTM zone 16S",
+			"srid": 32716
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 32N",
+			"description": "WGS84 / UTM zone 32N",
+			"srid": 32632
+		},
+		{
+			"utm_zone": "WGS84 / UTM zone 10S",
+			"description": "WGS84 / UTM zone 10S",
+			"srid": 32710
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctutm_zone",
+			"label": "Locality: UTM Zone",
+			"description": "Universal Transverse Mercator zones"
+		}
+	]
+}

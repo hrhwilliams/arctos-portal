@@ -1,0 +1,15 @@
+{
+	"data": [
+		{
+			"concentration": "ng/µL",
+			"description": "Nanograms per microliter."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctconcentration",
+			"label": "Units of Concentration",
+			"description": "units of concentration"
+		}
+	]
+}

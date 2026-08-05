@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"author_role": "illustrator",
+			"description": "agent who illustrated a publication",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"author_role": "author",
+			"description": "agent who is the author of a publication",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"author_role": "editor",
+			"description": "agent who is the editor of a publication",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"author_role": "subject",
+			"description": "agent who is the subject of a publication",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctauthor_role",
+			"label": "Publication: Author Roles",
+			"description": "Role of an Agent with respect to a Publication."
+		}
+	]
+}

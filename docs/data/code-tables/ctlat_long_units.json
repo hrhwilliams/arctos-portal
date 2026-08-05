@@ -1,0 +1,27 @@
+{
+	"data": [
+		{
+			"orig_lat_long_units": "decimal degrees",
+			"description": "The standard for Geographic Information Systems (GIS) in which coordinates are only in degrees, including decimal fractions thereof. Points of the compass are not included because latitudes south of the equator and longitudes west of Greenwich have negative values. Fairbanks, Alaska is 64.8374° -147.7188°. Use with Dec_Lat and Dec_Long"
+		},
+		{
+			"orig_lat_long_units": "deg. min. sec.",
+			"description": "The traditional Royal Navy standard in which degrees are divided into 60 minutes, and minutes are in turn divided into 60 seconds. Seconds can include decimal fractions. Fairbanks, Alaska is 64° 50' 15' N 147° 43' 08' W. Use with LatDeg, LatMin, LatSec, LatDir, LongDeg, LongMin, LongSec, and LongDir."
+		},
+		{
+			"orig_lat_long_units": "degrees dec. minutes",
+			"description": "Degrees are given as integers, but minutes are given with decimal fractions. Fairbanks, Alaska is 64° 50.24' N 147° 43.13' W. Use with Dec_Lat_Deg, Dec_Lat_Min, Dec_Lat_Dir, Dec_Long_Deg, Dec_Long_Min, and Dec_Long_Dir."
+		},
+		{
+			"orig_lat_long_units": "UTM",
+			"description": "UTM coordinates are a zone and grid system based upon a cylindrical projection of the earth’s surface. In original data, the UTM Zone often is omitted but can be determined from Higher Geography. The first (six-digit) value establishes the horizontal (easting) position within the zone. The second (seven-digit) value establishes the vertical (northing) position within the zone. Fairbanks, Alaska is Zone 6 465898 7190521. Read <a target=_blank href=https://www.usgs.gov/faqs/how-are-utm-coordinates-measured-usgs-topographic-maps>more at USGS</a>."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlat_long_units",
+			"label": "Locality: Georeference Unit Types",
+			"description": "geographic coordinate unit system"
+		}
+	]
+}

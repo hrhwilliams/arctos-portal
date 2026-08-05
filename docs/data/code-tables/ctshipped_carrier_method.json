@@ -1,0 +1,77 @@
+{
+	"data": [
+		{
+			"shipped_carrier_method": "electronic",
+			"description": "\"Shipment\" is electronic, such as email, Dropbox, or file transfer.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipped_carrier_method": "hand-carried",
+			"description": "\"Shipment\" is manually transported by a person without using a specific service.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipped_carrier_method": "TNT",
+			"description": "An Australian company (Thomas Nationwide Transport) specializing in  international shipping, parcel delivery, courier services and transportation. TNT is now FedEx in the USA. https://www.tnt.com/",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipped_carrier_method": "Alaska Air Cargo",
+			"description": "A cargo service provided by Alaska Airlines.",
+			"issue_url": "",
+			"documentation_url": ["https://www.alaskacargo.com/"]
+		},
+		{
+			"shipped_carrier_method": "Biocair",
+			"description": "A global courier service that specializes in temperature-controlled shipments for the life sciences.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7498"],
+			"documentation_url": ["https://www.biocair.com"]
+		},
+		{
+			"shipped_carrier_method": "Cavalier Logistics",
+			"description": "A global company that provides various services including worldwide logistical support for shipping products domestically and internationally.",
+			"issue_url": "",
+			"documentation_url": ["https://www.cavlog.com"]
+		},
+		{
+			"shipped_carrier_method": "DHL",
+			"description": "A German company providing courier, package delivery and express mail service.",
+			"issue_url": "",
+			"documentation_url": ["https://www.dhl.com/"]
+		},
+		{
+			"shipped_carrier_method": "Federal Express",
+			"description": "An American multinational conglomerate holding company focused on transportation, e-commerce and business services based in Memphis, Tennessee.",
+			"issue_url": "",
+			"documentation_url": ["https://www.fedex.com/"]
+		},
+		{
+			"shipped_carrier_method": "United Parcel Service",
+			"description": "An American multinational shipping, receiving, and supply chain management company.",
+			"issue_url": "",
+			"documentation_url": ["https://www.ups.com/"]
+		},
+		{
+			"shipped_carrier_method": "U. S. Postal Service",
+			"description": "An independent agency of the Executive Branch of the United States federal government responsible for providing postal service in the U.S., including its insular areas and associated states.",
+			"issue_url": "",
+			"documentation_url": ["https://www.usps.com/"]
+		},
+		{
+			"shipped_carrier_method": "World Courier",
+			"description": "A courier service affiliated with AmerisourceBergen Corporation that specializes in shipments of pharmaceuticals globally.",
+			"issue_url": "",
+			"documentation_url": ["https://www.worldcourier.com/"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctshipped_carrier_method",
+			"label": "Transaction: Shipment Carrier Methods",
+			"description": "Shipment method or entity responsible for sending materials or objects (e.g., commercial companies, hand-carried, electronic digital transfers). Entries for commercial companies should include the company's website URL."
+		}
+	]
+}

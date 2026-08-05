@@ -1,0 +1,18 @@
+{
+	"data": [
+		{
+			"mortality_cause": "window strike",
+			"description": "Mortality due to impact with a window or other man-made structure, common in birds that cannot see glass due to reflection of sky and foliage.",
+			"search_terms": "",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/11"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Bird%E2%80%93window_collisions"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmortality_cause",
+			"label": "ctmortality_cause",
+			"description": "The means by which resulted in or contributed to the death of the cataloged organism, and may include the circumstances of the act that produced any such fatal injuries."
+		}
+	]
+}

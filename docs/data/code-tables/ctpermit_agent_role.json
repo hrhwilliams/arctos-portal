@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"permit_agent_role": "issued by",
+			"description": "Agent issuing permit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_agent_role": "issued to",
+			"description": "Agent to whom permit is issued",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_agent_role": "contact",
+			"description": "Agent who will receive permit notifications from Arctos",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpermit_agent_role",
+			"label": "Permit: Agent Roles",
+			"description": "permit agent role"
+		}
+	]
+}

@@ -1,0 +1,779 @@
+{
+	"data": [
+		{
+			"culture": "Historic",
+			"description": "Relates to the historic time period. Use when a more specific culture group is unknown.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Innu, Naskapi",
+			"description": "Indigenous people of eastern Quebec and Labrador, Canada; see also http://en.wikipedia.org/wiki/Naskapi",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Kachemak",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Nenana",
+			"description": "Prehistoric culture from Interior Alaska.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Celtic",
+			"description": "ethnolinguistic group living during the Iron Age and Medieval Europe https://en.wikipedia.org/wiki/Celts",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Punuk",
+			"description": "Prehistoric culture from St. Lawrence Island, Alaska and the Bering Strait area.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Maya",
+			"description": "ethnic group indigenous to Mesoamerica https://en.wikipedia.org/wiki/Maya_peoples",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tutchone, Southern",
+			"description": "First Nations tribe of southern Yukon, Canada; see also http://en.wikipedia.org/wiki/Southern_Tutchone",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Dena'ina",
+			"description": "Indigenous people of the Cook Inlet area of Alaska; see also http://en.wikipedia.org/wiki/Dena'ina; formerly known as Tanaina",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Nisga'a",
+			"description": "Indigenous people of the Nass River valley of northwestern British Columbia; see also http://en.wikipedia.org/wiki/Nisga'a",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Ahtna",
+			"description": "Indigenous people of the Copper River basin region of Alaska; see also http://en.wikipedia.org/wiki/Ahtna",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Moro",
+			"description": "Also Bangsamoro; Ethnically indigenous Muslims of the Philippines; see http://en.wikipedia.org/wiki/Moro_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Cup'ig",
+			"description": "Indigenous people of Nunivak Island, Alaska; see also http://en.wikipedia.org/wiki/Nunivak_Cup'ig_language",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Klamath",
+			"description": "Native American tribe living in northeastern California and central southern Oregon; see also http://en.wikipedia.org/wiki/Klamath_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Gwich'in",
+			"description": "Indigenous people of northeastern Alaska (villages of Arctic Village, Venetie, Fort Yukon, Chalkyitsik, Circle, and Birch Creek) as well as adjacent area of the Northwest Territories and Yukon Territory, Canada; see also http://en.wikipedia.org/wiki/Gwich'in; formerly known as Kutchin",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Kaska",
+			"description": "First Nations tribe of northern British Columbia and southeastern Yukon, Canada; see also <a hre=\"https://en.wikipedia.org/wiki/Kaska_Dena\" class=\"external\">Wikipedia</a> <a href=\"https://github.com/ArctosDB/arctos/issues/4790\" class=\"external\">Github Issue</a>",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Karuk",
+			"description": "Native American tribe of northwestern California near the Klamath River and southern Oregon; see also http://en.wikipedia.org/wiki/Karuk",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Inuit",
+			"description": "Indigenous people of the northern circumpolar region from eastern Siberia, across Alaska, Canada, and Greenland; see also http://en.wikipedia.org/wiki/Eskimo; formerly known as Eskimo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Passamaquoddy",
+			"description": "https://en.wikipedia.org/wiki/Passamaquoddy",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Inuit, Copper",
+			"description": "Indigenous people of northern Canada, in Nunavut's Kitikmeot Region and the Northwest Territories' Inuvik Region; see also http://en.wikipedia.org/wiki/Copper_Inuit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Prehistoric",
+			"description": "Relates to the prehistoric time period. Use when a more specific culture group is unknown.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mimbres",
+			"description": "Prehistoric culture from southern Arizona and New Mexico.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "unknown",
+			"description": "Use when culture is not identifiable",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pomo",
+			"description": "Native American tribe of northern California; see also http://en.wikipedia.org/wiki/Pomo_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tahltan",
+			"description": "First Nations tribe of northern British Columbia, Canada; see also <a href=\"https://en.wikipedia.org/wiki/Tahltan\" class=\"external\">Wikipedia</a> <a href=\"https://github.com/ArctosDB/arctos/issues/4790\" class=\"external\">Github Issue</a>",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Alutiiq/Sugpiaq",
+			"description": "Indigenous people of Kodiak Island, coastal Prince William Sound, Northern Alaska Peninsula; see also http://en.wikipedia.org/wiki/Alutiiq ; formerly Pacific Eskimo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Samoan",
+			"description": "People native to the Samoan Islands; see also http://en.wikipedia.org/wiki/Samoans",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Inuit, Canadian",
+			"description": "Indigneous people of the arctic region of Canada; see also http://en.wikipedia.org/wiki/Inuit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Alaska Native",
+			"description": "Indigenous peoples of Alaska. Use when culture group is not identifiable.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mbuti",
+			"description": "pygmy ethnic group inhabiting the Congo region in Africa https://en.wikipedia.org/wiki/Mbuti_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Hän",
+			"description": "also Hän Hwëch’in; Indigenous people of eastern Alaska at the village of Eagle and in the Yukon Territory at Dawson; https://en.wikipedia.org/wiki/H%C3%A4n",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Nuu-chah-nulth",
+			"description": "Indigenous people of the west coast of Vancouver Island, British Columbia, Canada; see also http://en.wikipedia.org/wiki/Nuu-chah-nulth; formerly known as Nootka",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Acoma",
+			"description": "Native American tribe living at the Acoma Pueblo in western New Mexico; see also http://en.wikipedia.org/wiki/Acoma_Pueblo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Eyak",
+			"description": "Indigenous people of the coastal region of southcentral Alaska at the Copper River delta; see also http://en.wikipedia.org/wiki/Eyak",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Inca",
+			"description": "Indigenous populations of the Incan Empire, the pre-Columbian people of modern-day Peru; see also http://en.wikipedia.org/wiki/Inca_civilization",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Haudenosaunee",
+			"description": "also/formerly Iroquois; Native American people who formed the Iroquois Confederacy; see also http://en.wikipedia.org/wiki/Iroquois",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Kwakwaka'wakw",
+			"description": "First Nations tribe of northern Vancouver Island and adjoining mainland; see also http://en.wikipedia.org/wiki/Kwakwaka'wakw; formerly known as Kwakiutl",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Quinault",
+			"description": "Native American tribe from western Washington; see http://en.wikipedia.org/wiki/Quinault_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tsimshian",
+			"description": "Indigenous people of Annette Island in southeast Alaska, and in Terrace and Prince Rupert, British Columbia, Canada; see also http://en.wikipedia.org/wiki/Tsimshian",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Plains Indian, Comanche",
+			"description": "Also N_m_n__; Native American tribe whose historic territory covered much of the southern plains; see also http://en.wikipedia.org/wiki/Comanche",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Chukchi",
+			"description": "Indigenous people of the Chukchi Peninsula; see also http://en.wikipedia.org/wiki/Chukchi_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tanana",
+			"description": "Wiipedia article references all Tanana River groups upriver to Tanacross, but has accurate info about the languages",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Hopi",
+			"description": "Native American tribe of northeastern Arizona; see also http://en.wikipedia.org/wiki/Hopi",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Denbigh",
+			"description": "Prehistoric culture from western and northern Alaska.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Sámi",
+			"description": "Also Saami (Norway); Indigenous people of far northern Norway, Sweden, Finland, the Kola Peninsula of Russia, and the border area between south and middle Sweden and Norway; see also http://en.wikipedia.org/wiki/Sami_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Koyukon",
+			"description": "Indigeous people of the Koyukuk and middle Yukon River areas of Alaska; see also http://en.wikipedia.org/wiki/Koyukon; language expressed as Denaakk'e",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Yup'ik",
+			"description": "Indigenous people of western and southwestern Alaska and between the coastal areas between Norton Sound and the Alaska Peninsula; see also http://en.wikipedia.org/wiki/Central_Alaskan_Yup'ik_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Upper Tanana",
+			"description": "Indigenous people of the Upper Tanana River area of Alaska, and communities of Northway, Tetlin, and Tok, and adjacent areas of Canada's Yukon Territory; see also http://en.wikipedia.org/wiki/Upper_Tanana_language",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Hohokam",
+			"description": "Prehistoric culture from southern Arizona.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Innu",
+			"description": "Indigenous people of northeastern Quebec, Canada, and some western portions of Labrador; see also http://en.wikipedia.org/wiki/Innu_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Nez Perce",
+			"description": "Also Niimíipu; Native American tribe who live in the Pacific Northwest region of the United States; see also http://en.wikipedia.org/wiki/Nez_Perce_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Okvik",
+			"description": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Muisca",
+			"description": "Chibcha-speaking people of Colombia's Eastern-Range; see http://en.wikipedia.org/wiki/Chibchas",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Quapaw",
+			"description": "Native American tribe presently based in northeastern Oklahoma.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Hutu and Tutsi",
+			"description": "Bantu ethnic group native to African Great Lakes region of Africa, often separated into 'Hutu' and 'Tutsi' by socioeconomic class. https://en.wikipedia.org/wiki/Origins_of_Hutu,_Tutsi_and_Twa",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Métis",
+			"description": "The Métis are a multiancestral indigenous group whose homeland is in Canada and parts of the United States between the Great Lakes region and the Rocky Mountains. The Métis trace their descent to both Indigenous North Americans and European settlers; see also <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Métis\">Wikipedia</a>",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Creek",
+			"description": "ethnic group indigenous to the Southeastern Woodlands region of what is now the United States https://en.wikipedia.org/wiki/Muscogee",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Makah",
+			"description": "Indigenous people of the northwestern corner of Washington state; see also http://en.wikipedia.org/wiki/Makah",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Cup'ik",
+			"description": "Indigenous people of central western Alaska, in the communities of Chevak and Hooper Bay; see also http://en.wikipedia.org/wiki/Chevak_Cup'ik_language",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mogollon",
+			"description": "Archaeological culture (ca. 200 CE to 1540) of indigenous peoples from Southern New Mexico and Arizona, Northern Sonora and Chihuahua, and Western Texas - https://en.wikipedia.org/wiki/Mogollon_culture",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Birnirk",
+			"description": "Prehistoric culture from northern and northwest Alaska.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Yakut",
+			"description": "Also Sakha; Indigenous people of the Sakha (Yakutia) Republic; see also http://en.wikipedia.org/wiki/Yakuts",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "non-Native",
+			"description": "Non-indigenous people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tlingit",
+			"description": "Indigenous people of coastal southeast Alaska; inland group in far northwestern British Columbia and the Yukon Territory; see also http://en.wikipedia.org/wiki/Tlingit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Yurok",
+			"description": "Native American tribe of northwestern California near the Klamath River and Pacific coast; see also http://en.wikipedia.org/wiki/Yurok_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Aztec",
+			"description": "Prehistoric culture from central Mexico.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Melanesian",
+			"description": "People native to Melanesia; see also http://en.wikipedia.org/wiki/Melanesians",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Toltec",
+			"description": "Prehistoric culture from Mexico and Central America",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Russian-American",
+			"description": "People of the Russian-American colonies between 1741 and 1867; see also http://en.wikipedia.org/wiki/Russian_America",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mayan",
+			"description": "Prehistoric culture from central and southern Mexico.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Ipiutak",
+			"description": "Indigenous culture found in Point Hope and other parts of northwest Alaska; type site found at Point Hope; culture dates from approximately 100-200 BCE to around 800 CE; see also http://en.wikipedia.org/wiki/Ipiutak_Site",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Slavey",
+			"description": "Also Slave or Dene; First Nations tribe in the Great Slave Lake region of Northwest Territories, and northeastern British Columbia and northwestern Alberta; see also http://en.wikipedia.org/wiki/Slavey_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Santa Clara",
+			"description": "Also Tewa; Native American tribe living at Santa Clara Pueblo in northern New Mexico; see also http://en.wikipedia.org/wiki/Santa_Clara_Pueblo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Heiltsuk",
+			"description": "First Nations tribe of Central Coast region of British Columbia, Canada; see also http://en.wikipedia.org/wiki/Heiltsuk",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Arctic Small Tool tradition",
+			"description": "Prehistoric culture from southwestern, western, and northern Alaska.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Polynesian",
+			"description": "The various ethnic groups who inhabit Polynesia; see also http://en.wikipedia.org/wiki/Polynesians",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Nunamiut",
+			"description": "Indigenous people of central Brooks Range area and community of Anaktuvuk Pass, Alaska; see also http://en.wikipedia.org/wiki/Nunamiut",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Masai",
+			"description": "ethnic group inhabiting southern Kenya and northern Tanzania https://en.wikipedia.org/wiki/Maasai_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Koryak",
+			"description": "Indigenous people of Kamchatka Krai in the Russian Far East; see also http://en.wikipedia.org/wiki/Koryaks",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Evenks",
+			"description": "Also Ewenki or Evenki; Indigenous people of Northern Asia (Russia, China, and Mongolia); see also http://en.wikipedia.org/wiki/Evenks",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "St. Lawrence Island Yupik",
+			"description": "Indigenous people of St. Lawrence Island, Alaska; see also http://en.wikipedia.org/wiki/Siberian_Yupik_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Seminole",
+			"description": "ethnic group indigenous to what is now the U.S. state of Florida https://en.wikipedia.org/wiki/Seminole",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Ancient",
+			"description": "Also Ancestral Pueblo; ancient Native American culture centered on the Four Corners area of the southwestern United States; see also http://en.wikipedia.org/wiki/Ancient_Pueblo_peoples; formerly known as Anasazi",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Old Bering Sea",
+			"description": "Prehistoric culture from St. Lawrence Island, Alaska and the Bering Strait area.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Cree",
+			"description": "Native American / First Nations tribe of Canada and the United States; major proportion live north and west of Lake Superior, In Ontario, Manitoba, Saskatchewan, Alberta, and the Northwest Territories and in Montana; see also http://en.wikipedia.org/wiki/Cree",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Modoc",
+			"description": "Native American tribe living in northeastern California and central southern Oregon; see also http://en.wikipedia.org/wiki/Modoc_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Fort Ancient",
+			"description": "Prehistoric culture from the Ohio River Valley in parts of Ohio, West Virginia, Kentucky, and Indiana. https://en.wikipedia.org/wiki/Fort_Ancient",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Coast Salish, Cowichan",
+			"description": "First Nations band of Cowichan Valley and Duncan, British Columbia; see also http://en.wikipedia.org/wiki/Cowichan_peoples",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Ainu",
+			"description": "Indigenous people of Japan (Hokkaido) and Russia (Sakhalin and Kuril Islands); see also http://en.wikipedia.org/wiki/Ainu_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Unangax̂",
+			"description": "Unangan or Unangas (Eastern and Western dialect respectively); Indigenous peoples of the Aleutian Islands of Alaska; see also http://en.wikipedia.org/wiki/Aleut ; formerly Aleut",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Papuan",
+			"description": "Indigenous people of New Guinea and neighboring islands; see also http://en.wikipedia.org/wiki/Papuan_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Thule",
+			"description": "Proto-Inuit living in northern coastal Alaska, Canada, and Greenland; ca. AD 1000 to 1400; see also http://en.wikipedia.org/wiki/Thule_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tagish",
+			"description": "First Nations tribe of Yukon, Canada; see also <a href=\"https://en.wikipedia.org/wiki/Tagish\" class=\"external\">Wikipedia</a> <a href=\"https://github.com/ArctosDB/arctos/issues/4790\" class=\"external\">Github Issue</a>",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Inuit, Greenlandic",
+			"description": "Indigenous people of Greenland; see also http://en.wikipedia.org/wiki/Greenlandic_Inuit",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Siberian Yupik",
+			"description": "Indigenous people of coastal Chukchi Peninsula in the far northeast of Russia and on St. Lawrence Island, Alaska; see also http://en.wikipedia.org/wiki/Siberian_Yupik_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Chimu",
+			"description": "Indigenous people of Chimor, of the Moche Valley, northern coast of Peru; see also https://en.wikipedia.org/wiki/Chim%C3%BA_culture",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Upper Kuskokwim",
+			"description": "Also Dinak'i; Indigenous people of the Upper Kuskokwim River area of Alaska, and communities of Nikolai, Telida, and McGrath; see also http://en.wikipedia.org/wiki/Upper_Kuskokwim_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Plains Indian",
+			"description": "Native American / First Nations people who live on the Great Plains of North America; see also http://en.wikipedia.org/wiki/Plains_Indians",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Coast Salish",
+			"description": "Indigenous people of the Pacific Northwest Coast of North America, in British Columbia, Canada as well as Washington and Oregon; see also http://en.wikipedia.org/wiki/Coast_Salish_peoples",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Iñupiaq",
+			"description": "Indigenous people of the arctic coastal region of Alaska; see also http://en.wikipedia.org/wiki/Inupiat",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Zuni",
+			"description": "Also A:shiwi; Native American tribe of the Pueblo of Zuni in western New Mexico; see also http://en.wikipedia.org/wiki/Zuni_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Haida",
+			"description": "Indigenous people of the archipelago of Haida Gwaii, British Columbia and Prince of Wales Island, Alaska; see also http://en.wikipedia.org/wiki/Haida_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo",
+			"description": "Native American people of the Southwestern United States; see also http://en.wikipedia.org/wiki/Puebloan_peoples",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Klickitat",
+			"description": "Also Klikitat; Native American tribe of the Pacific Northwest; see also http://en.wikipedia.org/wiki/Klickitat_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tutchone, Northern",
+			"description": "First Nations tribe of central Yukon in Canada; see also http://en.wikipedia.org/wiki/Northern_Tutchone",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tohono O'odham",
+			"description": "Native American tribe of the Sonoran Desert of southeastern Arizona and northwestern Mexio; see also http://en.wikipedia.org/wiki/Tohono_O%27odham; formerly known as Papago",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Kewa",
+			"description": "Native American tribe living at Kewa Pueblo in northwestern New Mexico; see also http://en.wikipedia.org/wiki/Kewa_Pueblo,_New_Mexico; formerly Santo Domingo Pueblo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Twa",
+			"description": "pygmy ethnic group inhabiting the Congo region in Africa https://en.wikipedia.org/wiki/Twa",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Athabascan/Dene",
+			"description": "Indigenous people of interior Alaska and Canada; see also http://en.wikipedia.org/wiki/Athabaskan_languages",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Deg Hit'an",
+			"description": "Indigenous people of the Anvik, Shageluk, and Holy Cross communities of Alaska; see also http://en.wikipedia.org/wiki/Deg_Hit'an; formerly known as Ingalik",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Hupa",
+			"description": "Also Hoopa; Native American tribe of northwestern California; see also http://en.wikipedia.org/wiki/Hupa",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mbenga",
+			"description": "pygmy ethnic group inhabiting the Congo region in Africa https://en.wikipedia.org/wiki/Mbenga_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Koniag",
+			"description": "Prehistoric culture from the Kodiak Island Archipelago and the Alaska Peninsula.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Algonquin",
+			"description": "Indigenous people of northeastern North America, currently living primarily in Quebec; see also http://en.wikipedia.org/wiki/Algonquin_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Apache",
+			"description": "Native American tribe of southwestern United States.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Huaorani",
+			"description": "Also Waorani or Waodani, or Waos; Indigenous people of the Amazonian region of Ecuador (Napo, Orellana and Pastaza Provinces); see also http://en.wikipedia.org/wiki/Huaorani; formerly known as Auca",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tsilhqot'in",
+			"description": "Also Chilkotin; First Nations tribe of the British Columbia, Canada; see also http://en.wikipedia.org/wiki/Tsilhqot'in",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Paiute",
+			"description": "Indigenous people of the Great Basin, including the Northern Paiute, the Owens Valley Paiute, and the Southern Paiute; see also http://en.wikipedia.org/wiki/Paiute",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Chiriqui",
+			"description": "Indigenous people of the Chiriqu’ Province, Panama, collectively known as guyamies; see also https://en.wikipedia.org/wiki/Chiriqu%C3%AD_Province and http://en.wikipedia.org/wiki/Guaymi",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Holikachuk",
+			"description": "Indigenous people of the Innoko River, Alaska, formerly in the village of Holikachuk, now residents of Grayling; see also http://en.wikipedia.org/wiki/Holikachuk_language",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Tanacross",
+			"description": "Indigenous people of the middle Tanana River of Alaska, in the communities of Healy Lake, Dot Lake, and Tanacross; see also http://en.wikipedia.org/wiki/Tanacross_language",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Chitimacha",
+			"description": "Native American tribe living in Louisiana; see also http://en.wikipedia.org/wiki/Chitimacha",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Amazigh",
+			"description": "Indigenous peoples and languages of North Africa; Amazigh (singular), Imazighen (plural); see also https://www.linguisticanthropology.org/blog/2019/09/23/respecting-identity-amazigh-versus-berber/; formerly Berber. | https://github.com/ArctosDB/arctos/issues/7420",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pima",
+			"description": "Also Akimel O'odham; Native American tribe of central and southern Arizona; see also http://en.wikipedia.org/wiki/Pima_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Pueblo, Taos",
+			"description": "Native American people living at the Taos Pueblo (or Pueblo de Taos) near Taos, New Mexico; see also http://en.wikipedia.org/wiki/Taos_Pueblo",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Mississippian",
+			"description": "ethnic group indigenous to what is now the eastern United States; includes cultural subdivisions Middle Mississippian, South Appalachian, Caddolan, and Plaquemine[X](I don't care if we create these subdivisions now--we don't need them and my instinct would be to wait until someone does...) https://en.wikipedia.org/wiki/Mississippian_culture",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Navajo",
+			"description": "Native American tribe of the southwestern United States, in particular in the Four-Corners area; see also http://en.wikipedia.org/wiki/Navajo_people",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"culture": "Roman, ancient",
+			"description": "catch-all for objects originating in mainland Italy between the end of the First Punic War ca. 241 BCE to the founding of Constantinople in 330 CE. This period roughly corresponds to Rome[X]s dominance of the peninsula and all of its cities, including formerly Greek colonies to the south. During this period, Italy was a region with a relatively stable collection of cultural traditions distinct from the rest of the Mediterranean world. https://en.wikipedia.org/wiki/Ancient_Rome",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctculture",
+			"label": "Collection Object Attribute: Cultures",
+			"description": "Human cultures."
+		}
+	]
+}

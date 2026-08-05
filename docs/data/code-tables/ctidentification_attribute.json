@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"attribute_type": "nature of identification",
+			"description": "Characterization of the identification.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctnature_of_id",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "identification confidence",
+			"description": "Identifiers assessment of the quality of the identification.",
+			"issue_url": "",
+			"documentation_url": "",
+			"value_code_table": "ctidentification_confidence",
+			"unit_code_table": ""
+		},
+		{
+			"attribute_type": "verbatim identification",
+			"description": "A string representing the taxonomic identification as it appeared in the original record.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6731"],
+			"documentation_url": "",
+			"value_code_table": "",
+			"unit_code_table": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctidentification_attribute",
+			"label": "Identification Attributes",
+			"description": "Identification Attributes are assertions which enhance individual identifications."
+		}
+	]
+}

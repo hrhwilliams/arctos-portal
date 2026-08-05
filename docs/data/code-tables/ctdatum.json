@@ -1,0 +1,201 @@
+{
+	"data": [
+		{
+			"datum": "Ain el Abd 1970",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4204
+		},
+		{
+			"datum": "American Samoa 1962",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4169
+		},
+		{
+			"datum": "Amersfoort",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4289
+		},
+		{
+			"datum": "Antigua Island Astro 1943",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4601
+		},
+		{
+			"datum": "Arc 1960",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4210
+		},
+		{
+			"datum": "unknown",
+			"description": "No datum available is handled by SRID4326/WGS84 which results in no conversion. Coordinates under this datum have an additional unknowable unrecorded amount of  error. This should not be used for any purpose.",
+			"srid": 4326
+		},
+		{
+			"datum": "Australian Geodetic Datum 1966",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4202
+		},
+		{
+			"datum": "Australian Geodetic Datum 1984",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4203
+		},
+		{
+			"datum": "Bogota Observatory",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4218
+		},
+		{
+			"datum": "Corrego Alegre",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4225
+		},
+		{
+			"datum": "Djakarta (Batavia)",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4813
+		},
+		{
+			"datum": "World Geodetic System 1972",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4322
+		},
+		{
+			"datum": "World Geodetic System 1966",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4760
+		},
+		{
+			"datum": "Viti Levu 1916",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4731
+		},
+		{
+			"datum": "European Datum 1950",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4230
+		},
+		{
+			"datum": "Fort Thomas 1955",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4605
+		},
+		{
+			"datum": "Geocentric Datum of Australia 1994",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4283
+		},
+		{
+			"datum": "Guam 1963",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4675
+		},
+		{
+			"datum": "Hu-Tzu-Shan",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4236
+		},
+		{
+			"datum": "Indian 1954",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4239
+		},
+		{
+			"datum": "Indian 1960",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4131
+		},
+		{
+			"datum": "Indian 1975",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4240
+		},
+		{
+			"datum": "Indonesian 1974",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4238
+		},
+		{
+			"datum": "Kertau 1948",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4245
+		},
+		{
+			"datum": "Kusaie Astro 1951",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4735
+		},
+		{
+			"datum": "Luzon",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4253
+		},
+		{
+			"datum": "Montserrat Island Astro 1958",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4604
+		},
+		{
+			"datum": "North American Datum 1927",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4267
+		},
+		{
+			"datum": "North American Datum 1983",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4269
+		},
+		{
+			"datum": "Ocotepeque",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 5451
+		},
+		{
+			"datum": "Ordnance Survey of Great Britain 1936",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4277
+		},
+		{
+			"datum": "Provisional La Conoa 1956 (Venezuela)",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4247
+		},
+		{
+			"datum": "Provisional South American 1956",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4248
+		},
+		{
+			"datum": "Schwarzeck",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4293
+		},
+		{
+			"datum": "South American Datum 1969",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4618
+		},
+		{
+			"datum": "Taiwan Datum 1967",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a> https://epsg.io/1025-datum",
+			"srid": 3821
+		},
+		{
+			"datum": "Tokyo Datum",
+			"description": "This datum reflects the information provided in the linked SRID which is used for conversion to <a href=\"https://arctos.database.museum/info/ctDocumentation.cfm?table=ctdatum#world_geodetic_system_1984\" class=\"external\">World Geodetic System 1984</a> for spatial data in Arctos. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4301
+		},
+		{
+			"datum": "World Geodetic System 1984",
+			"description": "World Geodetic System 1984 is the standard for Arctos coordinates, all of the other datum terms are used in conversion formulae to this datum when they are provided as the verbatim datum. <a href=\"https://github.com/ArctosDB/arctos/issues/5418\" class=\"external\">GitHub Issue</a>",
+			"srid": 4326
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctdatum",
+			"label": "Locality: Datum Values",
+			"description": "geodetic datum"
+		}
+	]
+}

@@ -1,0 +1,155 @@
+{
+	"data": [
+		{
+			"trs_section": "sec23",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec18",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec24",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec04",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec20",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec05",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec08",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec17",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec16",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec13",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec28",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec36",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec09",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec02",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec19",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec15",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec01",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec25",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec06",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec12",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec29",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec14",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec34",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec07",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec31",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec26",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec11",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec32",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec21",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec22",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec33",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec30",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec27",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec10",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec35",
+			"description": "documentation needed"
+		},
+		{
+			"trs_section": "sec03",
+			"description": "documentation needed"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttrs_section",
+			"label": "Locality Attribute: TRS Sections",
+			"description": "sections in the Public Land Survey System"
+		}
+	]
+}

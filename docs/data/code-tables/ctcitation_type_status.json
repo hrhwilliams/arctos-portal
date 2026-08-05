@@ -1,0 +1,127 @@
+{
+	"data": [
+		{
+			"type_status": "lectotype",
+			"description": "A specimen selected from the original material to serve as the type when no holotype was designated, or if the holotype is lost.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "syntype",
+			"description": "Any one of two or more specimens cited by the original author when no holotype was designated, or any one of two or more specimens simultaneously designated as types.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "isoneotype",
+			"description": "A duplicate of the neotype. As a duplicate, it was collected at the same place on the same day by the same collector.  It should have the same collector number as the neotype, but the individual specimen object is not cited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "isosyntype",
+			"description": "A duplicate of a syntype. As a duplicate, it was collected at the same place on the same day by the same collector.  It should have the same collector number as a syntype, but the individual specimen object is not cited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "isotype",
+			"description": "A duplicate of the holotype. As a duplicate, it was collected at the same place on the same day by the same collector.  It should have the same collector number as the holotype, but the individual specimen object is not cited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "isolectotype",
+			"description": "A duplicate of the lectotype. As a duplicate, it was collected at the same place on the same day by the same collector.  It should have the same collector number as the lectotype, but the individual specimen object is not cited.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "neotype",
+			"description": "A specimen selected to serve as the type as long as all of the material on which the name of the taxon was based is missing. (The holotype and potential lectotypes are missing.)",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "voucher",
+			"description": "Cited in a peer-reviewed analysis with no specific type designation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "erroneous citation",
+			"description": "The publication reports this catalog number (or other identifier) erroneously. Clearly, some other specimen was intended. Remarks might refer to the correct specimen if this can be determined. Then the correct specimen might also be cited and annotated in the database.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "holotype",
+			"description": "The one designated type specimen in an original description of a species, subspecies, or other taxon.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "host voucher",
+			"description": "Specimen was cited as being the host to a parasite in a publication about parasites.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "paratype",
+			"description": "A specimen aside from the holotype used in the original description of a taxon.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "paratopotype",
+			"description": "A paratype recovered from the same locality as the holotype.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "referral",
+			"description": "This is the only value acceptable for citing specimens in non-peer reviewed literature.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "paralectotype",
+			"description": "A paralectotype is any additional specimen from among a set of syntypes, after a lectotype has been designated from among them. These are not name-bearing types.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "basis of illustration",
+			"description": "Figured in a drawing, photograph, or other representation. Does not apply to publications in which the specimen was also designated a taxonomic type status.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"type_status": "hypotype",
+			"description": "[BEST PRACTICE: Do not use, obsolete term, prefer type=voucher] A described or figured specimen, not of the original type series and whose details have been previously published, used in a peer-reviewed publication extending or correcting the knowledge of a previously defined species. Hawksworth, D.L. 2010. Terms Used in Bionomenclature. The naming of organisms (and plant communities). Copenhagen: Global Biodiversity Information Facility, 216 pp, ISBN: 87-92020-09-7.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.gbif.org/document/80577/terms-used-in-bionomenclature-the-naming-of-organisms-and-plant-communities"
+			]
+		},
+		{
+			"type_status": "symbiotype",
+			"description": "Host from which the type of a new parasite species is described. ​Frey et al. 1992.",
+			"issue_url": "",
+			"documentation_url": ["http://www.jstor.org/stable/3283335"]
+		},
+		{
+			"type_status": "unknown type",
+			"description": "Use this as a placeholder for records which were flagged with identification.nature_of_id \"type specimen\", and which cannot currently be resolved to more specific Types if the publication is unknown as well, use Arctos publication \"placeholder for type specimens.",
+			"issue_url": "",
+			"documentation_url": ["https://arctos.database.museum/publication/10008933"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcitation_type_status",
+			"label": "Identification: Citation Types",
+			"description": "How a record is represented in a publication."
+		}
+	]
+}

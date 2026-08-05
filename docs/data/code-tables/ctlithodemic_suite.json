@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"lithodemic_suite": "Kakertok Suite",
+			"description": "pending"
+		},
+		{
+			"lithodemic_suite": "Kholmsk Suite",
+			"description": "pending"
+		},
+		{
+			"lithodemic_suite": "Maramsk Suite",
+			"description": "pending"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlithodemic_suite",
+			"label": "Locality Attribute: Lithodemic Suites",
+			"description": "Lithodemic Suites"
+		}
+	]
+}

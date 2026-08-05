@@ -1,0 +1,19 @@
+{
+	"data": [
+		{
+			"taxon_variable": "A",
+			"description": ""
+		},
+		{
+			"taxon_variable": "B",
+			"description": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_variable",
+			"label": "Identification: Hybrid Variables",
+			"description": "Identifies terms used in hybrid (A / B) taxon formulas"
+		}
+	]
+}

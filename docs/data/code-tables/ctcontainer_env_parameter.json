@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"parameter_type": "ethanol concentration",
+			"description": "Ethanol concentration. Number between 0 (none detected) and 1 (100%)."
+		},
+		{
+			"parameter_type": "isopropanol concentration",
+			"description": "Isopropanol concentration. Number between 0 (none detected) and 1 (100%)."
+		},
+		{
+			"parameter_type": "checked",
+			"description": "Indicates container was checked, but nothing was measured. Only valid value is \"1.\""
+		},
+		{
+			"parameter_type": "temperature (C)",
+			"description": "Measured temparature in celcius. Number."
+		},
+		{
+			"parameter_type": "relative humidity (%)",
+			"description": "Measured relative humidity. Number between 0 and 100."
+		},
+		{
+			"parameter_type": "IPM trap check",
+			"description": "Number of insects found during Integrated Pest Management trap check. Value = number of insects found. Use Remarks to record insect type."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcontainer_env_parameter",
+			"label": "Object Tracking: Container Environment Parameters",
+			"description": "container environmental parameters"
+		}
+	]
+}

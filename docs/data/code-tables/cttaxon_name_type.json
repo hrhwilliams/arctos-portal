@@ -1,0 +1,27 @@
+{
+	"data": [
+		{
+			"taxon_name_type": "Linnean",
+			"description": "Name is controlled under a Linnean Code, such as ICZN, ICBN, or ICTV."
+		},
+		{
+			"taxon_name_type": "cultural",
+			"description": "Name is intended for use in a cutural taxonomy source, such as Nomenclature for Museum Cataloging."
+		},
+		{
+			"taxon_name_type": "mineral",
+			"description": "Name is intended for use under a mineral taxonomy source."
+		},
+		{
+			"taxon_name_type": "quarantine",
+			"description": "\"Name\" is not intended for cataloging, but has historical significance. This is primarily intended for misspellings propagated through publication, which are useful in locating catalog records. All quarantine terms should have relationships to terms which are available for cataloging. No name which can be associated with type material, regardless of current \"acceptedness,\" should be quarantined."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_name_type",
+			"label": "Taxonomy: Name Types",
+			"description": "types of taxon names"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"identification_confidence": "high",
+			"description": "Determiner(s), or collection personnel on behalf of determiners(s), have high confidence that the identification is correct.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"identification_confidence": "medium",
+			"description": "Determiner(s), or collection personnel on behalf of determiners(s), have moderate confidence that the identification is correct.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"identification_confidence": "low",
+			"description": "Determiner(s), or collection personnel on behalf of determiners(s), have low confidence that the identification is correct.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctidentification_confidence",
+			"label": "Identification: Confidence Values",
+			"description": "level of confidence associated with an identification"
+		}
+	]
+}

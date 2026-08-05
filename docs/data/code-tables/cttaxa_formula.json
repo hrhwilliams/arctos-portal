@@ -1,0 +1,51 @@
+{
+	"data": [
+		{
+			"taxa_formula": "A x B",
+			"description": "A determination of a hybrid organism in which one parent was of taxon A and the other was of taxon B. The letter \"x\" is inserted between the two values."
+		},
+		{
+			"taxa_formula": "A or B",
+			"description": "A determination to either of two taxa. The word \"or\" is inserted between the two values."
+		},
+		{
+			"taxa_formula": "A",
+			"description": "The normal, single-taxon determination. This could be a high-level taxon (e.g., Canidae), a genus (e.g, Canis), a binomen e.g., Canis lupus), or a trinomen (e.g., Canis lupus baileyi)."
+		},
+		{
+			"taxa_formula": "A ?",
+			"description": "A single-taxon determination with a space and question mark appended to it. For example, \"Canis ?\" indicates that the organism is questionably assigned to the genus Canis. (Compare the formula \"A sp.\")"
+		},
+		{
+			"taxa_formula": "A cf.",
+			"description": "A determination based on comparison to another specimen.  It implies that that the two specimens are the same taxon, but that the determiner has no other basis for the determination. This determination is only as good as the other determination. (Not the same as the formula \"A ?\".)"
+		},
+		{
+			"taxa_formula": "A {string}",
+			"description": "Allows the user to supply a namestring. To be used only when no better formal taxon name is available."
+		},
+		{
+			"taxa_formula": "A ssp.",
+			"description": "A genus+species determination (binomen) with a space and \"ssp.\" appended to it.  For example, \"Canis lupus ssp.\" indicates that the specimen is some unknown subspecies of Canis lupus. (Compare the formula \"A sp.\")"
+		},
+		{
+			"taxa_formula": "A aff.",
+			"description": "A \"species affinis.\" Related to, but NOT identical to the species named.  This is generally (if not always) used with a binomen. And this would generally be a fine-grained, expert determination. It is NOT the species named, it is not \"approximately\" the species named."
+		},
+		{
+			"taxa_formula": "A / B intergrade",
+			"description": "A two-taxon determination indicating supposed introgression between two named races (usually subspecies). (Compare to the formula \"A X B\".)"
+		},
+		{
+			"taxa_formula": "A and B",
+			"description": "A two-taxon determination for a single cataloged item comprised of two species.  For example, two species of fossil in single sample of matrix, or two symbiont organisms in a sample. (Consider creating two cataloged items.)"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxa_formula",
+			"label": "Identification: Taxa Formulas",
+			"description": "formula used to build taxonomic identifications"
+		}
+	]
+}

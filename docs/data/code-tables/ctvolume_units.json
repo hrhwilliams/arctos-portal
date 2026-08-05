@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"volume_units": "µL",
+			"description": "microlitre or microliter, 10⁻⁶ L, one millionth of a liter.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7414"],
+			"documentation_url": ["https://en.wiktionary.org/wiki/microliter"]
+		},
+		{
+			"volume_units": "mL",
+			"description": "millilitre or milliliter,  10⁻³ L, one thousandth of a liter.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7414"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Millilitre"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctvolume_units",
+			"label": "Units of Volume",
+			"description": "Units of Volume"
+		}
+	]
+}

@@ -1,0 +1,83 @@
+{
+	"data": [
+		{
+			"disposition": "discarded",
+			"description": "Object has been discarded. Do not use this to mean \"used up.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "missing",
+			"description": "Object cannot be found.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "not applicable",
+			"description": "Disposition applied to virtual objects, such as observations. Also use this for objects that were never received but that we want to track, e.g., tissue vouchers that are deposited in another collection.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "on loan",
+			"description": "Object is currently on an active loan, so is not available in the collections.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "unchecked",
+			"description": "Often used for data migration when an inventory is expected to be completed after data are in Arctos. Unchecked parts are presumably \"in collection\", but this is a tentative assumption.",
+			"issue_url": ["https://github.com/ArctosDB/data-migration/issues/1141"],
+			"documentation_url": ""
+		},
+		{
+			"disposition": "subsampled",
+			"description": "DO NOT USE THIS - it says nothing about the part and just makes no sense.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "transfer of custody",
+			"description": "Relocation of an object to another physical location outside the collection's facilities, in which there is a reasonable expectation of a formal transaction; in any case, there is no expectation of return but the collection deems it necessary to maintain its metadata. Transfer of custody is differentiated from a formal deaccession where an accession exists but its legal and physical status is no longer the responsibility of the collection.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4691"],
+			"documentation_url": ""
+		},
+		{
+			"disposition": "being processed",
+			"description": "Object is between the stages of being accessioned and appearing in the collection. We don't know exactly where it is right now, but we could find it.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "used up",
+			"description": "The part has been entirely consumed.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"disposition": "on exhibit",
+			"description": "Object is included in an organized presentation and display of a selection of items. For in-house loans the object is exhibited at the loaning institution. For external loans, the object is exhibited at the borrowing institution. For borrows, the object is exhibited at the borrowing institution. The object may be available for study with permission of all institutions involved.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4685"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Exhibition"]
+		},
+		{
+			"disposition": "deaccessioned",
+			"description": "The object or part has been removed permanently from the museum’s collection, voluntarily (e.g., the item is no longer appropriate for the collection, it has been identified for repatriation, exchange, sale, it is a duplicate, etc.) or involuntarily (one required by law or due to circumstances not controlled by the Museum). Reasonable expectation of a related transaction to document the decisions at the institutional level supporting the permanent removal. Distinct from transfer of custody in the deliberate and permanent removal from the collection and the museum’s curatorial and legal responsibility.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4683"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Deaccessioning"]
+		},
+		{
+			"disposition": "in collection",
+			"description": "Object is where it should be.  For a record representing a living organism, it is where it should be and is currently alive.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9483"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctdisposition",
+			"label": "Part: Disposition Values",
+			"description": "The status of a collection object with respect to its availability, state of the cataloging process, or location. Terms apply to the cataloged item; use part attributes to specify states of components. Usage will be collection-specific but terms should be of general usefulness. Details of its availability, state of the cataloging process, or location should be specified in relevant attributes, encumbrances, or containers."
+		}
+	]
+}

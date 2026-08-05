@@ -1,0 +1,29 @@
+{
+	"data": [
+		{
+			"agent_type": "bot",
+			"description": "A computer program that performs automatic repetitive tasks and writes a specific kind of data to relevant bulkloaders. See functions/create_bot_agent for details.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5410"],
+			"documentation_url": ""
+		},
+		{
+			"agent_type": "organization",
+			"description": "An organized body of or by person agents with a particular purpose, especially a business, society, association, etc.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5410"],
+			"documentation_url": ""
+		},
+		{
+			"agent_type": "person",
+			"description": "A human being regarded as an individual.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5410"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctagent_type",
+			"label": "Agent: Types",
+			"description": "Types of Agents."
+		}
+	]
+}

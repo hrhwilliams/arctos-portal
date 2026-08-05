@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"borrow_status": "closed",
+			"description": "All items and products such as reprints and measurements are returned and accounted for.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"borrow_status": "partially returned",
+			"description": "Some borrowed objects have been returned and accounted for.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"borrow_status": "open",
+			"description": "Active. Returnable objects are still on borrow.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"borrow_status": "returned",
+			"description": "All borrowed objects have been returned and accounted for, but borrow is not closed because other borrow requirements have not been met.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctborrow_status",
+			"label": "Transaction: Borrow Status Values",
+			"description": "Borrow status."
+		}
+	]
+}

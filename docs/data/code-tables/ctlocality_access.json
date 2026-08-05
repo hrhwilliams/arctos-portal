@@ -1,0 +1,267 @@
+{
+	"data": [
+		{
+			"locality_access": "ogl_genomic",
+			"description": "Access is limited to OGL:Genomic."
+		},
+		{
+			"locality_access": "hwml_para",
+			"description": "Access is limited to HWML:Para."
+		},
+		{
+			"locality_access": "asnhc_mamm",
+			"description": "Access is limited to ASNHC:Mamm."
+		},
+		{
+			"locality_access": "utep_herb",
+			"description": "Access is limited to UTEP:Herb."
+		},
+		{
+			"locality_access": "lingu_herp",
+			"description": "Access is limited to LINGU:Herp."
+		},
+		{
+			"locality_access": "dmns_bird",
+			"description": "Access is limited to DMNS:Bird."
+		},
+		{
+			"locality_access": "unm_paleo",
+			"description": "Access is limited to UNM:Paleo."
+		},
+		{
+			"locality_access": "nmmnh_paleo",
+			"description": "Access is limited to NMMNH:Paleo."
+		},
+		{
+			"locality_access": "mvz_bird",
+			"description": "Access is limited to MVZ:Bird."
+		},
+		{
+			"locality_access": "apsu_herp",
+			"description": "Access is limited to APSU:Herp."
+		},
+		{
+			"locality_access": "msb_mamm",
+			"description": "Access is limited to MSB:Mamm."
+		},
+		{
+			"locality_access": "msb_bird",
+			"description": "Access is limited to MSB:Bird."
+		},
+		{
+			"locality_access": "uam_es",
+			"description": "Access is limited to UAM:ES."
+		},
+		{
+			"locality_access": "uwbm_vp",
+			"description": "Access is limited to UWBM:VP."
+		},
+		{
+			"locality_access": "uwbm_pb",
+			"description": "Access is limited to UWBM:PB."
+		},
+		{
+			"locality_access": "uwbm_pr",
+			"description": "Access is limited to UWBM:PR."
+		},
+		{
+			"locality_access": "mvz_fish",
+			"description": "Access is limited to MVZ:Fish."
+		},
+		{
+			"locality_access": "mvzobs_fish",
+			"description": "Access is limited to MVZObs:Fish."
+		},
+		{
+			"locality_access": "mvz_herp",
+			"description": "Access is limited to MVZ:Herp."
+		},
+		{
+			"locality_access": "mmns_mamm",
+			"description": "Access is limited to MMNS:Mamm."
+		},
+		{
+			"locality_access": "mmns_crust",
+			"description": "Access is limited to MMNS:Crust (https://github.com/ArctosDB/arctos/issues/8863)"
+		},
+		{
+			"locality_access": "dmns_ento",
+			"description": "Access is limited to https://arctos.database.museum/collection/DMNS:Ento"
+		},
+		{
+			"locality_access": "dmns_para",
+			"description": "Access is limited to https://arctos.database.museum/collection/DMNS:Para"
+		},
+		{
+			"locality_access": "mmns_birds",
+			"description": "Access is limited to MMNS:Birds (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "dmns_herp",
+			"description": "Access is limited to https://arctos.database.museum/collection/DMNS:Herp"
+		},
+		{
+			"locality_access": "dmns_mamm",
+			"description": "Access is limited to https://arctos.database.museum/collection/DMNS:Mamm"
+		},
+		{
+			"locality_access": "mmns_co",
+			"description": "Access is limited to MMNS:CO (https://github.com/ArctosDB/arctos/issues/8863)"
+		},
+		{
+			"locality_access": "mmns_ento",
+			"description": "Access is limited to MMNS:Ento (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_fishes",
+			"description": "Access is limited to MMNS:Fishes (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "msb_herp",
+			"description": "Access is limited to MSB:Herp | https://arctos.database.museum/collection/MSB:Herp"
+		},
+		{
+			"locality_access": "uam_ento",
+			"description": "Access is limited to UAM:Ento | https://arctos.database.museum/collection/UAM:Ento"
+		},
+		{
+			"locality_access": "byuobs_herp",
+			"description": "Access is limited to BYUObs:Herp | https://arctos.database.museum/collection/BYUObs:Herp"
+		},
+		{
+			"locality_access": "dgr_bird",
+			"description": "Access is limited to DGR:Bird | https://arctos.database.museum/collection/DGR:Bird"
+		},
+		{
+			"locality_access": "dgr_mamm",
+			"description": "Access is limited to DGR:Mamm | https://arctos.database.museum/collection/DGR:Mamm"
+		},
+		{
+			"locality_access": "mmns_grc",
+			"description": "Access is limited to MMNS:GRC (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_herp",
+			"description": "Access is limited to MMNS:Herp (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_ip",
+			"description": "Access is limited to MMNS:IP (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_iz",
+			"description": "Access is limited to MMNS:IZ (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_mala",
+			"description": "Access is limited to MMNS:Mala (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_pb",
+			"description": "Access is limited to MMNS:PB (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "mmns_photo",
+			"description": "Access is limited to MMNS:Photo (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "nmmnh_ento",
+			"description": "Access is limited to NMMNH:Ento | https://arctos.database.museum/collection/NMMNH:Ento (https://github.com/ArctosDB/arctos/issues/8855)."
+		},
+		{
+			"locality_access": "uam_mamm",
+			"description": "Access is limited to UAM:Mamm | https://arctos.database.museum/collection/UAM:Mamm"
+		},
+		{
+			"locality_access": "mmns_rm",
+			"description": "Access is limited to MMNS:RM (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "ucm_bird",
+			"description": "Access is limited to UCM:Bird | https://arctos.database.museum/collection/UCM:Bird"
+		},
+		{
+			"locality_access": "ucm_herp",
+			"description": "Access is limited to UCM:Herp | https://arctos.database.museum/collection/UCM:Herp"
+		},
+		{
+			"locality_access": "ucm_obs",
+			"description": "Access is limited to UCM:Obs | https://arctos.database.museum/collection/UCM:Obs"
+		},
+		{
+			"locality_access": "mmns_vp",
+			"description": "Access is limited to MMNS:VP (https://github.com/ArctosDB/arctos/issues/8863)."
+		},
+		{
+			"locality_access": "hsuvm_mamm",
+			"description": "Access is limited to HSUVM:Mamm (https://github.com/ArctosDB/arctos/issues/8865)"
+		},
+		{
+			"locality_access": "fhsm_ip",
+			"description": "Access is limited to FHSM:IP. (https://github.com/ArctosDB/arctos/issues/8947)"
+		},
+		{
+			"locality_access": "fhsm_pb",
+			"description": "Access is limited to FHSM:PB. (https://github.com/ArctosDB/arctos/issues/8947)"
+		},
+		{
+			"locality_access": "fhsm_vp",
+			"description": "Access is limited to FHSM:VP. (https://github.com/ArctosDB/arctos/issues/8947)"
+		},
+		{
+			"locality_access": "mvzobs_bird",
+			"description": "Access is limited to MVZObs:Bird."
+		},
+		{
+			"locality_access": "fhsm_g",
+			"description": "Access is limited to FHSM:G."
+		},
+		{
+			"locality_access": "midnr_wild",
+			"description": "Access is limited to https://arctos.database.museum/collection/MIDNR:Wild"
+		},
+		{
+			"locality_access": "nhsm_inv",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Inv"
+		},
+		{
+			"locality_access": "nhsm_arc",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Arc"
+		},
+		{
+			"locality_access": "nhsm_paleo",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Paleo"
+		},
+		{
+			"locality_access": "nhsm_ento",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Ento"
+		},
+		{
+			"locality_access": "nhsm_mamm",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Mamm"
+		},
+		{
+			"locality_access": "nhsm_herp",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Herp"
+		},
+		{
+			"locality_access": "nhsm_herb",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Herb"
+		},
+		{
+			"locality_access": "nhsm_geol",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Geol"
+		},
+		{
+			"locality_access": "nhsm_bird",
+			"description": "Access is limited to https://arctos.database.museum/collection/NHSM:Bird"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlocality_access",
+			"label": "Locality Attribute: Access",
+			"description": "Limits acces to localities by collection."
+		}
+	]
+}

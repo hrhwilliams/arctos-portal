@@ -1,0 +1,473 @@
+{
+	"data": [
+		{
+			"location_in_host": "hindgut",
+			"description": "Proctodaeum, a section of the gut in insects. Or, the term hindgut is used in non-tetrapod vertebrates, e.g., fish.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "blubber",
+			"description": "Distinct from adipose tissue. Blubber is enlarged hypodermis in marine mammals.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "ileum",
+			"description": "Final section of the small intestine, includes the sacculus rotundus in lagomorphs. Indicate this in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "mouth",
+			"description": "buccal cavity",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "spleen",
+			"description": "A part of the lymphatic system, similar to large lymph node.  Vertebrates only.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "body surface",
+			"description": "Use skin where appropriate to the organism.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "nasal cavity",
+			"description": "The nasal cavity is the uppermost part of the respiratory system and provides the nasal passage for inhaled air from the nostrils to the nasopharynx and rest of the respiratory tract. The paranasal sinuses drain into the nasal cavity. Wikipedia",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "tissue",
+			"description": "Non-specific term for locations in muscle or connective tissue outside of the body cavities. Use anything more specific, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "air sac(s)",
+			"description": "Applies to birds. Use swim bladder for fish.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "intestine",
+			"description": "Use more specific value, such as large intestine, or descending colon, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "ear canal",
+			"description": "Auditory canal, between the external ear and the tympanum, or eardrum.\r\n",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "cerebrospinal fluid",
+			"description": "Liquid occupying space in and around the central nervous system.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "bile duct",
+			"description": "Put specific location, e.g. hepatic duct, common bile duct, in attribute remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "scrotum",
+			"description": "The pouch of skin that contains the testes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pancreas",
+			"description": "Secretory gland of the digestive and endocrine systems.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "trachea",
+			"description": "Windpipe.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "liver",
+			"description": "Put specific lobe in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "lung(s)",
+			"description": "Put specific location, e.g. right, left, lobe, etc. in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "crop",
+			"description": "A thin-walled food-storage organ, not the same as a gizzard, or ventriculus.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "gallbladder",
+			"description": "Organ that concentrates and stores bile produced by the liver.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "skin",
+			"description": "Use body surface for animal without skin, such as arthropods.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "swim bladder",
+			"description": "Applies to actinopterygian fishes. The terms gas bladder, fish maw, and air bladder are also used.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pancreatic duct",
+			"description": "Duct between the pancreas and duodenum, also called the duct of Wirsung. Use this value for the accessory pancreatic duct (Duct of Santorini), and annotate in remarks where this applies.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "unattached",
+			"description": "Parasite is found off of the host, e.g. as a free-living species or life stage, or one that occurs in a nest, burrow, dwelling, or in a free-living environment such as soil. Add habitat details (nest/burrow/dwelling/soil etc)  to Attribute Remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "proventriculus",
+			"description": "The glandular portion of the avian compound stomach.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "peritoneum",
+			"description": "Serous membrane lining the organs and body wall of the abdominal cavity. Includes mesentery.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "heart",
+			"description": "Put specific chamber, valve, or blood vessel in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "lymph node(s)",
+			"description": "Indicate specific nodes in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "synovial cavities",
+			"description": "Joint cavities and associated synovial fluid in joints.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "midgut",
+			"description": "Mesenteron, a section of the gut in insects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pelvic cavity",
+			"description": "The lower part of the abdominopelvic cavity.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "diaphragm",
+			"description": "Muscle between the abdominal and thoracic cavities in mammals. This is a specific skeletal muscle.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "cloaca",
+			"description": "Common opening of reproductive, intestinal and urinary tract. If external opening only is referred to, use anus.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "appendage(s)",
+			"description": "Be more specific, if possible, especially for vertebrates.  Skin? Skeletal muscle?",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "mesentery",
+			"description": "A part of the peritoneum, divided into the greater omentum and the lesser omentum.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "oviduct",
+			"description": "oviduct",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "duodenum",
+			"description": "The first section of the small intestine.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pyloric ceca",
+			"description": "Extensions of intestine in herbivorous fish. Not homologous to caecum of mammals.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "blood",
+			"description": "Indicate smear or serum in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "adrenal glands",
+			"description": "Endocrine glands superficial to the kidneys.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pleural cavity",
+			"description": "The fluid-filled space between the pleural serous membranes surrounding the lungs.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "fascia",
+			"description": "Layered fibrous connective tissue.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "visceral ligaments",
+			"description": "Derived from peritoneum, some from fetal blood vessels, etc. Includes hepatic and intestinal ligaments, ligaments of bladder, and uterus.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pericardium",
+			"description": "Serous membrane surrounding the heart and pericardial cavity.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "feces",
+			"description": "For example, eggs or coccidia in fecal sample. Do not use for parasite residing in the gut.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "ear, inner",
+			"description": "Cavity in temporal bone containing semi-circular canals and cochlea.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "body cavity",
+			"description": "Use if specific cavity is unknown; for invertebrates, use hemocoel.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "pleura(e)",
+			"description": "Serous membranes surrounding the lungs and pleural cavity.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "anus",
+			"description": "Anus is external. Cloaca and rectum are internal.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "egg",
+			"description": "Refers to an infected embryonic stage of the host where egg is present.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "subcutaneous",
+			"description": "Under the skin.  Put location on body in remarks in attribute remarks, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "ear (external, pinnae)",
+			"description": "The fleshy portion of the ear external to the ear canal.\r\n",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "ventriculus",
+			"description": "The gizzard, gigerium, or gastric mill, in birds, reptiles, and some invertebrates.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "sinus(es)",
+			"description": "Paranasal sinuses of the skull.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "nervous system",
+			"description": "Use only if specific organ is unknown.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "abdominopelvic cavity",
+			"description": "Use more specific abdominal cavity, or pelvic cavity, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "thoracic cavity",
+			"description": "Above the diaphragm, in mammals only.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "jejunum",
+			"description": "Middle section of the small intestine. Middle intestine, or mid-gut.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "gill(s)",
+			"description": "Respiratory organ in many aquatic organisms.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "antenna(e)",
+			"description": "Arthropods only.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "stomach",
+			"description": "Put specific location, e.g. cardiac region, pyloric sphincter, rumen, mucosa etc. in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "large intestine",
+			"description": "Put specific location, e.g. ascending colon, in remarks; rectum and caecum are given separate entries.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "esophagus",
+			"description": "Muscular tube in vertebrates, through which food passes from the pharynx to the stomach.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "rectum",
+			"description": "Distal portion of large intestine.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "undetermined",
+			"description": "Used for location in host when a parasite location cannot be accurately determined at the time of collection. Add relevant collection methodology details to the attribute Collection Method  or other details to Attribute Remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "eye, or orbit",
+			"description": "Put specific location, e.g. sclera or orbit, in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "gut",
+			"description": "Use gastrointestinal tract for invertebrates. Use foregut, midgut, or hindgut, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "colon",
+			"description": "The four parts of the large intestine (ascending, transverse, descending, and sigmoid), exclusive of the cecum and rectum.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "foregut",
+			"description": "Stomodaeum, a section of the gut in insects.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "small intestine",
+			"description": "Use more specific duodenum, jejunem, or ileum, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "skeletal muscle",
+			"description": "Put specific location, to the extent that it is known, in remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "abdominal cavity",
+			"description": "Part of the more general adbdominopelvic cavity.  Use more specific value, such as mesentary, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "kidney",
+			"description": "Osmoregulatory and excretory organs of the urinary\\excretory system.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "gastrointestinal tract",
+			"description": "The gut. Use more specific value, if known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "urinary bladder",
+			"description": "The organ that collects urine excreted by the kidneys.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "caecum (or cecum)",
+			"description": "The beginning of the large intestine.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"location_in_host": "nervous system[X]",
+			"description": "Use only if specific organ is unknown.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlocation_in_host",
+			"label": "Collection Object Attribute: Location in Host",
+			"description": "location in host"
+		}
+	]
+}

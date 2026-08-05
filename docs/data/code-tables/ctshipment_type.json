@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"shipment_type": "loan",
+			"description": "entire loan leaving the institution",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "loan: partial",
+			"description": "loan installment leaving the institution",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "loan: return",
+			"description": "entire loan returning to the institution",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "loan: partial return",
+			"description": "loan installment returning to the institution",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "borrow: incoming",
+			"description": "material coming to the institution; external loan",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "borrow: returning",
+			"description": "borrowed material being returned to the originating institution",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"shipment_type": "correspondence",
+			"description": "Written communications between the collection/institution and another entity.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7371"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctshipment_type",
+			"label": "Transaction: Shipment Types",
+			"description": "type of  shipment"
+		}
+	]
+}

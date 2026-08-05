@@ -1,0 +1,59 @@
+{
+	"data": [
+		{
+			"permit_type": "import",
+			"description": "Authorization to import specimens or their parts from one country to another.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "research",
+			"description": "Authorization to conduct research within a permitted jurisdiction. Usually also requires additional permits (e.g., collect, export). Examples: U.S. Forest Service research permit; Memorandum of Understanding; Convenio.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "rehabilitation",
+			"description": "Authorization to possess animals, provide rehabilitative care, transport to other facility, release or euthanize, and dispose of dead specimens.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "collect",
+			"description": "Authorization to collect and possess specimens or their parts (e.g., blood, feather samples).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "export",
+			"description": "Authorization to export specimens or their parts from one country to another.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "salvage",
+			"description": "Authorization to pick up and possess dead animals.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "transfer",
+			"description": "Authorization to transfer specimens from one institution to another within the same country. Example: USDA Transport Permit for restricted materials between US institutions; USFWS authorization to transfer confiscated materials.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_type": "permit not required",
+			"description": "Used for transactions under which a permit is explicitly not required. Clarify in permit_remarks.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpermit_type",
+			"label": "Permit: Types",
+			"description": "type of activity authorized by a permit"
+		}
+	]
+}

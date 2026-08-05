@@ -1,0 +1,41 @@
+{
+	"data": [
+		{
+			"nagpra_category": "object of cultural patrimony",
+			"description": "An object having ongoing historical, traditional, or cultural importance central to the Native American group or culture itself, rather than property owned by an individual Native American, and which, therefore, cannot be alienated, appropriated, or conveyed by any individual regardless of whether or not the individual is a member of the Indian tribe or Native Hawaiian organization and such object shall have been considered inalienable by such Native American group at the time the object was separated from such group. [25 USC 3001 (3)(D)]",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nagpra_category": "human remains",
+			"description": "The physical remains of the body of a person of Native American ancestry. The term does not include remains or portions of remains that may reasonably be determined to have been freely given or naturally shed by the individual from whose body they were obtained, such as hair made into ropes or nets. For the purposes of determining cultural affiliation, human remains incorporated into a funerary object, sacred object, or object of cultural patrimony must be considered as part of that item. [43 CFR 10.2 (d)(1)]",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nagpra_category": "associated funerary object",
+			"description": "Objects that, as a part of the death rite or ceremony of a culture, are reasonably believed to have been placed with individual human remains either at the time of death or later, and both the human remains and associated funerary objects are presently in the possession or control of a Federal agency or museum, except that other items exclusively made for burial purposes or to contain human remains shall be considered as associated funerary objects. [25 USC 3001 (3)(A)]",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nagpra_category": "unassociated funerary object",
+			"description": "Objects that, as a part of the death rite or ceremony of a culture, are reasonably believed to have been placed with individual human remains either at the time of death or later, where the remains are not in the possession or control of the Federal agency or museum and the objects can be identified by a preponderance of the evidence as related to specific individuals or families or to known human remains or, by a preponderance of the evidence, as having been removed from a specific burial site of an individual culturally affiliated with a particular Indian tribe. [25 USC 3001 (3)(B)] Those funerary objects for which the human remains with which they were placed intentionally are not in the possession or control of a museum or Federal agency. [43 CFR 10.2 (d)(2)(ii)]",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"nagpra_category": "sacred object",
+			"description": "Specific ceremonial objects which are needed by traditional Native American religious leaders for the practice of traditional Native American religions by their present day adherents. [25 USC 3001 (3)(C)]",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctnagpra_category",
+			"label": "Collection Object Attribute: NAGPRA Categories",
+			"description": "These terms are designated NAGPRA categories according to Chapter 32 of the Native American Graves Protection and Repatriation (https://uscode.house.gov/view.xhtml?path=/prelim@title25/chapter32&edition=prelim)."
+		}
+	]
+}

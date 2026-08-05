@@ -1,0 +1,15 @@
+{
+	"data": [
+		{
+			"encumbrance_action": "mask record",
+			"description": "Exclude the entire catalog record from public interfaces and data downloads."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctencumbrance_action",
+			"label": "Encumbrance Actions",
+			"description": "Encumbrance Actions"
+		}
+	]
+}

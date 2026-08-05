@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"relationship": "is congruent to",
+			"description": "Taxonomic Concept A is the same as Taxonomic Concept B."
+		},
+		{
+			"relationship": "is included in",
+			"description": "Taxonomic Concept A is fully contained within Taxonomic Concept B, and Taxonomic Concept B also contains some members not in A."
+		},
+		{
+			"relationship": "intersects",
+			"description": "Taxonomic Concept A and Taxonomic Concept B share at least one member. (Ed: this is the least specific relationship, but also will probably be the most used)"
+		},
+		{
+			"relationship": "excludes",
+			"description": "Taxonomic Concept A and Taxonomic Concept B share no members."
+		},
+		{
+			"relationship": "overlaps with",
+			"description": "Taxonomic Concept A contains some members of Taxonomic Concept B and some members not in B, and Taxonomic Concept B also contains some members of not in A."
+		},
+		{
+			"relationship": "includes",
+			"description": "Taxonomic Concept A fully contains Taxonomic Concept B, and also contains some members not in B."
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxon_concept_relationship",
+			"label": "Taxonomy: Concept Relationships",
+			"description": "semantic concept relationships between taxa"
+		}
+	]
+}

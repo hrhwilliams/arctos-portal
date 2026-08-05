@@ -1,0 +1,10 @@
+{
+	"data": [],
+	"metadata": [
+		{
+			"table_name": "ctwater_body",
+			"label": "Locality Attribute: Water body",
+			"description": "Unified waterbody code table"
+		}
+	]
+}

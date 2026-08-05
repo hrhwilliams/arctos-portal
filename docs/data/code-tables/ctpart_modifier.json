@@ -1,0 +1,591 @@
+{
+	"data": [
+		{
+			"part_modifier": "left",
+			"description": "On, toward, or relating to the side of a human body or of a thing that is to the west when the person or thing is facing north.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "right",
+			"description": "On, toward, or relating to the side of a human body or of a thing that is to the east when the person or thing is facing north.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "anteroposterior",
+			"description": "Relating to or directed toward both front and back.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "appendicular",
+			"description": "Relating to or denoting an appendage or appendages.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "axial",
+			"description": "Around an axis.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "costal",
+			"description": "Associated with the rib(s).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "dorso-sacral",
+			"description": "Refers to the back, or upper side, of an organism that is associated with the sacrum.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "fore",
+			"description": "Situated or placed in front. \"the fore pair of wings\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "hind",
+			"description": "Situated or placed in back. \"the hind pair of wings\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "lower",
+			"description": "Less high in position. \"lower tooth\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "upper",
+			"description": "Higher in position. \"upper tooth\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "marginal",
+			"description": "Relating to or situated at the edge or margin.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "maxillary",
+			"description": "Associated with the maxilla.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "paramedian",
+			"description": "To one side of the median position.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "pedal",
+			"description": "Associated with the foot.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "sternal",
+			"description": "Relating to the sternum.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "tarsal",
+			"description": "Relating to the tarsus.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "manual",
+			"description": "Associated with the hand.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "presacral",
+			"description": "Occurring anterior to the sacrum. Any of the vertebrae anterior to the sacrum or sacral vertebrae.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "anterior",
+			"description": "Describes what is in front.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Anterior_and_posterior"
+			]
+		},
+		{
+			"part_modifier": "apical",
+			"description": "The part of an organism furthest from the end attached to the substrate.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Elongated_organisms"
+			]
+		},
+		{
+			"part_modifier": "basal",
+			"description": "The part of the organism attached to the substrate.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Elongated_organisms"
+			]
+		},
+		{
+			"part_modifier": "caudal",
+			"description": "Describes how close something is to the trailing end of an organism.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Cranial_and_caudal"
+			]
+		},
+		{
+			"part_modifier": "cervical",
+			"description": "Having to do with any kind of neck, including the neck on which the head is perched and the neck of the uterus.",
+			"issue_url": "",
+			"documentation_url": ["https://www.medicinenet.com/cervical/definition.htm"]
+		},
+		{
+			"part_modifier": "deep",
+			"description": "Describes something further away from the surface of the organism.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Superficial_and_deep"
+			]
+		},
+		{
+			"part_modifier": "distal",
+			"description": "Describes parts or a feature that are distant from the main mass of the body.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Proximal_and_distal"
+			]
+		},
+		{
+			"part_modifier": "dorsal",
+			"description": "Refers to the back, or upper side, of an organism. If talking about the skull, the dorsal side is the top. As applied to vertebra The dorsal vertebrae range from the bottom of the neck to the top of the pelvis. Dorsal vertebrae attached to the ribs are called thoracic vertebrae, while those without ribs are called lumbar vertebrae.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Dorsal_and_ventral",
+				"https://en.wikipedia.org/wiki/Vertebral_column#Regional_vertebrae"
+			]
+		},
+		{
+			"part_modifier": "lateral",
+			"description": "Describes something to the sides of an animal.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Medial_and_lateral"
+			]
+		},
+		{
+			"part_modifier": "lumbar",
+			"description": "Associated with the lower part of the back. In human anatomy, the five vertebrae between the rib cage and the pelvis.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Lumbar_vertebrae"]
+		},
+		{
+			"part_modifier": "medial",
+			"description": "Describes structures close to the midline,[4] or closer to the midline than another structure.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Anatomical_terms_of_location#Medial_and_lateral"
+			]
+		},
+		{
+			"part_modifier": "postcloacal",
+			"description": "Occurring posterior to the cloaca.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.researchgate.net/publication/236153064_The_Fossil_Snakes_of_Pit_91_Rancho_La_Brea_California"
+			]
+		},
+		{
+			"part_modifier": "posterior",
+			"description": "Describes what is to the back of something.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "precaudal",
+			"description": "In front of the tail or of the caudal vertebrae. Centra other than those of the caudal fin. All anterior vertebrae to the one immediately anterior to the first centrum bearing a haemal spine.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wiktionary.org/wiki/precaudal",
+				"https://www.fishbase.se/Glossary/Glossary.php?q=precaudal+vertebrae"
+			]
+		},
+		{
+			"part_modifier": "precloacal",
+			"description": "Occurring anterior to the cloaca.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.researchgate.net/publication/236153064_The_Fossil_Snakes_of_Pit_91_Rancho_La_Brea_California"
+			]
+		},
+		{
+			"part_modifier": "premaxillary",
+			"description": "Of the premaxilla bone (e.g., a premaxillary tooth).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7672"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "proximal",
+			"description": "Describes parts or a feature that are close to the main mass of the body.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "rostral",
+			"description": "Describes something situated toward the oral or nasal region, or in the case of the brain, toward the tip of the frontal lobe.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "superficial",
+			"description": "Describes something near the outer surface of the organism.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "ventral",
+			"description": "Surface refers to the front, or lower side, of an organism.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "cranial",
+			"description": "Also cephalic, describes how close something is to the head of an organism.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Anatomical_terms_of_location"]
+		},
+		{
+			"part_modifier": "pharyngeal",
+			"description": "Relating to the pharynx.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7137"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "plate",
+			"description": "A flat, plate-like osteoderm.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2423"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Plate_(anatomy)"]
+		},
+		{
+			"part_modifier": "adrenal",
+			"description": "Relating to the system that produces hormones including adrenaline and the steroids aldosterone and cortisol (e.g., adrenal gland).",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Adrenal_gland"]
+		},
+		{
+			"part_modifier": "atlas",
+			"description": "Topmost vertebra.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "axis",
+			"description": "Second vertebra.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "canine",
+			"description": "In mammalian oral anatomy, the canine teeth, also called dog teeth, fangs, cuspids or (in the context of the upper jaw) eye teeth, are the relatively long, pointed teeth.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Canine_tooth"]
+		},
+		{
+			"part_modifier": "carnassial",
+			"description": "Carnassials are paired upper and lower teeth (either molars or premolars and molars) modified in such a way as to allow enlarged and often self-sharpening edges to pass by each other in a shearing manner.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Carnassial"]
+		},
+		{
+			"part_modifier": "cheek",
+			"description": "As applied to teeth, cheek teeth comprise the premolar and molar teeth in mammals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/3704"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cheek_teeth"]
+		},
+		{
+			"part_modifier": "cinder",
+			"description": "a pyroclastic, highly vesicular, volcanic rock that was ejected from a volcano as a molten blob and cooled in the air to form discrete grains or clasts.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cinder"]
+		},
+		{
+			"part_modifier": "dermal",
+			"description": "Having to do with the skin.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "fang",
+			"description": "A fang is a long, pointed tooth.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fang"]
+		},
+		{
+			"part_modifier": "geode",
+			"description": "a geological secondary formation within sedimentary and volcanic rocks. Geodes are hollow, vaguely spherical rocks, in which masses of mineral matter (which may include crystals) are secluded.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Geode"]
+		},
+		{
+			"part_modifier": "incisor",
+			"description": "Incisors (from Latin incidere, \"to cut\") are the front teeth present in most mammals. They are located in the premaxilla above and on the mandible below.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Incisor"]
+		},
+		{
+			"part_modifier": "molar",
+			"description": "The molars or molar teeth are large, flat teeth at the back of the mouth.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Molar_(tooth)"]
+		},
+		{
+			"part_modifier": "nasal",
+			"description": "Having to do with the nasal region.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "oral",
+			"description": "Having to do with the mouth.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "ossicle",
+			"description": "a very small osteoderm element, generally smaller than 1 cm",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2423"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "postcranial",
+			"description": "Everything \"behind\" the skull.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4025"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "premolar",
+			"description": "The premolar teeth, or bicuspids, are transitional teeth located between the canine and molar teeth.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Premolar"]
+		},
+		{
+			"part_modifier": "salivary",
+			"description": "Relating to the system that produces saliva (commonly referred to as spit), an extracellular fluid secreted in the mouth.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Saliva"]
+		},
+		{
+			"part_modifier": "scute, bony",
+			"description": "Non-specific osteoderm, usually used to describe osteoderms that are not ossicles, spines, spikes, or plates. Do not use for keratinous scutes.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2423"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "speleothem",
+			"description": "a geological formation by mineral deposits that accumulate over time in natural caves.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Speleothem"]
+		},
+		{
+			"part_modifier": "spike",
+			"description": "An osteoderm with a tall, conical projection.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2423"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "spine",
+			"description": "An osteoderm with a narrow, spine-like projection.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2423"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "stalactite",
+			"description": "a mineral formation that hangs from the ceiling of caves, hot springs, or man-made structures such as bridges and mines.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Stalactite"]
+		},
+		{
+			"part_modifier": "stalagmite",
+			"description": "a type of rock formation that rises from the floor of a cave due to the accumulation of material deposited on the floor from ceiling drippings.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Stalagmite"]
+		},
+		{
+			"part_modifier": "trunk",
+			"description": "Trunk or torso is an anatomical term for the central part of the human body from which extend the neck and limbs. The trunk includes the thorax and abdomen. As applied to vertebra: Generalized vertebra that lack the processes that distinguish them from atlas, axis, precloacal, cloacal and post-cloacal vertebrae.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.imaios.com/en/e-Anatomy/Anatomical-Parts/Trunk",
+				"https://www.researchgate.net/publication/236153064_The_Fossil_Snakes_of_Pit_91_Rancho_La_Brea_California"
+			]
+		},
+		{
+			"part_modifier": "tusk",
+			"description": "Tusks are elongated, continuously growing front teeth that protrude well beyond the mouth of certain mammal species",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tusk"]
+		},
+		{
+			"part_modifier": "ventifact",
+			"description": "a rock that has been abraded, pitted, etched, grooved, or polished by wind-driven sand or ice crystals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Ventifact"]
+		},
+		{
+			"part_modifier": "volcanic bomb",
+			"description": "a mass of molten rock (tephra) larger than 64 mm (2.5 inches) in diameter, formed when a volcano ejects viscous fragments of lava during an eruption. They cool into solid fragments before they reach the ground.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4897"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Volcanic_bomb"]
+		},
+		{
+			"part_modifier": "mid",
+			"description": "Of or in the middle part or position of a range.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "pleural",
+			"description": "Of or relating to the pleura or the sides of the thorax. In turtles, the bones of the carapace lying between the neural and the peripheral bones.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4992"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "sacral",
+			"description": "Relating to the sacrum. As applied to vertebrae: those in the pelvic region, and range from one in amphibians, to two in most birds and modern reptiles, or up to three to five in mammals.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Vertebral_column"]
+		},
+		{
+			"part_modifier": "abdominal",
+			"description": "Associated with the abdomen.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7750"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "anal",
+			"description": "Associated with the anus.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7751"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "cloacal",
+			"description": "Associated with the cloaca. As applied to vertebra",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.researchgate.net/publication/236153064_The_Fossil_Snakes_of_Pit_91_Rancho_La_Brea_California"
+			]
+		},
+		{
+			"part_modifier": "counterpart to part",
+			"description": "One half of a compression fossil. Typically the counterpart is the negative side, preserving an impression of the fossil.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7807"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Compression_fossil"]
+		},
+		{
+			"part_modifier": "deciduous",
+			"description": "The first set of teeth in the growth and development of diphyodont mammals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5179"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Deciduous_teeth"]
+		},
+		{
+			"part_modifier": "lingual",
+			"description": "Refers to the surface of the tooth that is next to the tongue.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7913"],
+			"documentation_url": ["https://en.wiktionary.org/wiki/lingual"]
+		},
+		{
+			"part_modifier": "mammary",
+			"description": "Relating to the milk-secreting organs of mammals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5047"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Mammary_gland"]
+		},
+		{
+			"part_modifier": "mesial",
+			"description": "Toward anterior or mid-sagittal; the surface closest to the tooth in front of it.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7912"],
+			"documentation_url": ["https://berkeley.pressbooks.pub/morphology/chapter/teeth/"]
+		},
+		{
+			"part_modifier": "neural",
+			"description": "Situated in the region of or on the same side of the body as the brain and spinal cord. In turtles, the bones of the carapace situated between the pleurals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4992"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "nuchal",
+			"description": "Of, relating to, or lying in the region of the back of the neck. In turtles, a single bone at the anterior of the carapace.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4992"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "ossified",
+			"description": "Having undergone the process of ossification (transformation into bone).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5050"],
+			"documentation_url": ["https://en.wiktionary.org/wiki/ossified"]
+		},
+		{
+			"part_modifier": "palatal",
+			"description": "of or relating to the palatine bone or other palate bone",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7764"],
+			"documentation_url": [
+				"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5192890",
+				"https://www.oed.com/dictionary/palatal-tooth_n?tl=true"
+			]
+		},
+		{
+			"part_modifier": "part to counterpart",
+			"description": "One half of a compression fossil. Typically the part is the positive side with carbon adhering, outlining the fine details of the fossil.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7806"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Compression_fossil"]
+		},
+		{
+			"part_modifier": "pectoral",
+			"description": "Relating to or situated within the breast or chest.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7740"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Thorax"]
+		},
+		{
+			"part_modifier": "pelvic",
+			"description": "Relating to or situated within the the lower part of the trunk between the abdomen and the thighs (sometimes also called pelvic region), together with its embedded skeleton (sometimes also called bony pelvis or pelvic skeleton).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7739"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Pelvis"]
+		},
+		{
+			"part_modifier": "peripheral",
+			"description": "Situated away from the center, as opposed to centrally located. In turtles, the bones situated around the edge of the carapace.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4992"],
+			"documentation_url": ""
+		},
+		{
+			"part_modifier": "permanent",
+			"description": "The second set of teeth formed in diphyodont mammals.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5179"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Permanent_teeth"]
+		},
+		{
+			"part_modifier": "thoracic",
+			"description": "Associated with the thorax. The middle segment of the vertebral column, between the cervical vertebrae and the lumbar vertebrae.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Thoracic_vertebrae"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpart_modifier",
+			"label": "Part Attribute: Modifier",
+			"description": "Terms that can be used to modify part names. Includes information such as tooth types, anatomical direction references, and osteoderm types."
+		}
+	]
+}

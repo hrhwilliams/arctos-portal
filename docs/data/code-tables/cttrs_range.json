@@ -1,0 +1,1859 @@
+{
+	"data": [
+		{
+			"trs_range": "R53W",
+			"description": "Range 53 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R33W",
+			"description": "Range 33 West. A measure of the distance east or west from a referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R26E",
+			"description": "Range 26 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R26W",
+			"description": "Range 26 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R34E",
+			"description": "Range 34 East. A measure of the distance east or west from a referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R01E",
+			"description": "Range 1 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R01W",
+			"description": "Range 1 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R02E",
+			"description": "Range 2 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R38E",
+			"description": "Range 38 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R69E",
+			"description": "Range 69 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R02W",
+			"description": "Range 2 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R03E",
+			"description": "Range 3 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R03W",
+			"description": "Range 3 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R04E",
+			"description": "Range 4 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R04W",
+			"description": "Range 4 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R05E",
+			"description": "Range 5 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R05W",
+			"description": "Range 5 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R06E",
+			"description": "Range 6 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R06W",
+			"description": "Range 6 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R07E",
+			"description": "Range 7 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R07W",
+			"description": "Range 7 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R08E",
+			"description": "Range 8 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R08W",
+			"description": "Range 8 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R09E",
+			"description": "Range 9 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R09W",
+			"description": "Range 9 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R102W",
+			"description": "Range 102 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R10E",
+			"description": "Range 10 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R198W",
+			"description": "Range 198 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R199W",
+			"description": "Range 199 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R10W",
+			"description": "Range 10 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R11E",
+			"description": "Range 11 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R11W",
+			"description": "Range 11 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R12E",
+			"description": "Range 12 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R12W",
+			"description": "Range 12 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R13E",
+			"description": "Range 13 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R13W",
+			"description": "Range 13 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R14E",
+			"description": "Range 14 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R14W",
+			"description": "Range 14 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R15E",
+			"description": "Range 15 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R15W",
+			"description": "Range 15 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R16E",
+			"description": "Range 16 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R16W",
+			"description": "Range 16 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R17E",
+			"description": "Range 17 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R17W",
+			"description": "Range 17 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R18E",
+			"description": "Range 18 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R18W",
+			"description": "Range 18 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R19E",
+			"description": "Range 19 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R19W",
+			"description": "Range 19 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R20E",
+			"description": "Range 20 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R20W",
+			"description": "Range 20 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R21E",
+			"description": "Range 21 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R21W",
+			"description": "Range 21 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R22E",
+			"description": "Range 22 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R22W",
+			"description": "Range 22 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R23E",
+			"description": "Range 23 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R23W",
+			"description": "Range 23 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R24E",
+			"description": "Range 24 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R24W",
+			"description": "Range 24 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R25E",
+			"description": "Range 25 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R25W",
+			"description": "Range 25 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R27E",
+			"description": "Range 27 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R27W",
+			"description": "Range 27 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R28E",
+			"description": "Range 28 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R28W",
+			"description": "Range 28 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R29E",
+			"description": "Range 29 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R29W",
+			"description": "Range 29 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R30E",
+			"description": "Range 30 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R30W",
+			"description": "Range 30 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R31E",
+			"description": "Range 31 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R31W",
+			"description": "Range 31 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R32E",
+			"description": "Range 32 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R32W",
+			"description": "Range 32 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R33E",
+			"description": "Range 33 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R34W",
+			"description": "Range 34 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R35E",
+			"description": "Range 35 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R35W",
+			"description": "Range 35 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R36E",
+			"description": "Range 36 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R36W",
+			"description": "Range 36 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R70W",
+			"description": "Range 70 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R37E",
+			"description": "Range 37 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R39E",
+			"description": "Range 39 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R40E",
+			"description": "Range 40 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R41E",
+			"description": "Range 41 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R42E",
+			"description": "Range 42 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R43E",
+			"description": "Range 43 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R44E",
+			"description": "Range 44 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R45E",
+			"description": "Range 45 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R46E",
+			"description": "Range 46 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R47E",
+			"description": "Range 47 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R48E",
+			"description": "Range 48 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R49E",
+			"description": "Range 49 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R50E",
+			"description": "Range 50 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R51E",
+			"description": "Range 51 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R52E",
+			"description": "Range 52 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R53E",
+			"description": "Range 53 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R54E",
+			"description": "Range 54 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R55E",
+			"description": "Range 55 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R56E",
+			"description": "Range 56 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R57E",
+			"description": "Range 57 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R58E",
+			"description": "Range 58 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R59E",
+			"description": "Range 59 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R60E",
+			"description": "Range 60 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R61E",
+			"description": "Range 61 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R62E",
+			"description": "Range 62 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R63E",
+			"description": "Range 63 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R64E",
+			"description": "Range 64 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R65E",
+			"description": "Range 65 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R66E",
+			"description": "Range 66 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R67E",
+			"description": "Range 67 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R68E",
+			"description": "Range 68 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R37W",
+			"description": "Range 37 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R38W",
+			"description": "Range 38 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R39W",
+			"description": "Range 39 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R40W",
+			"description": "Range 40 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R41W",
+			"description": "Range 41 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R42W",
+			"description": "Range 42 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R43W",
+			"description": "Range 43 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R44W",
+			"description": "Range 44 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R45W",
+			"description": "Range 45 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R46W",
+			"description": "Range 46 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R47W",
+			"description": "Range 47 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R48W",
+			"description": "Range 48 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R49W",
+			"description": "Range 49 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R50W",
+			"description": "Range 50 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R51W",
+			"description": "Range 51 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R52W",
+			"description": "Range 52 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R54W",
+			"description": "Range 54 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R55W",
+			"description": "Range 55 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R56W",
+			"description": "Range 56 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R57W",
+			"description": "Range 57 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R58W",
+			"description": "Range 58 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R59W",
+			"description": "Range 59 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R60W",
+			"description": "Range 60 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R61W",
+			"description": "Range 61 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R62W",
+			"description": "Range 62 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R63W",
+			"description": "Range 63 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R64W",
+			"description": "Range 64 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R65W",
+			"description": "Range 65 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R66W",
+			"description": "Range 66 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R67W",
+			"description": "Range 67 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R68W",
+			"description": "Range 68 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R69W",
+			"description": "Range 69 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R71W",
+			"description": "Range 71 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R72W",
+			"description": "Range 72 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R73W",
+			"description": "Range 73 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R74W",
+			"description": "Range 74 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R75W",
+			"description": "Range 75 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R76W",
+			"description": "Range 76 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R77W",
+			"description": "Range 77 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R78W",
+			"description": "Range 78 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R79W",
+			"description": "Range 79 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R80W",
+			"description": "Range 80 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R81W",
+			"description": "Range 81 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R82W",
+			"description": "Range 82 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R83W",
+			"description": "Range 83 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R84W",
+			"description": "Range 84 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R85W",
+			"description": "Range 85 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R86W",
+			"description": "Range 86 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R87W",
+			"description": "Range 87 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R88W",
+			"description": "Range 88 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R89W",
+			"description": "Range 89 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R90W",
+			"description": "Range 90 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R91W",
+			"description": "Range 91 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R92W",
+			"description": "Range 92 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R93W",
+			"description": "Range 93 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R94W",
+			"description": "Range 94 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R95W",
+			"description": "Range 95 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R96W",
+			"description": "Range 96 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R97W",
+			"description": "Range 97 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R98W",
+			"description": "Range 98 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R99W",
+			"description": "Range 99 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R100W",
+			"description": "Range 100 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R101W",
+			"description": "Range 101 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R70E",
+			"description": "Range 70 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R71E",
+			"description": "Range 71 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R72E",
+			"description": "Range 72 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R73E",
+			"description": "Range 73 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R74E",
+			"description": "Range 74 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R75E",
+			"description": "Range 75 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R76E",
+			"description": "Range 76 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R77E",
+			"description": "Range 77 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R78E",
+			"description": "Range 78 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R79E",
+			"description": "Range 79 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R80E",
+			"description": "Range 80 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R81E",
+			"description": "Range 81 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R82E",
+			"description": "Range 82 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R83E",
+			"description": "Range 83 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R84E",
+			"description": "Range 84 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R85E",
+			"description": "Range 85 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R86E",
+			"description": "Range 86 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R87E",
+			"description": "Range 87 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R88E",
+			"description": "Range 88 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R89E",
+			"description": "Range 89 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R90E",
+			"description": "Range 90 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R91E",
+			"description": "Range 91 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R92E",
+			"description": "Range 92 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R93E",
+			"description": "Range 93 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R94E",
+			"description": "Range 94 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R95E",
+			"description": "Range 95 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R96E",
+			"description": "Range 96 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R97E",
+			"description": "Range 97 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R98E",
+			"description": "Range 98 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R99E",
+			"description": "Range 99 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R100E",
+			"description": "Range 100 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R101E",
+			"description": "Range 101 East. A measure of the distance east from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R103W",
+			"description": "Range 103 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R104W",
+			"description": "Range 104 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R105W",
+			"description": "Range 105 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R106W",
+			"description": "Range 106 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R107W",
+			"description": "Range 107 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R108W",
+			"description": "Range 108 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R109W",
+			"description": "Range 109 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R110W",
+			"description": "Range 110 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R111W",
+			"description": "Range 111 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R112W",
+			"description": "Range 112 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R113W",
+			"description": "Range 113 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R114W",
+			"description": "Range 114 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R115W",
+			"description": "Range 115 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R116W",
+			"description": "Range 116 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R117W",
+			"description": "Range 117 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R118W",
+			"description": "Range 118 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R119W",
+			"description": "Range 119 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R120W",
+			"description": "Range 120 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R121W",
+			"description": "Range 121 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R122W",
+			"description": "Range 122 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R123W",
+			"description": "Range 123 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R124W",
+			"description": "Range 124 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R125W",
+			"description": "Range 125 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R126W",
+			"description": "Range 126 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R127W",
+			"description": "Range 127 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R128W",
+			"description": "Range 128 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R129W",
+			"description": "Range 129 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R130W",
+			"description": "Range 130 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R131W",
+			"description": "Range 131 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R132W",
+			"description": "Range 132 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R133W",
+			"description": "Range 133 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R134W",
+			"description": "Range 134 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R135W",
+			"description": "Range 135 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R136W",
+			"description": "Range 136 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R137W",
+			"description": "Range 137 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R138W",
+			"description": "Range 138 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R139W",
+			"description": "Range 139 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R140W",
+			"description": "Range 140 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R141W",
+			"description": "Range 141 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R142W",
+			"description": "Range 142 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R143W",
+			"description": "Range 143 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R144W",
+			"description": "Range 144 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R145W",
+			"description": "Range 145 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R146W",
+			"description": "Range 146 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R147W",
+			"description": "Range 147 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R148W",
+			"description": "Range 148 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R149W",
+			"description": "Range 149 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R150W",
+			"description": "Range 150 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R151W",
+			"description": "Range 151 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R152W",
+			"description": "Range 152 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R153W",
+			"description": "Range 153 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R154W",
+			"description": "Range 154 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R155W",
+			"description": "Range 155 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R156W",
+			"description": "Range 156 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R157W",
+			"description": "Range 157 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R158W",
+			"description": "Range 158 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R159W",
+			"description": "Range 159 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R160W",
+			"description": "Range 160 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R161W",
+			"description": "Range 161 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R162W",
+			"description": "Range 162 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R163W",
+			"description": "Range 163 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R164W",
+			"description": "Range 164 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R165W",
+			"description": "Range 165 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R166W",
+			"description": "Range 166 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R167W",
+			"description": "Range 167 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R168W",
+			"description": "Range 168 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R169W",
+			"description": "Range 169 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R170W",
+			"description": "Range 170 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R171W",
+			"description": "Range 171 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R172W",
+			"description": "Range 172 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R173W",
+			"description": "Range 173 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R174W",
+			"description": "Range 174 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R175W",
+			"description": "Range 175 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R176W",
+			"description": "Range 176 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R177W",
+			"description": "Range 177 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R178W",
+			"description": "Range 178 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R179W",
+			"description": "Range 179 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R180W",
+			"description": "Range 180 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R181W",
+			"description": "Range 181 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R182W",
+			"description": "Range 182 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R183W",
+			"description": "Range 183 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R184W",
+			"description": "Range 184 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R185W",
+			"description": "Range 185 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R186W",
+			"description": "Range 186 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R187W",
+			"description": "Range 187 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R188W",
+			"description": "Range 188 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R189W",
+			"description": "Range 189 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R190W",
+			"description": "Range 190 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R191W",
+			"description": "Range 191 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R192W",
+			"description": "Range 192 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R193W",
+			"description": "Range 193 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R194W",
+			"description": "Range 194 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R195W",
+			"description": "Range 195 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R196W",
+			"description": "Range 196 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R197W",
+			"description": "Range 197 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R200W",
+			"description": "Range 200 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R201W",
+			"description": "Range 201 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R202W",
+			"description": "Range 202 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R203W",
+			"description": "Range 203 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R204W",
+			"description": "Range 204 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R205W",
+			"description": "Range 205 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R206W",
+			"description": "Range 206 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		},
+		{
+			"trs_range": "R207W",
+			"description": "Range 207 West. A measure of the distance west from the referenced principal meridian, generally in units of six miles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Public_Land_Survey_System"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttrs_range",
+			"label": "Locality Attribute: TRS Ranges",
+			"description": "ranges in the Public Land Survey System"
+		}
+	]
+}

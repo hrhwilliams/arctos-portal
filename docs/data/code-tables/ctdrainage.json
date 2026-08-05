@@ -1,0 +1,143 @@
+{
+	"data": [
+		{
+			"drainage": "Arctic Ocean",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Arkansas River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Atlantic Ocean Slope",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Canadian River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Colorado River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Gila River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Great Basin",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Great Lakes",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Gulf of Mexico",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Guzman Basin",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Mississippi River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Missouri River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Mobile River Basin",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Pacific Ocean Slope",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Pecos River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Rio Grande",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "San Juan River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Tanana River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Tennessee River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Tularosa Basin",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Yukon River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		},
+		{
+			"drainage": "Zuni River",
+			"description": "NO DOCUMENTATION DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5015"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctdrainage",
+			"label": "Locality Attribute: Drainage",
+			"description": "Drainage"
+		}
+	]
+}

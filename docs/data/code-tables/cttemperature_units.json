@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"temperature_units": "celsius",
+			"description": "https://en.wikipedia.org/wiki/Celsius"
+		},
+		{
+			"temperature_units": "kelvin",
+			"description": "https://en.wikipedia.org/wiki/Kelvin"
+		},
+		{
+			"temperature_units": "fahrenheit",
+			"description": "https://en.wikipedia.org/wiki/Fahrenheit"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttemperature_units",
+			"label": "Units of Temperature",
+			"description": "temperature units"
+		}
+	]
+}

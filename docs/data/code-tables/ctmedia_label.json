@@ -1,0 +1,143 @@
+{
+	"data": [
+		{
+			"media_label": "barcode",
+			"description": "Barcode attached to an imaged object, such as Locality Cards",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio original source",
+			"description": "The original source of the audio recording, to indicate whether the recording was originally on a digital track, cassette tape, or reel tape. Examples: \"MVZ digital track Cicero_9Jun2009_Pmaculatus1_CC3660\" or \"MVZ cassette tape ID 300_A\" or \"MVZ reel ID 100_L\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "Stage/Age",
+			"description": "Geological Stage/Age; entered here rather than in geology_attributes primarily as part of the UAM imaging process.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "comment",
+			"description": "General remarks about the media.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "volume number",
+			"description": "The volume number assigned to a field notebook or other multi-page document.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "Formation",
+			"description": "Geological formation; entered here rather than in geology_attributes primarily as part of the UAM imaging process.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "System/Period",
+			"description": "Geological System/Period; entered here rather than in geology_attributes primarily as part of the UAM imaging process.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "MD5 checksum",
+			"description": "MD5  checksum to verify integrity of the file.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio vocal type",
+			"description": "The type of vocalization(s) recorded, e.g., song, call, hoot, whistle, chatter, mixed, etc.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio background vocals",
+			"description": "Comment on other species that can be heard in the background of the audio recording. See also associated_species.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio cues count",
+			"description": "The number of cues recorded for an individual audio cut. Cues are dictated after each vocalization recorded. The total number of cues essentially indicates the number of vocalizations recorded in the file.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "Series/Epoch",
+			"description": "Geological Series/Epoch; entered here rather than in geology_attributes primarily as part of the UAM imaging process.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "title",
+			"description": "Title for multi-page documents such as fieldnotes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "description",
+			"description": "Description of what the Media represents. Used as a \"title\" and in ALT tags.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "made date",
+			"description": "The date/time at which the media object was created.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "aspect",
+			"description": "relationship between specimen and camera",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "page",
+			"description": "Page for multipage documents such as fieldnotes.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio digitization protocol",
+			"description": "Details about the sampling rate, bit rate, compression, recording channels, equipment or digitization service, etc. of the digital audio recording. Examples: \"24 bit/s @ 96000 Hz, uncompressed, mono, digitized by UC Berkeley Language Center\" \"128 kbps@ 48000 Hz, converted from wav by Texas Advanced Computing Center\" \"PCM @ 44100 Hz, uncompressed, mono, Marantz PMD670 digital recorder\" \"PCM-24 @ 44100 Hz, uncompressed, mono, Marantz PMD661 digital recorder\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "media identifier",
+			"description": "An identifier assigned to a media record. Includes \"original image number.\" For MVZ historic images, entry should be \"MVZ XXXX.\" For new MVZ images, entry should be \"MVZ_XXXXX_00001.jpg,\" where XXXXX is the accession number and 00001 is the first of sequentially numbered images associated with that accession.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "video cut number",
+			"description": "The unique cut (i.e., institutional catalog) number for the video recording. Should include institution acronym. Example: MVZ 1.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "audio cut number",
+			"description": "The unique cut (i.e., institutional catalog) number for the audio recording. Should include institution acronym. Example: MVZ 1000. Somehow different than catalog number, all OtherIDs, and image number.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_label": "subject",
+			"description": "General subject of media. For MVZ images, the following subjects are acceptable: [X][X]amphibian[X][X]bird[X][X]building/structure[X][X]data/drawing[X][X]fish[X][X]habitat/landscape[X][X]insect[X][X]invertebrate[X][X]mammal[X][X]map[X][X]people/camp[X][X]plant-annual/perennial[X][X]plant-shrub[X][X]plant-tree[X][X]reptile[X][X]",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmedia_label",
+			"label": "Media: Label Types",
+			"description": "media label type"
+		}
+	]
+}

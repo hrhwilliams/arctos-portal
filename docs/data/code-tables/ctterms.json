@@ -1,0 +1,107 @@
+{
+	"data": [
+		{
+			"terms_id": 1,
+			"display": "DMNS",
+			"description": "Denver Museum of Nature and Science Conditions of Use",
+			"uri": "http://www.dmns.org/conditions-of-use"
+		},
+		{
+			"terms_id": 16,
+			"display": "OGL Terms of Use",
+			"description": "Ocean Genome Legacy Terms of Use. https://github.com/ArctosDB/arctos/issues/6512",
+			"uri": "https://ogl.northeastern.edu/wp-content/uploads/2023/07/OGL-Terms-of-Use.pdf"
+		},
+		{
+			"terms_id": 15,
+			"display": "JSNM Acceptable Use",
+			"description": "Jurica-Suchy Nature Museum at Benedictine University acceptable use policy.",
+			"uri": "http://www.ben.edu/information-technology/upload/Acceptable-Use-of-Technology-Resources.pdf"
+		},
+		{
+			"terms_id": 17,
+			"display": "LEGECC Terms of Use",
+			"description": "Blue Biotechnology and Ecotoxicology Culture Collection (LEGE-CC) Terms of Use | https://github.com/ArctosDB/arctos/issues/7710",
+			"uri": "https://lege.ciimar.up.pt/terms-conditions/"
+		},
+		{
+			"terms_id": 18,
+			"display": "UABB Terms of Use",
+			"description": "Blue Biotechnology and Universidade de Aveiro Coral Collection (UABB) Terms of Use | https://github.com/ArctosDB/arctos/issues/7847",
+			"uri": "https://drive.google.com/file/d/1ru-Vj0ipa686PKLXZF2sj01Lq1-sOjiE/view"
+		},
+		{
+			"terms_id": 19,
+			"display": "CM2C Terms of Use",
+			"description": "Terms and Conditions for the CIIMAR Microbial Culture Collection. https://github.com/ArctosDB/code-table-work/issues/25",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/TermsAndConditionsCM2C.pdf"
+		},
+		{
+			"terms_id": 21,
+			"display": "CCMAR Terms of Use",
+			"description": "CCMAR Biobank Terms of use. https://github.com/ArctosDB/code-table-work/issues/27",
+			"uri": "https://ccmarbiobank.pt/wp-content/uploads/Terms-of-use-CCMAR-Biobank.pdf"
+		},
+		{
+			"terms_id": 28,
+			"display": "MSB Terms of Use",
+			"description": "Museum of Southwestern Biology Terms of Use. (https://github.com/ArctosDB/arctos/issues/8372)",
+			"uri": " http://www.msb.unm.edu/about-us/museum-policies/collections-care-and-use/index.html"
+		},
+		{
+			"terms_id": 22,
+			"display": "S2AQUAcoLAB Terms of Use",
+			"description": "S2AQUA-Biobank Terms of Use. https://s2aquacolab.pt/pt | https://github.com/ArctosDB/code-table-work/issues/69",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/Terms_of_use_S2AQUA_Biobank.pdf"
+		},
+		{
+			"terms_id": 24,
+			"display": "DEEP-Biobank Terms of Use",
+			"description": "DEEP-Biobank Terms of Use. https://github.com/ArctosDB/code-table-work/issues/23",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/TermsandConditions_DEEP_BioBank_CIIMAR.pdf"
+		},
+		{
+			"terms_id": 25,
+			"display": "GreenCoLab (IBAB) Terms of Use",
+			"description": "GreenCoLab's Industrial Biotechnology Algal Bank (IBAB) Terms of Use",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/IBAB_TermsofUse_1124.pdf"
+		},
+		{
+			"terms_id": 26,
+			"display": "TECNICO CC Terms of Use",
+			"description": "TECNICO CC Biobank Terms of Use",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/TECNICO_CCTermsofUse.pdf"
+		},
+		{
+			"terms_id": 14,
+			"display": "Copyright Restricted",
+			"description": "License is restricted to the copyright holder (see Comment). Arctos Consortium cannot license the media.",
+			"uri": "https://www.loc.gov/duplicationservices/copyright/"
+		},
+		{
+			"terms_id": 11,
+			"display": "Arctos Data Ownership and Use",
+			"description": "General Arctos Consortium statement on ownership and use of data.",
+			"uri": "http://arctosdb.org/home/data/"
+		},
+		{
+			"terms_id": 10,
+			"display": "MVZ Terms of Use",
+			"description": "Museum of Vertebrate Zoology General Terms of Use Statement.",
+			"uri": "http://mvz.berkeley.edu/mvzdata_terms"
+		},
+		{
+			"terms_id": 27,
+			"display": "UCM Terms of Use",
+			"description": "Terms of Use for the University of Colorado Museum of Natural History | https://github.com/ArctosDB/code-table-work/issues/104",
+			"uri": "https://web.corral.tacc.utexas.edu/arctos/community/UCM_Terms_of_Use.pdf"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctterms",
+			"label": "Usage: Terms",
+			"description": "Terms are supplemental documents intended to clarify licenses, and inform users how to best comply with license requirements. Collections may create their own Terms documents, but an Arctos-wide approach is strongly encouraged where possible. Terms should not be confused or confounded with data licenses, loan policies, or loan agreements. Must have a URL to a more or less stable document (no google docs please!). Online hosting is available."
+		}
+	]
+}

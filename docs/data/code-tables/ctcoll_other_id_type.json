@@ -1,0 +1,266 @@
+{
+	"data": [
+		{
+			"other_id_type": "Arctos record GUID",
+			"description": "Arctos record identifiers or GUIDs (of Arctos collections) when used as identifiers, are used primarily to form relationships. Only Arctos record identifiers may be used here; Arctos record identifiers cannot be used with other identifier types, except Arctos:Entity when used as Organism ID. Automation will correct issued_by agent, and will estimate the DarwinCore triplet rather than GUID if provided.",
+			"category": "type A"
+		},
+		{
+			"other_id_type": "identifier",
+			"description": "This type is proper for a wide range and majority of identifiers. Most should be disambiguated by the agent that issued them (Issued by agent). Resolvable identifiers which are less-precise than \"Arctos record GUID\" or \"Organism ID\" belong here. ",
+			"category": "type A"
+		},
+		{
+			"other_id_type": "BSC",
+			"description": "Bird Specimen Catalog used by University of Montana Zoological Museum. Auto-linked to Agent https://arctos.database.museum/agent/21369127 | https://github.com/ArctosDB/code-table-work/issues/108",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "DZTB",
+			"description": "Denver Zoology Tissue Bird catalog number. Auto-linked to Agent https://arctos.database.museum/agent/21347745. https://github.com/ArctosDB/arctos/issues/5912",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "DZTH",
+			"description": "Denver Zoology Tissue Herpetology catalog number. Auto-linked to Agent https://arctos.database.museum/agent/21347746. https://github.com/ArctosDB/arctos/issues/5913",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "DZTM",
+			"description": "Denver Zoology Tissue Mammalogy catalog number. Auto-linked to Agent https://arctos.database.museum/agent/21347747. https://github.com/ArctosDB/arctos/issues/5905",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "IF",
+			"description": "The IF number was created and assigned by the Joseph A. Cook lab during his tenure at University of Idaho, 2000-2003. Auto-linked to Agent https://arctos.database.museum/agent/21347755. https://github.com/ArctosDB/arctos/issues/6373",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "MSC",
+			"description": "Mammal Specimen Catalog used by University of Montana Zoological Museum, Auto-linked to Agent https://arctos.database.museum/agent/21369129 | https://github.com/ArctosDB/code-table-work/issues/108",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UCM PEE",
+			"description": "University of Colorado Museum Public Education and Exhibition Collection identifier.  Auto-linked to Agent https://arctos.database.museum/agent/21369134. https://github.com/ArctosDB/arctos/issues/5980",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UCM TC",
+			"description": "University of Colorado Museum Synoptic Teaching Collection identifier. Auto-linked to Agent https://arctos.database.museum/agent/21369133. https://github.com/ArctosDB/arctos/issues/5981",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "WK",
+			"description": "University of Wisconsin Karyotype Number. A frozen tissue collection number for University of Wisconsin Zoological Museum. Auto-linked to Agent https://arctos.database.museum/agent/21369131. https://github.com/ArctosDB/arctos/issues/5082",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "preparator number",
+			"description": "Type traditionally used to refer to a record in the catalog of a person listed as a preparator of a specimen. Treated as a label. ",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "trapline identifier",
+			"description": "DO NOT USE: misuse of field number or collecting event identifier",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "vessel identifier",
+			"description": "DO NOT USE: misuse of field number or agent ",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "Organism ID",
+			"description": "Identifier representing a DWC:Organism or individual, generally one comprised of multiple catalog records (which represent DWC:Occurrences). An Arctos:Entity GUID may be useful here.",
+			"category": "type A"
+		},
+		{
+			"other_id_type": "USNM: National Museum of Natural History",
+			"description": "Nonspecific identifier somehow involving National Museum of Natural History, Smithsonian Institution. Auto-linked to Agent https://arctos.database.museum/agent/21281779.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "AF",
+			"description": "Alaska Frozen Tissue Collection, University of Alaska Museum of the North, Fairbanks, Alaska. Auto-linked to Agent https://arctos.database.museum/agent/21369125.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "ASK",
+			"description": "Angelo State University Karytoype Number, a frozen tissue collection number for the Angelo State Natural History Collections. Auto-linked to Agent https://arctos.database.museum/agent/21352412.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "KT",
+			"description": "Kansas State Biorepository, Kansas Tissue Number. Auto-linked to Agent https://arctos.database.museum/agent/21369128 | https://github.com/ArctosDB/code-table-work/issues/52",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "NK",
+			"description": "\"New Mexico Karyotype Number,\" a frozen tissue collection number for the Museum of Southwestern Biology. Auto-linked to Agent https://arctos.database.museum/agent/21350608",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "studbook",
+			"description": "DO NOT USE: misuse of identifier. A breed registry, herdbook, or register; an official list of animals within a specific breed whose parents are known. May be used by endangered species recovery programs, zoos, and other breeding facilities to document the pedigree and entire demographic history of each animal within a managed population. Github Issue - https://github.com/ArctosDB/arctos/issues/6252",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "ADFG: Alaska Department of Fish and Game",
+			"description": "Any number assigned by Alaska Department of Fish and Game, including skull and skin seals. Auto-linked to Agent https://arctos.database.museum/agent/9. Recommendation: Use a meaningful type and a better-precision Agent.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "AHRS (Alaska Heritage Resources Survey)",
+			"description": "Alaska Heritage Resources Survey (http://dnr.alaska.gov/parks/oha/ahrs/ahrs.htm). Auto-linked to Agent https://arctos.database.museum/agent/21347725.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "AMMTAP: Alaska Marine Mammal Tissue Archival Project",
+			"description": "Alaska Marine Mammal Tissue Archival Project. A combined effort of the National Marine Fisheries Service and the U. S. Bureau of Standards. Auto-linked to Agent https://arctos.database.museum/agent/21347733",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "ALAAC",
+			"description": "ALA accession. ALA is the official acronym given to the University of Alaska Museum Herbarium in the list of the World's herbaria published by the International Association for Plant Taxonomy (Holmgren, P. K., N. H. Holmgren, and L. C. Barnett. 1990. Auto-linked to Agent https://arctos.database.museum/agent/21369126",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UTF",
+			"description": "Utah Museum of Natural History Field Number. Auto-linked to Agent https://arctos.database.museum/agent/21369132.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "collector number",
+			"description": "Type traditionally used to refer to a record in the catalog of a person listed as a collector of a specimen. Treated as a label. ",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "local ID",
+			"description": "An identifier typically used internally for animals in the care of zoos participating in the Species360 ZIMS database. Treated as a label. | https://github.com/ArctosDB/arctos-roadmap/issues/13",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "DGR: Division of Genomic Resources (MSB)",
+			"description": "Collection of frozen tissues at the Museum of Southwestern Biology, University of New Mexico, Albuquerque. Auto-linked to Agent https://arctos.database.museum/agent/21369175",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "NEON: National Ecological Observatory Network",
+			"description": "Collection numbers assigned to specimens by the National Ecological Observatory Network. Auto-linked to Agent https://arctos.database.museum/agent/21259997",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "processing number",
+			"description": "Misuse of various types and issuers. Treated as a label.  https://github.com/ArctosDB/arctos/issues/5083",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "NEON sample ID",
+			"description": "National Ecological Observatory Network (NEON) sample ID, for specimen parts, including blood, hair, fecal, tissue, etc. https://github.com/ArctosDB/arctos/issues/5738. Auto-linked to Agent https://arctos.database.museum/agent/21369130",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "OWMZ: Ohio Wesleyan Museum of Zoology",
+			"description": "Ohio Wesleyan Museum of Zoology, Delaware, Ohio. Auto-linked to Agent https://arctos.database.museum/agent/21317740",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UWYMV Historia Catalog Vertebrate",
+			"description": "Original catalog number (\"HCV\" numbers) given to mostly salvaged specimens prepared by students in the University of Wyoming Museum of Vertebrates prep lab. All specimens with a HCV number are recorded in a catalog that is maintained in the museum's prep lab. Auto-linked to Agent https://arctos.database.museum/agent/21347673",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "barcode",
+			"description": "Inconsistent replication of specimen part barcodes. Treated as a label.",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "institutional catalog number",
+			"description": "Identifier originating in something that someone has considered to be an institution. Treated as a label. For useful data, use type `identifier` and express \"institutionhood\" in the Issued By agent record. Treated as a label.",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "Locality ID",
+			"description": "Misuse of field number. Inconsistent replication of a locality or collecting event IDs. In paleontology, often referred to as \"site number\".  Roughly corresponds with collecting event.  Treated as a label. ",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "UUID",
+			"description": "Universal Unique Identifier. Used for many purposes; some are minted by Arctos for the purposes of linking/extending to data which do not yet have resolvable identifiers.",
+			"category": "type A"
+		},
+		{
+			"other_id_type": "USFWS: U.S. Fish and Wildlife Service",
+			"description": "U.S. Fish and Wildlife Service. Auto-linked to Agent https://arctos.database.museum/agent/3679",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UWYMV Frozen Tissue Collection",
+			"description": "Tissue collection number for the University of Wyoming Museum of Vertebrates. Separate number prefixes are used for birds (B), mammals (M), herps (H), and fish (F). Auto-linked to Agent https://arctos.database.museum/agent/21327800",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "UAM:Arc Locality ID",
+			"description": "DO NOT USE: UAM Archeology site name. https://github.com/ArctosDB/arctos/issues/5831",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "USNPC: United States National Parasite Collection",
+			"description": "United States National Parasite Collection, U. S. Department of Agriculture, Beltsville, Maryland. Called accession number there, but functions as their catalog number. Auto-linked to Agent https://arctos.database.museum/agent/21334507.",
+			"category": "type B"
+		},
+		{
+			"other_id_type": "U. S. National Park Service accession",
+			"description": "United States National Park Service accession number. Denormalized data; suggest cleanup and migration to type B.",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "U. S. National Park Service catalog",
+			"description": "United States National Park Service catalog number. Denormalized data; suggest cleanup and migration to type B.",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "GAN",
+			"description": "DO NOT USE: misuse of Identifier. [ GAN (Global Accession Number) as a global zoo organism ID. This may be assigned to an individual or a group of individuals. http://training.species360.org/Documents/Modules/Best%2520Practices%2520in%2520Animal%2520Record%2520Keeping.pdf | https://github.com/ArctosDB/arctos/issues/1977.]",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "lot number",
+			"description": "Probable misuse of field number. Treated as a label.  ",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "field number",
+			"description": "Field number, aka station number (typically applied to ship/marine collections) is intended to be an identifier assigned to a collecting event. Treated as a label. Sometimes used as a synonym of collector number, and may reference collector's notes. Fish collections/collectors use the standard for field numbers set by Hubbs and Lagler, 1947--- i.e., an alphanumeric with collector's initials, last two digits of year, and 001 to infinity...then start again next year (001 to ?). E.g., AMS17-021. Treated as a label.",
+			"category": "type C"
+		},
+		{
+			"other_id_type": "ear tag",
+			"description": "Treated as a label. Media; as useful as \"ink on paper.\"",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "pit tag",
+			"description": "Treated as a label. Media; as useful as \"ink on paper.\"",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "trap number",
+			"description": "DO NOT USE: misuse of field number. \"Sub-field number\" assigned to traps or other capture apparatus when a locality or event encompasses multiple such devices. Several individuals or cataloged items may share both this identifier and any of field number, collecting event nickname, or locality nickname. The use of more precise locality and/or event data should be heavily preferred when possible.",
+			"category": "type D"
+		},
+		{
+			"other_id_type": "creator number",
+			"description": "Type traditionally used to refer to a record in the catalog of a person listed as a creator of a object. Treated as a label. | https://github.com/ArctosDB/arctos-roadmap/issues/13 | https://github.com/ArctosDB/arctos/issues/4488",
+			"category": "type C"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcoll_other_id_type",
+			"label": "Identifier Types",
+			"description": "Types of identifiers assigned to catalog records that are useful when a specific Issued By agent is assigned to the identifier value. Broadly, Identifiers that are URL (web links) conform to the Extended Specimen Network concept (Type A) and all others do not. See https://handbook.arctosdb.org/documentation/identifiers.html for more information and usage guidelines."
+		}
+	]
+}

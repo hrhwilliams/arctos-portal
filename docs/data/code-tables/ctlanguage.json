@@ -1,0 +1,25 @@
+{
+	"data": [
+		{
+			"language": "English",
+			"description": "English; see also https://iso639-3.sil.org/code/eng",
+			"search_terms": "Englisch,Inglese,Inglés,Yīngyǔ,英语",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/53"],
+			"documentation_url": ["https://glottolog.org/resource/languoid/id/stan1293"]
+		},
+		{
+			"language": "German",
+			"description": "German; see also https://iso639-3.sil.org/code/deu",
+			"search_terms": "DE,Deutsch,Nyhøytysk,allemand",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/98"],
+			"documentation_url": ["https://glottolog.org/resource/languoid/id/stan1295"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlanguage",
+			"label": "Collection Object Attribute: language",
+			"description": "Language of record as registered on Glottolog, https://glottolog.org/."
+		}
+	]
+}

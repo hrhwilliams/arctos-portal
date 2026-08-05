@@ -1,0 +1,245 @@
+{
+	"data": [
+		{
+			"crystal_habit": "acicular",
+			"description": "Needle-like, slender and/or tapered such as natrolite or rutile.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "amygdaloidal",
+			"description": "Like embedded almonds such as heulandite and subhedral zircon.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "bladed",
+			"description": "Blade-like, slender and flattened such as actinolite and kyanite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "columnar",
+			"description": "Similar to fibrous: Long, slender prisms often with parallel growth such as calcite, gypsum/selenite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "coxcomb",
+			"description": "Aggregated flaky or tabular crystals closely spaced such as barite and marcasite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "cubic",
+			"description": "Cube shape such as pyrite, galena or halite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "dendritic",
+			"description": "Also arborescent. Tree-like, branching in one or more direction from central point such as romanechite, magnesite or native copper.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "dodecahedral",
+			"description": "Rhombic dodecahedron, 12-sided such as garnet.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "druse",
+			"description": "Also drusy or encrustation. Aggregate of minute crystals coating a surface or cavity such as uvarovite, malachite or azurite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "enantiomorphic",
+			"description": "Mirror-image habit (i.e. crystal twinning) and optical characteristics; right- and left-handed crystals such as quartz, plagioclase or staurolite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "fibrous",
+			"description": "Extremely slender prisms such as serpentine group, tremolite (i.e. asbestos).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "filiform",
+			"description": "Also capillary. Hair-like or thread-like, extremely fine such as many zeolites.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "foliated",
+			"description": "Also micaceous or lamellar (layered). Layered structure, parting into thin sheets such as muscovite and biotite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "granular",
+			"description": "Aggregates of anhedral crystals in matrix such as bornite and scheelite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "hemimorphic",
+			"description": "Doubly terminated crystal with two differently shaped ends such as hemimorphite and elbaite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "hexagonal",
+			"description": "Hexagon shape, six-sided such as quartz and hanksite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "hopper crystals",
+			"description": "Like cubic, but outer portions of cubes grow faster than inner portions, creating a concavity such as halite, calcite or synthetic bismuth.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "mammillary",
+			"description": "Breast-like: surface formed by intersecting partial spherical shapes, larger version of botryoidal, also concentric layered aggregates such as malachite and hematite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "botryoidal",
+			"description": "Globular or grape-like, hemispherical masses such as hematite, pyrite, malachite, smithsonite, or hemimorphite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "massive",
+			"description": "Also compact massive Shapeless, no distinctive external crystal shape such as limonite, turquoise, cinnabar or realgar.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "nodular",
+			"description": "Also tuberose. Deposit of roughly spherical form with irregular protuberances such as chalcedony.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "platy",
+			"description": "Flat, tablet-shaped, prominent pinnacoid such as wulfenite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "plumose",
+			"description": "Fine, feather-like scales such as aurichalcite, boulangerite or mottramite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "prismatic",
+			"description": "Elongate, prism-like: well-developed crystal faces parallel to the vertical axis such as tourmaline and beryl.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "pseudo-hexagonal",
+			"description": "Hexagonal appearance due to cyclic twinning such as aragonite and chrysoberyl.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "radiating",
+			"description": "Also radial or divergent. Radiating outward from a central point without producing a star (crystals are generally separated and have different lengths) such as stibnite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "reniform",
+			"description": "Also colloform. Similar to botryoidal/mamillary: intersecting kidney-shaped masses such as hematite, pyrolusite or greenockite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "reticulated",
+			"description": "Crystals forming net-like intergrowths such as cerussite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "rosette",
+			"description": "Also lenticular (lens shaped crystals). Platy, radiating rose-like aggregate such as gypsum and, barite (i.e. desert rose).",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "sphenoid",
+			"description": "Wedge-shaped such as sphene.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "stalactitic",
+			"description": "Forming as stalactites or stalagmites; cylindrical or cone-shaped such as calcite, goethite or malachite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "stellate",
+			"description": "Star-like, radial aggregates radiating from a \"star\"-like point to produce gross spheres (crystals are not or weakly separated and have similar lengths) such as pyrophyllite, aragonite, wavellite and pyrite suns.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "striated",
+			"description": "Not a habit per se, but a condition of lines that can grow on certain crystal faces on certain minerals such as tourmaline, pyrite, quartz, feldspar and sphalerite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "tabular",
+			"description": "Also stubby or blocky. More elongated than equant, slightly longer than wide, flat tablet-shaped such as feldspar and topaz.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "tetrahedral",
+			"description": "Tetrahedra-shaped crystals such as tetrahedrite, spinel and magnetite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "wheat sheaf",
+			"description": "Aggregates resembling hand-reaped wheat sheaves such as stilbite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "octahedral",
+			"description": "Octahedron, eight-sided (two pyramids base to base) such as diamond and magnetite.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"crystal_habit": "aggregate",
+			"description": "In mineralogy and petrology, an aggregate is a mass of mineral crystals, mineraloid particles or rock particles.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Aggregate_(geology)"]
+		},
+		{
+			"crystal_habit": "asbestiform",
+			"description": "a mineral that forms long fibres that are flexible, of high tensile strength, and form in fibrous aggregates of thin crystals that readily separate.",
+			"issue_url": "",
+			"documentation_url": ["https://www.mindat.org/glossary/asbestiform"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctcrystal_habit",
+			"label": "Collection Object Attribute: Crystal Habits",
+			"description": "crystal habit"
+		}
+	]
+}

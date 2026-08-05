@@ -1,0 +1,234 @@
+{
+	"data": [
+		{
+			"examined_detected": "ectoparasite: fly",
+			"description": "Flies are insects in the order Diptera. Specify specific type (e.g. bat flies, bot flies, etc) and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6502"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "bacteria: Francisella tularensis",
+			"description": "A nonspore-forming, nonmotile, gram-negative bacterial causative agent for the disease tularemia.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8617"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Francisella_tularensis",
+				"https://en.wikipedia.org/wiki/Tularemia"
+			]
+		},
+		{
+			"examined_detected": "ectoparasite",
+			"description": "Use a more specific term if known. Unspecified parasites that live on or embedded in the body surface of the host, including, but not limited to fleas, ticks, mites, lice, and diptera.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6233"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "ectoparasite: flea",
+			"description": "Fleas are ectoparasitic insects in the order Siphonaptera. Specify specific type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6503"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "microbiome",
+			"description": "The microbiome is a community of microorganisms (microbiota) that can usually be found living together in any given habitat, such as in the digestive tract, on the skin, or in a cave deposit; includes bacteria, archaea, fungi, algae, small protists and potentially viruses and other genetic elements. For specific communities, such as fungal mycobiomes, include detail in Methods.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6269"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Microbiome"]
+		},
+		{
+			"examined_detected": "ectoparasite: louse",
+			"description": "Lice are wingless parasitic insects in the clade Phthiraptera. Specify specific type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6504"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "ectoparasite: mite",
+			"description": "Ectoparasitic mites are arachnids in the orders Acariformes and Parasitiformes (exclusive of ticks, use ectoparasite: tick for known ticks). Specify specific type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6506"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "ectoparasite: mite or tick",
+			"description": "Unable to determine if the detected item is a mite or tick. Use a more specific value (mite or tick) if known.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6505"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "ectoparasite: tick",
+			"description": "Ticks are parasitic arachnids in the order Ixodida. Specify specific type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6507"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "endoparasite",
+			"description": "Use a more specific term if known. Unspecified parasites that live inside the host, including, but not limited to  helminths and blood parasites.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6232"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "fungi: Coccidioides",
+			"description": "Coccidioides is a genus of dimorphic ascomycete fungi in the family Onygenaceae. Member species are the cause of coccidioidomycosis, also known as San Joaquin Valley fever, an infectious fungal disease largely confined to the Western Hemisphere and endemic in the Southwestern United States.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6267"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Coccidioides"]
+		},
+		{
+			"examined_detected": "isotopic signature",
+			"description": "An isotopic signature (also isotopic fingerprint) is a ratio of non-radiogenic 'stable isotopes', stable radiogenic isotopes, or unstable radioactive isotopes of particular elements in an investigated material. The ratios of isotopes in a sample material are measured by isotope-ratio mass spectrometry against an isotopic reference material. This process is called isotope analysis.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/80"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Radioactive",
+				"https://en.wikipedia.org/wiki/Radiogenic_nuclide",
+				"https://en.wikipedia.org/wiki/Stable_isotope_ratio"
+			]
+		},
+		{
+			"examined_detected": "parasite",
+			"description": "A parasite is an organism that benefits at the expense of another organism of a different species (the host). Use this term only when more specific information on the type of parasite is not available.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6262"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "pathology",
+			"description": "Use a more specific value if known. Abnormalities that may be markers of disease or injury.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6120"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "pathology: skeletal",
+			"description": "Non-normal skeletal conditions that may include lytic, proliferative and deformative lesions, as well as accessory bones, non- fusion anomalies and antemortem trauma.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6119"],
+			"documentation_url": ""
+		},
+		{
+			"examined_detected": "PFAS",
+			"description": "Per- and polyfluoroalkyl substances (PFAS), so-called \"forever chemicals\" that are persistent environmental pollutants;",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6265"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances"]
+		},
+		{
+			"examined_detected": "virus: Borealpox",
+			"description": "Borealpox virus is a species of the Orthopoxvirus genus first documented in 2015 in Alaska, United States as Alaskapox. It is known to infect mammals, especially small mammals, as well as humans.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7632"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Alaskapox_virus",
+				"https://health.alaska.gov/dph/Epi/id/Pages/Borealpox.aspx"
+			]
+		},
+		{
+			"examined_detected": "virus: Orthohantavirus",
+			"description": "Orthohantavirus is a genus of single-stranded, enveloped, negative-sense RNA viruses in the family Hantaviridae within the order Bunyavirales. Members of this genus may be called orthohantaviruses or simply hantaviruses.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Bunyavirales",
+				"https://en.wikipedia.org/wiki/Hantaviridae",
+				"https://en.wikipedia.org/wiki/Negative-sense",
+				"https://en.wikipedia.org/wiki/Orthohantavirus",
+				"https://en.wikipedia.org/wiki/RNA_virus"
+			]
+		},
+		{
+			"examined_detected": "virus: Rabies",
+			"description": "Rabies virus, scientific name Rabies lyssavirus, is a neurotropic virus that causes rabies in animals, including humans.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rabies_virus"]
+		},
+		{
+			"examined_detected": "virus: SARS-CoV-2",
+			"description": "Severe acute respiratory syndrome coronavirus 2. A strain of coronavirus that causes COVID-19 (coronavirus disease 2019).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6117"],
+			"documentation_url": ["https://ictv.global/taxonomy/taxondetails?taxnode_id=202201868"]
+		},
+		{
+			"examined_detected": "endoparasite: cestode",
+			"description": "Cestodes are endoparasitic flatworms in the class Cestoda (phylum: Platyhelminthes). Commonly known as tapeworms. Specify type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9656"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cestoda"]
+		},
+		{
+			"examined_detected": "endoparasite: nematode",
+			"description": "Nematodes are endoparasitic roundworms in the phylum Nematoda. Specify type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9656"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Nematode"]
+		},
+		{
+			"examined_detected": "DNA",
+			"description": "Deoxyribonucleic acid or DNA is the double-helix polynucleotide chain carrying genetic information. Records examined for DNA may or may not have a specific target organism. Specify testing methods, any species, and results or references in Methods and Remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos-roadmap/issues/22"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/DNA"]
+		},
+		{
+			"examined_detected": "toxin",
+			"description": "Unspecified naturally occurring poison produced by metabolic activities of living cells or organisms. Specify the exact toxin examined or detected in Method. For example: neurotoxin, a toxin that is destructive to nerve tissue (causing neurotoxicity). Or better, specify the toxin such as Domoic acid (DA)- a kainic acid-type neurotoxin that causes amnesic shellfish poisoning (ASP). Links to published methods or results encouraged.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Domoic_acid",
+				"https://en.wikipedia.org/wiki/Neurotoxin",
+				"https://en.wikipedia.org/wiki/Toxin"
+			]
+		},
+		{
+			"examined_detected": "arsenic",
+			"description": "Arsenic is a chemical element with the symbol As and the atomic number 33. Arsenic is a toxic heavy metal.",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Arsenic"]
+		},
+		{
+			"examined_detected": "fungi: Batrachochytrium dendrobatidis",
+			"description": "Batrachochytrium dendrobatidis (Fungi: Chytridiomycota: Rhizophydiales), often denoted as “Bd”, is a zoosporic fungus that causes the disease chytridiomycosis, or chytrid, (World Organisation for Animal Health Manual of Diagnostic Tests for Aquatic Animals, 2021). The epiderma of the amphibian is the major targeted organ, with clinical signs of chytridiomycosis being skin redness and thickening, and excess sloughing of skin from the epidermal surface, especially from ventral surfaces of the abdomen, limbs and feet (Berger et al., 2005a; 2005b; Pessier et al., 1999). In extreme cases, chytridiomycosis can impact key regulatory biophysical systems, leading to weight loss, lethargy, limb locking, and eventual heart failure. References: World Organisation for Animal Health (WOAH). 2021. Manual of diagnostic tests for aquatic animals: Chapter 2.1.1.—infection with Batrachochytrium dendrobatidis. Manual of Diagnostic Tests for Aquatic Animals. Berger L., Hyatt A., Speare R., Longcore J. (2005a). Life cycle stages of Batrachochytrium dendrobatidis. Longcore et al. 1999, the amphibian chytrid. Dis. Aquat. Org., 68, 51–63. Berger L., Speare R., Skerratt L. (2005b). Distribution of Batrachochytrium dendrobatidis and pathology in the skin of green tree frogs (Litoria caerulea) with severe chytridiomycosis. Dis. Aquat. Org., 68, 65–70.[X][X]Pessier A.P., Nichols D.K., Longcore J.E., Fuller M.S. (1999). Cutaneous chytridiomycosis in poison dart frogs (Dendrobates spp.) and White’s tree frogs (Litoria caerulea). J. Vet. Diagn. Invest., 11, 194–199.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/143"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Batrachochytrium_dendrobatidis",
+				"https://www.woah.org/fileadmin/Home/eng/Health_standards/aahm/current/2.1.01_Bdendro.pdf"
+			]
+		},
+		{
+			"examined_detected": "fungi: Ophidiomyces",
+			"description": "Snake Fungal Disease (SFD) is caused by the fungus _Ophidiomyces ophiodiicola_ in the Nannizziopsiaceae within the Ascomycota. Clinical signs of SFD include: accelerated ecdysis cycles, epidermal flaking and crusting, displaced and/or discolored scales, granulomas, nodules, and swelling or disfiguration of infected tissues. References: Lorch JM, Knowles S, Lankton JS, Michell K, Edwards JL, Kapfer JM, Staffen RA, Wild ER, Schmidt KZ, Ballmann AE, Blodgett D, Farrell TM, Glorioso BM, Last LA, Price SJ, Schuler KL, Smith CE, Wellehan JF Jr, Blehert DS. Snake fungal disease: an emerging threat to wild snakes. Philos Trans R Soc Lond B Biol Sci. 2016 Dec 5;371(1709):20150457. doi: 10.1098/rstb.2015.0457. Documentation: Baker, Sarah J., et al. \"Case definition and diagnostic testing for snake fungal disease.\" Herpetological Review 50.2 (2019): 279-285.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/88"],
+			"documentation_url": [
+				"https://experts.illinois.edu/en/publications/case-definition-and-diagnostic-testing-for-snake-fungal-disease"
+			]
+		},
+		{
+			"examined_detected": "virus",
+			"description": "A submicroscopic infectious agent consisting of a segment of nucleic acid (either DNA or RNA) surrounded by a protein coat. Viruses replicate only inside living cells. Describe specific assay or virus in the Methods and Remarks unless already available in this code table. (e.g., EHDV or Epizootic hemorrhagic disease virus).",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8419"],
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Virus",
+				"https://www.genome.gov/genetics-glossary/Virus"
+			]
+		},
+		{
+			"examined_detected": "endoparasite: trematode",
+			"description": "rematodes are endoparasitic flatworms in the class Trematoda (phylum: Platyhelminthes), commonly known as flukes. Specify type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9656"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Trematoda"]
+		},
+		{
+			"examined_detected": "endoparasite: acanthocephalan",
+			"description": "Acanthocephalans are endoparasitic worms in the phylum Acanthocephala, commonly known as thorny-headed or spiny-headed worms. Specify type and life stage if known in methods/remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9656"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Acanthocephala"]
+		},
+		{
+			"examined_detected": "bacteria",
+			"description": "Bacteria refers to the mostly free-living, mostly single cell organisms that are ubiquitous occurring in every possible habitat. Bacteria that are tested in biological records are usually the pathogenic species (e.g. any of the 66 species of bacterial spirochaete that cause Leptospirosis). Specify testing methods, species and disease in Methods and Remarks.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://en.wikipedia.org/wiki/Bacteria",
+				"https://en.wikipedia.org/wiki/Leptospirosis"
+			]
+		},
+		{
+			"examined_detected": "fungi",
+			"description": "Fungi comprise a Kingdom of eukaryotic, heterotrophic organisms including yeast, mold, and mushrooms. Records examined for fungi may not have a specific target organism. Use a more specific term if known. Specify testing methods, any species and references in Methods and Remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos-roadmap/issues/22"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Fungus"]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctexamined_detected",
+			"label": "Collection Object Attribute: Examined and Detected Values",
+			"description": "Examination for or detection of a condition, pathogen, organism, or substance associated with the cataloged record. Terms should be as general as possible (and accompanied by clarifying remarks and method). More specific terms require a compelling functional need (such as being significant human pathogens). The agent (_e. g._, Bacteria: Francisella tularensis) rather than the effects (_e. g._, tularemia) should be listed. \r\n\r\nExamined/Detected data are primarily useful in organizing, summarizing, and discovering additional evidence, which is often in various states of processing, sometimes across many nodes or systems. This node is **not** capable of carrying evidence; these data **cannot** be Research Grade by themselves. These data (when possible) should be accompanied by parts with specific attributes, relationships to other cataloged items, or other forms of direct evidence of the assertions made here.\r\n\r\nMore information: https://handbook.arctosdb.org/best_practices/examined.html"
+		}
+	]
+}

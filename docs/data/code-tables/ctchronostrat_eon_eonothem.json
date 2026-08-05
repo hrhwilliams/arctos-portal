@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"chronostrat_eon_eonothem": "Phanerozoic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Phanerozoic\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_eon_eonothem": "Archean",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Archean\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_eon_eonothem": "Proterozoic",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Proterozoic\">Wikipedia</a>"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_eon_eonothem",
+			"label": "Locality Attribute: Eons/Eonothems",
+			"description": "Eons/Eonothems included in the International Chronostratigraphic Chart."
+		}
+	]
+}

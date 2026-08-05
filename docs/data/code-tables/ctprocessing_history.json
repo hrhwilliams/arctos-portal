@@ -1,0 +1,71 @@
+{
+	"data": [
+		{
+			"processing_history": "cataloged",
+			"description": "Information pertaining to any cataloging event, generally when and by whom the record was cataloged (often in a written ledger). Method should be used to record the type of catalog recording made (for example, \"cataloged in a physical ledger\", \"cataloged in a digital ledger\", or \"entered into Specify\"). Date should be the date the cataloging event took place and determiner should be the Arctos Agent who performed the cataloging.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4978"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "digitized",
+			"description": "The cataloged object's analog information has been converted into a digital format.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7790"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "image confirmed",
+			"description": "The determiner has examined the image and confirmed that the identifier(s) on the image match the record.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/138"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "inventoried",
+			"description": "The object(s) were included in an inventory by the determining agent on the determination date.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4541"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "label transcribed",
+			"description": "all inscriptions attached to this object have been transcribed.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4538"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "needs reimaging",
+			"description": "Media for this record are of poor quality and the object should be re-imaged.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6432"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "prepared",
+			"description": "Information pertaining to the manipulation of the cataloged parts as a whole to make them ready for use in education, exhibition or research.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7185"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "transcribed from ledger",
+			"description": "all information recorded in a ledger or catalog attached to this object have been transcribed.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4538"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "verified presence",
+			"description": "The presence of the object was verified by the determining agent on the determination date.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4541"],
+			"documentation_url": ""
+		},
+		{
+			"processing_history": "verified to source",
+			"description": "Data in this catalog record have been checked against ledger, catalog, field notes, or other primary source data. The specific source should be recorded in Remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/4538"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctprocessing_history",
+			"label": "Collection Object Attribute: Processing History Values",
+			"description": "Curatorial or collections management actions related to a cataloged object. Some actions, especially when related to physical curation, may be more applicable to record as as part attributes."
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"media_type": "CT scan",
+			"description": "Media representing a computed tomography scan, including derivatives.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "multi-page document",
+			"description": "A set of pages in JPG format which can be displayed as a document in Arctos. DO NOT use this for things like PDFs, which are media type \"text.\"",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "image",
+			"description": "An image of any MIME type, including one embedded in an external application",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "audio",
+			"description": "An audio file of any MIME type, including one embedded in an external application",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "video",
+			"description": "A video file of any MIME type, including one embedded in an external application",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "text",
+			"description": "A text file of any MIME type, including one embedded in an external application",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"media_type": "3D model",
+			"description": "A mathematical coordinate-based representation of the surface of an object. Applicable to models created using methods such as photogrammetry, CT scanning, and laser surface scanning.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctmedia_type",
+			"label": "Media: Types",
+			"description": "media type"
+		}
+	]
+}

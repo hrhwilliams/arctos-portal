@@ -1,0 +1,23 @@
+{
+	"data": [
+		{
+			"conductivity_units": "uS/cm",
+			"description": "microsiemens per centimeter"
+		},
+		{
+			"conductivity_units": "S/m",
+			"description": "siemens per meter"
+		},
+		{
+			"conductivity_units": "mS/cm",
+			"description": "millisiemens per centimeter"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctconductivity_units",
+			"label": "Collection Object Attribute: Conductivity Units",
+			"description": "units of conductivity"
+		}
+	]
+}

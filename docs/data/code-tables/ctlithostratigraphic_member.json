@@ -1,0 +1,3129 @@
+{
+	"data": [
+		{
+			"lithostratigraphic_member": "Abo Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://geoinfo.nmt.edu/publications/periodicals/nmg/29/n1/nmg_v29_n1_p3.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cliffhouse Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "D-Cross Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/7604"]
+		},
+		{
+			"lithostratigraphic_member": "De-na-zin Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Kirtland_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Fite Ranch Sandstone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Golden Gate Reef Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Tamiami_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Groveton Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://pubs.usgs.gov/of/2002/of02-437/of02437.pdf"]
+		},
+		{
+			"lithostratigraphic_member": "Lower Chloritic Marl",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "McGaffey Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://geoinfo.nmt.edu/publications/periodicals/nmg/17/n1/nmg_v17_n1_p8.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Mulatto Tongue Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/72338"]
+		},
+		{
+			"lithostratigraphic_member": "Atrasado Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/68793"]
+		},
+		{
+			"lithostratigraphic_member": "Whitney Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/UnitRefs/BruleRefs_7360.html"]
+		},
+		{
+			"lithostratigraphic_member": "Rio Salado Tongue Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/73249"]
+		},
+		{
+			"lithostratigraphic_member": "Scholle Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Abo_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Semilla Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Semilla Sandstone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Silty Limestone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Tinajas Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/UnitRefs/TinajaRefs_10884.html"]
+		},
+		{
+			"lithostratigraphic_member": "Pebbly Limestone Member",
+			"description": "no documentation DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Gault Clay",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Bells Landing Marl Member",
+			"description": "A (Thanetian) unit exposed in/around the Mid-Gulf Coast Basin of the United States of America. Member of the Tuscahoma Formation. Also referred to as 'Bells Landing Marl Member'; part of the Tuscahoma Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/UnitRefs/BellsLandingRefs_394.html"]
+		},
+		{
+			"lithostratigraphic_member": "Matthews Landing Marl Member",
+			"description": "A (Thanetian) unit exposed in/around Mid-Gulf Coast Basin of the United States of America. Member of the Porters Creek Formation. Lithology mostly sand and clay, sometimes referred to as Matthews Landing Marl Formation; part of the Porter Creek Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://ngmdb.usgs.gov/Prodesc/proddesc_70618.htm"]
+		},
+		{
+			"lithostratigraphic_member": "Granite Park Member",
+			"description": "A Middle Proterozoic unit exposed in Glacier National Park, Montana, United States of America. Member of the Helena Dolomite Formation; part of the Helena Dolomite Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": [
+				"https://www.nps.gov/articles/000/stratotype-inventory-glacier-national-park-montana.htm"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Greggs Landing Marl Member",
+			"description": "A (Thanetian) unit exposed in/around The Mid Gulf Coast of the United States of America. Member of the Tuscahoma Formation. Primarily consists of marl; part of the Tuscahoma Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/UnitRefs/TuscahomaRefs_4185.html"]
+		},
+		{
+			"lithostratigraphic_member": "Southgate Member",
+			"description": "An Ordovician unit exposed in the eastern United States of America. Member of the Kope Formation. Consists of mudstone, shale and limestone; part of the Kope Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://www.mindat.org/paleo_strat.php?id=8886"]
+		},
+		{
+			"lithostratigraphic_member": "Wheelock Marl Member",
+			"description": "An early Tertiary unit exposed in/around Texas and The Gulf Coast Basin of the United States of America. Member of The Cook Mountain Formation. Consists of shale and marl; part of the Cook Mountain Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://www.mindat.org/paleo_strat.php?id=3968"]
+		},
+		{
+			"lithostratigraphic_member": "Lachman Crags Member",
+			"description": "A (Santonian) unit exposed in West Antarctica. Member within the Santa Marta Formation. Previously referred to as 'Alpha Member', not to be confused with other members with similar names.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": [
+				"https://www.mindat.org/paleo_strat.php?id=14930",
+				"https://www.sciencedirect.com/science/article/abs/pii/S0195667115300124"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Karlsen Cliffs Member",
+			"description": "A lower Maastrichtian unit that outcrops in Antarctica on Snow Hill Island; part of the Snow Hill Island Formation.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/9458"],
+			"documentation_url": ["https://www.sciencedirect.com/science/article/pii/S0195667122002026"]
+		},
+		{
+			"lithostratigraphic_member": "Laurel Member",
+			"description": "Early Silurian unit in Kentucky, Ohio, Indiana, Tennessee, and Missouri; aka Laurel Member of Salamonie Dolomite, Laurel Limestone Member of Wayne Formation, Laurel Limestone Member of Bainbridge Formation, Laurel Member of Alger Formation; also referred to as Laurel Dolomite, Laurel Limestone, and Laurel Formation of Wayne Group in some states. (Lexicon of Geologic Names of the United States:including Alaska. No. 2. US Government Printing Office, 1938. p2863)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://macrostrat.org/sift/#/strat_name_concept/2406",
+				"https://ngmdb.usgs.gov/Geolex/Units/Laurel_2406.html"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Burning Brule Member",
+			"description": "pending",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Lincoln Limestone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["http://www.kgs.ku.edu/Publications/Bulletins/194_1I/index.html"]
+		},
+		{
+			"lithostratigraphic_member": "Luciano Mesa Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://geoinfo.nmt.edu/publications/maps/geologic/ofgm/downloads/124/ArroyoDelAguaReport.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Canon de Espinoso Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://nmgs.nmt.edu/publications/guidebooks/downloads/60/60_p0285_p0290.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Chama-El Rito Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://nmgs.nmt.edu/publications/guidebooks/downloads/35/35_p0137_p0143.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Craddock Dolomite Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Williams Ranch Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.researchgate.net/publication/327363826_New_members_of_the_cutoff_formation_in_the_southern_Guadalupe_mountains_near_the_global_stratotype_section_and_point_for_the_base_of_the_Roadian_Stage_Texas"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Youngsville Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://geoinfo.nmt.edu/publications/maps/geologic/ofgm/downloads/106/Youngsville.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Robledo Mountains Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://mrdata.usgs.gov/geology/state/fips-unit.php?code=f35013"]
+		},
+		{
+			"lithostratigraphic_member": "Sharron Springs Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://pubs.usgs.gov/pp/0728/report.pdf"]
+		},
+		{
+			"lithostratigraphic_member": "Smoky Hill Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/7838"]
+		},
+		{
+			"lithostratigraphic_member": "Upper Coal Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://igws.indiana.edu/compendium/upper-block-coal-member"]
+		},
+		{
+			"lithostratigraphic_member": "Duke Ranch Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Mesa Montosa Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Wallace Ranch Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Painted Desert Member",
+			"description": "no documentation DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://geoinfo.nmt.edu/tour/landmarks/ghost_ranch/home.html"]
+		},
+		{
+			"lithostratigraphic_member": "Neh-nah-ne-zad Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://nmgs.nmt.edu/publications/guidebooks/Abstract.cfml?ID=68436"]
+		},
+		{
+			"lithostratigraphic_member": "Fryingpan Spring Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Anembalemba Member",
+			"description": "Stratigraphic Analysis of Upper Cretaceous Rocks in the Mahajanga Basin, Northwestern Madagascar: Implications for Ancient and Modern Faunas",
+			"issue_url": "",
+			"documentation_url": ["https://www.jstor.org/stable/10.1086/314403"]
+		},
+		{
+			"lithostratigraphic_member": "Basin Trail Shale Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1130/0-8137-2301-9.21"]
+		},
+		{
+			"lithostratigraphic_member": "Big Tank Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/926"]
+		},
+		{
+			"lithostratigraphic_member": "Ceratitenschichten Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "El Centro Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.5479/si.00810274.32.1"]
+		},
+		{
+			"lithostratigraphic_member": "Fossil Forest Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"https://nmgs.nmt.edu/publications/guidebooks/downloads/54/54_p0379_p0381.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fossil Hill (Favret) Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/67497"]
+		},
+		{
+			"lithostratigraphic_member": "Fossil Hill (Prida) Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/67498"]
+		},
+		{
+			"lithostratigraphic_member": "Howells Ridge Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://econtent.unm.edu/digital/collection/bulletins/id/926"]
+		},
+		{
+			"lithostratigraphic_member": "Kara Bentonite Bed",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/71853"]
+		},
+		{
+			"lithostratigraphic_member": "Kutz Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1130/GES02072.1"]
+		},
+		{
+			"lithostratigraphic_member": "Lac Kinkony Member",
+			"description": "A new, richly fossiliferous member comprised of tidal deposits in the Upper Cretaceous Maevarano Formation, northwestern Madagascar",
+			"issue_url": "",
+			"documentation_url": ["http://dx.doi.org/10.1016/j.cretres.2013.03.008"]
+		},
+		{
+			"lithostratigraphic_member": "Masorobe Member",
+			"description": "Stratigraphic Analysis of Upper Cretaceous Rocks in the Mahajanga Basin, Northwestern Madagascar: Implications for Ancient and Modern Faunas",
+			"issue_url": "",
+			"documentation_url": ["https://www.jstor.org/stable/10.1086/314403"]
+		},
+		{
+			"lithostratigraphic_member": "McKittrick Canyon Limestone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"http://archives.datapages.com/data/sepm_sp/SP65/Formal_Designation_Reef_Trail_Member.htm"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Miadana Member",
+			"description": "Stratigraphic Analysis of Upper Cretaceous Rocks in the Mahajanga Basin, Northwestern Madagascar: Implications for Ancient and Modern Faunas",
+			"issue_url": "",
+			"documentation_url": ["https://www.jstor.org/stable/10.1086/314403"]
+		},
+		{
+			"lithostratigraphic_member": "Santa Ana Mesa Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://ngmdb.usgs.gov/Geolex/Units/Ceja_12512.html"]
+		},
+		{
+			"lithostratigraphic_member": "Shumard Canyon Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.5479/si.00810274.32.1"]
+		},
+		{
+			"lithostratigraphic_member": "Tres Hermanos Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/7481"]
+		},
+		{
+			"lithostratigraphic_member": "Tsosie Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.1130/GES02072.1"]
+		},
+		{
+			"lithostratigraphic_member": "Nýřany Member",
+			"description": "no description DO NOT USE",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.paleobiodb.org/classic/displayStrata?group_hint=&group_formation_member=Kladno"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Trujillo Member",
+			"description": "Late Triassic (Carnian) unit in New Mexico and Texas; aka Trujillo Member of Dockum Formation, Trujillo Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Trujillo_10962.html",
+				"https://macrostrat.org/sift/#/strat_name/74188"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bafunzawa Coal-bearing Member",
+			"description": "Beds exposed along the Sekiyuzawa valley from the confluence of the Bafunwanxa upward and those along the lower stream of the latter valley.",
+			"issue_url": "",
+			"documentation_url": [
+				"https://www.hro.or.jp/list/environmental/research/gsh/publication/map/map04/area/explanation_leaflet_pdf/asahikawa35.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cap-Aux-Os Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Battery_Point_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Colhue Huapi Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Gran Barranca Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Lower Puesto Almendra Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Montezuma Valley Member",
+			"description": "A predominantly shale unit of the Cretaceous Mancos Shale. Outcrops in New Mexico and Colorado.",
+			"issue_url": "",
+			"documentation_url": ["https://doi.org/10.56577/FFC-48.163"]
+		},
+		{
+			"lithostratigraphic_member": "Namarin Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://www.mindat.org/paleo_strat.php?id=23031"]
+		},
+		{
+			"lithostratigraphic_member": "Rosado Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Upper Puesto Almendra Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Vera Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Sarmiento_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Redwater Shale Member",
+			"description": "Late Jurassic, uppermost member of the Sundance Formation, Wyoming. NOTE: different from the Redwater Member of the Stump Formation.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/142"],
+			"documentation_url": ""
+		},
+		{
+			"lithostratigraphic_member": "Almagre Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": [
+				"https://digitallibrary.amnh.org/items/5fb68b32-baed-4ad1-97ba-dbd66c225b12"
+			]
+		},
+		{
+			"lithostratigraphic_member": "H Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["http://npshistory.com/publications/geology/bul/1161-D/sec1a.htm"]
+		},
+		{
+			"lithostratigraphic_member": "Hoedemaker Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Teekloof_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "K Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["http://npshistory.com/publications/geology/circ/838/sec2b.htm"]
+		},
+		{
+			"lithostratigraphic_member": "Lifua Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Manda_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Morro Pelado Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Rio_do_Rasto_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Siltstone Member",
+			"description": "no description DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Chinle_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Palingkloof Member",
+			"description": "no documentation DO NOT USE",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/6541"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Balfour_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Kibanga Member",
+			"description": "Miocene unit of the Hiwegi Formation on Rusinga Island in Kenya, described in Michel, Lauren A., et al. \"Stratigraphic revision of the early Miocene Kiahera Formation from Rusinga Island, Lake Victoria, Kenya.\" Journal of African Earth Sciences 200 (2023): 104877.",
+			"issue_url": ["https://github.com/ArctosDB/code-table-work/issues/106"],
+			"documentation_url": [
+				"https://www.sciencedirect.com/science/article/abs/pii/S1464343X2300050X"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Burlington Member",
+			"description": "Late Pennsylvanian (Virgilian) unit of the Bern Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/69730"]
+		},
+		{
+			"lithostratigraphic_member": "McClelland Ferry Member",
+			"description": "Late Cretaceous Judithian member of the Judith River formation below the mid-Judith discontinuity in Montana, USA. Rogers, R.R., Kidwell, S.M., Deino, A.L., Mitchell, J.P., Nelson, K. and Thole, J.T., 2016. Age, correlation, and lithostratigraphic revision of the Upper Cretaceous (Campanian) Judith River Formation in its type area (north-central Montana), with a comparison of low-and high-accommodation alluvial records. The Journal of Geology, 124(1), pp.99-135.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/8717"],
+			"documentation_url": ["https://www.journals.uchicago.edu/doi/10.1086/684289"]
+		},
+		{
+			"lithostratigraphic_member": "Mussentuchit Member",
+			"description": "uppermost member of the Cedar Mountain Formation",
+			"issue_url": "",
+			"documentation_url": ["https://en.wikipedia.org/wiki/Cedar_Mountain_Formation"]
+		},
+		{
+			"lithostratigraphic_member": "Smoky Hill Chalk Member",
+			"description": "Late Cretaceous (Coniacian to Campanian) unit of the Niobrara Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/3095"]
+		},
+		{
+			"lithostratigraphic_member": "Cutter Dolomite Member",
+			"description": "Late Ordovician (Cincinnatian) unit in New Mexico and Texas; aka Cutter Member of Montoya Dolomite, Cutter Dolomite of Montoya Group, Cutter Formation of Montoya Group, Cutter Dolomite Member of Montoya Dolomite, Cutter Member of Montoya Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cutter_7826.html",
+				"https://macrostrat.org/sift/#/strat_name/70253"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lebo Member",
+			"description": "Paleocene unit in Montana, North Dakota, South Dakota, and Wyoming; Lebo Shale Member of Fort Union Formation, Lebo Member of Fort Union Formation, Lebo Formation of Fort Union Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lebo_8674.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8674"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tullock Member",
+			"description": "early Paleocene unit in Montana, South Dakota, North Dakota, and Wyoming; Tullock Member of Fort Union Formation, Tullock Formation of Fort Union Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tullock_10976.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10976"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Gammon Ferruginous Member",
+			"description": "Late Cretaceous (Campanian) unit in Colorado, Montana, Nebraska, South Dakota, and Wyoming; Gammon Member of Pierre Shale or Cody Shale, Gammon Ferruginous Member, Gammon Shale; referred to as both formation and member",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Gammon_8231.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8231"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Homewood Sandstone Member",
+			"description": "Middle Pennsylvanian unit in Pennsylvania, West Virginia, Kentucky, Ohio, and West Virginia; Homewood Sandstone Member of Pottsville Formation, Homewood Sandstone Member of Kanawha Formation, Homewood Formation of Pottsville Group, Homewood Sandstone of Pottsville Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Homewood_2108.html",
+				"https://macrostrat.org/sift/#/strat_name/63034"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Liston Creek Limestone Member",
+			"description": "Late Silurian (Ludlow to Pridoli; Cayugan Provincial Age) unit in Indiana; aka Liston Creek Limestone Member of Wabash Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ListonCreek_2488.html",
+				"https://macrostrat.org/sift/#/strat_name/2934"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Meridian Sand Member",
+			"description": "early Eocene unit in Mississippi and Alabama; aka Meridian Sand of Claiborne Group, Meridian Sand Member of Tallahatta Formation of Claiborne Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Meridian_2739.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2739"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ramp Creek Limestone Member",
+			"description": "Early to Late Mississippian (Osagean to Meramecian) unit in Indiana; aka Ramp Creek Limestone Member of Muldraugh Formation, Ramp Creek Formation of Sanders Group, Ramp Creek Member of Ullin Limestone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RampCreek_3476.html",
+				"https://macrostrat.org/sift/#/strat_name/65082"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Red Peak Member",
+			"description": "Early Triassic unit in Colorado and Wyoming; aka Red Peak Member of Chugwater Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RedPeak_10114.html",
+				"https://macrostrat.org/sift/#/strat_name/73170"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Roughlock Siltstone Member",
+			"description": "Late Ordovician (Mohawkian; Chatfieldian; Kirkfieldian to Shermanian) unit in South Dakota, North Dakota, and Wyoming; aka Roughlock Siltstone Member of Winnipeg Formation, Roughlock Formation of Winnipeg Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Roughlock_10249.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10249"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Aleman Member",
+			"description": "Late Ordovician unit in New Mexico and Texas; aka Aleman Dolomite Member of Montoya Dolomite, Aleman Dolomite of Montoya Group, Aleman Member of Montoya Formation, Aleman Formation of Montoya Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Aleman_6384.html",
+				"https://macrostrat.org/sift/#/strat_name/6901"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bashi Marl Member",
+			"description": "early Eocene unit in Alabama, Florida, Georgia, Mississippi; aka Bashi Marl Member of Hatchetigbee Formation of Wilcox Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bashi_289.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/289"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bishop Cap Member",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit in New Mexico and Texas; aka Bishop Cap Member of Magdalena Formation, Bishiop Cap Formation; also called Bishops Cap and Bishop's Cap in some reports; Magdalena Formation not used by the New Mexico Geological Survey",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BishopCap_7094.html",
+				"https://macrostrat.org/sift/#/strat_name/69380"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Carlile Member",
+			"description": "Late Cretaceous (Turonian to Coniacian) unit in Colorado, Iowa, Kansas, Minnesota, Montana, Nebraska, New Mexico, North Dakota, Oklahoma, South Dakota, and Wyoming; aka Carlile Shale of Colorado Group, Carlile Shale of Benton Group, Carlile Formation, Carlile Member of Cody Shale, Carlile Member of Colorado Shale, Carlile Member of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Carlile_6965.html",
+				"https://macrostrat.org/sift/#/strat_name/69222"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Coon Creek Member",
+			"description": "Late Cretaceous (Campanian to Maastrichtian) unit in Tennessee and Mississippi; aka Coon Creek Tongue of Ripley Formation, Coon Creek Member of Ripley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CoonCreek_1210.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1210"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Denton Clay Member",
+			"description": "Early Cretaceous (Albian; Comanchean Provincial Epoch) unit in Oklahoma and Texas; aka Denton Clay of Washita Group, Denton Shale of Washita Group, Denton Formation of Washita Group, Denton Shale Member of Georgetown Limestone, Denton Shale Member of Bokchito Formation, Denton Clay Member of Bokchito Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Denton_7900.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7900"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Graneros Shale Member",
+			"description": "early Late Cretaceous (Cenomanian) unit in Colorado and New Mexico; aka Graneros Shale Member of Mancos Shale, Benton Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Graneros_8448.html",
+				"https://macrostrat.org/sift/#/strat_name/7433"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Greenhorn Limestone Member",
+			"description": "Late Cretaceous (Cenomanian to Turonian) unit in Colorado, Iowa, Kansas, Montana, Nebraska, New Mexico, North Dakota, Oklahoma, South Dakota, and Wyoming; aka Greenhorn Limestone of Colorado Group, Greenhorn Limestone of Benton Group, Greenhorn Formation, Greenhorn Limestone Member of Benton Shale, Greenhorn Limestone Member of Colorado Shale, Greenhorn Limestone Member of Mancos Shale, Greenhorn Calcareous Member of Cody Shale, Greenhorn Bentonite Bed of Colorado Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Greenhorn_8485.html",
+				"https://macrostrat.org/sift/#/strat_name/7435"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Niobrara Member",
+			"description": "Late Cretaceous (Turonian to Campanian) unit in Montana, Wyoming, and Colorado; aka Niobrara Member of Cody Shale, Niobrara Member of Colorado Shale, Niobrara Member of Mancos Shale; referred to as both formation and member",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Niobrara_9529.html",
+				"https://macrostrat.org/sift/#/strat_name/72445"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Passamari Member",
+			"description": "Oligocene or Miocene unit in Montana folded belt; Passamari Member of Renova Formation of Bozeman Group, Passamari Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Passamari_9783.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9783"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Adamstown Member",
+			"description": "Late Cambrian (Franconian) unit in Maryland; Adamstown Member of Frederick Formation, Frederick Limestone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Adamstown_21.html",
+				"https://macrostrat.org/sift/#/strat_name/60024"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Alamagordo Member",
+			"description": "Early Mississippian (Kinderhookian) unit in New Mexico; aka Alamogordo Member of Lake Valley Limestone, Lake Valley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/AlamogordoRefs_6361.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Alamogordo_6361.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6361"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Allison Member",
+			"description": "Late Cretaceous unit in New Mexico; aka Allison Member of Menefee Formation of Mesaverde Group, Allison Member of Mesaverde Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Allison_6401.html",
+				"https://macrostrat.org/sift/#/strat_name/68582"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Americus Limestone Member",
+			"description": "Early Permian (Wolfcampian) unit in Kansas, Nebraska, and Oklahoma; aka Americus Limestone Member of Foraker Limestone of Council Grove Group, Americus Limestone Member of Foraker Limestone of Vanoss Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Americus_6439.html",
+				"https://macrostrat.org/sift/#/strat_name/10417"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Amoret Member",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit of the Altamont Formation in Missouri",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Amoret_6445.html",
+				"https://macrostrat.org/sift/#/strat_name/68625"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Anna Shale Member",
+			"description": "Pennsylvanian limestone and shale deposits in the midwest United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Anna_6475.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6475",
+				"https://ilstratwiki.web.illinois.edu/wiki/Anna_Shale_Member"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Anton Chico Member",
+			"description": "Middle Triassic (Anisian) unit in New Mexico; aka Anton Chico Member of Moenkopi Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/AntonChico_6493.html",
+				"https://macrostrat.org/sift/#/strat_name/68686"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Arcente Member",
+			"description": "Early Mississippian (Tournaisian; Osagean) unit in New Mexico; aka Arcente Member of Lake Valley Limestone, Lake Valley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Arcente_6521.html",
+				"https://macrostrat.org/sift/#/strat_name/68713"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Arcola Limestone Member",
+			"description": "Late Cretaceous (Campanian; Gulfian Provincial Epoch, Tayloran Provincial Age) unit in Alabama and Mississippi; aka Arcola Limestone Member of Mooreville Chalk or Morreville Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Arcola_145.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/145"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Arroyo Chijuillita Member",
+			"description": "Early Paleocene unit in New Mexico; aka Arroyo Chijuillita Member of Nacimiento Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ArroyoChijuillita_6554.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6554",
+				"https://en.wikipedia.org/wiki/Nacimiento_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ash Canyon Member",
+			"description": "Late Cretaceous unit in New Mexico; aka Ash Canyon Member of Mesaverde Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/AshCanyon_6563.html",
+				"https://macrostrat.org/sift/#/strat_name/68764"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ash Hollow Member",
+			"description": "late Tertiary (late Miocene) unit of the Ogallala Formation in Nebraska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/AshHollow_6566.html",
+				"https://macrostrat.org/sift/#/strat_name/80579"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Atarque Sandstone Member",
+			"description": "Late Cretaceous (Turonian) unit in Arizona and New Mexico; aka Atarque Sandstone Member of Tres Hermanos Formation, Atarque Member of Mesaverde Formation, Atarque Member of Gallup Sandstone of Mesaverde Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Atarque_6582.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6582"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Atwater Member",
+			"description": "late Tertiary (Pliocene, Blancan NALMA) unit of the Crooked Creek Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Atwater_6593.html",
+				"https://macrostrat.org/sift/#/strat_name/68794"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Banco Bonito Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BancoBonito_6657.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6657"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bartolo Member",
+			"description": "Pliocene unit in Los Angeles basin, California; Bartolo Conglomerate",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bartolo_12375.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12375",
+				"https://econtent.unm.edu/digital/collection/bulletins/id/1795"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Basin Creek Member",
+			"description": "middle Oligocene unit in Alaska Southern region, aka Basin Creek Member of Poul Creek Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BasinCreek_4666.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4666"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Battleship Rock Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BattleshipRock_6716.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6716"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bee Branch Member",
+			"description": "Pleistocene unit in Florida platform; aka Bee Branch Member of Caloosahatchee Formation, Bee Branch Member of Caloosahatchee Marl",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/BeeBranchRefs_348.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/BeeBranch_348.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/348"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bellingham Bay Member",
+			"description": "Basal unit of the Chuckanut Formation in the Bellingham Bay area of Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/BellinghamBayRefs_4707.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/BellinghamBay_4707.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4707"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Beverly Member",
+			"description": "middle Miocene unit of the Ellensburg Formation in Washington",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Beverly_4731.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4731"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Big Basin Member",
+			"description": "Oligocene unit in Blue Mountains province, Oregon; Big Basin Member of John Day Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BigBasin_4738.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4738"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bisti Member",
+			"description": "Late Cretaceous (Maastrichtian) unit in Colorado and New Mexico; aka Bisti Member of Kirtland Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bisti_7100.html",
+				"https://macrostrat.org/sift/#/strat_name/69385"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Blacks Fork Member",
+			"description": "Eocene unit in Green River basin, Wyoming; Blacks Fork Member of Bridger Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BlacksFork_7156.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7156"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Blue Hill Shale Member",
+			"description": "Late Cretaceous unit in Colorado, Kansas, Minnesota, Nebraska, New Mexico, and South Dakota; aka Blue Hill Member of Carlile Shale, Blue Hill Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BlueHill_7202.html",
+				"https://macrostrat.org/sift/#/strat_name/69480"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Blue Mesa Member",
+			"description": "Late Oligocene unit in Colorado; aka Blue Mesa Tuff",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BlueMesa_7203.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7203",
+				"https://www.nps.gov/pefo/learn/nature/geologicformations.htm"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cone Member",
+			"description": "Late Cretaceous unit of the Marias River Shale (Colorado Group) in Montana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cone_7680.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7680"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bluffport Marl Member",
+			"description": "Campanian (Late Cretaceous) unit of the Demopolis Chalk Formation in Alabama, Mississippi, and Tennessee",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bluffport_534.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/534",
+				"https://en.wikipedia.org/wiki/Demopolis_Chalk"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bolivar Heights Member",
+			"description": "Early Cambrian unit in Maryland, Pennsylvania, Virginia, and West Virginia; aka Bolivar Heights Member of Tomstown Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BolivarHeights_546.html",
+				"https://macrostrat.org/sift/#/strat_name/60725"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bone Valley Member",
+			"description": "late Miocene to early Pliocene (late Hemphillian to early Blancan NALMA) unit in Florida; aka Bone Valley Member of Peace River Formation of Hawthorn Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BoneValley_553.html",
+				"https://macrostrat.org/sift/#/strat_name/6939"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bonita Springs Marl Member",
+			"description": "late Miocene to Pliocene unit in southwest Florida",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BonitaSprings_554.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/554",
+				"https://en.wikipedia.org/wiki/Tamiami_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bootlegger Member",
+			"description": "late Early Cretaceous unit of Blackleaf Formation (Colorado Group) in Montana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bootlegger_7276.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7276"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bouldin Member",
+			"description": "Late Cretaceous unit in Texas; aka Bouldin Flags, Bouldin Member of Lake Waco Formation of Eagle Ford Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bouldin_7294.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7294",
+				"http://www.library.utexas.edu/geo/ggtc/ch2.html#bf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Box Member",
+			"description": "late Late Devonian (Famennian) unit in New Mexico; Box Member of Percha Shale, Percha Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Box_7302.html",
+				"https://macrostrat.org/sift/#/strat_name/69593"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bremo Quartzite Member",
+			"description": "Ordovician unit in Virginia; aka Bremo Quartzite Member of Arvonia Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Bremo_622.html",
+				"https://macrostrat.org/sift/#/strat_name/60837"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bridge Creek Limestone Member",
+			"description": "Silurian (Rhuddanian) unit in New South Wales, Australia; Contains abundant corals, algal remains, brachipods, bryozoans, conodonts and gastropods.; part of Bagdad Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"http://dbforms.ga.gov.au/pls/www/geodx.strat_units.sch_full?wher=stratno=2538",
+				"https://macrostrat.org/sift/#/strat_name_concept/17264"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Brushy Basin Member",
+			"description": "Upper Jurassic unit of the Morrison Formation in Arizona, Colorado, New Mexico, and Utah, conglomerate interbedded with mudstone, up to fifty percent by volume is made up of altered vitric ash, which originated as felsic ash falls",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BrushyBasin_7364.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7364",
+				"https://en.wikipedia.org/wiki/Morrison_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Buckingham Limestone Member",
+			"description": "late Miocene to Pliocene unit of the Tamiami Formation in Florida",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Buckingham_690.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/690",
+				"https://en.wikipedia.org/wiki/Tamiami_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Bulldog Hollow Member",
+			"description": "probably middle Eocene or early Tertiary unit of the Fowkes Formation in Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/BulldogHollow_4842.html",
+				"https://macrostrat.org/sift/#/strat_name/66934"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Calhoun Coal Member",
+			"description": "Late Pennsylvanian (Missourian) unit in Illinois; Calhoun Coal Member of Mattoon Formation of McLeansboro Group; Name previously applied to Calhoun Limestone by Weller and others [1943] in same area, and Calhoun Shale by Beede (1898)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Calhoun_784.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/784"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cameron Creek Member",
+			"description": "Pennsylvanian unit comprised of sandstones, mudstones, and limestones in North Dakota and Montana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CameronCreek_6921.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6921"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Camp Springs Member",
+			"description": "Triassic (Late Triassic) unit in Texas; aka Camp Springs Member of Dockum Formation; Camp Springs Conglomerate",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CampSprings_12470.html",
+				"https://macrostrat.org/sift/#/strat_name/75636"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Canada Pilares Member",
+			"description": "early Miocene unit in New Mexico; aka Canada Pilares Member of Zia Formation of Santa Fe Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CanadaPilares_6935.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6935"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cano Member",
+			"description": "Late Cretaceous unit in New Mexico; aka Cano Member of Mesaverde Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cano_12475.html",
+				"https://macrostrat.org/sift/#/strat_name/75641"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Carbonate Hill Member",
+			"description": "Early Cretaceous unit in New Mexico; aka Carbonate Hill Limestone of Bisbee Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CarbonateHill_6961.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6961",
+				"https://econtent.unm.edu/digital/collection/bulletins/id/926"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Carroll Gneiss Member",
+			"description": "Cambrian unit in Maryland; aka Carroll Gneiss Member of James Run Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Carroll_885.html",
+				"https://macrostrat.org/sift/#/strat_name/61203"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cavetown Member",
+			"description": "Early Cambrian unit in Maryland, Pennsylvania, and West Virginia; Cavetown Member of Waynesboro Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cavetown_933.html",
+				"https://macrostrat.org/sift/#/strat_name/61273"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Chewsville Member",
+			"description": "Early Cambrian unit in Maryland, Pennsylvania, and West Virginia; Chewsville Member of Waynesboro Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Chewsville_1033.html",
+				"https://macrostrat.org/sift/#/strat_name/61420"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Clay Mesa Member",
+			"description": "early Late Cretaceous (Cenomanian) unit in New Mexico; aka Clay Mesa Tongue of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ClayMesa_7527.html",
+				"https://macrostrat.org/sift/#/strat_name/69870"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cleary Coal Member",
+			"description": "Late Cretaceous (Santonian) unit in New Mexico; aka Cleary Coal Member of Menefee Formation of Mesaverde Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/ClearyRefs_7536.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/Cleary_7536.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7536"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Coal Ridge Member",
+			"description": "Late Cretaceous Judithian unit of the Judith River formation overlying the mid-Judith discontinuity in Montana; described in: Rogers, R.R., Kidwell, S.M., Deino, A.L., Mitchell, J.P., Nelson, K. and Thole, J.T., 2016. Age, correlation, and lithostratigraphic revision of the Upper Cretaceous (Campanian) Judith River Formation in its type area (north-central Montana), with a comparison of low-and high-accommodation alluvial records. The Journal of Geology, 124(1), pp.99-135",
+			"issue_url": "",
+			"documentation_url": ["https://www.journals.uchicago.edu/doi/10.1086/684289"]
+		},
+		{
+			"lithostratigraphic_member": "Cocoa Sand Member",
+			"description": "late Eocene unit of Yazoo Formation in the mid-Gulf Coast basin of the United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cocoa_1141.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1141"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Codell Sandstone Member",
+			"description": "Late Cretaceous (Turonian) unit of the Carlile Shale Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Codell_7567.html",
+				"https://macrostrat.org/sift/#/strat_name/7421"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Comfort Member",
+			"description": "Middle Eocene (Claibornian) unit in North Carolina; Comfort Member of Castle Hayne Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Comfort_1183.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1183",
+				"https://en.wikipedia.org/wiki/Castle_Hayne_Limestone"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cooper Arroyo Sandstone Member",
+			"description": "Late Cretaceous unit in New Mexico; aka Cooper Arroyo Sandstone Member of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CooperArroyo_7700.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7700"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Correo Sandstone Member",
+			"description": "Late Triassic unit in New Mexico; aka Correo Sandstone Bed of Petrified Forest Member of Chinle Formation, Correo Sandstone Member of Chinle Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Correo_7721.html",
+				"https://macrostrat.org/sift/#/strat_name/70120"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Corriganville Member",
+			"description": "early Early Devonian (Lochkovian) unit in Maryland, Pennsylvania, Virginia, West Virginia, and New York; Corriganville Limestone of Helderberg Group, Corriganville Member of Old Port Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Corriganville_1236.html",
+				"https://macrostrat.org/sift/#/strat_name/7579"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cuba Mesa Member",
+			"description": "Early Eocene unit in Colorado and New Mexico; aka Cuba Mesa Member of San Jose Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/CubaMesa_7804.html",
+				"https://macrostrat.org/sift/#/strat_name/70225"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cubero Sandstone Tongue",
+			"description": "early Late Cretaceous (Cenomanian) unit in Colorado and New Mexico; aka Cubero Tongue of Dakota Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cubero_7805.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7805"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Cusseta Sand Member",
+			"description": "Late Cretaceous (Campanian to Maastrichtian; Gulfian Provincial Epoch, Tayloran to Navarroan Provincial Age) unit in Alabama and Georgia; aka Cusseta Sand Member of Ripley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Cusseta_1308.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1308",
+				"https://mrdata.usgs.gov/geology/state/sgmc-unit.php?unit=ALKrc%3B1"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Dalton Sandstone Member",
+			"description": "Late Cretaceous (Coniacian) unit in New Mexico; aka Dalton Sandstone Member of Crevasse Canyon Formation of Mesaverde Group, Dalton Sandstone Member of Crevasse Canyon Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Dalton_7834.html",
+				"https://macrostrat.org/sift/#/strat_name/70266"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Danley Ranch Member",
+			"description": "Early Permian (Wolfcampian) unit in New Mexico; aka Danley Ranch Tongue of Abo Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DanleyRanch_7838.html",
+				"https://macrostrat.org/sift/#/strat_name/70271"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Dawes Clay Member",
+			"description": "Miocene unit in Nebraska; Dawes Clay Member of Box Butte Formation of Ogallala Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Dawes_16355.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/16355"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Deer Canyon Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DeerCanyon_7877.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7877"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Del Cuerto Member",
+			"description": "Late Pennsylvanian (Virgilian) unit in New Mexico; aka Del Cuerto Member of Atrasado Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DelCuerto_7886.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7886"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Delle Phosphatic Member",
+			"description": "Mississippian unit in Nevada, Utah, and Idaho; Delle Phosphatic Member of Woodman Formation, Chainman Shale, Desert Limestone, Deep Creek Formation, Little Flat Formation, Aspen Range Formation, or Brazer Dolomite",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Delle_5161.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5161"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Desertion Point Tongue Member",
+			"description": "early Eocene unit of the Wasatch Formation in Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DesertionPoint_7905.html",
+				"https://macrostrat.org/sift/#/strat_name/70360"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Dona Ana Member",
+			"description": "Early Mississippian (Tournaisian; Osagean) unit in New Mexico; aka Dona Ana Member of Lake Valley Limestone, Lake Valley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DonaAna_7954.html",
+				"https://macrostrat.org/sift/#/strat_name/70423"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Down Cliff Sand Member",
+			"description": "Jurassic unit in England",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=DCSA",
+				"https://macrostrat.org/sift/#/strat_name_concept/37990"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Druid Hill Amphibolite Member",
+			"description": "Cambrian unit in Maryland; Druid Hill Amphibolite Member of James Run Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DruidHill_1437.html",
+				"https://macrostrat.org/sift/#/strat_name/62033"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Dutch Harbor Member",
+			"description": "Early Miocene unit in Aleutian Islands, Alaska; part of Unalaska Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/DutchHarbor_5235.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5235"
+			]
+		},
+		{
+			"lithostratigraphic_member": "El Cajete Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ElCajete_7596.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7596"
+			]
+		},
+		{
+			"lithostratigraphic_member": "El Vado Sandstone Member",
+			"description": "Late Cretaceous unit in San Juan basin New Mexico; El Vado Sandstone Member of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ElVado_7601.html",
+				"https://macrostrat.org/sift/#/strat_name/69960"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Elephant Butte Member",
+			"description": "Pennsylvanian limestone unit in southwestern New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ElephantButte_7606.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7606"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Elgin Member",
+			"description": "Ordovician limestone unit in the upper midwest United States",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Elgin_12819.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12819"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hegler Limestone Member",
+			"description": "Middle Permian (Guadalupian) unit in New Mexico and Texas; aka Hegler Limestone Member of Bell Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hegler_13144.html",
+				"https://macrostrat.org/sift/#/strat_name/7611"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Erin Slate Member",
+			"description": "Late Paleozoic (Devonian, Mississippian) unit in Alabama; aka Erin Shale, Erin Slate of Talledega Group, Erin Shale Member of Talledega Slate, Erin Slate Member of Lay Dam Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Erin_1557.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1557",
+				"https://aa.columbusstate.edu/research/undergrad/images/towerday2010/HARRELL2010.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Escavada Member",
+			"description": "Early Paleocene, Late Paleocene unit in New Mexico; aka Escavada Member of Nacimiento Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Escavada_7655.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/7655",
+				"https://en.wikipedia.org/wiki/Nacimiento_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fairport Member",
+			"description": "Late Cretaceous (Turonian) unit of the Carlile Shale Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Fairport_8067.html",
+				"https://macrostrat.org/sift/#/strat_name/70574"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Farmington Sandstone Member",
+			"description": "Late Cretaceous unit in Colorado and New Mexico; aka Farmington Sandstone Member of Kirtland Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Farmington_8083.html",
+				"https://macrostrat.org/sift/#/strat_name/7014"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ferdig Member",
+			"description": "Late Cretaceous unit of the Marias River Formation in Montana; aka Ferdig Shale Member",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ferdig_8095.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8095"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ferron Sandstone Member",
+			"description": "Cretaceous unit in Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ferron_8105.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8105"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Finis Shale Member",
+			"description": "Late Pennsylvanian (Gzhelian; Virgilian) unit in Texas; aka Finis Shale [unranked] in Cisco Group, Finis Shale Member of Graham Formation of Cisco Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Finis_8112.html",
+				"https://macrostrat.org/sift/#/strat_name/70630"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Florence Limestone Member",
+			"description": "Permian unit of the Barneston Limestone Formation in Kansas and Oklahoma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Florence_8140.html",
+				"https://macrostrat.org/sift/#/strat_name/10295"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Jemez Springs Shale Member",
+			"description": "Late Pennsylvanian unit in New Mexico; aka Jemez Springs Member of Guadalupe Box Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/JemezSprings_15320.html",
+				"https://macrostrat.org/sift/#/strat_name/79100"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Floweree Member",
+			"description": "Upper Cretaceous unit of the Marias River Formation in Montana, with a thickness as much as 30 m (98 ft)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Floweree_8148.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8148",
+				"https://mrdata.usgs.gov/geology/state/sgmc-unit.php?unit=MTKmrb"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fort Ancient Member",
+			"description": "Late Ordovician (Cincinnatian) unit in Ohio; aka Fort Ancient Member of Waynesville Formation of Cincinnati group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/FortAncient_1694.html",
+				"https://macrostrat.org/sift/#/strat_name/62419"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fort Hays Limestone Member",
+			"description": "Late Cretaceous (Turonian to Coniacian) unit in Colorado, Kansas, Nebraska, New Mexico, South Dakota, and Wyoming; aka Fort Hays Limestone Member of Niobrara Formation, Fort Hays Limestone Member of Mancos Shale; also called Hays in some early reports",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/FortHays_8167.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8167"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fossil Butte Member",
+			"description": "early to middle Eocene unit in Green River basin, Wyoming; Fossil Butte Member of Green River Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/FossilButte_8177.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8177"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Fraileys Shale Member",
+			"description": "Mississippian unit in Illinois, Kentucky, and Missouri",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Fraileys_1722.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/1722"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Frenchman Springs Member",
+			"description": "middle Miocene unit in Eastern Columbia basin, Washington and Oregon; Frenchman Springs Member of Wanapum Basalt of Columbia River Basalt Group, Yakima basalt subgroup (informal)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/FrenchmanSprings_5359.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5359"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Getaway Limesetone Member",
+			"description": "Late Permian unit in New Mexico and Texas; aka Getaway Limestone Member of Cherry Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Getaway_13005.html",
+				"https://macrostrat.org/sift/#/strat_name/7613"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Gibson Coal Member",
+			"description": "Late Cretaceous (Santonian) unit in New Mexico; aka Gibson Coal Member of Crevasse Canyon Formation, Gibson Member of Crevasse Canyon Formation of Mesaverde Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Gibson_8271.html",
+				"https://macrostrat.org/sift/#/strat_name/70839"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Gilpins Falls Member",
+			"description": "Early Paleozoic unit in Delaware and Maryland; Gilpins Falls Member of James Run Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/GilpinsFalls_1794.html",
+				"https://macrostrat.org/sift/#/strat_name/62564"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Gould Shale Member",
+			"description": "Miocene unit of the Monterey Formation in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Gould_13041.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13041"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Gredal Member",
+			"description": "Eocene unit in California; aka Gredal Shale Member of Kreyenhagen Formation, Gredal Member of Lodo Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Gredal_13060.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13060"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Guye Sedimentary Member",
+			"description": "late and middle Eocene unit in Washington; Guye Sedimentary Member of Naches Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Guye_5478.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5478"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hall Lake Member",
+			"description": "Late Cretaceous and Paleocene unit in New Mexico; aka Hall Lake Member of McRae Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HallLake_13095.html",
+				"https://macrostrat.org/sift/#/strat_name/76399"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hamburg Member",
+			"description": "early Cambrian unit of the Calloway Creek Limestone Formation in New Jersey",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hamburg_1948.html",
+				"https://macrostrat.org/sift/#/strat_name/2879"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Happy Valley Branch Member",
+			"description": "Early Paleozoic unit in Maryland; Happy Valley Branch Member of James Run Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HappyValleyBranch_1968.html",
+				"https://macrostrat.org/sift/#/strat_name/62818"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hartland Shale Member",
+			"description": "early Late Cretaceous (Cenomanian) unit of the Greenhorn Limestone Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hartland_8335.html",
+				"https://macrostrat.org/sift/#/strat_name/70920"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Haystack Valley Member",
+			"description": "Miocene unit in Blue Mountains province, Oregon; Haystack Valley Member of John Day Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HaystackValley_5516.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5516"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Heidlersburg Sandstone Member",
+			"description": "Late Triassic unit in Pennsylvania; aka Heidlersburg Sandstone Member of Gettysburg Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Heidlersburg_2029.html",
+				"https://macrostrat.org/sift/#/strat_name/62916"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hendry Ranch Member",
+			"description": "Late Eocene unit in Wind River basin, Wyoming; Hendry Ranch Member of Tepee Trail Formation of Thorofare Creek Group of Absaroka Volcanic Supergroup, Hendry Ranch Member of Wagon Bed Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HendryRanch_8610.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8610"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hercules Shale Member",
+			"description": "Late Miocene unit of Briones Sandstone (San Pablo Group) in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hercules_5532.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5532"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Holbrook Member",
+			"description": "Early Triassic unit in Arizona; aka Holbrook Sandstone Member of Moenkopi Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Holbrook_8508.html",
+				"https://macrostrat.org/sift/#/strat_name/71151"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Holz Shale Member",
+			"description": "Late Cretaceous unit in California; aka Holz Shale Member of Ladd Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Holz_5559.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5559"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Horsetail Creek Member",
+			"description": "Oligocene unit of the White River Formation in Colorado",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HorsetailCreek_13199.html",
+				"https://macrostrat.org/sift/#/strat_name/76520"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hosta Sandstone Member",
+			"description": "Late Cretaceous (Santonian) unit in New Mexico; aka Hosta Tongue of Point Lookout Sandstone of Mesaverde Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hosta_8555.html",
+				"https://macrostrat.org/sift/#/strat_name/71200"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hughes Creek Shale Member",
+			"description": "early Permian (Wolfcampian) unit of the Foraker Limestone Formation in Nebraska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HughesCreek_8578.html",
+				"https://macrostrat.org/sift/#/strat_name/10418"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hunter Wash Member",
+			"description": "Late Cretaceous (Maastrichtian) unit in New Mexico; aka Hunter Wash Member of Kirtland Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/HunterWash_8896.html",
+				"https://macrostrat.org/sift/#/strat_name/71669"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Hygiene Member",
+			"description": "Late Cretaceous unit of the Pierre Shale in Colorado and Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Hygiene_8904.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8904"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ithaca Member",
+			"description": "Devonian unit, predominantly shale, in New York",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ithaca_13265.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13265"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Jansen Creek Member",
+			"description": "Early Oligocene unit in Olympic Mountains province, Washington; Jansen Creek Member of Makah Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/JansenCreek_5665.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5665"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Jetmore Chalk Member",
+			"description": "Late Cretaceous (Turonian) unit of the Greenhorn Limestone Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Jetmore_8989.html",
+				"https://macrostrat.org/sift/#/strat_name/71786"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Jose Creek Member",
+			"description": "Late Cretaceous unit in New Mexico; aka Jose Creek Member of McRae Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/JoseCreek_9014.html",
+				"https://macrostrat.org/sift/#/strat_name/71815"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Juana Lopez Member",
+			"description": "Late Cretaceous (Turonian) unit in Colorado, Kansas, New Mexico, and Utah; aka Juana Lopez Member of Benton Shale, Carlile Shale, Carlile Formation, or Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/JuanaLopez_9019.html",
+				"https://macrostrat.org/sift/#/strat_name/71824"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Keota Sandstone Member",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit in Oklahoma; aka Keota Sandstone Member of McAlester Formation of Krebs Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Keota_8832.html",
+				"https://macrostrat.org/sift/#/strat_name/71582"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Kevin Member",
+			"description": "Late Cretaceous unit of the Marias River Shale (Colorado Group) in Montana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Kevin_8840.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8840"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Kimberly Member",
+			"description": "Early Miocene unit in Blue Mountains province and Columbia basin, Oregon; Kimberly Member of John Day Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Kimberly_5782.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/5782"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Kings Valley Siltstone Member",
+			"description": "Eocene unit in the Siletz River Volcanics of Oregon",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/KingsValley_13364.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13364"
+			]
+		},
+		{
+			"lithostratigraphic_member": "La Casa Member",
+			"description": "Late Pennsylvanian (Virgilian) unit in New Mexico; No current usage, rocks of La Casa Member of Wild Cow Formation of Madera Group reallocated to Atrasado Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LaCasa_9200.html",
+				"https://macrostrat.org/sift/#/strat_name/72047"
+			]
+		},
+		{
+			"lithostratigraphic_member": "La Ventana Tongue Member",
+			"description": "Late Cretaceous unit in New Mexico; aka La Ventana Tongue of Cliff House Sandstone of Mesaverde Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LaVentana_9209.html",
+				"https://macrostrat.org/sift/#/strat_name/72058"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lake Creek Member",
+			"description": "Late Cretaceous (Maastrichtian) unit of the Pierre Shale Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LakeCreek_9227.html",
+				"https://macrostrat.org/sift/#/strat_name/72086"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lake Neosho Shale Member",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit of the Altamont Formation in Missouri",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LakeNeosho_9235.html",
+				"https://macrostrat.org/sift/#/strat_name/72095"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lamar Limestone Member",
+			"description": "Middle Permian (Guadalupian) unit in New Mexico and Texas; aka Lamar Limestone Member of Bell Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lamar_9243.html",
+				"https://macrostrat.org/sift/#/strat_name/7064"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lander Sandstone Member",
+			"description": "Middle Ordovician unit in Montana and Wyoming; aka Lander Sandstone Member of Bighorn Dolomite",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lander_9252.html",
+				"https://macrostrat.org/sift/#/strat_name/72116"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lee Ranch Member",
+			"description": "Early Permian (Leonardian) unit in New Mexico; aka Lee Ranch Tongue of Abo Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LeeRanch_8676.html",
+				"https://macrostrat.org/sift/#/strat_name/71379"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lisco Member",
+			"description": "Quaternary (early Pleistocene) unit of the Broadwater Formation in Nebraska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lisco_8722.html",
+				"https://macrostrat.org/sift/#/strat_name/71446"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Littig Member",
+			"description": "Paleocene unit of the Kincaid Formation (Midway Group) in Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Littig_8726.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/8726"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lodi Member",
+			"description": "late Cambrian unit of the St Lawrence Formation in Wisconsin",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Lodi_2519.html",
+				"https://macrostrat.org/sift/#/strat_name/63632"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Los Esteros Member",
+			"description": "Late Triassic (Carnian, Norian) unit in New Mexico; Los Esteros Member of Santa Rosa Formation of Dockum Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LosEsteros_9089.html",
+				"https://macrostrat.org/sift/#/strat_name/71907"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lost Cabin Member",
+			"description": "Early Eocene unit in Wind River basin, Wyoming; Lost Cabin Member of Wind River Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LostCabin_9096.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9096"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ludlow Member",
+			"description": "early Tertiary (Paleocene) unit in Williston basin of Montana, North Dakota, and South Dakota; Ludlow Member of Fort Union Formation; formerly Ludlow For",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ludlow_9118.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9118"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Lyons Valley Member",
+			"description": "Late Triassic unit in Colorado and Wyoming; aka Lyons Valley Member of Popo Agie Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/LyonsValley_9130.html",
+				"https://macrostrat.org/sift/#/strat_name/71954"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Manzanita Limestone Member",
+			"description": "Late Permian unit in Texas; aka Manzanita Limestone Member of Cherry Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Manzanita_13595.html",
+				"https://macrostrat.org/sift/#/strat_name/7612"
+			]
+		},
+		{
+			"lithostratigraphic_member": "McBryde Limestone Member",
+			"description": "Paleocene unit in Alabama; aka McBryde Limestone Member of Clayton Formation of Midway Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/McBrydeRefs_2698.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/McBryde_2698.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2698"
+			]
+		},
+		{
+			"lithostratigraphic_member": "McDonald Shale Member",
+			"description": "Miocene unit in California; aka McDonald Shale Member of Monterey Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/McDonald_13650.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13650",
+				"https://archives.datapages.com/data/pacific/data/093/093001/97_ps0930097.htm"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Mercer Shale Member",
+			"description": "Early Pennsylvanian unit in Pennsylvania",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mercer_2735.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2735"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Missler Member",
+			"description": "late Tertiary (Pliocene, Blancan NALMA) unit of the Ballard Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Missler_9330.html",
+				"https://macrostrat.org/sift/#/strat_name/72204"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Mitten Member",
+			"description": "Late Cretaceous (Campanian) unit in Colorado, Montana, South Dakota, and Wyoming; aka Mitten Member of Pierre Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mitten_9336.html",
+				"https://macrostrat.org/sift/#/strat_name/72214"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Moqui",
+			"description": "Early Triassic unit in Arizona; aka Moqui Member of Moenkopi Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Moqui_9376.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9376"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Mosby Sandstone Member",
+			"description": "Late Cretaceous unit in the Williston Basin of central North America, part of the Belle Fourche Shale, but also listed as part of the Colorado Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Mosby_9399.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9399"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Mount Hyatt Member",
+			"description": "Mesozoic (Late Triassic, Norian) unit in Nevada; aka Mount Hyatt Member of Gabbs Formation of Volcano Peak Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/MountHyatt_6080.html",
+				"https://macrostrat.org/sift/#/strat_name/68227"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Muley Canyon Sandstone Member",
+			"description": "Late Cretaceous (Campanian) unit in Utah; aka Muley Canyon Sandstone Member of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/MuleyCanyon_6085.html",
+				"https://macrostrat.org/sift/#/strat_name/68236"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Muller Canyon Member",
+			"description": "Mesozoic (Late Triassic, Norian) unit in Nevada; aka Muller Canyon Member of Gabbs Formation of Volcano Peak Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/MullerCanyon_6087.html",
+				"https://macrostrat.org/sift/#/strat_name/68238"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Muschelkalk Halite Member",
+			"description": "Triassic unit of the Dowsing Formation, occurs offshore of England",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=MKHA",
+				"https://macrostrat.org/sift/#/strat_name_concept/31843"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Myton Member",
+			"description": "Eocene unit of the Uinta Formation in Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Myton_13848.html",
+				"https://macrostrat.org/sift/#/strat_name/77298"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Naashoibito Member",
+			"description": "Late Cretaceous (Maastrichtian) terrestrial unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Naashoibito_9472.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9472"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Nambe Member",
+			"description": "Miocene unit in New Mexico; Nambe Member of Tesuque Formation of Santa Fe Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Nambe_9481.html",
+				"https://macrostrat.org/sift/#/strat_name/72378"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Neva Member",
+			"description": "Late Pennsylvanian unit of the Grenola Limestone Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Neva_9516.html",
+				"https://macrostrat.org/sift/#/strat_name/10422"
+			]
+		},
+		{
+			"lithostratigraphic_member": "New Richmond Sandstone Member",
+			"description": "Early Ordovician unit in Iowa, Michigan, and Minnesota",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/NewRichmond_2984.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/2984"
+			]
+		},
+		{
+			"lithostratigraphic_member": "New Scotland Member",
+			"description": "Early Devonian unit in New Jersey, New York, Pennsylvania, Virginia, West Virginia, and Maryland; New Scotland Formation of Helderberg Group, New Scotland Limestone of Helderberg Group, New Scotland Limestone Member of Helderberg Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/NewScotland_2987.html",
+				"https://macrostrat.org/sift/#/strat_name/7142"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Niland Member",
+			"description": "early Eocene unit in Wyoming; aka Niland Tongue of Wasatch Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Niland_9528.html",
+				"https://macrostrat.org/sift/#/strat_name/8030"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Nomlaki Member",
+			"description": "Pliocene unit in Sacramento basin, California; Nomlaki Tuff Member of Tuscan Formation, Tehama Formation, Laguna Form",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Nomlaki_13901.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13901"
+			]
+		},
+		{
+			"lithostratigraphic_member": "North Twistwood Creek Member",
+			"description": "late Eocene unit in Alabama and Mississippi; aka North Twistwood Creek Clay Member of Yazoo Clay of Jackson Group, North Twistwood Creek Member of Yazoo Formation of Jackson Group; Originally called North Creek",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/UnitRefs/NorthTwistwoodCreekRefs_3039.html",
+				"https://ngmdb.usgs.gov/Geolex/Units/NorthTwistwoodCreek_3039.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3039"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Nunn Member",
+			"description": "Early Mississippian (Tournaisian; Osagean) unit in New Mexico; Nunn Member of Lake Valley Limestone, Lake Valley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Nunn_9554.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9554"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Nuwok Member",
+			"description": "Miocene to Pliocene unit in Alaska Northern region, part of Sagavanirktok Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Nuwok_11467.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11467"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Oak Canyon Member",
+			"description": "early Late Cretaceous (Cenomanian) unit in New Mexico; aka Oak Canyon Member of Dakota Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OakCanyon_9557.html",
+				"https://macrostrat.org/sift/#/strat_name/72478"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ochopee Limestone Member",
+			"description": "late Miocene to Pliocene unit of the Tamiami Formation in Florida",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ochopee_3076.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3076",
+				"https://en.wikipedia.org/wiki/Tamiami_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ojo Caliente Sandstone Member",
+			"description": "middle to late Miocene (Clarendonian NALMA) unit in New Mexico; aka Ojo Caliente Sandstone Member of Tesuque Formation of Santa Fe Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OjoCaliente_9664.html",
+				"https://macrostrat.org/sift/#/strat_name/72599"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ojo Encino Member",
+			"description": "Early Paleocene unit in New Mexico; aka Ojo Encino Member of Nacimiento Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OjoEncino_9665.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9665",
+				"https://en.wikipedia.org/wiki/Nacimiento_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ojo Huelos Member",
+			"description": "Late Triassic (Late Carnian) unit in New Mexico; aka Ojo Huelos Member of San Pedro Arroyo Formation of Chinle Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OjoHuelos_9666.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9666"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Orchard Point Member",
+			"description": "Oligocene unit in Puget Sound province, Washington; Orchard Point Conglomerate Member of Blakeley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OrchardPoint_13962.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/13962"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Orella Member",
+			"description": "Oligocene unit in Nebraska and Wyoming; aka Orella Member of Brule Forma",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Orella_13965.html",
+				"https://macrostrat.org/sift/#/strat_name/77436"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Oso Ridge Member",
+			"description": "Late Pennsylvanian (Virgilian) to Early Permian (Wolfcampian) unit in New Mexico; aka Oso Ridge Member of Abo Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OsoRidge_9700.html",
+				"https://macrostrat.org/sift/#/strat_name/72647"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Otowi Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Otowi_9706.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9706"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Owens Creek Member",
+			"description": "Early Cambrian unit in Maryland, Virginia, and West Virginia; Owens Creek Member of Weverton Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/OwensCreek_3147.html",
+				"https://macrostrat.org/sift/#/strat_name/64607"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pachuta Marl Member",
+			"description": "Paleogene unit in Alabama",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pachuta_3153.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3153",
+				"https://en.wikipedia.org/wiki/Pachuta_Marl"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Padden Member",
+			"description": "Late Middle To Eocene Eocene unit in Washington; Padden Member of Chuckanut Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Padden_11515.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11515"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Paguate Tongue",
+			"description": "sandstone unit of the Dakota Sandstone in the San Juan basin of Colorado and New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Paguate_9742.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9742"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Parachute Creek Member",
+			"description": "Eocene unit in Colorado and Utah; aka Parachute Creek Member of Green River Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ParachuteCreek_9761.html",
+				"https://macrostrat.org/sift/#/strat_name/7154"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Paveloff Siltstone Member",
+			"description": "Middle Jurassic unit in Alaska Southwestern region; aka Paveloff Siltstone Member of Chinitna Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Paveloff_11555.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11555"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Peralta Tuff Member",
+			"description": "late Tertiary (late Miocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Peralta_9587.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9587"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pereira Shale Member",
+			"description": "Eocene unit of the Alhambra Formation in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pereira_14076.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14076"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Perkasie Shale Member",
+			"description": "Late Triassic (Norian) unit in New Jersey and Pennsylvania; aka Perkasie Member of Brunswick Formatio, Passaic Formation, Brunswick Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Perkasie_3249.html",
+				"https://macrostrat.org/sift/#/strat_name/64750"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Petrified Forest Member",
+			"description": "Late Triassic unit in Arizona, Colorado, New Mexico, Nevada, and Utah; aka Petrified Forest Member of Chinle Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PetrifiedForest_9600.html",
+				"https://macrostrat.org/sift/#/strat_name/7165"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pfeifer Shale Member",
+			"description": "Late Cretaceous unit of the Greenhorn Limestone Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pfeifer_9602.html",
+				"https://macrostrat.org/sift/#/strat_name/72529"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pine Barren Member",
+			"description": "Paleocene (Danian) unit of the Clayton Formation in central Alabama",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PineBarren_3290.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3290",
+				"https://doi.org/10.1093/jcbiol/ruz002"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pine Shadow Member",
+			"description": "Late Pennsylvanian (Virgilian) unit in New Mexico; no current usage, rocks of Pine Shadow Member of Wild Cow Formation of Madera Group reallocated to Atrasado Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PineShadow_9804.html",
+				"https://macrostrat.org/sift/#/strat_name/72776"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pinecrest Sand Member",
+			"description": "late Miocene to Pliocene unit of the Tamiami Formation in Florida",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pinecrest_3298.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3298",
+				"https://en.wikipedia.org/wiki/Tamiami_Formation"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pinery Limestone Member",
+			"description": "Late Permian unit in New Mexico and Texas; aka Pinery Limestone Member of Bell Canyon Formation of Delaware",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pinery_14108.html",
+				"https://macrostrat.org/sift/#/strat_name/7609"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pipeline Shale Member",
+			"description": "Late Permian unit in Texas; aka Pipeline Shale Member of Brushy Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pipeline_14117.html",
+				"https://macrostrat.org/sift/#/strat_name/77613"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pisgah Member",
+			"description": "Paleocene unit of the Kincaid Formation (Midway Group) in Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pisgah_9822.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9822"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Point of Rocks Sandstone Member",
+			"description": "Eocene unit of either the Kreyenhagen or Tejon Formation (depending on usage) in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PointOfRocks_14137.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14137"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pojoaque Member",
+			"description": "Miocene unit in New Mexico; aka Pojoaque Member of Tesuque Formation of Santa Fe Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Pojoaque_9855.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/9855"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Poleslide Member",
+			"description": "Tertiary (Oligocene) unit of the Brule Formation in South Dakota",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Poleslide_9861.html",
+				"https://macrostrat.org/sift/#/strat_name/72850"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Pool Creek Member",
+			"description": "Late Cretaceous (Turonian) unit in Montana, South Dakota, and Wyoming; aka Pool Creek Member of Carlile Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/PoolCreek_9872.html",
+				"https://macrostrat.org/sift/#/strat_name/72865"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Poolesville Member",
+			"description": "Late Triassic (Late Carnian to Early Norian) unit in Maryland and Virginia; Poolesville Member of Manassas Sandstone of Culpeper Group of Newark Supergroup",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Poolesville_3359.html",
+				"https://macrostrat.org/sift/#/strat_name/64911"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Rader Limestone Member",
+			"description": "Late Permian unit in New Mexico and Texas; aka Rader Limestone Member of Bell Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Rader_14223.html",
+				"https://macrostrat.org/sift/#/strat_name/7610"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Rakauroa Member",
+			"description": "Cretaceous to Paleocene unit of the Whangai Formation in the Gisborne region of New Zealand; aka Rakauroa Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://data.gns.cri.nz/stratlex/view.jsp?id=2679&page=1",
+				"https://macrostrat.org/sift/#/strat_name/105859",
+				"https://www.tandfonline.com/doi/pdf/10.1080/00288301003639742"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Rattlesnake Ridge Member",
+			"description": "Pliocene unit in Eastern Columbia basin, Washington; aka Rattlesnake Ridge Member of Ellensburg Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RattlesnakeRidge_15673.html",
+				"https://macrostrat.org/sift/#/strat_name/79518"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Recapture Shale Member",
+			"description": "Late Jurassic unit in Arizona, Colorado, New Mexico, and Utah; aka Recapture Member of Morrison Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Recapture_10093.html",
+				"https://macrostrat.org/sift/#/strat_name/3041"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Rector Conglomerate Member",
+			"description": "Early Cretaceous unit of the Budden Canyon Formation in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Rector_11676.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11676"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Red Draw Member",
+			"description": "Late Triassic unit in Colorado and Wyoming; aka Red Draw Member of Jelm Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RedDraw_10108.html",
+				"https://macrostrat.org/sift/#/strat_name/73162"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Red Tanks Member",
+			"description": "Early Permian unit in New Mexico; aka Red Tanks Member of Bursum Formation of Madera Group, Red Tanks Member of Madera Limestone, Red Tanks Member of Madera Limestone of Magdalena Group; not used by the New Mexico Geological Survey",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RedTanks_10121.html",
+				"https://macrostrat.org/sift/#/strat_name/73178"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Redondo Creek Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RedondoCreek_10126.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10126"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Reef Ridge Shale Member",
+			"description": "Miocene unit in California; aka Reef Ridge Shale, Reef Ridge Shale Member of Monterey Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ReefRidge_14259.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14259",
+				"https://pubs.usgs.gov/pp/pp1713/05/pp1713_ch05.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Reef Trail Member",
+			"description": "Middle Permian (latest Guadalupian) unit in New Mexico and Texas; aka Reef Trail Member of Bell Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ReefTrail_16731.html",
+				"https://macrostrat.org/sift/#/strat_name/80328"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Regina Member",
+			"description": "Early Eocene unit in Colorado and New Mexico; Regina Member of San Jose Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Regina_10133.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10133"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Relay Gneiss Member",
+			"description": "Early Paleozoic (Cambrian) unit in Maryland; aka Relay Gneiss Member of James Run Formation, Relay Felsite",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Relay_3514.html",
+				"https://macrostrat.org/sift/#/strat_name/65139"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Ridgeley Member",
+			"description": "Early Devonian unit in Pennsylvania, Maryland, Virginia, West Virginia, and New Jersey; Ridgeley Sandstone Member of Oriskany Formation, Ridgeley Sandstone Member of Old Port Formation, Ridgeley Sandstone of Oriskany Group, Ridgeley Member of Oriskany Sandstone, Ridgeley Member of Old Port Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Ridgeley_3547.html",
+				"https://macrostrat.org/sift/#/strat_name/65203"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Rock Lake Shale Member",
+			"description": "Late Pennsylvanian (Missourian) unit in Iowa, Kansas, Missouri, and Nebraska; Rock Lake Shale Member of Stanton Limestone of Lansing Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/RockLake_10213.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10213"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Roza Member",
+			"description": "late Tertiary (middle Miocene) unit in Washington; Roza Member of Wanapum Basalt of Columbia River Basalt Group, Yakima basalt subgroup (informal)",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Roza_6158.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/6158"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Salt Wash Sandstone Member",
+			"description": "Late Jurassic unit in Arizona, Colorado, New Mexico, and Utah; aka Salt Wash Member of Morrison Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SaltWash_10449.html",
+				"https://macrostrat.org/sift/#/strat_name/3059"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Satan Member",
+			"description": "Late Cretaceous (Santonian) unit in New Mexico; Satan Tongue of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Satan_9979.html",
+				"https://macrostrat.org/sift/#/strat_name/72999"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Selah Member",
+			"description": "Miocene or Pliocene unit in Washington; aka Selah Tuff, Selah Member of Ellensburg Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Selah_11801.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11801"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Selkirk Member",
+			"description": "Ordovician (Caradoc Series) unit in Manitoba; consists of mottled, pale yellowish grey to medium yellowish brown, medium-bedded dolomitic limestone",
+			"issue_url": "",
+			"documentation_url": [
+				"http://weblex.nrcan.gc.ca/html/013000/GSCC00053013514.html",
+				"https://macrostrat.org/sift/#/strat_name/10450"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Shinarump Member",
+			"description": "Trassic unit of the Chinle Formation in Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Shinarump_10374.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10374"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Shubuta Member",
+			"description": "Eocene unit of the Yazoo Clay in Alabama, Louisiana, and Mississippi",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Shubuta_3824.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/3824",
+				"https://en.wikipedia.org/wiki/Yazoo_Clay"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Skull Ridge Member",
+			"description": "Miocene unit in New Mexico; aka Skull Ridge Member of Tesuque Formation of Santa Fe Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SkullRidge_10284.html",
+				"https://macrostrat.org/sift/#/strat_name/73370"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Slide Member",
+			"description": "Middle Eocene unit in Washington; Slide Member of Chuckanut Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Slide_11950.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11950"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Smelser Pass Member",
+			"description": "Triassic limestone unit in Nevada",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SmelserPass_11951.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11951"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Sonsela Member",
+			"description": "Triassic, predominantly sandstone unit in Arizona and New Mexico; described in: Martz and Parker 2010",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Sonsela_10484.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10484",
+				"https://doi.org/10.1371/journal.pone.0009329"
+			]
+		},
+		{
+			"lithostratigraphic_member": "South Wells Limestone Member",
+			"description": "Late Permian unit in Texas; aka South Wells Limestone Member of Cherry Canyon Formation of Delaware Mountain Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/SouthWells_14536.html",
+				"https://macrostrat.org/sift/#/strat_name/7614"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Speeton Beck Member",
+			"description": "Cretaceous (Albian) unit of the Hunstanton Formation, found offshore of England",
+			"issue_url": "",
+			"documentation_url": [
+				"http://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=SPBK",
+				"https://macrostrat.org/sift/#/strat_name/99729"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Spence Shale Member",
+			"description": "Cambrian unit in Idaho and Utah; aka Spence Shale Member of Langston Dolomite, Spence Tongue of Lead Bell Shale, Spence Shale Member of Langston Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Spence_10517.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10517"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Springdale Sandstone Member",
+			"description": "Early Jurassic (Sinemurian, Pliensbachian) unit in Arizona, Nevada, and Utah; aka Springdale Sandstone Member of Moenave Formation of Glen Canyon Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Springdale_10535.html",
+				"https://macrostrat.org/sift/#/strat_name/73689"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Stuver Member",
+			"description": "Late Devonian, Early Mississippian unit in Alaska Northern region; Stuver Member of Kanayut Conglomerate of Endicott Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Stuver_12011.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12011"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Taft Hill Member",
+			"description": "Early Cretaceous unit of the Blackleaf Formation (Colorado Group) in Montana",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TaftHill_10687.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10687"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tapicitos Member",
+			"description": "Early Eocene unit in Colorado and New Mexico; aka Tapicitos Member of San Jose Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tapicitos_10782.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10782"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Teckla Sandstone Member",
+			"description": "Late Cretaceous (Campanian) unit in Wyoming; aka Teckla Sandstone Member of Lewis Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Teckla_10799.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10799"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tecolotito Member",
+			"description": "Late Triassic (Early Carnian) unit in New Mexico; aka Tecolotito Member of Santa Rosa Formation of Dockum Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tecolotito_10800.html",
+				"https://macrostrat.org/sift/#/strat_name/73993"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Thatcher Limestone Member",
+			"description": "Late Cretaceous unit in Colorado and New Mexico; aka Thatcher Limestone Member of Graneros Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Thatcher_10837.html",
+				"https://macrostrat.org/sift/#/strat_name/74043"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Thurgood Sandstone Member",
+			"description": "late Late Devonian (Famennian) unit in New Mexico; aka Thurgood Sandstone Member of Contadero Formation, Thurgood Formation; originally spelled Thoroughgood",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Thurgood_10862.html",
+				"https://macrostrat.org/sift/#/strat_name/74078"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tibbee Creek Marl Member",
+			"description": "Campanian unit of the Demopolis Chalk Formation in Alabama and Mississippi",
+			"issue_url": "",
+			"documentation_url": ["https://macrostrat.org/sift/#/strat_name/3126"]
+		},
+		{
+			"lithostratigraphic_member": "Tierra Blanca Member",
+			"description": "Early Mississippian (Tournaisian; Osagean) unit in New Mexico; aka Tierra Blanca Member of Lake Valley Limestone, Tierra Blanca Member of Lake Valley Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TierraBlanca_10869.html",
+				"https://macrostrat.org/sift/#/strat_name/74086"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Timms Point Silt Member",
+			"description": "early Pleistocene unit of the San Pedro Formation in California",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TimmsPoint_14671.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14671",
+				"https://books.google.com/books?id=HU7wAAAAMAAJ&pg=RA4-SL7-PA39&lpg=RA4-SL7-PA39&dq=Timms+Point+silt&source=bl&ots=ttohBzpopF&sig=ACfU3U0kwbGHrzxX1KfGD3Z-XVTrt4R6TQ&hl=en&sa=X&ved=2ahUKEwiisrnlmoHkAhXUKs0KHUJPDUIQ6AEwBXoECAcQAQ#v=onepage&q=Timms%20Point%20silt&f=false"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tocito Sandstone Member",
+			"description": "Late Cretaceous unit in Colorado and New Mexico; aka Tocito Sandstone Lentil of Mancos Shale, Tocito Member of Gallup Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tocito_10895.html",
+				"https://macrostrat.org/sift/#/strat_name/74107"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tom Thumb Tuff Member",
+			"description": "Eocene unit in Northern Cascade Range-Okanagan province, Washington; Tom Thumb Tuff Member of Klondike Mountain Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TomThumb_14687.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14687"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tombigbee Sand Member",
+			"description": "Late Cretaceous (Santonian to Campanian) unit in Alabama, Georgia, Mississippi, and Tennessee; aka Tombigbee Sand Member of Eutaw Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tombigbee_4130.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4130"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tonganoxie Sandstone Member",
+			"description": "Late Pennsylvanian unit in Kansas and Missouri; Tonganoxie Sandstone Member of Stranger Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tonganoxie_15944.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/15944"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tongue River Member",
+			"description": "early Tertiary (late Paleocene, Tiffanian) unit in Montana and Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TongueRiver_10901.html",
+				"https://macrostrat.org/sift/#/strat_name/74116"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tonnie Siltstone Member",
+			"description": "Middle Jurassic unit in Alaska Southwestern region; Tonnie Siltstone Member of Chinitna Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tonnie_12113.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12113"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Torchlight Sandstone Member",
+			"description": "Late Cretaceous unit of the Frontier Formation (Colorado Group) in Montana and Wyoming",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Torchlight_10908.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10908"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Torres Member",
+			"description": "Early Permian (Leonardian) unit in New Mexico; aka Torres Member of Yeso Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Torres_10917.html",
+				"https://macrostrat.org/sift/#/strat_name/3131"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Townsend Shale Member",
+			"description": "Bartonian (Eocene) unit in Washington and British Columbia, Canada; aka Townsend Shale Formation, Townsend Shale Member of Lyre Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Townsend_14701.html",
+				"https://macrostrat.org/sift/#/strat_name/7244",
+				"http://www.donaldprothero.com/files/92366161.pdf"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tres Lagunas Member",
+			"description": "Late Triassic (Late Carnian) unit in New Mexico; aka Tres Lagunas Member of Santa Rosa Formation of Dockum Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TresLagunas_10942.html",
+				"https://macrostrat.org/sift/#/strat_name/74165"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Trimmers Rock Member",
+			"description": "Late Devonian unit in Pennsylvania",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TrimmersRock_4160.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/4160"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tshirege Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tshirege_10968.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10968"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Tununk Member",
+			"description": "Late Cretaceous (Cenomanian to Turonian) unit in Utah and Colorado; aka Tununk Member of Mancos Shale, Tununk Shale Member of Frontier Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Tununk_10983.html",
+				"https://macrostrat.org/sift/#/strat_name/74209"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Turner Sandy Member",
+			"description": "Late Cretaceous (Turonian) unit in Wyoming, Montana, and South Dakota; aka Turner Sandy Member of Carlile Shale, Turner Sandstone",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Turner_10988.html",
+				"https://macrostrat.org/sift/#/strat_name/74219"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Turtle Cove Member",
+			"description": "Oligocene, Early Miocene unit in Blue Mountains province, Oregon; Turtle Cove Member of John Day Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TurtleCove_12160.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12160"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Twin Buttes Member",
+			"description": "Eocene unit in Green River basin, Wyoming; Twin Buttes Member of Bridger Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/TwinButtes_11001.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11001"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Twowells Tongue",
+			"description": "sandstone unit of the Dakota Sandstone in Arizona, Colorado, and New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Twowells_10695.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10695"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Valentine Member",
+			"description": "Miocene unit of the Ogallala Formation in Nebraska",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Valentine_16174.html",
+				"https://macrostrat.org/sift/#/strat_name/80075"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Valle Grande Member",
+			"description": "Quaternary (Pleistocene) unit in New Mexico",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/ValleGrande_10737.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/10737"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Valmonte Diatomite Member",
+			"description": "Miocene unit in California, of the Monterey Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Valmonte_14762.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14762"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Vantage Sandstone Member",
+			"description": "middle Miocene unit in Eastern Columbia basin, Washington; Vantage Member of Ellensburg Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Vantage_12197.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/12197"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Wallangulla Sandstone Member",
+			"description": "Albian unit of the Griman Creek Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"http://dbforms.ga.gov.au/pls/www/geodx.strat_units.sch_full?wher=stratno=19267",
+				"https://macrostrat.org/sift/#/strat_name/84783"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Warmington Limestone Member",
+			"description": "Middle Pennsylvanian (Desmoinesian) unit in New Mexico; no current usage, rocks reallocated to Elephant Butte Member of Gray Mesa Formation of Madera Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Warmington_11059.html",
+				"https://macrostrat.org/sift/#/strat_name/74308"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Wayland Shale Member",
+			"description": "Pennsylvanian unit in Texas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wayland_11080.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11080"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Weberg Member",
+			"description": "Early Jurassic unit of the Snowshoe Formation in Oregon",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Weberg_14835.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/14835"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Weskan Member",
+			"description": "Late Cretaceous unit of the Pierre Shale Formation in Kansas",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Weskan_11102.html",
+				"https://macrostrat.org/sift/#/strat_name/74363"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Westwater Canyon Member",
+			"description": "Late Jurassic unit in Arizona, Colorado, New Mexico, and Utah",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/WestwaterCanyon_11116.html",
+				"https://macrostrat.org/sift/#/strat_name_concept/11116"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Whitewater Arroyo Member",
+			"description": "early Late Cretaceous (Cenomanian) unit in New Mexico; aka Whitewater Arroyo Shale Member of Dakota Sandstone, Whitewater Arroyo Tongue of Mancos Shale",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/WhitewaterArroyo_11147.html",
+				"https://macrostrat.org/sift/#/strat_name/74417"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Whitmore Point Member",
+			"description": "Early Jurassic (Sinemurian, Pliensbachian) unit in Arizona, Nevada, and Utah; aka Whitmore Point Member of Moenave Formation of Glen Canyon Group",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/WhitmorePoint_11150.html",
+				"https://macrostrat.org/sift/#/strat_name/74423"
+			]
+		},
+		{
+			"lithostratigraphic_member": "Wupatki Member",
+			"description": "Early Triassic unit in Arizona; aka Wupatki Member of Moenkopi Formation",
+			"issue_url": "",
+			"documentation_url": [
+				"https://ngmdb.usgs.gov/Geolex/Units/Wupatki_11243.html",
+				"https://macrostrat.org/sift/#/strat_name/74539"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctlithostratigraphic_member",
+			"label": "Locality Attribute: Lithostratigraphic Members",
+			"description": "Controlled vocabulary for lithostratigraphic members available as locality attributes."
+		}
+	]
+}

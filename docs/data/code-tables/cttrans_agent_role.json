@@ -1,0 +1,65 @@
+{
+	"data": [
+		{
+			"trans_agent_role": "authorized by",
+			"description": "Person or persons within the Institution who authorized a transaction. Multiple authorizers are allowed.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "associated with agency",
+			"description": "Agency which has provided support for a transaction. Useful to distinguish Accessions provided by people as part of their capacity at an Agency from those provided by agency personnel without agency support, for example.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "contact agent",
+			"description": "Any person who may be contacted about the transaction. Use this to supplement in-house and outside contacts, not instead of those. Agents in this role will not receive any automated notifications from Arctos. Multiple contact agents are allowed.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "in-house contact",
+			"description": "Person within the institution who will receive email notifications from Arctos about the transaction. Only one in-house contact is allowed. If you want to include additional contacts, please use the \"contact agent\" role.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "outside contact",
+			"description": "Person from outside the institution who will receive email notifications from Arctos about the transaction. Only one outside contact is allowed. If you want to add contacts, please use the \"contact agent\" role.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "received by",
+			"description": "Person receiving a Loan.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "received from",
+			"description": "Person who provided or is responsible for an Accession.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "notification contact",
+			"description": "Agent to which notifications are sent when a loan is approaching its due date. Multiple notification agents are allowed, but be advised that all notification contacts will receive notifications.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"trans_agent_role": "entered by",
+			"description": "Automatically populated with login information of the agent who entered or uploaded the transaction. Using this role in a transaction bulkload file will result in an error.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/5439"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttrans_agent_role",
+			"label": "Transaction: Agent Roles",
+			"description": "transaction agent types"
+		}
+	]
+}

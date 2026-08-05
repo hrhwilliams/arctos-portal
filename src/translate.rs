@@ -32,7 +32,9 @@ pub(crate) const SOURCE: &[&str] = &[
     "use_license_url",
 ];
 
-const PER_PAGE: usize = 100;
+/// The service fixes the page size and takes no `per_page`; `/api/schema`
+/// serves this number so the client's pager is not a guess about it.
+pub(crate) const PER_PAGE: usize = 100;
 const TRACK_TOTAL_HITS: usize = 10_000;
 
 struct Attr {
@@ -292,6 +294,33 @@ pub fn translate(form: &SearchForm) -> Value {
     })
 }
 
+/// One page of guids for the same form the search page ran.
+///
+/// The export needs every match, not a page of records: the guids are the
+/// index's answer, and the record bodies come out of the Parquet. So the query
+/// is [`translate`] with the parts a page needs stripped — no aggregation, no
+/// `_source` but the guid, and `search_after` in place of `from`, which is the
+/// only way past the 10,000-document result window.
+///
+/// `after` is the last guid of the previous page; `None` starts.
+#[must_use]
+pub fn export_query(form: &SearchForm, after: Option<&str>, size: usize) -> Value {
+    let mut query = translate(form);
+    query["size"] = json!(size);
+    // The guid off the doc values, not out of `_source`: reading one column
+    // beats decompressing and parsing the whole document 10,000 times a page.
+    query["_source"] = json!(false);
+    query["docvalue_fields"] = json!(["guid"]);
+    // `track_total_hits` stays as the search set it: turning it off drops
+    // `hits.total`, and the envelope this decodes into requires it
+    query.as_object_mut().map(|q| q.remove("aggs"));
+    query.as_object_mut().map(|q| q.remove("from"));
+    if let Some(after) = after {
+        query["search_after"] = json!([after]);
+    }
+    query
+}
+
 /// "Out of N records, M carry the attributes you asked for."
 ///
 /// `context` is N: what the rest of the form selects with the attribute rows
@@ -513,6 +542,31 @@ mod tests {
             })["from"],
             0
         );
+    }
+
+    #[test]
+    fn the_export_query_pages_past_the_result_window_on_the_same_filters() {
+        let f = SearchForm {
+            country: Some(vec!["Mexico".into()]),
+            page: Some(4),
+            ..form()
+        };
+        let q = export_query(&f, None, 10_000);
+
+        // the filters are the search's, whatever page the form was left on
+        assert_eq!(q["query"], translate(&f)["query"]);
+        assert!(q.get("from").is_none());
+        assert!(q.get("aggs").is_none());
+        assert_eq!(q["size"], 10_000);
+        // the guid comes off the doc values, so no document is fetched at all
+        assert_eq!(q["_source"], false);
+        assert_eq!(q["docvalue_fields"][0], "guid");
+        // sorted by guid, so the last guid of a page is where the next resumes
+        assert_eq!(q["sort"][0]["guid"], "asc");
+        assert!(q.get("search_after").is_none());
+
+        let next = export_query(&f, Some("MSB:Mamm:9"), 10_000);
+        assert_eq!(next["search_after"][0], "MSB:Mamm:9");
     }
 
     #[test]

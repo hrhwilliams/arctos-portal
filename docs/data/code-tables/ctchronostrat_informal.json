@@ -1,0 +1,115 @@
+{
+	"data": [
+		{
+			"chronostrat_informal": "Desmoinesian (Stage/Age)",
+			"description": "Desmoinesian is a chronostratigraphic unit used in North America for a stage in the Middle Pennsylvanian, but is not in the international chronostratigraphic chart. See <a class=\"external\" href=\"https://en.wikipedia.org/wiki/Pennsylvanian_(geology)#Subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Smithian (Substage/Subage)",
+			"description": "The Olenekian is sometimes divided into the Smithian and the Spathian subages or substages <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Olenekian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Ionian (Stage/Age)",
+			"description": "also called Middle Pleistocene, third of four stages of the Pleistocene Series, encompassing all rocks deposited during the Ionian Age (781,000 to 126,000 years ago) of the Pleistocene Epoch in the Quaternary Period <a target=\"_blank\" class=\"external\" href=\"https://www.britannica.com/science/Ionian-Stage\">Britannica</a>"
+		},
+		{
+			"chronostrat_informal": "Chesterian (Stage/Age)",
+			"description": "A subdivision of the Mississippian in the North American system. Includes the top of the Visean plus the Serpukhovian. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Mississippian_(geology)#Subdivisions\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Morrowan (Stage/Age)",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"http://fossilworks.org/bridge.pl?a=displayInterval&interval_no=460\">Fossilworks</a>"
+		},
+		{
+			"chronostrat_informal": "Precambrian (Eon/Eonothem)",
+			"description": "The Precambrian (or Pre-Cambrian, sometimes abbreviated pЄ, or Cryptozoic) is the earliest part of Earth's history, set before the current Phanerozoic Eon. <a target=\"_blank\" class=\"external\" href=\"https://en.wikipedia.org/wiki/Precambrian\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Leonardian (Series/Epoch)",
+			"description": "<a target=\"_blank\" class=\"external\" href=\"https://ngmdb.usgs.gov/Geolex/UnitRefs/LeonardianRefs_11856.html\">USGS</a>"
+		},
+		{
+			"chronostrat_informal": "Griesbachian (substage/subage)",
+			"description": "Subdivision of the Induan stage/age. See <a href=\"https://en.wikipedia.org/wiki/Induan\" class=\"external\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Osagean (Series/Epoch)",
+			"description": "A North American subdivision of the Mississippian. <a href=\"https://en.wikipedia.org/wiki/Mississippian_(geology)\" class=\"external\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Chadian (Substage/Subage)",
+			"description": "A British subdivision of the Visean Stage/Age. <a href=\"https://en.wikipedia.org/wiki/Vis%25C3%25A9an\" class=\"external\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Dienerian (substage/subage)",
+			"description": "Subdivision of the Induan stage/age. See <a href=\"https://en.wikipedia.org/wiki/Induan\" class=\"external\">Wikipedia</a>"
+		},
+		{
+			"chronostrat_informal": "Richmondian (Stage/Age)",
+			"description": "A North American subdivision of the Upper Ordovician Epoch. | http://www.fossilworks.org/cgi-bin/bridge.pl?a=displayInterval&interval_no=565 | https://ilstratwiki.web.illinois.edu/wiki/Richmondian_Stage | https://github.com/ArctosDB/arctos/issues/7220"
+		},
+		{
+			"chronostrat_informal": "Saucesian (Stage/Age)",
+			"description": "This is the lowermost and oldest major division of Early Miocene rocks and time (23.7 to 16.6 million years ago) on the Pacific coast of North America. The Saucesian Stage, which preceded the Relizian Stage, was named for exposures studied at Los Sauces Creek, California. Three zones, or subdivisions, of Saucesian time are recognized, each of which is characterized by a distinctive species of foraminiferan (protozoans related to the common amoeba that possess a shell). The Saucesian is correlated with the Aquitanian Stage of Europe. https://www.britannica.com/science/Saucesian-Stage | https://en.wikipedia.org/wiki/List_of_geochronologic_names| https://github.com/ArctosDB/code-table-work/issues/81"
+		},
+		{
+			"chronostrat_informal": "Sparnacian (Substage/Subage)",
+			"description": "Regional term used for substage of the early Eocene of the Paris Basin, France. (Lithographic Lexicon of Switzerland) | https://www.strati.ch/en/stratigraphic/sparnacian | https://github.com/ArctosDB/code-table-work/issues/132"
+		},
+		{
+			"chronostrat_informal": "Spathian (Substage/Subage)",
+			"description": "The Olenekian is sometimes divided into the Smithian and the Spathian subages or substages | https://en.wikipedia.org/wiki/Olenekian"
+		},
+		{
+			"chronostrat_informal": "Lostcabinian (Substage/Subage)",
+			"description": "Eocene North American substage of the Wasatchian North American Land Mammal Age (NALMA); Clyde et al 1997 The Journal of Geology v105(6):657-670. | https://doi.org/10.1086/515970 | https://github.com/ArctosDB/code-table-work/issues/136"
+		},
+		{
+			"chronostrat_informal": "Missourian (Stage/Age)",
+			"description": "A North American subdivision of the Pennsylvanian. | https://en.wikipedia.org/wiki/Pennsylvanian_(geology)#Subdivisions"
+		},
+		{
+			"chronostrat_informal": "Niagarian (Stage/Age)",
+			"description": "A North American subdivision of the Silurian Period. | https://pubs.usgs.gov/sim/3068/"
+		},
+		{
+			"chronostrat_informal": "Virgilian (Stage/Age)",
+			"description": "This series is part of the Pennsylvanian epoch in the North American geologic classification series | https://en.wikipedia.org/wiki/Virgilian_series"
+		},
+		{
+			"chronostrat_informal": "Wolfcampian (Series/Epoch)",
+			"description": "Early Permian series in North America, including outcrops in the MidWest | https://ngmdb.usgs.gov/Geolex/Units/Wolfcampian_11899.html"
+		},
+		{
+			"chronostrat_informal": "Graybullian (Substage/Subage)",
+			"description": "Eocene North American substage of the Wasatchian North American Land Mammal Age (NALMA) (Clyde et al 1997 The Journal of Geology v105(6):657-670.) |  https://doi.org/10.1086/515970\r\nhttps://en.wikipedia.org/wiki/Wasatchian | https://github.com/ArctosDB/code-table-work/issues/135\r\n"
+		},
+		{
+			"chronostrat_informal": "Atokan (Stage/Age)",
+			"description": "A North American subdivision of the Pennsylvanian.  | https://en.wikipedia.org/wiki/Pennsylvanian_(geology)#Subdivisions"
+		},
+		{
+			"chronostrat_informal": "Blacksforkian (Subage/Substage)",
+			"description": "Subage within the Bridgerian North American land mammal age (Clyde et al. 2011, Krishtalka et al. 1987). (Ref: Clyde, W.C., Sheldon, N.D., Koch, P.L., Gunnell, G.F. and Bartels, W.S., 2001. Linking the Wasatchian/Bridgerian boundary to the Cenozoic Global Climate Optimum: new magnetostratigraphic and isotopic results from South Pass, Wyoming. Palaeogeography, Palaeoclimatology, Palaeoecology, 167(1-2), pp.175-199.) https://doi.org/10.1016/S0031-0182(00)00238-8; (Krishtalka, L., West, R.M., Black, C.G., Dawson, M.R., Flynn, J.J., Turnbull, W.D., Stucky, R.K., McKenna, M.C., Bown, T.M., Golz, D.J., Lilligraven, J.A., 1987. Eocene (Wasatchian through Duchesnean) biochronology of North America. In: Woodburne, M.O. (Ed.), Cenozoic Mammals of North America; Geochronology and Biostratigraphy. University of California Press, Berkeley, CA, pp. 77±117.)"
+		},
+		{
+			"chronostrat_informal": "Lysitean (Substage/Subage)",
+			"description": "A North American substage of the Wasatchian (North American Land Mammal Age or NALMA), which shares lower boundary with Graybullian subage and upper boundary with Lostcabinian. | https://en.wikipedia.org/wiki/Wasatchian"
+		},
+		{
+			"chronostrat_informal": "Lower Cambrian (Series/Epoch)",
+			"description": "The earliest (but unspecified) epoch of the Cambrian period. | https://en.wikipedia.org/wiki/Cambrian"
+		},
+		{
+			"chronostrat_informal": "Tertiary (System/Period)",
+			"description": "Obsolete term for a geologic period spanning 66 million to 2.6 or 1.8 million years ago, roughly beginning with the extinction of the non-avian dinosaurs in the Cretaceous–Paleogene extinction event, at the start of the Cenozoic Era, and extended to the beginning of the Quaternary glaciation at the end of the Pliocene Epoch. | https://en.wikipedia.org/wiki/Tertiary_period"
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctchronostrat_informal",
+			"label": "Locality Attribute: Informal Chronostratigraphy",
+			"description": "All chronostratigraphy not included in the International Chronostratigraphic Chart. https://github.com/ArctosDB/arctos/issues/6541"
+		}
+	]
+}

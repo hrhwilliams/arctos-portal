@@ -1,0 +1,59 @@
+{
+	"data": [
+		{
+			"accn_status": "in process",
+			"description": "This accession is a work in progress, but its exact status is unknown. Use more specific statuses if possible.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "complete",
+			"description": "All components and information pertaining to the accession are where they belong. Components have been installed into the collection.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "ready to catalog",
+			"description": "All components pertaining to this accession are ready to be assigned catalog numbers and labeled.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "in process of acquisition",
+			"description": "Steps have been taken to acquire this accession, but not all components and/or documentation are in hand. Example: Components are accessioned but the collection is still waiting on more items or on data, permits, or other documentation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "preparation incomplete",
+			"description": "All components pertaining to this accession are ready for preparation but preparation is not completed. Components may be in a freezer or field jacket awaiting preparation or they may be in various stages of preparation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "in process of cataloging",
+			"description": "Components pertaining to this accession are in the process of being assigned catalog numbers or of being labeled or numbered. This status typically precedes installation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "ready to install",
+			"description": "All components pertaining to this accession are ready to be moved to where they belong in the collection.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"accn_status": "in process of installation",
+			"description": "Components pertaining to this accession are in the process of being moved to where they belong in the collection.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctaccn_status",
+			"label": "Transaction: Accession Status Values",
+			"description": "Status of an accession."
+		}
+	]
+}

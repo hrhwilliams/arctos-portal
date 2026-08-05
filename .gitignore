@@ -1,4 +1,6 @@
-/target
+target
+.tmp
+arctos_parquet
 *.csv
 plan.md
 *.parquet

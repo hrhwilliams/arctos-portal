@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"permit_regulation": "CITES",
+			"description": "Convention on International Trade in Endangered Species of Wild Fauna and Flora",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "BGEPA",
+			"description": "Bald and Golden Eagle Protection Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "ESA",
+			"description": "Endangered Species Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "MBTA",
+			"description": "Migratory Bird Treaty Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "WBCA",
+			"description": "Wild Bird Conservation Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "MMPA",
+			"description": "Marine Mammal Protection Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "LA",
+			"description": "Lacey Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "AECA",
+			"description": "African Elephant Conservation Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "AA",
+			"description": "Antiquities Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "AHPA",
+			"description": "Archaeological and Historical Preservation Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "NHPA",
+			"description": "National Historic Preservation Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "ARPA",
+			"description": "Archaeological and Historical Preservation Act",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"permit_regulation": "APHIS",
+			"description": "Animal and Plant Health Inspection Service",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctpermit_regulation",
+			"label": "Permit: Regulation Types",
+			"description": "permit regulation pertaining to state, federal and international laws"
+		}
+	]
+}

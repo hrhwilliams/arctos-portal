@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"loan_status": "closed",
+			"description": "All items and products such as reprints and measurements are returned and accounted for.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "returned",
+			"description": "All loaned objects are returned and accounted for, but loan is not closed because other loan requirements have not been met.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "in process",
+			"description": "The loan has been initiated but not yet shipped.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "unknown",
+			"description": "The status of the loan is not known.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "open",
+			"description": "Active. Returnable objects are still on loan.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "partially returned",
+			"description": "Some loaned objects have been returned and accounted for.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"loan_status": "denied",
+			"description": "Loan request was denied for reasons documented in loan remarks.",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/2061"],
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "ctloan_status",
+			"label": "Transaction: Loan Status Values",
+			"description": "Loan Status"
+		}
+	]
+}

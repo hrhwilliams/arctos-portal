@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"time_units": "days",
+			"description": "A count of the time periods of a full rotation of the Earth with respect to the Sun.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "hours",
+			"description": "A count of the units of time conventionally reckoned as 1⁄24 of a day and scientifically reckoned between 3,599 and 3,601 seconds, depending on the speed of Earth's rotation.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "months",
+			"description": "A count of the  units of time that is approximately as long as a natural orbital period of the Earth's Moon.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "weeks",
+			"description": "A count of the a units of time equal to seven days",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "years",
+			"description": "A count of the units of time equal to the orbital period of the Earth around the Sun.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "seconds",
+			"description": "A count of the units of time equal to 1/60th of a minute.",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"time_units": "minutes",
+			"description": "A count of the units of time equal to 60 seconds or 1/60th of an hour.",
+			"issue_url": "",
+			"documentation_url": ""
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttime_units",
+			"label": "Time Units",
+			"description": "units of time"
+		}
+	]
+}

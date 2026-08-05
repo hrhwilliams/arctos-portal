@@ -1,0 +1,188 @@
+{
+	"data": [
+		{
+			"source": "UAM Art",
+			"description": "This source contains classifications that are modifications to Getty AAT or Nomenclature 4.0 to allow UAM Art to track objects as they wish.",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Arctos Plants",
+			"description": "ICBN-regulated (in the broadest possible sense) Arctos classification of \"plants\" (=\"things curated by herbaria\").",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Arctos",
+			"description": "Legacy data migrated from Arctos flat tables.",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Arctos Culture",
+			"description": "A source for classifications not from a \"via\" culture source or any particular collection.",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Arctos Ichnology",
+			"description": "A source for classifications of ichnotaxa or trace fossils which are fossil records of biological activity but not the preserved remains of the plant or animal itself. Ichnotaxa are ICZN regulated and all classifications in this source should include ichnogenus and may include ichnospecies.",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Arctos Rocks",
+			"description": "Classifications assigned to naturally-occurring solid aggregates of one or more minerals, mineraloids or, in some cases, organic materials. Note that there are discreet taxonomy sources for minerals.",
+			"edit_tools": "",
+			"edit_users": "jegelewicz,dlm",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "AntWiki (via Arctos)",
+			"description": "Data comes from antwiki.org and must be manually updated.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "aerochild",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Current Amphibian Classification",
+			"description": "Extant amphibian taxonomy, intended to reflect current literature. Managed in the Arctos Hierarchical Taxonomy Editor by Alison Whiting (@byuherpetology on GitHub); please preemptively coordinate any changes or additions. Changes made by other editors are subject to replacement without notice.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "alisonwhiting",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "WoRMS (via Arctos)",
+			"description": "Data from marinespecies.org. All entries should have a WoRMS aphiaID and will be automatically maintained by the World Register of Marine Species.",
+			"edit_tools": "",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ["http://www.marinespecies.org/"]
+		},
+		{
+			"source": "IDNR List",
+			"description": "Records the endangered/threatened status of species in the state of Illinois. This source is expected to only include non-classification terms and must be manually updated each time Illinois Department of Natural Resources releases a new list. This source is managed by Chicago Academy of Sciences (CHAS).",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "jegelewicz,droberts,dlm",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "UAM Plants",
+			"description": "Plant and fungal taxonomy, intended to reflect current literature, with a focus on Alaska. Managed via batch imports and in the Arctos Taxon Terms editor by UAM staff (see managed_by field for current contact).",
+			"edit_tools": "",
+			"edit_users": "camwebb,dlm",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7520"],
+			"documentation_url": ""
+		},
+		{
+			"source": "Nomenclature 4.0 (via Arctos)",
+			"description": "Classifications for cultural objects from Nomenclature 4.0 2015. Must be updated manually. Use file in Arctos Shared Google Drive, linked from documentation.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "dlm,jegelewicz",
+			"issue_url": "",
+			"documentation_url": [
+				"https://docs.google.com/spreadsheets/d/1EnT5TL7bOEkefs9T8Qcmma_oLY3IXE3x/edit?usp=drive_link&ouid=115457622099601875930&rtpof=true&sd=true",
+				"https://www.nomenclature.info/apropos-about.app?lang=en"
+			]
+		},
+		{
+			"source": "Nickel-Strunz 10 (via Arctos)",
+			"description": "10th edition of the Nickel-Strunz Mineral classification system. Compiled from a download of data at Webmineral. Must be manually updated. Use file linked from documentation.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "jegelewicz,dlm",
+			"issue_url": "",
+			"documentation_url": [
+				"http://webmineral.com/strunz/strunz.php#.X85aNbNlA2w",
+				"https://docs.google.com/spreadsheets/d/17fL2eFWaDCWiwXvkeFvxi8tBx9a6kHX5/edit?usp=drive_link&ouid=115457622099601875930&rtpof=true&sd=true"
+			]
+		},
+		{
+			"source": "Dana 8 (via Arctos)",
+			"description": "Classifications assigned to mineral species in Dana's New Mineralogy by Richard V. Gaines, H. Catherine Skinner, Eugene E. Foord, Brian Mason, and Abraham Rosenzweig, with sections by Vandall T. King, Illustrations by Eric Dowty, (ISBN: 047119310-0) Copyright © 1997, John Wiley & Sons, Inc. on 2024-04-03. Source must be manually updated.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "dlm,jegelewicz",
+			"issue_url": "",
+			"documentation_url": ["https://www.webmineral.com/dana/dana.php"]
+		},
+		{
+			"source": "Arctos Common Names",
+			"description": "A source for common names of taxa or organism (also known as a vernacular name, English name, colloquial name, country name, popular name, or farmer's name) which are names that are based on the normal language of everyday life; and are often contrasted with the scientific name for the same organism.",
+			"edit_tools": "",
+			"edit_users": "dlm,jegelewicz",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7832"],
+			"documentation_url": ["https://en.wikipedia.org/wiki/Common_name"]
+		},
+		{
+			"source": "TPT (via Arctos)",
+			"description": "The Parasite Tracker is a Thematic Collections Network (TCN) for parasites. Classifications in this source are vetted by the TCN members and should not be modified except when updates are made to the TPT taxonomy.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "campmlc,dlm,jegelewicz",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "Current Reptile Classification",
+			"description": "Extant non-avian reptile taxonomy, intended to reflect current literature.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "alisonwhiting",
+			"issue_url": "",
+			"documentation_url": ""
+		},
+		{
+			"source": "World Flora Online",
+			"description": "World Flora Online Plant List via GlobalNames.",
+			"edit_tools": "GlobalName API",
+			"edit_users": "",
+			"issue_url": "",
+			"documentation_url": ["https://wfoplantlist.org/"]
+		},
+		{
+			"source": "United States Endangered Species",
+			"description": "Records the endangered/threatened status of species as listed by the United States. This source is expected to only include non-classification terms and must be manually updated each time “List of Endangered and Threatened Wildlife” is updated. This source is managed by the Arctos Taxonomy Committee.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "campmlc,ccicero,dlm,jegelewicz",
+			"issue_url": ["https://github.com/ArctosDB/arctos/issues/7023"],
+			"documentation_url": ""
+		},
+		{
+			"source": "Getty AAT (via Arctos)",
+			"description": "Classifications are from the Objects Facet of the Getty Art & Architecture Thesaurus and must be manually updated.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "dlm,jegelewicz",
+			"issue_url": "",
+			"documentation_url": ["http://vocab.getty.edu/page/aat/300264092"]
+		},
+		{
+			"source": "Heys CIM (via Arctos)",
+			"description": "THIRD EDITION of Hey's Mineral Index, by A. Clark, Dept. of Mineralogy, Natural History Museum, London as taken from mindat. Use file linked from documentation.",
+			"edit_tools": "Arctos Classification Bulkloader",
+			"edit_users": "jegelewicz,dlm",
+			"issue_url": "",
+			"documentation_url": [
+				"https://docs.google.com/spreadsheets/d/1ZITs9484xXMq7BWyMkss1_AB_g4XmwOo/edit?usp=drive_link&ouid=115457622099601875930&rtpof=true&sd=true",
+				"https://www.mindat.org/cim.php"
+			]
+		}
+	],
+	"metadata": [
+		{
+			"table_name": "cttaxonomy_source",
+			"label": "Manage Collection: Taxonomy Sources",
+			"description": "Three sources for taxonomy are allowed, listed in order of preference with example sources:\r\n\r\n1. Available via Global Names API. Must be available in their list of resources (https://verifier.globalnames.org/data_sources). Source must be entered into Arctos exactly as it will be received from GlobalNames. Terms below will list the resource tool as \"GlobalName API \" and automatically populates. (Example: World Flora Online). If it does not exist in the Global Names database, then file an issue request on the Global Names Github repository.\r\n2. Bulkloaded Classification. These are controlled predictable sources that are manually added and maintained. Responsible users are listed and should be limited to those recognizing their responsibility to ensure consistency in data. Comments and requests must go them. Please avoid adding classifications which conflict with sources in GlobalName. (Example: United States Endangered Species)\r\n3. Free text source. Classifications are not from an externally maintained authority or source and are managed by all Arctos users with no responsible maintainers. Please avoid adding classifications which conflict with sources in GlobalName. All users must acknowledge that not limiting tools or specifying responsible users will result in inconsistencies.  (Example: Arctos Culture)"
+		}
+	]
+}
