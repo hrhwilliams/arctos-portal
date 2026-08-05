@@ -17,7 +17,7 @@ use time::{
 use crate::{
     errors::AppError,
     search::{Format, SearchForm},
-    state::AppState,
+    state::{AppState, export_columns},
     translate::SOURCE,
 };
 
@@ -34,7 +34,7 @@ const STAMP: Iso8601<
 
 /// # Errors
 ///
-/// Returns an error if the Elasticsearch request fails.
+/// The function returns an error when the Elasticsearch request fails.
 #[tracing::instrument(skip(app_state))]
 pub async fn search(
     State(app_state): State<AppState>,
@@ -59,28 +59,34 @@ pub async fn search(
     })
 }
 
-/// The whole matching set, not a page: Elasticsearch answers which records
-/// match and `DuckDB` reads their full rows out of the Parquet.
+/// This function exports the whole matching set of records.
+///
+/// `?cols=` sets the columns to export. Without `?cols=`, the export uses the
+/// default column set.
 ///
 /// # Errors
 ///
-/// Returns an error if the Elasticsearch request fails or the Parquet cannot be
-/// read.
+/// The function returns [`AppError::BadRequest`] when `cols` names a column
+/// that the dump does not have. The function returns an error when the
+/// Elasticsearch request fails or when the system cannot read the Parquet
+/// file.
 #[tracing::instrument(skip(app_state))]
 pub async fn download(
     State(app_state): State<AppState>,
     Form(search_form): Form<SearchForm>,
 ) -> Result<Response, AppError> {
+    let columns = export_columns(
+        search_form.cols.as_deref(),
+        &app_state.schema().columns,
+    )?;
     let guids = app_state.export_guids(&search_form).await?;
-    // DuckDB is synchronous and this is minutes of work at the row cap
-    let gz = tokio::task::spawn_blocking(move || AppState::export_csv_gz(&guids))
+    let gz = tokio::task::spawn_blocking(move || AppState::export_csv_gz(&guids, &columns))
         .await
         .map_err(std::io::Error::other)??;
 
     Ok((
         [
             (CONTENT_TYPE, "application/gzip".to_owned()),
-            // already gzip: says so, and stops the compression layer wrapping it again
             (CONTENT_ENCODING, "identity".to_owned()),
             (
                 CONTENT_DISPOSITION,
@@ -96,9 +102,9 @@ fn timestamp() -> String {
     OffsetDateTime::now_utc().format(&STAMP).unwrap_or_default()
 }
 
-/// One row per record, one column per [`SOURCE`] field. A field that is not a
-/// scalar (`events`, `relations`) keeps its JSON in the cell rather than being
-/// flattened, so nothing is silently dropped.
+/// The output has one row per record and one column per [`SOURCE`] field. A
+/// field that is not a single value (`events`, `relations`) keeps its JSON
+/// text in the cell.
 fn to_csv(records: &[Value]) -> String {
     let mut out = SOURCE.join(",");
     for record in records {
@@ -117,8 +123,8 @@ fn to_csv(records: &[Value]) -> String {
     out
 }
 
-/// RFC 4180: wrap in quotes if the value carries a delimiter, and double any
-/// quote inside it.
+/// This function follows RFC 4180. It wraps the value in quotes when the
+/// value has a delimiter. It doubles each quote inside the value.
 fn escape(field: &str) -> String {
     if field.contains([',', '"', '\n', '\r']) {
         format!("\"{}\"", field.replace('"', "\"\""))
@@ -136,7 +142,7 @@ mod tests {
     #[test]
     fn stamp_is_basic_iso_8601_with_no_separators() {
         let s = timestamp();
-        // 20260728T234028Z — nothing a filesystem or a shell would object to
+        // Example: 20260728T234028Z. This form is safe for a filename.
         assert_eq!(s.len(), 16);
         assert_eq!(&s[8..9], "T");
         assert!(s.ends_with('Z'));
@@ -147,8 +153,6 @@ mod tests {
 
     #[test]
     fn csv_quotes_only_what_needs_it_and_keeps_nested_values() {
-        // a record, not an Elasticsearch envelope — the wire format stops at the
-        // seam, so this test no longer has to know it
         let records = vec![json!({
             "guid": "MSB:Mamm:1",
             "scientific_name": "Sorex \"cinereus\", sensu lato",
@@ -159,12 +163,12 @@ mod tests {
         let lines: Vec<&str> = csv.lines().collect();
 
         assert_eq!(lines[0], SOURCE.join(","));
-        // plain value unquoted; comma and embedded quote force quoting, and the
-        // inner `"` doubles
+        // A plain value has no quotes. A comma or a quote forces quotes. Each
+        // inner quote doubles.
         assert!(lines[1].starts_with("MSB:Mamm:1,\"Sorex \"\"cinereus\"\", sensu lato\","));
-        // nested arrays survive as JSON in one cell, so the comma inside quotes
+        // A nested array stays as JSON text in one cell.
         assert!(lines[1].contains("\"[{\"\"relationship\"\":\"\"host of parasite\"\"}]\""));
-        // absent fields are empty cells, so the missing trailing one is bare
+        // A missing field is an empty cell.
         assert!(lines[1].ends_with(','));
         assert_eq!(lines.len(), 2);
     }

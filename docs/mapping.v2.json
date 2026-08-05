@@ -20,11 +20,6 @@
     "properties": {
       "guid": { "type": "keyword" },
       "guid_prefix": { "type": "keyword" },
-      "catalognumberint": { "type": "long" },
-      "institution_acronym": { "type": "keyword" },
-      "collection_cde": { "type": "keyword" },
-      "cataloged_item_type": { "type": "keyword" },
-      "has_tissues": { "type": "integer" },
       "use_license_url": { "type": "keyword" },
 
       "kingdom": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
@@ -39,7 +34,6 @@
       "scientific_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
       "full_taxon_name": { "type": "text" },
       "taxon_rank": { "type": "keyword" },
-      "formatted_scientific_name": { "type": "text", "index": false },
 
       "country": { "type": "keyword", "normalizer": "lc" },
       "state_prov": { "type": "keyword", "normalizer": "lc" },
@@ -99,7 +93,6 @@
           "agent_order": { "type": "integer" }
         }
       },
-      "collector_ids": { "type": "keyword" },
 
       "relations": {
         "type": "nested",

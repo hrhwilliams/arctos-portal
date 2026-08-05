@@ -32,4 +32,9 @@ pub struct SearchForm {
     pub page: Option<usize>,
     #[serde(default)]
     pub format: Format,
+    /// This field applies to the download only. It holds a comma-separated
+    /// list of dump columns to export. The system checks each column name
+    /// against the schema's column list. When this field is absent, the
+    /// system uses the default column set.
+    pub cols: Option<String>,
 }

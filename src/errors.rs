@@ -15,13 +15,18 @@ pub enum AppError {
     Io(#[from] std::io::Error),
     #[error("Code table error: {0}")]
     Json(#[from] serde_json::Error),
+    #[error("{0}")]
+    BadRequest(String),
 }
 
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         tracing::error!("Application error: {self:?}");
 
-        let status = StatusCode::INTERNAL_SERVER_ERROR;
+        let status = match self {
+            Self::BadRequest(_) => StatusCode::BAD_REQUEST,
+            _ => StatusCode::INTERNAL_SERVER_ERROR,
+        };
         let body = format!(
             "<!doctype html><html><body><h1>{}</h1><p>{}.</p></body></html>",
             status.as_u16(),

@@ -19,7 +19,7 @@ const DETECTION_FIELDS: &[(&str, &str)] = &[
     ("not examined for", "not_examined_for"),
 ];
 
-/// Doubles as the CSV column list, so the two cannot drift apart.
+/// This list also serves as the CSV column list.
 pub(crate) const SOURCE: &[&str] = &[
     "guid",
     "scientific_name",
@@ -32,8 +32,8 @@ pub(crate) const SOURCE: &[&str] = &[
     "use_license_url",
 ];
 
-/// The service fixes the page size and takes no `per_page`; `/api/schema`
-/// serves this number so the client's pager is not a guess about it.
+/// The service sets the page size. The service does not accept a `per_page`
+/// value from the client. `/api/schema` sends this number to the client.
 pub(crate) const PER_PAGE: usize = 100;
 const TRACK_TOTAL_HITS: usize = 10_000;
 
@@ -43,15 +43,15 @@ struct Attr {
     negated: bool,
 }
 
-/// Split on the FIRST `|` only. Ranks and attribute types are controlled and
-/// cannot contain one; free-text attribute values routinely do (`reproductive
-/// data` uses `|` as its own internal separator).
+/// This function splits the string at the FIRST `|` only. A rank name and an
+/// attribute type name never contain a `|`. A free-text attribute value can
+/// contain a `|`.
 fn split_once_pipe(s: &str) -> Option<(&str, &str)> {
     s.split_once('|').map(|(a, b)| (a.trim(), b.trim()))
 }
 
-/// Several values OR within one row. `;` is safe as the separator: controlled
-/// values never contain one, and free-text types are single-valued in the form.
+/// This function splits several values that OR within one row. A `;`
+/// character is a safe separator. A controlled value never contains a `;`.
 fn split_values(joined: &str) -> Vec<String> {
     joined
         .split(';')
@@ -61,21 +61,20 @@ fn split_values(joined: &str) -> Vec<String> {
         .collect()
 }
 
-/// One taxon row -> one clause.
+/// This function converts one taxon row into one clause.
 ///
-/// `rank|name` or `rank|name|relationship; relationship`. Neither ranks nor
-/// taxon names nor relationship terms contain a `|`, so the row splits cleanly
-/// into at most three segments.
+/// The row has the form `rank|name` or `rank|name|relationship; relationship`.
+/// A rank name, a taxon name, and a relationship term never contain a `|`.
+/// The row splits into at most three parts.
 fn taxon_clause(raw: &str) -> Option<Value> {
     let (rank, rest) = split_once_pipe(raw)?;
-    // no second `|` means no relation filter: the taxon alone
+    // No second `|` means the row has no relation filter.
     let (name, joined) = split_once_pipe(rest).unwrap_or((rest, ""));
     if name.is_empty() {
         return None;
     }
 
-    // Not a rank column: analysed text with no `.split` subfield, so a binomial
-    // matches as a phrase.
+    // scientific_name is not a rank column. It matches as a phrase.
     let taxon = if rank == "scientific_name" {
         json!({ "match_phrase": { "scientific_name": name } })
     } else {
@@ -87,8 +86,8 @@ fn taxon_clause(raw: &str) -> Option<Value> {
     if relationships.is_empty() {
         return Some(taxon);
     }
-    // AND-ed inside the row, so the relation kinds narrow THIS taxon rather than
-    // becoming a third thing the row can match on its own.
+    // The relation kinds AND with this taxon. They narrow this taxon. They do
+    // not form a separate match condition.
     Some(json!({ "bool": { "filter": [
         taxon,
         { "nested": {
@@ -101,7 +100,7 @@ fn taxon_clause(raw: &str) -> Option<Value> {
 fn decode_attr(raw: &str) -> Option<Attr> {
     let negated = raw.starts_with('!');
     let s = if negated { &raw[1..] } else { raw };
-    // no `|` means no value: "carries this attribute type at all"
+    // No `|` means the row asks only whether the record has this attribute type.
     let (atype, joined) = split_once_pipe(s).unwrap_or_else(|| (s.trim(), ""));
     if atype.is_empty() {
         return None;
@@ -122,21 +121,21 @@ fn any_of(mut clauses: Vec<Value>) -> Value {
     }
 }
 
-/// One attribute row -> one clause.
+/// This function converts one attribute row into one clause.
 ///
-/// Values are optional and exact. With none the row asks "carries this attribute
-/// type at all"; with several they OR. There is no parent/child expansion — a
-/// search for `ectoparasite` matches `ectoparasite`, and a user who wants the
-/// children selects them.
+/// A value is optional and exact. With no value, the row asks only whether
+/// the record has this attribute type. With several values, the values OR.
+/// The function does not expand a value to its child values. A search for
+/// `ectoparasite` matches only `ectoparasite`. A user who wants the child
+/// values must select them.
 fn attribute_clause(a: &Attr) -> Value {
     let flat = DETECTION_FIELDS
         .iter()
         .find(|(id, _)| *id == a.atype)
         .map(|(_, field)| *field);
 
-    // Fast path: a detection-type row needs no nested query at all. The flat
-    // arrays are built from the same parse as the nested docs, so the two cannot
-    // disagree. With no value, presence of the array is the test.
+    // A detection-type row needs no nested query. With no value, the test
+    // checks only whether the array field exists.
     if let Some(field) = flat {
         return if a.values.is_empty() {
             json!({ "exists": { "field": field } })
@@ -168,13 +167,14 @@ fn one(value: Option<&String>) -> &str {
 
 #[must_use]
 pub fn translate(form: &SearchForm) -> Value {
-    // The attribute clauses are kept apart from the rest so the summary can count
-    // the records the rest of the form selects, with the attribute rows lifted.
+    // This function keeps the attribute clauses apart from the rest of the
+    // filter. This split lets the summary count the records that the rest of
+    // the form selects.
     let mut filter: Vec<Value> = Vec::new();
     let mut attr_filter: Vec<Value> = Vec::new();
     let mut must_not: Vec<Value> = Vec::new();
 
-    // ---- block 1: taxon, OR ------------------------------------------------
+    // Block 1: taxon rows OR together.
     let taxon_clauses: Vec<Value> = present(form.taxon.as_ref())
         .iter()
         .filter_map(|raw| taxon_clause(raw))
@@ -183,15 +183,15 @@ pub fn translate(form: &SearchForm) -> Value {
         filter.push(any_of(taxon_clauses));
     }
 
-    // ---- block 2: attributes, AND or OR ------------------------------------
+    // Block 2: attribute rows AND or OR, per attr_op.
     let rows: Vec<Attr> = present(form.attr.as_ref())
         .iter()
         .filter_map(|raw| decode_attr(raw))
         .collect();
 
     if form.attr_op == AttrOp::Or {
-        // A negated row inside an OR reads as "... or does not carry this", so the
-        // negation is local to the clause rather than hoisted to the top level.
+        // A negated row inside an OR clause stays inside that clause. The
+        // negation does not move to the top level.
         let clauses: Vec<Value> = rows
             .iter()
             .map(|r| {
@@ -206,8 +206,8 @@ pub fn translate(form: &SearchForm) -> Value {
             attr_filter.push(any_of(clauses));
         }
     } else {
-        // AND: each row is a separate clause, because each describes a different
-        // attribute record on the specimen.
+        // With AND, each row is a separate clause. Each row describes a
+        // different attribute record on the specimen.
         for row in &rows {
             let clause = attribute_clause(row);
             if row.negated {
@@ -218,16 +218,14 @@ pub fn translate(form: &SearchForm) -> Value {
         }
     }
 
-    // Collection, not identity: AND-ed against the taxon block rather than OR-ed
-    // into it, or a prefix would return the whole collection regardless of taxon.
+    // A prefix clause ANDs against the taxon block. It does not OR into it.
     let prefixes = present(form.prefix.as_ref());
     if !prefixes.is_empty() {
         filter.push(json!({ "terms": { "guid_prefix": prefixes } }));
     }
 
-    // ---- block 3: scope ----------------------------------------------------
-    // Record-level. These are NOT correlated with the event date: the source
-    // carries no per-event political geography.
+    // Block 3: scope. These fields are record-level. They do not link to the
+    // event date.
     for (field, values) in [
         ("country", form.country.as_ref()),
         ("state_prov", form.state.as_ref()),
@@ -243,9 +241,8 @@ pub fn translate(form: &SearchForm) -> Value {
         filter.push(json!({ "term": { "collector_ids": collector } }));
     }
 
-    // Per event, and in ONE clause so they describe the same visit. Two sibling
-    // clauses would match a specimen collected at the place on one visit and in
-    // the date range on another.
+    // This block builds ONE clause for locality and date together. Both
+    // conditions must apply to the same event.
     let mut event_filter: Vec<Value> = Vec::new();
     let locality = one(form.locality.as_ref());
     if !locality.is_empty() {
@@ -271,7 +268,8 @@ pub fn translate(form: &SearchForm) -> Value {
         }));
     }
 
-    // Everything except the attribute rows: the denominator of the summary.
+    // This filter list holds everything except the attribute rows. It is the
+    // denominator of the summary.
     let context = json!({ "bool": { "filter": filter.clone() } });
 
     filter.extend(attr_filter);
@@ -280,7 +278,7 @@ pub fn translate(form: &SearchForm) -> Value {
         bool_query["must_not"] = json!(must_not);
     }
 
-    // page 0 is not a thing; a hand-edited link could still carry it
+    // Page 0 is not valid. A hand-edited link can still carry page 0.
     let page = form.page.unwrap_or(1).max(1);
 
     json!({
@@ -294,25 +292,25 @@ pub fn translate(form: &SearchForm) -> Value {
     })
 }
 
-/// One page of guids for the same form the search page ran.
+/// This function builds one page of guids for the same form as the search
+/// page.
 ///
-/// The export needs every match, not a page of records: the guids are the
-/// index's answer, and the record bodies come out of the Parquet. So the query
-/// is [`translate`] with the parts a page needs stripped — no aggregation, no
-/// `_source` but the guid, and `search_after` in place of `from`, which is the
-/// only way past the 10,000-document result window.
+/// The export needs every match, not one page of records. The index answers
+/// with the guids. The record bodies come from the Parquet file. This query
+/// is [`translate`] with the page-only parts removed: no aggregation, no
+/// `_source` field except the guid, and `search_after` instead of `from`.
+/// `search_after` reads past the 10,000-document result window.
 ///
-/// `after` is the last guid of the previous page; `None` starts.
+/// `after` holds the last guid of the previous page. `None` starts the
+/// export.
 #[must_use]
 pub fn export_query(form: &SearchForm, after: Option<&str>, size: usize) -> Value {
     let mut query = translate(form);
     query["size"] = json!(size);
-    // The guid off the doc values, not out of `_source`: reading one column
-    // beats decompressing and parsing the whole document 10,000 times a page.
+    // This query reads the guid from the doc values, not from `_source`.
     query["_source"] = json!(false);
     query["docvalue_fields"] = json!(["guid"]);
-    // an export never reads `hits.total`, and counting it costs real work on
-    // every one of the pages
+    // An export never reads `hits.total`.
     query["track_total_hits"] = json!(false);
     query.as_object_mut().map(|q| q.remove("aggs"));
     query.as_object_mut().map(|q| q.remove("from"));
@@ -322,13 +320,14 @@ pub fn export_query(form: &SearchForm, after: Option<&str>, size: usize) -> Valu
     query
 }
 
-/// "Out of N records, M carry the attributes you asked for."
+/// This function builds the summary aggregation: "Out of N records, M carry
+/// the attributes you asked for."
 ///
-/// `context` is N: what the rest of the form selects with the attribute rows
-/// lifted. `matched` is M: the full query. Both are exact `doc_count`s, so
-/// neither is capped the way `hits.total` is by [`TRACK_TOTAL_HITS`]. `global`
-/// because N is deliberately wider than the query's own result set, which
-/// a plain sub-aggregation could never see past.
+/// `context` gives N. N is what the rest of the form selects, without the
+/// attribute rows. `matched` gives M. M is the full query. Both counts are
+/// exact `doc_count` values. [`TRACK_TOTAL_HITS`] does not cap them. This
+/// aggregation uses `global` because N covers a wider set than the query's
+/// own result set.
 fn summary_aggs(context: &Value, matched: &Value) -> Value {
     json!({
         "summary": {
@@ -361,6 +360,7 @@ mod tests {
             collector: None,
             page: None,
             format: Format::Json,
+            cols: None,
         }
     }
 
@@ -375,7 +375,7 @@ mod tests {
         let b = translate(&f);
         let clauses = b["query"]["bool"]["filter"].as_array().unwrap();
         assert_eq!(clauses.len(), 1);
-        // several values OR into ONE terms clause, exact, no nested query
+        // The values OR into ONE terms clause. The query has no nested query.
         assert_eq!(clauses[0]["terms"]["detected"].as_array().unwrap().len(), 2);
         assert!(!b.to_string().contains("nested"));
         assert!(!b.to_string().contains("hierarchy"));
@@ -453,7 +453,7 @@ mod tests {
         let b = translate(&f);
         let summary = &b["aggs"]["summary"];
 
-        // N: the taxon and the country survive, the attribute row does not
+        // N keeps the taxon clause and the country clause. N drops the attribute row.
         let context = summary["aggs"]["context"]["filter"]["bool"]["filter"]
             .as_array()
             .unwrap();
@@ -461,7 +461,7 @@ mod tests {
         assert_eq!(context[0]["match"]["genus.split"], "Sorex");
         assert_eq!(context[1]["terms"]["country"][0], "United States");
 
-        // M: the same clauses plus the attribute row, i.e. the real query
+        // M holds the same clauses plus the attribute row. M is the real query.
         let matched = summary["aggs"]["matched"]["filter"]["bool"]["filter"]
             .as_array()
             .unwrap();
@@ -469,7 +469,7 @@ mod tests {
         assert_eq!(matched[2]["terms"]["detected"][0], "virus: Orthohantavirus");
         assert_eq!(&summary["aggs"]["matched"]["filter"], &b["query"]);
 
-        // widened past the query's own hits, or N could never exceed M
+        // This aggregation must count past the query's own result set.
         assert!(summary["global"].is_object());
     }
 
@@ -484,7 +484,8 @@ mod tests {
         };
         let b = translate(&f);
         let should = &b["query"]["bool"]["filter"][0]["bool"]["should"];
-        // the relation kinds AND with their own taxon, not with the other row
+        // The relation kinds AND with their own taxon row. They do not AND with
+        // the other row.
         let row = &should[0]["bool"]["filter"];
         assert_eq!(row[0]["match"]["genus.split"], "Sorex");
         assert_eq!(row[1]["nested"]["path"], "relations");
@@ -492,7 +493,7 @@ mod tests {
         assert_eq!(kinds.as_array().unwrap().len(), 2);
         assert_eq!(kinds[0], "host of parasite");
         assert_eq!(kinds[1], "host of symbiont");
-        // a row without the third segment keeps its bare shape
+        // A row without the third segment keeps its plain shape.
         assert_eq!(should[1]["match"]["genus.split"], "Myodes");
     }
 
@@ -520,11 +521,11 @@ mod tests {
         };
         let b = translate(&f);
         let clauses = b["query"]["bool"]["filter"].as_array().unwrap();
-        // one value or several, always `terms` — one clause shape to reason about
+        // One value or several values always builds a `terms` clause.
         assert_eq!(clauses[0]["terms"]["guid_prefix"][0], "MSB:Mamm");
         assert_eq!(clauses[1]["terms"]["country"].as_array().unwrap().len(), 2);
         assert_eq!(clauses[2]["terms"]["state_prov"][0], "Alaska");
-        // the id rollup, not the name, so spelling variants still match
+        // This clause uses the collector id, not the collector name.
         assert_eq!(clauses[3]["term"]["collector_ids"], "agent/1234");
 
         assert_eq!(b["from"], 0);
@@ -535,7 +536,7 @@ mod tests {
             })["from"],
             PER_PAGE * 2
         );
-        // page 0 would underflow `usize`, not merely paginate oddly
+        // Page 0 must not underflow the `usize` subtraction.
         assert_eq!(
             translate(&SearchForm {
                 page: Some(0),
@@ -554,15 +555,16 @@ mod tests {
         };
         let q = export_query(&f, None, 10_000);
 
-        // the filters are the search's, whatever page the form was left on
+        // The export filters match the search filters. The form page number
+        // does not change them.
         assert_eq!(q["query"], translate(&f)["query"]);
         assert!(q.get("from").is_none());
         assert!(q.get("aggs").is_none());
         assert_eq!(q["size"], 10_000);
-        // the guid comes off the doc values, so no document is fetched at all
+        // The guid comes from the doc values. No document is fetched.
         assert_eq!(q["_source"], false);
         assert_eq!(q["docvalue_fields"][0], "guid");
-        // sorted by guid, so the last guid of a page is where the next resumes
+        // The sort is by guid. The next page starts at the last guid.
         assert_eq!(q["sort"][0]["guid"], "asc");
         assert!(q.get("search_after").is_none());
 
@@ -593,7 +595,7 @@ mod tests {
             ..form()
         };
         let b = translate(&f);
-        // not hoisted to a top-level must_not, which would AND it against the rest
+        // The negation must stay inside the OR clause, not move to must_not.
         assert!(b["query"]["bool"]["must_not"].is_null());
         let should = &b["query"]["bool"]["filter"][0]["bool"]["should"];
         assert_eq!(
@@ -614,7 +616,7 @@ mod tests {
         assert_eq!(
             clauses.len(),
             1,
-            "two sibling clauses would match two different visits"
+            "two sibling clauses could match two different events"
         );
         let inner = clauses[0]["nested"]["query"]["bool"]["filter"]
             .as_array()

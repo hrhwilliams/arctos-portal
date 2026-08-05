@@ -1,11 +1,14 @@
-//! `GET /api/schema` and `GET /api/taxa` — everything the form needs to render
-//! itself, computed once at startup (spec 03).
+//! `GET /api/schema` and `GET /api/taxa` supply everything the form needs to
+//! render itself. The system computes this data once at startup (spec 03).
 //!
-//! Two sources, and the difference matters. Code tables (`docs/data/code-tables`,
-//! fetched from Arctos out of band) are **complete**: a controlled value with no
-//! records still ships, because an option vanishing between snapshots silently
-//! changes the meaning of a saved URL. Aggregations over the Parquet are
-//! **observed**: they carry counts and only list what the data holds.
+//! This module uses two data sources.
+//!
+//! - Code tables (`docs/data/code-tables`, fetched from Arctos apart from this
+//!   service) are **complete**. A controlled value with no records still
+//!   ships. An option that vanishes between snapshots would change the
+//!   meaning of a saved URL.
+//! - Aggregations over the Parquet file are **observed**. They carry counts.
+//!   They list only the values the data holds.
 
 use std::{
     collections::BTreeMap,
@@ -18,11 +21,12 @@ use serde_json::{Map, Value};
 
 use crate::{errors::AppError, translate::PER_PAGE};
 
-/// `(id, label, parquet column)`, in the order the form renders them.
+/// Each tuple holds `(id, label, parquet column)`. The list order sets the
+/// form render order.
 ///
-/// `scientific_name` is not a rank — it is a Latin binomial — but it shares the
-/// (field, value) shape, rides in the same dropdown, and is listed first
-/// because it is what users reach for.
+/// `scientific_name` is not a rank. It is a Latin binomial. It shares the
+/// same (field, value) shape as a rank, so it sits in the same dropdown. It
+/// is listed first because users select it first.
 pub const RANKS: &[(&str, &str, &str)] = &[
     ("scientific_name", "Scientific name", "scientific_name"),
     ("phylum", "Phylum", "phylum"),
@@ -34,14 +38,14 @@ pub const RANKS: &[(&str, &str, &str)] = &[
     ("species", "Species", "species"),
 ];
 
-/// Rows an export is capped at. Enforced in [`crate::state`] and served in
-/// [`Limits`], so the client disabling the button and the service truncating
-/// agree by construction.
+/// This constant caps the row count of an export. [`crate::state`] enforces
+/// this cap. [`Limits`] serves this cap to the client.
 pub const MAX_EXPORT_ROWS: usize = 100_000;
 
-/// Keys that are metadata on a code-table row, never the controlled value.
-/// Whatever is left is the value column, which every table names differently
-/// (`examined_detected`, `sex_cde`, `caste`, …).
+/// This list holds keys that are metadata on a code-table row. None of these
+/// keys hold the controlled value. The remaining key is the value column.
+/// Each table names its value column differently, for example
+/// `examined_detected`, `sex_cde`, or `caste`.
 const NON_VALUE_KEYS: &[&str] = &[
     "description",
     "issue_url",
@@ -59,6 +63,10 @@ const NON_VALUE_KEYS: &[&str] = &[
 #[derive(Serialize, Debug)]
 pub struct Schema {
     pub snapshot_date: String,
+    /// This field lists every column of the dump, in dump order. The client
+    /// can build a column picker from this list. The service also checks
+    /// `?cols=` against this list before it builds the export SQL.
+    pub columns: Vec<String>,
     pub ranks: Vec<Rank>,
     pub attribute_types: Vec<AttributeType>,
     pub vocabularies: BTreeMap<String, Vec<VocabValue>>,
@@ -122,8 +130,9 @@ pub struct Sort {
 
 #[derive(Serialize, Debug)]
 pub struct Limits {
-    /// What the pager divides by. The service fixes the page size and takes no
-    /// `per_page`, so this — not `max_per_page` — is the number the client needs.
+    /// The pager divides by this value. The service fixes the page size. The
+    /// service does not accept a `per_page` value. The client must use
+    /// `page_size`, not `max_per_page`.
     pub page_size: usize,
     pub max_per_page: usize,
     pub max_result_window: usize,
@@ -139,7 +148,7 @@ pub struct Taxon {
     pub parent_name: Option<String>,
 }
 
-/// A code table as Arctos ships it: `{"data": [...]}` or a bare array.
+/// Arctos ships a code table as `{"data": [...]}` or as a bare array.
 fn load_table(dir: &Path, name: &str) -> Result<Vec<Map<String, Value>>, AppError> {
     let path: PathBuf = dir.join(format!("{name}.json"));
     let doc: Value = serde_json::from_slice(&std::fs::read(path)?)?;
@@ -156,7 +165,7 @@ fn load_table(dir: &Path, name: &str) -> Result<Vec<Map<String, Value>>, AppErro
 
 fn str_field(row: &Map<String, Value>, key: &str) -> String {
     match row.get(key) {
-        // Arctos returns an array for some url fields; the first element is the url
+        // Arctos returns an array for some url fields. The first element is the url.
         Some(Value::Array(a)) => a.first().and_then(Value::as_str).unwrap_or("").to_string(),
         Some(Value::String(s)) => s.trim().to_string(),
         _ => String::new(),
@@ -179,9 +188,10 @@ fn value_key(rows: &[Map<String, Value>]) -> Option<String> {
         .cloned()
 }
 
-/// One entry per distinct `value_code_table` a public attribute type names.
-/// A table that exists but is empty ships as `[]` rather than being skipped —
-/// the client requires every non-null `vocabulary` to be a key here.
+/// This function builds one entry per distinct `value_code_table` name that a
+/// public attribute type names. A table that exists but holds no rows ships
+/// as `[]`. The function does not skip an empty table. The client requires
+/// every non-null `vocabulary` value to be a key in this map.
 fn build_vocabularies(
     dir: &Path,
     types: &[Map<String, Value>],
@@ -208,19 +218,22 @@ fn build_vocabularies(
                     .collect()
             })
             .unwrap_or_default();
-        // parents before children (`ectoparasite` before `ectoparasite: flea`),
-        // which is what lets the form indent the hierarchy
+        // This sort puts a parent value before its child values, for example
+        // `ectoparasite` before `ectoparasite: flea`. The form uses this order
+        // to indent the hierarchy.
         values.sort_by_key(|v| (v.value.matches(':').count(), v.value.to_lowercase()));
         vocab.insert(table, values);
     }
     Ok(vocab)
 }
 
-/// `MSB:Mamm` → `("MSB", "Mammalogy")`. `ctcollection_cde` lists only the full
-/// labels, so the abbreviation is matched as a prefix of one.
+/// This function converts `MSB:Mamm` into `("MSB", "Mammalogy")`.
+/// `ctcollection_cde` lists only the full labels. The function matches the
+/// abbreviation as a prefix of a full label.
 ///
-// ponytail: prefix match, not a lookup — swap for a real code→label column if
-// Arctos ever ships one, or if two collections ever share a prefix.
+// ponytail: this is a prefix match, not a lookup table. Swap it for a real
+// code-to-label column if Arctos ever ships one, or if two collections ever
+// share a prefix.
 fn split_prefix(prefix: &str, collections: &[String]) -> (String, String) {
     let Some((institution, code)) = prefix.split_once(':') else {
         return (String::new(), String::new());
@@ -233,11 +246,12 @@ fn split_prefix(prefix: &str, collections: &[String]) -> (String, String) {
     (institution.to_string(), label)
 }
 
-/// `SELECT value, count(*)` over one column of the dump, most-used first.
-/// Observed values only — nothing enumerates a place name with no records.
+/// This function runs `SELECT value, count(*)` over one column of the dump.
+/// The result list holds the most-used value first. The function lists only
+/// observed values.
 ///
-/// `dataset` is the whole `FROM` clause, not a path: the dump is a partitioned
-/// Parquet directory and reading it takes options (`crate::state`).
+/// `dataset` holds the whole `FROM` clause, not a file path. See
+/// [`crate::state`].
 fn facets(conn: &Connection, dataset: &str, column: &str) -> Result<Vec<Facet>, AppError> {
     let mut stmt = conn.prepare(&format!(
         "SELECT trim({column}) AS value, count(*) AS n
@@ -255,22 +269,37 @@ fn facets(conn: &Connection, dataset: &str, column: &str) -> Result<Vec<Facet>, 
     Ok(rows)
 }
 
-/// Distinct `(rank, name)` with record counts, count-descending.
+/// This function lists the dump's column names, in order. `LIMIT 0` reads
+/// only the Parquet footers. The function decodes no row. The list includes
+/// `guid_prefix`, which lives in the directory name, not in the files.
+fn columns(conn: &Connection, dataset: &str) -> Result<Vec<String>, AppError> {
+    let mut stmt = conn.prepare(&format!(
+        "SELECT column_name FROM (DESCRIBE SELECT * FROM {dataset} LIMIT 0)"
+    ))?;
+    let rows = stmt
+        .query_map([], |row| row.get(0))?
+        .collect::<Result<_, _>>()?;
+    Ok(rows)
+}
+
+/// This function returns each distinct `(rank, name)` pair with a record
+/// count. The list order is count-descending.
 ///
-/// One scan per rank column. Names are `;`-joined in the dump when a record
-/// carries several determinations, so each column is split before counting.
-/// The whole table lives in memory (~340k rows) and `/api/taxa` filters it
-/// there: the alternative is a Parquet scan per keystroke.
+/// This function scans each rank column once. The dump joins several names
+/// with `;` when a record carries several determinations. This function
+/// splits each column before it counts the names. The whole table stays in
+/// memory (about 340,000 rows). `/api/taxa` filters this table in memory.
 ///
 /// # Errors
 ///
-/// Returns an error if the Parquet cannot be read.
+/// The function returns an error when it cannot read the Parquet file.
 pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppError> {
     let branches: Vec<String> = RANKS
         .iter()
         .enumerate()
         .map(|(i, (id, _, column))| {
-            // the parent chain is taxonomic; scientific_name is outside it
+            // The parent chain follows the taxonomic ranks. scientific_name
+            // is not part of this chain.
             let parent = if i > 1 {
                 format!("any_value(nullif(trim(split_part({}, ';', 1)), ''))", RANKS[i - 1].2)
             } else {
@@ -292,8 +321,8 @@ pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppErr
         .query_map([], |row| {
             let rank: String = row.get(0)?;
             let i = RANKS.iter().position(|(id, ..)| *id == rank).unwrap_or(0);
-            // a parent rank with no name behind it disambiguates nothing, so
-            // both go or neither does
+            // A parent rank with no parent name does not help a client tell
+            // taxa apart, so the function keeps both fields or neither.
             let parent_name: Option<String> = row.get(3)?;
             Ok(Taxon {
                 rank: RANKS[i].0,
@@ -312,8 +341,9 @@ pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppErr
 impl Schema {
     /// # Errors
     ///
-    /// Returns an error if a code table is missing or unparseable, or if the
-    /// Parquet aggregations fail. There is no partial schema.
+    /// The function returns an error when a code table is missing, when it
+    /// cannot parse a code table, or when a Parquet aggregation fails. This
+    /// function never returns a partial schema.
     #[tracing::instrument(skip(conn))]
     pub fn build(
         conn: &Connection,
@@ -323,8 +353,8 @@ impl Schema {
         taxa: &[Taxon],
     ) -> Result<Self, AppError> {
         let types = load_table(code_tables, "ctattribute_type")?;
-        // D35 — types Arctos marks non-public never reach the client at all.
-        // The ETL drops them too; this is the second of two gates.
+        // D35: a type that Arctos marks non-public never reaches the client.
+        // The ETL also drops these types. This check is the second gate.
         let (public, nonpublic): (Vec<_>, Vec<_>) = types.into_iter().partition(is_public);
 
         let mut attribute_types: Vec<AttributeType> = public
@@ -365,8 +395,8 @@ impl Schema {
             })
             .collect();
 
-        // a rank the snapshot has no values for is not offered; scientific_name
-        // always is
+        // A rank with no values in the snapshot is not offered.
+        // scientific_name is always offered.
         let ranks = RANKS
             .iter()
             .filter(|(id, ..)| *id == "scientific_name" || taxa.iter().any(|t| t.rank == *id))
@@ -379,6 +409,7 @@ impl Schema {
 
         Ok(Self {
             snapshot_date: snapshot_date.to_string(),
+            columns: columns(conn, dataset)?,
             ranks,
             vocabularies: build_vocabularies(code_tables, &public)?,
             attribute_types,
@@ -414,11 +445,12 @@ impl Schema {
     }
 }
 
-/// Prefix match on the whole name, rank-filtered, count-descending.
+/// This function matches a prefix against the whole name. It filters by
+/// rank. It returns matches in count-descending order.
 ///
-/// The input list is already sorted, so filtering preserves the order. Under
-/// two characters matches nothing: it would return the head of the list, which
-/// is noise, not a suggestion.
+/// The input list arrives already sorted, so the filter step keeps that
+/// order. A query under two characters matches nothing. A shorter query
+/// would return only the head of the list, which is not a useful suggestion.
 #[must_use]
 pub fn matching_taxa<'a>(
     taxa: &'a [Taxon],
@@ -455,7 +487,7 @@ mod tests {
         assert!(is_public(&Map::new()));
         assert!(is_public(rows(&json!([{ "public": 1 }])).first().unwrap()));
         assert!(!is_public(rows(&json!([{ "public": 0 }])).first().unwrap()));
-        // the dump has quoted flags in places, and "0" is not truthy
+        // The dump holds a quoted flag in some places. "0" is not a true value.
         assert!(!is_public(rows(&json!([{ "public": "0" }])).first().unwrap()));
     }
 
@@ -463,7 +495,7 @@ mod tests {
     fn the_value_column_is_whatever_the_table_calls_it() {
         let table = rows(&json!([{
             "examined_detected": "ectoparasite: flea",
-            "description": "…",
+            "description": "...",
             "documentation_url": "",
         }]));
         assert_eq!(value_key(&table).unwrap(), "examined_detected");
@@ -483,7 +515,8 @@ mod tests {
             split_prefix("MSB:Mamm", &collections),
             ("MSB".to_string(), "Mammalogy".to_string())
         );
-        // unresolvable is "", never null, and a prefix without a colon is not a crash
+        // An unresolvable label is "", not null. A prefix without a colon does
+        // not crash the function.
         assert_eq!(
             split_prefix("MSB:Nope", &collections),
             ("MSB".to_string(), String::new())
@@ -515,13 +548,14 @@ mod tests {
         assert_eq!(hits[0].name, "Sorex");
         assert_eq!(hits[1].name, "Sorella");
 
-        // case-insensitive, rank-filtered, and capped
+        // The match is case-insensitive. The match is rank-filtered. The
+        // match list is capped.
         assert_eq!(matching_taxa(&taxa, Some("genus"), "SOR", 1).len(), 1);
         assert_eq!(matching_taxa(&taxa, None, "so", 10).len(), 3);
 
-        // a one-character query is the head of the list, not a suggestion
+        // A one-character query returns no matches.
         assert!(matching_taxa(&taxa, Some("genus"), "s", 10).is_empty());
-        // and a substring is not a prefix
+        // A substring is not a prefix.
         assert!(matching_taxa(&taxa, Some("genus"), "orex", 10).is_empty());
     }
 }

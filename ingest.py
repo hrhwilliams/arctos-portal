@@ -41,8 +41,9 @@ ES_HOST = "http://localhost:9200"
 INDEX_NAME = "arctos"
 CSV_FILE_PATH = "msb.csv"
 
-# local dev container needs neither replicas nor sharding
-LOCAL_SETTINGS = {"number_of_shards": 1, "number_of_replicas": 0}
+# local dev container doesn't need replicas
+# shards = parallelism, replicas = duplicate data
+LOCAL_SETTINGS = {"number_of_shards": 4, "number_of_replicas": 0}
 
 # the four detection types, and the flat field each rolls up into
 DETECTION_FIELDS = {
