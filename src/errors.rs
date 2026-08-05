@@ -7,6 +7,10 @@ use axum::{
 pub enum AppError {
     #[error("Reqwest error: {0}")]
     Reqwest(#[from] reqwest::Error),
+    #[error("DuckDB error: {0}")]
+    Duckdb(#[from] duckdb::Error),
+    #[error("Arrow error: {0}")]
+    Arrow(#[from] duckdb::arrow::error::ArrowError),
 }
 
 impl IntoResponse for AppError {

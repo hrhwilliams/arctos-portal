@@ -53,7 +53,7 @@ pub async fn search(
                     format!("attachment;filename=\"search_{}.csv\"", timestamp()),
                 ),
             ],
-            to_csv(&results),
+            to_csv(&results.records),
         )
             .into_response(),
     })
@@ -63,16 +63,16 @@ fn timestamp() -> String {
     OffsetDateTime::now_utc().format(&STAMP).unwrap_or_default()
 }
 
-/// One row per hit, one column per [`SOURCE`] field. A field that is not a
+/// One row per record, one column per [`SOURCE`] field. A field that is not a
 /// scalar (`events`, `relations`) keeps its JSON in the cell rather than being
 /// flattened, so nothing is silently dropped.
-fn to_csv(results: &Value) -> String {
+fn to_csv(records: &[Value]) -> String {
     let mut out = SOURCE.join(",");
-    for hit in results["hits"]["hits"].as_array().into_iter().flatten() {
+    for record in records {
         out.push('\n');
         let row: Vec<String> = SOURCE
             .iter()
-            .map(|field| match &hit["_source"][field] {
+            .map(|field| match &record[field] {
                 Value::Null => String::new(),
                 Value::String(s) => escape(s),
                 other => escape(&other.to_string()),
@@ -114,15 +114,15 @@ mod tests {
 
     #[test]
     fn csv_quotes_only_what_needs_it_and_keeps_nested_values() {
-        let results = json!({ "hits": { "hits": [
-            { "_source": {
-                "guid": "MSB:Mamm:1",
-                "scientific_name": "Sorex \"cinereus\", sensu lato",
-                "relations": [{ "relationship": "host of parasite" }],
-                "country": "United States"
-            } },
-        ] } });
-        let csv = to_csv(&results);
+        // a record, not an Elasticsearch envelope — the wire format stops at the
+        // seam, so this test no longer has to know it
+        let records = vec![json!({
+            "guid": "MSB:Mamm:1",
+            "scientific_name": "Sorex \"cinereus\", sensu lato",
+            "relations": [{ "relationship": "host of parasite" }],
+            "country": "United States"
+        })];
+        let csv = to_csv(&records);
         let lines: Vec<&str> = csv.lines().collect();
 
         assert_eq!(lines[0], SOURCE.join(","));

@@ -15,8 +15,9 @@ async fn main() -> Result<(), std::io::Error> {
 
     let app_state = AppState::new("http://localhost:9200");
 
+    app_state.save_ducky("msb.csv").expect("ducky messed up");
+
     let app = app::App::new(app_state);
 
-    tracing::info!("starting on {}:{}", ip, port);
     app.serve(listener).await
 }

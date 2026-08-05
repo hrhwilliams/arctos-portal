@@ -1,0 +1,118 @@
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "semicolon": { "type": "pattern", "pattern": "\\s*;\\s*" }
+      },
+      "analyzer": {
+        "semicolon_split": { "tokenizer": "semicolon", "filter": ["trim", "lowercase"] },
+        "lowercase_keyword": { "tokenizer": "keyword", "filter": ["lowercase"] }
+      },
+      "normalizer": {
+        "lc": { "type": "custom", "filter": ["lowercase"] }
+      }
+    }
+  },
+
+  "mappings": {
+    "dynamic": false,
+
+    "properties": {
+      "guid": { "type": "keyword" },
+      "guid_prefix": { "type": "keyword" },
+      "catalognumberint": { "type": "long" },
+      "institution_acronym": { "type": "keyword" },
+      "collection_cde": { "type": "keyword" },
+      "cataloged_item_type": { "type": "keyword" },
+      "has_tissues": { "type": "integer" },
+      "use_license_url": { "type": "keyword" },
+
+      "kingdom": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "phylum": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "phylclass": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "phylorder": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "family": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "subfamily": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "genus": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+      "species": { "type": "keyword", "fields": { "split": { "type": "text", "analyzer": "semicolon_split", "search_analyzer": "lowercase_keyword" } } },
+
+      "scientific_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+      "full_taxon_name": { "type": "text" },
+      "taxon_rank": { "type": "keyword" },
+      "formatted_scientific_name": { "type": "text", "index": false },
+
+      "country": { "type": "keyword", "normalizer": "lc" },
+      "state_prov": { "type": "keyword", "normalizer": "lc" },
+      "county": { "type": "keyword", "normalizer": "lc" },
+      "locality_search_terms": { "type": "keyword", "normalizer": "lc" },
+      "higher_geog": { "type": "text" },
+
+      "events": {
+        "type": "nested",
+        "properties": {
+          "specimen_event_id": { "type": "long" },
+          "specimen_event_type": { "type": "keyword" },
+          "synthesized": { "type": "boolean" },
+          "began_date": { "type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||yyyy-MM||yyyy" },
+          "ended_date": { "type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||yyyy-MM||yyyy" },
+          "verbatim_date": { "type": "text", "index": false },
+          "higher_geog": { "type": "text" },
+          "habitat": { "type": "text" },
+          "verificationstatus": { "type": "keyword" },
+          "spec_locality": { "type": "text" },
+          "locality_name": { "type": "text" },
+          "locality_search_terms": { "type": "keyword", "normalizer": "lc" },
+          "locality_id": { "type": "long" },
+          "coordinates": { "type": "geo_point" },
+          "coordinate_error_m": { "type": "float" },
+          "collecting_method": { "type": "keyword" },
+          "collecting_source": { "type": "keyword" }
+        }
+      },
+      "event_date_min": { "type": "date" },
+      "event_date_max": { "type": "date" },
+
+      "detected": { "type": "keyword" },
+      "not_detected": { "type": "keyword" },
+      "examined_for": { "type": "keyword" },
+      "not_examined_for": { "type": "keyword" },
+
+      "attributedetail": {
+        "type": "nested",
+        "properties": {
+          "attribute_type": { "type": "keyword" },
+          "attribute_value": { "type": "keyword" },
+          "attribute_method": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+          "attribute_remark": { "type": "text" },
+          "attribute_determiner": { "type": "keyword" },
+          "attribute_date": { "type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||yyyy-MM||yyyy" },
+          "attribute_units": { "type": "keyword" }
+        }
+      },
+
+      "agents": {
+        "type": "nested",
+        "properties": {
+          "agent_id": { "type": "keyword" },
+          "agent_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+          "agent_role": { "type": "keyword" },
+          "agent_order": { "type": "integer" }
+        }
+      },
+      "collector_ids": { "type": "keyword" },
+
+      "relations": {
+        "type": "nested",
+        "properties": {
+          "relationship": { "type": "keyword" },
+          "related_guid": { "type": "keyword" },
+          "related_identifier": { "type": "keyword" },
+          "related_identifier_type": { "type": "keyword" },
+          "related_family": { "type": "keyword" },
+          "related_identification": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+          "related_geography": { "type": "text" }
+        }
+      }
+    }
+  }
+}
