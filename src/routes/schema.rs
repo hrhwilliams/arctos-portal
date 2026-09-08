@@ -1,7 +1,7 @@
 use axum::{
     Json,
     extract::{Query, State},
-    http::header::CACHE_CONTROL,
+    http::header::{CACHE_CONTROL, CONTENT_TYPE},
     response::{IntoResponse, Response},
 };
 use serde::{Deserialize, Serialize};
@@ -18,6 +18,28 @@ pub async fn schema(State(app_state): State<AppState>) -> Response {
     (
         [(CACHE_CONTROL, "public, max-age=900")],
         Json(app_state.schema()),
+    )
+        .into_response()
+}
+
+/// The `BerkeleyMapper` configuration for `/api/download`.
+///
+/// `BerkeleyMapper` fetches it itself, as `configfile=`. It names the columns
+/// holding the coordinate pair, and the ones to keep out of the map balloon.
+///
+/// The file is compiled into the binary. It is one fixed document that has to
+/// travel with the export it describes, so it needs no static file route and
+/// cannot drift from the deployment serving it. It sits beside this module
+/// rather than in `docs/`, because the image build copies `src/` alone and
+/// [`include_str`] reads it at compile time.
+#[tracing::instrument]
+pub async fn berkeleymapper() -> Response {
+    (
+        [
+            (CONTENT_TYPE, "application/xml;charset=utf-8"),
+            (CACHE_CONTROL, "public, max-age=3600"),
+        ],
+        include_str!("berkeleymapper.xml"),
     )
         .into_response()
 }

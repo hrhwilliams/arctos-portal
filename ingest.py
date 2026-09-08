@@ -15,6 +15,8 @@ failing, so each is counted and reported at the end.
                         feeds the nested docs — never from the joined columns
   collector_ids         role-filtered rollup of collector_agents
   relations[]           from related_record_cache, `record` normalised to a GUID
+  related_<rank>        the related record's rank chain, resolved from the
+                        dump's own rank columns by its identification name
 
 Two assertions fail the build rather than warn, because both leak rather than
 merely returning the wrong count on a public portal:
@@ -28,6 +30,7 @@ import csv
 import json
 import re
 import sys
+import time
 from collections import Counter
 from pathlib import Path
 
@@ -39,7 +42,6 @@ MAPPING_FILE = ROOT / "docs" / "mapping.v2.json"
 
 ES_HOST = "http://localhost:9200"
 INDEX_NAME = "arctos"
-CSV_FILE_PATH = "msb.csv"
 
 # local dev container doesn't need replicas
 # shards = parallelism, replicas = duplicate data
@@ -56,6 +58,22 @@ DETECTION_FIELDS = {
 # only `collector` rolls up; the array also holds preparators and others
 COLLECTOR_ROLE = "collector"
 
+# how often each pass reports progress. Both passes read the whole dump before
+# anything is queryable, so a silent run is indistinguishable from a hung one.
+PROGRESS_EVERY = 100_000
+
+# the rank columns, highest first. The order is the chain: a name found in
+# column i fixes every rank above it and none below it.
+RANK_COLUMNS = [
+    "phylum",
+    "phylclass",
+    "phylorder",
+    "family",
+    "subfamily",
+    "genus",
+    "species",
+]
+
 GUID_IN_URL = re.compile(r"/guid/(?P<guid>[^/?#]+)", re.IGNORECASE)
 BARE_GUID = re.compile(r"^[A-Za-z]+:[A-Za-z]+:.+$")
 
@@ -71,9 +89,11 @@ EVENT_KEYS = [
     "verificationstatus",
     "spec_locality",
     "locality_name",
-    "locality_search_terms",
     "locality_id",
-    "coordinate_error_m",
+    # json_locality spells the coordinate error `coordinate_error`, with
+    # `max_error_distance` and `max_error_units` beside it. None of the three is
+    # copied, so an event carries no error radius. The record-level
+    # `coordinateuncertaintyinmeters` column is what a map reads.
     "collecting_method",
     "collecting_source",
 ]
@@ -242,12 +262,59 @@ def related_guid(value):
     return value if BARE_GUID.match(value) else None
 
 
-def build_relations(row):
+def names(value):
+    """A rank column joins the names of several determinations with `;`."""
+    return [n.strip() for n in (value or "").split(";") if n.strip()]
+
+
+def build_taxonomy(csv_file, limit=None):
+    """`name -> its rank chain`, read out of the dump's own rank columns.
+
+    The relation cache carries the related record's `identification` and its
+    `family`, and no other rank. Without this map a Related-taxon search cannot
+    honour the rank it was given: every rank would match the same free-text
+    identification, so `class|Cestoda` and `genus|Cestoda` would return the same
+    records.
+
+    A name found in rank column i fixes the ranks above it and leaves the ranks
+    below it empty, because a record identified only to a class has no genus to
+    record. A scientific name fixes the whole chain. The first row to define a
+    name wins; a record with several determinations contributes the first name
+    of each column, so a chain can mix two determinations of the same record.
+    """
+    taxonomy = {}
+    started = time.perf_counter()
+    with open(csv_file, mode="r", encoding="utf-8-sig") as fh:
+        for i, row in enumerate(csv.DictReader(fh)):
+            if limit and i >= limit:
+                break
+            if i and i % PROGRESS_EVERY == 0:
+                print(
+                    f"  scanned {i:,} rows, {len(taxonomy):,} names "
+                    f"({i / (time.perf_counter() - started):,.0f}/s)",
+                    flush=True,
+                )
+            chain = [(names(row.get(column)) or [None])[0] for column in RANK_COLUMNS]
+            # A scientific name is the whole chain, so it is claimed first.
+            for name in names(row.get("scientific_name")):
+                taxonomy.setdefault(name, chain)
+            for depth, column in enumerate(RANK_COLUMNS):
+                for name in names(row.get(column)):
+                    taxonomy.setdefault(name, chain[: depth + 1])
+    return taxonomy
+
+
+def build_relations(row, taxonomy):
     """Copied from related_record_cache, not derived.
 
     Both directions are stored natively, so no inverse edge is synthesised and
     nothing is inferred. Do not parse `relatedcatalogeditems` — it is the same
     data as a display string.
+
+    The one derived part is the related record's rank chain, which
+    [build_taxonomy] resolves from its identification name. An identification
+    the dump does not know keeps its `related_family` from the cache and is
+    counted.
     """
     relations = []
     for src in as_list(row.get("related_record_cache")):
@@ -262,6 +329,21 @@ def build_relations(row):
             "related_identification": src.get("identification"),
             "related_geography": src.get("geography"),
         }
+        identification = (src.get("identification") or "").strip()
+        resolved = taxonomy.get(identification)
+        if resolved:
+            # The resolved family wins over the cached one: it comes from the
+            # same columns the searched taxon is matched against.
+            relation.update(
+                {
+                    f"related_{column}": value
+                    for column, value in zip(RANK_COLUMNS, resolved)
+                    if value
+                }
+            )
+        elif identification:
+            stats["relations_rank_unresolved"] += 1
+
         stats["relations_total"] += 1
         if not relation["related_guid"]:
             stats["relations_unresolved"] += 1
@@ -289,7 +371,7 @@ def parse_row(row):
     return parsed
 
 
-def build_document(row, nonpublic, documented):
+def build_document(row, nonpublic, documented, taxonomy):
     doc = parse_row(row)
 
     # A public portal must not begin leaking because an upstream collection
@@ -310,11 +392,16 @@ def build_document(row, nonpublic, documented):
     for field in DETECTION_FIELDS.values():
         doc[field] = flat_attrs.get(field)
 
+    # partdetail is already JSON by the time it gets here. Keep only the objects:
+    # a row whose JSON failed to parse would otherwise push a bare string into a
+    # nested field and fail the whole bulk chunk.
+    doc["partdetail"] = [p for p in as_list(doc.get("partdetail")) if isinstance(p, dict)]
+
     agents, collector_ids = build_agents(doc)
     doc["agents"] = agents
     doc["collector_ids"] = collector_ids
 
-    doc["relations"] = build_relations(doc)
+    doc["relations"] = build_relations(doc, taxonomy)
 
     # top-level coordinates are gone: a specimen can have several events, each
     # with its own georeference, so the point lives on the event
@@ -323,16 +410,25 @@ def build_document(row, nonpublic, documented):
     return doc
 
 
-def generate_actions(csv_file, index_name, nonpublic, documented, limit=None):
+def generate_actions(csv_file, index_name, nonpublic, documented, taxonomy, limit=None):
+    started = time.perf_counter()
     with open(csv_file, mode="r", encoding="utf-8-sig") as fh:
         for i, row in enumerate(csv.DictReader(fh)):
             if limit and i >= limit:
                 return
             stats["rows"] += 1
+            # This count is documents handed to the bulk helper, which is up to
+            # one chunk ahead of what Elasticsearch has acknowledged.
+            if stats["rows"] % PROGRESS_EVERY == 0:
+                rate = stats["rows"] / (time.perf_counter() - started)
+                print(
+                    f"  sent {stats['rows']:,} rows ({rate:,.0f}/s)",
+                    flush=True,
+                )
             yield {
                 "_index": index_name,
                 "_id": row["collection_object_id"],
-                "_source": build_document(row, nonpublic, documented),
+                "_source": build_document(row, nonpublic, documented, taxonomy),
             }
 
 
@@ -341,7 +437,7 @@ def main():
     from elasticsearch import Elasticsearch, helpers
 
     ap = argparse.ArgumentParser()
-    ap.add_argument("csv_path", nargs="?", default=CSV_FILE_PATH)
+    ap.add_argument("csv_path", nargs="?")
     ap.add_argument(
         "--recreate",
         action="store_true",
@@ -359,24 +455,49 @@ def main():
         es.indices.delete(index=INDEX_NAME)
     if not es.indices.exists(index=INDEX_NAME):
         es.indices.create(index=INDEX_NAME, mappings=mappings, settings=settings)
+
+        # One extra pass over the CSV, before the indexing pass: a relation can
+        # name a record that appears anywhere in the dump, so the whole name
+        # table has to exist before the first document is built. Nothing reaches
+        # Elasticsearch until this pass finishes.
+        print(f"pass 1/2: reading rank columns from {args.csv_path}", flush=True)
+        started = time.perf_counter()
+        taxonomy = build_taxonomy(args.csv_path, args.limit)
+        print(
+            f"pass 1/2: {len(taxonomy):,} names in {time.perf_counter() - started:.0f}s",
+            flush=True,
+        )
+        print(f"pass 2/2: indexing into {INDEX_NAME!r}", flush=True)
+
+        try:
+            # `raise_on_error=False` keeps one bad row from ending the run, so
+            # the rejections come back in a list instead. Counting them is the
+            # only thing standing between a mapping mistake and an index that is
+            # quietly missing documents.
+            indexed, rejected = helpers.bulk(
+                es,
+                generate_actions(args.csv_path, INDEX_NAME, [], [], taxonomy, args.limit),
+                chunk_size=1000,
+                raise_on_error=False,
+            )
+            stats["indexed"] = indexed
+            stats["rejected"] = len(rejected)
+            if rejected:
+                print(f"REJECTED {len(rejected):,} documents. The first:", flush=True)
+                print(json.dumps(rejected[0], indent=2), flush=True)
+        except helpers.BulkIndexError as e:
+            print(json.dumps(e.errors[0], indent=2))
+            raise
     else:
         print(
             f"index {INDEX_NAME!r} already exists; mapping changes are NOT applied. "
             "Re-run with --recreate."
         )
 
-    try:
-        helpers.bulk(
-            es,
-            generate_actions(args.csv_path, INDEX_NAME, [], [], args.limit),
-            chunk_size=1000,
-            raise_on_error=False,
-        )
-    except helpers.BulkIndexError as e:
-        print(json.dumps(e.errors[0], indent=2))
-        raise
-
-    es.indices.forcemerge(index=INDEX_NAME, max_num_segments=1)
+    # This merge rewrites the whole index into one segment per shard, so it runs
+    # for minutes on a full snapshot with nothing to report while it does.
+    print("force-merging to one segment per shard", flush=True)
+    es.options(request_timeout=1800).indices.forcemerge(index=INDEX_NAME, max_num_segments=1)
 
     if stats["nonpublic_dropped"]:
         raise SystemExit(
@@ -385,10 +506,12 @@ def main():
         )
 
     print(f"rows                 {stats['rows']:,}")
+    print(f"indexed              {stats['indexed']:,} ({stats['rejected']:,} rejected)")
     print(f"events synthesized   {stats['events_synthesized']:,}")
     print(
         f"relations            {stats['relations_total']:,} "
-        f"({stats['relations_unresolved']:,} unresolved)"
+        f"({stats['relations_unresolved']:,} unresolved, "
+        f"{stats['relations_rank_unresolved']:,} with no rank chain)"
     )
     print(f"json parse errors    {stats['json_parse_errors']:,}")
     if undocumented:

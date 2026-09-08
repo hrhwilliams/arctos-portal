@@ -1,0 +1,145 @@
+python .\ingest.py --recreate .\2026-03-09_filtered_flat.csv
+pass 1/2: reading rank columns from .\2026-03-09_filtered_flat.csv
+  scanned 100,000 rows, 23,769 names (14,484/s)
+  scanned 200,000 rows, 38,761 names (13,372/s)
+  scanned 300,000 rows, 48,054 names (13,013/s)
+  scanned 400,000 rows, 54,951 names (12,722/s)
+  scanned 500,000 rows, 61,961 names (12,666/s)
+  scanned 600,000 rows, 68,428 names (12,840/s)
+  scanned 700,000 rows, 74,822 names (12,972/s)
+  scanned 800,000 rows, 81,262 names (12,945/s)
+  scanned 900,000 rows, 88,999 names (13,147/s)
+  scanned 1,000,000 rows, 93,292 names (13,193/s)
+  scanned 1,100,000 rows, 99,326 names (13,189/s)
+  scanned 1,200,000 rows, 103,070 names (13,273/s)
+  scanned 1,300,000 rows, 105,411 names (13,398/s)
+  scanned 1,400,000 rows, 107,732 names (13,530/s)
+  scanned 1,500,000 rows, 110,075 names (13,633/s)
+  scanned 1,600,000 rows, 113,268 names (13,640/s)
+  scanned 1,700,000 rows, 115,714 names (13,638/s)
+  scanned 1,800,000 rows, 119,030 names (13,667/s)
+  scanned 1,900,000 rows, 121,388 names (13,688/s)
+  scanned 2,000,000 rows, 124,624 names (13,699/s)
+  scanned 2,100,000 rows, 126,880 names (13,719/s)
+  scanned 2,200,000 rows, 128,508 names (13,719/s)
+  scanned 2,300,000 rows, 131,034 names (13,771/s)
+  scanned 2,400,000 rows, 134,314 names (13,790/s)
+  scanned 2,500,000 rows, 138,877 names (13,792/s)
+  scanned 2,600,000 rows, 141,205 names (13,767/s)
+  scanned 2,700,000 rows, 145,322 names (13,775/s)
+  scanned 2,800,000 rows, 147,560 names (13,754/s)
+  scanned 2,900,000 rows, 150,263 names (13,756/s)
+  scanned 3,000,000 rows, 152,702 names (13,729/s)
+  scanned 3,100,000 rows, 156,189 names (13,723/s)
+  scanned 3,200,000 rows, 158,551 names (13,719/s)
+  scanned 3,300,000 rows, 163,056 names (13,716/s)
+  scanned 3,400,000 rows, 166,957 names (13,731/s)
+  scanned 3,500,000 rows, 170,667 names (13,736/s)
+  scanned 3,600,000 rows, 173,270 names (13,739/s)
+  scanned 3,700,000 rows, 175,788 names (13,730/s)
+  scanned 3,800,000 rows, 178,366 names (13,722/s)
+  scanned 3,900,000 rows, 180,558 names (13,724/s)
+  scanned 4,000,000 rows, 182,895 names (13,723/s)
+  scanned 4,100,000 rows, 186,302 names (13,676/s)
+  scanned 4,200,000 rows, 188,602 names (13,652/s)
+  scanned 4,300,000 rows, 190,632 names (13,587/s)
+  scanned 4,400,000 rows, 192,113 names (13,536/s)
+  scanned 4,500,000 rows, 195,262 names (13,492/s)
+  scanned 4,600,000 rows, 197,170 names (13,459/s)
+  scanned 4,700,000 rows, 199,759 names (13,425/s)
+  scanned 4,800,000 rows, 204,779 names (13,353/s)
+  scanned 4,900,000 rows, 206,345 names (13,349/s)
+  scanned 5,000,000 rows, 207,876 names (13,353/s)
+  scanned 5,100,000 rows, 209,391 names (13,357/s)
+  scanned 5,200,000 rows, 210,864 names (13,362/s)
+  scanned 5,300,000 rows, 212,309 names (13,362/s)
+  scanned 5,400,000 rows, 215,126 names (13,369/s)
+  scanned 5,500,000 rows, 216,640 names (13,379/s)
+  scanned 5,600,000 rows, 218,165 names (13,384/s)
+  scanned 5,700,000 rows, 219,489 names (13,394/s)
+pass 1/2: 220,627 names in 431s
+pass 2/2: indexing into 'arctos'
+  sent 100,000 rows (2,224/s)
+  sent 200,000 rows (1,872/s)
+  sent 300,000 rows (1,799/s)
+  sent 400,000 rows (1,784/s)
+  sent 500,000 rows (1,761/s)
+  sent 600,000 rows (1,762/s)
+  sent 700,000 rows (1,789/s)
+  sent 800,000 rows (1,794/s)
+  sent 900,000 rows (1,804/s)
+  sent 1,000,000 rows (1,798/s)
+  sent 1,100,000 rows (1,778/s)
+  sent 1,200,000 rows (1,767/s)
+  sent 1,300,000 rows (1,756/s)
+  sent 1,400,000 rows (1,752/s)
+  sent 1,500,000 rows (1,735/s)
+  sent 1,600,000 rows (1,677/s)
+  sent 1,700,000 rows (1,643/s)
+  sent 1,800,000 rows (1,619/s)
+  sent 1,900,000 rows (1,629/s)
+  sent 2,000,000 rows (1,633/s)
+  sent 2,100,000 rows (1,647/s)
+  sent 2,200,000 rows (1,661/s)
+  sent 2,300,000 rows (1,674/s)
+  sent 2,400,000 rows (1,685/s)
+  sent 2,500,000 rows (1,697/s)
+  sent 2,600,000 rows (1,709/s)
+  sent 2,700,000 rows (1,719/s)
+  sent 2,800,000 rows (1,731/s)
+  sent 2,900,000 rows (1,739/s)
+  sent 3,000,000 rows (1,741/s)
+  sent 3,100,000 rows (1,745/s)
+  sent 3,200,000 rows (1,750/s)
+  sent 3,300,000 rows (1,760/s)
+  sent 3,400,000 rows (1,769/s)
+  sent 3,500,000 rows (1,780/s)
+  sent 3,600,000 rows (1,791/s)
+  sent 3,700,000 rows (1,800/s)
+  sent 3,800,000 rows (1,806/s)
+  sent 3,900,000 rows (1,811/s)
+  sent 4,000,000 rows (1,815/s)
+  sent 4,100,000 rows (1,820/s)
+  sent 4,200,000 rows (1,826/s)
+  sent 4,300,000 rows (1,830/s)
+  sent 4,400,000 rows (1,831/s)
+  sent 4,500,000 rows (1,839/s)
+  sent 4,600,000 rows (1,842/s)
+  sent 4,700,000 rows (1,837/s)
+  sent 4,800,000 rows (1,836/s)
+  sent 4,900,000 rows (1,840/s)
+  sent 5,000,000 rows (1,847/s)
+  sent 5,100,000 rows (1,850/s)
+  sent 5,200,000 rows (1,854/s)
+  sent 5,300,000 rows (1,855/s)
+  sent 5,400,000 rows (1,859/s)
+  sent 5,500,000 rows (1,866/s)
+  sent 5,600,000 rows (1,871/s)
+  sent 5,700,000 rows (1,876/s)
+REJECTED 160 documents. The first:
+{
+  "index": {
+    "_index": "arctos",
+    "_id": "29976933",
+    "status": 400,
+    "error": {
+      "type": "document_parsing_exception",
+      "reason": "[1:7439] failed to parse field [attributedetail.attribute_date] of type [date] in document with id '29976933'. Preview of field's value: '1978-03-13T24:30'",
+      "caused_by": {
+        "type": "illegal_argument_exception",
+        "reason": "failed to parse date field [1978-03-13T24:30] with format [strict_date_optional_time||yyyy-MM-dd||yyyy-MM||yyyy]",
+        "caused_by": {
+          "type": "date_time_parse_exception",
+          "reason": "Failed to parse with all enclosed parsers"
+        }
+      }
+    }
+  }
+}
+force-merging to one segment per shard
+rows                 5,771,371
+indexed              5,771,211 (160 rejected)
+events synthesized   9,734
+relations            288,642 (49,904 unresolved, 5 with no rank chain)
+json parse errors    88,074
+UNDOCUMENTED TYPES   ['Indigenous term', 'abundance', 'age', 'antler circumference', 'antler diameter', 'antler points', 'antler spread', 'archaeological feature', 'associated species', 'axillary girth', 'behavior', 'bill depth', 'bill length', 'bill width', 'body condition', 'body temperature', 'body width', 'breadth', 'brood patch', 'bursa', 'bursa length', 'bursa width', 'calcar length', 'carapace length', 'caste', 'chromatography compound', 'clutch size', 'clutch size of nest parasite', 'colors', 'copyright notice', 'copyright status', 'credit line', 'crop contents', 'crown-rump length', 'crystal habit', 'culmen length', 'culture of origin', 'culture of use', 'curved carapace length', 'curvilinear length', 'description', 'detected', 'dimensions', 'diploid number', 'duration', 'ear from crown', 'ear from notch', 'eggshell thickness', 'electrical conductivity', 'examined for', 'exhibit caption', 'experimental', 'fat deposition', 'forearm length', 'fork length', 'frame rate', 'framed', 'gape width', 'gonad length', 'gonad weight', 'gonad width', 'hallux length', 'head length', 'head width', 'height', 'hind foot with claw', 'hind foot without claw', 'hind limb length', 'historical', 'incubation stage', 'individual count', 'inscriptions and marks', 'isotope value', 'keywords', 'language', 'life stage', 'location in host', 'luster', 'materials', 'maximum standard length', 'maximum total length', 'middle toe length', 'minimum standard length', 'minimum total length', 'molt condition', 'mortality cause', 'neck width', 'nest description', 'nest phenology', 'not detected', 'not examined for', 'number of labels', 'numeric age', 'object title', 'ovum', 'parts examined', 'pit depth', 'plastron length', 'portfolio or series', 'processing history', 'provenience', 'provenience east', 'provenience north', 'quadrant', 'radiometric date', 'reproductive data', 'sex', 'skull ossification', 'snout-vent length', 'spleen length', 'square', 'standard length', 'stomach contents', 'straight carapace length', 'stratigraphic position', 'subject matter', 'tail base width', 'tail condition', 'tail length', 'tarsus length', 'tested for presence', 'thumb length with claw', 'tooth length', 'tooth width', 'total length', 'tragus length', 'unformatted measurements', 'user contributed comments', 'verbatim agent', 'verbatim attribute', 'verbatim host ID', 'verbatim host age', 'verbatim host sex', 'verbatim preservation date', 'virulence gene index', 'weight', 'width', 'wing chord', 'wing span', 'year class']

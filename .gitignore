@@ -1,6 +1,8 @@
 target
 .tmp
+.env
 arctos_parquet
 *.csv
 plan.md
 *.parquet
+__pycache/

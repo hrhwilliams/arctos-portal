@@ -8,9 +8,10 @@ services:
     ports:
       - 9200:9200
       - 9300:9300
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
     networks:
       - elastic
-
   kibana:
     image: kibana:9.4.2
     environment:
@@ -21,7 +22,42 @@ services:
       - elasticsearch
     networks:
       - elastic
+  tunnel:
+    image: cloudflare/cloudflared
+    env_file:
+      - .env
+    command: tunnel run
+    depends_on:
+      - nginx
+    networks:
+      - elastic
+  nginx:
+    image: nginx:1.31.3-alpine
+    volumes:
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./config/ssl:/etc/ssl/certs:ro
+    depends_on:
+      - backend
+    networks:
+      - elastic
+  backend:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - APP_PORT=${APP_PORT}
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - ./arctos_parquet:/app/arctos_parquet:ro
+      - ./docs/data:/app/docs/data:ro
+    networks:
+      - elastic
 
 networks:
   elastic:
     driver: bridge
+
+volumes:
+  es_data:

@@ -59,10 +59,37 @@ pub async fn search(
     })
 }
 
-/// This function exports the whole matching set of records.
+/// This function answers the second table: the records reached from the matched
+/// specimens, by the relationships and Related taxa the `taxon` rows name.
+///
+/// The parameters are the search's own, plus a `page` of its own. Every filter
+/// applies to the matched specimens; none of them constrain the related records.
+///
+/// # Errors
+///
+/// The function returns [`AppError::BadRequest`] on a malformed `taxon` or
+/// `attr`, the same as the search, and when the search reaches more related
+/// records than one table can list. The function returns an error when the
+/// Elasticsearch request fails.
+#[tracing::instrument(skip(app_state))]
+pub async fn relations(
+    State(app_state): State<AppState>,
+    Form(search_form): Form<SearchForm>,
+) -> Result<Response, AppError> {
+    Ok(Json(app_state.related(&search_form).await?).into_response())
+}
+
+/// This function exports the whole matching set of records, as a CSV sent
+/// gzip-encoded.
 ///
 /// `?cols=` sets the columns to export. Without `?cols=`, the export uses the
-/// default column set.
+/// default column set. `?cols=map` uses the smaller set a map needs, which is
+/// the one `/api/berkeleymapper.xml` describes.
+///
+/// `?tab=` exports the related records of that table instead of the specimens
+/// the search matched, by the same two phases [`relations`] lists them with. The
+/// columns are the same either way: a related record is a record of the same
+/// dump.
 ///
 /// # Errors
 ///
@@ -75,22 +102,46 @@ pub async fn download(
     State(app_state): State<AppState>,
     Form(search_form): Form<SearchForm>,
 ) -> Result<Response, AppError> {
-    let columns = export_columns(
-        search_form.cols.as_deref(),
-        &app_state.schema().columns,
-    )?;
-    let guids = app_state.export_guids(&search_form).await?;
-    let gz = tokio::task::spawn_blocking(move || AppState::export_csv_gz(&guids, &columns))
-        .await
-        .map_err(std::io::Error::other)??;
+    let columns = export_columns(search_form.cols.as_deref(), &app_state.schema().columns)?;
 
+    // A prefix-only filter needs no Elasticsearch round trip: the dump is
+    // already partitioned by guid_prefix.
+    let gz = if search_form.guid_prefix_only() {
+        let prefixes = search_form.prefix.clone().unwrap_or_default();
+        tokio::task::spawn_blocking(move || {
+            AppState::export_csv_gz_by_prefixes(&prefixes, &columns)
+        })
+        .await
+        .map_err(std::io::Error::other)??
+    } else {
+        let (guids, pairings) = app_state.download_guids(&search_form).await?;
+        tokio::task::spawn_blocking(move || {
+            AppState::export_csv_gz(&guids, pairings.as_ref(), &columns)
+        })
+        .await
+        .map_err(std::io::Error::other)??
+    };
+
+    // The bytes on the wire are the same gzip stream either way. Declaring them
+    // as a gzip-encoded CSV, rather than as a gzip file, is what lets a client
+    // decompress them on the way in and hand its caller a CSV — which is what a
+    // browser, an undici fetch, and `curl --compressed` all do. The name loses
+    // its `.gz` to match: what lands on disk is the CSV.
+    //
+    // `Content-Encoding` also tells the compression layer that this response is
+    // already encoded, so it does not gzip it a second time.
+    //
+    // ponytail: this is sent unconditionally, without reading `Accept-Encoding`.
+    // A client that does not decode gzip — a bare `curl -o`, which decodes only
+    // when asked — writes the gzip bytes into a file named `.csv`. Switch on the
+    // request header if such a client ever needs serving.
     Ok((
         [
-            (CONTENT_TYPE, "application/gzip".to_owned()),
-            (CONTENT_ENCODING, "identity".to_owned()),
+            (CONTENT_TYPE, "text/csv;charset=utf-8".to_owned()),
+            (CONTENT_ENCODING, "gzip".to_owned()),
             (
                 CONTENT_DISPOSITION,
-                format!("attachment;filename=\"arctos_{}.csv.gz\"", timestamp()),
+                format!("attachment;filename=\"arctos_{}.csv\"", timestamp()),
             ),
         ],
         gz,
@@ -134,7 +185,7 @@ fn escape(field: &str) -> String {
 }
 
 #[cfg(test)]
-#[allow(clippy::unwrap_used)]
+#[allow(clippy::unwrap_used, clippy::string_slice)]
 mod tests {
     use super::*;
     use serde_json::json;

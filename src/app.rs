@@ -20,7 +20,9 @@ impl App {
     pub fn new(app_state: AppState) -> Self {
         let router = axum::Router::new()
             .route("/api/search", get(routes::search))
+            .route("/api/relations", get(routes::relations))
             .route("/api/schema", get(routes::schema))
+            .route("/api/berkeleymapper.xml", get(routes::berkeleymapper))
             .route("/api/taxa", get(routes::taxa))
             .route("/api/download", get(routes::download))
             .layer(CompressionLayer::new())

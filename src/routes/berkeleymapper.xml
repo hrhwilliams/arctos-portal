@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BerkeleyMapper configuration for /api/download.
+
+  Served at /api/berkeleymapper.xml, compiled into the binary. Pass it
+  alongside the export, which must ask for the map column set:
+
+    https://berkeleymapper.berkeley.edu/index.html
+      ?tabfile=<url-encoded /api/download...&cols=map url>
+      &configfile=<url-encoded /api/berkeleymapper.xml url>
+
+  BerkeleyMapper fetches both itself, so both must be reachable over HTTPS.
+
+  `?cols=map` is MAP_COLUMNS in src/state.rs: guid, scientific_name, country,
+  state_prov, dec_lat, dec_long, coordinateuncertaintyinmeters. The concepts
+  below are exactly that set plus related_guid, which a `?tab=` export prepends.
+  Change one and change the other.
+
+  The set is small on purpose. BerkeleyMapper builds the balloon HTML for EVERY
+  marker up front rather than on click, so a column carrying kilobytes per
+  record — attributedetail runs about 2.3 KB — turns 10,000 markers into tens of
+  megabytes of HTML and the map never draws. Those columns are left out of the
+  export rather than hidden here.
+
+  Two things it does, in order of how much they matter:
+
+  1. `datatype` names the concept. Only four values mean anything to
+     BerkeleyMapper: darwin:decimallatitude, darwin:decimallongitude,
+     darwin:horizontaldatum and darwin:coordinateuncertaintyinmeters. The first
+     two are what put a record on the map: the dump calls that pair dec_lat and
+     dec_long, and without this file nothing would recognise them. Every other
+     datatype passes through as its own name.
+
+  2. `alias` is the label shown in the balloon — and it does a second job. A
+     concept binds to a file column by matching the header text against the
+     concept's name, alias, or datatype, and falls back to POSITION when nothing
+     matches. Each alias here is the exact `/api/download` header, so binding is
+     by name: a column added to or removed from the export cannot shift the
+     others onto the wrong concepts. It also keeps `looksLikeHeader` satisfied,
+     without which BerkeleyMapper reads the header row as a specimen.
+
+  `order` sets the display order only. It is not the column position.
+
+  This file describes the map column set and nothing else. Pointing it at an
+  export with other columns is worse than passing no config at all: a header
+  that matches no concept binds by POSITION instead, so the extra columns take
+  over concepts meant for other columns and every balloon is mislabelled.
+-->
+<berkeleymapper>
+	<colors method="dynamicfield" fieldname="scientific_name" label="Scientific Name"></colors>
+	<concepts>
+		<concept order="1" viewlist="1" colorlist="0" datatype="guid" alias="guid"/>
+		<concept order="2" viewlist="1" colorlist="1" datatype="scientific_name" alias="scientific_name"/>
+		<concept order="3" viewlist="1" colorlist="0" datatype="related_guid" alias="related_guid"/>
+		<concept order="4" viewlist="1" colorlist="0" datatype="country" alias="country"/>
+		<concept order="5" viewlist="1" colorlist="0" datatype="state_prov" alias="state_prov"/>
+		<!-- How far the point may be off. Shown, unlike the coordinates themselves. -->
+		<concept order="6" viewlist="1" colorlist="0" datatype="darwin:coordinateuncertaintyinmeters" alias="coordinateuncertaintyinmeters"/>
+		<!-- The coordinates place the marker. They are not repeated in the balloon. -->
+		<concept order="7" viewlist="0" colorlist="0" datatype="darwin:decimallatitude" alias="dec_lat"/>
+		<concept order="8" viewlist="0" colorlist="0" datatype="darwin:decimallongitude" alias="dec_long"/>
+	</concepts>
+</berkeleymapper>

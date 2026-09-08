@@ -72,6 +72,7 @@ pub struct Schema {
     pub vocabularies: BTreeMap<String, Vec<VocabValue>>,
     pub countries: Vec<Facet>,
     pub states: Vec<Facet>,
+    pub collectors: Vec<Facet>,
     pub relations: Vec<Relation>,
     pub guid_prefixes: Vec<GuidPrefix>,
     pub sorts: Vec<Sort>,
@@ -269,6 +270,36 @@ fn facets(conn: &Connection, dataset: &str, column: &str) -> Result<Vec<Facet>, 
     Ok(rows)
 }
 
+/// This function returns each distinct collector `agent_name` with a record
+/// count, restricted to agents whose `agent_role` is `collector` — the same
+/// role [`crate::translate::translate`] filters on. `collector_agents` is a
+/// JSON array column, so this is [`facets`] plus one `json_each` unnest; the
+/// raw dump carries no separate `;`-joined rollup of it the way ranks do.
+fn collector_facets(conn: &Connection, dataset: &str) -> Result<Vec<Facet>, AppError> {
+    // The output alias must not be `value` — `json_each` already names its own
+    // column `value`, and a `GROUP BY value` under that collision binds to the
+    // raw per-row JSON object instead of the extracted name, which silently
+    // stops same-named collectors from merging.
+    let mut stmt = conn.prepare(&format!(
+        "SELECT trim(je.value ->> 'agent_name') AS name, count(*) AS n
+         FROM {dataset}, json_each(collector_agents) AS je
+         WHERE trim(collector_agents) <> ''
+           AND lower(trim(je.value ->> 'agent_role')) = 'collector'
+           AND trim(je.value ->> 'agent_name') <> ''
+         GROUP BY name
+         ORDER BY n DESC, name"
+    ))?;
+    let rows = stmt
+        .query_map([], |row| {
+            Ok(Facet {
+                value: row.get(0)?,
+                count: row.get::<_, i64>(1)?.unsigned_abs(),
+            })
+        })?
+        .collect::<Result<_, _>>()?;
+    Ok(rows)
+}
+
 /// This function lists the dump's column names, in order. `LIMIT 0` reads
 /// only the Parquet footers. The function decodes no row. The list includes
 /// `guid_prefix`, which lives in the directory name, not in the files.
@@ -300,10 +331,11 @@ pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppErr
         .map(|(i, (id, _, column))| {
             // The parent chain follows the taxonomic ranks. scientific_name
             // is not part of this chain.
-            let parent = if i > 1 {
-                format!("any_value(nullif(trim(split_part({}, ';', 1)), ''))", RANKS[i - 1].2)
-            } else {
-                "NULL::VARCHAR".to_string()
+            let parent = match RANKS.get(i.wrapping_sub(1)).filter(|_| i > 1) {
+                Some((.., column)) => {
+                    format!("any_value(nullif(trim(split_part({column}, ';', 1)), ''))")
+                }
+                None => "NULL::VARCHAR".to_string(),
             };
             format!(
                 "SELECT '{id}' AS rank, trim(x) AS name, count(*) AS n, {parent} AS parent
@@ -325,12 +357,13 @@ pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppErr
             // taxa apart, so the function keeps both fields or neither.
             let parent_name: Option<String> = row.get(3)?;
             Ok(Taxon {
-                rank: RANKS[i].0,
+                rank: RANKS.get(i).map_or("", |r| r.0),
                 name: row.get(1)?,
                 record_count: row.get::<_, i64>(2)?.unsigned_abs(),
                 parent_rank: parent_name
                     .as_ref()
-                    .and_then(|_| (i > 0).then(|| RANKS[i - 1].0)),
+                    .and_then(|_| RANKS.get(i.wrapping_sub(1)).filter(|_| i > 0))
+                    .map(|r| r.0),
                 parent_name,
             })
         })?
@@ -415,6 +448,7 @@ impl Schema {
             attribute_types,
             countries: facets(conn, dataset, "country")?,
             states: facets(conn, dataset, "state_prov")?,
+            collectors: collector_facets(conn, dataset)?,
             relations,
             guid_prefixes,
             sorts: vec![
@@ -506,6 +540,29 @@ mod tests {
         let row = rows(&json!([{ "documentation_url": ["https://handbook", "second"] }]));
         assert_eq!(str_field(&row[0], "documentation_url"), "https://handbook");
         assert_eq!(str_field(&row[0], "issue_url"), "");
+    }
+
+    #[test]
+    fn collector_facets_unnest_the_json_column_and_keep_only_the_collector_role() {
+        let conn = Connection::open_in_memory().unwrap();
+        conn.execute_batch(
+            r#"CREATE TABLE t (collector_agents VARCHAR);
+               INSERT INTO t VALUES
+                 ('[{"agent_name": "Amber L. Hobbes", "agent_role": "collector"},
+                    {"agent_name": "Aren A. Eddingsaas", "agent_role": "preparator"}]'),
+                 ('[{"agent_name": "Amber L. Hobbes", "agent_role": "COLLECTOR"}]'),
+                 (''),
+                 (NULL);"#,
+        )
+        .unwrap();
+
+        let facets = collector_facets(&conn, "t").unwrap();
+        // The preparator is dropped. The role match is case-insensitive, so
+        // both Hobbes rows roll into one count. An empty or null column does
+        // not crash the `json_each` unnest.
+        assert_eq!(facets.len(), 1);
+        assert_eq!(facets[0].value, "Amber L. Hobbes");
+        assert_eq!(facets[0].count, 2);
     }
 
     #[test]

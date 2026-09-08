@@ -12,20 +12,20 @@ async fn main() -> Result<(), std::io::Error> {
         .init();
 
     let ip = "0.0.0.0";
-    let port = 2334;
-    let listener = TcpListener::bind((ip, port)).await.expect("failed to bind");
+    let port: u16 = std::env::var("APP_PORT")
+        .map_err(|_| std::io::Error::other("APP_PORT must be set"))?
+        .parse()
+        .map_err(|_| std::io::Error::other("APP_PORT must be 0-65535"))?;
+    let listener = TcpListener::bind((ip, port)).await?;
 
-    // the dump's filename carries the extraction date, which is what the UI
-    // shows as "data current as of" (D2 — stale by design, so say so). The
-    // Parquet itself is written out of band by `docs/build_parquet.py`.
     let snapshot_date = "2026-03-09";
 
     let app_state = AppState::new(
-        "http://localhost:9200",
+        "http://elasticsearch:9200",
         Path::new("docs/data/code-tables"),
         snapshot_date,
     )
-    .expect("failed to build schema");
+    .map_err(std::io::Error::other)?;
 
     let app = app::App::new(app_state);
 

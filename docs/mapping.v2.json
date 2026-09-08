@@ -40,6 +40,7 @@
       "county": { "type": "keyword", "normalizer": "lc" },
       "locality_search_terms": { "type": "keyword", "normalizer": "lc" },
       "higher_geog": { "type": "text" },
+      "spec_locality": { "type": "text" },
 
       "events": {
         "type": "nested",
@@ -74,13 +75,29 @@
       "attributedetail": {
         "type": "nested",
         "properties": {
-          "attribute_type": { "type": "keyword" },
-          "attribute_value": { "type": "keyword" },
-          "attribute_method": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+          "attribute_type": { "type": "keyword", "normalizer": "lc" },
+          "attribute_value": { "type": "keyword", "normalizer": "lc" },
+          "attribute_method": { "type": "text", "fields": { "keyword": { "type": "keyword", "normalizer": "lc" } } },
           "attribute_remark": { "type": "text" },
-          "attribute_determiner": { "type": "keyword" },
+          "attribute_determiner": { "type": "keyword", "normalizer": "lc" },
           "attribute_date": { "type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||yyyy-MM||yyyy" },
-          "attribute_units": { "type": "keyword" }
+          "attribute_units": { "type": "keyword", "normalizer": "lc" }
+        }
+      },
+
+      "partdetail": {
+        "type": "nested",
+        "properties": {
+          "part_name": { "type": "keyword", "normalizer": "lc" },
+          "disposition": { "type": "keyword", "normalizer": "lc" },
+          "condition": { "type": "keyword", "normalizer": "lc" },
+          "part_count": { "type": "integer" },
+          "part_barcode": { "type": "keyword" },
+          "container_path": { "type": "text" },
+          "part_remark": { "type": "text" },
+          "partID": { "type": "keyword", "index": false },
+          "parentPartID": { "type": "keyword", "index": false },
+          "part_attributes": { "type": "flattened" }
         }
       },
 
@@ -101,9 +118,15 @@
           "related_guid": { "type": "keyword" },
           "related_identifier": { "type": "keyword" },
           "related_identifier_type": { "type": "keyword" },
-          "related_family": { "type": "keyword" },
           "related_identification": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
-          "related_geography": { "type": "text" }
+          "related_geography": { "type": "text" },
+          "related_phylum": { "type": "keyword", "normalizer": "lc" },
+          "related_phylclass": { "type": "keyword", "normalizer": "lc" },
+          "related_phylorder": { "type": "keyword", "normalizer": "lc" },
+          "related_family": { "type": "keyword", "normalizer": "lc" },
+          "related_subfamily": { "type": "keyword", "normalizer": "lc" },
+          "related_genus": { "type": "keyword", "normalizer": "lc" },
+          "related_species": { "type": "keyword", "normalizer": "lc" }
         }
       }
     }
