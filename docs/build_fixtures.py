@@ -19,19 +19,14 @@ ROOT = Path(__file__).resolve().parent.parent
 CT = ROOT / "docs" / "data" / "code-tables"
 OUT = ROOT / "src" / "lib" / "fixtures"
 
-# Block-1 name selectors, mapped to their source column in the dump.
+# Block-1 name selectors, mapped to their source column in the dump, from the
+# same rank table the ingest and the service read (src/ranks.json).
 # `scientific_name` is not a rank; it is the canonical way into this data (a
 # Latin binomial) and shares the same (field, value) shape, so it rides in the
 # same dropdown and is listed first.
-RANKS = [
-    ("scientific_name", "Scientific name", "scientific_name"),
-    ("phylum", "Phylum", "phylum"),
-    ("class", "Class", "phylclass"),
-    ("order", "Order", "phylorder"),
-    ("family", "Family", "family"),
-    ("subfamily", "Subfamily", "subfamily"),
-    ("genus", "Genus", "genus"),
-    ("species", "Species", "species"),
+_RANK_TABLE = json.loads((ROOT / "src" / "ranks.json").read_text(encoding="utf-8"))
+RANKS = [("scientific_name", "Scientific name", "scientific_name")] + [
+    (r["id"], r["label"], r["column"]) for r in _RANK_TABLE["ranks"]
 ]
 
 # keys that are metadata on a code-table row, never the value itself

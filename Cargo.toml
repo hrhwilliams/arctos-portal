@@ -35,15 +35,22 @@ as_conversions = "deny"
 axum = "0.8.9"
 axum-extra = { version = "0.12.6", features = ["form"] }
 duckdb = { version = "1.10505.0", features = ["bundled", "parquet", "json"] }
+# already in the tree through axum; `stream::unfold`, `poll_fn`, and `StreamExt`
+# need no feature, and the default set drags in a proc-macro crate
+futures-util = { version = "0.3", default-features = false }
 reqwest = { version = "0.13.4", features = ["json"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.150"
 thiserror = "2.0.18"
 time = { version = "0.3.55", features = ["formatting", "serde"] }
-tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread", "sync"] }
 tower-http = { version = "0.7.0", features = ["compression-gzip", "cors", "trace"] }
 tracing = "0.1.44"
 tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+utoipa = "5.5"
+utoipa-axum = "0.2"
+# one HTML page that loads the viewer from a CDN; no UI bundle in the image
+utoipa-scalar = { version = "0.3", features = ["axum"] }
 
 # only `App::oneshot`, which is `cfg(test)`
 [dev-dependencies]

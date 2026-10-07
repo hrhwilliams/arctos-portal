@@ -1,0 +1,18 @@
+{
+  "about": "Taxonomic ranks and detection attribute types. ingest.py reads this file; the service compiles it in through src/ranks.rs. `column` is the dump's own column name. The index derives `<column>.split` on each rank column and `related_<column>` on each relation from this list, and ingest.py refuses a mapping that lacks either. `scientific_name` is not here: it is a sentinel for a non-rank, handled where it is used. Order is the form's render order and the rank chain, highest first.",
+  "ranks": [
+    { "id": "phylum", "label": "Phylum", "column": "phylum" },
+    { "id": "class", "label": "Class", "column": "phylclass" },
+    { "id": "order", "label": "Order", "column": "phylorder" },
+    { "id": "family", "label": "Family", "column": "family" },
+    { "id": "subfamily", "label": "Subfamily", "column": "subfamily" },
+    { "id": "genus", "label": "Genus", "column": "genus" },
+    { "id": "species", "label": "Species", "column": "species" }
+  ],
+  "detections": [
+    { "type": "detected", "field": "detected" },
+    { "type": "not detected", "field": "not_detected" },
+    { "type": "examined for", "field": "examined_for" },
+    { "type": "not examined for", "field": "not_examined_for" }
+  ]
+}

@@ -1,42 +1,70 @@
 use std::{
     collections::{BTreeMap, BTreeSet},
     path::Path,
+    pin::pin,
     sync::Arc,
 };
 
 use duckdb::Connection;
+use futures_util::{Stream, StreamExt};
 use reqwest::header::CONTENT_TYPE;
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, json};
-use tokio::time::Instant;
+use tokio::{sync::mpsc, time::Instant};
+use utoipa::ToSchema;
 
 use crate::{
+    csv::{self, Csv},
     errors::AppError,
-    schema::{Schema, Taxon, build_taxa},
-    search::SearchForm,
-    translate::{
-        PER_PAGE, SOURCE, attr_rows, export_query, relation_matches, taxon_rows, translate,
-    },
+    schema::{MAX_EXPORT_ROWS, Schema, Taxon, build_taxa},
+    summary::{self, SearchSummary},
+    translate::{PER_PAGE, SOURCE, Search, set},
 };
 
 /// This struct holds what a search returns.
 ///
 /// This module decodes the Elasticsearch envelope here (`hits.hits[]._source`,
 /// `aggregations`, `took`, `_shards`). No other module reads the wire format.
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct SearchResults {
     pub total: Total,
     pub summary: Summary,
+    /// The field names of each `records` entry, in [`SOURCE`] order, plus
+    /// [`RELATED_GUID`] when the response carries it.
+    ///
+    /// Sent once, not per record: `serde_json::Value` has no ordered map, so a
+    /// record's own keys come back alphabetical. A client that wants
+    /// [`SOURCE`] order for a column layout reads it from here instead.
+    ///
+    /// A field a response adds must be added here too, or a client laying its
+    /// columns out from this list drops the field it was sent.
+    pub column_order: Vec<&'static str>,
     /// This field holds one `_source` object per hit. Each object carries the
-    /// [`crate::translate::SOURCE`] fields. The value stays as JSON, because
-    /// `events` and `relations` are nested arrays.
+    /// [`SOURCE`] fields, keyed by name — read a field by name, not by its
+    /// position in the object, which is alphabetical. The value stays as
+    /// JSON, because `events` and `relations` are nested arrays.
     pub records: Vec<Value>,
+}
+
+/// Every construction site reads [`SOURCE`], not the empty slice `#[derive]`
+/// would give a `&'static [&'static str]`. A caller builds one record at a
+/// time (`SearchResults { summary, ..Self::default() }`) rather than naming
+/// `column_order` itself.
+impl Default for SearchResults {
+    fn default() -> Self {
+        Self {
+            total: Total::default(),
+            summary: Summary::default(),
+            column_order: SOURCE.to_vec(),
+            records: Vec::new(),
+        }
+    }
 }
 
 /// `track_total_hits` caps this value. `relation` is `eq` when `value` is
 /// exact. `relation` is `gte` when the match count exceeds the cap. This lets
 /// a caller render "10,000+" instead of a wrong number.
-#[derive(Serialize, Deserialize, Debug, Default)]
+#[derive(Serialize, Deserialize, Debug, Default, ToSchema)]
 pub struct Total {
     pub value: u64,
     pub relation: String,
@@ -54,7 +82,7 @@ pub struct Total {
 ///
 /// `/api/relations` reuses `context` and `matched` for its own two numbers and
 /// leaves the rest out.
-#[derive(Serialize, Debug, Default)]
+#[derive(Serialize, Debug, Default, ToSchema)]
 pub struct Summary {
     /// The taxon rows alone, before any other filter narrows them. Absent when
     /// the form is not a taxon search.
@@ -64,11 +92,12 @@ pub struct Summary {
     pub matched: u64,
     /// One entry per `attr` row of the request, in the order it was sent.
     #[serde(skip_serializing_if = "Vec::is_empty")]
+    #[schema(required = false)]
     pub attrs: Vec<AttrCount>,
 }
 
 /// One attribute row, and how many of the `context` records carry it.
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct AttrCount {
     /// The row as the request sent it, so the client can line the count up with
     /// the row it drew.
@@ -106,6 +135,17 @@ struct EsHit {
 fn first_guid(fields: &Value) -> Option<&str> {
     fields.get("guid")?.get(0)?.as_str()
 }
+
+impl EsHit {
+    /// The guid: from the doc values when the query asked for them, else from
+    /// `_source`.
+    fn guid(&self) -> Option<&str> {
+        first_guid(&self.fields).or_else(|| self.source.get("guid").and_then(Value::as_str))
+    }
+}
+
+/// The `_source` fields a relations walk reads, and nothing else.
+const RELATIONS_ONLY: &[&str] = &["relations"];
 
 #[derive(Deserialize)]
 struct EsAggregations {
@@ -158,6 +198,7 @@ impl From<EsResponse> for SearchResults {
                         .collect(),
                 }),
             records: response.hits.hits.into_iter().map(|h| h.source).collect(),
+            ..Self::default()
         }
     }
 }
@@ -325,6 +366,39 @@ fn attach_pairings(records: &mut [Value], pairings: &Pairings) {
     }
 }
 
+/// This function names, on each matched record, the records it reaches by the
+/// relations the search asked for.
+///
+/// The field is [`RELATED_GUID`], the same name and the same meaning it carries
+/// on a related record: the record on the other end of the link. On a specimen
+/// it points at the related records; on a related record, by
+/// [`attach_pairings`], back at the specimens.
+///
+/// The record's own `relations` array is not this list. It holds every link the
+/// record has in Arctos, so a shrew searched for its cestodes carries its
+/// littermates and its own second catalogue half there too. This field is the
+/// subset the search asked for, by the one predicate `/api/relations` walks with.
+fn attach_related(records: &mut [Value], search: &Search) {
+    for record in records {
+        let guids: Vec<String> = record
+            .get("relations")
+            .and_then(Value::as_array)
+            .into_iter()
+            .flatten()
+            .filter(|relation| search.relation_matches(relation))
+            .filter_map(|relation| relation.get("related_guid").and_then(Value::as_str))
+            // Distinct and sorted, as the backlinks of an export are: one
+            // related record named by two links is one record.
+            .collect::<BTreeSet<_>>()
+            .into_iter()
+            .map(ToOwned::to_owned)
+            .collect();
+        if !guids.is_empty() {
+            record[RELATED_GUID] = json!(guids);
+        }
+    }
+}
+
 /// This function writes the guid list `DuckDB` joins the dump against.
 ///
 /// Without `pairings` it is one guid per line. With them each line is
@@ -356,16 +430,17 @@ fn guid_file_body(guids: &[String], pairings: Option<&Pairings>) -> String {
 /// The aggregation names a row by its position, because an Elasticsearch
 /// aggregation name cannot hold an arbitrary attribute string. Pairing them back
 /// up by position also fixes the order: `row_10` sorts before `row_2` as text.
-fn label_rows(search_form: &SearchForm, counts: &[AttrCount]) -> Vec<AttrCount> {
-    attr_rows(search_form)
-        .into_iter()
+fn label_rows(search: &Search, counts: &[AttrCount]) -> Vec<AttrCount> {
+    search
+        .attrs
+        .iter()
         .enumerate()
         .filter_map(|(i, attr)| {
             counts
                 .iter()
                 .find(|c| c.attr == format!("row_{i}"))
                 .map(|c| AttrCount {
-                    attr,
+                    attr: attr.raw.clone(),
                     count: c.count,
                 })
         })
@@ -388,11 +463,12 @@ const MAX_RELATED: usize = 65_536;
 /// cestodes of `genus|Sorex` matches 229 relations that collapse to 188 records,
 /// because an animal catalogued twice — once as a `:Host` record and once as a
 /// `:Mamm` record — points at the same parasite lot from both halves.
-type Pairings = BTreeMap<String, BTreeSet<String>>;
+pub(crate) type Pairings = BTreeMap<String, BTreeSet<String>>;
 
 /// This constant names the export column holding the specimen on the other end
 /// of the relation. The dump has no column of this name to collide with.
 const RELATED_GUID: &str = "related_guid";
+
 
 impl AppState {
     /// This function builds the schema and the taxon table from the Parquet
@@ -449,17 +525,24 @@ impl AppState {
 
     /// # Errors
     ///
-    /// The function returns [`AppError::BadRequest`] when a `taxon` or `attr`
-    /// value does not fit its grammar. The function returns an error when the
-    /// Elasticsearch request fails, when Elasticsearch returns a non-success
-    /// status, or when the response body does not match the expected envelope.
+    /// The function returns an error when the Elasticsearch request fails, when
+    /// Elasticsearch returns a non-success status, or when the response body
+    /// does not match the expected envelope.
     #[tracing::instrument(skip(self))]
-    pub async fn search(&self, search_form: SearchForm) -> Result<SearchResults, AppError> {
-        let query = translate(&search_form, &self.schema.relations)?;
+    pub async fn search(&self, search: &Search) -> Result<SearchResults, AppError> {
+        let query = search.query();
         tracing::info!("{query:#}");
 
         let mut results: SearchResults = self.ask(&query).await?.into();
-        results.summary.attrs = label_rows(&search_form, &results.summary.attrs);
+        results.summary.attrs = label_rows(search, &results.summary.attrs);
+        // A search that asked for a relationship gets the records it reaches as
+        // a column of its own. A search that asked for none has no such column
+        // rather than an empty one.
+        if search.constrains_relations() {
+            attach_related(&mut results.records, search);
+            // Next to the `guid` it pairs with, which is SOURCE's first column.
+            results.column_order.insert(1, RELATED_GUID);
+        }
         Ok(results)
     }
 
@@ -475,6 +558,186 @@ impl AppState {
             .error_for_status()?
             .json::<EsResponse>()
             .await?)
+    }
+
+    /// This function runs one query and hands back the body as it came, for
+    /// the responses whose aggregations are not the page's funnel.
+    async fn ask_value(&self, query: &Value) -> Result<Value, AppError> {
+        Ok(self
+            .client
+            .post(format!("{}/arctos/_search", self.elasticsearch_url))
+            .header(CONTENT_TYPE, "application/json")
+            .json(query)
+            .send()
+            .await?
+            .error_for_status()?
+            .json::<Value>()
+            .await?)
+    }
+
+    /// This function answers `/api/summary`: statistics over every record the
+    /// search matches, and over the related records it reaches.
+    ///
+    /// The records block is the page query with `size: 0` and the summary
+    /// aggregations in place of the funnel. The related block reuses phase 1
+    /// of `/api/relations` for the guid sets, grouped by relationship, and runs
+    /// the same aggregations over each phase-2 lookup.
+    ///
+    /// # Errors
+    ///
+    /// The function returns an error when the records request fails. A
+    /// related set past the `terms` limit, which `/api/relations` refuses,
+    /// leaves `related` null with the records block filled.
+    #[tracing::instrument(skip(self))]
+    pub async fn summary(&self, search: &Search) -> Result<SearchSummary, AppError> {
+        let mut query = search.query();
+        for key in ["from", "size", "sort", "_source", "aggs"] {
+            query.as_object_mut().map(|q| q.remove(key));
+        }
+        set(&mut query, "size", json!(0));
+        set(&mut query, "track_total_hits", json!(true));
+        set(&mut query, "aggs", summary::aggs());
+        let records = summary::stats(
+            &self.ask_value(&query).await?,
+            &self.schema.countries,
+            &self.schema.states,
+        );
+
+        let related = self.related_stats(search).await?;
+        Ok(SearchSummary {
+            records,
+            related,
+            description: search.description(),
+        })
+    }
+
+    /// One [`RelationStats`] per relationship the search reaches, or `None`
+    /// when it names no relationship at all, or reaches more related records
+    /// than `/api/relations` itself will list — past that bound the table fails
+    /// too, and the summary keeps its records block rather than failing with it.
+    async fn related_stats(
+        &self,
+        search: &Search,
+    ) -> Result<Option<Vec<summary::RelationStats>>, AppError> {
+        if !search.constrains_relations() {
+            return Ok(None);
+        }
+        let (by_relation, _) = self.related_by_relation(search).await?;
+        // The bound is on one `terms` query, and the widest one here is the
+        // union: a related record reached by two relationships is one record.
+        let distinct: BTreeSet<&String> = by_relation.values().flat_map(BTreeMap::keys).collect();
+        if distinct.len() > MAX_RELATED {
+            return Ok(None);
+        }
+
+        let mut out: Vec<summary::RelationStats> = Vec::with_capacity(by_relation.len());
+        for (relation, pairs) in &by_relation {
+            let pairings = pairs.values().fold(0_u64, |n, s| {
+                n.saturating_add(u64::try_from(s.len()).unwrap_or(u64::MAX))
+            });
+            let guids: Vec<&String> = pairs.keys().collect();
+            let query = json!({
+                "size": 0,
+                "track_total_hits": true,
+                "query": { "terms": { "guid": guids } },
+                "aggs": summary::aggs()
+            });
+            out.push(summary::RelationStats {
+                relation: relation.clone(),
+                pairings,
+                stats: summary::stats(
+                    &self.ask_value(&query).await?,
+                    &self.schema.countries,
+                    &self.schema.states,
+                ),
+            });
+        }
+
+        // A relationship the search named and reached nothing by is a zero row,
+        // not a missing one: the client draws a tab per relationship it asked
+        // for, and an absent entry reads as a failure rather than an answer.
+        for relation in search.relationships() {
+            if !out.iter().any(|r| r.relation.eq_ignore_ascii_case(&relation)) {
+                out.push(summary::RelationStats {
+                    relation,
+                    pairings: 0,
+                    stats: summary::Stats::empty(),
+                });
+            }
+        }
+        out.sort_by(|a, b| a.relation.cmp(&b.relation));
+        Ok(Some(out))
+    }
+
+    /// This function is the one `search_after` loop: every hit the search
+    /// matches, in guid order, one page at a time, at most `cap` hits.
+    ///
+    /// `fields` names the `_source` fields each hit carries. `None` fetches no
+    /// source at all, only the guid doc value. Every walk over the index pages
+    /// through here, so the paging rule, the row cap, and the malformed-envelope
+    /// check live in one place.
+    ///
+    /// # Errors
+    ///
+    /// A failed request, or a page whose hits carry no guid, ends the stream
+    /// with one `Err` item. The stream never yields a partial page as a
+    /// success, because a caller could not tell a partial export apart from a
+    /// small result.
+    fn scan<'a>(
+        &'a self,
+        search: &'a Search,
+        fields: Option<&'a [&'a str]>,
+        cap: usize,
+    ) -> impl Stream<Item = Result<Vec<EsHit>, AppError>> + 'a {
+        // The state is the guid the next page starts after, the hits yielded so
+        // far, and whether the scan is over.
+        futures_util::stream::unfold(
+            (None::<String>, 0_usize, false),
+            move |(after, sent, done)| async move {
+                let size = EXPORT_PAGE.min(cap.saturating_sub(sent));
+                if done || size == 0 {
+                    return None;
+                }
+                let mut query = search.export_query(after.as_deref(), size);
+                if let Some(fields) = fields {
+                    set(&mut query, "_source", json!(fields));
+                }
+                let hits = match self.ask(&query).await {
+                    Ok(response) => response.hits.hits,
+                    Err(e) => return Some((Err(e), (None, sent, true))),
+                };
+                let page = hits.len();
+                let next = hits.last().and_then(EsHit::guid).map(ToOwned::to_owned);
+                // Hits without guids mean a malformed envelope. Paging on from
+                // the last known guid would re-request this page forever.
+                if page > 0 && next.is_none() {
+                    let e = std::io::Error::other("a page carried hits but no guid");
+                    return Some((Err(AppError::from(e)), (None, sent, true)));
+                }
+                let done = page < size || next.is_none();
+                Some((Ok(hits), (next, sent.saturating_add(page), done)))
+            },
+        )
+    }
+
+    /// This function refuses a specimen export larger than the cap
+    /// `/api/schema` advertises, before any row moves. It is one exact count.
+    ///
+    /// # Errors
+    ///
+    /// The function returns [`AppError::BadRequest`] naming the count when it
+    /// exceeds [`MAX_EXPORT_ROWS`], and an error when the request fails.
+    pub async fn check_export_size(&self, search: &Search) -> Result<(), AppError> {
+        let mut query = search.export_query(None, 0);
+        set(&mut query, "track_total_hits", json!(true));
+        let total = self.ask(&query).await?.hits.total.map_or(0, |t| t.value);
+        if !usize::try_from(total).is_ok_and(|t| t <= MAX_EXPORT_ROWS) {
+            return Err(AppError::BadRequest(format!(
+                "this search matches {total} records, more than the {MAX_EXPORT_ROWS} an \
+                 export can hold — narrow the search"
+            )));
+        }
+        Ok(())
     }
 
     /// This function is phase 1: every record the matched specimens reach, by
@@ -500,73 +763,16 @@ impl AppState {
     ///
     /// # Errors
     ///
-    /// The function returns [`AppError::BadRequest`] when a `taxon` or `attr`
-    /// value does not fit its grammar, when `tab` is not a relationship the
-    /// schema lists, and when the search reaches more related records than one
-    /// `terms` filter holds.
+    /// The function returns [`AppError::BadRequest`] when the search reaches
+    /// more related records than one `terms` filter holds, and an error when
+    /// any Elasticsearch request fails.
     #[tracing::instrument(skip(self))]
-    async fn related_guids(
-        &self,
-        search_form: &SearchForm,
-    ) -> Result<(Pairings, u64), AppError> {
-        let rows = taxon_rows(search_form, &self.schema.relations)?;
-        let tab = search_form.tab();
-        if let Some(tab) = tab
-            && !self.schema.relations.iter().any(|r| r.value == tab)
-        {
-            return Err(AppError::BadRequest(format!(
-                "no relationship named `{tab}`"
-            )));
-        }
-        let now = Instant::now();
-
+    pub(crate) async fn related_guids(&self, search: &Search) -> Result<(Pairings, u64), AppError> {
+        let (by_relation, specimens) = self.related_by_relation(search).await?;
         let mut guids: Pairings = Pairings::new();
-        let mut specimens: u64 = 0;
-        let mut after: Option<String> = None;
-        loop {
-            // This scan reads `relations` and nothing else.
-            let mut query = export_query(
-                search_form,
-                &self.schema.relations,
-                after.as_deref(),
-                EXPORT_PAGE,
-            )?;
-            crate::translate::set(&mut query, "_source", json!(["relations"]));
-            let response = self.ask(&query).await?;
-
-            let page = response.hits.hits.len();
-            for hit in &response.hits.hits {
-                specimens = specimens.saturating_add(1);
-                // The specimen on this side of the relation. It is read here
-                // anyway, to page the scan.
-                let specimen = first_guid(&hit.fields).unwrap_or_default();
-                for relation in hit
-                    .source
-                    .get("relations")
-                    .and_then(Value::as_array)
-                    .into_iter()
-                    .flatten()
-                {
-                    // A relation that points outside Arctos carries no
-                    // `related_guid`. It names no document to fetch, so this
-                    // table cannot show it.
-                    if relation_matches(relation, &rows, tab)
-                        && let Some(guid) = relation.get("related_guid").and_then(Value::as_str)
-                    {
-                        guids
-                            .entry(guid.to_owned())
-                            .or_default()
-                            .insert(specimen.to_owned());
-                    }
-                }
-            }
-            after = response
-                .hits
-                .hits
-                .last()
-                .and_then(|h| first_guid(&h.fields).map(ToOwned::to_owned));
-            if page < EXPORT_PAGE || after.is_none() {
-                break;
+        for pairs in by_relation.into_values() {
+            for (guid, specimens) in pairs {
+                guids.entry(guid).or_default().extend(specimens);
             }
         }
 
@@ -579,8 +785,68 @@ impl AppState {
                 guids.len()
             )));
         }
+        Ok((guids, specimens))
+    }
+
+    /// This function is phase 1 grouped by relationship: one [`Pairings`] per
+    /// relationship the search reaches, plus the count of specimens scanned.
+    ///
+    /// The split is the summary's, where each relationship gets its own row of
+    /// statistics. [`Self::related_guids`] merges the groups back for the
+    /// callers that want one set. One walk either way.
+    ///
+    /// # Errors
+    ///
+    /// The function returns an error when any Elasticsearch request fails. The
+    /// `terms` bound is checked by the caller, over whichever set it builds.
+    #[tracing::instrument(skip(self))]
+    pub(crate) async fn related_by_relation(
+        &self,
+        search: &Search,
+    ) -> Result<(BTreeMap<String, Pairings>, u64), AppError> {
+        let now = Instant::now();
+        let mut guids: BTreeMap<String, Pairings> = BTreeMap::new();
+        let mut specimens: u64 = 0;
+
+        let mut pages = pin!(self.scan(search, Some(RELATIONS_ONLY), usize::MAX));
+        while let Some(page) = pages.next().await {
+            for hit in page? {
+                specimens = specimens.saturating_add(1);
+                // The specimen on this side of the relation.
+                let specimen = hit.guid().unwrap_or_default();
+                for relation in hit
+                    .source
+                    .get("relations")
+                    .and_then(Value::as_array)
+                    .into_iter()
+                    .flatten()
+                {
+                    // A relation that points outside Arctos carries no
+                    // `related_guid`. It names no document to fetch, so this
+                    // table cannot show it.
+                    if search.relation_matches(relation)
+                        && let Some(guid) = relation.get("related_guid").and_then(Value::as_str)
+                    {
+                        // The relationship as the record carries it: the group
+                        // key is what the summary prints.
+                        let kind = relation
+                            .get("relationship")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .trim();
+                        guids
+                            .entry(kind.to_owned())
+                            .or_default()
+                            .entry(guid.to_owned())
+                            .or_default()
+                            .insert(specimen.to_owned());
+                    }
+                }
+            }
+        }
+
         tracing::info!(
-            "{} related records from {specimens} specimens in {:.1}s",
+            "{} relationships from {specimens} specimens in {:.1}s",
             guids.len(),
             now.elapsed().as_secs_f64()
         );
@@ -607,13 +873,12 @@ impl AppState {
     ///
     /// # Errors
     ///
-    /// The function returns [`AppError::BadRequest`] when a `taxon` or `attr`
-    /// value does not fit its grammar, and when the search reaches more related
-    /// records than one `terms` filter holds. The function returns an error when
-    /// any Elasticsearch request fails.
+    /// The function returns [`AppError::BadRequest`] when the search reaches
+    /// more related records than one `terms` filter holds. The function returns
+    /// an error when any Elasticsearch request fails.
     #[tracing::instrument(skip(self))]
-    pub async fn related(&self, search_form: &SearchForm) -> Result<SearchResults, AppError> {
-        let (pairings, specimens) = self.related_guids(search_form).await?;
+    pub async fn related(&self, search: &Search) -> Result<SearchResults, AppError> {
+        let (pairings, specimens) = self.related_guids(search).await?;
 
         // `context` is the specimens the form matched, `matched` the distinct
         // related records they reach. Neither number bounds the other: a host
@@ -626,18 +891,21 @@ impl AppState {
         };
         let guids: Vec<String> = pairings.keys().cloned().collect();
         if guids.is_empty() {
-            return Ok(SearchResults {
+            // An empty table still describes the columns it would have held.
+            let mut empty = SearchResults {
                 total: Total {
                     value: 0,
                     relation: "eq".to_owned(),
                 },
                 summary,
-                records: Vec::new(),
-            });
+                ..SearchResults::default()
+            };
+            empty.column_order.insert(1, RELATED_GUID);
+            return Ok(empty);
         }
 
         // Phase 2 is a lookup. The guid set is already the answer.
-        let page = search_form.page.unwrap_or(1).max(1);
+        let page = search.page;
         let query = json!({
             "track_total_hits": true,
             "from": page.saturating_sub(1).saturating_mul(PER_PAGE),
@@ -651,7 +919,110 @@ impl AppState {
         // `matched` when a related record is not in this snapshot.
         results.summary = summary;
         attach_pairings(&mut results.records, &pairings);
+        // The backlink is on every row of this table, so the column is always
+        // declared: these records exist in it only because a specimen named them.
+        results.column_order.insert(1, RELATED_GUID);
         Ok(results)
+    }
+
+    /// This function streams an export read from the index alone, with no
+    /// Parquet and no `DuckDB`. `_source` already carries every dump column.
+    ///
+    /// Each page of hits becomes one chunk of CSV text on `out`, the header
+    /// first. `pairings` present means a related-records export: the rows are
+    /// the related records, led by the specimens each was reached from, the same
+    /// shape [`Self::export_csv_gz`] writes. The last column is always
+    /// [`csv::RELATED_GUIDS`], which the dump has no plain column for.
+    ///
+    /// A specimen export stops at [`MAX_EXPORT_ROWS`], the cap `/api/schema`
+    /// advertises. A related-records export is already bounded by
+    /// [`MAX_RELATED`]. A closed `out` means the client went away, and the
+    /// export stops quietly.
+    ///
+    /// # Errors
+    ///
+    /// The function returns an error when an Elasticsearch request fails or its
+    /// body does not match the envelope. The caller has already sent the status
+    /// by then, so such an error reaches the client as a truncated body.
+    pub async fn es_export(
+        &self,
+        search: &Search,
+        columns: &[String],
+        pairings: Option<&Pairings>,
+        out: &mpsc::Sender<Result<String, std::io::Error>>,
+    ) -> Result<(), AppError> {
+        let mut shape = Csv::new(
+            columns
+                .iter()
+                .cloned()
+                .chain([csv::RELATED_GUIDS.to_owned()])
+                .collect(),
+        );
+        if pairings.is_some() {
+            shape = shape.with_lead(RELATED_GUID);
+        }
+        if out.send(Ok(shape.header())).await.is_err() {
+            return Ok(());
+        }
+
+        // `relations` rides along for the backlink column, `guid` for paging and
+        // the pairing. Both are dropped from the row unless asked for.
+        let mut source: Vec<&str> = columns.iter().map(String::as_str).collect();
+        source.extend(["guid", "relations"]);
+        let now = Instant::now();
+
+        if let Some(pairings) = pairings {
+            let guids: Vec<&String> = pairings.keys().collect();
+            for chunk in guids.chunks(EXPORT_PAGE) {
+                let query = json!({
+                    "size": chunk.len(),
+                    "sort": [{ "guid": "asc" }],
+                    "_source": source,
+                    "track_total_hits": false,
+                    "query": { "terms": { "guid": chunk } }
+                });
+                let page: String = self
+                    .ask(&query)
+                    .await?
+                    .hits
+                    .hits
+                    .iter()
+                    .map(|hit| {
+                        let guid = hit.source.get("guid").and_then(Value::as_str).unwrap_or_default();
+                        let specimens = pairings
+                            .get(guid)
+                            .map(|s| s.iter().cloned().collect::<Vec<_>>().join("; "))
+                            .unwrap_or_default();
+                        shape.line_with(&specimens, &hit.source)
+                    })
+                    .collect();
+                if out.send(Ok(page)).await.is_err() {
+                    return Ok(());
+                }
+            }
+            tracing::info!(
+                "{} related records from the index in {:.1}s",
+                guids.len(),
+                now.elapsed().as_secs_f64()
+            );
+            return Ok(());
+        }
+
+        let mut sent: usize = 0;
+        let mut pages = pin!(self.scan(search, Some(source.as_slice()), MAX_EXPORT_ROWS));
+        while let Some(page) = pages.next().await {
+            let page = page?;
+            sent = sent.saturating_add(page.len());
+            let text: String = page.iter().map(|hit| shape.line(&hit.source)).collect();
+            if out.send(Ok(text)).await.is_err() {
+                return Ok(());
+            }
+        }
+        tracing::info!(
+            "{sent} rows from the index in {:.1}s",
+            now.elapsed().as_secs_f64()
+        );
+        Ok(())
     }
 
     /// This function returns the guids a download covers, in guid order, and for
@@ -668,73 +1039,31 @@ impl AppState {
     /// [`Self::export_guids`].
     pub async fn download_guids(
         &self,
-        search_form: &SearchForm,
+        search: &Search,
     ) -> Result<(Vec<String>, Option<Pairings>), AppError> {
-        if search_form.tab().is_some() {
-            let (pairings, _) = self.related_guids(search_form).await?;
+        if search.tab.is_some() {
+            let (pairings, _) = self.related_guids(search).await?;
             return Ok((pairings.keys().cloned().collect(), Some(pairings)));
         }
-        Ok((self.export_guids(search_form).await?, None))
+        Ok((self.export_guids(search).await?, None))
     }
 
-    /// This function returns every guid the form matches, in guid order.
-    ///
-    /// This function uses `search_after`, not `from`/`size`. An export often
-    /// runs past the 10,000-document result window that page-based paging is
-    /// bounded by.
+    /// This function returns every guid the search matches, in guid order, up
+    /// to the export cap.
     ///
     /// # Errors
     ///
-    /// The function returns an error when any page of the Elasticsearch
-    /// request fails or when a response does not match the search envelope.
-    /// The function never returns a partial export as a success, because a
-    /// caller could not tell a partial export apart from a small result.
+    /// The function returns [`AppError::BadRequest`] when the search matches
+    /// more than [`MAX_EXPORT_ROWS`], and the errors of [`Self::scan`].
     #[tracing::instrument(skip(self))]
-    pub async fn export_guids(&self, search_form: &SearchForm) -> Result<Vec<String>, AppError> {
-        let mut guids: Vec<String> = Vec::new();
-        let mut after: Option<String> = None;
+    pub async fn export_guids(&self, search: &Search) -> Result<Vec<String>, AppError> {
+        self.check_export_size(search).await?;
         let now = Instant::now();
+        let mut guids: Vec<String> = Vec::new();
 
-        loop {
-            let query = export_query(
-                search_form,
-                &self.schema.relations,
-                after.as_deref(),
-                EXPORT_PAGE,
-            )?;
-            let response = self
-                .client
-                .post(format!("{}/arctos/_search", self.elasticsearch_url))
-                .header(CONTENT_TYPE, "application/json")
-                .json(&query)
-                .send()
-                .await?
-                .error_for_status()?
-                .json::<EsResponse>()
-                .await?;
-
-            let page = response.hits.hits.len();
-            // A doc value is always a list. A single-valued field has one element.
-            let page_guids: Vec<String> = response
-                .hits
-                .hits
-                .iter()
-                .filter_map(|h| first_guid(&h.fields).map(ToString::to_string))
-                .collect();
-            // Hits without guids mean a malformed envelope. Reading `after`
-            // from the accumulator instead would re-request this page forever.
-            if page > 0 && page_guids.is_empty() {
-                return Err(AppError::from(std::io::Error::other(
-                    "export page carried hits but no guid doc values",
-                )));
-            }
-
-            // The index sorts by guid. The next page starts at the last guid.
-            after = page_guids.last().cloned();
-            guids.extend(page_guids);
-            if page < EXPORT_PAGE || after.is_none() {
-                break;
-            }
+        let mut pages = pin!(self.scan(search, None, MAX_EXPORT_ROWS));
+        while let Some(page) = pages.next().await {
+            guids.extend(page?.iter().filter_map(|h| h.guid().map(ToOwned::to_owned)));
         }
 
         tracing::info!(
@@ -1007,6 +1336,11 @@ mod tests {
         assert_eq!(results.records[0]["guid"], "MSB:Mamm:1");
         assert!(results.records[0].get("_index").is_none());
 
+        // A record's own keys come back alphabetical — `serde_json::Value` has
+        // no ordered map. `column_order` is the one true field order, sent
+        // once rather than repeated on every record.
+        assert_eq!(results.column_order, SOURCE);
+
         // The `gte` relation must survive. Without it, a caller cannot tell a
         // capped count from an exact count.
         assert_eq!(results.total.value, 10_000);
@@ -1060,6 +1394,75 @@ mod tests {
     }
 
     #[test]
+    fn a_matched_record_names_the_records_the_search_reaches_from_it() {
+        let search = |taxon: &str| {
+            Search::parse(
+                &crate::search::SearchForm {
+                    taxon: Some(vec![taxon.to_owned()]),
+                    attr: None,
+                    part: None,
+                    prefix: None,
+                    country: None,
+                    state: None,
+                    from: None,
+                    to: None,
+                    attr_op: crate::search::AttrOp::And,
+                    locality: None,
+                    collector: None,
+                    tab: None,
+                    page: None,
+                    format: crate::search::Format::Json,
+                    cols: None,
+                },
+                &[crate::schema::Relation {
+                    value: "host of parasite".to_owned(),
+                    description: String::new(),
+                }],
+            )
+            .unwrap()
+        };
+        let records = || {
+            vec![json!({
+                "guid": "MSB:Mamm:1",
+                "relations": [
+                    { "relationship": "host of parasite", "related_guid": "MSB:Para:9" },
+                    { "relationship": "host of parasite", "related_guid": "DMNS:Para:2" },
+                    // The same parasite lot named twice, a link of another kind,
+                    // and a link that points outside Arctos.
+                    { "relationship": "host of parasite", "related_guid": "MSB:Para:9" },
+                    { "relationship": "sibling of", "related_guid": "MSB:Mamm:2" },
+                    { "relationship": "host of parasite", "related_identifier": "NK 1" }
+                ]
+            })]
+        };
+
+        // Only the relations the search asked for, distinct and sorted. The
+        // littermate is in `relations` but is not what the search reached.
+        let mut asked = records();
+        attach_related(&mut asked, &search("genus|Sorex|host of parasite"));
+        assert_eq!(asked[0]["related_guid"][0], "DMNS:Para:2");
+        assert_eq!(asked[0]["related_guid"][1], "MSB:Para:9");
+        assert_eq!(asked[0]["related_guid"].as_array().unwrap().len(), 2);
+
+        // A row that constrains no relation reaches nothing: the field is absent
+        // rather than empty, and the handler declares no column for it.
+        let plain = search("genus|Sorex");
+        let mut none = records();
+        attach_related(&mut none, &plain);
+        assert!(none[0]["related_guid"].is_null());
+        assert!(!plain.constrains_relations());
+
+        // The column is declared wherever the field is sent, or a client laying
+        // out columns from `column_order` drops it.
+        // It sits next to the guid it pairs with, not at the end of the row.
+        let mut results = SearchResults::default();
+        results.column_order.insert(1, RELATED_GUID);
+        assert_eq!(results.column_order[0], "guid");
+        assert_eq!(results.column_order[1], RELATED_GUID);
+        assert_eq!(results.column_order.len(), SOURCE.len() + 1);
+    }
+
+    #[test]
     fn the_guid_file_carries_the_specimen_each_related_record_was_reached_from() {
         let guids: Vec<String> = ["DMNS:Para:1", "DMNS:Para:2", "DMNS:Para:3"]
             .iter()
@@ -1110,22 +1513,28 @@ mod tests {
                 })
                 .collect()
         };
-        let form = |attr: &[&str]| SearchForm {
-            attr: Some(attr.iter().map(ToString::to_string).collect()),
-            taxon: None,
-            part: None,
-            prefix: None,
-            country: None,
-            state: None,
-            from: None,
-            to: None,
-            attr_op: crate::search::AttrOp::And,
-            locality: None,
-            collector: None,
-            tab: None,
-            page: None,
-            format: crate::search::Format::Json,
-            cols: None,
+        let form = |attr: &[&str]| {
+            Search::parse(
+                &crate::search::SearchForm {
+                    attr: Some(attr.iter().map(ToString::to_string).collect()),
+                    taxon: None,
+                    part: None,
+                    prefix: None,
+                    country: None,
+                    state: None,
+                    from: None,
+                    to: None,
+                    attr_op: crate::search::AttrOp::And,
+                    locality: None,
+                    collector: None,
+                    tab: None,
+                    page: None,
+                    format: crate::search::Format::Json,
+                    cols: None,
+                },
+                &[],
+            )
+            .unwrap()
         };
 
         // The label is the row as sent, and the order is the order it was sent

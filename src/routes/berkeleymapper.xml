@@ -13,8 +13,10 @@
 
   `?cols=map` is MAP_COLUMNS in src/state.rs: guid, scientific_name, country,
   state_prov, dec_lat, dec_long, coordinateuncertaintyinmeters. The concepts
-  below are exactly that set plus related_guid, which a `?tab=` export prepends.
-  Change one and change the other.
+  below are exactly that set plus related_guid, which a `?tab=` export prepends,
+  and related_guids, which /api/es-download appends. Change one and change the
+  other: a column with no concept here binds by POSITION and steals whichever
+  concept sits at that position, which for an eighth column is the longitude.
 
   The set is small on purpose. BerkeleyMapper builds the balloon HTML for EVERY
   marker up front rather than on click, so a column carrying kilobytes per
@@ -59,5 +61,7 @@
 		<!-- The coordinates place the marker. They are not repeated in the balloon. -->
 		<concept order="7" viewlist="0" colorlist="0" datatype="darwin:decimallatitude" alias="dec_lat"/>
 		<concept order="8" viewlist="0" colorlist="0" datatype="darwin:decimallongitude" alias="dec_long"/>
+		<!-- The backlinks /api/es-download appends. Named here so the column binds by name, not position. -->
+		<concept order="9" viewlist="1" colorlist="0" datatype="related_guids" alias="related_guids"/>
 	</concepts>
 </berkeleymapper>

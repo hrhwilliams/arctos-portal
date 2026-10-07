@@ -1,27 +1,19 @@
+//! The search model.
+//!
+//! [`Search::parse`] reads a [`SearchForm`] once and raises every 400 the
+//! grammar can raise. Everything after that reads the model: the page query,
+//! the export query, and the relation predicate are pure functions of a
+//! [`Search`], so the query that selects records and the predicate that
+//! filters their relations cannot disagree.
+
 use serde_json::{Value, json};
 
 use crate::{
     errors::AppError,
+    ranks,
     schema::Relation,
     search::{AttrOp, SearchForm},
 };
-
-const RANK_FIELDS: &[(&str, &str)] = &[
-    ("phylum", "phylum"),
-    ("class", "phylclass"),
-    ("order", "phylorder"),
-    ("family", "family"),
-    ("subfamily", "subfamily"),
-    ("genus", "genus"),
-    ("species", "species"),
-];
-
-const DETECTION_FIELDS: &[(&str, &str)] = &[
-    ("detected", "detected"),
-    ("not detected", "not_detected"),
-    ("examined for", "examined_for"),
-    ("not examined for", "not_examined_for"),
-];
 
 /// This list also serves as the CSV column list.
 pub(crate) const SOURCE: &[&str] = &[
@@ -30,10 +22,10 @@ pub(crate) const SOURCE: &[&str] = &[
     "relations",
     "country",
     "state_prov",
+    "spec_locality",
     "events",
-    "event_date_min",
-    "event_date_max",
-    "use_license_url",
+    "attributedetail",
+    "partdetail",
 ];
 
 /// The service sets the page size. The service does not accept a `per_page`
@@ -49,10 +41,14 @@ pub(crate) fn set(value: &mut Value, key: &str, new: Value) {
     }
 }
 
-struct Attr {
-    atype: String,
-    values: Vec<String>,
-    negated: bool,
+/// One decoded `attr` or `part` row: `[!]type|value|value…`.
+#[derive(Debug, Clone)]
+pub struct AttrRow {
+    /// The row as the request sent it. The summary labels its count with it.
+    pub raw: String,
+    pub atype: String,
+    pub values: Vec<String>,
+    pub negated: bool,
 }
 
 /// This function splits a `taxon` or `attr` value on its unescaped `|`
@@ -87,17 +83,20 @@ fn bad(message: impl Into<String>) -> AppError {
     AppError::BadRequest(message.into())
 }
 
-/// One decoded `taxon` row: the clause it contributes to the query, and the
-/// relation conditions it carries.
+/// One decoded `taxon` row.
 ///
-/// The clause selects **records**. The same conditions also have to be applied to
-/// one relation at a time, by `/api/relations`, which walks the relations of the
-/// matched records to collect the other party of each. [`TaxonRow::matches`] is
-/// that second reading of the same row, so the two must agree.
+/// The row selects **records**, through [`TaxonRow::clause`]. The same row also
+/// has to be applied to one relation at a time, by `/api/relations`, which walks
+/// the relations of the matched records to collect the other party of each.
+/// [`TaxonRow::matches`] is that second reading, off the same fields.
+#[derive(Debug, Clone)]
 pub struct TaxonRow {
-    clause: Value,
+    rank: String,
+    /// Empty when the row constrains the relation only: "anything that is a
+    /// parasite of a Sorex" names no taxon on the specimen itself.
+    name: String,
     relationships: Vec<String>,
-    /// `(rank id, name)` pairs, with each rank already checked.
+    /// `(rank id, name)` pairs, each rank already checked.
     related: Vec<(String, String)>,
 }
 
@@ -130,50 +129,87 @@ impl TaxonRow {
         if self.related.is_empty() {
             return true;
         }
-        self.related.iter().any(|(rank, name)| {
-            related_field(rank).is_some_and(|f| field(&f).eq_ignore_ascii_case(name))
-        })
+        self.related
+            .iter()
+            .any(|(rank, name)| field(&related_field(rank)).eq_ignore_ascii_case(name))
+    }
+
+    /// This row in plain English, for [`Search::description`].
+    fn describe(&self) -> String {
+        let taxon = |rank: &str, name: &str| {
+            if rank == "scientific_name" {
+                name.to_owned()
+            } else {
+                format!("{rank} {name}")
+            }
+        };
+        let mut text = if self.name.is_empty() {
+            "any record".to_owned()
+        } else {
+            taxon(&self.rank, &self.name)
+        };
+        if !self.relationships.is_empty() {
+            text = format!(
+                "{text} with relationship {}",
+                self.relationships.join(" or ")
+            );
+        }
+        if !self.related.is_empty() {
+            let names: Vec<String> = self
+                .related
+                .iter()
+                .map(|(rank, name)| taxon(rank, name))
+                .collect();
+            text = format!("{text} to {}", names.join(" or "));
+        }
+        text
+    }
+
+    /// The clause that selects this row's records.
+    ///
+    /// The relation clause ANDs with its own taxon. It narrows that taxon. It
+    /// does not form a separate match condition. The relationship and the
+    /// Related taxa share ONE nested query, because they must describe the SAME
+    /// relation.
+    ///
+    /// Note that this clause selects records, not relations: a matching record
+    /// still carries every relation it has in `_source`, including the ones this
+    /// clause did not match. The caller filters them for display.
+    fn clause(&self) -> Value {
+        let mut relation: Vec<Value> = Vec::new();
+        if !self.relationships.is_empty() {
+            relation.push(json!({ "terms": { "relations.relationship": self.relationships } }));
+        }
+        if !self.related.is_empty() {
+            relation.push(any_of(
+                self.related
+                    .iter()
+                    .map(|(rank, name)| related_clause(rank, name))
+                    .collect(),
+            ));
+        }
+
+        // An empty searched name is a real search as long as the row names
+        // something else. Only a row naming nothing at all is refused, by
+        // `Search::parse`.
+        let specimen = (!self.name.is_empty() || relation.is_empty())
+            .then(|| rank_clause(&self.rank, &self.name));
+        let nested = (!relation.is_empty()).then(|| {
+            json!({ "nested": {
+                "path": "relations",
+                "query": { "bool": { "filter": relation } }
+            } })
+        });
+        match (specimen, nested) {
+            (Some(specimen), Some(nested)) => json!({ "bool": { "filter": [specimen, nested] } }),
+            (Some(clause), None) | (None, Some(clause)) => clause,
+            // Parsing refuses a row that names nothing. This arm is not reached.
+            (None, None) => json!({ "match_all": {} }),
+        }
     }
 }
 
-/// This function reports whether a relation is one the search asked for.
-///
-/// Taxon rows OR with each other, so one row is enough. A row that constrains no
-/// relation is skipped rather than treated as matching everything: it selected
-/// its records by taxon alone and asked for no pairing.
-///
-/// `tab` is the table the user is looking at, and narrows the result to one
-/// relationship. It ANDs with the rows rather than replacing them: a tab can
-/// only ever show a subset of what the search asked for. A tab naming a
-/// relationship no row asked for therefore matches nothing, which is the honest
-/// answer for a table that cannot hold anything.
-#[must_use]
-pub fn relation_matches(relation: &Value, rows: &[TaxonRow], tab: Option<&str>) -> bool {
-    let kind = relation["relationship"].as_str().unwrap_or_default().trim();
-    if let Some(tab) = tab
-        && !kind.eq_ignore_ascii_case(tab)
-    {
-        return false;
-    }
-    rows.iter()
-        .filter(|row| row.constrains_relations())
-        .any(|row| row.matches(relation))
-}
-
-/// This function decodes every `taxon` row of a form.
-///
-/// # Errors
-///
-/// The function returns [`AppError::BadRequest`] on any row that does not fit the
-/// grammar. See [`taxon_row`].
-pub fn taxon_rows(form: &SearchForm, known: &[Relation]) -> Result<Vec<TaxonRow>, AppError> {
-    present(form.taxon.as_ref())
-        .iter()
-        .map(|raw| taxon_row(raw, known))
-        .collect()
-}
-
-/// This function converts one taxon row into one clause.
+/// This function decodes one taxon row.
 ///
 /// The row splits, by [`split_pipes`], into `rank|name`, or
 /// `rank|name|relations`, or that followed by a `rank|name` pair for each
@@ -217,7 +253,7 @@ fn taxon_row(raw: &str, known: &[Relation]) -> Result<TaxonRow, AppError> {
 
     // The Related taxa of one row OR together: "Sorex that is the host of any
     // of these parasites."
-    let pairs: Vec<(String, String)> = segments
+    let related: Vec<(String, String)> = segments
         .get(3..)
         .unwrap_or_default()
         .chunks_exact(2)
@@ -226,85 +262,61 @@ fn taxon_row(raw: &str, known: &[Relation]) -> Result<TaxonRow, AppError> {
             _ => None,
         })
         .collect();
-    let related: Vec<Value> = pairs
-        .iter()
-        .map(|(rank, name)| related_clause(rank, name))
-        .collect::<Result<_, _>>()?;
-
-    // The relationship and the Related taxon must describe the SAME relation,
-    // so both sit inside one nested query rather than two sibling clauses.
-    let mut kinds: Vec<String> = Vec::new();
-    let mut relation: Vec<Value> = Vec::new();
-    if let Some(joined) = segments.get(2) {
-        kinds = joined
-            .split(';')
-            .map(str::trim)
-            .filter(|k| !k.is_empty())
-            .map(String::from)
-            .collect();
-        for kind in &kinds {
-            if !known.iter().any(|k| k.value == *kind) {
-                return Err(bad(format!("no relationship named `{kind}`")));
-            }
+    for (rank, name) in &related {
+        if name.is_empty() {
+            return Err(bad("a related taxon carries an empty name"));
         }
-        if !kinds.is_empty() {
-            relation.push(json!({ "terms": { "relations.relationship": kinds } }));
+        if rank != "scientific_name" && ranks::column(rank).is_none() {
+            return Err(bad(format!("no rank named `{rank}`")));
         }
     }
-    if !related.is_empty() {
-        relation.push(any_of(related));
+
+    let relationships: Vec<String> = segments
+        .get(2)
+        .map(|joined| {
+            joined
+                .split(';')
+                .map(str::trim)
+                .filter(|k| !k.is_empty())
+                .map(String::from)
+                .collect()
+        })
+        .unwrap_or_default();
+    for kind in &relationships {
+        if !known.iter().any(|k| k.value == *kind) {
+            return Err(bad(format!("no relationship named `{kind}`")));
+        }
     }
 
-    let mut filter: Vec<Value> = Vec::new();
-    // An empty searched name is a real search as long as the row names something
-    // else. Only a row naming nothing at all is refused, by `rank_clause`.
-    let rank = segments.first().map_or("", String::as_str);
-    let name = segments.get(1).map_or("", String::as_str);
-    if !name.is_empty() || relation.is_empty() {
-        filter.push(rank_clause(rank, name)?);
+    let rank = segments.first().cloned().unwrap_or_default();
+    let name = segments.get(1).cloned().unwrap_or_default();
+    let constrains = !relationships.is_empty() || !related.is_empty();
+    if !name.is_empty() || !constrains {
+        if name.is_empty() {
+            return Err(bad("`taxon` carries an empty name"));
+        }
+        if rank != "scientific_name" && ranks::column(&rank).is_none() {
+            return Err(bad(format!("no rank named `{rank}`")));
+        }
     }
 
-    let row = |clause: Value| TaxonRow {
-        clause,
-        relationships: kinds.clone(),
-        related: pairs.clone(),
-    };
-
-    if relation.is_empty() {
-        return Ok(row(filter.remove(0)));
-    }
-    // The relation clause ANDs with its own taxon. It narrows that taxon. It
-    // does not form a separate match condition.
-    //
-    // Note that this clause selects records, not relations: a matching record
-    // still carries every relation it has in `_source`, including the ones this
-    // clause did not match. The caller filters them for display.
-    filter.push(json!({ "nested": {
-        "path": "relations",
-        "query": { "bool": { "filter": relation } }
-    } }));
-    if filter.len() == 1 {
-        // The inverse search has no clause on the specimen itself.
-        return Ok(row(filter.remove(0)));
-    }
-    Ok(row(json!({ "bool": { "filter": filter } })))
+    Ok(TaxonRow {
+        rank,
+        name,
+        relationships,
+        related,
+    })
 }
 
-/// This function matches a `rank|name` pair on the searched specimen.
-fn rank_clause(rank: &str, name: &str) -> Result<Value, AppError> {
-    if name.is_empty() {
-        return Err(bad("`taxon` carries an empty name"));
-    }
+/// This function matches a `rank|name` pair on the searched specimen. The rank
+/// was checked by [`taxon_row`].
+fn rank_clause(rank: &str, name: &str) -> Value {
     // scientific_name is not a rank column. It matches as a phrase.
     if rank == "scientific_name" {
-        return Ok(json!({ "match_phrase": { "scientific_name": name } }));
+        return json!({ "match_phrase": { "scientific_name": name } });
     }
-    let field = RANK_FIELDS
-        .iter()
-        .find(|(id, _)| *id == rank)
-        .ok_or_else(|| bad(format!("no rank named `{rank}`")))?
-        .1;
-    Ok(json!({ "match": { format!("{field}.split"): name } }))
+    let field = ranks::column(rank).unwrap_or(rank);
+    json!({ "match": { format!("{field}.split"): name } })
 }
 
 /// This function matches a `rank|name` pair on the OTHER party of a relation.
@@ -320,17 +332,14 @@ fn rank_clause(rank: &str, name: &str) -> Result<Value, AppError> {
 /// A `scientific_name` is not a rank. It matches the identification as a phrase,
 /// which is also the one clause that still works for a related record whose name
 /// the snapshot does not know.
-fn related_clause(rank: &str, name: &str) -> Result<Value, AppError> {
-    if name.is_empty() {
-        return Err(bad("a related taxon carries an empty name"));
-    }
-    let field = related_field(rank).ok_or_else(|| bad(format!("no rank named `{rank}`")))?;
+fn related_clause(rank: &str, name: &str) -> Value {
+    let field = related_field(rank);
     if rank == "scientific_name" {
-        return Ok(json!({ "match_phrase": { format!("relations.{field}"): name } }));
+        return json!({ "match_phrase": { format!("relations.{field}"): name } });
     }
     // The `lc` normalizer on these fields makes the term match case-insensitive,
     // as the searched taxon's own rank match already is.
-    Ok(json!({ "term": { format!("relations.{field}"): name } }))
+    json!({ "term": { format!("relations.{field}"): name } })
 }
 
 /// This function names the field of a relation that a rank matches, for example
@@ -340,14 +349,12 @@ fn related_clause(rank: &str, name: &str) -> Result<Value, AppError> {
 /// `scientific_name` is not a rank: it matches the related record's own
 /// identification, which is also the only field a relation whose name the
 /// snapshot does not know still carries.
-fn related_field(rank: &str) -> Option<String> {
+fn related_field(rank: &str) -> String {
     if rank == "scientific_name" {
-        return Some("related_identification".to_owned());
+        return "related_identification".to_owned();
     }
-    RANK_FIELDS
-        .iter()
-        .find(|(id, _)| *id == rank)
-        .map(|(_, field)| format!("related_{field}"))
+    let field = ranks::column(rank).unwrap_or(rank);
+    format!("related_{field}")
 }
 
 /// This function decodes one attribute row of the form `[!]type|value|value…`.
@@ -360,7 +367,7 @@ fn related_field(rank: &str) -> Option<String> {
 /// # Errors
 ///
 /// The function returns [`AppError::BadRequest`] when the type is empty.
-fn decode_attr(raw: &str) -> Result<Attr, AppError> {
+fn decode_attr(raw: &str) -> Result<AttrRow, AppError> {
     let (negated, rest) = raw.strip_prefix('!').map_or((false, raw), |r| (true, r));
     let mut segments = split_pipes(rest);
     let values = segments.split_off(1);
@@ -368,7 +375,8 @@ fn decode_attr(raw: &str) -> Result<Attr, AppError> {
     if atype.is_empty() {
         return Err(bad("`attr` carries an empty attribute type"));
     }
-    Ok(Attr {
+    Ok(AttrRow {
+        raw: raw.to_owned(),
         atype,
         // The values are escaped, so a value holding a `;`, such as
         // `location in host` = `liver; spleen`, stays one value.
@@ -383,47 +391,34 @@ fn decode_attr(raw: &str) -> Result<Attr, AppError> {
 /// not indexed, and the two text fields answer a different kind of question.
 const PART_FIELDS: &[&str] = &["part_name", "disposition", "condition", "part_barcode"];
 
-/// This function converts one part row into one clause. With no value the row
-/// asks only whether the record has a part carrying that field at all.
+/// This function decodes one part row, the same grammar as an attribute row,
+/// and checks the field it names.
 ///
 /// # Errors
 ///
 /// The function returns [`AppError::BadRequest`] when the row names a field
-/// outside [`PART_FIELDS`].
-fn part_clause(a: &Attr) -> Result<Value, AppError> {
-    if !PART_FIELDS.contains(&a.atype.as_str()) {
+/// outside [`PART_FIELDS`], or an empty one.
+fn decode_part(raw: &str) -> Result<AttrRow, AppError> {
+    let row = decode_attr(raw)?;
+    if !PART_FIELDS.contains(&row.atype.as_str()) {
         return Err(bad(format!(
             "`part` names `{}`, which is not a searchable part field",
-            a.atype
+            row.atype
         )));
     }
+    Ok(row)
+}
+
+/// This function converts one part row into one clause. With no value the row
+/// asks only whether the record has a part carrying that field at all.
+fn part_clause(a: &AttrRow) -> Value {
     let field = format!("partdetail.{}", a.atype);
     let filter = if a.values.is_empty() {
         json!({ "exists": { "field": field } })
     } else {
         json!({ "terms": { field: a.values } })
     };
-    Ok(json!({ "nested": { "path": "partdetail", "query": { "bool": { "filter": [filter] } } } }))
-}
-
-/// This function decodes the `part` rows, returning the clauses that filter and
-/// the clauses a negated row keeps out, in that order.
-///
-/// # Errors
-///
-/// See [`part_clause`] and [`decode_attr`].
-fn part_clauses(form: &SearchForm) -> Result<(Vec<Value>, Vec<Value>), AppError> {
-    let (mut keep, mut without) = (Vec::new(), Vec::new());
-    for raw in present(form.part.as_ref()) {
-        let row = decode_attr(&raw)?;
-        let clause = part_clause(&row)?;
-        if row.negated {
-            without.push(clause);
-        } else {
-            keep.push(clause);
-        }
-    }
-    Ok((keep, without))
+    json!({ "nested": { "path": "partdetail", "query": { "bool": { "filter": [filter] } } } })
 }
 
 fn any_of(mut clauses: Vec<Value>) -> Value {
@@ -441,11 +436,8 @@ fn any_of(mut clauses: Vec<Value>) -> Value {
 /// The function does not expand a value to its child values. A search for
 /// `ectoparasite` matches only `ectoparasite`. A user who wants the child
 /// values must select them.
-fn attribute_clause(a: &Attr) -> Value {
-    let flat = DETECTION_FIELDS
-        .iter()
-        .find(|(id, _)| *id == a.atype)
-        .map(|(_, field)| *field);
+fn attribute_clause(a: &AttrRow) -> Value {
+    let flat = ranks::detection_field(&a.atype);
 
     // A detection-type row needs no nested query. With no value, the test
     // checks only whether the array field exists.
@@ -486,200 +478,386 @@ fn present(values: Option<&Vec<String>>) -> Vec<String> {
         .collect()
 }
 
-/// This function returns the `attr` rows of a form, in the order they arrived
-/// and without the blanks. The summary's per-row counts are in this same order.
-#[must_use]
-pub fn attr_rows(form: &SearchForm) -> Vec<String> {
-    present(form.attr.as_ref())
+fn one(value: Option<&String>) -> Option<String> {
+    value
+        .map(|v| v.trim())
+        .filter(|v| !v.is_empty())
+        .map(String::from)
 }
 
-fn one(value: Option<&String>) -> &str {
-    value.map_or("", |v| v.trim())
-}
-
-/// # Errors
+/// A search, parsed once from the form.
 ///
-/// The function returns [`AppError::BadRequest`] when a `taxon` or `attr` value
-/// does not fit its grammar. See [`taxon_clause`] and [`decode_attr`].
-pub fn translate(form: &SearchForm, relations: &[Relation]) -> Result<Value, AppError> {
-    // This function keeps the attribute clauses apart from the rest of the
-    // filter. This split lets the summary count the records that the rest of
-    // the form selects.
-    let mut filter: Vec<Value> = Vec::new();
-    let mut attr_filter: Vec<Value> = Vec::new();
-    let mut must_not: Vec<Value> = Vec::new();
+/// Every field is already trimmed, non-blank, and checked. `page` starts at 1.
+/// `tab` names a relationship the schema lists.
+#[derive(Debug, Clone)]
+pub struct Search {
+    pub taxa: Vec<TaxonRow>,
+    pub attrs: Vec<AttrRow>,
+    pub attr_op: AttrOp,
+    pub parts: Vec<AttrRow>,
+    pub prefixes: Vec<String>,
+    pub countries: Vec<String>,
+    pub states: Vec<String>,
+    pub from: Option<String>,
+    pub to: Option<String>,
+    pub locality: Option<String>,
+    pub collector: Option<String>,
+    /// The table the user is looking at. Absent means the Specimens themselves.
+    /// A value is a relationship, and selects the related records reached by it.
+    pub tab: Option<String>,
+    pub page: usize,
+}
 
-    // Block 1: taxon rows OR together.
-    let taxon_clauses: Vec<Value> = taxon_rows(form, relations)?
-        .into_iter()
-        .map(|row| row.clause)
-        .collect();
-    // The taxon block on its own is the summary's widest number: "there are X
-    // Sorex", before any filter of the form narrows it. With no taxon row it is
-    // an empty filter list, which counts every record.
-    let taxon_only = json!({ "bool": { "filter": &taxon_clauses } });
-    if !taxon_clauses.is_empty() {
-        filter.push(any_of(taxon_clauses));
+impl Search {
+    /// This function reads the form once and raises every 400 the grammar can
+    /// raise. See [`taxon_row`], [`decode_attr`], and [`decode_part`].
+    ///
+    /// # Errors
+    ///
+    /// The function returns [`AppError::BadRequest`] for a `taxon`, `attr`, or
+    /// `part` row outside its grammar, and for a `tab` that is not a relationship
+    /// the schema lists.
+    pub fn parse(form: &SearchForm, known: &[Relation]) -> Result<Self, AppError> {
+        let tab = form.tab().map(str::to_owned);
+        if let Some(tab) = &tab
+            && !known.iter().any(|r| r.value == *tab)
+        {
+            return Err(bad(format!("no relationship named `{tab}`")));
+        }
+        Ok(Self {
+            taxa: present(form.taxon.as_ref())
+                .iter()
+                .map(|raw| taxon_row(raw, known))
+                .collect::<Result<_, _>>()?,
+            attrs: present(form.attr.as_ref())
+                .iter()
+                .map(|raw| decode_attr(raw))
+                .collect::<Result<_, _>>()?,
+            attr_op: form.attr_op,
+            parts: present(form.part.as_ref())
+                .iter()
+                .map(|raw| decode_part(raw))
+                .collect::<Result<_, _>>()?,
+            prefixes: present(form.prefix.as_ref()),
+            countries: present(form.country.as_ref()),
+            states: present(form.state.as_ref()),
+            from: one(form.from.as_ref()),
+            to: one(form.to.as_ref()),
+            locality: one(form.locality.as_ref()),
+            collector: one(form.collector.as_ref()),
+            tab,
+            // Page 0 is not valid. A hand-edited link can still carry page 0.
+            page: form.page.unwrap_or(1).max(1),
+        })
     }
 
-    // Block 2: attribute rows AND or OR, per attr_op.
-    let rows: Vec<Attr> = present(form.attr.as_ref())
-        .iter()
-        .map(|raw| decode_attr(raw))
-        .collect::<Result<_, _>>()?;
+    /// This function reports whether `prefix` is the only filter the search
+    /// sets. The caller can then read guids straight from the dump instead of
+    /// asking Elasticsearch, because the dump is already partitioned by
+    /// `guid_prefix`.
+    ///
+    /// A `tab` disqualifies the shortcut whatever else the search holds: the
+    /// rows wanted are then the related records, which the dump is not
+    /// partitioned by.
+    #[must_use]
+    pub const fn guid_prefix_only(&self) -> bool {
+        self.tab.is_none()
+            && !self.prefixes.is_empty()
+            && self.taxa.is_empty()
+            && self.attrs.is_empty()
+            && self.parts.is_empty()
+            && self.countries.is_empty()
+            && self.states.is_empty()
+            && self.from.is_none()
+            && self.to.is_none()
+            && self.locality.is_none()
+            && self.collector.is_none()
+    }
 
-    if form.attr_op == AttrOp::Or {
-        // A negated row inside an OR clause stays inside that clause. The
-        // negation does not move to the top level.
-        let clauses: Vec<Value> = rows
-            .iter()
-            .map(|r| {
-                if r.negated {
-                    json!({ "bool": { "must_not": [attribute_clause(r)] } })
-                } else {
-                    attribute_clause(r)
-                }
-            })
-            .collect();
-        if !clauses.is_empty() {
-            attr_filter.push(any_of(clauses));
+    /// This function reports whether the search names a relationship or a
+    /// Related taxon on any row, which is when `/api/relations` has a table
+    /// to show.
+    #[must_use]
+    pub fn constrains_relations(&self) -> bool {
+        self.taxa.iter().any(TaxonRow::constrains_relations)
+    }
+
+    /// The relationships the rows name, deduplicated, in the order they were
+    /// named. A `tab` is the only one, since it narrows every row to itself.
+    ///
+    /// A row naming a Related taxon and no relationship names nothing here: it
+    /// asks for any relationship that reaches that taxon, which is only known
+    /// once the relations are walked.
+    #[must_use]
+    pub fn relationships(&self) -> Vec<String> {
+        if let Some(tab) = &self.tab {
+            return vec![tab.clone()];
         }
-    } else {
-        // With AND, each row is a separate clause. Each row describes a
-        // different attribute record on the specimen.
-        for row in &rows {
-            let clause = attribute_clause(row);
+        let mut out: Vec<String> = Vec::new();
+        for kind in self.taxa.iter().flat_map(|row| &row.relationships) {
+            if !out.iter().any(|k| k.eq_ignore_ascii_case(kind)) {
+                out.push(kind.clone());
+            }
+        }
+        out
+    }
+
+    /// One sentence restating the search in plain English, for a researcher
+    /// to confirm they searched what they meant to. `None` for an empty form.
+    ///
+    /// This is the template version: it never blocks and never fails. A model
+    /// could write a better sentence from the same fields; if one is added, it
+    /// must keep this behaviour of answering `None` rather than delaying the
+    /// numbers.
+    #[must_use]
+    pub fn description(&self) -> Option<String> {
+        let mut parts: Vec<String> = Vec::new();
+        if !self.taxa.is_empty() {
+            parts.push(
+                self.taxa
+                    .iter()
+                    .map(TaxonRow::describe)
+                    .collect::<Vec<_>>()
+                    .join(", or "),
+            );
+        }
+        if !self.attrs.is_empty() {
+            let joiner = if self.attr_op == AttrOp::Or { " or " } else { " and " };
+            let rows: Vec<String> = self.attrs.iter().map(describe_attr).collect();
+            parts.push(format!("with {}", rows.join(joiner)));
+        }
+        if !self.parts.is_empty() {
+            let rows: Vec<String> = self.parts.iter().map(describe_attr).collect();
+            parts.push(format!("having parts with {}", rows.join(" and ")));
+        }
+        if !self.prefixes.is_empty() {
+            parts.push(format!("in {}", self.prefixes.join(", ")));
+        }
+        if !self.countries.is_empty() {
+            parts.push(format!("from {}", self.countries.join(", ")));
+        }
+        if !self.states.is_empty() {
+            parts.push(format!("in {}", self.states.join(", ")));
+        }
+        if let Some(locality) = &self.locality {
+            parts.push(format!("at \"{locality}\""));
+        }
+        if let Some(collector) = &self.collector {
+            parts.push(format!("collected by {collector}"));
+        }
+        match (&self.from, &self.to) {
+            (Some(from), Some(to)) => parts.push(format!("collected {from} to {to}")),
+            (Some(from), None) => parts.push(format!("collected from {from}")),
+            (None, Some(to)) => parts.push(format!("collected up to {to}")),
+            (None, None) => {}
+        }
+        if parts.is_empty() {
+            return None;
+        }
+        let mut sentence = parts.join(" ");
+        // Capitalise the first letter; a rank id is lower case.
+        if let Some(first) = sentence.get(..1) {
+            let upper = first.to_uppercase();
+            sentence.replace_range(..1, &upper);
+        }
+        sentence.push('.');
+        Some(sentence)
+    }
+
+    /// This function reports whether a relation is one the search asked for.
+    ///
+    /// Taxon rows OR with each other, so one row is enough. A row that
+    /// constrains no relation is skipped rather than treated as matching
+    /// everything: it selected its records by taxon alone and asked for no
+    /// pairing.
+    ///
+    /// `tab` narrows the result to one relationship. It ANDs with the rows
+    /// rather than replacing them: a tab can only ever show a subset of what the
+    /// search asked for. A tab naming a relationship no row asked for therefore
+    /// matches nothing, which is the honest answer for a table that cannot hold
+    /// anything.
+    #[must_use]
+    pub fn relation_matches(&self, relation: &Value) -> bool {
+        let kind = relation["relationship"].as_str().unwrap_or_default().trim();
+        if let Some(tab) = &self.tab
+            && !kind.eq_ignore_ascii_case(tab)
+        {
+            return false;
+        }
+        self.taxa
+            .iter()
+            .filter(|row| row.constrains_relations())
+            .any(|row| row.matches(relation))
+    }
+
+    /// The page query, with the summary aggregation.
+    #[must_use]
+    pub fn query(&self) -> Value {
+        // This function keeps the attribute clauses apart from the rest of the
+        // filter. This split lets the summary count the records that the rest
+        // of the form selects.
+        let mut filter: Vec<Value> = Vec::new();
+        let mut attr_filter: Vec<Value> = Vec::new();
+        let mut must_not: Vec<Value> = Vec::new();
+
+        // Block 1: taxon rows OR together.
+        let taxon_clauses: Vec<Value> = self.taxa.iter().map(TaxonRow::clause).collect();
+        // The taxon block on its own is the summary's widest number: "there are
+        // X Sorex", before any filter of the form narrows it. With no taxon row
+        // it is an empty filter list, which counts every record.
+        let taxon_only = json!({ "bool": { "filter": &taxon_clauses } });
+        if !taxon_clauses.is_empty() {
+            filter.push(any_of(taxon_clauses));
+        }
+
+        // Block 2: attribute rows AND or OR, per attr_op.
+        if self.attr_op == AttrOp::Or {
+            // A negated row inside an OR clause stays inside that clause. The
+            // negation does not move to the top level.
+            let clauses: Vec<Value> = self
+                .attrs
+                .iter()
+                .map(|r| {
+                    if r.negated {
+                        json!({ "bool": { "must_not": [attribute_clause(r)] } })
+                    } else {
+                        attribute_clause(r)
+                    }
+                })
+                .collect();
+            if !clauses.is_empty() {
+                attr_filter.push(any_of(clauses));
+            }
+        } else {
+            // With AND, each row is a separate clause. Each row describes a
+            // different attribute record on the specimen.
+            for row in &self.attrs {
+                let clause = attribute_clause(row);
+                if row.negated {
+                    must_not.push(clause);
+                } else {
+                    attr_filter.push(clause);
+                }
+            }
+        }
+
+        // Block 2b: part rows always AND, and sit in the context rather than
+        // beside the attribute rows. The summary counts attribute rows one at a
+        // time; a part row is a scope like the collector, not one of those rows.
+        for row in &self.parts {
+            let clause = part_clause(row);
             if row.negated {
                 must_not.push(clause);
             } else {
-                attr_filter.push(clause);
+                filter.push(clause);
             }
         }
-    }
 
-    // Block 2b: part rows always AND, and sit in the context rather than beside
-    // the attribute rows. The summary counts attribute rows one at a time; a
-    // part row is a scope like the collector, not one of those rows.
-    let (parts, negated_parts) = part_clauses(form)?;
-    filter.extend(parts);
-    must_not.extend(negated_parts);
-
-    // A prefix clause ANDs against the taxon block. It does not OR into it.
-    let prefixes = present(form.prefix.as_ref());
-    if !prefixes.is_empty() {
-        filter.push(json!({ "terms": { "guid_prefix": prefixes } }));
-    }
-
-    // Block 3: scope. These fields are record-level. They do not link to the
-    // event date.
-    for (field, values) in [
-        ("country", form.country.as_ref()),
-        ("state_prov", form.state.as_ref()),
-    ] {
-        let v = present(values);
-        if !v.is_empty() {
-            filter.push(json!({ "terms": { field: v } }));
+        // A prefix clause ANDs against the taxon block. It does not OR into it.
+        if !self.prefixes.is_empty() {
+            filter.push(json!({ "terms": { "guid_prefix": self.prefixes } }));
         }
-    }
 
-    let collector = one(form.collector.as_ref());
-    if !collector.is_empty() {
-        filter.push(collector_clause(collector));
-    }
-
-    // The locality is the record's own `spec_locality`, matched as a phrase:
-    // "Sandia Mountains" matches "Sandia Mountains, Cibola National Forest" and
-    // does not match "Mountains of Sandia". The field is analysed text, so the
-    // match is on the words, not on the whole string.
-    //
-    // This clause is record-level, unlike the date below. A record with several
-    // events carries one `spec_locality` at the top, so a locality and a date
-    // are not held to the same event the way two dates are.
-    let locality = one(form.locality.as_ref());
-    if !locality.is_empty() {
-        filter.push(json!({ "match_phrase": { "spec_locality": locality } }));
-    }
-
-    let mut event_filter: Vec<Value> = Vec::new();
-    let (from, to) = (one(form.from.as_ref()), one(form.to.as_ref()));
-    if !from.is_empty() || !to.is_empty() {
-        let mut range = json!({});
-        if !from.is_empty() {
-            set(&mut range, "gte", json!(from));
-        }
-        if !to.is_empty() {
-            set(&mut range, "lte", json!(to));
-        }
-        event_filter.push(json!({ "range": { "events.began_date": range } }));
-    }
-    if !event_filter.is_empty() {
-        filter.push(json!({
-            "nested": {
-                "path": "events",
-                "query": { "bool": { "filter": event_filter } }
+        // Block 3: scope. These fields are record-level. They do not link to
+        // the event date.
+        for (field, values) in [("country", &self.countries), ("state_prov", &self.states)] {
+            if !values.is_empty() {
+                filter.push(json!({ "terms": { field: values } }));
             }
-        }));
+        }
+
+        if let Some(collector) = &self.collector {
+            filter.push(collector_clause(collector));
+        }
+
+        // The locality is the record's own `spec_locality`, matched as a
+        // phrase: "Sandia Mountains" matches "Sandia Mountains, Cibola National
+        // Forest" and does not match "Mountains of Sandia". The field is
+        // analysed text, so the match is on the words, not on the whole string.
+        //
+        // This clause is record-level, unlike the date below. A record with
+        // several events carries one `spec_locality` at the top, so a locality
+        // and a date are not held to the same event the way two dates are.
+        if let Some(locality) = &self.locality {
+            filter.push(json!({ "match_phrase": { "spec_locality": locality } }));
+        }
+
+        // Both ends of a date range have to hold for ONE event, or a record
+        // collected in 2024 and again in 2026 matches a 2025 search.
+        if self.from.is_some() || self.to.is_some() {
+            let mut range = json!({});
+            if let Some(from) = &self.from {
+                set(&mut range, "gte", json!(from));
+            }
+            if let Some(to) = &self.to {
+                set(&mut range, "lte", json!(to));
+            }
+            filter.push(json!({
+                "nested": {
+                    "path": "events",
+                    "query": { "bool": { "filter": [{ "range": { "events.began_date": range } }] } }
+                }
+            }));
+        }
+
+        // This filter list holds everything except the attribute rows. It is
+        // the denominator of the summary.
+        let context = json!({ "bool": { "filter": filter.clone() } });
+        let per_row = per_row_filters(&self.attrs, &filter);
+
+        filter.extend(attr_filter);
+        let mut bool_query = json!({ "filter": filter });
+        if !must_not.is_empty() {
+            set(&mut bool_query, "must_not", json!(must_not));
+        }
+
+        json!({
+            "track_total_hits": TRACK_TOTAL_HITS,
+            "from": self.page.saturating_sub(1).saturating_mul(PER_PAGE),
+            "size": PER_PAGE,
+            "sort": [{ "guid": "asc" }],
+            "_source": SOURCE,
+            "aggs": summary_aggs(&taxon_only, &context, &bool_query, &per_row),
+            "query": { "bool": bool_query }
+        })
     }
 
-    // This filter list holds everything except the attribute rows. It is the
-    // denominator of the summary.
-    let context = json!({ "bool": { "filter": filter.clone() } });
-    let per_row = per_row_filters(&rows, &filter);
-
-    filter.extend(attr_filter);
-    let mut bool_query = json!({ "filter": filter });
-    if !must_not.is_empty() {
-        set(&mut bool_query, "must_not", json!(must_not));
+    /// One page of guids for the same search as the page query.
+    ///
+    /// The export needs every match, not one page of records. This query is
+    /// [`Search::query`] with the page-only parts removed: no aggregation, no
+    /// `_source` field except the guid, and `search_after` instead of `from`.
+    /// `search_after` reads past the 10,000-document result window.
+    ///
+    /// `after` holds the last guid of the previous page. `None` starts the
+    /// export.
+    #[must_use]
+    pub fn export_query(&self, after: Option<&str>, size: usize) -> Value {
+        let mut query = self.query();
+        set(&mut query, "size", json!(size));
+        // This query reads the guid from the doc values, not from `_source`.
+        set(&mut query, "_source", json!(false));
+        set(&mut query, "docvalue_fields", json!(["guid"]));
+        // An export never reads `hits.total`.
+        set(&mut query, "track_total_hits", json!(false));
+        query.as_object_mut().map(|q| q.remove("aggs"));
+        query.as_object_mut().map(|q| q.remove("from"));
+        if let Some(after) = after {
+            set(&mut query, "search_after", json!([after]));
+        }
+        query
     }
-
-    // Page 0 is not valid. A hand-edited link can still carry page 0.
-    let page = form.page.unwrap_or(1).max(1);
-
-    Ok(json!({
-        "track_total_hits": TRACK_TOTAL_HITS,
-        "from": page.saturating_sub(1).saturating_mul(PER_PAGE),
-        "size": PER_PAGE,
-        "sort": [{ "guid": "asc" }],
-        "_source": SOURCE,
-        "aggs": summary_aggs(&taxon_only, &context, &bool_query, &per_row),
-        "query": { "bool": bool_query }
-    }))
 }
 
-/// This function builds one page of guids for the same form as the search
-/// page.
-///
-/// The export needs every match, not one page of records. The index answers
-/// with the guids. The record bodies come from the Parquet file. This query
-/// is [`translate`] with the page-only parts removed: no aggregation, no
-/// `_source` field except the guid, and `search_after` instead of `from`.
-/// `search_after` reads past the 10,000-document result window.
-///
-/// `after` holds the last guid of the previous page. `None` starts the
-/// export.
-/// # Errors
-///
-/// The function returns [`AppError::BadRequest`] on the same values [`translate`]
-/// refuses.
-pub fn export_query(
-    form: &SearchForm,
-    relations: &[Relation],
-    after: Option<&str>,
-    size: usize,
-) -> Result<Value, AppError> {
-    let mut query = translate(form, relations)?;
-    set(&mut query, "size", json!(size));
-    // This query reads the guid from the doc values, not from `_source`.
-    set(&mut query, "_source", json!(false));
-    set(&mut query, "docvalue_fields", json!(["guid"]));
-    // An export never reads `hits.total`.
-    set(&mut query, "track_total_hits", json!(false));
-    query.as_object_mut().map(|q| q.remove("aggs"));
-    query.as_object_mut().map(|q| q.remove("from"));
-    if let Some(after) = after {
-        set(&mut query, "search_after", json!([after]));
+/// One attribute or part row in plain English: `sex male or female`, `no sex
+/// recorded`, `detected recorded`.
+fn describe_attr(row: &AttrRow) -> String {
+    let prefix = if row.negated { "no " } else { "" };
+    if row.values.is_empty() {
+        format!("{prefix}{} recorded", row.atype)
+    } else {
+        format!("{prefix}{} {}", row.atype, row.values.join(" or "))
     }
-    Ok(query)
 }
 
 /// This function builds one filter per attribute row, each measured against the
@@ -689,7 +867,7 @@ pub fn export_query(
 /// The rows are counted one at a time, so `attr_op` does not apply here. A
 /// negated row counts the records that do not carry it, which is what that row
 /// filters for.
-fn per_row_filters(rows: &[Attr], context: &[Value]) -> Vec<Value> {
+fn per_row_filters(rows: &[AttrRow], context: &[Value]) -> Vec<Value> {
     rows.iter()
         .map(|row| {
             let mut filter = context.to_vec();
@@ -752,10 +930,14 @@ mod tests {
             .collect()
     }
 
+    fn parse(form: &SearchForm) -> Result<Search, AppError> {
+        Search::parse(form, &known())
+    }
+
     /// Every test that builds a valid form asserts on the query, so the tests
     /// unwrap here rather than threading the schema through each call.
     fn translate(form: &SearchForm) -> Value {
-        super::translate(form, &known()).unwrap()
+        parse(form).unwrap().query()
     }
 
     fn taxon_form(row: &str) -> SearchForm {
@@ -826,7 +1008,7 @@ mod tests {
             part: Some(vec!["container_path|UAF".into()]),
             ..form()
         };
-        assert!(super::translate(&f, &[]).is_err());
+        assert!(Search::parse(&f, &[]).is_err());
     }
 
     #[test]
@@ -1068,11 +1250,12 @@ mod tests {
             page: Some(4),
             ..form()
         };
-        let q = export_query(&f, &known(), None, 10_000).unwrap();
+        let search = parse(&f).unwrap();
+        let q = search.export_query(None, 10_000);
 
         // The export filters match the search filters. The form page number
         // does not change them.
-        assert_eq!(q["query"], translate(&f)["query"]);
+        assert_eq!(q["query"], search.query()["query"]);
         assert!(q.get("from").is_none());
         assert!(q.get("aggs").is_none());
         assert_eq!(q["size"], 10_000);
@@ -1083,7 +1266,7 @@ mod tests {
         assert_eq!(q["sort"][0]["guid"], "asc");
         assert!(q.get("search_after").is_none());
 
-        let next = export_query(&f, &known(), Some("MSB:Mamm:9"), 10_000).unwrap();
+        let next = search.export_query(Some("MSB:Mamm:9"), 10_000);
         assert_eq!(next["search_after"][0], "MSB:Mamm:9");
     }
 
@@ -1244,7 +1427,14 @@ mod tests {
 
     #[test]
     fn the_relation_predicate_reads_the_same_row_the_clause_does() {
-        let rows = |taxon: &str| taxon_rows(&taxon_form(taxon), &known()).unwrap();
+        let search = |taxon: &str| parse(&taxon_form(taxon)).unwrap();
+        let with_tab = |taxon: &str, tab: &str| {
+            parse(&SearchForm {
+                tab: Some(tab.to_owned()),
+                ..taxon_form(taxon)
+            })
+            .unwrap()
+        };
         let cestode = json!({
             "relationship": "host of parasite",
             "related_guid": "DMNS:Para:581",
@@ -1261,54 +1451,47 @@ mod tests {
         });
         let littermate = json!({ "relationship": "sibling of", "related_guid": "MSB:Mamm:2" });
 
-        let asked = rows("genus|Sorex|host of parasite|class|Cestoda");
-        assert!(relation_matches(&cestode, &asked, None));
+        let asked = search("genus|Sorex|host of parasite|class|Cestoda");
+        assert!(asked.relation_matches(&cestode));
         // Same relationship, wrong taxon. Same taxon, wrong relationship.
-        assert!(!relation_matches(&mite, &asked, None));
-        assert!(!relation_matches(&littermate, &asked, None));
+        assert!(!asked.relation_matches(&mite));
+        assert!(!asked.relation_matches(&littermate));
 
         // The rank is read off the field it names, so a class name does not
         // answer a genus row.
-        assert!(!relation_matches(
-            &cestode,
-            &rows("genus|Sorex|host of parasite|genus|Cestoda"),
-            None
-        ));
+        assert!(!search("genus|Sorex|host of parasite|genus|Cestoda").relation_matches(&cestode));
 
         // The comparison is case-insensitive, as the indexed field is.
-        assert!(relation_matches(
-            &cestode,
-            &rows("genus|Sorex|host of parasite|class|cestoda"),
-            None
-        ));
+        assert!(search("genus|Sorex|host of parasite|class|cestoda").relation_matches(&cestode));
 
         // Related taxa within a row OR. So do rows.
-        let two = rows("genus|Sorex|host of parasite|class|Cestoda|genus|Androlaelaps");
-        assert!(relation_matches(&cestode, &two, None) && relation_matches(&mite, &two, None));
+        let two = search("genus|Sorex|host of parasite|class|Cestoda|genus|Androlaelaps");
+        assert!(two.relation_matches(&cestode) && two.relation_matches(&mite));
 
         // A row with a relationship and no related taxon takes any pairing of
         // that kind; a row with neither asks for no relation at all.
-        assert!(relation_matches(&mite, &rows("genus|Sorex|host of parasite"), None));
-        assert!(!relation_matches(&mite, &rows("genus|Sorex"), None));
+        assert!(search("genus|Sorex|host of parasite").relation_matches(&mite));
+        assert!(!search("genus|Sorex").relation_matches(&mite));
 
         // A scientific name matches the related record's own identification.
-        assert!(relation_matches(
-            &mite,
-            &rows("genus|Sorex||scientific_name|Androlaelaps fahrenholzi"),
-            None
-        ));
+        assert!(
+            search("genus|Sorex||scientific_name|Androlaelaps fahrenholzi").relation_matches(&mite)
+        );
 
         // The tab narrows to one relationship and ANDs with the rows. It never
         // widens them: a tab the search did not ask for holds nothing.
-        let both = rows("genus|Sorex|host of parasite; parasite of");
-        assert!(relation_matches(&mite, &both, Some("host of parasite")));
-        assert!(!relation_matches(&mite, &both, Some("parasite of")));
-        assert!(!relation_matches(&mite, &both, Some("sibling of")));
-        assert!(!relation_matches(
-            &littermate,
-            &both,
-            Some("host of parasite")
-        ));
+        let both = "genus|Sorex|host of parasite; parasite of";
+        assert!(with_tab(both, "host of parasite").relation_matches(&mite));
+        assert!(!with_tab(both, "parasite of").relation_matches(&mite));
+        assert!(!with_tab(both, "host of parasite").relation_matches(&littermate));
+        // A tab the schema does not list is refused at parse time.
+        assert!(
+            parse(&SearchForm {
+                tab: Some("sibling of".into()),
+                ..taxon_form(both)
+            })
+            .is_err()
+        );
     }
 
     #[test]
@@ -1349,7 +1532,7 @@ mod tests {
     #[test]
     fn a_taxon_row_outside_the_grammar_is_refused_not_salvaged() {
         let refused = |row: &str| {
-            let e = super::translate(&taxon_form(row), &known()).unwrap_err();
+            let e = parse(&taxon_form(row)).unwrap_err();
             assert!(
                 matches!(e, AppError::BadRequest(_)),
                 "{row:?} must be a 400, not {e:?}"
@@ -1391,7 +1574,7 @@ mod tests {
             "|||genus|Sorex",
             "||host of parasite; parasite of",
         ] {
-            assert!(super::translate(&taxon_form(row), &known()).is_ok(), "{row}");
+            assert!(parse(&taxon_form(row)).is_ok(), "{row}");
         }
     }
 
@@ -1434,15 +1617,147 @@ mod tests {
             attr: Some(vec!["!|male".into()]),
             ..form()
         };
-        assert!(matches!(
-            super::translate(&f, &known()).unwrap_err(),
-            AppError::BadRequest(_)
-        ));
+        assert!(matches!(parse(&f).unwrap_err(), AppError::BadRequest(_)));
     }
 
     #[test]
     fn an_empty_form_produces_a_match_all_that_the_caller_must_refuse() {
         let b = translate(&form());
         assert!(b["query"]["bool"]["filter"].as_array().unwrap().is_empty());
+    }
+
+    #[test]
+    fn the_description_restates_the_search_and_is_absent_for_an_empty_form() {
+        assert!(parse(&form()).unwrap().description().is_none());
+
+        // The numbers-to-check-against query from the summary spec.
+        let s = parse(&taxon_form("genus|Sorex|host of parasite|class|Cestoda")).unwrap();
+        assert_eq!(
+            s.description().unwrap(),
+            "Genus Sorex with relationship host of parasite to class Cestoda."
+        );
+        assert!(s.constrains_relations());
+        assert!(!parse(&taxon_form("genus|Sorex")).unwrap().constrains_relations());
+
+        // Every other block, in the order the sentence carries them.
+        let f = SearchForm {
+            taxon: Some(vec!["scientific_name|Sorex cinereus".into(), "||parasite of".into()]),
+            attr: Some(vec!["sex|male|female".into(), "!detected".into()]),
+            attr_op: AttrOp::Or,
+            country: Some(vec!["United States".into()]),
+            state: Some(vec!["New Mexico".into()]),
+            from: Some("1958".into()),
+            to: Some("2019".into()),
+            collector: Some("Cook, J.".into()),
+            ..form()
+        };
+        assert_eq!(
+            parse(&f).unwrap().description().unwrap(),
+            "Sorex cinereus, or any record with relationship parasite of with sex male or \
+             female or no detected recorded from United States in New Mexico collected by \
+             Cook, J. collected 1958 to 2019."
+        );
+    }
+
+    #[test]
+    fn the_relationships_named_are_the_rows_own_unless_a_tab_narrows_them() {
+        let named = |row: &str| parse(&taxon_form(row)).unwrap().relationships();
+
+        assert_eq!(named("genus|Sorex"), Vec::<String>::new());
+        assert_eq!(
+            named("genus|Sorex|host of parasite; host of symbiont"),
+            ["host of parasite", "host of symbiont"]
+        );
+        // A row naming only a Related taxon names no relationship: which one
+        // reaches that taxon is known only once the relations are walked.
+        assert_eq!(named("genus|Sorex||class|Cestoda"), Vec::<String>::new());
+        // The same relationship on two rows is named once.
+        let f = SearchForm {
+            taxon: Some(vec![
+                "genus|Sorex|host of parasite".into(),
+                "genus|Myodes|host of parasite; parasite of".into(),
+            ]),
+            ..form()
+        };
+        assert_eq!(
+            parse(&f).unwrap().relationships(),
+            ["host of parasite", "parasite of"]
+        );
+        // A tab narrows every row to itself, so it is the only one.
+        let f = SearchForm {
+            tab: Some("host of parasite".into()),
+            ..taxon_form("genus|Sorex|host of parasite; host of symbiont")
+        };
+        assert_eq!(parse(&f).unwrap().relationships(), ["host of parasite"]);
+    }
+
+    #[test]
+    fn the_model_keeps_the_raw_attr_rows_for_the_summary_labels() {
+        // The labels are the rows as sent, blanks dropped, in the order sent.
+        let f = SearchForm {
+            attr: Some(vec!["sex|male".into(), "  ".into(), "!examined for".into()]),
+            ..form()
+        };
+        let search = parse(&f).unwrap();
+        assert_eq!(
+            search.attrs.iter().map(|a| a.raw.as_str()).collect::<Vec<_>>(),
+            ["sex|male", "!examined for"]
+        );
+        assert!(search.attrs[1].negated);
+    }
+
+    #[test]
+    fn prefix_only_needs_prefix_set_and_every_other_filter_empty() {
+        assert!(!parse(&form()).unwrap().guid_prefix_only(), "no prefix at all");
+
+        let f = SearchForm {
+            prefix: Some(vec!["MSB:Mamm".into()]),
+            ..form()
+        };
+        assert!(parse(&f).unwrap().guid_prefix_only());
+
+        // A blank string in the prefix list, or a blank string field
+        // elsewhere, does not count as set.
+        let f = SearchForm {
+            prefix: Some(vec![" ".into()]),
+            ..form()
+        };
+        assert!(!parse(&f).unwrap().guid_prefix_only());
+
+        let f = SearchForm {
+            prefix: Some(vec!["MSB:Mamm".into()]),
+            collector: Some(" ".into()),
+            ..form()
+        };
+        assert!(
+            parse(&f).unwrap().guid_prefix_only(),
+            "blank collector is still empty"
+        );
+
+        // Any other real filter disqualifies the shortcut.
+        let f = SearchForm {
+            prefix: Some(vec!["MSB:Mamm".into()]),
+            country: Some(vec!["Mexico".into()]),
+            ..form()
+        };
+        assert!(!parse(&f).unwrap().guid_prefix_only());
+
+        // So does a tab: the rows wanted are then the related records, which
+        // the dump is not partitioned by.
+        let f = SearchForm {
+            prefix: Some(vec!["MSB:Mamm".into()]),
+            tab: Some("host of parasite".into()),
+            ..form()
+        };
+        let search = parse(&f).unwrap();
+        assert!(!search.guid_prefix_only());
+        assert_eq!(search.tab.as_deref(), Some("host of parasite"));
+        // A blank tab is no tab.
+        let f = SearchForm {
+            prefix: Some(vec!["MSB:Mamm".into()]),
+            tab: Some(" ".into()),
+            ..form()
+        };
+        assert!(parse(&f).unwrap().guid_prefix_only());
     }
 }

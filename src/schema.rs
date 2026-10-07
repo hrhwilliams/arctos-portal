@@ -18,25 +18,22 @@ use std::{
 use duckdb::Connection;
 use serde::Serialize;
 use serde_json::{Map, Value};
+use utoipa::ToSchema;
 
-use crate::{errors::AppError, translate::PER_PAGE};
+use crate::{errors::AppError, ranks, translate::PER_PAGE};
 
 /// Each tuple holds `(id, label, parquet column)`. The list order sets the
 /// form render order.
 ///
 /// `scientific_name` is not a rank. It is a Latin binomial. It shares the
 /// same (field, value) shape as a rank, so it sits in the same dropdown. It
-/// is listed first because users select it first.
-pub const RANKS: &[(&str, &str, &str)] = &[
-    ("scientific_name", "Scientific name", "scientific_name"),
-    ("phylum", "Phylum", "phylum"),
-    ("class", "Class", "phylclass"),
-    ("order", "Order", "phylorder"),
-    ("family", "Family", "family"),
-    ("subfamily", "Subfamily", "subfamily"),
-    ("genus", "Genus", "genus"),
-    ("species", "Species", "species"),
-];
+/// is listed first because users select it first. The ranks themselves come
+/// from `src/ranks.json`, through [`crate::ranks`].
+fn all_ranks() -> Vec<(&'static str, &'static str, &'static str)> {
+    std::iter::once(("scientific_name", "Scientific name", "scientific_name"))
+        .chain(ranks::ranks().iter().map(|r| (r.id, r.label, r.column)))
+        .collect()
+}
 
 /// This constant caps the row count of an export. [`crate::state`] enforces
 /// this cap. [`Limits`] serves this cap to the client.
@@ -60,7 +57,10 @@ const NON_VALUE_KEYS: &[&str] = &[
     "collection_type",
 ];
 
-#[derive(Serialize, Debug)]
+/// Everything the search form needs to render itself. Code-table lists are
+/// complete and carry no counts. Aggregated lists are observed and carry
+/// counts.
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Schema {
     pub snapshot_date: String,
     /// This field lists every column of the dump, in dump order. The client
@@ -80,42 +80,44 @@ pub struct Schema {
     pub nonpublic_types_dropped: Vec<String>,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Rank {
     pub id: &'static str,
     pub label: &'static str,
     pub field: &'static str,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct AttributeType {
     pub id: String,
     pub label: String,
     pub description: String,
+    /// The name of the code table holding the values, a key of `vocabularies`.
     pub vocabulary: Option<String>,
     pub units_table: Option<String>,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct VocabValue {
     pub value: String,
     pub description: String,
     pub documentation_url: String,
 }
 
-#[derive(Serialize, Debug)]
+/// An observed value and how many records carry it.
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Facet {
     pub value: String,
     pub count: u64,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Relation {
     pub value: String,
     pub description: String,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct GuidPrefix {
     pub value: String,
     pub count: u64,
@@ -123,13 +125,13 @@ pub struct GuidPrefix {
     pub collection_cde: String,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Sort {
     pub id: &'static str,
     pub label: &'static str,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Serialize, Debug, ToSchema)]
 pub struct Limits {
     /// The pager divides by this value. The service fixes the page size. The
     /// service does not accept a `per_page` value. The client must use
@@ -140,7 +142,9 @@ pub struct Limits {
     pub max_export_rows: usize,
 }
 
-#[derive(Serialize, Debug, Clone)]
+/// One distinct `(rank, name)` pair of the snapshot, with its record count and
+/// its parent in the rank chain.
+#[derive(Serialize, Debug, Clone, ToSchema)]
 pub struct Taxon {
     pub rank: &'static str,
     pub name: String,
@@ -325,13 +329,14 @@ fn columns(conn: &Connection, dataset: &str) -> Result<Vec<String>, AppError> {
 ///
 /// The function returns an error when it cannot read the Parquet file.
 pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppError> {
-    let branches: Vec<String> = RANKS
+    let ranks = all_ranks();
+    let branches: Vec<String> = ranks
         .iter()
         .enumerate()
         .map(|(i, (id, _, column))| {
             // The parent chain follows the taxonomic ranks. scientific_name
             // is not part of this chain.
-            let parent = match RANKS.get(i.wrapping_sub(1)).filter(|_| i > 1) {
+            let parent = match ranks.get(i.wrapping_sub(1)).filter(|_| i > 1) {
                 Some((.., column)) => {
                     format!("any_value(nullif(trim(split_part({column}, ';', 1)), ''))")
                 }
@@ -352,17 +357,17 @@ pub fn build_taxa(conn: &Connection, dataset: &str) -> Result<Vec<Taxon>, AppErr
     let rows = stmt
         .query_map([], |row| {
             let rank: String = row.get(0)?;
-            let i = RANKS.iter().position(|(id, ..)| *id == rank).unwrap_or(0);
+            let i = ranks.iter().position(|(id, ..)| *id == rank).unwrap_or(0);
             // A parent rank with no parent name does not help a client tell
             // taxa apart, so the function keeps both fields or neither.
             let parent_name: Option<String> = row.get(3)?;
             Ok(Taxon {
-                rank: RANKS.get(i).map_or("", |r| r.0),
+                rank: ranks.get(i).map_or("", |r| r.0),
                 name: row.get(1)?,
                 record_count: row.get::<_, i64>(2)?.unsigned_abs(),
                 parent_rank: parent_name
                     .as_ref()
-                    .and_then(|_| RANKS.get(i.wrapping_sub(1)).filter(|_| i > 0))
+                    .and_then(|_| ranks.get(i.wrapping_sub(1)).filter(|_| i > 0))
                     .map(|r| r.0),
                 parent_name,
             })
@@ -430,7 +435,7 @@ impl Schema {
 
         // A rank with no values in the snapshot is not offered.
         // scientific_name is always offered.
-        let ranks = RANKS
+        let ranks = all_ranks()
             .iter()
             .filter(|(id, ..)| *id == "scientific_name" || taxa.iter().any(|t| t.rank == *id))
             .map(|(id, label, field)| Rank {

@@ -63,6 +63,22 @@ something else is hammering the same process.
 | ES `_source` only, all 154 columns | 8.8 s | -- | 770 MB payload; note 04 measured 86 s via Parquet |
 | DuckDB native table only, 9 columns | 1.1-1.4 s | same | 100k rows: 1.3 s; Parquet at 1.1 GB stays in cache |
 
+**ES-only export, demonstrated end to end** (VM at 57-99% memory with 3.1 GB swap in use, so pessimistic):
+
+| Export from ES `_source` alone | Rows | Columns | Time |
+| --- | --- | --- | --- |
+| `taxon=genus\|Sorex\|host of parasite&locality=national park`, specimens | 504 | 9 default | 0.17 s (current path: ~6 s) |
+| same query, `tab=host of parasite`, related records + `related_guid` reached-from column | 737 | 10 | 0.27 s (current path: ~6 s) |
+| genus Peromyscus, first 100,000 by guid, all 154 dump columns in dump order + `related_guids` + `related_record_urls` | 100,000 | 156 | 49.6 s wall in Python: 5.5 s ES fetch, 9.2 s JSON parse, the rest CSV + gzip in Python; 1.09 GB of JSON in, 25 MB gzip out |
+| genus Peromyscus `tab=host of parasite`: phase 1 scans 226,015 specimens' relations, phase 2 fetches 7,090 related records with all columns + `related_guid` | 7,010 | 157 | 19.4 s + 3.4 s |
+
+Each file was read back with DuckDB: row count, column count, and column order matched; a row spot-checked
+against the Parquet dump was identical on the plain columns. Memory is bounded by design to one 5,000-hit
+page (about 75 MB of JSON) because rows are written as each page arrives. The 100k all-columns case is
+the ceiling of the export contract, and of its 50 s only 5.5 s was Elasticsearch; the other 44 s was
+Python doing what `serde_json` and a streaming gzip encoder do in the service. The comparable current-path
+number from note 04 is 86 s for 50k rows with all columns, so roughly 170 s at 100k.
+
 ### 2.3 What the cold numbers mean
 
 The same ES export ran at 2.0 s, then 32 s, then 3.2 s within an hour, and by the end of the session
@@ -174,6 +190,14 @@ C++ build, the 1.1 GB copy, the startup passes, the all-VARCHAR fidelity rules, 
 hand-off. What it costs: the cold-cache variance of section 2.3 (fix with RAM or a smaller index), and
 owning CSV assembly for wide rows, which `to_csv` in `routes/search.rs` already does for the search
 path. GBIF does exactly this for small downloads and only falls back to Hive for large ones.
+
+The full export contract was demonstrated from ES alone (section 2.2): all 154 dump columns in dump order,
+extra backlink columns computed from the `relations` array on each hit, the related-records `tab` export
+with the reached-from `related_guid` column by the same two phases `state.rs` runs today, and the 100,000-row
+cap. Both `_source` transforms `ingest.py` makes must be kept in mind: `attributedetail` and `partdetail`
+are the filtered nested lists, and the four detection columns are the flat arrays, so those six columns
+are re-serialized JSON rather than the dump's byte-identical text. If byte fidelity on those six matters,
+index the raw column beside the parsed one, or keep the Parquet for them alone.
 
 **Smallest change with the biggest simplification.** Take it if the box can hold the index in cache.
 

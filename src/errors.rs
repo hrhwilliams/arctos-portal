@@ -1,7 +1,9 @@
 use axum::{
+    Json,
     http::StatusCode,
-    response::{Html, IntoResponse, Response},
+    response::{IntoResponse, Response},
 };
+use serde_json::json;
 
 #[derive(thiserror::Error, Debug)]
 pub enum AppError {
@@ -19,6 +21,9 @@ pub enum AppError {
     BadRequest(String),
 }
 
+/// Every error is the same JSON envelope, `{ "error", "message" }`, the shape
+/// spec 03 names. The portal shows `message` where the failed call's result
+/// would have gone, so a summary that fails leaves the previews working.
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         tracing::error!("Application error: {self:?}");
@@ -27,12 +32,11 @@ impl IntoResponse for AppError {
             Self::BadRequest(_) => StatusCode::BAD_REQUEST,
             _ => StatusCode::INTERNAL_SERVER_ERROR,
         };
-        let body = format!(
-            "<!doctype html><html><body><h1>{}</h1><p>{}.</p></body></html>",
-            status.as_u16(),
-            self
-        );
+        let body = json!({
+            "error": status.canonical_reason().unwrap_or("error"),
+            "message": self.to_string(),
+        });
 
-        (status, Html(body)).into_response()
+        (status, Json(body)).into_response()
     }
 }

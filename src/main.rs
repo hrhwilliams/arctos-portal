@@ -20,8 +20,13 @@ async fn main() -> Result<(), std::io::Error> {
 
     let snapshot_date = "2026-03-09";
 
+    // The compose network name is the default. A local run outside compose
+    // points this at the published port.
+    let elasticsearch_url = std::env::var("ELASTICSEARCH_URL")
+        .unwrap_or_else(|_| "http://elasticsearch:9200".to_owned());
+
     let app_state = AppState::new(
-        "http://elasticsearch:9200",
+        &elasticsearch_url,
         Path::new("docs/data/code-tables"),
         snapshot_date,
     )

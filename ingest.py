@@ -47,13 +47,12 @@ INDEX_NAME = "arctos"
 # shards = parallelism, replicas = duplicate data
 LOCAL_SETTINGS = {"number_of_shards": 4, "number_of_replicas": 0}
 
+# The rank table. The service compiles the same file in (src/ranks.rs), so
+# what is indexed here and what the service asks for cannot drift.
+RANK_TABLE = json.loads((ROOT / "src" / "ranks.json").read_text(encoding="utf-8"))
+
 # the four detection types, and the flat field each rolls up into
-DETECTION_FIELDS = {
-    "detected": "detected",
-    "not detected": "not_detected",
-    "examined for": "examined_for",
-    "not examined for": "not_examined_for",
-}
+DETECTION_FIELDS = {d["type"]: d["field"] for d in RANK_TABLE["detections"]}
 
 # only `collector` rolls up; the array also holds preparators and others
 COLLECTOR_ROLE = "collector"
@@ -64,15 +63,7 @@ PROGRESS_EVERY = 100_000
 
 # the rank columns, highest first. The order is the chain: a name found in
 # column i fixes every rank above it and none below it.
-RANK_COLUMNS = [
-    "phylum",
-    "phylclass",
-    "phylorder",
-    "family",
-    "subfamily",
-    "genus",
-    "species",
-]
+RANK_COLUMNS = [r["column"] for r in RANK_TABLE["ranks"]]
 
 GUID_IN_URL = re.compile(r"/guid/(?P<guid>[^/?#]+)", re.IGNORECASE)
 BARE_GUID = re.compile(r"^[A-Za-z]+:[A-Za-z]+:.+$")
@@ -102,9 +93,30 @@ stats = Counter()
 undocumented = set()
 
 
+def check_mapping(mappings):
+    """The index must carry what the rank table says it does: a `split`
+    subfield on every rank column, a `related_<column>` on every relation, and
+    a keyword field per detection type. A missing one does not fail a query; it
+    silently returns fewer results. So it fails here instead."""
+    props = mappings["properties"]
+    related = props.get("relations", {}).get("properties", {})
+    missing = []
+    for column in RANK_COLUMNS:
+        if "split" not in props.get(column, {}).get("fields", {}):
+            missing.append(f"{column}.split")
+        if f"related_{column}" not in related:
+            missing.append(f"relations.related_{column}")
+    for field in DETECTION_FIELDS.values():
+        if props.get(field, {}).get("type") != "keyword":
+            missing.append(field)
+    if missing:
+        sys.exit(f"{MAPPING_FILE} does not carry the rank table (src/ranks.json): missing {missing}")
+
+
 def load_mapping():
     with MAPPING_FILE.open(encoding="utf-8") as fh:
         doc = json.load(fh)
+    check_mapping(doc["mappings"])
     settings = doc.get("settings", {})
     settings.update(LOCAL_SETTINGS)
     return doc["mappings"], settings
