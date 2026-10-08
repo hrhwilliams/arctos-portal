@@ -5,4 +5,4 @@ arctos_parquet
 *.csv
 plan.md
 *.parquet
-__pycache/
+__pycache__/
